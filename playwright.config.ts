@@ -45,5 +45,11 @@ export default defineConfig({
         url: "http://127.0.0.1:3100",
         reuseExistingServer: !process.env.CI,
         timeout: 120_000,
+        env: {
+          // 폼 토큰 서명이 실제로 동작하는 상태에서 검증한다
+          FORM_TOKEN_SECRET: "playwright-test-secret",
+          // 실제 메일을 보내지 않고 성공 경로를 확인한다
+          MAIL_TRANSPORT: "mock",
+        },
       },
 });

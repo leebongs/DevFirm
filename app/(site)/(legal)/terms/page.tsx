@@ -1,0 +1,37 @@
+import type { Metadata } from "next";
+import { PageHero } from "@/components/typography/page-hero";
+import { ArticleShell } from "@/components/layout/article-shell";
+import { Prose } from "@/components/typography/prose";
+import { buildMetadata } from "@/lib/metadata";
+import { terms, legalUpdatedAt, legalUi } from "@/content/legal";
+import { pageSeo } from "@/content/seo";
+
+export const metadata: Metadata = buildMetadata({
+  ...pageSeo.terms,
+  path: "/terms",
+});
+
+export default function TermsPage() {
+  return (
+    <>
+      <PageHero
+        title={terms.title}
+        lead={`${legalUi.updatedAtLabel} ${legalUpdatedAt}`}
+      />
+
+      <ArticleShell href="/terms">
+        <Prose>
+          <p>{terms.intro}</p>
+          {terms.sections.map((section) => (
+            <section key={section.id}>
+              <h2 id={section.id}>{section.title}</h2>
+              {section.body.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </section>
+          ))}
+        </Prose>
+      </ArticleShell>
+    </>
+  );
+}
