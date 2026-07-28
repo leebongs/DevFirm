@@ -128,7 +128,13 @@ export const primaryCta = {
   href: "/contact",
 } satisfies NavNode;
 
-export const footerNav = [
+/**
+ * 푸터는 `satisfies` 대신 명시적 타입 표기를 쓴다.
+ * `satisfies` 는 리터럴에서 타입을 추론하므로, 지금 어떤 항목도 `external` 을
+ * 갖고 있지 않으면 그 속성이 추론 타입에 아예 없어 소비처에서 읽을 수 없다.
+ * Phase 4 에서 서울필름아카데미 외부 링크가 여기 들어온다(§2.3).
+ */
+export const footerNav: NavNode[] = [
   {
     label: "회사",
     href: "/about",
@@ -172,7 +178,7 @@ export const footerNav = [
       { label: "이용약관", href: "/terms" },
     ],
   },
-] satisfies NavNode[];
+];
 
 /**
  * 섹션 로컬 내비(SectionNav)가 쓰는 형제 목록.

@@ -840,11 +840,11 @@ export const footerNav = [ /* ... */ ] satisfies NavNode[];
 | A1 | 반응형 무결성 | 320 / 390 / 768 / 1024 / 1440 / 1920 px 에서 **가로 스크롤 0**, 요소 겹침·잘림 0 | Playwright: `document.scrollingElement.scrollWidth <= innerWidth` 전 페이지 assert + 스크린샷 |
 | A2 | 내비게이션 | 모든 사이트맵 경로가 헤더/드로어/푸터 중 최소 1곳에서 3클릭 이내 도달 | Playwright 내비 스위트 |
 | A3 | 링크 무결성 | 내부 404 = 0, 외부 링크 `target=_blank` + `rel=noopener` | 크롤 테스트 |
-| A4 | 리다이렉트 | §2.3 기존 경로 전부 301로 신규 경로 도달. **O-6 확정으로 크로스 도메인까지 포함** — `cmnyx.com/{구경로}` → `devfirm.*/{신경로}` 가 단일 301(체인 없음)로 도달 | Playwright: 각 구경로를 **구 도메인 기준**으로 요청해 최종 URL·상태·홉 수 assert |
+| A4 | 리다이렉트 | §2.3 기존 경로 전부 **308**(`permanent: true`, D-2)로 신규 경로 도달. **O-6 확정으로 크로스 도메인까지 포함** — `cmnyx.com/{구경로}` → `devfirm.*/{신경로}` 가 단일 홉(체인 없음)으로 도달 | Playwright: 각 구경로를 **구 도메인 기준**으로 요청해 최종 URL·상태·홉 수 assert |
 | A5 | 접근성 | axe critical/serious = 0, 키보드만으로 전 페이지 조작, 포커스 가시성 100% | `@axe-core/playwright` + 수동 키보드 체크리스트 |
 | A6 | 색 대비 | 본문 ≥ 7:1, 보조/큰 텍스트 ≥ 4.5:1, UI 컴포넌트 ≥ 3:1 | axe color-contrast + 토큰 단위 계산 테스트 |
 | A7 | 성능 | 모바일 Lighthouse Perf ≥ 95, LCP < 2.5s, CLS < 0.1, INP < 200ms | Lighthouse CI (3회 중앙값) |
-| A8 | 번들 | 초기 JS(First Load) ≤ 130KB gzip / 페이지 | `next build` 출력 파싱 |
+| A8 | 번들 | 초기 JS(First Load) ≤ 130KB gzip / 페이지 | **D-1 참조 — `next build` 는 더 이상 이 수치를 출력하지 않는다.** Lighthouse CI `total-byte-weight`·`unused-javascript` + Playwright 로 문서 로드 시 JS 응답 바이트 합산 |
 | A9 | SEO | 전 페이지 고유 title/description/canonical, sitemap.xml 유효, JSON-LD 오류 0 | Playwright meta assert + Rich Results 수동 확인 |
 | A10 | 콘텐츠 분리 | **한국어 문장(5자 이상) 리터럴이 `components/`·`app/` 에 0.** 예외: Phase 0에서 정의하는 **UI 라벨 허용 목록** — 버튼 라벨, `aria-*` 값, `alt`, `placeholder`, 폼 검증 메시지. 허용 목록은 `scripts/i18n-allowlist.json` 으로 관리하며 추가 시 PR에서 사유 명시 | CI grep 스크립트(허용 목록 대조) |
 | A11 | 클라이언트 경계 | `"use client"` 파일이 §6.4 화이트리스트와 정확히 일치 | CI grep 스크립트 |
@@ -961,6 +961,26 @@ push/PR → install → lint → typecheck → unit → build
 | **도메인 이전(O-6)으로 검색 순위 일시 하락** | 오픈 직후 유입 감소, 회복까지 수개월 | 전 경로 단일 301(체인 금지) + 검색콘솔 주소변경 도구 + **구 도메인 최소 1년 유지**. 오픈 전후 검색콘솔 색인 추이 모니터링 |
 | **`devfirm.*` TLD 확보 실패** | Phase 5 도메인 작업 및 O-1 메일 인증 지연 | `content/site.ts` 의 `siteUrl` 단일 상수로 교체 지점을 1곳에 격리. Phase 5 이전에 TLD 후보 검증. 최악의 경우 `cmnyx.com` 유지로 무비용 롤백 가능 |
 | shadcn 컴포넌트 직접 수정 후 업스트림 갱신 충돌 | 유지보수 부담 | `components/ui/` 수정 금지 규약 + 래퍼 패턴, CI에서 diff 경고 |
+
+---
+
+## 12.1 Next.js 16 실물 대조 — 계획 수정 사항 (2026-07-28, Phase 0)
+
+계획은 Next 15 세대를 가정해 작성됐다. 실제 부트스트랩된 **Next 16.2.12** 와 대조해 확인된 차이와 대응이다. 근거는 `node_modules/next/dist/docs/01-app/02-guides/upgrading/version-16.md`.
+
+| # | 계획의 가정 | Next 16 실제 | 대응 |
+|---|---|---|---|
+| **D-1** | **A8** 초기 JS ≤ 130KB 를 `next build` 출력 파싱으로 검증 | **`next build` 가 `size`·`First Load JS` 열을 제거했다.** RSC 구조에서 부정확하다는 이유로 삭제 | **검증 방법 교체**: Lighthouse CI 의 `total-byte-weight`·`unused-javascript` + Playwright 로 문서 로드 시 JS 응답 바이트 합산. 예산 130KB 는 유지 |
+| **D-2** | **A4** 기존 경로가 **301** 로 도달 | `redirects()` 의 `permanent: true` 는 **308** (`false` 는 307). 메서드 보존 목적 | **A4 기대값을 308 로 수정.** SEO 상 301과 동등 취급되며, 크로스 도메인 이전(O-6)에도 그대로 적용 |
+| **D-3** | §6.4.1 `MegaMenu`/`MobileNavDrawer` 를 `(site)/layout.tsx`(RSC)에서 `next/dynamic { ssr:false }` 로 로드 | **`ssr: false` 는 클라이언트 컴포넌트 안에서만 동작한다.** RSC에서 쓰면 무효 | 얇은 클라이언트 래퍼(`"use client"`)를 하나 두고 그 안에서 `dynamic({ssr:false})` 를 호출, `SiteHeader`(RSC)가 래퍼를 렌더한다. 래퍼는 A11 화이트리스트에 포함 |
+| **D-4** | `[industry]`/`[slug]` 페이지에서 `params` 를 동기 접근 | `params`·`searchParams` 가 **Promise**. 동기 접근 완전 제거 | `const { slug } = await params`. 타입은 `next typegen` 이 만드는 `PageProps<'/경로'>` 사용 |
+| **D-5** | 앵커 TOC(`OnThisPage`)의 부드러운 스크롤을 CSS `scroll-behavior: smooth` 로 처리 | Next 16은 라우트 전환 시 `scroll-behavior` 를 **더 이상 자동 오버라이드하지 않는다** | `<html data-scroll-behavior="smooth">` 를 명시. 앵커는 부드럽게, 페이지 이동은 즉시 최상단으로 동작 |
+| **D-6** | 폰트를 `next/font/local` + `subset` 으로 self-host | `next/font/local` 은 **서브셋별 `unicode-range` 를 표현할 수 없다**(패밀리 1개 = 호출 1회). 전체 Pretendard Variable 은 **2.0MB** 로 A7 위협 | **직접 `@font-face`** 로 전환. 92분할 동적 서브셋을 `public/fonts/pretendard/` 에 두고 `app/fonts.css` 에서 선언. 브라우저가 텍스트가 닿는 구간만 다운로드. self-host 원칙(외부 CDN 0)은 그대로 충족 |
+| **D-7** | shadcn `init` 을 **New York 스타일**로 | New York 스타일은 없어지고 **`--base` (base/radix/aria) + preset** 체계로 교체 | `-b radix -p nova` 채택. 계획이 쓰려는 컴포넌트(navigation-menu·sheet·accordion·tabs·dialog)가 Radix 기반이고 nova 가 lucide 아이콘을 쓴다. `cssVariables: true` 는 기본값이라 §4.2 구조와 그대로 일치 |
+| **D-8** | CI에서 lint 를 돌리고 `next build` 도 검증에 기여 | **`next lint` 제거**, `next build` 는 **lint 를 실행하지 않는다** | CI에 `pnpm lint` 를 독립 단계로 고정(이미 반영). 로컬은 `pnpm verify` 한 방으로 lint→typecheck→format→A10/A11 |
+| **D-9** | `next/image` 기본 동작 | `images.qualities` 기본이 **`[75]` 단일**, `minimumCacheTTL` 4시간, `imageSizes` 에서 16 제거 | `next.config.ts` 에 `qualities: [75, 90]` 명시(갤러리·히어로용) |
+
+**계획에 영향 없음이 확인된 항목**: `generateStaticParams`(§5.8), `generateMetadata`, Server Actions(§5.14), `sitemap.ts`/`robots.ts`, `next.config.ts` 의 `redirects()`, 라우트 그룹 `(site)`, Tailwind v4 `@theme inline` 구조(§4.2) — **shadcn 이 생성한 `globals.css` 가 계획의 토큰 구조와 정확히 일치**했다.
 
 ---
 

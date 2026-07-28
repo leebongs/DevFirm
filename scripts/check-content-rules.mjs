@@ -19,17 +19,30 @@ const SCAN_DIRS = ["app", "components"];
 /** shadcn 생성물은 프로젝트 소유가 아니므로 두 규칙 모두에서 제외(§6.2) */
 const VENDORED = ["components/ui"];
 
-/** §6.4 클라이언트 컴포넌트 화이트리스트 */
+/**
+ * Next 파일 규약상 반드시 클라이언트여야 하는 파일. A11 은 프로젝트가 스스로
+ * 고른 클라이언트 경계를 감시하는 규칙이므로 프레임워크 강제 항목은 제외한다.
+ */
+const FRAMEWORK_CLIENT_FILES = ["error.tsx", "global-error.tsx"];
+
+/**
+ * §6.4 클라이언트 컴포넌트 화이트리스트 (파일명 기준, kebab-case).
+ *
+ * header-nav-client 는 계획 원문에 없던 항목이다. `next/dynamic` 의
+ * `ssr: false` 가 클라이언트 컴포넌트 안에서만 동작하므로(§12.1 D-3),
+ * RSC 인 SiteHeader 대신 이 얇은 래퍼가 메가메뉴·드로어의 로딩 경계를 맡는다.
+ */
 const CLIENT_WHITELIST = [
-  "MegaMenu",
-  "MobileNavDrawer",
-  "SectionNav",
-  "OnThisPage",
-  "FAQAccordion",
-  "ContactForm",
-  "ApplyForm",
-  "GalleryLightbox",
-  "CourseFilterTabs",
+  "mega-menu",
+  "mobile-nav-drawer",
+  "header-nav-client",
+  "section-nav",
+  "on-this-page",
+  "faq-accordion",
+  "contact-form",
+  "apply-form",
+  "gallery-lightbox",
+  "course-filter-tabs",
 ];
 
 const allowlist = new Set(
@@ -163,7 +176,7 @@ for (const file of files) {
   if (VENDORED.some((v) => rel.startsWith(v))) continue;
   const src = readFileSync(file, "utf8");
 
-  if (hasUseClient(src)) {
+  if (hasUseClient(src) && !FRAMEWORK_CLIENT_FILES.includes(basename(file))) {
     clientFiles.push({ rel, name: basename(file, extname(file)) });
   }
 

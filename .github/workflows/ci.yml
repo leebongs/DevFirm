@@ -35,5 +35,11 @@ jobs:
       - name: Content rules (A10 · A11)
         run: pnpm check:content
 
+      - name: Information architecture (A14)
+        run: pnpm check:nav
+
+      - name: Color contrast (A6)
+        run: pnpm check:contrast
+
       - name: Build
         run: pnpm build

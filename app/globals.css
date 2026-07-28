@@ -6,48 +6,77 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+ * §4.2 정의 방식
+ *   - 런타임 오버라이드가 필요한 값(색상)은 :root 에 실제 값으로 둔다.
+ *   - @theme inline 은 값을 복제하지 않고 var() 로 참조만 한다.
+ *     Tailwind v4 의 @theme inline 은 CSS 변수를 출력하지 않고 값을 인라인
+ *     치환하므로, 여기에 색을 직접 쓰면 (1) .dark 오버라이드가 불가능해지고
+ *     (2) shadcn 의 CSS 변수 모드와 충돌한다.
+ *   - breakpoint·radius 처럼 런타임 오버라이드가 없는 정적 토큰만 실제 값 허용.
+ */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* breakpoint 7단계 (§4.5). 최소 지원 폭은 320px이며 접두사 없는 유틸리티가
+     곧 320px 레이아웃이다. xs 는 360px부터의 분기용. */
+  --breakpoint-xs: 22.5rem; /* 360px  모바일 소형 */
+  --breakpoint-sm: 30rem; /* 480px  모바일 대형 */
+  --breakpoint-md: 48rem; /* 768px  태블릿 세로 */
+  --breakpoint-lg: 64rem; /* 1024px 내비 전환점 */
+  --breakpoint-xl: 80rem; /* 1280px 데스크탑 — 우측 TOC 등장 */
+  --breakpoint-2xl: 96rem; /* 1536px 대형 데스크탑 */
+  --breakpoint-3xl: 120rem; /* 1920px 와이드 */
+
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
   --font-heading: var(--font-sans);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-highlight: var(--highlight);
+  --color-highlight-foreground: var(--highlight-foreground);
   --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
   --color-card: var(--card);
-  --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: calc(var(--radius) * 0.8);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  /* 헤더(64/72px) + 섹션 내비(48px) 합산 sticky 높이 상한 112px (§3.1) */
+  --spacing-header: 4rem; /* 64px */
+  --spacing-header-lg: 4.5rem; /* 72px */
+  --spacing-subnav: 3rem; /* 48px */
 }
 
 :root {
@@ -57,82 +86,163 @@
     "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
 
+  /* ── §4.2 컬러 토큰 ─────────────────────────────────────────────
+     "조용한 정밀함" — 짙은 네이비 면과 넓은 화이트 여백의 대비.
+     액센트는 CTA 한 색(Signal Blue)만, 형광 시안(highlight)은 AI 배지 등
+     사용 빈도 5% 이하로 제한한다. */
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: oklch(0.21 0.03 256);
+
+  /* Firm Navy — 헤더 다크 밴드, 푸터, 강조 면 */
+  --brand: oklch(0.3 0.07 258);
+  --brand-foreground: oklch(0.98 0.005 258);
+
+  /* Signal Blue — CTA 버튼, 링크, 액티브 */
+  --primary: oklch(0.55 0.17 254);
+  --primary-foreground: oklch(0.99 0 0);
+
+  /*
+   * Circuit Cyan.
+   * 계획 §4.2 는 이 색을 --accent 라 불렀지만, shadcn 의 --accent 는
+   * 드롭다운·메뉴 항목의 은은한 hover 배경이라는 다른 계약을 가진다.
+   * 그 이름을 형광 시안으로 덮으면 모든 hover 상태가 시안으로 물든다.
+   * 따라서 강조색은 --highlight 로 분리하고 --accent 는 shadcn 의미를 지킨다.
+   */
+  --highlight: oklch(0.72 0.13 205);
+  --highlight-foreground: oklch(0.21 0.03 256);
+
+  --muted: oklch(0.97 0.005 258);
+  --muted-foreground: oklch(0.44 0.02 258);
+
+  /* shadcn 의미 유지: 메뉴/토글의 은은한 hover 면 */
+  --accent: oklch(0.96 0.008 258);
+  --accent-foreground: oklch(0.21 0.03 256);
+
+  --secondary: oklch(0.97 0.005 258);
+  --secondary-foreground: oklch(0.21 0.03 256);
+
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(0.21 0.03 256);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --popover-foreground: oklch(0.21 0.03 256);
+
+  --destructive: oklch(0.51 0.2 27);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  /* 카드·구분선. 장식 요소라 WCAG 1.4.11(3:1)의 대상이 아니다 — 대비를 올리면
+     "조용한 정밀함"이 깨지므로 존재감만 확보하는 선에서 멈춘다. */
+  --border: oklch(0.89 0.008 258);
+  /* 인풋 테두리는 컨트롤의 경계를 알리는 유일한 수단이므로 3:1 이상이어야 한다. */
+  --input: oklch(0.62 0.02 258);
+  --ring: var(--primary);
+
+  --radius: 0.625rem; /* 10px */
+
+  --sidebar: oklch(0.98 0.004 258);
+  --sidebar-foreground: oklch(0.21 0.03 256);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.96 0.008 258);
+  --sidebar-accent-foreground: oklch(0.21 0.03 256);
+  --sidebar-border: oklch(0.91 0.008 258);
+  --sidebar-ring: var(--primary);
+
+  --chart-1: oklch(0.55 0.17 254);
+  --chart-2: oklch(0.72 0.13 205);
+  --chart-3: oklch(0.3 0.07 258);
+  --chart-4: oklch(0.62 0.09 240);
+  --chart-5: oklch(0.44 0.02 258);
 }
 
+/*
+ * 다크모드는 Phase 6 범위다(O-3: 미지원). 토글을 배포하지 않으므로 아래 블록은
+ * 현재 비활성이며, A6 색 대비 검증도 라이트 팔레트에만 적용된다.
+ * Phase 6 에서 이 값들을 검증한 뒤 토글을 붙인다.
+ */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: oklch(0.19 0.02 258);
+  --foreground: oklch(0.97 0.005 258);
+  --brand: oklch(0.26 0.06 258);
+  --brand-foreground: oklch(0.98 0.005 258);
+  --primary: oklch(0.68 0.15 254);
+  --primary-foreground: oklch(0.17 0.02 258);
+  --highlight: oklch(0.75 0.12 205);
+  --highlight-foreground: oklch(0.17 0.02 258);
+  --muted: oklch(0.25 0.02 258);
+  --muted-foreground: oklch(0.72 0.02 258);
+  --accent: oklch(0.27 0.02 258);
+  --accent-foreground: oklch(0.97 0.005 258);
+  --secondary: oklch(0.25 0.02 258);
+  --secondary-foreground: oklch(0.97 0.005 258);
+  --card: oklch(0.22 0.02 258);
+  --card-foreground: oklch(0.97 0.005 258);
+  --popover: oklch(0.22 0.02 258);
+  --popover-foreground: oklch(0.97 0.005 258);
+  --destructive: oklch(0.65 0.19 25);
+  --destructive-foreground: oklch(0.17 0.02 258);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 18%);
+  --ring: var(--primary);
+  --sidebar: oklch(0.22 0.02 258);
+  --sidebar-foreground: oklch(0.97 0.005 258);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: oklch(0.17 0.02 258);
+  --sidebar-accent: oklch(0.27 0.02 258);
+  --sidebar-accent-foreground: oklch(0.97 0.005 258);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: var(--primary);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+
   html {
     @apply font-sans;
+    /* 스크롤 앵커 이동 시 sticky 헤더+서브내비 뒤로 제목이 숨지 않게 여백 확보 */
+    scroll-padding-top: calc(var(--spacing-header) + var(--spacing-subnav));
+  }
+
+  @media (width >= 64rem) {
+    html {
+      scroll-padding-top: calc(
+        var(--spacing-header-lg) + var(--spacing-subnav)
+      );
+    }
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    /* §4.3 한국어 조판 규칙 (A13) */
+    word-break: keep-all; /* 단어 중간 줄바꿈 방지 */
+    overflow-wrap: anywhere; /* 긴 URL 이 컨테이너를 넘지 않게 */
+    line-height: 1.75; /* 영문 기본보다 높게 */
+    letter-spacing: -0.01em;
+    font-feature-settings: "ss01"; /* Pretendard 대체 자형(가독성) */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* 모션 민감 사용자 존중 (§1.1) */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
