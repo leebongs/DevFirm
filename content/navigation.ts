@@ -148,6 +148,9 @@ export const footerNav: NavNode[] = [
     label: "AI 솔루션",
     href: "/solutions",
     children: [
+      // 허브 자신도 반드시 넣는다. 메가메뉴가 ssr:false 라(§6.4.1) 초기 HTML의
+      // 링크는 푸터에만 있고, 여기 빠지면 크롤러가 허브에 도달할 경로가 없다.
+      { label: "AI 솔루션 전체", href: "/solutions" },
       { label: "최과장AI", href: "/solutions/office-ai" },
       { label: "피지컬AI", href: "/solutions/physical-ai" },
       { label: "건설공사 AI", href: "/solutions/agents/construction" },
@@ -162,10 +165,12 @@ export const footerNav: NavNode[] = [
     label: "서비스 · 교육",
     href: "/services",
     children: [
+      { label: "개발 서비스 전체", href: "/services" },
       { label: "종합 소프트웨어 개발", href: "/services/software" },
       { label: "개발 인재파견", href: "/services/staffing" },
       { label: "PBL 아카데미", href: "/academy" },
       { label: "과정 안내", href: "/academy/courses" },
+      { label: "수강 신청", href: "/academy/apply" },
       { label: "공유오피스", href: "/workspace" },
     ],
   },

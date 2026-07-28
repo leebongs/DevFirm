@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useEffect, useState } from "react";
+import { useActionState, useState, useSyncExternalStore } from "react";
 import { submitApplication } from "@/app/actions/submit-application";
 import { Field, inputClass } from "./field";
 import { useFormToken } from "@/lib/use-form-token";
@@ -20,16 +20,27 @@ export function ApplyForm() {
   const t = forms.apply;
   const errors = state.status === "error" ? (state.fieldErrors ?? {}) : {};
 
-  // 과정 상세에서 `?course=` 를 달고 들어오면 해당 과정을 미리 골라준다.
-  // useSearchParams 대신 마운트 후 URL 을 읽는다 — 이 페이지를 SSG 로 두면서
-  // Suspense 경계를 추가하지 않기 위해서다(P5 정적 우선).
-  const [course, setCourse] = useState("");
-  useEffect(() => {
-    const requested = new URLSearchParams(window.location.search).get("course");
-    if (requested && courses.some((item) => item.slug === requested)) {
-      setCourse(requested);
-    }
-  }, []);
+  /*
+   * 과정 상세에서 `?course=` 를 달고 들어오면 해당 과정을 미리 골라준다.
+   *
+   * useSearchParams 를 쓰지 않는 이유: 정적 렌더 페이지에서 쓰면 Suspense
+   * 경계가 필요해진다(P5 정적 우선).
+   * effect 안에서 setState 하지 않는 이유: 연쇄 렌더를 만들고, 하이드레이션
+   * 직후 값이 한 번 튄다. 외부(브라우저) 상태를 읽는 정석대로
+   * useSyncExternalStore 로 서버 스냅샷("")과 클라이언트 스냅샷을 분리한다.
+   */
+  const requested = useSyncExternalStore(
+    () => () => {},
+    () => new URLSearchParams(window.location.search).get("course") ?? "",
+    () => "",
+  );
+  const presetCourse = courses.some((item) => item.slug === requested)
+    ? requested
+    : "";
+
+  // 사용자가 직접 고르면 그 선택이 URL 값을 덮는다
+  const [picked, setPicked] = useState<string | null>(null);
+  const course = picked ?? presetCourse;
 
   if (state.status === "success") {
     return (
@@ -73,7 +84,7 @@ export function ApplyForm() {
             name="course"
             className={inputClass}
             value={course}
-            onChange={(event) => setCourse(event.target.value)}
+            onChange={(event) => setPicked(event.target.value)}
           >
             <option value="" disabled />
             {courses.map((course) => (

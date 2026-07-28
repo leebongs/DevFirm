@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { OrganizationJsonLd } from "@/components/seo/json-ld";
 import { site } from "@/content/site";
 import "./globals.css";
 
@@ -22,7 +23,10 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className="h-full antialiased"
     >
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <OrganizationJsonLd />
+        {children}
+      </body>
     </html>
   );
 }

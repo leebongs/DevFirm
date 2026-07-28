@@ -128,6 +128,11 @@ const PAIRS = [
   ["--muted-foreground", "--background", 4.5, "보조 텍스트 / 배경"],
   ["--muted-foreground", "--muted", 4.5, "보조 텍스트 / 교대 배경"],
   ["--primary", "--background", 4.5, "링크·강조 텍스트 / 배경"],
+  // eyebrow(12px)와 링크는 교대 배경·카드 위에도 그대로 올라간다.
+  // 흰 배경만 검사했더니 axe 가 muted 배경에서 미달을 잡아냈다.
+  ["--primary", "--muted", 4.5, "링크·강조 텍스트 / 교대 배경"],
+  ["--primary", "--card", 4.5, "링크·강조 텍스트 / 카드"],
+  ["--primary", "--accent", 4.5, "링크·강조 텍스트 / hover 면"],
   ["--primary-foreground", "--primary", 4.5, "CTA 버튼 라벨 / 버튼"],
   ["--brand-foreground", "--brand", 7, "브랜드 밴드 본문 / 네이비 면"],
   ["--highlight-foreground", "--highlight", 4.5, "배지 라벨 / Circuit Cyan"],

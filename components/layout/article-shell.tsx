@@ -1,6 +1,7 @@
 import { Container } from "./container";
 import { OnThisPage } from "./on-this-page";
 import { Breadcrumb } from "./breadcrumb";
+import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
 import { cn } from "@/lib/utils";
 
 /**
@@ -21,6 +22,7 @@ export function ArticleShell({
 }) {
   return (
     <Container className={cn("py-12 lg:py-16", className)}>
+      <BreadcrumbJsonLd href={href} />
       <Breadcrumb href={href} />
       <div className="mt-6 xl:grid xl:grid-cols-[minmax(0,1fr)_16rem] xl:gap-12">
         <div className="min-w-0">

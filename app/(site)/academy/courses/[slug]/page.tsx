@@ -13,6 +13,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { CourseJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import { courses, coursesPage } from "@/content/courses";
 import { SCHOOLS } from "@/content/academy";
@@ -59,6 +60,11 @@ export default async function CoursePage({
 
   return (
     <>
+      <CourseJsonLd
+        name={course.title}
+        description={course.summary}
+        path={`/academy/courses/${course.slug}`}
+      />
       <PageHero
         eyebrow={school?.name}
         title={course.title}
