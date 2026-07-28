@@ -40,10 +40,13 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# 에이전트 런타임 상태 — 계획 문서(.omc/plans)는 추적한다
-/.omc/state/
-/.omc/sessions/
-/.omc/logs/
+# 에이전트 런타임 상태 — 계획 문서(.omc/plans)는 추적한다.
+# 앵커 없는 패턴이라 하위 경로에 생긴 중첩 .omc 도 함께 걸러진다.
+.omc/state/
+.omc/sessions/
+.omc/logs/
+.omc/notepad.md
+.omc/project-memory.json
 
 # 테스트 산출물
 /test-results/
