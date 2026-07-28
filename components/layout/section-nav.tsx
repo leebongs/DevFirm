@@ -68,7 +68,9 @@ export function SectionNav() {
         className="mx-auto w-full max-w-[1440px] px-5 md:px-8 xl:px-12"
       >
         {/* 항목이 많은 섹션(AI 솔루션 8개)은 좁은 화면에서 가로 스크롤된다 */}
-        <ul className="flex h-12 scrollbar-none items-stretch gap-1 overflow-x-auto">
+        {/* 모바일에서는 h-11(44px). 헤더 64px + 각 1px 테두리를 더해도
+            합산 sticky 높이가 110px 로 112px 상한 안에 들어온다. */}
+        <ul className="flex h-11 scrollbar-none items-stretch gap-1 overflow-x-auto lg:h-12">
           {items.map((item) => {
             const active = pathname === item.href;
             return (
@@ -77,7 +79,7 @@ export function SectionNav() {
                   href={item.href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "focus-visible:ring-ring flex h-12 items-center border-b-2 px-3 text-sm whitespace-nowrap focus-visible:ring-2 focus-visible:outline-none focus-visible:ring-inset",
+                    "focus-visible:ring-ring flex h-11 items-center border-b-2 px-3 text-sm whitespace-nowrap focus-visible:ring-2 focus-visible:outline-none focus-visible:ring-inset lg:h-12",
                     active
                       ? "border-primary text-primary font-semibold"
                       : "text-muted-foreground hover:text-foreground border-transparent",
