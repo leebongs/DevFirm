@@ -1,66 +1,78 @@
 # Working Memory
+
 Updated: 2026-07-28
 
 ## Summary
 
-**DevFirm 홈페이지 리뉴얼** (기존 https://www.cmnyx.com 리뉴얼, (주)씨엠닉스/CMNYX).
-스택: Next.js App Router + TS + Tailwind v4 + shadcn/ui, Vercel 배포.
+**DevFirm 홈페이지** (기존 cmnyx.com 리뉴얼, (주)씨엠닉스).
+Next.js 16.2.12 + React 19.2.4 + Tailwind v4 + shadcn/ui, 전면 SSG.
 
-**현재 상태: 계획 확정 완료, 코드 0줄. Phase 0 착수 대기.**
+**상태: Phase 0~5 구현 완료.** 계획서(`.omc/plans/devfirm-renewal-plan.md`) 전 범위 구현.
+전 페이지 정적 생성, E2E 239개 통과(0 실패), 정적 검사 전부 통과.
 
-## Detail
+## 구현 결과
 
-### 계획 문서
-- `.omc/plans/devfirm-renewal-plan.md` (975줄) — 13개 섹션 상세 구현 계획, ADR-001~003 포함
-- `.omc/plans/open-questions.md` (55줄) — Open Question 결정 기록
+### 페이지 (19 라우트 + 동적 13)
+`/` · `/about` `/about/cic` `/about/careers`(+3 공고) · `/solutions` `/solutions/office-ai`
+`/solutions/physical-ai` `/solutions/agents/[industry]`(6) · `/services` `/services/software`
+`/services/staffing` · `/academy` `/academy/courses`(+4 과정) `/academy/apply` ·
+`/workspace` · `/contact` · `/privacy` `/terms` · `/styleguide`(noindex)
 
-### 이번 세션 작업 (2026-07-28)
-1. 플랜 파일 탐색 및 전문 정독
-2. **Open Questions 8건 전건 결정** — 사용자 답변으로 확정, 두 문서에 반영 완료
+`/api/form-token` 만 동적. 나머지 전부 정적.
 
-### 확정 결정 (O-1 ~ O-8)
+### 통과한 검증 게이트
+| 기준 | 결과 |
+| --- | --- |
+| A1 반응형 | 19경로 × 6뷰포트 가로 스크롤 0 |
+| A3 링크 | 내부 404 = 0, 외부 링크 rel 정상 |
+| A4 리다이렉트 | 레거시 11경로 308 단일 홉 |
+| A5 접근성 | axe 390·1440 전 페이지 critical/serious 0 |
+| A6 색 대비 | 18개 조합 전수 통과 |
+| A8 번들 | 23경로 초기 JS ≤ 130KB |
+| A9 SEO | 고유 title/description/canonical |
+| A12 폼 | 3경로 + 동의 필수 + 3초 미만 거부 |
+| A14 정보 위계 | 최상위 5/6, depth 3/3 |
 
-| ID | 결정 | 기본값 대비 |
-|---|---|---|
-| O-1 | Resend + `mailto:` 폴백 (`lib/mail.ts` 어댑터) | 동일 |
-| O-2 | 기존 이미지 재사용 + 저채도 오버레이 | 동일 |
-| O-3 | 다크모드 미지원 → Phase 6 연기 | 동일 |
-| O-4 | 지도 정적 이미지 + 카카오맵 외부링크 | 동일 |
-| O-5 | 개발자 배포, CMS 미도입 (ADR-003 확정) | 동일 |
-| **O-6** | **`devfirm.*` 신규 도메인 + cmnyx.com 전체 301** | **변경됨** |
-| O-7 | 기존 문구 초안 → 오픈 전 검수 | 동일 |
-| O-8 | 검색콘솔만 Phase 5, GA4는 Phase 6 | GA4도 연기 |
+**A7 Lighthouse**: `lighthouserc.json` 구성 완료. CI 잡 존재. 로컬 실측은 미완.
 
-### O-6 파급 (계획 반영 완료)
-- Phase 5 작업 6번에 도메인 이전 a~f 세분 추가
-- A4 acceptance criteria → 크로스 도메인 301로 확장
-- §10.1 신설, §12 리스크 2행 추가, §13 요약 갱신
-- **주의: O-6가 O-1을 역방향 의존시킨다** — Resend SPF/DKIM을 신규 도메인에 걸어야 하므로 도메인 확보가 폼 실동작의 선행조건. Phase 4 시점에 도메인이 없으면 `mailto:` 폴백으로 진행.
+## 미완 · 후속 (전부 외부 요인)
 
-### 남은 실무 확인 (결정 아님, 사실 확인)
-- [ ] `devfirm.*` TLD 확보 가능 여부 (`.com` 선점 가능성 높음 → `.co.kr`/`.kr`/`.dev` 대안). `content/site.ts` 의 `siteUrl` 단일 상수로 교체 지점 격리
-- [ ] Resend API 키 + 문의 수신 담당자 메일 주소
-- [ ] cmnyx.com DNS 관리 주체(등록기관·계정 접근 권한)
-- [ ] 저해상도로 재사용 불가한 기존 이미지 목록 (Phase 2 착수 시 판별)
+1. **도메인 확보** (O-6) — `devfirm.*` TLD 미정. `NEXT_PUBLIC_SITE_URL` + `LEGACY_HOST`
+   두 환경변수만 설정하면 크로스 도메인 308이 켜진다. 코드 변경 불필요.
+2. **Resend 키 · SPF/DKIM** (O-1) — 신규 도메인 확보가 선행. 미설정 시 폼은
+   오류를 반환하고 `/contact` 의 `mailto:` 가 폴백.
+3. **`FORM_TOKEN_SECRET`** — 프로덕션 필수. 없으면 모든 폼 제출이 거부된다(의도된 fail-closed).
+4. **GitHub 리포 · Vercel 연결** — 인증 필요. 로컬 git 저장소는 준비됨(커밋 6개).
+   Vercel CLI 미설치(`npm i -g vercel`).
+5. **콘텐츠 검수** (O-7) — 전 페이지 문구가 초안. 채용공고·과정 데이터 실물 교체 필요.
+6. **이미지 자산** (O-2) — 공유오피스 갤러리는 타이포 카드로 대체해 둠. 실사진 확보 후 교체.
 
-### 환경 갭
-- **Vercel CLI 미설치** — Phase 0 항목 7(Vercel 프로젝트 연결)에 필요. `npm i -g vercel`
-- 작업 디렉토리가 git 저장소 아님 — Phase 0에서 `git init` + GitHub 리포 생성 필요
+## 계획서와 달랐던 점 (§12.1 D-1~D-9 에 기록)
 
-### 다음 액션
-**Phase 0 — 부트스트랩 & 기반 (0.5~1일).** 블로커 없음.
-1. `npx create-next-app@latest .` (TS, App Router, Tailwind, ESLint, `@/*` alias, Turbopack)
-2. `npx shadcn@latest init` (New York, CSS variables, neutral)
-3. Prettier + `prettier-plugin-tailwindcss`, tsconfig strict 강화
-4. Pretendard Variable self-host + `next/font/local`
-5. `content/_types.ts`(NavNode) + `site.ts` + `navigation.ts` 스켈레톤
-6. `scripts/i18n-allowlist.json` + A10/A11 grep 스크립트
-7. git init + GitHub 리포 + Vercel 연결
-8. `.github/workflows/ci.yml`
+Next 16 실물 대조로 9건. 핵심 3개:
+- `next build` 가 First Load JS 를 더 이상 출력하지 않음 → A8 을 실제 네트워크 측정으로 대체
+- `redirects({permanent:true})` 는 **308** (301 아님)
+- `next/dynamic {ssr:false}` 는 RSC 에서 무효 → `header-nav-client` 래퍼 추가
 
-### 핵심 규율 (구현 시 위반 금지)
-- 색상 토큰은 `:root` 에 실값, `@theme inline` 은 `var()` 참조만 (§4.2 — v4 inline은 값 치환이라 런타임 오버라이드 불가)
-- `content/navigation.ts` 가 IA 단일 진실원천 — 소비처 7곳 외 경로 하드코딩 금지
-- `"use client"` 는 §6.4 화이트리스트 9개만
-- `components/ui/` (shadcn 생성물) 직접 수정 금지, 확장은 래퍼로
-- `content/` 외부 JSX에 한국어 문장 리터럴 금지 (A10 grep 검증)
+추가로 구현 중 확정한 것:
+- 계획의 `--accent`(Circuit Cyan)가 shadcn `--accent`(hover 면)와 충돌 → `--highlight` 로 분리
+- `--primary` L 0.55 → 0.49 (muted 배경 위 대비 미달, axe 가 검출)
+- shadcn v4 에 `form` 없음 → `field` + 서버 액션 + 서버 zod (react-hook-form 미사용)
+- 폼 토큰을 SSG 페이지에 심을 수 없어 `/api/form-token` 으로 분리
+
+## 지켜야 하는 규율
+
+- 색상은 `:root` 실값, `@theme inline` 은 `var()` 참조만
+- `content/navigation.ts` 가 IA 단일 진실원천 (소비처 7곳 + 테스트 + sitemap)
+- **푸터에 모든 경로가 있어야 한다** — 메가메뉴가 `ssr:false` 라 유일한 크롤 경로
+- `"use client"` 는 9개 화이트리스트만 (`scripts/check-content-rules.mjs`)
+- 한국어 문장은 `content/*.ts` 에만 (`scripts/i18n-allowlist.json` 은 비어 있어야 함)
+- 색 토큰을 바꾸면 `pnpm check:contrast` 를 반드시 다시 돌린다
+
+## 명령어
+
+```bash
+pnpm verify      # 정적 검사 전부
+pnpm build && pnpm test:e2e   # E2E 239개
+pnpm test:lh     # Lighthouse
+```

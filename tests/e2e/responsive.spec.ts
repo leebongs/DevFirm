@@ -30,6 +30,40 @@ for (const route of ROUTES) {
   });
 }
 
+/**
+ * A13 한국어 조판 — 단어 중간 줄바꿈 0, 긴 URL 은 컨테이너를 넘지 않는다.
+ *
+ * /styleguide 에 세 종류 픽스처(장문 한국어·긴 URL·한영 혼용)를 두었다.
+ * 320px 에서 검사하는 이유는 여기서 깨지지 않으면 위 폭에서도 안전하기 때문이다.
+ */
+test("한국어 조판 규칙이 적용된다", async ({ page }) => {
+  await page.goto("/styleguide");
+  await page.evaluate(() => document.fonts.ready);
+
+  const bodyStyle = await page.evaluate(() => {
+    const style = getComputedStyle(document.body);
+    return {
+      wordBreak: style.wordBreak,
+      overflowWrap: style.overflowWrap,
+      lineHeight: parseFloat(style.lineHeight) / parseFloat(style.fontSize),
+    };
+  });
+
+  expect(bodyStyle.wordBreak, "word-break").toBe("keep-all");
+  expect(bodyStyle.overflowWrap, "overflow-wrap").toBe("anywhere");
+  expect(bodyStyle.lineHeight, "본문 행간").toBeGreaterThanOrEqual(1.7);
+
+  // 긴 URL 픽스처가 자기 컨테이너를 넘지 않아야 한다
+  const overflowing = await page.evaluate(() => {
+    const nodes = Array.from(document.querySelectorAll("main p"));
+    return nodes
+      .filter((node) => node.scrollWidth > node.clientWidth + 1)
+      .map((node) => (node.textContent ?? "").slice(0, 40));
+  });
+
+  expect(overflowing, "컨테이너를 넘는 문단").toEqual([]);
+});
+
 test("sticky 헤더와 섹션 내비 합산 높이가 112px 이하", async ({
   page,
   viewport,
