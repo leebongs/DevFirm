@@ -1,0 +1,4 @@
+{
+  "_comment": "A10 예외 목록 — 버튼 라벨·aria 값·alt·placeholder·폼 검증 메시지처럼 content/*.ts 로 옮기는 것이 부자연스러운 UI 문자열만 등록한다. 항목 추가 시 PR에서 사유를 명시한다(§9.1 A10).",
+  "allowed": []
+}

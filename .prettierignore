@@ -1,0 +1,7 @@
+.next
+node_modules
+pnpm-lock.yaml
+public/fonts
+app/fonts.css
+.omc
+.claude
