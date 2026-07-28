@@ -1,3 +1,5 @@
+import { illustrations } from "./illustrations";
+
 /** PBL 아카데미 허브(§5.12). */
 export const academy = {
   hero: {
@@ -62,15 +64,18 @@ export const SCHOOLS = [
     key: "solution",
     name: "솔루션 개발스쿨",
     desc: "서비스를 처음부터 끝까지 만들어 봅니다.",
+    art: illustrations.schoolSolution,
   },
   {
     key: "office",
     name: "공통사무 업무스쿨",
     desc: "사무 업무를 도구로 자동화하는 법을 익힙니다.",
+    art: illustrations.schoolOffice,
   },
   {
     key: "project",
     name: "프로젝트 업무스쿨",
     desc: "기획과 일정 관리를 포함한 프로젝트 진행을 배웁니다.",
+    art: illustrations.schoolProject,
   },
 ] as const;

@@ -3,7 +3,9 @@ import { ExternalLink } from "lucide-react";
 import { PageHero } from "@/components/typography/page-hero";
 import { Container } from "@/components/layout/container";
 import { ContactForm } from "@/components/forms/contact-form";
+import { Illustration } from "@/components/content/illustration";
 import { buildMetadata } from "@/lib/metadata";
+import { illustrations } from "@/content/illustrations";
 import { forms } from "@/content/forms";
 import { workspace } from "@/content/workspace";
 import { site } from "@/content/site";
@@ -67,23 +69,32 @@ export default function ContactPage() {
               O-4 확정: 지도 임베드 없이 정적 안내 + 외부 링크.
               외부 지도 SDK 를 넣으면 스크립트 하나로 A7(Perf ≥ 95)이 흔들린다.
             */}
-            <div className="border-border rounded-lg border p-5">
-              <p className="text-xs font-semibold tracking-[0.08em] uppercase">
-                {workspace.location.eyebrow}
-              </p>
-              <p className="mt-3 text-sm break-keep">
-                {workspace.location.address}
-              </p>
-              <a
-                href={workspace.location.mapHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary mt-4 inline-flex items-center gap-1.5 text-sm font-medium"
-              >
-                {workspace.location.mapLinkLabel}
-                <ExternalLink className="size-3.5" aria-hidden />
-                <span className="sr-only">{ui.nav.externalLink}</span>
-              </a>
+            <div className="border-border overflow-hidden rounded-lg border">
+              <Illustration
+                src={illustrations.map.src}
+                width={illustrations.map.width}
+                height={illustrations.map.height}
+                alt={illustrations.map.alt}
+                className="bg-muted/40"
+              />
+              <div className="border-border border-t p-5">
+                <p className="text-xs font-semibold tracking-[0.08em] uppercase">
+                  {workspace.location.eyebrow}
+                </p>
+                <p className="mt-3 text-sm break-keep">
+                  {workspace.location.address}
+                </p>
+                <a
+                  href={workspace.location.mapHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary mt-4 inline-flex items-center gap-1.5 text-sm font-medium"
+                >
+                  {workspace.location.mapLinkLabel}
+                  <ExternalLink className="size-3.5" aria-hidden />
+                  <span className="sr-only">{ui.nav.externalLink}</span>
+                </a>
+              </div>
             </div>
           </aside>
         </div>

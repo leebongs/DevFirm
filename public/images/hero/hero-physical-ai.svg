@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img">
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <g fill="none" stroke="#005ebd" stroke-width="1.5">
+      <path d="M152 212C184 202 204 202 228 212"/>
+      <path d="M334 212C360 203 384 203 414 212"/>
+    </g>
+
+    <g stroke="#0f1926" stroke-width="1.5">
+      <polygon points="58,226 126,194 184,220 116,254" fill="#f3f5f8"/>
+      <polygon points="58,226 116,254 116,294 58,266" fill="#162e50"/>
+      <polygon points="116,254 184,220 184,260 116,294" fill="#0f1926"/>
+      <path d="M74 242L104 256" stroke="#d7dbe0"/>
+      <path d="M132 246L166 230" stroke="#d7dbe0"/>
+
+      <path d="M154 196V156" stroke="#162e50" stroke-width="3"/>
+      <polygon points="138,146 172,156 184,178 150,168" fill="#ffffff"/>
+      <polygon points="172,156 188,150 200,172 184,178" fill="#d7dbe0"/>
+      <path d="M174 169L206 184" stroke="#005ebd" stroke-width="3"/>
+    </g>
+
+    <g stroke="#0f1926" stroke-width="1.5">
+      <path d="M224 176L283 150L342 176L283 204Z" fill="#162e50"/>
+      <path d="M224 176L283 204V270L224 242Z" fill="#162e50"/>
+      <path d="M283 204L342 176V242L283 270Z" fill="#0f1926"/>
+      <path d="M244 178L283 160L322 178L283 196Z" fill="#005ebd"/>
+      <path d="M236 220L282 200L330 220" fill="none" stroke="#00bbcb"/>
+    </g>
+
+    <g stroke="#0f1926" stroke-width="1.5">
+      <path d="M396 146L496 176L496 266L396 236Z" fill="#f3f5f8"/>
+      <path d="M396 146L423 134L523 164L496 176Z" fill="#ffffff"/>
+      <path d="M496 176L523 164L523 254L496 266Z" fill="#d7dbe0"/>
+
+      <path d="M374 168L474 198L474 292L374 262Z" fill="#ffffff"/>
+      <path d="M374 168L401 156L501 186L474 198Z" fill="#f3f5f8"/>
+      <path d="M474 198L501 186L501 280L474 292Z" fill="#d7dbe0"/>
+      <path d="M398 218L432 228" stroke="#d7dbe0" stroke-width="3"/>
+      <path d="M399 240L425 260L456 222" fill="none" stroke="#005ebd" stroke-width="3"/>
+      <path d="M398 272L448 287" stroke="#d7dbe0" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

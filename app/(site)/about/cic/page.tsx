@@ -5,7 +5,9 @@ import { SectionHeading } from "@/components/typography/section-heading";
 import { FeatureCard } from "@/components/content/feature-card";
 import { StepFlow } from "@/components/content/step-flow";
 import { CTASection } from "@/components/content/cta-section";
+import { Illustration } from "@/components/content/illustration";
 import { buildMetadata } from "@/lib/metadata";
+import { illustrations } from "@/content/illustrations";
 import { cic } from "@/content/cic";
 import { pageSeo } from "@/content/seo";
 
@@ -31,7 +33,14 @@ export default function CicPage() {
             title={cic.what.title}
             lead={cic.what.lead}
           />
-          <div className="mt-8 grid gap-5 sm:grid-cols-2">
+          <Illustration
+            src={illustrations.cic.src}
+            width={illustrations.cic.width}
+            height={illustrations.cic.height}
+            alt={illustrations.cic.alt}
+            className="border-border bg-muted/50 mt-8 rounded-lg border p-5 lg:p-8"
+          />
+          <div className="mt-6 grid gap-5 sm:grid-cols-2">
             {cic.what.items.map((item) => (
               <FeatureCard
                 key={item.title}

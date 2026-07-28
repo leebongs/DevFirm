@@ -1,5 +1,20 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
+import { ogImageAlt } from "@/content/seo";
+
+/**
+ * OG 카드 이미지.
+ *
+ * app/opengraph-image.png 은 파일 규약이라 원래 자동 배선되지만, 페이지마다
+ * openGraph 를 명시하면 그 자동 배선이 덮인다(빌드 산출물에서 og:image 누락으로
+ * 확인). 그래서 여기서 직접 지정한다. metadataBase 가 있으므로 절대 URL 로 나간다.
+ */
+const OG_IMAGE = {
+  url: "/opengraph-image.png",
+  width: 1200,
+  height: 630,
+  alt: ogImageAlt,
+} as const;
 
 /**
  * 페이지 메타데이터 생성기(§7).
@@ -30,11 +45,13 @@ export function buildMetadata({
       title,
       description,
       url,
+      images: [OG_IMAGE],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: [OG_IMAGE],
     },
   };
 }

@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/typography/section-heading";
 import { FeatureCard } from "@/components/content/feature-card";
 import { CTASection } from "@/components/content/cta-section";
 import { buildMetadata } from "@/lib/metadata";
+import { illustrations } from "@/content/illustrations";
 import { officeAi } from "@/content/solutions";
 import { pageSeo } from "@/content/seo";
 
@@ -20,6 +21,7 @@ export default function OfficeAiPage() {
         eyebrow={officeAi.hero.eyebrow}
         title={officeAi.hero.title}
         lead={officeAi.hero.lead}
+        art={illustrations.officeAi}
       />
 
       <ArticleShell href="/solutions/office-ai">

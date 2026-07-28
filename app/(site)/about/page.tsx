@@ -6,7 +6,9 @@ import { ComparisonTable } from "@/components/content/comparison-table";
 import { FeatureCard } from "@/components/content/feature-card";
 import { TimelineList } from "@/components/content/timeline-list";
 import { CTASection } from "@/components/content/cta-section";
+import { Illustration } from "@/components/content/illustration";
 import { buildMetadata } from "@/lib/metadata";
+import { illustrations } from "@/content/illustrations";
 import { about } from "@/content/about";
 import { pageSeo } from "@/content/seo";
 import { site } from "@/content/site";
@@ -34,8 +36,15 @@ export default function AboutPage() {
             title={about.metaphor.title}
             lead={about.metaphor.lead}
           />
+          <Illustration
+            src={illustrations.lawfirmModel.src}
+            width={illustrations.lawfirmModel.width}
+            height={illustrations.lawfirmModel.height}
+            alt={illustrations.lawfirmModel.alt}
+            className="border-border bg-muted/50 mt-8 rounded-lg border p-5 lg:p-8"
+          />
           <ComparisonTable
-            className="mt-8"
+            className="mt-6"
             leftLabel={about.metaphor.comparison.leftLabel}
             rightLabel={about.metaphor.comparison.rightLabel}
             rows={about.metaphor.comparison.rows}
@@ -49,7 +58,14 @@ export default function AboutPage() {
             title={about.backoffice.title}
             lead={about.backoffice.lead}
           />
-          <div className="mt-8 grid gap-5 sm:grid-cols-2">
+          <Illustration
+            src={illustrations.backoffice.src}
+            width={illustrations.backoffice.width}
+            height={illustrations.backoffice.height}
+            alt={illustrations.backoffice.alt}
+            className="border-border bg-muted/50 mt-8 rounded-lg border p-5 lg:p-8"
+          />
+          <div className="mt-6 grid gap-5 sm:grid-cols-2">
             {about.backoffice.items.map((item) => (
               <FeatureCard
                 key={item.title}

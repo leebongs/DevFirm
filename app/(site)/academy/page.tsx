@@ -7,6 +7,7 @@ import { FeatureCard } from "@/components/content/feature-card";
 import { StepFlow } from "@/components/content/step-flow";
 import { CTASection } from "@/components/content/cta-section";
 import { buildMetadata } from "@/lib/metadata";
+import { illustrations } from "@/content/illustrations";
 import { academy, SCHOOLS } from "@/content/academy";
 import { pageSeo } from "@/content/seo";
 import { ui } from "@/content/ui";
@@ -23,6 +24,7 @@ export default function AcademyPage() {
         eyebrow={academy.hero.eyebrow}
         title={academy.hero.title}
         lead={academy.hero.lead}
+        art={illustrations.academy}
       />
 
       <Section>
@@ -49,6 +51,7 @@ export default function AcademyPage() {
           {SCHOOLS.map((school) => (
             <FeatureCard
               key={school.key}
+              art={school.art}
               title={school.name}
               desc={school.desc}
               href="/academy/courses"

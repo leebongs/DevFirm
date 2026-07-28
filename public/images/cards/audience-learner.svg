@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img">
+  <path d="M58 158H182" stroke="#f3f5f8" stroke-width="1.5" stroke-linecap="round"/>
+  <polygon points="60,111 132,91 182,111 110,132" fill="#ffffff" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="60,111 110,132 110,144 60,123" fill="#162e50" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="110,132 182,111 182,123 110,144" fill="#f3f5f8" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="68,90 132,72 174,90 110,108" fill="#005ebd" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="68,90 110,108 110,120 68,102" fill="#162e50" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="110,108 174,90 174,102 110,120" fill="#ffffff" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="150,97 160,100 160,121 155,116 150,122" fill="#00bbcb"/>
+  <polygon points="86,75 132,63 168,78 122,91" fill="#f3f5f8" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="98,50 151,63 151,85 98,72" fill="#ffffff" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M105 67L144 76" stroke="#d7dbe0" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

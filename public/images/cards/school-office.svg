@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img">
+  <path d="M58 158H182" stroke="#f3f5f8" stroke-width="1.5" stroke-linecap="round"/>
+  <polygon points="58,60 176,80 176,132 58,112" fill="#ffffff" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="58,60 176,80 176,92 58,72" fill="#162e50" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="58,85 176,105 176,117 58,97" fill="#00bbcb"/>
+  <path d="M58 85L176 105M58 97L176 117M58 109L176 129" stroke="#d7dbe0" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M88 65V117M118 70V122M148 75V127" stroke="#d7dbe0" stroke-width="1.5" stroke-linecap="round"/>
+  <polygon points="91,78 111,81 111,91 91,88" fill="#005ebd"/>
+  <polygon points="121,83 141,86 141,96 121,93" fill="#d7dbe0"/>
+  <path d="M190 116L184 120L186 127L179 128L176 134L170 130L164 133L161 127L154 126L156 119L151 114L156 109L154 102L161 101L164 95L170 98L176 95L179 101L186 102L184 109Z" fill="#f3f5f8" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="170" cy="114" r="8" fill="#ffffff" stroke="#0f1926" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DevFirm">
+  <!--
+    DF 모노그램.
+
+    글자는 폰트가 아니라 path 로 그린다 — SVG 파비콘은 폰트를 로드하지 않으므로
+    text 요소를 쓰면 환경마다 다른 글꼴로 렌더되거나 아예 깨진다.
+
+    색은 사이트 토큰과 같은 값을 쓴다(oklch → sRGB 변환 결과).
+      #162e50 = --brand (Firm Navy)
+      #f6f9fc = --brand-foreground
+      #00bbcb = --highlight (Circuit Cyan)
+
+    D 와 F 는 같은 6px 스템 두께를 공유한다. 16px 로 축소돼도 두 글자의
+    실루엣과 하단 시안 바가 남아 형태가 유지된다.
+  -->
+  <rect width="64" height="64" rx="14" fill="#162e50" />
+  <g transform="translate(0.5 0)" fill="#f6f9fc" fill-rule="evenodd">
+    <path d="M12 16h11c7.5 0 11 6.3 11 14s-3.5 14-11 14H12V16Zm6 6v16h5c3.8 0 5-3.6 5-8s-1.2-8-5-8h-5Z" />
+    <path d="M37 16h14v6h-8v5h7v6h-7v11h-6V16Z" />
+  </g>
+  <rect x="12.5" y="47" width="39" height="3" rx="1.5" fill="#00bbcb" />
+</svg>

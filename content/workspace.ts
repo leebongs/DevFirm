@@ -1,4 +1,5 @@
 import { site } from "./site";
+import { illustrations } from "./illustrations";
 
 /** 개발자 공유오피스(§5.15). */
 export const workspace = {
@@ -23,14 +24,17 @@ export const workspace = {
       {
         title: "녹음 스튜디오",
         desc: "내레이션과 인터뷰 녹음이 가능한 방음 부스를 갖췄습니다.",
+        art: illustrations.workspaceStudio,
       },
       {
         title: "콘텐츠 제작 인프라",
         desc: "영상 편집과 렌더링을 위한 장비와 저장 공간을 제공합니다.",
+        art: illustrations.workspaceInfra,
       },
       {
         title: "업무 공간",
         desc: "고정석과 자유석, 소규모 회의실을 함께 씁니다.",
+        art: illustrations.workspaceDesk,
       },
     ],
   },

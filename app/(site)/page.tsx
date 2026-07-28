@@ -9,7 +9,9 @@ import { IndustryAgentCard } from "@/components/content/industry-agent-card";
 import { ComparisonTable } from "@/components/content/comparison-table";
 import { StatBlock } from "@/components/content/stat-block";
 import { CTASection } from "@/components/content/cta-section";
+import { Illustration } from "@/components/content/illustration";
 import { buildMetadata } from "@/lib/metadata";
+import { illustrations } from "@/content/illustrations";
 import { home } from "@/content/home";
 import { agents } from "@/content/agents";
 import { site } from "@/content/site";
@@ -24,31 +26,47 @@ export const metadata: Metadata = buildMetadata({
 export default function HomePage() {
   return (
     <>
-      {/* 1. Hero — LCP 대상은 이 제목 텍스트다(이미지 없음) */}
+      {/*
+        1. Hero
+        LCP 대상은 반드시 이 제목 텍스트여야 한다(§5.1, A7).
+        일러스트는 텍스트 오른쪽에 두고 lg 미만에서는 아예 렌더하지 않는다 —
+        모바일에서 이미지가 히어로 상단을 차지하면 LCP 요소가 이미지로 바뀐다.
+      */}
       <section className="border-border border-b py-20 lg:py-28">
-        <Container>
-          <p className="text-primary text-xs font-semibold tracking-[0.08em] uppercase">
-            {home.hero.eyebrow}
-          </p>
-          <h1 className="mt-4 max-w-[18ch] text-[2.25rem] leading-[1.25] font-bold tracking-[-0.02em] break-keep lg:text-[4rem] lg:leading-[1.1]">
-            {home.hero.title}
-          </h1>
-          <p className="text-muted-foreground mt-6 max-w-[60ch] text-base leading-[1.75] break-keep lg:text-[1.0625rem] lg:leading-[1.8]">
-            {home.hero.lead}
-          </p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Link
-              href={home.hero.primaryCta.href}
-              className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-ring inline-flex min-h-11 items-center justify-center rounded-md px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
-            >
-              {home.hero.primaryCta.label}
-            </Link>
-            <Link
-              href={home.hero.secondaryCta.href}
-              className="border-border hover:bg-muted focus-visible:ring-ring inline-flex min-h-11 items-center justify-center rounded-md border px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
-            >
-              {home.hero.secondaryCta.label}
-            </Link>
+        <Container className="lg:grid lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-12">
+          <div className="min-w-0">
+            <p className="text-primary text-xs font-semibold tracking-[0.08em] uppercase">
+              {home.hero.eyebrow}
+            </p>
+            <h1 className="mt-4 max-w-[18ch] text-[2.25rem] leading-[1.25] font-bold tracking-[-0.02em] break-keep lg:text-[4rem] lg:leading-[1.1]">
+              {home.hero.title}
+            </h1>
+            <p className="text-muted-foreground mt-6 max-w-[60ch] text-base leading-[1.75] break-keep lg:text-[1.0625rem] lg:leading-[1.8]">
+              {home.hero.lead}
+            </p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href={home.hero.primaryCta.href}
+                className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-ring inline-flex min-h-11 items-center justify-center rounded-md px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
+              >
+                {home.hero.primaryCta.label}
+              </Link>
+              <Link
+                href={home.hero.secondaryCta.href}
+                className="border-border hover:bg-muted focus-visible:ring-ring inline-flex min-h-11 items-center justify-center rounded-md border px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
+              >
+                {home.hero.secondaryCta.label}
+              </Link>
+            </div>
+          </div>
+
+          <div className="hidden w-[26rem] lg:block xl:w-[32rem]">
+            <Illustration
+              src={illustrations.home.src}
+              width={illustrations.home.width}
+              height={illustrations.home.height}
+              decorative
+            />
           </div>
         </Container>
       </section>
@@ -59,23 +77,40 @@ export default function HomePage() {
           {home.slogan.title}
         </h2>
         <div className="mt-10 grid gap-4 lg:grid-cols-2">
-          {[home.slogan.left, home.slogan.right].map((side) => (
+          {[
+            { ...home.slogan.left, art: illustrations.physicalAi },
+            { ...home.slogan.right, art: illustrations.officeAi },
+          ].map((side) => (
             <Link
               key={side.href}
               href={side.href}
-              className="bg-brand-foreground/5 hover:bg-brand-foreground/10 focus-visible:ring-brand-foreground group rounded-lg p-6 transition-colors focus-visible:ring-2 focus-visible:outline-none lg:p-8"
+              className="bg-brand-foreground/5 hover:bg-brand-foreground/10 focus-visible:ring-brand-foreground group overflow-hidden rounded-lg transition-colors focus-visible:ring-2 focus-visible:outline-none"
             >
-              <p className="text-brand-foreground/60 text-xs font-semibold tracking-[0.08em] uppercase">
-                {side.eyebrow}
-              </p>
-              <p className="mt-3 text-2xl font-bold">{side.name}</p>
-              <p className="text-brand-foreground/80 mt-3 text-sm leading-relaxed break-keep">
-                {side.desc}
-              </p>
-              <ArrowRight
-                className="mt-5 size-4 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none"
-                aria-hidden
-              />
+              {/*
+                일러스트가 네이비 밴드 위에 놓인다. 원본은 흰 배경 전제로 그려져
+                있으므로 밝은 판을 깔아 형태가 배경에 묻히지 않게 한다.
+              */}
+              <div className="bg-brand-foreground/90">
+                <Illustration
+                  src={side.art.src}
+                  width={side.art.width}
+                  height={side.art.height}
+                  decorative
+                />
+              </div>
+              <div className="p-6 lg:p-8">
+                <p className="text-brand-foreground/60 text-xs font-semibold tracking-[0.08em] uppercase">
+                  {side.eyebrow}
+                </p>
+                <p className="mt-3 text-2xl font-bold">{side.name}</p>
+                <p className="text-brand-foreground/80 mt-3 text-sm leading-relaxed break-keep">
+                  {side.desc}
+                </p>
+                <ArrowRight
+                  className="mt-5 size-4 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none"
+                  aria-hidden
+                />
+              </div>
             </Link>
           ))}
         </div>
@@ -92,6 +127,7 @@ export default function HomePage() {
             <FeatureCard
               key={card.href}
               icon={card.icon}
+              art={card.art}
               title={card.title}
               desc={card.desc}
               href={card.href}
@@ -124,8 +160,19 @@ export default function HomePage() {
           title={home.model.title}
           lead={home.model.lead}
         />
+        {/* 계획 §5.1 이 "로펌 비유 다이어그램"을 명시했다. 표가 세부를 말하고
+            다이어그램이 구조를 말한다 — 둘은 대체재가 아니다. */}
+        <div className="border-border bg-muted/50 mt-10 rounded-lg border p-6 lg:p-10">
+          <Illustration
+            src={illustrations.lawfirmModel.src}
+            width={illustrations.lawfirmModel.width}
+            height={illustrations.lawfirmModel.height}
+            alt={illustrations.lawfirmModel.alt}
+            className="mx-auto max-w-[52rem]"
+          />
+        </div>
         <ComparisonTable
-          className="mt-10"
+          className="mt-6"
           leftLabel={home.model.comparison.leftLabel}
           rightLabel={home.model.comparison.rightLabel}
           rows={home.model.comparison.rows}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!--
+    Open Graph 카드 원본(1200×630).
+    scripts/generate-icons.mjs 가 이 파일을 PNG 로 렌더해 app/opengraph-image.png 를 만든다.
+
+    텍스트는 <text> 가 아니라 렌더 스크립트가 주입하는 HTML 로 얹는다 —
+    SVG 안의 text 는 폰트 로딩 시점에 따라 위치가 흔들린다. 여기서는 배경과
+    DF 마크만 그린다.
+  -->
+  <rect width="1200" height="630" fill="#162e50" />
+
+  <!-- 격자: "정확한 정렬"이라는 브랜드 성격을 배경으로만 암시한다 -->
+  <g stroke="#f6f9fc" stroke-opacity="0.06" stroke-width="1">
+    <path d="M0 90.5H1200M0 180.5H1200M0 270.5H1200M0 360.5H1200M0 450.5H1200M0 540.5H1200" />
+    <path d="M90.5 0V630M180.5 0V630M270.5 0V630M360.5 0V630M450.5 0V630M540.5 0V630M630.5 0V630M720.5 0V630M810.5 0V630M900.5 0V630M990.5 0V630M1080.5 0V630" />
+  </g>
+
+  <!-- 우하단 시안 광원: 액센트를 5% 이하로 유지하면서 화면에 깊이를 준다 -->
+  <circle cx="1080" cy="560" r="260" fill="#00bbcb" fill-opacity="0.10" />
+
+  <!-- DF 마크 (app/icon.svg 와 동일한 형태를 2.25배로) -->
+  <g transform="translate(80 72) scale(2.25)">
+    <rect width="64" height="64" rx="14" fill="#f6f9fc" fill-opacity="0.07" />
+    <g transform="translate(0.5 0)" fill="#f6f9fc" fill-rule="evenodd">
+      <path d="M12 16h11c7.5 0 11 6.3 11 14s-3.5 14-11 14H12V16Zm6 6v16h5c3.8 0 5-3.6 5-8s-1.2-8-5-8h-5Z" />
+      <path d="M37 16h14v6h-8v5h7v6h-7v11h-6V16Z" />
+    </g>
+    <rect x="12.5" y="47" width="39" height="3" rx="1.5" fill="#00bbcb" />
+  </g>
+
+  <!-- 하단 기준선 -->
+  <rect x="80" y="534" width="120" height="4" rx="2" fill="#00bbcb" />
+</svg>

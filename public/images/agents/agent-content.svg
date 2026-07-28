@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img">
+  <g fill="none" stroke="#00bbcb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M390 48h38v30"/>
+    <path d="M428 116v30h-38"/>
+    <path d="M360 146h-38v-30"/>
+    <path d="M322 78V48h38"/>
+    <path d="M334 97h54"/>
+  </g>
+  <polygon points="84 248 240 170 396 248 240 326" fill="#f3f5f8" stroke="#d7dbe0" stroke-width="1.5" stroke-linejoin="round"/>
+  <g stroke="#0f1926" stroke-linejoin="round">
+    <polygon points="137 176 296 176 328 193 169 193" fill="#ffffff" stroke-width="1.5"/>
+    <rect x="171" y="109" width="118" height="72" rx="4" fill="#162e50" stroke-width="3"/>
+    <rect x="184" y="123" width="92" height="43" rx="3" fill="#ffffff" stroke-width="1.5"/>
+    <rect x="196" y="134" width="60" height="6" rx="2" fill="#005ebd" stroke-width="1.5"/>
+    <rect x="196" y="148" width="42" height="6" rx="2" fill="#d7dbe0" stroke-width="1.5"/>
+    <path d="M230 181v21" fill="none" stroke="#0f1926" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="204 202 258 202 271 209 217 209" fill="#162e50" stroke-width="1.5"/>
+  </g>
+  <g stroke="#0f1926" stroke-linejoin="round">
+    <polygon points="94 220 329 220 384 248 148 248" fill="#ffffff" stroke-width="3"/>
+    <polygon points="108 230 334 230 360 243 134 243" fill="#f3f5f8" stroke-width="1.5"/>
+    <rect x="125" y="232" width="54" height="8" rx="2" fill="#162e50" stroke-width="1.5"/>
+    <rect x="184" y="232" width="38" height="8" rx="2" fill="#005ebd" stroke-width="1.5"/>
+    <rect x="227" y="232" width="74" height="8" rx="2" fill="#162e50" stroke-width="1.5"/>
+    <rect x="306" y="232" width="30" height="8" rx="2" fill="#005ebd" stroke-width="1.5"/>
+    <rect x="146" y="219" width="45" height="7" rx="2" fill="#d7dbe0" stroke-width="1.5"/>
+    <rect x="197" y="219" width="68" height="7" rx="2" fill="#162e50" stroke-width="1.5"/>
+    <rect x="271" y="219" width="43" height="7" rx="2" fill="#d7dbe0" stroke-width="1.5"/>
+  </g>
+  <g stroke="#0f1926" stroke-linejoin="round">
+    <polygon points="307 154 366 169 348 206 289 191" fill="#162e50" stroke-width="1.5"/>
+    <path d="M316 162l39 10M309 177l39 10M302 191l39 10" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="314" y="164" width="6" height="5" rx="2" fill="#ffffff" stroke-width="1.5"/>
+    <rect x="346" y="172" width="6" height="5" rx="2" fill="#ffffff" stroke-width="1.5"/>
+    <rect x="307" y="178" width="6" height="5" rx="2" fill="#ffffff" stroke-width="1.5"/>
+    <rect x="339" y="186" width="6" height="5" rx="2" fill="#ffffff" stroke-width="1.5"/>
+  </g>
+  <g stroke="#0f1926" stroke-linejoin="round">
+    <polygon points="188 262 286 262 314 276 216 276" fill="#ffffff" stroke-width="1.5"/>
+    <rect x="208" y="263" width="56" height="6" rx="2" fill="#162e50" stroke-width="1.5"/>
+    <rect x="270" y="263" width="28" height="6" rx="2" fill="#d7dbe0" stroke-width="1.5"/>
+  </g>
+  <g>
+    <path d="M128 238c0-8 4-14 11-14s11 6 11 14v12h-22z" fill="#0f1926"/>
+    <circle cx="139" cy="218" r="5" fill="#0f1926"/>
+  </g>
+</svg>

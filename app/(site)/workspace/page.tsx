@@ -5,7 +5,9 @@ import { ArticleShell } from "@/components/layout/article-shell";
 import { SectionHeading } from "@/components/typography/section-heading";
 import { FeatureCard } from "@/components/content/feature-card";
 import { CTASection } from "@/components/content/cta-section";
+import { Illustration } from "@/components/content/illustration";
 import { buildMetadata } from "@/lib/metadata";
+import { illustrations } from "@/content/illustrations";
 import { workspace } from "@/content/workspace";
 import { pageSeo } from "@/content/seo";
 import { ui } from "@/content/ui";
@@ -41,14 +43,15 @@ export default function WorkspacePage() {
             title={workspace.facilities.title}
           />
           {/*
-            갤러리는 O-2 결정(기존 자산 재사용)에 따라 실제 사진을 확보한 뒤
-            채운다. 저해상도 사진을 미리 넣어 "세련됨" 목표를 깎느니
-            타이포 중심 카드로 두는 편이 낫다(§12 리스크 완화).
+            O-2 는 "기존 사진 재사용"이었지만 확보된 사진이 없었다. 저해상도
+            사진으로 채우느니 일러스트로 공간의 성격을 전달한다 — 실사진이
+            확보되면 같은 자리에 교체하면 된다(치수만 맞추면 CLS 영향 없음).
           */}
           <div className="mt-8 grid gap-5 sm:grid-cols-3">
             {workspace.facilities.items.map((item) => (
               <FeatureCard
                 key={item.title}
+                art={item.art}
                 title={item.title}
                 desc={item.desc}
               />
@@ -88,18 +91,27 @@ export default function WorkspacePage() {
             eyebrow={workspace.location.eyebrow}
             title={workspace.location.title}
           />
-          <div className="border-border mt-8 max-w-[68ch] rounded-lg border p-5">
-            <p className="text-sm break-keep">{workspace.location.address}</p>
-            <a
-              href={workspace.location.mapHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary mt-4 inline-flex items-center gap-1.5 text-sm font-medium"
-            >
-              {workspace.location.mapLinkLabel}
-              <ExternalLink className="size-3.5" aria-hidden />
-              <span className="sr-only">{ui.nav.externalLink}</span>
-            </a>
+          <div className="border-border mt-8 max-w-[68ch] overflow-hidden rounded-lg border">
+            <Illustration
+              src={illustrations.map.src}
+              width={illustrations.map.width}
+              height={illustrations.map.height}
+              alt={illustrations.map.alt}
+              className="bg-muted/40"
+            />
+            <div className="border-border border-t p-5">
+              <p className="text-sm break-keep">{workspace.location.address}</p>
+              <a
+                href={workspace.location.mapHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary mt-4 inline-flex items-center gap-1.5 text-sm font-medium"
+              >
+                {workspace.location.mapLinkLabel}
+                <ExternalLink className="size-3.5" aria-hidden />
+                <span className="sr-only">{ui.nav.externalLink}</span>
+              </a>
+            </div>
           </div>
         </section>
       </ArticleShell>

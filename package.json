@@ -14,6 +14,9 @@
     "check:content": "node scripts/check-content-rules.mjs",
     "check:contrast": "node scripts/check-contrast.mjs",
     "check:nav": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-nav.mjs",
+    "gen:icons": "node scripts/generate-icons.mjs",
+    "gen:png": "node scripts/generate-image-png.mjs",
+    "preview:art": "node scripts/preview-illustrations.mjs",
     "test:e2e": "playwright test",
     "test:lh": "lhci autorun",
     "verify": "pnpm lint && pnpm typecheck && pnpm format:check && pnpm check:content && pnpm check:nav && pnpm check:contrast"

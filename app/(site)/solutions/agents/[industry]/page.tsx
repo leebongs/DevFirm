@@ -10,6 +10,7 @@ import { IndustryAgentCard } from "@/components/content/industry-agent-card";
 import { CTASection } from "@/components/content/cta-section";
 import { buildMetadata } from "@/lib/metadata";
 import { agents } from "@/content/agents";
+import { agentIllustrations } from "@/content/illustrations";
 import { agentPage } from "@/content/solutions";
 
 type Params = { industry: string };
@@ -58,6 +59,7 @@ export default async function IndustryAgentPage({
         eyebrow={agent.name}
         title={agent.tagline}
         lead={agent.seo.description}
+        art={agentIllustrations[agent.slug]}
       />
 
       <ArticleShell href={`/solutions/agents/${agent.slug}`}>

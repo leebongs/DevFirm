@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img">
+  <style>
+    .b{stroke:#0f1926;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    .t{stroke:#0f1926;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+    .l{stroke:#d7dbe0;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+    .sb{stroke:#005ebd;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+    .no{fill:none}.mi{fill:#f3f5f8}.pa{fill:#ffffff}.na{fill:#162e50}.bl{fill:#005ebd}.cy{fill:#00bbcb}.ln{fill:#d7dbe0}.ik{fill:#0f1926}
+  </style>
+  <g>
+    <polygon class="pa b" points="92,132 320,18 320,172 92,286"/>
+    <polygon class="pa b" points="320,18 548,132 548,286 320,172"/>
+    <polygon class="mi b" points="92,286 320,172 548,286 320,400"/>
+    <path class="no l" d="M320 18v154M92 132l228 40 228-40"/>
+  </g>
+  <g>
+    <polygon class="mi t" points="364,188 450,145 535,188 450,231"/>
+    <polygon class="pa t" points="364,108 450,65 450,145 364,188"/>
+    <polygon class="pa t" points="450,65 535,108 535,188 450,145"/>
+    <path class="no l" d="M395 93v80M490 86v80M364 148l86-43 85 43"/>
+    <ellipse class="pa t" cx="450" cy="182" rx="34" ry="16"/>
+    <path class="no l" d="M450 198v24M425 222l50-25"/>
+    <polygon class="cy t" points="516,250 528,256 516,262 504,256"/>
+  </g>
+  <g>
+    <polygon class="pa b" points="118,289 228,234 303,272 193,327"/>
+    <polygon class="ln t" points="193,327 303,272 303,292 193,347"/>
+    <polygon class="mi t" points="118,289 193,327 193,347 118,309"/>
+    <rect class="ik b" x="164" y="222" width="86" height="45" rx="3"/>
+    <rect class="pa t" x="170" y="228" width="74" height="31" rx="3"/>
+    <rect class="bl" x="179" y="237" width="45" height="5" rx="2"/>
+    <rect class="ln" x="179" y="247" width="56" height="4" rx="2"/>
+    <path class="no b" d="M207 267v18"/>
+    <polygon class="ik t" points="190,285 224,285 230,291 184,291"/>
+    <rect class="bl" x="257" y="276" width="20" height="8" rx="2"/>
+    <circle class="ik" cx="239" cy="285" r="4"/>
+  </g>
+  <g>
+    <polygon class="pa b" points="288,283 391,232 462,268 359,319"/>
+    <polygon class="ln t" points="359,319 462,268 462,289 359,340"/>
+    <polygon class="mi t" points="288,283 359,319 359,340 288,304"/>
+    <rect class="ln" x="376" y="279" width="34" height="8" rx="2"/>
+    <path class="no l" d="M319 290l43-21"/>
+  </g>
+  <g>
+    <polygon class="pa b" points="338,335 455,276 530,314 413,373"/>
+    <polygon class="ln t" points="413,373 530,314 530,334 413,393"/>
+    <polygon class="mi t" points="338,335 413,373 413,393 338,355"/>
+    <rect class="ln" x="452" y="318" width="42" height="8" rx="2"/>
+    <path class="no l" d="M378 347l45-23"/>
+  </g>
+  <g>
+    <circle class="na t" cx="139" cy="258" r="12"/>
+    <path class="na t" d="M128 273l24-12 28 26-18 28-32-15z"/>
+    <path class="no b" d="M165 285l36 16M153 303l-30 23"/>
+    <circle class="na t" cx="344" cy="253" r="12"/>
+    <path class="na t" d="M332 268l25-12 28 23-18 30-33-15z"/>
+    <path class="no b" d="M370 280l35 17M351 300l-24 31"/>
+    <circle class="na t" cx="282" cy="328" r="12"/>
+    <path class="na t" d="M269 344l24-13 23 37-25 17-30-19z"/>
+    <path class="no b" d="M290 374l-22 28M304 369l31 18M271 354l-29 11"/>
+  </g>
+</svg>

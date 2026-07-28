@@ -1,4 +1,5 @@
 import { Building2, GraduationCap, Code2 } from "lucide-react";
+import { illustrations } from "./illustrations";
 
 /**
  * 홈 문구(§5.1).
@@ -39,6 +40,7 @@ export const home = {
     cards: [
       {
         icon: Building2,
+        art: illustrations.audienceClient,
         title: "기업 고객",
         desc: "AI 도입이나 개발 인력이 필요하신 경우",
         href: "/solutions",
@@ -46,6 +48,7 @@ export const home = {
       },
       {
         icon: GraduationCap,
+        art: illustrations.audienceLearner,
         title: "배우고 싶은 분",
         desc: "프로젝트로 실무를 익히고 싶은 경우",
         href: "/academy",
@@ -53,6 +56,7 @@ export const home = {
       },
       {
         icon: Code2,
+        art: illustrations.audienceDeveloper,
         title: "함께 일할 개발자",
         desc: "입사하거나 사내독립기업을 운영하고 싶은 경우",
         href: "/about/careers",

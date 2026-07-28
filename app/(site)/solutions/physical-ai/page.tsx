@@ -6,6 +6,7 @@ import { FeatureCard } from "@/components/content/feature-card";
 import { IndustryAgentCard } from "@/components/content/industry-agent-card";
 import { CTASection } from "@/components/content/cta-section";
 import { buildMetadata } from "@/lib/metadata";
+import { illustrations } from "@/content/illustrations";
 import { physicalAi } from "@/content/solutions";
 import { agents } from "@/content/agents";
 import { pageSeo } from "@/content/seo";
@@ -22,6 +23,7 @@ export default function PhysicalAiPage() {
         eyebrow={physicalAi.hero.eyebrow}
         title={physicalAi.hero.title}
         lead={physicalAi.hero.lead}
+        art={illustrations.physicalAi}
       />
 
       <ArticleShell href="/solutions/physical-ai">

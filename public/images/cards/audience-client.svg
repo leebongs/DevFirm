@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img">
+  <path d="M58 158H182" stroke="#f3f5f8" stroke-width="1.5" stroke-linecap="round"/>
+  <polygon points="76,66 110,46 166,62 132,82" fill="#f3f5f8" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="76,66 132,82 132,138 76,122" fill="#ffffff" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="132,82 166,62 166,118 132,138" fill="#162e50" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="87,79 104,84 104,91 87,86" fill="#d7dbe0"/>
+  <polygon points="112,86 125,90 125,97 112,93" fill="#d7dbe0"/>
+  <polygon points="87,96 104,101 104,108 87,103" fill="#d7dbe0"/>
+  <polygon points="112,103 125,107 125,114 112,110" fill="#d7dbe0"/>
+  <polygon points="141,86 156,77 156,85 141,94" fill="#005ebd"/>
+  <polygon points="141,101 156,92 156,100 141,109" fill="#005ebd"/>
+  <rect x="103" y="128" width="40" height="22" rx="3" fill="#162e50" stroke="#0f1926" stroke-width="3"/>
+  <path d="M114 128V122H132V128" fill="none" stroke="#0f1926" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="119" y="137" width="8" height="5" rx="2" fill="#00bbcb"/>
+</svg>
