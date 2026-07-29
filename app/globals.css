@@ -246,3 +246,159 @@
     }
   }
 }
+
+/*
+ * ── 글래스모피즘 ──────────────────────────────────────────────────
+ *
+ * 적용 범위는 홈 히어로와 전역 헤더로 한정한다. 본문 카드까지 유리로 만들면
+ * backdrop-filter 인스턴스가 늘어 저사양 기기에서 스크롤이 무거워지고,
+ * 무엇보다 본문 대비를 보장할 수 없다.
+ *
+ * A6 를 지키는 원칙: **어두운 배경 위 밝은 텍스트만 유리에 얹는다.**
+ * 밝은 배경 위 어두운 글자를 반투명 면에 올리면 뒤에 무엇이 지나가느냐에 따라
+ * 대비가 요동친다. 반대로 배경을 네이비 스크림으로 눌러 어둡게 고정하면
+ * 최악의 경우(스크림만 있는 상태)의 대비를 미리 계산할 수 있다.
+ * 그 계산은 scripts/check-contrast.mjs 의 glass 쌍이 담당한다.
+ */
+:root {
+  /*
+   * 유리는 **어두운 틴트**다. 흰 틴트가 아니다.
+   *
+   * rgba(255,255,255,.1) 은 글래스모피즘의 관용 표현이지만 사진 위에 얹으면
+   * 배경을 밝게 끌어올려 흰 글자와 경쟁한다. 실측으로 확인한 결과, 흰 유리로
+   * 7:1 을 맞추려면 스크림을 0.90 까지 올려야 했고 그러면 사진이 10%만 비쳐
+   * 배경을 깐 의미가 사라졌다.
+   *
+   * 어두운 네이비 틴트로 뒤집으면 유리면 스스로 어두움을 보장하므로 뒤에 어떤
+   * 사진이 와도 흰 글자의 대비가 계산 가능해지고, 스크림을 옅게 깔아 사진을
+   * 살릴 수 있다. blur 는 그대로라 배경의 색과 형태가 번지는 질감도 남는다.
+   */
+  /*
+   * 두 값의 이름은 "강함/약함"이 아니라 **텍스트를 얹는가**로 나눈다.
+   * 그것이 실제 제약이기 때문이다.
+   *
+   *   --glass-fill        글자가 올라가는 면. 0.82 에서 본문 10.1:1, 시안 4.6:1.
+   *                       대비를 지키는 유리는 결국 꽤 불투명해진다 — 투명도가
+   *                       아니라 blur·테두리·광원이 유리 질감을 만든다.
+   *   --glass-fill-subtle 장식 전용. 글자를 올리지 않으므로 더 투명해도 된다.
+   */
+  --glass-fill: oklch(0.19 0.03 258 / 0.82);
+  --glass-fill-subtle: oklch(0.19 0.03 258 / 0.55);
+  /* 밝은 테두리와 상단 광원이 유리의 두께를 만든다(그림자 대신) */
+  --glass-edge: oklch(1 0 0 / 0.16);
+  --glass-blur: 18px;
+
+  /*
+   * 스크림은 두 값이다. 헤드라인이 앉는 쪽은 짙게, 사진을 보여줄 쪽은 옅게
+   * 깔고 그 사이를 그라데이션으로 잇는다. 균일한 스크림 하나로는
+   * "글자가 읽힘"과 "사진이 보임"을 동시에 만족시킬 수 없다.
+   */
+  --scrim-text: oklch(0.17 0.03 258 / 0.88);
+  --scrim-photo: oklch(0.17 0.03 258 / 0.42);
+}
+
+@layer components {
+  .glass {
+    background-color: var(--glass-fill);
+    border: 1px solid var(--glass-edge);
+    backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(140%);
+  }
+
+  .glass-subtle {
+    background-color: var(--glass-fill-subtle);
+  }
+
+  /*
+   * 히어로 스크림.
+   *
+   * 가로 방향으로 --scrim-text → --scrim-photo 로 옅어진다. 왼쪽은 헤드라인이
+   * 앉으므로 짙게 눌러 대비를 보장하고, 오른쪽은 옅게 남겨 사진이 보이게 한다.
+   * 여기에 상단·하단 수직 그라데이션을 겹쳐 sticky 헤더 아래와 다음 섹션과의
+   * 이음매를 정리한다.
+   */
+  .hero-scrim {
+    background-image:
+      linear-gradient(
+        to right,
+        var(--scrim-text) 0%,
+        var(--scrim-text) 14%,
+        /* 램프를 넓게 잡는다. 좁으면 사진 안의 벽·기둥 모서리와 겹쳐
+           그라데이션이 아니라 이음매처럼 보인다. */
+          var(--scrim-photo) 78%,
+        var(--scrim-photo) 100%
+      ),
+      linear-gradient(
+        to bottom,
+        oklch(0.14 0.03 258 / 0.55) 0%,
+        transparent 22%,
+        transparent 72%,
+        oklch(0.14 0.03 258 / 0.65) 100%
+      );
+  }
+
+  /* 좁은 화면에서는 텍스트가 전폭을 쓰므로 가로 그라데이션 대신 균일하게 덮는다 */
+  @media (width < 64rem) {
+    .hero-scrim {
+      background-image:
+        linear-gradient(var(--scrim-text), var(--scrim-text)),
+        linear-gradient(
+          to bottom,
+          oklch(0.14 0.03 258 / 0.5) 0%,
+          transparent 30%
+        );
+    }
+  }
+
+  /* 상단 모서리를 따라 흐르는 얇은 광원. 유리의 두께감은 그림자가 아니라
+     이 하이라이트가 만든다(§4.1 의 그림자 최소 원칙을 지키면서). */
+  .glass-sheen {
+    position: relative;
+    isolation: isolate;
+  }
+  .glass-sheen::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding-top: 1px;
+    background: linear-gradient(
+      to bottom,
+      oklch(1 0 0 / 0.35),
+      oklch(1 0 0 / 0) 42%
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /*
+   * backdrop-filter 미지원 브라우저에서는 반투명 면만 남아 배경이 그대로
+   * 비쳐 글자가 읽히지 않는다. 불투명한 면으로 대체한다.
+   */
+  @supports not (backdrop-filter: blur(1px)) {
+    .glass,
+    .glass-subtle {
+      background-color: oklch(0.24 0.03 258 / 0.94);
+    }
+  }
+
+  /*
+   * 투명 효과를 줄이도록 설정한 사용자(멀미·주의력·저시력)에게는 유리를 걷고
+   * 불투명 면을 준다. prefers-reduced-motion 을 존중하는 것과 같은 이유다.
+   */
+  @media (prefers-reduced-transparency: reduce) {
+    .glass,
+    .glass-subtle {
+      background-color: oklch(0.24 0.03 258 / 0.97);
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+    .glass-sheen::before {
+      display: none;
+    }
+  }
+}

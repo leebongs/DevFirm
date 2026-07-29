@@ -14,26 +14,42 @@ import { join } from "node:path";
 
 const css = readFileSync(join(process.cwd(), "app/globals.css"), "utf8");
 
-/** :root { ... } 블록에서 --토큰: 값; 를 뽑는다 */
+/**
+ * 모든 :root { ... } 블록에서 --토큰: 값; 를 뽑는다.
+ *
+ * 블록이 여럿인 이유: 색 토큰과 글래스 토큰을 성격별로 나눠 선언했다.
+ * 첫 블록만 읽던 초기 버전은 글래스 토큰을 놓쳐 "토큰 없음"으로 죽었다 —
+ * 검사기가 검사 대상을 못 보는 상태였으므로 파서를 고치는 게 맞다.
+ */
 function parseRootTokens(source) {
-  const start = source.indexOf(":root {");
-  if (start === -1) throw new Error(":root 블록을 찾지 못했습니다");
-  let depth = 0;
-  let i = source.indexOf("{", start);
-  const from = i + 1;
-  for (; i < source.length; i++) {
-    if (source[i] === "{") depth++;
-    else if (source[i] === "}") {
-      depth--;
-      if (depth === 0) break;
-    }
-  }
-  const body = source.slice(from, i);
   const tokens = {};
-  for (const line of body.split("\n")) {
-    const m = line.match(/^\s*(--[\w-]+)\s*:\s*([^;]+);/);
-    if (m && m[1] && m[2]) tokens[m[1]] = m[2].trim();
+  let searchFrom = 0;
+  let found = false;
+
+  for (;;) {
+    const start = source.indexOf(":root {", searchFrom);
+    if (start === -1) break;
+    found = true;
+
+    let depth = 0;
+    let i = source.indexOf("{", start);
+    const from = i + 1;
+    for (; i < source.length; i++) {
+      if (source[i] === "{") depth++;
+      else if (source[i] === "}") {
+        depth--;
+        if (depth === 0) break;
+      }
+    }
+
+    for (const line of source.slice(from, i).split("\n")) {
+      const m = line.match(/^\s*(--[\w-]+)\s*:\s*([^;]+);/);
+      if (m && m[1] && m[2]) tokens[m[1]] = m[2].trim();
+    }
+    searchFrom = i + 1;
   }
+
+  if (!found) throw new Error(":root 블록을 찾지 못했습니다");
   return tokens;
 }
 
@@ -120,6 +136,31 @@ function contrast(fgToken, bgToken) {
   return (hi + 0.05) / (lo + 0.05);
 }
 
+/**
+ * 반투명 레이어를 순서대로 base 위에 쌓는다.
+ *
+ * 유리면은 단일 색이 아니라 [사진] → [스크림] → [유리 틴트] 가 겹친 결과다.
+ * 쌍 하나로는 계산할 수 없고, 실제로 눈에 보이는 면을 만들어야 한다.
+ */
+function stackOn(baseSrgb, layerTokens) {
+  return layerTokens.reduce((bg, name) => {
+    const layer = parseOklch(resolve(name));
+    if (!layer) throw new Error(`레이어 파싱 실패: ${name}`);
+    const f = oklchToSrgb(layer);
+    return f.map((v, i) => v * layer.alpha + (bg[i] ?? 0) * (1 - layer.alpha));
+  }, baseSrgb);
+}
+
+/** 임의의 sRGB 면 위에 놓인 토큰 색의 대비 */
+function contrastOnSurface(fgToken, surfaceSrgb) {
+  const fg = parseOklch(resolve(fgToken));
+  if (!fg) throw new Error(`oklch 파싱 실패: ${fgToken}`);
+  const l1 = luminance(oklchToSrgb(fg));
+  const l2 = luminance(surfaceSrgb);
+  const [hi, lo] = l1 > l2 ? [l1, l2] : [l2, l1];
+  return (hi + 0.05) / (lo + 0.05);
+}
+
 /** 실제 사용 조합. min 은 §4.2 기준. */
 const PAIRS = [
   ["--foreground", "--background", 7, "본문 / 페이지 배경"],
@@ -157,6 +198,50 @@ const INFORMATIONAL = [
   ["--border", "--background", "카드·구분선 / 배경 (장식 — 1.4.11 비대상)"],
 ];
 
+/**
+ * 유리면 위 텍스트 (글래스모피즘 게이트).
+ *
+ * 유리는 단일 색이 아니라 [배경 사진] → [스크림] → [유리 틴트] 가 겹친 결과다.
+ * 배경 사진은 통제할 수 없으므로 **최악의 경우 = 순백 픽셀**을 base 로 잡는다.
+ * 사진이 아무리 밝아도 스크림이 눌러주는 값보다 밝아질 수 없으니, 이 계산을
+ * 통과하면 어떤 사진을 깔아도 대비가 보장된다.
+ *
+ * 반대 방향(어두운 사진)은 면이 더 어두워질 뿐이라 흰 텍스트에 유리하다.
+ */
+const WORST_CASE_PHOTO = [1, 1, 1]; // 순백 픽셀
+
+const GLASS_PAIRS = [
+  // 유리 패널은 스크림 없이 사진 위에 직접 놓일 수도 있다. 그래서 스크림을
+  // 빼고 유리만으로 대비가 성립하는지 본다 — 성립하면 어디에 놓든 안전하다.
+  {
+    fg: "--brand-foreground",
+    layers: ["--glass-fill"],
+    min: 7,
+    label: "유리 위 본문 (스크림 없이, 최악: 순백 사진)",
+  },
+  // --glass-fill-subtle 은 장식 전용(텍스트 금지)이라 본문 기준을 적용하지
+  // 않는다. 대신 그 면 위에 실수로 글자를 올리면 이 값이 낮다는 사실이
+  // 아래 참고 출력에 남는다.
+  {
+    fg: "--brand-foreground",
+    layers: ["--scrim-text"],
+    min: 7,
+    label: "헤드라인 / 텍스트측 스크림 (유리 없는 구간)",
+  },
+  {
+    fg: "--highlight",
+    layers: ["--glass-fill"],
+    min: 4.5,
+    label: "유리 위 시안 강조 텍스트",
+  },
+  {
+    fg: "--glass-edge",
+    layers: ["--glass-fill"],
+    min: 1.2,
+    label: "유리 테두리 가시성 (장식 수준)",
+  },
+];
+
 let failed = 0;
 const rows = PAIRS.map(([fg, bg, min, label]) => {
   const ratio = contrast(fg, bg);
@@ -176,6 +261,21 @@ for (const r of rows) {
       "≥ " + r.min,
       6,
     )} ${r.label}\n      ${r.fg} / ${r.bg}`,
+  );
+}
+
+console.log("\n유리면 (배경 사진이 순백일 때의 최악 조건)");
+console.log("-".repeat(78));
+for (const g of GLASS_PAIRS) {
+  const surface = stackOn(WORST_CASE_PHOTO, g.layers);
+  const ratio = contrastOnSurface(g.fg, surface);
+  const ok = ratio >= g.min;
+  if (!ok) failed++;
+  console.log(
+    `${pad(ok ? "  ✔" : "  ✖", 5)} ${pad(ratio.toFixed(2) + ":1", 8)} ${pad(
+      "≥ " + g.min,
+      6,
+    )} ${g.label}\n      ${g.fg} / ${g.layers.join(" + ")}`,
   );
 }
 

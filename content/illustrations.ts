@@ -37,6 +37,38 @@ export const illustrations = {
     alt: "법인이라는 큰 틀 안에 독립된 사업 단위 세 곳이 각자 팀을 꾸리고, 아래로 공통 백오피스를 공유하는 구조도",
   },
 
+  // ── 개념 도형 ───────────────────────────────────────────────────
+  risk: {
+    src: "/images/concept/concept-risk.svg",
+    width: 860,
+    height: 420,
+    alt: "위: 발주처가 개인과 직접 계약하면 연결이 끊기기 쉬운 구조. 아래: 법인이 사이에 서서 위험을 흡수하고 여러 개발자에게 연결하는 구조",
+  },
+  growth: {
+    src: "/images/concept/concept-growth.svg",
+    width: 900,
+    height: 300,
+    alt: "합류한 개발자가 프로젝트를 맡고, 나아가 자기 팀을 가진 사내독립기업 대표가 되는 세 단계",
+  },
+  twoAxes: {
+    src: "/images/concept/concept-two-axes.svg",
+    width: 900,
+    height: 420,
+    alt: "산업현장과 사무현장에 같은 판독 기능이 적용되고, 두 축이 하나의 공통 기반 위에 놓인 구조",
+  },
+  agentPipeline: {
+    src: "/images/concept/concept-agent-pipeline.svg",
+    width: 980,
+    height: 320,
+    alt: "에이전트의 동작 순서: 입력 수집 → 판독 → 판단 → 업무 시스템으로 전달",
+  },
+  adoption: {
+    src: "/images/concept/concept-adoption.svg",
+    width: 980,
+    height: 260,
+    alt: "현황 진단부터 운영 전환까지 네 단계로 올라가는 도입 과정",
+  },
+
   // ── 공유오피스 시설 ──────────────────────────────────────────────
   workspaceStudio: {
     src: "/images/workspace/workspace-studio.svg",

@@ -7,11 +7,12 @@ import { SectionHeading } from "@/components/typography/section-heading";
 import { FeatureCard } from "@/components/content/feature-card";
 import { IndustryAgentCard } from "@/components/content/industry-agent-card";
 import { ComparisonTable } from "@/components/content/comparison-table";
-import { StatBlock } from "@/components/content/stat-block";
 import { CTASection } from "@/components/content/cta-section";
 import { Illustration } from "@/components/content/illustration";
+import { Photo } from "@/components/content/photo";
 import { buildMetadata } from "@/lib/metadata";
 import { illustrations } from "@/content/illustrations";
+import { photos } from "@/content/photos";
 import { home } from "@/content/home";
 import { agents } from "@/content/agents";
 import { site } from "@/content/site";
@@ -27,46 +28,70 @@ export default function HomePage() {
   return (
     <>
       {/*
-        1. Hero
-        LCP 대상은 반드시 이 제목 텍스트여야 한다(§5.1, A7).
-        일러스트는 텍스트 오른쪽에 두고 lg 미만에서는 아예 렌더하지 않는다 —
-        모바일에서 이미지가 히어로 상단을 차지하면 LCP 요소가 이미지로 바뀐다.
+        1. Hero — 배경 사진 + 그라데이션 스크림 + 유리 패널
+        LCP 는 이제 배경 사진이 가져갈 수 있으므로 priority 로 미리 가져오고
+        AVIF 30KB 로 줄여 두었다(scripts/optimize-photos.mjs).
+        헤드라인은 사진의 비어 있는 좌측 1/3 위에 앉는다.
       */}
-      <section className="border-border border-b py-20 lg:py-28">
-        <Container className="lg:grid lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center lg:gap-12">
+      {/*
+        음수 마진으로 히어로를 sticky 헤더 **아래까지** 끌어올린다.
+        그래야 헤더의 backdrop-blur 가 블러할 대상(사진)을 갖는다 —
+        그러지 않으면 헤더는 뒤에 아무것도 없어 그냥 흰 막대로 보인다.
+        같은 크기의 패딩으로 콘텐츠 위치는 그대로 유지한다.
+      */}
+      <section className="relative isolate -mt-16 overflow-hidden pt-16 lg:-mt-18 lg:pt-18">
+        <Photo
+          photo={photos.heroOffice}
+          priority
+          tone={false}
+          rounded={false}
+          sizes="100vw"
+          className="absolute inset-0 -z-20"
+          imgClassName="object-cover object-[70%_center]"
+        />
+        <div aria-hidden className="hero-scrim absolute inset-0 -z-10" />
+
+        <Container className="text-brand-foreground py-24 lg:grid lg:grid-cols-[minmax(0,34rem)_1fr] lg:gap-16 lg:py-32">
           <div className="min-w-0">
-            <p className="text-primary text-xs font-semibold tracking-[0.08em] uppercase">
+            <p className="text-highlight text-xs font-semibold tracking-[0.08em] uppercase">
               {home.hero.eyebrow}
             </p>
-            <h1 className="mt-4 max-w-[18ch] text-[2.25rem] leading-[1.25] font-bold tracking-[-0.02em] break-keep lg:text-[4rem] lg:leading-[1.1]">
+            <h1 className="mt-4 max-w-[18ch] text-[2.25rem] leading-[1.25] font-bold tracking-[-0.02em] break-keep lg:text-[3.75rem] lg:leading-[1.08]">
               {home.hero.title}
             </h1>
-            <p className="text-muted-foreground mt-6 max-w-[60ch] text-base leading-[1.75] break-keep lg:text-[1.0625rem] lg:leading-[1.8]">
+            <p className="text-brand-foreground/85 mt-6 max-w-[52ch] text-base leading-[1.75] break-keep lg:text-[1.0625rem] lg:leading-[1.8]">
               {home.hero.lead}
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href={home.hero.primaryCta.href}
-                className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-ring inline-flex min-h-11 items-center justify-center rounded-md px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-brand-foreground inline-flex min-h-11 items-center justify-center rounded-md px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
               >
                 {home.hero.primaryCta.label}
               </Link>
               <Link
                 href={home.hero.secondaryCta.href}
-                className="border-border hover:bg-muted focus-visible:ring-ring inline-flex min-h-11 items-center justify-center rounded-md border px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
+                className="glass glass-sheen focus-visible:ring-brand-foreground inline-flex min-h-11 items-center justify-center rounded-md px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
               >
                 {home.hero.secondaryCta.label}
               </Link>
             </div>
           </div>
 
-          <div className="hidden w-[26rem] lg:block xl:w-[32rem]">
-            <Illustration
-              src={illustrations.home.src}
-              width={illustrations.home.width}
-              height={illustrations.home.height}
-              decorative
-            />
+          {/* 유리 패널에 신뢰 지표를 올린다. 사진 위 정보 레이어가 곧 유리다 */}
+          <div className="mt-12 lg:mt-0 lg:self-end">
+            <dl className="glass glass-sheen grid grid-cols-3 gap-4 rounded-xl p-5 lg:p-6">
+              {home.trust.stats.map((stat) => (
+                <div key={stat.label} className="flex flex-col-reverse">
+                  <dt className="text-brand-foreground/70 mt-1 text-xs break-keep">
+                    {stat.label}
+                  </dt>
+                  <dd className="text-xl font-bold tracking-[-0.02em] lg:text-2xl">
+                    {stat.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </Container>
       </section>
@@ -212,14 +237,31 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 7. 신뢰 지표 */}
+      {/*
+        7. 회사 사진
+        신뢰 지표는 히어로의 유리 패널로 올라갔으므로 여기서 반복하지 않는다.
+        대신 실제 일하는 모습을 보여준다 — 숫자보다 이쪽이 "개발법인"이라는
+        주장을 뒷받침한다.
+      */}
       <Section>
         <SectionHeading eyebrow={home.trust.eyebrow} title={home.trust.title} />
-        <dl className="mt-10 grid gap-6 sm:grid-cols-3">
-          {home.trust.stats.map((stat) => (
-            <StatBlock key={stat.label} value={stat.value} label={stat.label} />
-          ))}
-        </dl>
+        <div className="mt-10 grid gap-5 md:grid-cols-3 lg:gap-6">
+          <Photo
+            photo={photos.aboutTeam}
+            sizes="(min-width: 768px) 33vw, 100vw"
+            className="aspect-[4/3]"
+          />
+          <Photo
+            photo={photos.aboutSpace}
+            sizes="(min-width: 768px) 33vw, 100vw"
+            className="aspect-[4/3]"
+          />
+          <Photo
+            photo={photos.aboutBackoffice}
+            sizes="(min-width: 768px) 33vw, 100vw"
+            className="aspect-[4/3]"
+          />
+        </div>
       </Section>
 
       {/* 8. 최종 CTA */}

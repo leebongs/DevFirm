@@ -9,8 +9,10 @@ import { StepFlow } from "@/components/content/step-flow";
 import { FAQAccordion } from "@/components/content/faq-accordion";
 import { CTASection } from "@/components/content/cta-section";
 import { Illustration } from "@/components/content/illustration";
+import { Photo } from "@/components/content/photo";
 import { buildMetadata } from "@/lib/metadata";
 import { illustrations } from "@/content/illustrations";
+import { photos } from "@/content/photos";
 import { solutions } from "@/content/solutions";
 import { agents } from "@/content/agents";
 import { pageSeo } from "@/content/seo";
@@ -72,7 +74,30 @@ export default function SolutionsPage() {
         </div>
       </Section>
 
+      {/* 두 축이 하나의 기반 위에 있다는 구조를 도형으로, 실제 현장은 사진으로 */}
       <Section variant="muted">
+        <Illustration
+          src={illustrations.twoAxes.src}
+          width={illustrations.twoAxes.width}
+          height={illustrations.twoAxes.height}
+          alt={illustrations.twoAxes.alt}
+          className="border-border bg-background mx-auto max-w-[52rem] rounded-lg border p-6 lg:p-10"
+        />
+        <div className="mt-6 grid gap-5 lg:grid-cols-2 lg:gap-6">
+          <Photo
+            photo={photos.solutionsIndustrial}
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="aspect-[3/2]"
+          />
+          <Photo
+            photo={photos.solutionsDesk}
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="aspect-[3/2]"
+          />
+        </div>
+      </Section>
+
+      <Section>
         <SectionHeading
           id={solutions.agentsSection.id}
           eyebrow={solutions.agentsSection.eyebrow}
@@ -94,7 +119,21 @@ export default function SolutionsPage() {
           eyebrow={solutions.process.eyebrow}
           title={solutions.process.title}
         />
-        <StepFlow className="mt-10" steps={solutions.process.steps} />
+        <Illustration
+          src={illustrations.agentPipeline.src}
+          width={illustrations.agentPipeline.width}
+          height={illustrations.agentPipeline.height}
+          alt={illustrations.agentPipeline.alt}
+          className="border-border bg-muted/50 mt-10 rounded-lg border p-6 lg:p-8"
+        />
+        <Illustration
+          src={illustrations.adoption.src}
+          width={illustrations.adoption.width}
+          height={illustrations.adoption.height}
+          alt={illustrations.adoption.alt}
+          className="border-border bg-muted/50 mt-5 rounded-lg border p-6 lg:p-8"
+        />
+        <StepFlow className="mt-6" steps={solutions.process.steps} />
       </Section>
 
       <Section variant="muted">

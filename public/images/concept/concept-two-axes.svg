@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img">
+  <g fill="none" stroke-linejoin="round">
+    <line x1="450" y1="35" x2="450" y2="315" stroke="#d7dbe0" stroke-width="1.5"/>
+
+    <polygon points="110,218 255,170 370,226 225,276" fill="#f3f5f8" stroke="#d7dbe0" stroke-width="1.5"/>
+    <polygon points="200,169 282,145 344,176 262,202" fill="#ffffff" stroke="#0f1926" stroke-width="1.5"/>
+    <polygon points="200,169 262,202 262,244 200,210" fill="#f3f5f8" stroke="#0f1926" stroke-width="1.5"/>
+    <polygon points="262,202 344,176 344,218 262,244" fill="#162e50" stroke="#0f1926" stroke-width="1.5"/>
+    <line x1="134" y1="106" x2="134" y2="226" stroke="#0f1926" stroke-width="3"/>
+    <rect x="116" y="222" width="36" height="12" rx="3" fill="#ffffff" stroke="#0f1926" stroke-width="1.5"/>
+    <rect x="96" y="78" width="66" height="32" rx="3" fill="#162e50" stroke="#0f1926" stroke-width="1.5"/>
+    <circle cx="164" cy="94" r="7" fill="#ffffff" stroke="#0f1926" stroke-width="1.5"/>
+    <line x1="164" y1="94" x2="270" y2="183" stroke="#005ebd" stroke-width="1.5"/>
+    <g transform="translate(268 182)" stroke="#00bbcb" stroke-width="3">
+      <path d="M0 10V0H10M34 0H44V10M44 20V30H34M10 30H0V20"/>
+    </g>
+
+    <polygon points="535,250 800,230 850,260 585,284" fill="#f3f5f8" stroke="#d7dbe0" stroke-width="1.5"/>
+    <rect x="590" y="188" width="110" height="58" rx="3" fill="#ffffff" stroke="#d7dbe0" stroke-width="1.5"/>
+    <rect x="600" y="178" width="110" height="58" rx="3" fill="#f3f5f8" stroke="#d7dbe0" stroke-width="1.5"/>
+    <rect x="610" y="168" width="110" height="58" rx="3" fill="#ffffff" stroke="#0f1926" stroke-width="1.5"/>
+    <g transform="translate(625 182)" stroke="#00bbcb" stroke-width="3">
+      <path d="M0 10V0H10M34 0H44V10M44 20V30H34M10 30H0V20"/>
+    </g>
+    <rect x="735" y="120" width="94" height="70" rx="3" fill="#ffffff" stroke="#0f1926" stroke-width="1.5"/>
+    <rect x="751" y="141" width="12" height="30" rx="2" fill="#162e50"/>
+    <rect x="773" y="132" width="12" height="39" rx="2" fill="#005ebd"/>
+    <rect x="795" y="151" width="12" height="20" rx="2" fill="#d7dbe0"/>
+    <line x1="782" y1="190" x2="782" y2="214" stroke="#0f1926" stroke-width="3"/>
+    <rect x="752" y="214" width="60" height="10" rx="3" fill="#ffffff" stroke="#0f1926" stroke-width="1.5"/>
+
+    <rect x="60" y="327" width="780" height="68" rx="4" fill="#162e50"/>
+    <line x1="260" y1="327" x2="260" y2="285" stroke="#005ebd" stroke-width="1.5"/>
+    <line x1="665" y1="327" x2="665" y2="260" stroke="#005ebd" stroke-width="1.5"/>
+  </g>
+</svg>

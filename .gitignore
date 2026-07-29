@@ -58,3 +58,6 @@ next-env.d.ts
 
 # 에이전트 런타임 상태
 .clawhip/
+
+# 사진 생성 원본(35MB). 배포본은 public/images/photo 에 최적화되어 있다
+assets/photo-src/

@@ -11,10 +11,15 @@ import { ui } from "@/content/ui";
  *
  * 높이는 h-16 / lg:h-18 로 고정한다. SectionNav(h-12)와 합쳐 sticky 총합이
  * 112px 를 넘지 않아야 한다(Phase 1 DoD).
+ *
+ * 헤더는 홈에서 히어로 사진 위에 겹쳐 뜬다. 유리는 쓰되 **밝은 유리**다 —
+ * 내부 글자가 어두운색이라 면이 밝아야 대비가 나온다. 사진이 아무리 어두워도
+ * 흰 면 72% 아래로는 내려가지 않으므로 대비가 고정된다.
+ * (히어로 안의 패널은 반대로 흰 글자라 어두운 유리를 쓴다.)
  */
 export function SiteHeader() {
   return (
-    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/80 border-border sticky top-0 z-50 border-b backdrop-blur">
+    <header className="bg-background/88 supports-[backdrop-filter]:bg-background/72 border-border sticky top-0 z-50 border-b backdrop-blur-xl backdrop-saturate-150">
       <a
         href="#main"
         className="bg-primary text-primary-foreground sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:px-4 focus:py-2 focus:text-sm"
