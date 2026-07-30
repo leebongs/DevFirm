@@ -345,3 +345,73 @@ pnpm gen:photo      # 원본 → AVIF/WebP 최적화
 pnpm preview:art    # 일러스트·개념도형 검수 시트
 pnpm check:contrast # 유리 합성 대비 포함
 ```
+
+---
+
+## 7. 히어로 배경 영상 (2026-07-31)
+
+**요청**: AX 전환 / 개발자들이 일하는 모습 / 혁신적 코딩으로 세상이 바뀌는 영상
+세 편을 만들어 홈 메인 배경으로 흐르게.
+
+- 생성: higgsfield `veo3_1_lite`, 3편
+- 합성: `scripts/build-hero-video.mjs` — xfade 로 이어 붙이고 끝을 처음에 물려
+  루프 이음매를 없앤다. 공통 그레이딩(`hue`·`colorbalance`·`eq`)으로 세 편의
+  색온도 편차를 눌러 한 편처럼 보이게 했다.
+- 출력: 22.0s · 1280px · 무음 · x264 CRF 34 / VP9 CRF 50
+  - VP9 와 x264 의 CRF 척도는 서로 비교 대상이 아니다. 같은 값을 쓰면
+    WebM 이 MP4 보다 커진다 — 실제로 그렇게 나와서 다시 잡았다.
+- 적용: `components/content/hero-video.tsx` (A11 화이트리스트 추가)
+  - 사진이 먼저 깔리고 그 위에 영상이 올라간다. 영상이 로드되지 않는 조건에서도
+    히어로는 완성된 화면으로 남는다.
+  - `(min-width: 64rem)` · `prefers-reduced-motion: no-preference` ·
+    `saveData`/`2g` 아님 — 셋을 모두 만족할 때만 마운트한다.
+  - 하이드레이션 이후에 붙으므로 **LCP 는 여전히 사진**이 가져간다.
+
+## 8. 로고타이프 · 엠블렘 (2026-07-31)
+
+헤더의 텍스트 "DevFirm" 을 디자인된 워드마크 + 엠블렘으로 교체하고,
+파비콘을 같은 조형으로 다시 그렸다.
+
+- 생성기: `scripts/generate-logo.mjs` (`pnpm gen:logo`)
+  - 베이스라인 72 · 캡하이트 70 · 엑스하이트 50 · 세로획 14/13.5 ·
+    가로획 12.5 · 오버슛 1.5 를 상수로 두고 글리프를 계산한다.
+  - 워드마크·엠블렘·헤더 컴포넌트가 **같은 함수**에서 나오므로 서로 어긋날 수 없다.
+- 폰트를 쓰지 않는 이유: SVG 파비콘은 폰트를 로드하지 않고, 헤더 로고도
+  Pretendard 가 늦게 오면 모양이 바뀐다. 로고는 그러면 안 된다.
+- `e` 만 획(stroke) + `dasharray` 로 그린다. 개구부를 "구멍 뚫는 서브패스"로
+  만들면 그 도형이 링 바깥으로 나간 부분이 오히려 칠해진다 — nonzero 든
+  evenodd 든 마찬가지다. 처음 시도에서 실제로 검은 사각형이 붙어 나왔다.
+- `m` 은 카운터까지 하나의 컨투어로 되짚는다. fill-rule 에 의존하지 않는다.
+
+산출: `assets/logo/wordmark.svg` · `app/icon.svg` ·
+`components/layout/brand-logo.tsx` (인라인 SVG — 요청 0회, CLS 0)
+
+## 9. 페이지 히어로 배너 (2026-07-31)
+
+하위 페이지 히어로가 흰 여백뿐이라는 지적에 따라 배경 사진을 넣었다.
+
+- 생성: higgsfield `nano_banana_2`, 21:9 · 2k, 8종
+  (about / solutions / services / services-software / services-staffing /
+   academy / workspace / contact)
+- 최적화: `pnpm gen:photo` — 2400px AVIF 40~59KB
+- 적용: `PageHero` 에 `photo` 프롭 추가. 주면 어두운 스크림 + 밝은 글자로
+  통째로 뒤집는다. 본문색(Ink)을 사진 위에 두면 밝은 부분에서 대비가 무너진다.
+- **일러스트(`art`)가 붙은 페이지에는 사진을 넣지 않았다.** 흰 배경 전제로
+  그린 도형이라 어두운 사진 위에서 형태가 무너진다.
+- A6: 스크림 위 헤드라인 13.23:1 (기준 7:1)
+
+## 10. 실제 지도 (2026-07-31)
+
+O-4 의 "지도 임베드 없음" 결정을 뒤집되 성능 근거는 유지했다.
+
+- `components/content/map-embed.tsx` — Google Maps `output=embed` iframe
+- 왜 Google 인가: **키 없이 되는 유일한 선택지.** Kakao·Naver 는 JavaScript
+  앱키 발급 + 도메인 화이트리스트 등록이 선행돼야 한다. 키가 준비되면
+  이 컴포넌트의 `src` 한 줄만 바꾸면 된다.
+- 성능: `loading="lazy"` 로 뷰포트 진입 전에는 요청조차 나가지 않고,
+  비율을 CSS 로 고정해 CLS 가 0 이다. iframe 이라 서드파티 스크립트가
+  우리 문서의 메인 스레드에 올라오지 않는다 — SDK 를 심는 방식이었다면
+  TBT 가 흔들린다.
+- 좌표를 `content/site.ts` 에 박았다. 주소 문자열을 그대로 넘기면
+  "한양빌딩 2층" 때문에 지오코더가 엉뚱한 상호에 핀을 꽂았다.
+  (37.4682917, 127.0438563 · 우 06786 — 카카오맵 확인과 일치)

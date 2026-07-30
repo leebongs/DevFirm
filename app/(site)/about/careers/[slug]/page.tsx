@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PageHero } from "@/components/typography/page-hero";
+import { photos } from "@/content/photos";
 import { Container } from "@/components/layout/container";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { CTASection } from "@/components/content/cta-section";
@@ -54,7 +55,7 @@ export default async function JobPage({ params }: { params: Promise<Params> }) {
 
   return (
     <>
-      <PageHero eyebrow={job.team} title={job.title} />
+      <PageHero photo={photos.aboutHero} eyebrow={job.team} title={job.title} />
 
       <Container className="py-12 lg:py-16">
         <Breadcrumb href="/about/careers" />

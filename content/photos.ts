@@ -42,6 +42,52 @@ export const photos = {
     alt: "책상 위 서류와 노트북을 놓고 계약 문서를 검토하는 모습",
   },
 
+  /**
+   * 페이지 히어로 배너 8종.
+   *
+   * 전부 21:9 로 생성해 2400×1018 로 굽는다. 히어로는 전폭으로 깔리므로
+   * 세로가 짧아야 스크롤 없이 제목과 함께 잡힌다.
+   *
+   * alt 를 주지 않는 것은 의도다 — 배경 장식이고, 그 자리의 의미는 바로 위
+   * h1 이 이미 말한다. alt 를 채우면 스크린리더가 제목을 두 번 읽는 꼴이 된다.
+   */
+  aboutHero: { base: "/images/photo/about-hero", width: 2400, height: 1018 },
+  solutionsHero: {
+    base: "/images/photo/solutions-hero",
+    width: 2400,
+    height: 1018,
+  },
+  servicesHero: {
+    base: "/images/photo/services-hero",
+    width: 2400,
+    height: 1018,
+  },
+  servicesSoftwareHero: {
+    base: "/images/photo/services-software-hero",
+    width: 2400,
+    height: 1018,
+  },
+  servicesStaffingHero: {
+    base: "/images/photo/services-staffing-hero",
+    width: 2400,
+    height: 1018,
+  },
+  academyHero: {
+    base: "/images/photo/academy-hero",
+    width: 2400,
+    height: 1018,
+  },
+  workspaceHero: {
+    base: "/images/photo/workspace-hero",
+    width: 2400,
+    height: 1018,
+  },
+  contactHero: {
+    base: "/images/photo/contact-hero",
+    width: 2400,
+    height: 1018,
+  },
+
   solutionsIndustrial: {
     base: "/images/photo/solutions-industrial",
     width: 1600,

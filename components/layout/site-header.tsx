@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Container } from "./container";
 import { HeaderNavClient } from "./header-nav-client";
+import { BrandLogo } from "./brand-logo";
 import { primaryCta } from "@/content/navigation";
 import { site } from "@/content/site";
 import { ui } from "@/content/ui";
@@ -30,9 +31,10 @@ export function SiteHeader() {
       <Container className="flex h-16 items-center justify-between gap-4 lg:h-18">
         <Link
           href="/"
-          className="focus-visible:ring-ring shrink-0 rounded-sm text-lg font-bold tracking-[-0.02em] focus-visible:ring-2 focus-visible:outline-none"
+          aria-label={site.name}
+          className="focus-visible:ring-ring shrink-0 rounded-sm focus-visible:ring-2 focus-visible:outline-none"
         >
-          {site.name}
+          <BrandLogo />
         </Link>
 
         <div className="flex items-center gap-1 lg:gap-2">

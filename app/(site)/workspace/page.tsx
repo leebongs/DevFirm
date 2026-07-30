@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { ExternalLink } from "lucide-react";
 import { PageHero } from "@/components/typography/page-hero";
+import { photos } from "@/content/photos";
 import { ArticleShell } from "@/components/layout/article-shell";
 import { SectionHeading } from "@/components/typography/section-heading";
 import { FeatureCard } from "@/components/content/feature-card";
 import { CTASection } from "@/components/content/cta-section";
-import { Illustration } from "@/components/content/illustration";
+import { MapEmbed } from "@/components/content/map-embed";
 import { buildMetadata } from "@/lib/metadata";
-import { illustrations } from "@/content/illustrations";
 import { workspace } from "@/content/workspace";
 import { pageSeo } from "@/content/seo";
 import { ui } from "@/content/ui";
@@ -21,6 +21,7 @@ export default function WorkspacePage() {
   return (
     <>
       <PageHero
+        photo={photos.workspaceHero}
         eyebrow={workspace.hero.eyebrow}
         title={workspace.hero.title}
         lead={workspace.hero.lead}
@@ -92,13 +93,7 @@ export default function WorkspacePage() {
             title={workspace.location.title}
           />
           <div className="border-border mt-8 max-w-[68ch] overflow-hidden rounded-lg border">
-            <Illustration
-              src={illustrations.map.src}
-              width={illustrations.map.width}
-              height={illustrations.map.height}
-              alt={illustrations.map.alt}
-              className="bg-muted/40"
-            />
+            <MapEmbed title={workspace.location.mapTitle} />
             <div className="border-border border-t p-5">
               <p className="text-sm break-keep">{workspace.location.address}</p>
               <a

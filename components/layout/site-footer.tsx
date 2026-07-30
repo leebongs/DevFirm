@@ -44,11 +44,16 @@ export function SiteFooter() {
         </div>
 
         <div className="border-brand-foreground/15 mt-12 border-t pt-8">
-          <p className="text-base font-bold">{site.legalName}</p>
+          <p className="text-base font-bold">{site.footerBrand}</p>
           <dl className="text-brand-foreground/70 mt-3 space-y-1 text-xs">
             <div className="flex flex-wrap gap-x-2">
               <dt>{ui.footer.businessNumberLabel}</dt>
-              <dd>{site.businessNumber}</dd>
+              {/* 사업자등록번호와 그 번호를 가진 법인을 같은 항목으로 묶는다.
+                  앞줄이 사업 단위명이라 실제 사업자를 여기서 밝혀야 한다. */}
+              <dd>
+                {site.businessNumber}
+                <span className="mt-0.5 block">{site.businessEntity}</span>
+              </dd>
             </div>
             <div className="flex flex-wrap gap-x-2">
               <dt>{ui.footer.addressLabel}</dt>

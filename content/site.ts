@@ -7,6 +7,16 @@ export const site = {
   nameKo: "데브펌",
   legalName: "주식회사 씨엠닉스",
   legalNameEn: "CMNYX Inc.",
+  /**
+   * 푸터에 크게 표시하는 이름.
+   *
+   * 법인명(legalName)과 분리해 둔다. 푸터에서는 사업 단위인 "데브펌 CIC"를
+   * 앞세우지만, JSON-LD 의 Organization 과 사업자정보 고지는 법인명을 써야 한다.
+   * 하나로 합치면 구조화 데이터에 사업 단위명이 들어가 버린다.
+   */
+  footerBrand: "데브펌 CIC",
+  /** 사업자등록번호 아래에 병기하는 실제 사업자 */
+  businessEntity: "CMNYX Inc. (주)씨엠닉스",
   brand: "컴퓨팅매니지먼트",
   tagline: "개발자들이 모인 개발법인, 데브펌",
 
@@ -27,11 +37,20 @@ export const site = {
     locality: "서초구",
     region: "서울특별시",
     country: "KR",
+    postalCode: "06786",
+    /**
+     * 지도 좌표.
+     *
+     * 지도에 주소 문자열을 그대로 넘기면 "한양빌딩 2층" 때문에 지오코더가
+     * 엉뚱한 상호에 핀을 꽂는다. 좌표를 박아 두면 어떤 지도 제공자를 쓰든
+     * 같은 지점을 가리킨다. (출처: OpenStreetMap, 강남대로6길 59-1 / 06786)
+     */
+    geo: { lat: 37.4682917, lng: 127.0438563 },
   },
   tel: "02-2058-0680",
   telHref: "tel:+82-2-2058-0680",
-  /** 문의 수신 주소 — Phase 4 폼 발송 대상(O-1). 실제 주소 확정 전까지 대표 주소 사용 */
-  email: "contact@cmnyx.com",
+  /** 문의 수신 주소 — Phase 4 폼 발송 대상(O-1) */
+  email: "contact@devfirm.co",
 } as const;
 
 export type Site = typeof site;

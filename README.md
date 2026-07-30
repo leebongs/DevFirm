@@ -36,11 +36,13 @@ pnpm format:check   # Prettier
 pnpm check:content  # A10 콘텐츠 분리 · A11 클라이언트 경계
 pnpm check:nav      # A14 최상위 ≤ 6 · depth ≤ 3
 pnpm check:contrast # A6 색 대비 (oklch → sRGB 계산)
+pnpm check:menu     # 메가메뉴가 컨테이너를 넘지 않는지 (서버가 떠 있어야 한다)
 
 pnpm test:e2e       # Playwright 6뷰포트 + axe (빌드가 선행되어야 한다)
-pnpm test:lh        # Lighthouse CI (A7)
+pnpm test:lh        # Lighthouse CI (A7) — lhci 가 없으면 `pnpm dlx @lhci/cli autorun`
 
-pnpm gen:icons      # app/icon.svg → apple-icon·OG PNG
+pnpm gen:logo       # 로고타이프·엠블렘·파비콘 (그리드 상수 → SVG + 컴포넌트)
+pnpm gen:icons      # app/icon.svg → apple-icon·OG PNG (gen:logo 뒤에 돌린다)
 pnpm gen:png        # 일러스트 PNG 파생(외부 문서용)
 pnpm gen:photo      # assets/photo-src 원본 → AVIF/WebP
 pnpm preview:art    # 일러스트 검수 시트를 .preview/ 에 렌더
@@ -59,6 +61,7 @@ pnpm preview:art    # 일러스트 검수 시트를 .preview/ 에 렌더
 | A4      | 레거시 경로 308 단일 홉          | `tests/e2e/redirects.spec.ts`  |
 | A5      | axe critical/serious = 0         | `tests/a11y/axe.spec.ts`       |
 | A6      | 색 대비                          | `pnpm check:contrast`          |
+| —       | 메가메뉴 오버플로                | `pnpm check:menu` · E2E        |
 | A7      | Lighthouse ≥ 95                  | `pnpm test:lh`                 |
 | A8      | 초기 JS ≤ 130KB                  | `tests/e2e/bundle.spec.ts`     |
 | A9      | 고유 title/description/canonical | `tests/e2e/seo.spec.ts`        |
@@ -117,11 +120,30 @@ SectionNav·Breadcrumb·푸터·`sitemap.ts` 가 전부 이 파일 하나를 읽
 | 종류                         | 위치                                                            | 레지스트리                 |
 | ---------------------------- | --------------------------------------------------------------- | -------------------------- |
 | 일러스트 23개 · 개념도형 5개 | `public/images/{model,workspace,map,agents,hero,cards,concept}` | `content/illustrations.ts` |
-| 사진 6개 (AVIF+WebP)         | `public/images/photo`                                           | `content/photos.ts`        |
+| 사진 14개 (AVIF+WebP)        | `public/images/photo`                                           | `content/photos.ts`        |
 
 사진 원본(장당 5~7MB PNG)은 `assets/photo-src/` 에 두고 **커밋하지 않는다**.
-`pnpm gen:photo` 가 AVIF/WebP 로 줄인다(35MB → 0.4MB). 원본이 필요하면
-higgsfield 로 재생성한다 — 프롬프트 조건은 image-plan §6 에 있다.
+`pnpm gen:photo` 가 AVIF/WebP 로 줄인다(92MB → 1.3MB). 이름이 `-hero` 로 끝나면
+전폭 배너로 보고 2400px 로, 나머지는 1600px 로 굽는다. 원본이 필요하면
+higgsfield 로 재생성한다 — 프롬프트 조건은 image-plan §6·§9 에 있다.
+
+## 로고
+
+로고는 손으로 그린 SVG 가 아니라 **`scripts/generate-logo.mjs` 의 산출물**이다.
+베이스라인·캡하이트·획 두께를 상수로 두고 글리프를 계산하므로, 워드마크와
+파비콘이 같은 레터폼을 쓰는 것이 구조적으로 보장된다.
+
+```bash
+pnpm gen:logo    # assets/logo/wordmark.svg · app/icon.svg · components/layout/brand-logo.tsx
+pnpm gen:icons   # 이어서 apple-icon.png · OG 카드
+```
+
+- `app/icon.svg` 와 `components/layout/brand-logo.tsx` 를 **직접 고치지 않는다.**
+  고치면 다음 `gen:logo` 에서 덮어써지고, 그전까지는 워드마크와 어긋난 채로 남는다.
+- 글자를 폰트로 그리지 않는 이유: SVG 파비콘은 폰트를 로드하지 않고, 헤더 로고도
+  Pretendard 가 늦게 오면 모양이 바뀐다.
+- `e` 의 개구부는 획(stroke)의 `dasharray` 로 낸다. 구멍 뚫는 서브패스로 만들면
+  그 도형이 링 바깥으로 나간 부분이 오히려 칠해진다 — fill-rule 로는 못 피한다.
 
 ## 폰트
 

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/typography/page-hero";
+import { photos } from "@/content/photos";
 import { Container } from "@/components/layout/container";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { CTASection } from "@/components/content/cta-section";
@@ -21,6 +22,7 @@ export default function CareersPage() {
   return (
     <>
       <PageHero
+        photo={photos.aboutHero}
         eyebrow={careersPage.hero.eyebrow}
         title={careersPage.hero.title}
         lead={careersPage.hero.lead}

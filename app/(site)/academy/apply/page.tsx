@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/typography/page-hero";
+import { photos } from "@/content/photos";
 import { Container } from "@/components/layout/container";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { ApplyForm } from "@/components/forms/apply-form";
@@ -17,6 +18,7 @@ export default function ApplyPage() {
   return (
     <>
       <PageHero
+        photo={photos.academyHero}
         eyebrow={forms.apply.hero.eyebrow}
         title={forms.apply.hero.title}
         lead={forms.apply.hero.lead}

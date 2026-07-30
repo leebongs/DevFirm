@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PageHero } from "@/components/typography/page-hero";
+import { photos } from "@/content/photos";
 import { ArticleShell } from "@/components/layout/article-shell";
 import { SectionHeading } from "@/components/typography/section-heading";
 import { CTASection } from "@/components/content/cta-section";
@@ -66,6 +67,7 @@ export default async function CoursePage({
         path={`/academy/courses/${course.slug}`}
       />
       <PageHero
+        photo={photos.academyHero}
         eyebrow={school?.name}
         title={course.title}
         lead={course.summary}

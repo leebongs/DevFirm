@@ -36,6 +36,7 @@ const CLIENT_WHITELIST = [
   "mega-menu",
   "mobile-nav-drawer",
   "header-nav-client",
+  "hero-video",
   "section-nav",
   "on-this-page",
   "faq-accordion",

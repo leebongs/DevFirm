@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377 100" fill="currentColor" role="img" aria-label="DevFirm">
+  <!-- D -->
+  <g transform="translate(0 0)">
+    <path d="M0,2 H17 A35,35 0 0 1 17,72 H0 Z M14,59.5 H17 A22.5,22.5 0 0 0 17,14.5 H14 Z"/>
+  </g>
+  <!-- e -->
+  <g transform="translate(62 0)">
+    <circle cx="26.5" cy="47" r="20" fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="butt" stroke-dasharray="111 14.66" stroke-dashoffset="104.72"/>
+    <path d="M8,40.75 H43 V53.25 H8 Z"/>
+  </g>
+  <!-- v -->
+  <g transform="translate(125 0)">
+    <path d="M0,22 H15 L24,59 L33,22 H48 L24,73.5 Z"/>
+  </g>
+  <!-- F -->
+  <g transform="translate(187 0)">
+    <path d="M0,2 H40 V14.5 H14 V33 H34 V45.5 H14 V72 H0 Z"/>
+  </g>
+  <!-- i -->
+  <g transform="translate(237 0)">
+    <path d="M0,22 H13.5 V72 H0 Z M0,2 H13.5 V16 H0 Z"/>
+  </g>
+  <!-- r -->
+  <g transform="translate(260.5 0)">
+    <path d="M0,72 V46 A24,24 0 0 1 24,22 V35.5 A10.5,10.5 0 0 0 13.5,46 V72 Z"/>
+  </g>
+  <!-- m -->
+  <g transform="translate(294.5 0)">
+    <path d="M0,72 V46 A24,24 0 0 1 41.25,29.31 A24,24 0 0 1 82.5,46 V72 H69 V46 A10.5,10.5 0 0 0 48,46 V72 H34.5 V46 A10.5,10.5 0 0 0 13.5,46 V72 Z"/>
+  </g>
+</svg>

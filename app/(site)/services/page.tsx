@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/typography/page-hero";
+import { photos } from "@/content/photos";
 import { Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/typography/section-heading";
 import { FeatureCard } from "@/components/content/feature-card";
@@ -17,6 +18,7 @@ export default function ServicesPage() {
   return (
     <>
       <PageHero
+        photo={photos.servicesHero}
         eyebrow={services.hero.eyebrow}
         title={services.hero.title}
         lead={services.hero.lead}

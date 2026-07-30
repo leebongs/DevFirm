@@ -1,6 +1,6 @@
 # Working Memory
 
-Updated: 2026-07-30
+Updated: 2026-07-31
 
 ## Summary
 
@@ -8,6 +8,7 @@ Updated: 2026-07-30
 Next.js 16.2.12 + React 19.2.4 + Tailwind v4 + shadcn/ui, 전면 SSG.
 
 **상태: Phase 0~5 구현 완료 + 파비콘·일러스트·사진·글래스모피즘 적용 완료.**
+추가: 히어로 배경 영상 · 로고타이프/엠블렘 · 페이지 히어로 배너 · 실제 지도 임베드.
 GitHub 푸시 · CI 통과 · Vercel 프로덕션 배포 완료.
 
 - 저장소: https://github.com/leebongs/DevFirm (`main`)
@@ -30,13 +31,20 @@ GitHub 푸시 · CI 통과 · Vercel 프로덕션 배포 완료.
 | A12 폼 | 3경로 + 동의 필수 + 3초 미만 거부 |
 | A13 조판 | keep-all 적용, 오버플로 0 |
 | A14 위계 | 최상위 5/6, depth 3/3 |
-| E2E | **245 통과 / 0 실패** |
+| E2E | **257 통과 / 0 실패** (메가메뉴 오버플로 4건 포함) |
 
 ```bash
 pnpm verify                    # 정적 검사 전부
-pnpm build && pnpm test:e2e    # E2E 245개
-pnpm test:lh                   # Lighthouse
+pnpm build && pnpm test:e2e    # E2E 257개
+pnpm dlx @lhci/cli autorun     # Lighthouse (lhci 는 전역 설치돼 있지 않다)
+
+pnpm gen:logo                  # 로고타이프·엠블렘·파비콘 재생성
+pnpm gen:icons                 # PNG 아이콘·OG 카드 (gen:logo 뒤에 돌린다)
+pnpm check:menu                # 메가메뉴 오버플로 (서버가 떠 있어야 함)
 ```
+
+**주의**: 서버가 떠 있는 상태로 `pnpm build` 하면 실행 중 서버가 사라진 청크를
+가리켜 500 이 나고 페이지가 무스타일로 보인다. 빌드 전에 3000·3100 포트를 비울 것.
 
 ## 자산 현황
 
@@ -45,7 +53,8 @@ pnpm test:lh                   # Lighthouse
 | 파비콘·OG | 4 | `app/icon.svg`, `apple-icon.png`, `opengraph-image.png`, `twitter-image.png` | — |
 | 일러스트 | 23 | `public/images/{model,workspace,map,agents,hero,cards}` | 92KB |
 | 개념 도형 | 5 | `public/images/concept` | 11KB |
-| 사진 | 6×2 | `public/images/photo` (AVIF+WebP) | 0.4MB |
+| 사진 | 14×2 | `public/images/photo` (AVIF+WebP) | 1.3MB |
+| 로고 | 3 | `assets/logo/wordmark.svg`, `app/icon.svg`, `components/layout/brand-logo.tsx` | 생성물 |
 | PNG 파생 | 7 | `public/images/png` | 408KB |
 
 레지스트리(단일 진실원천): `content/illustrations.ts` · `content/photos.ts`
@@ -89,3 +98,12 @@ pnpm test:lh                   # Lighthouse
 - `next build` 가 First Load JS 를 출력하지 않음 → A8 을 실제 네트워크 측정으로 대체
 - `redirects({permanent:true})` 는 **308** (301 아님)
 - `next/dynamic {ssr:false}` 는 RSC 에서 무효 → `header-nav-client` 래퍼
+
+#### 2026-07-31 05:28:58 — PRE-COMPACTION CHECKPOINT
+- **Context about to be compacted** — this checkpoint preserves state
+- Tool calls this session: 45
+- Estimated context before compaction: 1533KB
+- Unsaved file changes: 3
+- Auto-checkpoints written: 1
+- Files touched: /Users/coman/Dev/cmnix/DevFirm/scripts/build-hero-video.mjs, /Users/coman/Dev/cmnix/DevFirm/components/content/hero-video.tsx, /Users/coman/Dev/cmnix/DevFirm/app/(site)/page.tsx, /Users/coman/Dev/cmnix/DevFirm/content/site.ts, /Users/coman/Dev/cmnix/DevFirm/components/layout/site-footer.tsx, /Users/coman/Dev/cmnix/DevFirm/components/layout/mega-menu.tsx
+- **Action needed**: After compaction, read this file to restore context

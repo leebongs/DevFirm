@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/typography/page-hero";
+import { photos } from "@/content/photos";
 import { Container } from "@/components/layout/container";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { CourseFilterTabs } from "@/components/content/course-filter-tabs";
@@ -17,6 +18,7 @@ export default function CoursesPage() {
   return (
     <>
       <PageHero
+        photo={photos.academyHero}
         eyebrow={coursesPage.hero.eyebrow}
         title={coursesPage.hero.title}
         lead={coursesPage.hero.lead}

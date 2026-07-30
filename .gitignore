@@ -61,3 +61,7 @@ next-env.d.ts
 
 # 사진 생성 원본(35MB). 배포본은 public/images/photo 에 최적화되어 있다
 assets/photo-src/
+
+# 영상 생성 원본(13MB). 배포본은 public/video 에 압축되어 있다
+assets/video-src/
+.video-tmp/

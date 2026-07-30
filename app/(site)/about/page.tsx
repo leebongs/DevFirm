@@ -25,6 +25,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
+        photo={photos.aboutHero}
         eyebrow={about.hero.eyebrow}
         title={about.hero.title}
         lead={about.hero.lead}

@@ -26,6 +26,7 @@ export default function SolutionsPage() {
   return (
     <>
       <PageHero
+        photo={photos.solutionsHero}
         eyebrow={solutions.hero.eyebrow}
         title={solutions.hero.title}
         lead={solutions.hero.lead}

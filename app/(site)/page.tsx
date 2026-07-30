@@ -10,6 +10,7 @@ import { ComparisonTable } from "@/components/content/comparison-table";
 import { CTASection } from "@/components/content/cta-section";
 import { Illustration } from "@/components/content/illustration";
 import { Photo } from "@/components/content/photo";
+import { HeroVideo } from "@/components/content/hero-video";
 import { buildMetadata } from "@/lib/metadata";
 import { illustrations } from "@/content/illustrations";
 import { photos } from "@/content/photos";
@@ -40,6 +41,11 @@ export default function HomePage() {
         같은 크기의 패딩으로 콘텐츠 위치는 그대로 유지한다.
       */}
       <section className="relative isolate -mt-16 overflow-hidden pt-16 lg:-mt-18 lg:pt-18">
+        {/*
+          레이어 순서: 사진(LCP 앵커) → 영상 → 스크림 → 콘텐츠.
+          사진이 항상 먼저 그려지므로 영상이 로드되지 않는 조건(모바일·모션
+          민감·데이터 절약)에서도 히어로는 완성된 화면으로 남는다.
+        */}
         <Photo
           photo={photos.heroOffice}
           priority
@@ -49,6 +55,9 @@ export default function HomePage() {
           className="absolute inset-0 -z-20"
           imgClassName="object-cover object-[70%_center]"
         />
+        <div className="absolute inset-0 -z-20">
+          <HeroVideo />
+        </div>
         <div aria-hidden className="hero-scrim absolute inset-0 -z-10" />
 
         <Container className="text-brand-foreground py-24 lg:grid lg:grid-cols-[minmax(0,34rem)_1fr] lg:gap-16 lg:py-32">

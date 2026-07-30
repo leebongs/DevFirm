@@ -62,7 +62,11 @@ export const workspace = {
     eyebrow: "오시는 길",
     title: "서울 서초구",
     address: site.address.full,
-    /** O-4 확정: 외부 지도 SDK 없이 링크만 연결한다 */
+    /**
+     * 지도 iframe 의 접근성 이름. iframe 은 title 이 없으면 스크린리더가
+     * "프레임" 으로만 읽어 무엇이 들어 있는지 알 수 없다.
+     */
+    mapTitle: "데브펌 위치 지도",
     mapLinkLabel: "카카오맵에서 보기",
     mapHref: `https://map.kakao.com/?q=${encodeURIComponent(site.address.full)}`,
   },

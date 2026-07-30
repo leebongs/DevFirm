@@ -21,11 +21,17 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = join(ROOT, "assets/photo-src");
 const OUT = join(ROOT, "public/images/photo");
 
-/** 표시 폭 기준. 히어로만 전폭이라 크게 간다. */
+/**
+ * 표시 폭 기준. 전폭으로 깔리는 히어로 배너만 크게 간다.
+ * 이름이 `-hero` 로 끝나면 페이지 히어로 배너로 본다.
+ */
 const WIDTHS = {
   "hero-office": 2400,
+  hero: 2400,
   default: 1600,
 };
+const widthFor = (name) =>
+  WIDTHS[name] ?? (name.endsWith("-hero") ? WIDTHS.hero : WIDTHS.default);
 
 if (!existsSync(SRC)) {
   console.error(`원본 디렉터리가 없습니다: assets/photo-src`);
@@ -44,7 +50,7 @@ let after = 0;
 
 for (const file of files) {
   const name = basename(file, file.slice(file.lastIndexOf(".")));
-  const width = WIDTHS[name] ?? WIDTHS.default;
+  const width = widthFor(name);
   const srcPath = join(SRC, file);
   before += statSync(srcPath).size;
 

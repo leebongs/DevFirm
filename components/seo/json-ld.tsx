@@ -36,7 +36,15 @@ export function OrganizationJsonLd() {
           streetAddress: site.address.full,
           addressLocality: site.address.locality,
           addressRegion: site.address.region,
+          postalCode: site.address.postalCode,
           addressCountry: site.address.country,
+        },
+        // 지도에 쓰는 좌표를 구조화 데이터에도 같이 준다. 지역 검색 결과에서
+        // 주소 문자열 지오코딩보다 좌표가 우선한다.
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: site.address.geo.lat,
+          longitude: site.address.geo.lng,
         },
         taxID: site.businessNumber,
       }}

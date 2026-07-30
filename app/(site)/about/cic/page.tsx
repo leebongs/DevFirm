@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/typography/page-hero";
+import { photos } from "@/content/photos";
 import { ArticleShell } from "@/components/layout/article-shell";
 import { SectionHeading } from "@/components/typography/section-heading";
 import { FeatureCard } from "@/components/content/feature-card";
@@ -20,6 +21,7 @@ export default function CicPage() {
   return (
     <>
       <PageHero
+        photo={photos.aboutHero}
         eyebrow={cic.hero.eyebrow}
         title={cic.hero.title}
         lead={cic.hero.lead}

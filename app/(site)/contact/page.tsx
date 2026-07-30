@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { ExternalLink } from "lucide-react";
 import { PageHero } from "@/components/typography/page-hero";
+import { photos } from "@/content/photos";
 import { Container } from "@/components/layout/container";
 import { ContactForm } from "@/components/forms/contact-form";
-import { Illustration } from "@/components/content/illustration";
+import { MapEmbed } from "@/components/content/map-embed";
 import { buildMetadata } from "@/lib/metadata";
-import { illustrations } from "@/content/illustrations";
 import { forms } from "@/content/forms";
 import { workspace } from "@/content/workspace";
 import { site } from "@/content/site";
@@ -21,6 +21,7 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
+        photo={photos.contactHero}
         eyebrow={forms.contact.hero.eyebrow}
         title={forms.contact.hero.title}
         lead={forms.contact.hero.lead}
@@ -34,7 +35,9 @@ export default function ContactPage() {
 
           <aside className="space-y-6">
             <div className="border-border rounded-lg border p-5">
-              <p className="font-semibold">{site.legalName}</p>
+              {/* 문의처는 사업 단위 이름으로 받는다. 법인명(legalName)은
+                  푸터의 사업자정보 고지와 JSON-LD 에만 쓴다. */}
+              <p className="font-semibold">{site.footerBrand}</p>
               <dl className="text-muted-foreground mt-4 space-y-3 text-sm">
                 <div>
                   <dt className="text-xs">{ui.footer.addressLabel}</dt>
@@ -66,17 +69,11 @@ export default function ContactPage() {
             </div>
 
             {/*
-              O-4 확정: 지도 임베드 없이 정적 안내 + 외부 링크.
-              외부 지도 SDK 를 넣으면 스크립트 하나로 A7(Perf ≥ 95)이 흔들린다.
+              실제 지도. 사이드바 하단이라 초기 뷰포트 밖이고, MapEmbed 가
+              lazy 로딩 + 비율 고정을 맡으므로 A7·CLS 에 영향이 없다.
             */}
             <div className="border-border overflow-hidden rounded-lg border">
-              <Illustration
-                src={illustrations.map.src}
-                width={illustrations.map.width}
-                height={illustrations.map.height}
-                alt={illustrations.map.alt}
-                className="bg-muted/40"
-              />
+              <MapEmbed title={workspace.location.mapTitle} />
               <div className="border-border border-t p-5">
                 <p className="text-xs font-semibold tracking-[0.08em] uppercase">
                   {workspace.location.eyebrow}
