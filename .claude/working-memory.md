@@ -12,7 +12,7 @@ Next.js 16.2.12 + React 19.2.4 + Tailwind v4 + shadcn/ui, 전면 SSG.
 GitHub 푸시 · CI 통과 · Vercel 프로덕션 배포 완료.
 
 - 저장소: https://github.com/leebongs/DevFirm (`main`)
-- 배포: **https://dev-firm.vercel.app** (공개, 로그인 불필요)
+- 배포: **https://devfirm.co** (`dev-firm.vercel.app` 은 308 로 여기로 넘어온다)
 - 계획서: `.omc/plans/devfirm-renewal-plan.md`
 - 결정 기록: `.omc/plans/open-questions.md` (O-1~O-8 전건 확정)
 - 이미지·글래스 기록: `.omc/plans/image-plan.md`
@@ -26,7 +26,7 @@ GitHub 푸시 · CI 통과 · Vercel 프로덕션 배포 완료.
 | A4 리다이렉트 | 레거시 11경로 **308** 단일 홉 |
 | A5 접근성 | axe 390·1440 critical/serious 0 |
 | A6 색 대비 | 게이트 전수 통과 (유리 합성 포함) |
-| A7 Lighthouse | **P 98~99 · A11y 98~100 · BP/SEO 100 · LCP 0.8~1.1s · CLS 0.006** |
+| A7 Lighthouse | **P 98~99 · A11y 98~100 · BP/SEO 100 · LCP 0.83~1.03s · CLS 0.006** (2026-07-31 재측정) |
 | A8 번들 | 초기 JS ≤ 130KB |
 | A12 폼 | 3경로 + 동의 필수 + 3초 미만 거부 |
 | A13 조판 | keep-all 적용, 오버플로 0 |
@@ -63,7 +63,9 @@ pnpm check:menu                # 메가메뉴 오버플로 (서버가 떠 있어
 
 1. **도메인** (O-6) — `devfirm.*` TLD 미정. `NEXT_PUBLIC_SITE_URL` + `LEGACY_HOST`
    두 환경변수만 넣으면 크로스 도메인 308 이 켜진다. 코드 변경 불필요.
-   현재 `NEXT_PUBLIC_SITE_URL=https://dev-firm.vercel.app` 로 설정돼 있음.
+   `devfirm.co` 가 Vercel 에 연결돼 동작 중이지만 `NEXT_PUBLIC_SITE_URL` 은 아직
+   `https://dev-firm.vercel.app` 이라 canonical 이 리다이렉트되는 주소를 가리킨다.
+   2026-07-31 사용자 결정으로 유지 중 — 전환은 환경변수 한 줄이면 된다.
 2. **폼 메일 미발송** — `RESEND_API_KEY` 없음. O-1 에 따라 도메인 확보(SPF/DKIM)가
    선행. 현재는 `/contact` 의 `contact@cmnyx.com` mailto 가 유효 경로.
    `FORM_TOKEN_SECRET` 은 프로덕션에 설정 완료.
