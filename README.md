@@ -39,7 +39,16 @@ pnpm check:contrast # A6 색 대비 (oklch → sRGB 계산)
 
 pnpm test:e2e       # Playwright 6뷰포트 + axe (빌드가 선행되어야 한다)
 pnpm test:lh        # Lighthouse CI (A7)
+
+pnpm gen:icons      # app/icon.svg → apple-icon·OG PNG
+pnpm gen:png        # 일러스트 PNG 파생(외부 문서용)
+pnpm gen:photo      # assets/photo-src 원본 → AVIF/WebP
+pnpm preview:art    # 일러스트 검수 시트를 .preview/ 에 렌더
 ```
+
+> **주의**: 개발 서버가 돌고 있는 동안 `pnpm build` 를 실행하면 `.next` 의 청크
+> 해시가 어긋나 CSS 가 500 으로 떨어진다(스타일이 전부 사라진 화면이 된다).
+> 서버를 먼저 내리고 빌드하거나, 꼬였으면 `rm -rf .next` 후 재빌드한다.
 
 ### 검증 항목 대응표
 
@@ -94,6 +103,25 @@ SectionNav·Breadcrumb·푸터·`sitemap.ts` 가 전부 이 파일 하나를 읽
 - `components/ui/` 는 shadcn 생성물이므로 직접 수정하지 않는다. 확장은 래퍼로.
 - `"use client"` 는 `scripts/check-content-rules.mjs` 의 화이트리스트 9개만 허용.
   추가하려면 PR에 사유를 명시하고 화이트리스트를 갱신한다.
+- **유리(glass) 토큰은 어두운 네이비 틴트다.** 흰 틴트(`rgba(255,255,255,.1)`)로
+  바꾸면 배경 사진이 밝아지며 흰 텍스트 대비가 무너진다. 근거와 실측값은
+  [`.omc/plans/image-plan.md`](.omc/plans/image-plan.md) §6 참조.
+- **색 또는 유리 토큰을 건드렸으면 `pnpm check:contrast` 를 반드시 다시 돌린다.**
+  이 검사는 유리면을 [사진]→[스크림]→[유리] 로 합성해 최악 조건(순백 사진)에서
+  계산하므로, 눈으로는 괜찮아 보이는 미달을 잡아낸다.
+- 이미지는 `Illustration`(SVG) / `Photo`(사진) 컴포넌트로만 넣는다. 두 컴포넌트가
+  치수와 대체 텍스트를 **타입 단계에서 필수**로 만들어 CLS 와 axe 위반을 막는다.
+
+## 이미지 자산
+
+| 종류                         | 위치                                                            | 레지스트리                 |
+| ---------------------------- | --------------------------------------------------------------- | -------------------------- |
+| 일러스트 23개 · 개념도형 5개 | `public/images/{model,workspace,map,agents,hero,cards,concept}` | `content/illustrations.ts` |
+| 사진 6개 (AVIF+WebP)         | `public/images/photo`                                           | `content/photos.ts`        |
+
+사진 원본(장당 5~7MB PNG)은 `assets/photo-src/` 에 두고 **커밋하지 않는다**.
+`pnpm gen:photo` 가 AVIF/WebP 로 줄인다(35MB → 0.4MB). 원본이 필요하면
+higgsfield 로 재생성한다 — 프롬프트 조건은 image-plan §6 에 있다.
 
 ## 폰트
 
