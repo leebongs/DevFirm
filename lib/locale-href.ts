@@ -21,3 +21,22 @@ export function localeHref(lang: string, href: string): string {
 
   return href === "/" ? `/${locale}` : `/${locale}${href}`;
 }
+
+/**
+ * 경로에서 언어 접두사를 떼어 논리 경로로 되돌린다.
+ *
+ * 내비게이션 데이터의 키와 href 는 언어를 모르는 논리 경로(`/about`)인데
+ * `usePathname()` 은 `/ko/about` 을 준다. 이 둘을 그대로 비교하면 활성 섹션
+ * 판정이 전부 실패한다 — 섹션 탭이 통째로 사라지고 메뉴 강조가 안 붙는다.
+ */
+export function stripLocale(pathname: string): string {
+  const [, first, ...rest] = pathname.split("/");
+  if (!first || !isLocale(first)) return pathname;
+  return rest.length ? `/${rest.join("/")}` : "/";
+}
+
+/** 경로가 가리키는 언어. 없으면 기본 언어. */
+export function localeFromPath(pathname: string): Locale {
+  const [, first] = pathname.split("/");
+  return first && isLocale(first) ? first : DEFAULT_LOCALE;
+}

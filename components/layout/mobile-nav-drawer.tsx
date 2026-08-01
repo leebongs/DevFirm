@@ -11,8 +11,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { mainNav, primaryCta } from "@/content/navigation";
-import { ui } from "@/content/ui";
+import { localeHref } from "@/lib/locale-href";
+import type { Dictionary } from "@/content/dictionary";
+import type { Locale } from "@/content/locales";
 import { cn } from "@/lib/utils";
 
 /**
@@ -22,7 +23,17 @@ import { cn } from "@/lib/utils";
  * 데이터 출처는 메가메뉴와 동일한 content/navigation.ts 이므로 두 벌 구현이어도
  * 메뉴 내용이 어긋날 일은 없다.
  */
-export function MobileNavDrawer() {
+export function MobileNavDrawer({
+  lang,
+  nav,
+  ui,
+}: {
+  lang: Locale;
+  nav: Dictionary["nav"];
+  ui: Dictionary["ui"];
+}) {
+  const { mainNav, primaryCta } = nav;
+
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -50,7 +61,7 @@ export function MobileNavDrawer() {
               return (
                 <li key={node.href}>
                   <Link
-                    href={node.href}
+                    href={localeHref(lang, node.href)}
                     onClick={() => setOpen(false)}
                     className={cn(
                       "flex min-h-11 items-center text-base font-semibold",
@@ -65,7 +76,7 @@ export function MobileNavDrawer() {
                       {node.children.map((child) => (
                         <li key={child.href}>
                           <Link
-                            href={child.href}
+                            href={localeHref(lang, child.href)}
                             onClick={() => setOpen(false)}
                             className={cn(
                               "text-muted-foreground flex min-h-11 items-center text-sm",
@@ -85,7 +96,7 @@ export function MobileNavDrawer() {
           </ul>
 
           <Link
-            href={primaryCta.href}
+            href={localeHref(lang, primaryCta.href)}
             onClick={() => setOpen(false)}
             className="bg-primary text-primary-foreground mt-8 flex min-h-11 items-center justify-center rounded-md px-5 text-sm font-semibold"
           >

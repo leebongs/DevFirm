@@ -1,6 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import type { Dictionary } from "@/content/dictionary";
+import type { Locale } from "@/content/locales";
 
 /**
  * 메가메뉴·모바일 드로어의 로딩 경계(§6.4.1).
@@ -27,11 +29,19 @@ const MobileNavDrawer = dynamic(
   },
 );
 
-export function HeaderNavClient() {
+export function HeaderNavClient({
+  lang,
+  nav,
+  ui,
+}: {
+  lang: Locale;
+  nav: Dictionary["nav"];
+  ui: Dictionary["ui"];
+}) {
   return (
     <>
-      <MegaMenu />
-      <MobileNavDrawer />
+      <MegaMenu lang={lang} mainNav={nav.mainNav} />
+      <MobileNavDrawer lang={lang} nav={nav} ui={ui} />
     </>
   );
 }

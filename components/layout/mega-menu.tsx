@@ -11,8 +11,10 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { mainNav } from "@/content/navigation";
 import { cn } from "@/lib/utils";
+import { localeHref, stripLocale } from "@/lib/locale-href";
+import type { Dictionary } from "@/content/dictionary";
+import type { Locale } from "@/content/locales";
 
 /**
  * 데스크탑(lg+) 메가메뉴(§3.2, ADR-001).
@@ -21,8 +23,15 @@ import { cn } from "@/lib/utils";
  * 이미 구현되어 있기 때문이다(Phase 1 DoD의 키보드 항목).
  * 라벨과 경로는 전부 content/navigation.ts 에서만 온다.
  */
-export function MegaMenu() {
-  const pathname = usePathname();
+export function MegaMenu({
+  lang,
+  mainNav,
+}: {
+  lang: Locale;
+  mainNav: Dictionary["nav"]["mainNav"];
+}) {
+  // 내비 href 는 언어를 모르는 논리 경로다. 활성 판정 전에 접두사를 뗀다.
+  const pathname = stripLocale(usePathname());
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
@@ -57,7 +66,7 @@ export function MegaMenu() {
                     active && "text-primary font-semibold",
                   )}
                 >
-                  <Link href={node.href}>{node.label}</Link>
+                  <Link href={localeHref(lang, node.href)}>{node.label}</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             );
@@ -78,7 +87,7 @@ export function MegaMenu() {
                 <div className="w-[min(34rem,calc(100vw-3rem))] p-3">
                   <NavigationMenuLink asChild>
                     <Link
-                      href={node.href}
+                      href={localeHref(lang, node.href)}
                       className="hover:bg-accent focus-visible:ring-ring flex flex-col items-start gap-0 rounded-md p-3 focus-visible:ring-2 focus-visible:outline-none"
                     >
                       <span className="text-sm font-semibold [overflow-wrap:normal]">
@@ -97,7 +106,7 @@ export function MegaMenu() {
                       <li key={child.href}>
                         <NavigationMenuLink asChild>
                           <Link
-                            href={child.href}
+                            href={localeHref(lang, child.href)}
                             className="hover:bg-accent focus-visible:ring-ring flex flex-col items-start gap-0 rounded-md p-3 focus-visible:ring-2 focus-visible:outline-none"
                           >
                             {/*

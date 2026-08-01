@@ -1,1 +1,2308 @@
-{}
+{
+  "site": {
+    "nameKo": "DevFirm",
+    "legalName": "CMNYX Co., Ltd.",
+    "footerBrand": "DevFirm CIC",
+    "brand": "Computing Management",
+    "tagline": "DevFirm, firmă de dezvoltare formată din dezvoltatori",
+    "addressFull": "Etajul 2, Hanyang Building, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+    "addressLocality": "Seocho-gu",
+    "addressRegion": "Seoul"
+  },
+  "ui": {
+    "nav": {
+      "openMenu": "Deschide meniul",
+      "closeMenu": "Închide meniul",
+      "mainNavLabel": "Meniu principal",
+      "sectionNavLabel": "Meniu de secțiune",
+      "breadcrumbLabel": "Locația curentă",
+      "home": "Acasă",
+      "skipToContent": "Sari la conținut",
+      "externalLink": "Se deschide într-o fereastră nouă"
+    },
+    "toc": {
+      "title": "Conținutul acestei pagini"
+    },
+    "error": {
+      "notFoundTitle": "Pagina nu a fost găsită",
+      "notFoundBody": "Adresa s-a schimbat sau pagina a fost ștearsă. Folosiți linkurile de mai jos pentru a continua.",
+      "errorTitle": "A apărut o problemă",
+      "errorBody": "Încercați din nou peste câteva momente. Dacă problema continuă, contactați-ne.",
+      "retry": "Încearcă din nou",
+      "goHome": "Acasă"
+    },
+    "footer": {
+      "businessNumberLabel": "Număr de înregistrare al companiei",
+      "addressLabel": "Adresă",
+      "telLabel": "Telefon"
+    }
+  },
+  "nav": {
+    "mainNav": [
+      {
+        "label": "Despre companie",
+        "href": "/about",
+        "description": "Cum lucrează o firmă de dezvoltare formată din dezvoltatori",
+        "children": [
+          {
+            "label": "Ce este DevFirm",
+            "href": "/about",
+            "description": "Un model de firmă de dezvoltare care lucrează ca o firmă de avocatură"
+          },
+          {
+            "label": "Companie în companie (CIC)",
+            "href": "/about/cic",
+            "description": "O structură în care dezvoltatorii își conduc propria afacere"
+          },
+          {
+            "label": "Cariere pentru dezvoltatori",
+            "href": "/about/careers",
+            "description": "Poziții deschise în prezent"
+          }
+        ]
+      },
+      {
+        "label": "Soluții AI",
+        "href": "/solutions",
+        "description": "Physical AI pentru medii industriale, Manager Choi AI pentru birouri",
+        "children": [
+          {
+            "label": "Manager Choi AI",
+            "href": "/solutions/office-ai",
+            "description": "Agent pentru sarcini repetitive de birou"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai",
+            "description": "Agent care observă și decide în medii industriale"
+          },
+          {
+            "label": "AI pentru construcții",
+            "href": "/solutions/agents/construction",
+            "description": "Automatizarea proceselor, siguranței și materialelor"
+          },
+          {
+            "label": "AI pentru conținut",
+            "href": "/solutions/agents/content",
+            "description": "Sprijin pentru planificare, producție și post-producție"
+          },
+          {
+            "label": "AI pentru procese de fabricație",
+            "href": "/solutions/agents/manufacturing",
+            "description": "Monitorizarea echipamentelor, calității și randamentului"
+          },
+          {
+            "label": "AI pentru distribuție",
+            "href": "/solutions/agents/distribution",
+            "description": "Stocuri, logistică și prognoza cererii"
+          },
+          {
+            "label": "AI pentru servicii",
+            "href": "/solutions/agents/service",
+            "description": "Alocarea personalului, prezență și decontare"
+          },
+          {
+            "label": "AI pentru prevenirea infracțiunilor",
+            "href": "/solutions/agents/safety",
+            "description": "Detectarea semnelor anormale pe baza analizei video"
+          }
+        ]
+      },
+      {
+        "label": "Servicii de dezvoltare",
+        "href": "/services",
+        "description": "Oferim atât munca, cât și oamenii care construiesc",
+        "children": [
+          {
+            "label": "Dezvoltare software completă",
+            "href": "/services/software",
+            "description": "Construire web, aplicații, AI și sisteme"
+          },
+          {
+            "label": "Detașare de dezvoltatori",
+            "href": "/services/staffing",
+            "description": "Alocare on-site, remote sau pe proiect"
+          }
+        ]
+      },
+      {
+        "label": "Academie",
+        "href": "/academy",
+        "description": "Învățare pe proiecte (PBL) bazată pe curriculum NCS",
+        "children": [
+          {
+            "label": "Cursuri",
+            "href": "/academy/courses",
+            "description": "Lista cursurilor din cele trei școli"
+          },
+          {
+            "label": "Înscriere la curs",
+            "href": "/academy/apply",
+            "description": "Primirea cererilor de curs"
+          }
+        ]
+      },
+      {
+        "label": "Birou partajat",
+        "href": "/workspace",
+        "description": "Spațiu de lucru pentru dezvoltatori, specializat în post-producție"
+      }
+    ],
+    "footerNav": [
+      {
+        "label": "Companie",
+        "href": "/about",
+        "children": [
+          {
+            "label": "Ce este DevFirm",
+            "href": "/about"
+          },
+          {
+            "label": "Companie în companie (CIC)",
+            "href": "/about/cic"
+          },
+          {
+            "label": "Cariere pentru dezvoltatori",
+            "href": "/about/careers"
+          }
+        ]
+      },
+      {
+        "label": "Soluții AI",
+        "href": "/solutions",
+        "children": [
+          {
+            "label": "Toate soluțiile AI",
+            "href": "/solutions"
+          },
+          {
+            "label": "Manager Choi AI",
+            "href": "/solutions/office-ai"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai"
+          },
+          {
+            "label": "AI pentru construcții",
+            "href": "/solutions/agents/construction"
+          },
+          {
+            "label": "AI pentru conținut",
+            "href": "/solutions/agents/content"
+          },
+          {
+            "label": "AI pentru procese de fabricație",
+            "href": "/solutions/agents/manufacturing"
+          },
+          {
+            "label": "AI pentru distribuție",
+            "href": "/solutions/agents/distribution"
+          },
+          {
+            "label": "AI pentru servicii",
+            "href": "/solutions/agents/service"
+          },
+          {
+            "label": "AI pentru prevenirea infracțiunilor",
+            "href": "/solutions/agents/safety"
+          }
+        ]
+      },
+      {
+        "label": "Servicii și educație",
+        "href": "/services",
+        "children": [
+          {
+            "label": "Toate serviciile de dezvoltare",
+            "href": "/services"
+          },
+          {
+            "label": "Dezvoltare software completă",
+            "href": "/services/software"
+          },
+          {
+            "label": "Detașare de dezvoltatori",
+            "href": "/services/staffing"
+          },
+          {
+            "label": "Academia PBL",
+            "href": "/academy"
+          },
+          {
+            "label": "Cursuri",
+            "href": "/academy/courses"
+          },
+          {
+            "label": "Înscriere la curs",
+            "href": "/academy/apply"
+          },
+          {
+            "label": "Birou partajat",
+            "href": "/workspace"
+          }
+        ]
+      },
+      {
+        "label": "Contact și politici",
+        "href": "/contact",
+        "children": [
+          {
+            "label": "Contact",
+            "href": "/contact"
+          },
+          {
+            "label": "Politica de confidențialitate",
+            "href": "/privacy"
+          },
+          {
+            "label": "Termeni de utilizare",
+            "href": "/terms"
+          }
+        ]
+      }
+    ],
+    "sectionNav": {
+      "/about": [
+        {
+          "label": "Ce este DevFirm",
+          "href": "/about",
+          "description": "Un model de firmă de dezvoltare care lucrează ca o firmă de avocatură"
+        },
+        {
+          "label": "Companie în companie (CIC)",
+          "href": "/about/cic",
+          "description": "O structură în care dezvoltatorii își conduc propria afacere"
+        },
+        {
+          "label": "Cariere pentru dezvoltatori",
+          "href": "/about/careers",
+          "description": "Poziții deschise în prezent"
+        }
+      ],
+      "/solutions": [
+        {
+          "label": "Manager Choi AI",
+          "href": "/solutions/office-ai",
+          "description": "Agent pentru sarcini repetitive de birou"
+        },
+        {
+          "label": "Physical AI",
+          "href": "/solutions/physical-ai",
+          "description": "Agent care observă și decide în medii industriale"
+        },
+        {
+          "label": "AI pentru construcții",
+          "href": "/solutions/agents/construction",
+          "description": "Automatizarea proceselor, siguranței și materialelor"
+        },
+        {
+          "label": "AI pentru conținut",
+          "href": "/solutions/agents/content",
+          "description": "Sprijin pentru planificare, producție și post-producție"
+        },
+        {
+          "label": "AI pentru procese de fabricație",
+          "href": "/solutions/agents/manufacturing",
+          "description": "Monitorizarea echipamentelor, calității și randamentului"
+        },
+        {
+          "label": "AI pentru distribuție",
+          "href": "/solutions/agents/distribution",
+          "description": "Stocuri, logistică și prognoza cererii"
+        },
+        {
+          "label": "AI pentru servicii",
+          "href": "/solutions/agents/service",
+          "description": "Alocarea personalului, prezență și decontare"
+        },
+        {
+          "label": "AI pentru prevenirea infracțiunilor",
+          "href": "/solutions/agents/safety",
+          "description": "Detectarea semnelor anormale pe baza analizei video"
+        }
+      ],
+      "/services": [
+        {
+          "label": "Dezvoltare software completă",
+          "href": "/services/software",
+          "description": "Construire web, aplicații, AI și sisteme"
+        },
+        {
+          "label": "Detașare de dezvoltatori",
+          "href": "/services/staffing",
+          "description": "Alocare on-site, remote sau pe proiect"
+        }
+      ],
+      "/academy": [
+        {
+          "label": "Cursuri",
+          "href": "/academy/courses",
+          "description": "Lista cursurilor din cele trei școli"
+        },
+        {
+          "label": "Înscriere la curs",
+          "href": "/academy/apply",
+          "description": "Primirea cererilor de curs"
+        }
+      ]
+    },
+    "primaryCta": {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DevFirm",
+      "title": "DevFirm, firmă de dezvoltare formată din dezvoltatori",
+      "lead": "Așa cum avocații se reunesc într-o firmă de avocatură pentru a prelua cazuri, dezvoltatorii se reunesc la DevFirm pentru a prelua lucrări de dezvoltare. Compania gestionează contractele și decontarea, iar dezvoltatorii se concentrează pe construire.",
+      "primaryCta": {
+        "label": "Contact",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "Vezi soluțiile AI",
+        "href": "/solutions"
+      }
+    },
+    "slogan": {
+      "title": "Medii diferite au nevoie de AI diferit",
+      "left": {
+        "eyebrow": "Medii industriale",
+        "name": "Physical AI",
+        "desc": "Este folosit acolo unde sunt necesare observare și judecată. Transformă ce citesc camerele și senzorii în decizii pe care oamenii le pot folosi.",
+        "href": "/solutions/physical-ai"
+      },
+      "right": {
+        "eyebrow": "Birouri",
+        "name": "Manager Choi AI",
+        "desc": "Preia sarcinile repetitive de birou. Citește și organizează documente și pregătește rapoarte.",
+        "href": "/solutions/office-ai"
+      }
+    },
+    "audience": {
+      "eyebrow": "Motivul vizitei",
+      "title": "Începeți cu ce vă trebuie",
+      "cards": [
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-client.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Clienți corporate",
+          "desc": "Dacă aveți nevoie de adoptare AI sau de personal de dezvoltare",
+          "href": "/solutions",
+          "linkLabel": "Vezi soluțiile AI"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-learner.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Cursanți",
+          "desc": "Dacă doriți să învățați munca practică prin proiecte",
+          "href": "/academy",
+          "linkLabel": "Vezi academia"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-developer.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Dezvoltatori colaboratori",
+          "desc": "Dacă doriți să vă alăturați sau să conduceți un CIC",
+          "href": "/about/careers",
+          "linkLabel": "Vezi carierele"
+        }
+      ]
+    },
+    "agentsSection": {
+      "eyebrow": "Agenți AI pe industrii",
+      "title": "Asistenții AI pe domenii organizează munca; dvs. luați decizia",
+      "lead": "Agenții organizează mai întâi judecățile repetitive din șase industrii. Oamenii intervin doar acolo unde este necesară judecata."
+    },
+    "model": {
+      "eyebrow": "Modelul DevFirm",
+      "title": "DevFirm face pentru dezvoltatori ce face o firmă de avocatură pentru avocați",
+      "lead": "Dezvoltatorii își folosesc timpul pentru a construi, nu pentru vânzări, contracte, decontări și fiscalitate. Clientul contractează cu o companie, nu cu o persoană fizică.",
+      "comparison": {
+        "leftLabel": "Firmă de avocatură",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Avocat",
+            "right": "Dezvoltator"
+          },
+          {
+            "left": "Preluare caz",
+            "right": "Preluare proiect"
+          },
+          {
+            "left": "Secretariatul gestionează administrația",
+            "right": "Suportul de business gestionează back-office-ul"
+          },
+          {
+            "left": "Avocat partener",
+            "right": "Lider CIC"
+          },
+          {
+            "left": "Clienții contractează cu firma",
+            "right": "Clienții contractează cu compania"
+          }
+        ]
+      },
+      "note": "Pentru clienți, dispar riscurile contractării cu un freelancer individual. Pentru dezvoltatori, dispare munca greu de gestionat singuri."
+    },
+    "bands": {
+      "academy": {
+        "eyebrow": "Academia PBL",
+        "title": "Învățați construind",
+        "desc": "Curriculumul NCS este parcurs prin proiecte. La final, cursanții au rezultate pe care le pot trece în CV.",
+        "href": "/academy",
+        "linkLabel": "Vezi cursurile"
+      },
+      "workspace": {
+        "eyebrow": "Birou partajat",
+        "title": "Spațiu de lucru care susține post-producția",
+        "desc": "Un birou partajat pentru dezvoltatori, cu studio de înregistrare și infrastructură de producție de conținut.",
+        "href": "/workspace",
+        "linkLabel": "Vezi spațiul"
+      }
+    },
+    "trust": {
+      "eyebrow": "Companie",
+      "title": "Din 2007",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "Înființare"
+        },
+        {
+          "value": "CIC",
+          "label": "Operare CIC"
+        },
+        {
+          "value": "Seocho, Seoul",
+          "label": "Lângă Gangnam-daero"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Nu trebuie să știți încă ce să construiți",
+      "desc": "Spuneți-ne situația actuală, iar noi vom organiza mai întâi de unde să începeți.",
+      "cta": {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Despre companie",
+      "title": "O firmă de dezvoltare alcătuită din dezvoltatori",
+      "lead": "DevFirm construiește o structură în care dezvoltatorii se pot concentra doar pe dezvoltare. Compania se ocupă de restul."
+    },
+    "metaphor": {
+      "id": "model",
+      "eyebrow": "Modelul DevFirm",
+      "title": "Am aplicat structura firmei de avocatură dezvoltării",
+      "lead": "Așa cum avocații se concentrează doar pe cazuri cu sprijinul secretariatului, dezvoltatorii DevFirm se concentrează doar pe dezvoltare cu sprijinul suportului de business.",
+      "comparison": {
+        "leftLabel": "Firmă de avocatură",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Avocații preiau cazuri",
+            "right": "Dezvoltatorii preiau proiecte"
+          },
+          {
+            "left": "Secretariatul gestionează administrația",
+            "right": "Suportul de business gestionează back-office-ul"
+          },
+          {
+            "left": "Clienții contractează cu firma",
+            "right": "Clienții contractează cu compania"
+          },
+          {
+            "left": "Partenerii dețin participații",
+            "right": "Liderii CIC dețin o unitate de business"
+          }
+        ]
+      }
+    },
+    "backoffice": {
+      "id": "backoffice",
+      "eyebrow": "Suport de business",
+      "title": "Munca pe care dezvoltatorii nu trebuie să o facă",
+      "lead": "Acestea sunt elementele care iau cel mai mult timp dezvoltatorilor care lucrează singuri. La DevFirm, această muncă nu ajunge pe biroul dezvoltatorului.",
+      "items": [
+        {
+          "title": "Contracte și negociere",
+          "desc": "Compania menține contracte standard și proceduri de revizuire. Dezvoltatorii nu judecă singuri clauzele toxice."
+        },
+        {
+          "title": "Fiscalitate și decontare",
+          "desc": "Compania gestionează emiterea facturilor fiscale, impozitul reținut la sursă și declararea TVA."
+        },
+        {
+          "title": "Încasarea plăților",
+          "desc": "Compania gestionează creanțele și urmărirea lor. Dezvoltatorii nu trebuie să discute cu clienții despre bani."
+        },
+        {
+          "title": "Cele patru asigurări majore și relații de muncă",
+          "desc": "Compania gestionează raportările și administrarea muncii în funcție de forma de angajare."
+        }
+      ]
+    },
+    "history": {
+      "id": "history",
+      "eyebrow": "Istoric",
+      "title": "Din 2007",
+      "items": [
+        {
+          "year": "2007",
+          "title": "Compania a fost înființată",
+          "desc": "Am început dezvoltarea software și implementarea de sisteme."
+        },
+        {
+          "year": "2010s",
+          "title": "Detașare de dezvoltatori și outsourcing",
+          "desc": "Am extins serviciile prin alocare on-site și pe proiecte."
+        },
+        {
+          "year": "2020s",
+          "title": "Introducerea CIC",
+          "desc": "Am construit o structură în care dezvoltatorii își conduc propria afacere în interiorul companiei."
+        },
+        {
+          "year": "Prezent",
+          "title": "Business de agenți AI",
+          "desc": "Am reorganizat businessul în jurul Physical AI pentru medii industriale și al Manager Choi AI pentru birouri."
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "eyebrow": "Prezentare companie",
+      "title": "Informații de bază"
+    },
+    "cta": {
+      "title": "Există trei moduri de a lucra cu DevFirm",
+      "desc": "Ne puteți întâlni ca client, vă puteți alătura ca dezvoltator sau puteți începe în academie.",
+      "primary": {
+        "label": "Contact",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Vezi carierele",
+        "href": "/about/careers"
+      }
+    }
+  },
+  "cic": {
+    "hero": {
+      "eyebrow": "Companie în companie",
+      "title": "Conduceți propria afacere în interiorul companiei",
+      "lead": "CIC (Company In Company) este un sistem în care dezvoltatorii operează propriile unități de business în DevFirm. Folosesc creditul companiei și back-office-ul, iar direcția businessului o stabilesc singuri."
+    },
+    "what": {
+      "id": "what",
+      "eyebrow": "Ce este un CIC",
+      "title": "Reduceți riscul de a porni o afacere, păstrați autonomia",
+      "lead": "Când înființați singur o companie, trebuie să construiți creditul și administrația de la început. Un CIC le folosește pe ambele de la companie, iar liderul păstrează drepturile de decizie asupra businessului.",
+      "items": [
+        {
+          "title": "Folosiți creditul companiei",
+          "desc": "Clienții contractează cu o companie înființată în 2007, nu cu un nou antreprenor individual."
+        },
+        {
+          "title": "Folosiți back-office-ul",
+          "desc": "Suportul de business gestionează contractele, fiscalitatea, decontarea și relațiile de muncă."
+        },
+        {
+          "title": "Liderul decide businessul",
+          "desc": "Liderul CIC decide ce lucrări preia și ce echipă construiește."
+        },
+        {
+          "title": "Rezultatele se decontează pe unitate de business",
+          "desc": "Distribuirea se bazează pe performanța businessului, nu pe salariu."
+        }
+      ]
+    },
+    "operation": {
+      "id": "operation",
+      "eyebrow": "Mod de operare",
+      "title": "Așa operează DevFirm",
+      "steps": [
+        "Discutarea planului de business",
+        "Înființarea CIC și acordul asupra condițiilor",
+        "Câștigarea proiectelor și construirea echipei",
+        "Decontarea rezultatelor și reinvestire"
+      ]
+    },
+    "roadmap": {
+      "id": "roadmap",
+      "eyebrow": "Foaie de parcurs",
+      "title": "Avansarea agenților AI",
+      "lead": "Fiecare CIC construiește un agent pentru domeniul său, iar compania construiește baza comună. Cunoașterea domeniului se acumulează în CIC, iar tehnologia comună se acumulează în companie.",
+      "items": [
+        {
+          "title": "Asigurarea datelor de domeniu",
+          "desc": "Fiecare CIC colectează date reale și criterii de judecată din locațiile pe care le gestionează."
+        },
+        {
+          "title": "Construirea unei baze comune",
+          "desc": "Compania construiește funcții comune precum citire, căutare și raportare, pentru toate CIC-urile."
+        },
+        {
+          "title": "Productizarea agenților",
+          "desc": "Judecățile validate sunt ambalate în produse de agenți pe industrii."
+        }
+      ]
+    },
+    "conditions": {
+      "id": "conditions",
+      "eyebrow": "Condiții de participare",
+      "title": "Lucrăm cu astfel de persoane",
+      "items": [
+        "Experiență în crearea independentă de lucrări în propriul domeniu",
+        "Atitudine de responsabilitate pentru rezultate",
+        "Disponibilitatea de a construi și opera o echipă"
+      ],
+      "note": "Ne uităm mai puțin la anii de experiență și mai mult la capacitatea de a construi un business care funcționează singur. Este în regulă dacă nu aveți încă o echipă."
+    },
+    "cta": {
+      "title": "Dacă luați în calcul să începeți ca CIC",
+      "desc": "Spuneți-ne ce business planificați. Condițiile sunt stabilite în funcție de natura businessului.",
+      "primary": {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    }
+  },
+  "careers": {
+    "page": {
+      "hero": {
+        "eyebrow": "Cariere",
+        "title": "Căutăm dezvoltatori care să construiască alături de noi",
+        "lead": "DevFirm construiește o structură în care dezvoltatorii se pot concentra pe dezvoltare. Căutăm persoane care vor folosi această structură alături de noi."
+      },
+      "emptyState": "Nu există anunțuri deschise în acest moment. Candidaturile permanente sunt primite prin Contact.",
+      "statusLabel": {
+        "open": "Deschis",
+        "closed": "Închis"
+      },
+      "fields": {
+        "responsibilities": "Responsabilități",
+        "requirements": "Cerințe",
+        "preferred": "Calificări preferate",
+        "conditions": "Condiții de lucru",
+        "deadline": "Termen limită",
+        "apply": "Aplică"
+      },
+      "cta": {
+        "title": "Chiar dacă nu există un anunț potrivit",
+        "desc": "Spuneți-ne ce muncă doriți să faceți, iar noi vom căuta împreună un loc. Începerea ca CIC este, de asemenea, o opțiune.",
+        "primary": {
+          "label": "Contact",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Aflați despre CIC",
+          "href": "/about/cic"
+        }
+      }
+    },
+    "jobs": [
+      {
+        "slug": "ai-engineer",
+        "title": "Inginer de agenți AI",
+        "team": "Soluții AI",
+        "employmentType": "Normă întreagă",
+        "status": "open",
+        "deadline": "Permanent",
+        "responsibilities": [
+          "Proiectarea și implementarea conductelor de citire și raționament pentru agenți AI pe industrii",
+          "Organizarea căilor de colectare a datelor din locații și validarea calității",
+          "Ajustarea acurateței și răspunsul la probleme operaționale în locațiile de implementare"
+        ],
+        "requirements": [
+          "Cel puțin 3 ani de experiență practică cu conducte de date și modele bazate pe Python",
+          "Experiență în implementarea și operarea modelelor în servicii reale",
+          "Experiență în agrearea criteriilor cu personalul din locație"
+        ],
+        "preferred": [
+          "Experiență cu recunoaștere video sau detectarea anomaliilor în serii temporale",
+          "Înțelegerea domeniilor de fabricație, construcții sau logistică",
+          "Experiență în configurarea agenților LLM"
+        ],
+        "conditions": [
+          "Birou în Seocho-gu, Seoul; negociabil",
+          "Săptămână de lucru de cinci zile, program flexibil",
+          "Sprijin pentru echipamente și cheltuieli de învățare"
+        ]
+      },
+      {
+        "slug": "fullstack-developer",
+        "title": "Dezvoltator full-stack",
+        "team": "Servicii de dezvoltare",
+        "employmentType": "Normă întreagă",
+        "status": "open",
+        "deadline": "Permanent",
+        "responsibilities": [
+          "Proiectare până la lansare pentru servicii web și aplicații ale clienților",
+          "Îmbunătățirea și migrarea sistemelor existente",
+          "Participarea încă din etapa de organizare a cerințelor"
+        ],
+        "requirements": [
+          "Cel puțin 3 ani de experiență în dezvoltarea de servicii web",
+          "Stăpânirea TypeScript sau a unui limbaj echivalent cu tipare statică",
+          "Experiență în lansarea și operarea directă a serviciilor"
+        ],
+        "preferred": [
+          "Experiență cu Next.js App Router",
+          "Experiență în configurarea infrastructurii cloud",
+          "Experiență de comunicare directă cu clienții"
+        ],
+        "conditions": [
+          "Birou în Seocho-gu, Seoul; lucru on-site posibil în funcție de proiect",
+          "Săptămână de lucru de cinci zile, program flexibil",
+          "Acces disponibil la biroul partajat"
+        ]
+      },
+      {
+        "slug": "cic-lead",
+        "title": "Lider CIC",
+        "team": "CIC",
+        "employmentType": "Contract",
+        "status": "open",
+        "deadline": "Permanent",
+        "responsibilities": [
+          "Planificarea businessului și obținerea proiectelor pentru domeniul alocat",
+          "Construirea echipei și operarea proiectelor",
+          "Stabilirea direcției de productizare pentru agenții de domeniu"
+        ],
+        "requirements": [
+          "Experiență în crearea independentă de lucrări într-un anumit domeniu",
+          "Experiență în construirea unei echipe și finalizarea unui proiect",
+          "Atitudine de responsabilitate pentru rezultatele businessului"
+        ],
+        "preferred": [
+          "Rețea existentă de clienți",
+          "Experiență în proiecte de adoptare AI",
+          "Experiență de startup sau operare de business"
+        ],
+        "conditions": [
+          "Decontare bazată pe performanță; condițiile se discută în funcție de business",
+          "Sprijin complet cu creditul companiei și back-office",
+          "Format de lucru flexibil"
+        ]
+      }
+    ]
+  },
+  "solutions": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Soluții AI",
+        "title": "Physical AI pentru medii industriale, Manager Choi AI pentru birouri",
+        "lead": "Medii diferite necesită judecăți diferite. DevFirm le abordează pe două axe."
+      },
+      "axes": [
+        {
+          "eyebrow": "Medii industriale",
+          "name": "Physical AI",
+          "desc": "Transformă locațiile citite de camere și senzori în judecăți pe care oamenii le pot folosi.",
+          "href": "/solutions/physical-ai",
+          "linkLabel": "Vezi Physical AI"
+        },
+        {
+          "eyebrow": "Birouri",
+          "name": "Manager Choi AI",
+          "desc": "Preia sarcini repetitive precum citirea documentelor, organizarea lor și scrierea rapoartelor.",
+          "href": "/solutions/office-ai",
+          "linkLabel": "Vezi Manager Choi AI"
+        }
+      ],
+      "agentsSection": {
+        "id": "agents",
+        "eyebrow": "Agenți pe industrii",
+        "title": "Șase industrii, șase tipuri de judecată",
+        "lead": "Criteriile de judecată specifice fiecărei industrii sunt așezate pe aceeași bază. Agentul vorbește în limbajul locului de lucru."
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Proces de adoptare",
+        "title": "Începeți în patru pași",
+        "steps": [
+          "Evaluarea stării curente și verificarea datelor",
+          "Acord asupra criteriilor de judecată",
+          "Pilot timp de 4 până la 8 săptămâni",
+          "Trecere la operare și extindere"
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "eyebrow": "Întrebări frecvente",
+        "title": "Întrebări comune înainte de adoptare",
+        "items": [
+          {
+            "q": "Putem începe dacă datele noastre nu sunt organizate?",
+            "a": "Majoritatea locațiilor sunt așa. De aceea primul pas este verificarea datelor. Confirmăm mai întâi ce este posibil cu ce se acumulează deja, apoi creăm căi de colectare pentru ce lipsește."
+          },
+          {
+            "q": "Cât de precis este?",
+            "a": "Depinde de locație și de elementele de judecată. Din acest motiv, stabilim o perioadă pilot înainte de contractare și măsurăm cu date reale. Țintele sunt stabilite împreună după analizarea rezultatelor."
+          },
+          {
+            "q": "Trebuie să schimbăm sistemul existent?",
+            "a": "În majoritatea cazurilor, nu. Se conectează prin citirea datelor din sistemul existent și returnarea rezultatelor. Dacă este necesară înlocuirea, explicăm mai întâi motivul."
+          },
+          {
+            "q": "Cine îl operează după adoptare?",
+            "a": "DevFirm gestionează etapa inițială. După stabilizarea criteriilor de judecată, îl predăm persoanei responsabile. Operarea externalizată continuă este, de asemenea, posibilă."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Decidem mai întâi ce judecată automatizăm",
+        "desc": "Spuneți-ne ce judecăți repetă oamenii în locația dvs. actuală.",
+        "primary": {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      }
+    },
+    "physicalAi": {
+      "hero": {
+        "eyebrow": "Physical AI",
+        "title": "Adăugați ochi care citesc locația",
+        "lead": "Urmărește ce oamenii nu pot urmări continuu. Ce vede rămâne ca judecată, nu doar ca înregistrare."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Problemă",
+        "title": "Majoritatea informațiilor din locație trec pe lângă noi",
+        "items": [
+          {
+            "title": "Nu puteți urmări totul",
+            "desc": "Există multe camere, dar puțini oameni care le urmăresc."
+          },
+          {
+            "title": "După ce a trecut, este greu de găsit",
+            "desc": "Când este necesară confirmarea, derularea video necesită timp."
+          },
+          {
+            "title": "Standardele diferă",
+            "desc": "Oameni diferiți judecă aceeași scenă diferit."
+          }
+        ]
+      },
+      "stack": {
+        "id": "stack",
+        "eyebrow": "Capabilități tehnice",
+        "title": "Citește, judecă și transmite",
+        "items": [
+          {
+            "title": "Recunoaștere video",
+            "desc": "Distinge oamenii, echipamentele și stările și găsește tipare de risc."
+          },
+          {
+            "title": "Analiza seriilor temporale de senzori",
+            "desc": "Detectează fluxuri diferite de normal ca semnale de anomalie."
+          },
+          {
+            "title": "Procesare edge la fața locului",
+            "desc": "Face judecăți locale chiar și în locații cu rețele instabile."
+          },
+          {
+            "title": "Integrare cu sisteme de business",
+            "desc": "Trimite rezultatele judecății în fluxurile de aprobare și raportare."
+          }
+        ]
+      },
+      "industries": {
+        "id": "industries",
+        "eyebrow": "Industrii aplicabile",
+        "title": "Folosit în șase tipuri de locații"
+      },
+      "cta": {
+        "title": "Începeți cu o singură locație",
+        "desc": "Dacă există deja camere și senzori, începem cu acestea.",
+        "primary": {
+          "label": "Contact",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Vezi Manager Choi AI",
+          "href": "/solutions/office-ai"
+        }
+      }
+    },
+    "officeAi": {
+      "hero": {
+        "eyebrow": "Manager Choi AI",
+        "title": "Repetiția de birou nu este muncă pentru oameni",
+        "lead": "Citirea documentelor primite, organizarea lor, mutarea lor în formulare și scrierea rapoartelor. Manager Choi AI se ocupă de acestea."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Problemă",
+        "title": "Nu mai rămâne timp pentru judecată",
+        "items": [
+          {
+            "title": "Copierea datelor",
+            "desc": "Oamenii reintroduc conținut din e-mailuri și atașamente în formulare interne."
+          },
+          {
+            "title": "Căutări",
+            "desc": "Timpul se consumă căutând documente vechi pentru a confirma dovezi."
+          },
+          {
+            "title": "Verificări încrucișate",
+            "desc": "Documentele sunt comparate pentru a verifica dacă numerele coincid."
+          },
+          {
+            "title": "Pregătirea rezumatelor",
+            "desc": "Același conținut este rescris pentru fiecare public de raportare."
+          }
+        ]
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Ce face",
+        "title": "De la documente la raportare",
+        "items": [
+          {
+            "title": "Citirea documentelor",
+            "desc": "Extrage elementele necesare din contracte, situații de tranzacții și estimări."
+          },
+          {
+            "title": "Completarea formularelor interne",
+            "desc": "Completează elementele extrase în formularele companiei."
+          },
+          {
+            "title": "Căutarea dovezilor",
+            "desc": "Găsește conținut asociat în documente vechi și îl prezintă cu surse."
+          },
+          {
+            "title": "Revizuire prin verificare încrucișată",
+            "desc": "Identifică unde diferă numerele și condițiile între documente."
+          },
+          {
+            "title": "Ciorne de rapoarte",
+            "desc": "Creează rezumate adaptate publicului de raportare."
+          },
+          {
+            "title": "Alerte de urmărire",
+            "desc": "Urmărește elementele cu termene apropiate și elementele lipsă."
+          }
+        ]
+      },
+      "physical": {
+        "id": "physical",
+        "eyebrow": "Integrare Physical AI",
+        "title": "Păstrați conectate munca de birou și cea din locație",
+        "lead": "Ce citește Physical AI în locație intră în rapoartele Manager Choi AI. Creează un singur traseu de la fotografia din locație la documentul de aprobare."
+      },
+      "cta": {
+        "title": "Decideți ce documente să alocați primele",
+        "desc": "Spuneți-ne un singur tip de document pe care îl procesați cel mai des.",
+        "primary": {
+          "label": "Contact",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Vezi agenții pe industrii",
+          "href": "/solutions"
+        }
+      }
+    },
+    "agentPage": {
+      "problems": {
+        "id": "problems",
+        "eyebrow": "Probleme din locație",
+        "title": "Probabil faceți deja asta"
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Ce face",
+        "title": "Ce gestionează agentul"
+      },
+      "outcomes": {
+        "id": "outcomes",
+        "eyebrow": "Efecte așteptate",
+        "title": "Ce se schimbă",
+        "note": "După măsurarea cu date reale în perioada pilot, resetăm țintele."
+      },
+      "steps": {
+        "id": "steps",
+        "eyebrow": "Flux de adoptare",
+        "title": "Implementat în patru pași"
+      },
+      "siblings": {
+        "id": "siblings",
+        "eyebrow": "Alte industrii",
+        "title": "Cum îl folosesc alte locații"
+      },
+      "cta": {
+        "title": "Verificați dacă funcționează pentru locația dvs.",
+        "desc": "Verificăm mai întâi ce este posibil cu datele pe care le acumulați deja.",
+        "primary": {
+          "label": "Contact",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Vezi toate soluțiile AI",
+          "href": "/solutions"
+        }
+      }
+    }
+  },
+  "agents": [
+    {
+      "slug": "construction",
+      "name": "AI pentru construcții",
+      "tagline": "Reduceți decalajul dintre desene și șantier.",
+      "icon": {},
+      "problems": [
+        "Rapoartele de progres sunt agregate diferit de fiecare persoană",
+        "Înregistrările inspecțiilor de siguranță sunt împrăștiate pe hârtie și în mesagerie",
+        "Intrările de materiale nu corespund utilizării reale"
+      ],
+      "capabilities": [
+        {
+          "title": "Citirea progresului",
+          "desc": "Compară fotografiile de pe șantier cu jurnalele zilnice și calculează progresul după același standard în fiecare zi."
+        },
+        {
+          "title": "Detectarea riscurilor de siguranță",
+          "desc": "Detectează lipsa echipamentului de protecție și intrarea în zone periculoase în imaginile CCTV și alertează imediat."
+        },
+        {
+          "title": "Organizarea intrărilor și ieșirilor de materiale",
+          "desc": "Potrivește notele de intrare cu cantitățile de construcție și raportează săptămânal lipsurile sau surplusurile."
+        },
+        {
+          "title": "Scrierea raportului zilnic",
+          "desc": "Adună înregistrările împrăștiate și creează automat rapoarte în formatul clientului."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Timp de scriere a raportului zilnic",
+          "value": "-70%"
+        },
+        {
+          "label": "Inspecții de siguranță ratate",
+          "value": "0 cazuri"
+        },
+        {
+          "label": "Revizuirea variației materialelor",
+          "value": "O dată pe săptămână"
+        }
+      ],
+      "steps": [
+        "Verificarea datelor de șantier",
+        "Acord asupra criteriilor de citire",
+        "Pilot timp de 4 săptămâni",
+        "Extindere la toate șantierele"
+      ],
+      "seo": {
+        "title": "AI pentru construcții",
+        "description": "Un agent AI pentru șantiere care calculează progresul după același standard în fiecare zi folosind fotografii de pe șantier și jurnale zilnice și organizează automat inspecțiile de siguranță și intrările și ieșirile de materiale."
+      }
+    },
+    {
+      "slug": "content",
+      "name": "AI pentru conținut",
+      "tagline": "Folosiți timpul de producție pentru a crea.",
+      "icon": {},
+      "problems": [
+        "Prea mult timp se consumă pentru găsirea scenelor utilizabile în materialul brut",
+        "Munca repetitivă precum subtitrările și miniaturile întârzie programul de producție",
+        "Adaptarea conținutului pentru fiecare format de canal nu se termină"
+      ],
+      "capabilities": [
+        {
+          "title": "Indexarea materialelor brute",
+          "desc": "Indexează materialul brut după persoană, loc și dialog, astfel încât scenele necesare să fie găsite imediat."
+        },
+        {
+          "title": "Ciorne de subtitrare și traducere",
+          "desc": "Transcrie audio și creează ciorne de subtitrare aliniate cu tonul canalului."
+        },
+        {
+          "title": "Reutilizare pe canal",
+          "desc": "Derivă editări pentru formate de canal diferite dintr-o singură sursă."
+        },
+        {
+          "title": "Organizarea metadatelor",
+          "desc": "Organizează titluri, etichete și descrieri pentru căutare și finalizează pregătirea încărcării."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Timp de căutare a scenelor",
+          "value": "-80%"
+        },
+        {
+          "label": "Creare ciornă de subtitrare",
+          "value": "Imediat"
+        },
+        {
+          "label": "Derivate de canal",
+          "value": "1 la N"
+        }
+      ],
+      "steps": [
+        "Conectarea materialelor sursă",
+        "Învățarea standardelor de ton",
+        "Producție pilot",
+        "Integrare în linia de producție"
+      ],
+      "seo": {
+        "title": "AI pentru conținut",
+        "description": "Un agent AI care reduce munca repetitivă în producția de conținut prin indexarea materialului brut, ciorne de subtitrare și reutilizare pe canal."
+      }
+    },
+    {
+      "slug": "manufacturing",
+      "name": "AI pentru procese de fabricație",
+      "tagline": "Citiți semnalele înainte de apariția defectelor.",
+      "icon": {},
+      "problems": [
+        "Anomaliile echipamentelor sunt găsite doar după oprire",
+        "Standardele de inspecție diferă în funcție de inspector",
+        "Cauza randamentului redus nu poate fi identificată nici ulterior"
+      ],
+      "capabilities": [
+        {
+          "title": "Predicția anomaliilor echipamentelor",
+          "desc": "Găsește tipare în tendințele senzorilor care diferă de normal și alertează înainte de oprire."
+        },
+        {
+          "title": "Inspecție vizuală",
+          "desc": "Judecă defectele din video și elimină variațiile dintre inspectori."
+        },
+        {
+          "title": "Urmărirea cauzelor randamentului",
+          "desc": "Conectează variabilele de proces cu ratele de defecte și identifică situațiile în care performanța s-a deteriorat."
+        },
+        {
+          "title": "Revizuirea standardului de lucru",
+          "desc": "Înregistrează diferențele dintre lucrul standard și lucrul real, lăsând puncte de îmbunătățire."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Oprire neplanificată",
+          "value": "-40%"
+        },
+        {
+          "label": "Variație de inspecție",
+          "value": "Rezolvată"
+        },
+        {
+          "label": "Identificarea cauzei",
+          "value": "În aceeași zi"
+        }
+      ],
+      "steps": [
+        "Conectarea datelor echipamentelor",
+        "Învățarea intervalelor normale",
+        "Verificarea unei linii",
+        "Extinderea liniilor"
+      ],
+      "seo": {
+        "title": "AI pentru procese de fabricație",
+        "description": "Un agent AI care reduce pierderile din mediile de fabricație prin predicția anomaliilor echipamentelor, inspecție vizuală pe bază de video și urmărirea cauzelor randamentului."
+      }
+    },
+    {
+      "slug": "distribution",
+      "name": "AI pentru distribuție",
+      "tagline": "Reduceți stocurile și preveniți rupturile de stoc.",
+      "icon": {},
+      "problems": [
+        "Produsele cu rulaj rapid se epuizează primele",
+        "Stocul cu rulaj lent ocupă spațiu în depozit",
+        "Deciziile de comandă depind de experiența persoanei"
+      ],
+      "capabilities": [
+        {
+          "title": "Prognoza cererii",
+          "desc": "Prognozează cererea la nivel de articol pe baza tendințelor de vânzări și sezonalității."
+        },
+        {
+          "title": "Sugestii de comandă",
+          "desc": "Calculează timpul de livrare și stocul de siguranță pentru a sugera cantitățile de comandă."
+        },
+        {
+          "title": "Revizuirea sănătății stocului",
+          "desc": "Găsește stocurile care nu se mai rotesc și indică momentul pentru eliminarea lor."
+        },
+        {
+          "title": "Organizarea rutelor logistice",
+          "desc": "Găsește segmentele cu întârzieri în istoricul livrărilor și reface rutele."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Rata rupturilor de stoc",
+          "value": "-50%"
+        },
+        {
+          "label": "Zile de păstrare a stocului",
+          "value": "-25%"
+        },
+        {
+          "label": "Decizii de comandă",
+          "value": "Bazate pe dovezi"
+        }
+      ],
+      "steps": [
+        "Conectarea datelor de vânzări",
+        "Verificarea preciziei prognozei",
+        "Aplicare la articole selectate",
+        "Toate articolele"
+      ],
+      "seo": {
+        "title": "AI pentru distribuție",
+        "description": "Un agent AI pentru distribuție care reduce atât rupturile de stoc, cât și stocul în exces prin prognoza cererii și sugestii de comandă."
+      }
+    },
+    {
+      "slug": "service",
+      "name": "AI pentru operațiuni de servicii",
+      "tagline": "Deciziile de personal au nevoie și de dovezi.",
+      "icon": {},
+      "problems": [
+        "Personalul necesar pe locație este decis intuitiv",
+        "Verificarea prezenței și decontarea durează câteva zile în fiecare lună",
+        "Apar greșeli deoarece termenii contractuali diferă pe locații"
+      ],
+      "capabilities": [
+        {
+          "title": "Sugestii de alocare a personalului",
+          "desc": "Calculează personalul necesar pe baza dimensiunii locației și a necesarului de timp din trecut."
+        },
+        {
+          "title": "Agregarea automată a prezenței",
+          "desc": "Agregă înregistrările de intrare și ieșire conform termenilor contractuali și lasă oamenilor doar excepțiile."
+        },
+        {
+          "title": "Redactarea situațiilor de decontare",
+          "desc": "Potrivește tarifele specifice locației cu înregistrările de lucru și redactează situații de decontare."
+        },
+        {
+          "title": "Revizuirea termenilor contractuali",
+          "desc": "Găsește și semnalează neconcordanțele dintre condițiile specifice locației și operațiunile reale."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Timp de decontare",
+          "value": "-60%"
+        },
+        {
+          "label": "Bază de alocare",
+          "value": "Cuantificată"
+        },
+        {
+          "label": "Încălcări ale condițiilor",
+          "value": "Detectate în avans"
+        }
+      ],
+      "steps": [
+        "Organizarea termenilor contractuali",
+        "Conectarea sistemului de prezență",
+        "Pilot într-o locație",
+        "Toate locațiile"
+      ],
+      "seo": {
+        "title": "AI pentru operațiuni de servicii",
+        "description": "Un agent AI care reduce munca repetitivă în operațiunile de servicii prin automatizarea calculului alocării de personal, agregarea prezenței și redactarea situațiilor de decontare."
+      }
+    },
+    {
+      "slug": "safety",
+      "name": "AI pentru prevenirea infracțiunilor",
+      "tagline": "Vedeți semnalele înainte să devină incidente.",
+      "icon": {},
+      "problems": [
+        "Personalul de control nu poate urmări toate ecranele simultan",
+        "Revizuirea video după eveniment durează mult",
+        "Criteriile de judecată a riscurilor diferă în funcție de operatorul de control"
+      ],
+      "capabilities": [
+        {
+          "title": "Detectarea comportamentului anormal",
+          "desc": "Găsește și semnalează în timp real tipare precum staționarea suspectă, intruziunea și căderile."
+        },
+        {
+          "title": "Căutare pe segmente",
+          "desc": "Găsește imediat segmente video după condiții de persoană, vehicul și timp."
+        },
+        {
+          "title": "Monitorizare prioritară",
+          "desc": "Aduce mai întâi ecranele cu risc ridicat operatorului de control."
+        },
+        {
+          "title": "Organizarea înregistrărilor de incident",
+          "desc": "Înregistrează automat secvența de la detectare până la acțiune."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Căutare video",
+          "value": "Minute"
+        },
+        {
+          "label": "Detectări ratate",
+          "value": "Reduse"
+        },
+        {
+          "label": "Criterii de judecată",
+          "value": "Unificate"
+        }
+      ],
+      "steps": [
+        "Conectarea camerelor",
+        "Ajustarea criteriilor de detectare",
+        "Operare pilot pe timp de noapte",
+        "Extindere la toate zonele"
+      ],
+      "seo": {
+        "title": "AI pentru prevenirea infracțiunilor",
+        "description": "Un agent AI pentru prevenirea infracțiunilor care susține judecata personalului de control prin detectarea comportamentului anormal și căutarea video pe bază de condiții."
+      }
+    }
+  ],
+  "services": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Servicii de dezvoltare",
+        "title": "Oferim atât munca, cât și oamenii care construiesc",
+        "lead": "Puteți încredința un proiect întreg sau puteți solicita doar personalul de care aveți nevoie. Partea dvs. contractuală este o companie, nu o persoană fizică."
+      },
+      "cards": [
+        {
+          "title": "Dezvoltare software completă",
+          "desc": "Gestionăm organizarea cerințelor până la lansare și operare.",
+          "href": "/services/software",
+          "linkLabel": "Vezi serviciile de dezvoltare"
+        },
+        {
+          "title": "Detașare de dezvoltatori și outsourcing",
+          "desc": "Alocăm dezvoltatori on-site, remote sau pe proiect.",
+          "href": "/services/staffing",
+          "linkLabel": "Vezi detașarea"
+        }
+      ],
+      "collaboration": {
+        "id": "collaboration",
+        "eyebrow": "Metodă de colaborare",
+        "title": "Pentru reducerea sarcinii de management a clientului",
+        "items": [
+          {
+            "title": "Punct unic de contact",
+            "desc": "Nu comunicați separat cu mai mulți dezvoltatori. Comunicarea este organizată printr-un singur punct de contact."
+          },
+          {
+            "title": "Contract cu compania",
+            "desc": "Compania este responsabilă pentru contracte, facturi fiscale și remedierea defectelor."
+          },
+          {
+            "title": "Documente de predare",
+            "desc": "La finalizarea proiectului, predăm documentele necesare pentru operare."
+          }
+        ]
+      },
+      "domains": {
+        "id": "domains",
+        "eyebrow": "Arii tehnice",
+        "title": "Domeniu acoperit",
+        "items": [
+          "Servicii web și sisteme de administrare",
+          "Aplicații mobile",
+          "Agenți AI și conducte de date",
+          "Integrare și migrare de sisteme interne"
+        ]
+      },
+      "cta": {
+        "title": "Dacă nu sunteți sigur ce format se potrivește",
+        "desc": "Spuneți-ne situația, iar noi vom stabili mai întâi dacă este mai potrivit un proiect complet sau detașarea de personal.",
+        "primary": {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      }
+    },
+    "software": {
+      "hero": {
+        "eyebrow": "Dezvoltare software completă",
+        "title": "De la organizarea cerințelor la operare",
+        "lead": "Participăm din etapa în care se decide ce trebuie construit. Nu ne oprim la construire; finalizăm într-o stare care poate fi predată."
+      },
+      "areas": {
+        "id": "areas",
+        "eyebrow": "Arii de dezvoltare",
+        "title": "Patru arii",
+        "items": [
+          {
+            "title": "Servicii web",
+            "desc": "Proiectăm împreună servicii pentru clienți și sisteme interne de administrare."
+          },
+          {
+            "title": "Aplicații mobile",
+            "desc": "Alegem nativ sau cross-platform în funcție de domeniul necesar."
+          },
+          {
+            "title": "AI și date",
+            "desc": "Atașăm agenți acolo unde este necesară judecata și organizăm fluxurile de date."
+          },
+          {
+            "title": "Integrare de sisteme",
+            "desc": "Ne conectăm cu sistemele deja folosite fără a rupe fluxul de lucru."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Proces",
+        "title": "Cinci pași",
+        "steps": [
+          "Organizarea cerințelor",
+          "Confirmarea domeniului și calendarului",
+          "Proiectare și dezvoltare",
+          "Acceptanță și lansare",
+          "Predare și operare"
+        ]
+      },
+      "quality": {
+        "id": "quality",
+        "eyebrow": "Livrabile și standarde de calitate",
+        "title": "Definim dinainte ce veți primi",
+        "items": [
+          "Cod sursă și acces la repository",
+          "Documente de procedură pentru deployment și scripturi de deployment executabile",
+          "Specificații API și documente de structură a datelor",
+          "Întâlnire de predare și instruire pentru personalul de operare"
+        ],
+        "note": "Standardele de calitate sunt agreate în scris înainte de semnarea contractului. Acest lucru previne apariția unor standarde diferite la acceptanță."
+      },
+      "cta": {
+        "title": "Nu trebuie să aveți produsul definit",
+        "desc": "Spuneți-ne doar problema pe care doriți să o rezolvați, iar noi vom restrânge domeniul împreună.",
+        "primary": {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      }
+    },
+    "staffing": {
+      "hero": {
+        "eyebrow": "Detașare și outsourcing",
+        "title": "Alocați dezvoltatori în timp ce compania îi gestionează",
+        "lead": "Alocăm personal pentru perioada în care este necesar. DevFirm gestionează contractele și relațiile de muncă."
+      },
+      "difference": {
+        "id": "difference",
+        "eyebrow": "Diferență",
+        "title": "Cum diferă de contractele directe cu freelanceri",
+        "lead": "Compania absoarbe riscurile care apar atunci când un client contractează direct cu o persoană.",
+        "items": [
+          {
+            "title": "Partea contractuală este o companie",
+            "desc": "Dacă cineva pleacă la mijlocul proiectului sau apare un litigiu, compania este responsabilă și alocă personal înlocuitor."
+          },
+          {
+            "title": "Gestionare fiscală și de muncă",
+            "desc": "Clientul nu gestionează impozitul reținut la sursă sau determinările privind cele patru asigurări majore."
+          },
+          {
+            "title": "Pool de talente verificat",
+            "desc": "Alocăm dezvoltatori dintre cei cu care am lucrat pe proiecte."
+          },
+          {
+            "title": "Sprijin back-office",
+            "desc": "Suportul de business DevFirm gestionează decontarea și prezența dezvoltatorilor alocați."
+          }
+        ]
+      },
+      "formats": {
+        "id": "formats",
+        "eyebrow": "Formate de alocare",
+        "title": "Alegeți dintre trei formate",
+        "items": [
+          {
+            "title": "On-site",
+            "desc": "Dezvoltatorul lucrează la biroul clientului și se alătură echipei."
+          },
+          {
+            "title": "Remote",
+            "desc": "Munca se desfășoară la biroul DevFirm sau la biroul partajat."
+          },
+          {
+            "title": "Pe proiect",
+            "desc": "Perioada și livrabilele sunt definite, iar decontarea se bazează pe rezultate."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Procedură",
+        "title": "Patru pași",
+        "steps": [
+          "Organizarea capabilităților necesare",
+          "Propunerea candidaților",
+          "Interviu și confirmare",
+          "Alocare și revizuire periodică"
+        ]
+      },
+      "cta": {
+        "title": "Spuneți-ne capabilitățile de care aveți nevoie",
+        "desc": "Vom organiza candidații în funcție de perioadă și formatul de alocare.",
+        "primary": {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "academy": {
+    "page": {
+      "hero": {
+        "eyebrow": "Academia PBL",
+        "title": "Învățați construind",
+        "lead": "Nu este o instruire care se termină după prelegeri. Curriculumul NCS este parcurs prin proiecte, iar cursanții pleacă având rezultate pe care le pot trece în CV."
+      },
+      "pbl": {
+        "id": "pbl",
+        "eyebrow": "Ce este PBL",
+        "title": "Proiectul este curriculumul",
+        "lead": "Project Based Learning. Nu listăm mai întâi ce trebuie învățat. Decidem mai întâi ce trebuie construit. Cunoștințele necesare sunt completate în procesul de construire.",
+        "items": [
+          {
+            "title": "Rămân rezultate",
+            "desc": "Ceea ce rămâne nu este un certificat, ci un proiect funcțional."
+          },
+          {
+            "title": "Experimentați colaborarea",
+            "desc": "Nu este o temă individuală. Echipele împart calendarele și rolurile."
+          },
+          {
+            "title": "Revizuit după standarde de lucru",
+            "desc": "Dezvoltatorii care lucrează pe proiecte reale revizuiesc codul și rezultatele."
+          }
+        ]
+      },
+      "schools": {
+        "id": "schools",
+        "eyebrow": "Trei școli",
+        "title": "Alegeți în funcție de ce doriți să construiți"
+      },
+      "external": {
+        "id": "external",
+        "eyebrow": "Conexiune",
+        "title": "Curs de post-producție",
+        "desc": "Cursul de post-producție video este operat în legătură cu Seoul Film Academy.",
+        "href": "https://www.seoulfilmacademy.com",
+        "linkLabel": "Seoul Film Academy"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Proces de înscriere",
+        "title": "Patru pași",
+        "steps": [
+          "Alegeți cursul și aplicați",
+          "Consultare și plasare",
+          "Realizarea proiectului",
+          "Prezentare și finalizare"
+        ]
+      },
+      "cta": {
+        "title": "Dacă nu sunteți sigur ce curs se potrivește",
+        "desc": "Spuneți-ne ce puteți face acum și ce doriți să faceți, iar noi vom recomanda un curs.",
+        "primary": {
+          "label": "Înscriere la curs",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Vezi cursurile",
+          "href": "/academy/courses"
+        }
+      }
+    },
+    "schools": [
+      {
+        "key": "solution",
+        "name": "Școala de dezvoltare soluții",
+        "desc": "Construiți un serviciu de la început până la sfârșit.",
+        "art": {
+          "src": "/images/cards/school-solution.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "office",
+        "name": "Școala de muncă administrativă comună",
+        "desc": "Învățați cum să automatizați munca de birou cu instrumente.",
+        "art": {
+          "src": "/images/cards/school-office.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "project",
+        "name": "Școala de lucru pe proiecte",
+        "desc": "Învățați execuția proiectelor, inclusiv planificarea și gestionarea calendarului.",
+        "art": {
+          "src": "/images/cards/school-project.svg",
+          "width": 240,
+          "height": 180
+        }
+      }
+    ]
+  },
+  "courses": {
+    "list": [
+      {
+        "slug": "web-service-development",
+        "school": "solution",
+        "title": "Curs de dezvoltare servicii web",
+        "summary": "De la planificare la deployment, finalizați un serviciu pe care oamenii îl pot accesa efectiv.",
+        "duration": "16 săptămâni",
+        "capacity": "20 de persoane",
+        "target": [
+          "Persoane care cunosc sintaxa de bază a programării",
+          "Persoane în căutarea unui loc de muncă și care au nevoie de portofoliu",
+          "Angajați care doresc să construiască singuri un serviciu"
+        ],
+        "prerequisites": [
+          "Experiență de programare la nivel de sintaxă de bază",
+          "Noțiuni de bază HTML și CSS"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Mediu de dezvoltare și instrumente de colaborare",
+            "detail": "Setați fluxul Git, managementul issue-urilor și regulile de code review ca reguli de echipă."
+          },
+          {
+            "week": "3~6",
+            "topic": "Bazele frontend",
+            "detail": "Acoperiți structura componentelor, managementul stării și layouturile responsive."
+          },
+          {
+            "week": "7~10",
+            "topic": "Backend și date",
+            "detail": "Implementați design API, modelare de date și autentificare."
+          },
+          {
+            "week": "11~14",
+            "topic": "Proiect de echipă",
+            "detail": "Construiți serviciul planificat ca echipă. Primiți o revizuire o dată pe săptămână."
+          },
+          {
+            "week": "15~16",
+            "topic": "Deployment și prezentare",
+            "detail": "Lansați pe un domeniu real și prezentați rezultatul."
+          }
+        ],
+        "outcomes": [
+          "Un serviciu web accesibil",
+          "Repository și istoric de commituri",
+          "Document de deployment și README"
+        ],
+        "careers": [
+          "Dezvoltator web",
+          "Dezvoltator full-stack junior",
+          "Responsabil de serviciu intern"
+        ]
+      },
+      {
+        "slug": "ai-agent-basics",
+        "school": "solution",
+        "title": "Curs practic de agenți AI",
+        "summary": "Construiți un agent care gestionează direct munca. Acest curs este despre folosirea modelelor, nu despre crearea lor.",
+        "duration": "12 săptămâni",
+        "capacity": "16 persoane",
+        "target": [
+          "Dezvoltatori alocați automatizării muncii",
+          "Practicieni care analizează adoptarea AI",
+          "Persoane care doresc să înțeleagă structura agenților"
+        ],
+        "prerequisites": [
+          "Experiență în folosirea Python sau JavaScript",
+          "Experiență în apelarea API-urilor"
+        ],
+        "curriculum": [
+          {
+            "week": "1~3",
+            "topic": "Structura agentului",
+            "detail": "Setați structura de bază pentru apeluri de instrumente, augmentare prin regăsire și gestionarea eșecurilor."
+          },
+          {
+            "week": "4~7",
+            "topic": "Integrare cu munca",
+            "detail": "Implementați integrări care citesc și scriu documente, e-mailuri și foi de calcul."
+          },
+          {
+            "week": "8~10",
+            "topic": "Evaluare și îmbunătățire",
+            "detail": "Măsurați rezultatele, setați criterii și îmbunătățiți repetat."
+          },
+          {
+            "week": "11~12",
+            "topic": "Proiect de aplicare practică",
+            "detail": "Fiecare persoană selectează o sarcină de companie și o mută într-un agent."
+          }
+        ],
+        "outcomes": [
+          "Un agent de automatizare a muncii",
+          "Document cu criterii de evaluare",
+          "Raport de aplicare"
+        ],
+        "careers": [
+          "Responsabil operațiuni AI",
+          "Inginer de automatizare",
+          "Lider intern de adoptare AI"
+        ]
+      },
+      {
+        "slug": "office-automation",
+        "school": "office",
+        "title": "Curs de automatizare office",
+        "summary": "Reduceți munca repetitivă zilnică cu documente și foi de calcul folosind instrumente. Puteți începe fără să cunoașteți cod.",
+        "duration": "8 săptămâni",
+        "capacity": "24 de persoane",
+        "target": [
+          "Angajați cu multe sarcini repetitive de birou",
+          "Persoane care petrec mult timp în Excel",
+          "Manageri care doresc să organizeze munca departamentului"
+        ],
+        "prerequisites": [
+          "Experiență de bază în folosirea Excel"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Descompunerea muncii",
+            "detail": "Împărțiți munca actuală în pași și găsiți punctele care pot fi automatizate."
+          },
+          {
+            "week": "3~5",
+            "topic": "Automatizarea documentelor și foilor de calcul",
+            "detail": "Gestionați automat completarea formularelor, verificarea încrucișată și agregarea."
+          },
+          {
+            "week": "6~7",
+            "topic": "Folosirea instrumentelor AI",
+            "detail": "Atașați citirea și rezumarea documentelor la fluxul de lucru."
+          },
+          {
+            "week": "8",
+            "topic": "Aplicare și partajare",
+            "detail": "Organizați ce a fost construit astfel încât să poată fi predat echipei."
+          }
+        ],
+        "outcomes": [
+          "Trei sarcini automatizate",
+          "Document ghid de utilizare"
+        ],
+        "careers": [
+          "Responsabil automatizare office",
+          "Responsabil îmbunătățire muncă departamentală"
+        ]
+      },
+      {
+        "slug": "project-management",
+        "school": "project",
+        "title": "Curs de execuție a proiectelor",
+        "summary": "Învățați cum să finalizați proiecte gestionând calendarul și domeniul prin cazuri reale.",
+        "duration": "10 săptămâni",
+        "capacity": "18 persoane",
+        "target": [
+          "Persoane care preiau un proiect pentru prima dată",
+          "Lideri de echipă ale căror calendare continuă să alunece",
+          "Persoane care trebuie să coordoneze cu clienții"
+        ],
+        "prerequisites": [
+          "Experiență de lucru în echipă"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Definirea domeniului",
+            "detail": "Începeți prin a decide ce nu se face."
+          },
+          {
+            "week": "3~5",
+            "topic": "Calendar și risc",
+            "detail": "Creați estimări, rezerve și o listă de riscuri."
+          },
+          {
+            "week": "6~8",
+            "topic": "Execuție și coordonare",
+            "detail": "Gestionați cererile de schimbare și comunicarea cu stakeholderii."
+          },
+          {
+            "week": "9~10",
+            "topic": "Închidere și retrospectivă",
+            "detail": "Finalizați prin predare și o retrospectivă."
+          }
+        ],
+        "outcomes": [
+          "Un plan de proiect",
+          "Document de management al riscurilor",
+          "Raport de retrospectivă"
+        ],
+        "careers": [
+          "Manager de proiect",
+          "Lider de echipă",
+          "Planificator de servicii"
+        ]
+      }
+    ],
+    "page": {
+      "hero": {
+        "eyebrow": "Cursuri",
+        "title": "Cursuri deschise în prezent",
+        "lead": "Cursurile sunt organizate pe școli. Verificați durata și publicul țintă înainte de înscriere."
+      },
+      "filterAll": "Toate",
+      "fields": {
+        "duration": "Durată",
+        "capacity": "Capacitate",
+        "target": "Public țintă",
+        "prerequisites": "Cerințe preliminare",
+        "curriculum": "Curriculum",
+        "outcomes": "Rezultate de proiect",
+        "careers": "Parcurs după finalizare",
+        "week": "Săptămână",
+        "topic": "Subiect",
+        "detail": "Conținut",
+        "apply": "Înscriere la curs"
+      },
+      "cta": {
+        "title": "Puteți întreba înainte de înscriere",
+        "desc": "Verificăm mai întâi dacă puteți urma cursul la nivelul dvs. actual.",
+        "primary": {
+          "label": "Înscriere la curs",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "workspace": {
+    "hero": {
+      "eyebrow": "Birou partajat",
+      "title": "Un spațiu pentru cei care construiesc",
+      "lead": "Un spațiu de lucru în care dezvoltarea și producția de conținut pot fi finalizate în aceeași clădire."
+    },
+    "concept": {
+      "id": "concept",
+      "eyebrow": "Concept",
+      "title": "Un spațiu pentru dezvoltatori care susține post-producția",
+      "lead": "Nu este doar un loc în care se scrie cod. Este construit astfel încât să nu fie nevoie să plecați când este necesară înregistrare sau editare."
+    },
+    "facilities": {
+      "id": "facilities",
+      "eyebrow": "Facilități",
+      "title": "Ce este disponibil",
+      "items": [
+        {
+          "title": "Studio de înregistrare",
+          "desc": "Are o cabină izolată fonic pentru înregistrarea narațiunilor și interviurilor.",
+          "art": {
+            "src": "/images/workspace/workspace-studio.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Studio de înregistrare cu panouri fonoabsorbante, microfoane și consolă de mixaj"
+          }
+        },
+        {
+          "title": "Infrastructură de producție de conținut",
+          "desc": "Oferă echipamente și stocare pentru editare video și randare.",
+          "art": {
+            "src": "/images/workspace/workspace-infra.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Spațiu de infrastructură pentru producție de conținut cu stații de lucru, stocare și rackuri de noduri de randare"
+          }
+        },
+        {
+          "title": "Spațiu de lucru",
+          "desc": "Sunt folosite împreună posturi fixe, posturi deschise și săli mici de ședință.",
+          "art": {
+            "src": "/images/workspace/workspace-desk.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Spațiu de lucru partajat cu posturi fixe, posturi deschise și săli mici de ședință"
+          }
+        }
+      ]
+    },
+    "tenants": {
+      "id": "tenants",
+      "eyebrow": "Cine îl folosește",
+      "title": "Folosit de astfel de persoane",
+      "items": [
+        "Dezvoltatori care lucrează singuri sau în echipe mici",
+        "Echipe care au nevoie și de lucru video și audio",
+        "Echipe care operează un business ca DevFirm CIC"
+      ]
+    },
+    "pricing": {
+      "id": "pricing",
+      "eyebrow": "Tarife și solicitări",
+      "title": "Condiții de utilizare",
+      "note": "Condițiile variază în funcție de tipul de loc și perioada de utilizare. Studioul funcționează pe bază de rezervare. Contactați-ne pentru termenii exacți."
+    },
+    "location": {
+      "id": "location",
+      "eyebrow": "Locație",
+      "title": "Seocho-gu, Seoul",
+      "address": "Etajul 2, Hanyang Building, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+      "mapTitle": "Harta locației DevFirm",
+      "mapLinkLabel": "Vezi pe Kakao Map",
+      "mapHref": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C6%EA%B8%B8%2059-1%20%ED%95%9C%EC%96%91%EB%B9%8C%EB%94%A9%202%EC%B8%B5"
+    },
+    "cta": {
+      "title": "Puteți decide după vizită",
+      "desc": "Vom programa o vizită.",
+      "primary": {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    }
+  },
+  "forms": {
+    "contact": {
+      "hero": {
+        "eyebrow": "Solicitare",
+        "title": "Cum vă putem ajuta",
+        "lead": "Este suficientă o descriere scurtă. O persoană responsabilă o va analiza și vă va contacta."
+      },
+      "types": [
+        {
+          "value": "solution",
+          "label": "Adoptare soluție AI"
+        },
+        {
+          "value": "development",
+          "label": "Solicitare dezvoltare"
+        },
+        {
+          "value": "staffing",
+          "label": "Detașare personal"
+        },
+        {
+          "value": "academy",
+          "label": "Academie"
+        },
+        {
+          "value": "workspace",
+          "label": "Mutare în birou partajat"
+        },
+        {
+          "value": "etc",
+          "label": "Altele"
+        }
+      ],
+      "labels": {
+        "type": "Tip solicitare",
+        "name": "Nume",
+        "company": "Companie sau afiliere",
+        "email": "Email",
+        "phone": "Număr de contact",
+        "message": "Mesaj",
+        "consent": "Sunt de acord cu colectarea și utilizarea informațiilor personale",
+        "submit": "Trimite solicitarea",
+        "submitting": "Se trimite"
+      },
+      "placeholders": {
+        "name": "Hong Gil-dong",
+        "company": "Numele companiei (opțional)",
+        "email": "name@example.com",
+        "phone": "010-0000-0000 (opțional)",
+        "message": "Spuneți-ne situația și ce aveți nevoie."
+      },
+      "consentNote": "Colectăm numele, numărul de contact, emailul și conținutul solicitării pentru a procesa și răspunde la solicitare. Informațiile sunt păstrate timp de 3 ani după finalizarea procesării și apoi sunt distruse.",
+      "success": {
+        "title": "Solicitarea a fost primită",
+        "desc": "Vă vom contacta în 1 până la 2 zile lucrătoare."
+      },
+      "error": {
+        "title": "Nu s-a putut trimite",
+        "desc": "Încercați din nou peste câteva momente. Dacă tot nu funcționează, contactați-ne telefonic sau prin email la datele de mai jos."
+      }
+    },
+    "apply": {
+      "hero": {
+        "eyebrow": "Înscriere la curs",
+        "title": "Cerere de înscriere la cursul academiei",
+        "lead": "Alocăm un curs după ce confirmăm împreună dacă se potrivește nivelului dvs. actual."
+      },
+      "levels": [
+        {
+          "value": "none",
+          "label": "Sunt începător"
+        },
+        {
+          "value": "basic",
+          "label": "Cunosc bazele"
+        },
+        {
+          "value": "practical",
+          "label": "Am experiență practică"
+        }
+      ],
+      "labels": {
+        "name": "Nume",
+        "email": "Email",
+        "phone": "Număr de contact",
+        "course": "Curs dorit",
+        "level": "Nivel de experiență",
+        "motivation": "Motivul înscrierii",
+        "consent": "Sunt de acord cu colectarea și utilizarea informațiilor personale",
+        "submit": "Trimite cererea",
+        "submitting": "Se trimite"
+      },
+      "placeholders": {
+        "name": "Hong Gil-dong",
+        "email": "name@example.com",
+        "phone": "010-0000-0000",
+        "motivation": "Scrieți ce doriți să construiți și de ce doriți să învățați."
+      },
+      "consentNote": "Colectăm numele, numărul de contact, emailul și conținutul cererii pentru consultare și plasare la curs. Informațiile sunt păstrate timp de 1 an după încheierea consultării și apoi sunt distruse.",
+      "success": {
+        "title": "Cererea a fost primită",
+        "desc": "O persoană responsabilă o va analiza și va furniza un program de consultare."
+      },
+      "error": {
+        "title": "Nu s-a putut trimite",
+        "desc": "Încercați din nou peste câteva momente."
+      }
+    },
+    "validation": {
+      "required": "Acest câmp este obligatoriu",
+      "nameTooShort": "Introduceți numele",
+      "emailInvalid": "Formatul emailului este nevalid",
+      "phoneInvalid": "Formatul numărului de contact este nevalid",
+      "messageTooShort": "Introduceți cel puțin 10 caractere",
+      "consentRequired": "Trebuie să fiți de acord înainte de trimitere",
+      "tooFast": "Încercați din nou peste câteva momente",
+      "expired": "Timpul de introducere a expirat. Reîmprospătați și încercați din nou.",
+      "serverError": "A apărut o problemă în timpul procesării"
+    }
+  },
+  "legal": {
+    "ui": {
+      "updatedAtLabel": "Ultima actualizare"
+    },
+    "privacy": {
+      "title": "Politica de confidențialitate",
+      "intro": "CMNYX Co., Ltd. (denumită în continuare \"Compania\") apreciază informațiile personale ale utilizatorilor și respectă legile și reglementările relevante. Această politică se aplică website-ului operat de Companie.",
+      "sections": [
+        {
+          "id": "items",
+          "title": "1. Elemente de informații personale colectate",
+          "body": [
+            "Compania colectează informații personale numai prin formularele de solicitare și de înscriere la curs de pe website.",
+            "Contact: nume, email, număr de contact (opțional), companie sau afiliere (opțional), conținutul solicitării",
+            "Înscriere la curs: nume, email, număr de contact, curs dorit, nivel de experiență, motivul înscrierii",
+            "Compania nu folosește instrumente de analiză sau cookie-uri publicitare care urmăresc comportamentul vizitatorilor. Prin urmare, informațiile personale nu sunt colectate doar prin utilizarea website-ului."
+          ]
+        },
+        {
+          "id": "purpose",
+          "title": "2. Scopul colectării și utilizării",
+          "body": [
+            "Răspuns la solicitări și realizarea consultărilor",
+            "Primirea cererilor de curs, alocarea cursurilor și furnizarea de îndrumări"
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "3. Perioada de păstrare și utilizare",
+          "body": [
+            "Informații de solicitare: păstrate timp de 3 ani după finalizarea procesării și distruse fără întârziere.",
+            "Informații de înscriere la curs: păstrate timp de 1 an după încheierea consultării și distruse fără întârziere.",
+            "Dacă persoana vizată solicită distrugerea, informațiile sunt distruse imediat."
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "4. Furnizarea către terți și încredințarea prelucrării",
+          "body": [
+            "Compania nu furnizează informațiile personale ale utilizatorilor către terți.",
+            "Totuși, Compania folosește un serviciu de trimitere email pentru a livra conținutul solicitării către persoana responsabilă, iar conținutul introdus este transmis în acest proces."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "5. Drepturile persoanelor vizate",
+          "body": [
+            "Utilizatorii pot solicita în orice moment accesul la, corectarea, ștergerea sau suspendarea prelucrării informațiilor lor personale.",
+            "Cererile pot fi trimise la contact@devfirm.co sau 02-2058-0680, iar Compania va lua măsuri fără întârziere."
+          ]
+        },
+        {
+          "id": "manager",
+          "title": "6. Responsabil cu protecția informațiilor personale",
+          "body": [
+            "Departamentul de suport de business al CMNYX Co., Ltd.",
+            "Email: contact@devfirm.co",
+            "Telefon: 02-2058-0680"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "7. Modificări ale acestei politici",
+          "body": [
+            "Dacă această politică se modifică, Compania va anunța modificările și data intrării în vigoare prin website."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Termeni de utilizare",
+      "intro": "Acești Termeni stabilesc condițiile de utilizare a website-ului operat de CMNYX Co., Ltd. (denumită în continuare \"Compania\").",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "1. Scop",
+          "body": [
+            "Acești Termeni definesc drepturile, obligațiile și responsabilitățile Companiei și ale utilizatorilor privind utilizarea serviciului website oferit de Companie."
+          ]
+        },
+        {
+          "id": "service",
+          "title": "2. Conținutul serviciului",
+          "body": [
+            "Compania furnizează informații despre companie și servicii prin website și primește solicitări și cereri de curs.",
+            "Nu este necesară înregistrarea separată ca membru pentru utilizarea website-ului."
+          ]
+        },
+        {
+          "id": "obligations",
+          "title": "3. Obligațiile utilizatorului",
+          "body": [
+            "Utilizatorii nu trebuie să folosească neautorizat informațiile altei persoane sau să introducă informații false.",
+            "Utilizatorii nu pot reproduce, distribui sau utiliza comercial conținutul website-ului fără consimțământul prealabil al Companiei."
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "4. Drepturi de autor",
+          "body": [
+            "Drepturile de autor asupra textelor, imaginilor și materialelor publicate pe website aparțin Companiei."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "5. Limitarea răspunderii",
+          "body": [
+            "Compania nu răspunde pentru întreruperea serviciului cauzată de forță majoră, precum dezastre naturale sau defecțiuni de comunicații.",
+            "Informațiile publicate pe website sunt pentru referință, iar termenii contractuali specifici sunt guvernați de consultări și contracte separate."
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "title": "6. Jurisdicție",
+          "body": [
+            "Litigiile legate de acești Termeni sunt supuse jurisdicției instanței competente pentru locația sediului principal al Companiei."
+          ]
+        }
+      ]
+    },
+    "updatedAt": "2026-07-28"
+  },
+  "seo": {
+    "home": {
+      "description": "Physical AI pentru medii industriale, Manager Choi AI pentru birouri. DevFirm, firmă de dezvoltare formată din dezvoltatori, oferă soluții AI, dezvoltare software, detașare de dezvoltatori și Academia PBL."
+    },
+    "page": {
+      "about": {
+        "title": "Despre companie",
+        "description": "O firmă de dezvoltare în care se reunesc dezvoltatori, așa cum avocații se reunesc într-o firmă de avocatură. Aflați cum operează DevFirm: suportul de business gestionează contractele și decontarea, iar dezvoltatorii se concentrează pe construire."
+      },
+      "cic": {
+        "title": "Companie în companie (CIC)",
+        "description": "Sistemul Company In Company în care dezvoltatorii își conduc propriile afaceri în DevFirm. Vedeți condițiile de participare, domeniul de sprijin și foaia de parcurs pentru avansarea agenților AI."
+      },
+      "careers": {
+        "title": "Cariere pentru dezvoltatori",
+        "description": "DevFirm angajează dezvoltatori care să lucreze cu noi. Verificați responsabilitățile, cerințele și condițiile de lucru pentru pozițiile deschise în prezent."
+      },
+      "solutions": {
+        "title": "Soluții AI",
+        "description": "Oferim Physical AI pentru medii industriale, Manager Choi AI pentru birouri și agenți AI pentru șase industrii: construcții, conținut, fabricație, distribuție, operațiuni de servicii și prevenirea infracțiunilor."
+      },
+      "officeAi": {
+        "title": "Manager Choi AI - Agent pentru birouri",
+        "description": "Un agent AI care gestionează munca repetitivă de birou, precum citirea și organizarea documentelor și scrierea rapoartelor. Vedeți metoda de adoptare și cazurile de utilizare."
+      },
+      "physicalAi": {
+        "title": "Physical AI - Agent pentru medii industriale",
+        "description": "AI pentru medii industriale care transformă ce citesc camerele și senzorii în judecăți pe care oamenii le pot folosi. Vedeți capabilitățile tehnice și industriile aplicabile."
+      },
+      "services": {
+        "title": "Servicii de dezvoltare",
+        "description": "Dezvoltare software completă și detașare de dezvoltatori. Serviciile de dezvoltare DevFirm oferă atât munca, cât și oamenii care construiesc."
+      },
+      "software": {
+        "title": "Dezvoltare software completă",
+        "description": "Gestionăm dezvoltarea web, de aplicații, AI și de sisteme. Revizuiți în avans procesul și standardele de calitate ale livrabilelor."
+      },
+      "staffing": {
+        "title": "Detașare de dezvoltatori și outsourcing",
+        "description": "Alocăm personal de dezvoltare on-site, remote sau pe proiect. Deoarece partea contractuală este o companie, sarcina de management a clientului este redusă."
+      },
+      "academy": {
+        "title": "Academia PBL",
+        "description": "Instruire practică ce parcurge curriculumul NCS prin proiecte. Operăm Școala de dezvoltare soluții, Școala de muncă administrativă comună și Școala de lucru pe proiecte."
+      },
+      "courses": {
+        "title": "Cursuri",
+        "description": "Lista completă a cursurilor Academiei PBL DevFirm. Verificați durata, capacitatea, publicul țintă și curriculumul pe școală."
+      },
+      "apply": {
+        "title": "Înscriere la curs",
+        "description": "Trimiteți o cerere de înscriere la cursul Academiei PBL. Lăsați cursul dorit și nivelul de experiență, iar o persoană responsabilă vă va contacta."
+      },
+      "workspace": {
+        "title": "Birou partajat pentru dezvoltatori",
+        "description": "Un birou partajat pentru dezvoltatori, specializat în post-producție, cu studio de înregistrare și infrastructură de producție de conținut. Vedeți facilitățile și condițiile de mutare."
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Primim solicitări despre adoptarea soluțiilor, cereri de dezvoltare, detașare de personal, programe de academie și mutare. Etajul 2, Hanyang Building, Gangnam-daero 6-gil, Seocho-gu, Seoul."
+      },
+      "privacy": {
+        "title": "Politica de confidențialitate",
+        "description": "Informații despre elementele de informații personale pe care DevFirm le colectează, scopurile utilizării, perioadele de păstrare și drepturile utilizatorilor."
+      },
+      "terms": {
+        "title": "Termeni de utilizare",
+        "description": "Termeni privind utilizarea website-ului DevFirm."
+      }
+    },
+    "ogImageAlt": "DevFirm - firmă de dezvoltare formată din dezvoltatori. Physical AI pentru medii industriale, Manager Choi AI pentru birouri."
+  }
+}

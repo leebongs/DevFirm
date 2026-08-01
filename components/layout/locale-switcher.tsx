@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
-import { useTransition } from "react";
+import { useCallback, useRef, useTransition } from "react";
 import { Globe } from "lucide-react";
 import { locales, isLocale, DEFAULT_LOCALE } from "@/content/locales";
 import { cn } from "@/lib/utils";
@@ -35,6 +35,29 @@ export function LocaleSwitcher({
   const segments = pathname.split("/");
   const current = isLocale(segments[1] ?? "") ? segments[1]! : DEFAULT_LOCALE;
 
+  /** 같은 언어를 두 번 당기지 않는다 */
+  const prefetched = useRef<Set<string>>(new Set());
+
+  /**
+   * 드롭다운에 손이 닿으면 다른 언어판을 미리 당겨온다.
+   *
+   * 17개 언어판이 전부 빌드 시점에 굳어 있으므로 전환은 원래도 전체
+   * 새로고침이 아니라 RSC 페이로드 교체다. 그래도 그 페이로드를 **고르기 전에**
+   * 받아두면 선택하는 순간 이미 손에 있다 — 체감이 즉시 전환과 같아진다.
+   *
+   * 여는 동작(포인터 진입·포커스)에 걸어야 의미가 있다. 첫 렌더에 17개를
+   * 전부 당기면 언어를 바꿀 생각도 없는 방문자에게 16개 언어판을 떠넘기는
+   * 꼴이고, 그건 URL 방식을 택한 이유를 스스로 무너뜨린다.
+   */
+  const warm = useCallback(() => {
+    const rest = segments.slice(2).join("/");
+    for (const locale of locales) {
+      if (locale.code === current || prefetched.current.has(locale.code)) continue;
+      prefetched.current.add(locale.code);
+      router.prefetch(`/${locale.code}${rest ? `/${rest}` : ""}`);
+    }
+  }, [current, router, segments]);
+
   function switchTo(next: string) {
     if (next === current) return;
 
@@ -51,7 +74,11 @@ export function LocaleSwitcher({
   }
 
   return (
-    <div className={cn("relative inline-flex items-center", className)}>
+    <div
+      className={cn("relative inline-flex items-center", className)}
+      onPointerEnter={warm}
+      onFocusCapture={warm}
+    >
       <Globe
         className="text-muted-foreground pointer-events-none absolute start-2.5 size-4"
         aria-hidden
@@ -60,6 +87,7 @@ export function LocaleSwitcher({
         aria-label={label}
         value={current}
         disabled={pending}
+        onPointerDown={warm}
         onChange={(event) => switchTo(event.target.value)}
         className={cn(
           "border-input bg-background focus-visible:ring-ring h-9 cursor-pointer appearance-none",

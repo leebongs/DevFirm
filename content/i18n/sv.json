@@ -1,1 +1,2297 @@
-{}
+{
+  "site": {
+    "nameKo": "DevFirm",
+    "legalName": "CMNYX Co., Ltd.",
+    "footerBrand": "DevFirm CIC",
+    "brand": "Computing Management",
+    "tagline": "DevFirm, ett utvecklingsbolag med utvecklare",
+    "addressFull": "2 tr., Hanyang Building, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+    "addressLocality": "Seocho-gu",
+    "addressRegion": "Seoul"
+  },
+  "ui": {
+    "nav": {
+      "openMenu": "Öppna meny",
+      "closeMenu": "Stäng meny",
+      "mainNavLabel": "Huvudmeny",
+      "sectionNavLabel": "Sektionsmeny",
+      "breadcrumbLabel": "Nuvarande plats",
+      "home": "Hem",
+      "skipToContent": "Gå till innehåll",
+      "externalLink": "Öppnas i nytt fönster"
+    },
+    "toc": {
+      "title": "Innehåll på sidan"
+    },
+    "error": {
+      "notFoundTitle": "Sidan kunde inte hittas",
+      "notFoundBody": "Adressen kan ha ändrats eller sidan kan ha tagits bort. Gå vidare via länkarna nedan.",
+      "errorTitle": "Ett problem uppstod",
+      "errorBody": "Försök igen om en stund. Kontakta oss om problemet kvarstår.",
+      "retry": "Försök igen",
+      "goHome": "Till startsidan"
+    },
+    "footer": {
+      "businessNumberLabel": "Organisationsnummer",
+      "addressLabel": "Adress",
+      "telLabel": "Telefon"
+    }
+  },
+  "nav": {
+    "mainNav": [
+      {
+        "label": "Om oss",
+        "href": "/about",
+        "description": "Hur ett utvecklingsbolag med utvecklare arbetar",
+        "children": [
+          {
+            "label": "Vad DevFirm är",
+            "href": "/about",
+            "description": "En utvecklingsbolagsmodell som arbetar som en advokatbyrå"
+          },
+          {
+            "label": "Internföretag (CIC)",
+            "href": "/about/cic",
+            "description": "En struktur där utvecklare driver sin egen verksamhet"
+          },
+          {
+            "label": "Utvecklarjobb",
+            "href": "/about/careers",
+            "description": "Öppna roller"
+          }
+        ]
+      },
+      {
+        "label": "AI-lösningar",
+        "href": "/solutions",
+        "description": "Physical AI för industriella miljöer, Chef Choi AI för kontor",
+        "children": [
+          {
+            "label": "Chef Choi AI",
+            "href": "/solutions/office-ai",
+            "description": "En agent för repetitivt kontorsarbete"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai",
+            "description": "En agent som observerar och bedömer i industriella miljöer"
+          },
+          {
+            "label": "Byggprojekt-AI",
+            "href": "/solutions/agents/construction",
+            "description": "Automatisering av framdrift, säkerhet och materialhantering"
+          },
+          {
+            "label": "Innehålls-AI",
+            "href": "/solutions/agents/content",
+            "description": "Stöd för planering, produktion och postproduktion"
+          },
+          {
+            "label": "Tillverkningsprocess-AI",
+            "href": "/solutions/agents/manufacturing",
+            "description": "Övervakning av utrustning, kvalitet och utbyte"
+          },
+          {
+            "label": "Distributionshanterings-AI",
+            "href": "/solutions/agents/distribution",
+            "description": "Lager, logistik och efterfrågeprognoser"
+          },
+          {
+            "label": "Tjänsteoperations-AI",
+            "href": "/solutions/agents/service",
+            "description": "Personalplanering, närvaro och avräkning"
+          },
+          {
+            "label": "Brottsförebyggande AI",
+            "href": "/solutions/agents/safety",
+            "description": "Avvikelsedetektering baserad på videoanalys"
+          }
+        ]
+      },
+      {
+        "label": "Utvecklingstjänster",
+        "href": "/services",
+        "description": "Vi tillhandahåller både arbetet och människorna som bygger",
+        "children": [
+          {
+            "label": "Helhetsutveckling av mjukvara",
+            "href": "/services/software",
+            "description": "Webb, appar, AI och systembygge"
+          },
+          {
+            "label": "Utvecklarbemanning",
+            "href": "/services/staffing",
+            "description": "På plats, på distans eller per projekt"
+          }
+        ]
+      },
+      {
+        "label": "Akademi",
+        "href": "/academy",
+        "description": "Projektbaserat lärande (PBL) enligt NCS-läroplanen",
+        "children": [
+          {
+            "label": "Kursöversikt",
+            "href": "/academy/courses",
+            "description": "Kurslista för tre skolor"
+          },
+          {
+            "label": "Kursansökan",
+            "href": "/academy/apply",
+            "description": "Mottagning av kursansökningar"
+          }
+        ]
+      },
+      {
+        "label": "Delat kontor",
+        "href": "/workspace",
+        "description": "Arbetsplats för utvecklare med fokus på postproduktion"
+      }
+    ],
+    "footerNav": [
+      {
+        "label": "Företag",
+        "href": "/about",
+        "children": [
+          {
+            "label": "Vad DevFirm är",
+            "href": "/about"
+          },
+          {
+            "label": "Internföretag (CIC)",
+            "href": "/about/cic"
+          },
+          {
+            "label": "Utvecklarjobb",
+            "href": "/about/careers"
+          }
+        ]
+      },
+      {
+        "label": "AI-lösningar",
+        "href": "/solutions",
+        "children": [
+          {
+            "label": "Alla AI-lösningar",
+            "href": "/solutions"
+          },
+          {
+            "label": "Chef Choi AI",
+            "href": "/solutions/office-ai"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai"
+          },
+          {
+            "label": "Byggprojekt-AI",
+            "href": "/solutions/agents/construction"
+          },
+          {
+            "label": "Innehålls-AI",
+            "href": "/solutions/agents/content"
+          },
+          {
+            "label": "Tillverkningsprocess-AI",
+            "href": "/solutions/agents/manufacturing"
+          },
+          {
+            "label": "Distributionshanterings-AI",
+            "href": "/solutions/agents/distribution"
+          },
+          {
+            "label": "Tjänsteoperations-AI",
+            "href": "/solutions/agents/service"
+          },
+          {
+            "label": "Brottsförebyggande AI",
+            "href": "/solutions/agents/safety"
+          }
+        ]
+      },
+      {
+        "label": "Tjänster · utbildning",
+        "href": "/services",
+        "children": [
+          {
+            "label": "Alla utvecklingstjänster",
+            "href": "/services"
+          },
+          {
+            "label": "Helhetsutveckling av mjukvara",
+            "href": "/services/software"
+          },
+          {
+            "label": "Utvecklarbemanning",
+            "href": "/services/staffing"
+          },
+          {
+            "label": "PBL-akademi",
+            "href": "/academy"
+          },
+          {
+            "label": "Kursöversikt",
+            "href": "/academy/courses"
+          },
+          {
+            "label": "Kursansökan",
+            "href": "/academy/apply"
+          },
+          {
+            "label": "Delat kontor",
+            "href": "/workspace"
+          }
+        ]
+      },
+      {
+        "label": "Kontakt · villkor",
+        "href": "/contact",
+        "children": [
+          {
+            "label": "Kontakta oss",
+            "href": "/contact"
+          },
+          {
+            "label": "Integritetspolicy",
+            "href": "/privacy"
+          },
+          {
+            "label": "Användarvillkor",
+            "href": "/terms"
+          }
+        ]
+      }
+    ],
+    "sectionNav": {
+      "/about": [
+        {
+          "label": "Vad DevFirm är",
+          "href": "/about",
+          "description": "En utvecklingsbolagsmodell som arbetar som en advokatbyrå"
+        },
+        {
+          "label": "Internföretag (CIC)",
+          "href": "/about/cic",
+          "description": "En struktur där utvecklare driver sin egen verksamhet"
+        },
+        {
+          "label": "Utvecklarjobb",
+          "href": "/about/careers",
+          "description": "Öppna roller"
+        }
+      ],
+      "/solutions": [
+        {
+          "label": "Chef Choi AI",
+          "href": "/solutions/office-ai",
+          "description": "En agent för repetitivt kontorsarbete"
+        },
+        {
+          "label": "Physical AI",
+          "href": "/solutions/physical-ai",
+          "description": "En agent som observerar och bedömer i industriella miljöer"
+        },
+        {
+          "label": "Byggprojekt-AI",
+          "href": "/solutions/agents/construction",
+          "description": "Automatisering av framdrift, säkerhet och materialhantering"
+        },
+        {
+          "label": "Innehålls-AI",
+          "href": "/solutions/agents/content",
+          "description": "Stöd för planering, produktion och postproduktion"
+        },
+        {
+          "label": "Tillverkningsprocess-AI",
+          "href": "/solutions/agents/manufacturing",
+          "description": "Övervakning av utrustning, kvalitet och utbyte"
+        },
+        {
+          "label": "Distributionshanterings-AI",
+          "href": "/solutions/agents/distribution",
+          "description": "Lager, logistik och efterfrågeprognoser"
+        },
+        {
+          "label": "Tjänsteoperations-AI",
+          "href": "/solutions/agents/service",
+          "description": "Personalplanering, närvaro och avräkning"
+        },
+        {
+          "label": "Brottsförebyggande AI",
+          "href": "/solutions/agents/safety",
+          "description": "Avvikelsedetektering baserad på videoanalys"
+        }
+      ],
+      "/services": [
+        {
+          "label": "Helhetsutveckling av mjukvara",
+          "href": "/services/software",
+          "description": "Webb, appar, AI och systembygge"
+        },
+        {
+          "label": "Utvecklarbemanning",
+          "href": "/services/staffing",
+          "description": "På plats, på distans eller per projekt"
+        }
+      ],
+      "/academy": [
+        {
+          "label": "Kursöversikt",
+          "href": "/academy/courses",
+          "description": "Kurslista för tre skolor"
+        },
+        {
+          "label": "Kursansökan",
+          "href": "/academy/apply",
+          "description": "Mottagning av kursansökningar"
+        }
+      ]
+    },
+    "primaryCta": {
+      "label": "Kontakta oss",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DevFirm",
+      "title": "DevFirm, ett utvecklingsbolag med utvecklare",
+      "lead": "På samma sätt som jurister samlas på en advokatbyrå för att ta ärenden samlas utvecklare på DevFirm för att ta utvecklingsarbete. Bolaget hanterar avtal och avräkning, och utvecklarna fokuserar på att bygga.",
+      "primaryCta": {
+        "label": "Kontakta oss",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "Visa AI-lösningar",
+        "href": "/solutions"
+      }
+    },
+    "slogan": {
+      "title": "Olika miljöer kräver olika AI",
+      "left": {
+        "eyebrow": "Industriell miljö",
+        "name": "Physical AI",
+        "desc": "Används där något måste observeras och bedömas. Det som kameror och sensorer läser omvandlas till bedömningar som människor kan använda.",
+        "href": "/solutions/physical-ai"
+      },
+      "right": {
+        "eyebrow": "Kontorsmiljö",
+        "name": "Chef Choi AI",
+        "desc": "Tar över repetitivt kontorsarbete. Den läser och ordnar dokument och tar även fram rapporter.",
+        "href": "/solutions/office-ai"
+      }
+    },
+    "audience": {
+      "eyebrow": "Vad söker du",
+      "title": "Vi visar det du söker först",
+      "cards": [
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-client.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Företagskund",
+          "desc": "När ni behöver införa AI eller anlita utvecklare",
+          "href": "/solutions",
+          "linkLabel": "Visa AI-lösningar"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-learner.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "För dig som vill lära dig",
+          "desc": "När du vill lära dig praktiskt arbete genom projekt",
+          "href": "/academy",
+          "linkLabel": "Visa akademin"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-developer.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Utvecklare som vill arbeta med oss",
+          "desc": "När du vill bli anställd eller driva ett CIC",
+          "href": "/about/careers",
+          "linkLabel": "Visa jobb"
+        }
+      ]
+    },
+    "agentsSection": {
+      "eyebrow": "AI-agenter per bransch",
+      "title": "Låt AI-assistenter per område ordna underlaget. Fatta sedan beslutet.",
+      "lead": "Agenterna sammanställer först återkommande bedömningar i sex branscher. Människor ingriper bara där en bedömning krävs."
+    },
+    "model": {
+      "eyebrow": "DevFirm-modellen",
+      "title": "Det en advokatbyrå gör för jurister gör DevFirm för utvecklare",
+      "lead": "Utvecklare lägger sin tid på att bygga i stället för på försäljning, avtal, avräkning och skatt. Beställaren tecknar avtal med ett bolag, inte med en privatperson.",
+      "comparison": {
+        "leftLabel": "Advokatbyrå",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Jurist",
+            "right": "Utvecklare"
+          },
+          {
+            "left": "Uppdrag i ärenden",
+            "right": "Projektuppdrag"
+          },
+          {
+            "left": "Kansliet hanterar administrationen",
+            "right": "Affärsstödet hanterar backoffice"
+          },
+          {
+            "left": "Partnerjurist",
+            "right": "CIC-ledare"
+          },
+          {
+            "left": "Klienten tecknar avtal med bolaget",
+            "right": "Beställaren tecknar avtal med bolaget"
+          }
+        ]
+      },
+      "note": "För beställaren försvinner riskerna med avtal med enskilda frilansare. För utvecklaren försvinner arbete som är svårt att bära ensam."
+    },
+    "bands": {
+      "academy": {
+        "eyebrow": "PBL-akademi",
+        "title": "Lär genom att bygga",
+        "desc": "NCS-läroplanen genomförs i projektform. När kursen är klar finns ett resultat att ta med i meritförteckningen.",
+        "href": "/academy",
+        "linkLabel": "Visa kurser"
+      },
+      "workspace": {
+        "eyebrow": "Delat kontor",
+        "title": "En arbetsplats som även hanterar postproduktion",
+        "desc": "Ett delat kontor för utvecklare med inspelningsstudio och infrastruktur för innehållsproduktion.",
+        "href": "/workspace",
+        "linkLabel": "Visa lokalen"
+      }
+    },
+    "trust": {
+      "eyebrow": "Företag",
+      "title": "Sedan 2007",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "Grundat"
+        },
+        {
+          "value": "CIC",
+          "label": "Drift av CIC"
+        },
+        {
+          "value": "Seocho, Seoul",
+          "label": "Nära Gangnam-daero"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Det gör inget om ni ännu inte har bestämt vad som ska byggas",
+      "desc": "Berätta om nuläget, så börjar vi med att reda ut var arbetet ska börja.",
+      "cta": {
+        "label": "Kontakta oss",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Om oss",
+      "title": "Ett utvecklingsbolag med utvecklare",
+      "lead": "DevFirm bygger en struktur där utvecklare kan fokusera på utveckling. Resten hanterar bolaget."
+    },
+    "metaphor": {
+      "id": "model",
+      "eyebrow": "DevFirm-modellen",
+      "title": "Vi har överfört advokatbyråns struktur till utveckling",
+      "lead": "På samma sätt som jurister fokuserar på ärenden med stöd från kansliet fokuserar DevFirms utvecklare på utveckling med stöd från affärsstödet.",
+      "comparison": {
+        "leftLabel": "Advokatbyrå",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Jurister tar ärenden",
+            "right": "Utvecklare tar projekt"
+          },
+          {
+            "left": "Kansliet sköter administrationen",
+            "right": "Affärsstödet sköter backoffice"
+          },
+          {
+            "left": "Klienten tecknar avtal med bolaget",
+            "right": "Beställaren tecknar avtal med bolaget"
+          },
+          {
+            "left": "En partner får ägarandel",
+            "right": "En CIC-ledare får en verksamhet"
+          }
+        ]
+      }
+    },
+    "backoffice": {
+      "id": "backoffice",
+      "eyebrow": "Affärsstöd",
+      "title": "Arbete som utvecklare inte behöver göra",
+      "lead": "Detta är det som tar mest tid för utvecklare som arbetar ensamma. På DevFirm hamnar det inte på utvecklarens bord.",
+      "items": [
+        {
+          "title": "Avtal och förhandling",
+          "desc": "Bolaget har standardavtal och granskningsrutiner. Utvecklaren bedömer inte betungande klausuler ensam."
+        },
+        {
+          "title": "Skatt och avräkning",
+          "desc": "Bolaget hanterar fakturering, källskatt och momsrapportering."
+        },
+        {
+          "title": "Betalningsindrivning",
+          "desc": "Bolaget hanterar obetalda fordringar och påminnelser. Utvecklaren behöver inte ta betalningsdiskussioner med beställaren."
+        },
+        {
+          "title": "Socialförsäkring och arbetsrätt",
+          "desc": "Bolaget hanterar anmälningar och arbetsrättslig hantering enligt anställningsformen."
+        }
+      ]
+    },
+    "history": {
+      "id": "history",
+      "eyebrow": "Historik",
+      "title": "Sedan 2007",
+      "items": [
+        {
+          "year": "2007",
+          "title": "Bolaget grundades",
+          "desc": "Vi började med mjukvaruutveckling och systembygge."
+        },
+        {
+          "year": "2010s",
+          "title": "Utvecklarbemanning · outsourcing",
+          "desc": "Vi breddade tjänsterna med placering på plats och projektbaserade insatser."
+        },
+        {
+          "year": "2020s",
+          "title": "Införande av CIC",
+          "desc": "Vi skapade en struktur där utvecklare driver sin egen verksamhet inom bolaget."
+        },
+        {
+          "year": "Idag",
+          "title": "AI-agentverksamhet",
+          "desc": "Verksamheten har omformats kring Physical AI för industriella miljöer och Chef Choi AI för kontorsmiljöer."
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "eyebrow": "Företagsöversikt",
+      "title": "Grundinformation"
+    },
+    "cta": {
+      "title": "Det finns tre sätt att arbeta med DevFirm",
+      "desc": "Som beställare, som utvecklare eller genom att börja i akademin.",
+      "primary": {
+        "label": "Kontakta oss",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Visa jobb",
+        "href": "/about/careers"
+      }
+    }
+  },
+  "cic": {
+    "hero": {
+      "eyebrow": "Internföretag",
+      "title": "Driv din egen verksamhet inom bolaget",
+      "lead": "CIC (Company In Company) är ett system där utvecklare driver en egen affärsenhet inom DevFirm. De använder bolagets kreditvärdighet och backoffice, men bestämmer själva verksamhetens riktning."
+    },
+    "what": {
+      "id": "what",
+      "eyebrow": "Vad CIC är",
+      "title": "Mindre grundarrisk, kvarvarande självständighet",
+      "lead": "Den som bildar bolag ensam måste bygga kreditvärdighet och administration från början. Ett CIC lånar båda från bolaget, medan verksamhetsbesluten ligger hos ledaren.",
+      "items": [
+        {
+          "title": "Använd bolagets kreditvärdighet",
+          "desc": "Beställaren tecknar avtal med ett bolag grundat 2007, inte med en ny enskild näringsidkare."
+        },
+        {
+          "title": "Använd backoffice",
+          "desc": "Affärsstödet hanterar avtal, skatt, avräkning och arbetsrätt."
+        },
+        {
+          "title": "Ledaren bestämmer verksamheten",
+          "desc": "CIC-ledaren bestämmer vilka uppdrag som tas och vilket team som byggs."
+        },
+        {
+          "title": "Resultat avräknas per affärsenhet",
+          "desc": "Fördelningen bygger på verksamhetens resultat, inte på månadslön."
+        }
+      ]
+    },
+    "operation": {
+      "id": "operation",
+      "eyebrow": "Driftsätt",
+      "title": "Så driver DevFirm det",
+      "steps": [
+        "Diskussion om affärsplan",
+        "CIC-etablering · villkorsavtal",
+        "Uppdrag · teamuppbyggnad",
+        "Resultatavräkning · återinvestering"
+      ]
+    },
+    "roadmap": {
+      "id": "roadmap",
+      "eyebrow": "Färdplan",
+      "title": "Vidareutveckling av agent-AI",
+      "lead": "Varje CIC bygger en agent för sin domän, och bolaget bygger den gemensamma basen. Domänkunskap samlas i CIC:t och gemensam teknik samlas i bolaget.",
+      "items": [
+        {
+          "title": "Säkra domändata",
+          "desc": "CIC:t samlar faktiska data och bedömningskriterier från sina miljöer."
+        },
+        {
+          "title": "Bygga gemensam bas",
+          "desc": "Bolaget bygger gemensamma funktioner som tolkning, sökning och rapportering för alla CIC."
+        },
+        {
+          "title": "Produktifiering av agenter",
+          "desc": "Verifierade bedömningar paketeras som branschspecifika agentprodukter."
+        }
+      ]
+    },
+    "conditions": {
+      "id": "conditions",
+      "eyebrow": "Deltagarkrav",
+      "title": "Vi arbetar med personer som detta",
+      "items": [
+        "Erfarenhet av att skapa arbete själv inom den egna domänen",
+        "En hållning där man tar ansvar för resultatet",
+        "Vilja att bygga och driva ett team"
+      ],
+      "note": "Vi ser mer till om du kan skapa en verksamhet som bär sig själv än till antal år i yrket. Det går bra att ännu inte ha ett team."
+    },
+    "cta": {
+      "title": "Om du överväger att börja som CIC",
+      "desc": "Berätta vilken verksamhet du planerar. Villkoren sätts utifrån verksamhetens karaktär.",
+      "primary": {
+        "label": "Kontakta oss",
+        "href": "/contact"
+      }
+    }
+  },
+  "careers": {
+    "page": {
+      "hero": {
+        "eyebrow": "Rekrytering",
+        "title": "Vi söker utvecklare som vill bygga med oss",
+        "lead": "DevFirm bygger en struktur där utvecklare kan fokusera på utveckling. Vi söker personer som vill använda den strukturen med oss."
+      },
+      "emptyState": "Det finns inga öppna annonser just nu. Spontanansökningar tas emot via kontaktformuläret.",
+      "statusLabel": {
+        "open": "Öppen",
+        "closed": "Sista dag"
+      },
+      "fields": {
+        "responsibilities": "Ansvarsområden",
+        "requirements": "Krav",
+        "preferred": "Meriterande",
+        "conditions": "Villkor",
+        "deadline": "Sista dag",
+        "apply": "Ansök"
+      },
+      "cta": {
+        "title": "Även om rätt annons saknas",
+        "desc": "Berätta vilket arbete du vill göra, så letar vi efter en plats tillsammans. Det finns också en väg att börja som CIC.",
+        "primary": {
+          "label": "Kontakta oss",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Läs om CIC",
+          "href": "/about/cic"
+        }
+      }
+    },
+    "jobs": [
+      {
+        "slug": "ai-engineer",
+        "title": "AI-agentingenjör",
+        "team": "AI-lösningar",
+        "employmentType": "Tillsvidareanställning",
+        "status": "open",
+        "deadline": "Löpande",
+        "responsibilities": [
+          "Design och implementering av tolknings- och inferenspipelines för branschspecifika AI-agenter",
+          "Kartläggning av insamlingsvägar för fältdata och kvalitetsvalidering",
+          "Noggrannhetsjustering och hantering av driftfrågor på införandeplatsen"
+        ],
+        "requirements": [
+          "Minst 3 års praktisk erfarenhet av Python-baserade data- och modellpipelines",
+          "Erfarenhet av att driftsätta och driva modeller i faktiska tjänster",
+          "Erfarenhet av att komma överens om kriterier med ansvariga på plats"
+        ],
+        "preferred": [
+          "Erfarenhet av bildigenkänning eller avvikelsedetektering i tidsserier",
+          "Förståelse för tillverkning, bygg och logistik",
+          "Erfarenhet av att konfigurera LLM-agenter"
+        ],
+        "conditions": [
+          "Kontor i Seocho-gu, Seoul · kan diskuteras",
+          "5 dagar i veckan, flexibla arbetstider",
+          "Stöd för utrustning och utbildningskostnader"
+        ]
+      },
+      {
+        "slug": "fullstack-developer",
+        "title": "Fullstackutvecklare",
+        "team": "Utvecklingstjänster",
+        "employmentType": "Tillsvidareanställning",
+        "status": "open",
+        "deadline": "Löpande",
+        "responsibilities": [
+          "Från design till driftsättning av kunders webb- och apptjänster",
+          "Förbättring och migrering av befintliga system",
+          "Deltagande från kravgenomgången"
+        ],
+        "requirements": [
+          "Minst 3 års erfarenhet av webbtjänstutveckling",
+          "Goda kunskaper i TypeScript eller motsvarande statiskt typat språk",
+          "Erfarenhet av egen driftsättning och drift"
+        ],
+        "preferred": [
+          "Erfarenhet av Next.js App Router",
+          "Erfarenhet av att konfigurera molninfrastruktur",
+          "Erfarenhet av direkt kommunikation med beställare"
+        ],
+        "conditions": [
+          "Kontor i Seocho-gu, Seoul · arbete på plats kan förekomma beroende på projekt",
+          "5 dagar i veckan, flexibla arbetstider",
+          "Tillgång till delat kontor"
+        ]
+      },
+      {
+        "slug": "cic-lead",
+        "title": "CIC-ledare",
+        "team": "CIC",
+        "employmentType": "Kontraktsanställning",
+        "status": "open",
+        "deadline": "Löpande",
+        "responsibilities": [
+          "Affärsplanering och uppdragsanskaffning inom ansvarig domän",
+          "Teamuppbyggnad och projektdrift",
+          "Fastställande av produktifieringsriktning för domänagenten"
+        ],
+        "requirements": [
+          "Erfarenhet av att själv skapa arbete inom en specifik domän",
+          "Erfarenhet av att bygga ett team och slutföra projekt",
+          "En hållning där man tar ansvar för affärsresultat"
+        ],
+        "preferred": [
+          "Befintligt kundnätverk",
+          "Erfarenhet av AI-införandeprojekt",
+          "Erfarenhet av grundande eller verksamhetsdrift"
+        ],
+        "conditions": [
+          "Resultatbaserad avräkning · villkor diskuteras utifrån verksamhetens karaktär",
+          "Fullt stöd med bolagets kreditvärdighet och backoffice",
+          "Flexibel arbetsform"
+        ]
+      }
+    ]
+  },
+  "solutions": {
+    "hub": {
+      "hero": {
+        "eyebrow": "AI-lösningar",
+        "title": "Physical AI för industriella miljöer, Chef Choi AI för kontor",
+        "lead": "Olika miljöer kräver olika bedömningar. DevFirm arbetar längs två axlar."
+      },
+      "axes": [
+        {
+          "eyebrow": "Industriell miljö",
+          "name": "Physical AI",
+          "desc": "Det kameror och sensorer läser i miljön omvandlas till bedömningar som människor kan använda.",
+          "href": "/solutions/physical-ai",
+          "linkLabel": "Visa Physical AI"
+        },
+        {
+          "eyebrow": "Kontorsmiljö",
+          "name": "Chef Choi AI",
+          "desc": "Tar över repetitiva uppgifter som att läsa dokument, ordna dem och skriva rapporter.",
+          "href": "/solutions/office-ai",
+          "linkLabel": "Visa Chef Choi AI"
+        }
+      ],
+      "agentsSection": {
+        "id": "agents",
+        "eyebrow": "Branschspecifika agenter",
+        "title": "Sex branscher, sex typer av bedömning",
+        "lead": "Branschspecifika bedömningskriterier läggs ovanpå samma bas. Resultatet blir en agent som talar miljöns språk."
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Införandeprocess",
+        "title": "Börja i fyra steg",
+        "steps": [
+          "Nulägesdiagnos · datakontroll",
+          "Enas om bedömningskriterier",
+          "Pilotinförande i 4–8 veckor",
+          "Driftsättning · utökning"
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "eyebrow": "Vanliga frågor",
+        "title": "Frågor som ofta ställs före införande",
+        "items": [
+          {
+            "q": "Kan vi börja även om data inte är ordnade?",
+            "a": "Så ser de flesta miljöer ut. Det är därför första steget är datakontroll. Vi kontrollerar först hur långt man kan komma med det som redan samlas in och bygger insamlingsvägar för det som saknas."
+          },
+          {
+            "q": "Hur exakt är det?",
+            "a": "Det beror på miljön och bedömningspunkterna. Därför gör vi en pilot före avtal och mäter med faktiska data. Målnivåerna sätts tillsammans utifrån resultatet."
+          },
+          {
+            "q": "Måste vi ändra befintliga system?",
+            "a": "Oftast inte. Lösningen kopplas på genom att läsa data från befintliga system och skicka tillbaka resultat. Om ett byte behövs förklarar vi först varför."
+          },
+          {
+            "q": "Vem sköter driften efter införande?",
+            "a": "I början sköter DevFirm driften. När bedömningskriterierna är stabila lämnas den över till ansvarig person. Fortsatt drift som uppdrag är också möjligt."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Vi börjar med att bestämma vilka bedömningar som ska automatiseras",
+        "desc": "Berätta vilka bedömningar människor upprepar i den nuvarande miljön.",
+        "primary": {
+          "label": "Kontakta oss",
+          "href": "/contact"
+        }
+      }
+    },
+    "physicalAi": {
+      "hero": {
+        "eyebrow": "Physical AI",
+        "title": "Vi ger platsen ögon som kan läsa den",
+        "lead": "Den ser det som människor inte kan övervaka hela tiden. Det som observeras blir inte bara en registrering utan en bedömning."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Problem",
+        "title": "Det mesta av platsens information passerar förbi",
+        "items": [
+          {
+            "title": "Allt kan inte övervakas",
+            "desc": "Det finns många kameror, men begränsat med personer som kan titta."
+          },
+          {
+            "title": "När det har passerat är det svårt att hitta",
+            "desc": "När något behöver kontrolleras tar det tid att spola tillbaka video."
+          },
+          {
+            "title": "Kriterierna skiljer sig",
+            "desc": "Olika ansvariga bedömer samma scen på olika sätt."
+          }
+        ]
+      },
+      "stack": {
+        "id": "stack",
+        "eyebrow": "Teknisk kapacitet",
+        "title": "Läser, bedömer och skickar vidare",
+        "items": [
+          {
+            "title": "Videoigenkänning",
+            "desc": "Skiljer mellan personer, utrustning och status samt hittar riskmönster."
+          },
+          {
+            "title": "Tidsserieanalys av sensorer",
+            "desc": "Identifierar avvikande flöden som avvikelsesignaler."
+          },
+          {
+            "title": "Edgebearbetning på plats",
+            "desc": "Gör bedömningar lokalt även där nätverket är instabilt."
+          },
+          {
+            "title": "Integration med affärssystem",
+            "desc": "Skickar bedömningsresultat vidare till godkännande- och rapportflöden."
+          }
+        ]
+      },
+      "industries": {
+        "id": "industries",
+        "eyebrow": "Tillämpade branscher",
+        "title": "Används i sex typer av miljöer"
+      },
+      "cta": {
+        "title": "Börja med en plats",
+        "desc": "Om kameror och sensorer redan finns använder vi dem först.",
+        "primary": {
+          "label": "Kontakta oss",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Visa Chef Choi AI",
+          "href": "/solutions/office-ai"
+        }
+      }
+    },
+    "officeAi": {
+      "hero": {
+        "eyebrow": "Chef Choi AI",
+        "title": "Kontorets repetitiva arbete behöver inte göras av människor",
+        "lead": "Att läsa mottagna dokument, ordna dem, föra över dem till formulär och skriva rapporter. Det tar Chef Choi AI hand om."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Problem",
+        "title": "Det finns inte tid för själva bedömningen",
+        "items": [
+          {
+            "title": "Att skriva över uppgifter",
+            "desc": "Innehåll från e-post och bilagor matas in på nytt i interna formulär."
+          },
+          {
+            "title": "Att leta upp underlag",
+            "desc": "Tid går åt till att söka i tidigare dokument för att kontrollera grunderna."
+          },
+          {
+            "title": "Att jämföra",
+            "desc": "Dokument jämförs för att se om siffrorna stämmer."
+          },
+          {
+            "title": "Att sammanställa för rapportering",
+            "desc": "Samma innehåll skrivs om beroende på mottagare."
+          }
+        ]
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Vad den gör",
+        "title": "Från dokument till rapportering",
+        "items": [
+          {
+            "title": "Dokumenttolkning",
+            "desc": "Hämtar ut nödvändiga poster ur avtal, transaktionsspecifikationer och offerter."
+          },
+          {
+            "title": "Fyller i interna formulär",
+            "desc": "Fyller i de uttagna posterna enligt bolagets formulär."
+          },
+          {
+            "title": "Sökning efter underlag",
+            "desc": "Hittar relevant innehåll i tidigare dokument och visar det med källor."
+          },
+          {
+            "title": "Jämförelsekontroll",
+            "desc": "Pekar ut där siffror och villkor skiljer sig mellan dokument."
+          },
+          {
+            "title": "Rapportutkast",
+            "desc": "Tar fram sammanfattningar anpassade till mottagaren."
+          },
+          {
+            "title": "Uppföljningsaviseringar",
+            "desc": "Håller reda på ärenden med nära deadline och sådant som saknas."
+          }
+        ]
+      },
+      "physical": {
+        "id": "physical",
+        "eyebrow": "Koppling till Physical AI",
+        "title": "Så att kontor och plats hänger ihop",
+        "lead": "Det som Physical AI läser på plats går vidare till Chef Choi AI:s rapport. Vägen från ett foto på plats till ett godkännandedokument samlas i ett flöde."
+      },
+      "cta": {
+        "title": "Bestäm vilket dokument som ska lämnas över först",
+        "desc": "Det räcker att ange den dokumenttyp som behandlas oftast.",
+        "primary": {
+          "label": "Kontakta oss",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Visa branschspecifika agenter",
+          "href": "/solutions"
+        }
+      }
+    },
+    "agentPage": {
+      "problems": {
+        "id": "problems",
+        "eyebrow": "Problem på plats",
+        "title": "Så arbetar ni sannolikt nu"
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Vad den gör",
+        "title": "Det agenten tar över"
+      },
+      "outcomes": {
+        "id": "outcomes",
+        "eyebrow": "Förväntad effekt",
+        "title": "Vad som förändras",
+        "note": "Efter pilotperioden mäts faktisk data och målen sätts om."
+      },
+      "steps": {
+        "id": "steps",
+        "eyebrow": "Införandeflöde",
+        "title": "Införs i fyra steg"
+      },
+      "siblings": {
+        "id": "siblings",
+        "eyebrow": "Andra branscher",
+        "title": "Så används det i andra miljöer"
+      },
+      "cta": {
+        "title": "Kontrollera om det fungerar i er miljö",
+        "desc": "Vi kontrollerar först hur långt ni kan komma med den data som redan samlas in.",
+        "primary": {
+          "label": "Kontakta oss",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Visa alla AI-lösningar",
+          "href": "/solutions"
+        }
+      }
+    }
+  },
+  "agents": [
+    {
+      "slug": "construction",
+      "name": "Byggprojekt-AI",
+      "tagline": "Minskar avståndet mellan ritningar och byggplats.",
+      "icon": {},
+      "problems": [
+        "Framdriftsrapportering sammanställs olika av olika personer",
+        "Säkerhetskontroller finns utspridda på papper och i meddelanden",
+        "Materialinleveranser och faktisk förbrukning stämmer inte"
+      ],
+      "capabilities": [
+        {
+          "title": "Tolkning av framdrift",
+          "desc": "Jämför platsfoton och dagliga arbetsrapporter och beräknar framdrift varje dag enligt samma kriterier."
+        },
+        {
+          "title": "Detektering av säkerhetsrisker",
+          "desc": "Detekterar saknad skyddsutrustning och inträde i riskzoner i CCTV-video och meddelar direkt."
+        },
+        {
+          "title": "Sammanställning av materialflöden",
+          "desc": "Jämför inleveransunderlag med byggvolymer och rapporterar över- och underskott varje vecka."
+        },
+        {
+          "title": "Daglig rapportering",
+          "desc": "Samlar utspridda poster och skapar automatiskt rapporter enligt beställarens mall."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Tid för daglig rapport",
+          "value": "-70%"
+        },
+        {
+          "label": "Missade säkerhetskontroller",
+          "value": "0 fall"
+        },
+        {
+          "label": "Materialavvikelsekontroll",
+          "value": "1 gång/vecka"
+        }
+      ],
+      "steps": [
+        "Kontroll av platsdata",
+        "Enas om tolkningskriterier",
+        "Pilotinförande i 4 veckor",
+        "Utökning till alla platser"
+      ],
+      "seo": {
+        "title": "Byggprojekt-AI",
+        "description": "En AI-agent för byggplatser som beräknar framdrift dagligen enligt samma kriterier med platsfoton och dagliga arbetsrapporter, och automatiskt ordnar säkerhetskontroller och materialflöden."
+      }
+    },
+    {
+      "slug": "content",
+      "name": "Innehålls-AI",
+      "tagline": "Använd produktionstiden till att skapa.",
+      "icon": {},
+      "problems": [
+        "All tid går åt till att hitta användbara scener i råmaterialet",
+        "Repetitivt arbete som undertexter och miniatyrer tränger undan produktionstidplanen",
+        "Omarbetning enligt varje kanals format tar aldrig slut"
+      ],
+      "capabilities": [
+        {
+          "title": "Indexering av råmaterial",
+          "desc": "Indexerar råmaterial efter personer, platser och repliker så att rätt scen hittas direkt."
+        },
+        {
+          "title": "Utkast till undertexter och översättning",
+          "desc": "Transkriberar tal och tar fram undertextutkast anpassade till kanalens ton."
+        },
+        {
+          "title": "Omstrukturering per kanal",
+          "desc": "Skapar redigerade versioner för olika kanalformat från ett original."
+        },
+        {
+          "title": "Metadatahantering",
+          "desc": "Ordnar titel, taggar och beskrivning för sökning och gör uppladdningen klar."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Tid för scensökning",
+          "value": "-80%"
+        },
+        {
+          "label": "Undertextutkast",
+          "value": "Direkt"
+        },
+        {
+          "label": "Kanalversioner",
+          "value": "1→N"
+        }
+      ],
+      "steps": [
+        "Koppla råmaterial",
+        "Lär in tonkriterier",
+        "Pilotproduktion",
+        "Införing i produktionslinjen"
+      ],
+      "seo": {
+        "title": "Innehålls-AI",
+        "description": "En AI-agent som minskar repetitivt arbete i innehållsproduktion genom indexering av råmaterial, undertextutkast och kanalvis omstrukturering."
+      }
+    },
+    {
+      "slug": "manufacturing",
+      "name": "Tillverkningsprocess-AI",
+      "tagline": "Läser signaler innan fel uppstår.",
+      "icon": {},
+      "problems": [
+        "Utrustningsavvikelser upptäcks först efter stopp",
+        "Inspektionskriterier skiljer sig mellan inspektörer",
+        "Orsaken till lägre utbyte kan inte fastställas ens i efterhand"
+      ],
+      "capabilities": [
+        {
+          "title": "Prognos av utrustningsavvikelser",
+          "desc": "Hittar mönster som avviker från det normala i sensordata och meddelar före stopp."
+        },
+        {
+          "title": "Visuell inspektion",
+          "desc": "Bedömer defekter via video och eliminerar skillnader mellan inspektörer."
+        },
+        {
+          "title": "Spårning av orsaker till utbyte",
+          "desc": "Kopplar processvariabler till felfrekvens och pekar ut under vilka villkor resultatet försämrades."
+        },
+        {
+          "title": "Kontroll av arbetsstandard",
+          "desc": "Registrerar skillnader mellan standardarbete och faktisk utföring för att lämna förbättringspunkter."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Oplanerade stopp",
+          "value": "-40%"
+        },
+        {
+          "label": "Inspektionsvariation",
+          "value": "Åtgärdad"
+        },
+        {
+          "label": "Orsaksidentifiering",
+          "value": "Samma dag"
+        }
+      ],
+      "steps": [
+        "Koppla utrustningsdata",
+        "Lära normalintervall",
+        "Verifiering på en linje",
+        "Utökning till fler linjer"
+      ],
+      "seo": {
+        "title": "Tillverkningsprocess-AI",
+        "description": "En AI-agent som minskar förluster i tillverkning genom prognos av utrustningsavvikelser, visuell inspektion via video och spårning av orsaker till utbyte."
+      }
+    },
+    {
+      "slug": "distribution",
+      "name": "Distributionshanterings-AI",
+      "tagline": "Minskar lager och förebygger slut i lager.",
+      "icon": {},
+      "problems": [
+        "Varor som säljer bra tar slut först",
+        "Svårsålt lager tar upp lageryta",
+        "Beställningsbeslut beror på ansvarig persons erfarenhet"
+      ],
+      "capabilities": [
+        {
+          "title": "Efterfrågeprognos",
+          "desc": "Prognostiserar efterfrågan per artikel utifrån försäljningstrender och säsong."
+        },
+        {
+          "title": "Beställningsförslag",
+          "desc": "Beräknar ledtid och säkerhetslager och föreslår beställningskvantitet."
+        },
+        {
+          "title": "Kontroll av lagerhälsa",
+          "desc": "Hittar lager utan omsättning och anger när det bör avvecklas."
+        },
+        {
+          "title": "Optimering av logistikvägar",
+          "desc": "Hittar förseningssträckor i leveranshistorik och lägger om rutten."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Slut-i-lager-grad",
+          "value": "-50%"
+        },
+        {
+          "label": "Lagerdagar",
+          "value": "-25%"
+        },
+        {
+          "label": "Beställningsbeslut",
+          "value": "Underlagsbaserat"
+        }
+      ],
+      "steps": [
+        "Koppla försäljningsdata",
+        "Verifiera prognosnoggrannhet",
+        "Tillämpning på vissa artiklar",
+        "Alla artiklar"
+      ],
+      "seo": {
+        "title": "Distributionshanterings-AI",
+        "description": "En AI-agent för distribution som minskar både slut i lager och överlager genom efterfrågeprognoser och beställningsförslag."
+      }
+    },
+    {
+      "slug": "service",
+      "name": "Tjänsteoperations-AI",
+      "tagline": "Även personalplanering behöver underlag.",
+      "icon": {},
+      "problems": [
+        "Personalbehov per plats avgörs på känsla",
+        "Närvarokontroll och avräkning tar flera dagar varje månad",
+        "Olika avtalsvillkor per plats leder till fel"
+      ],
+      "capabilities": [
+        {
+          "title": "Förslag till personalplacering",
+          "desc": "Beräknar personalbehov utifrån platsens storlek och tidigare tidsåtgång."
+        },
+        {
+          "title": "Automatisk närvarosammanställning",
+          "desc": "Sammanställer in- och utstämpling enligt avtalsvillkor och lämnar bara undantag till människor."
+        },
+        {
+          "title": "Upprättande av avräkningsunderlag",
+          "desc": "Tar fram utkast till avräkningsunderlag genom att matcha platsens priser med arbetade tider."
+        },
+        {
+          "title": "Kontroll av avtalsvillkor",
+          "desc": "Hittar och meddelar avvikelser mellan platsens villkor och faktisk drift."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Tid för avräkning",
+          "value": "-60%"
+        },
+        {
+          "label": "Placeringsunderlag",
+          "value": "Kvantifierat"
+        },
+        {
+          "label": "Villkorsbrott",
+          "value": "Upptäcks i förväg"
+        }
+      ],
+      "steps": [
+        "Sammanställ avtalsvillkor",
+        "Koppla närvarosystem",
+        "Pilot på en plats",
+        "Alla platser"
+      ],
+      "seo": {
+        "title": "Tjänsteoperations-AI",
+        "description": "En AI-agent som minskar repetitivt arbete i tjänsteoperationer genom att automatisera personaldimensionering, närvarosammanställning och avräkningsunderlag."
+      }
+    },
+    {
+      "slug": "safety",
+      "name": "Brottsförebyggande AI",
+      "tagline": "Ser signalerna innan de blir en incident.",
+      "icon": {},
+      "problems": [
+        "Kontrollpersonal kan inte se alla skärmar samtidigt",
+        "Videokontroll i efterhand tar lång tid",
+        "Riskbedömningskriterier skiljer sig mellan operatörer"
+      ],
+      "capabilities": [
+        {
+          "title": "Detektering av avvikande beteende",
+          "desc": "Hittar och meddelar mönster som kringdrivande, intrång och fall i realtid."
+        },
+        {
+          "title": "Segmentsökning",
+          "desc": "Hittar direkt videosegment efter villkor för person, fordon och tid."
+        },
+        {
+          "title": "Prioriterad övervakning",
+          "desc": "Lyfter fram skärmar med hög risk för operatören."
+        },
+        {
+          "title": "Incidentloggning",
+          "desc": "Registrerar automatiskt förloppet från detektering till åtgärd."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Videosökning",
+          "value": "På minuter"
+        },
+        {
+          "label": "Missad detektering",
+          "value": "Minskar"
+        },
+        {
+          "label": "Bedömningskriterier",
+          "value": "Enhetliga"
+        }
+      ],
+      "steps": [
+        "Koppla kameror",
+        "Justera detekteringskriterier",
+        "Pilotdrift nattetid",
+        "Utökning till alla områden"
+      ],
+      "seo": {
+        "title": "Brottsförebyggande AI",
+        "description": "En brottsförebyggande AI-agent som hjälper kontrollpersonalens bedömningar genom detektering av avvikande beteende och villkorsbaserad videosökning."
+      }
+    }
+  ],
+  "services": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Utvecklingstjänster",
+        "title": "Vi tillhandahåller både arbetet och människorna som bygger",
+        "lead": "Ni kan lämna över hela projektet eller bara behöva personal. Avtalsparten är ett bolag, inte en privatperson."
+      },
+      "cards": [
+        {
+          "title": "Helhetsutveckling av mjukvara",
+          "desc": "Vi tar hand om allt från kravgenomgång till driftsättning och drift.",
+          "href": "/services/software",
+          "linkLabel": "Visa utvecklingstjänster"
+        },
+        {
+          "title": "Utvecklarbemanning · outsourcing",
+          "desc": "Vi placerar utvecklare på plats, på distans eller per projekt.",
+          "href": "/services/staffing",
+          "linkLabel": "Visa bemanning"
+        }
+      ],
+      "collaboration": {
+        "id": "collaboration",
+        "eyebrow": "Samarbetsform",
+        "title": "Mot mindre hanteringsbörda för beställaren",
+        "items": [
+          {
+            "title": "En kontaktpunkt",
+            "desc": "Ni kommunicerar inte separat med flera utvecklare. Allt samlas hos en ansvarig kontaktpunkt."
+          },
+          {
+            "title": "Bolagsavtal",
+            "desc": "Bolaget ansvarar för avtal, fakturor och felavhjälpande."
+          },
+          {
+            "title": "Överlämningsdokumentation",
+            "desc": "När projektet avslutas lämnas den dokumentation som behövs för drift över."
+          }
+        ]
+      },
+      "domains": {
+        "id": "domains",
+        "eyebrow": "Tekniska områden",
+        "title": "Omfattning",
+        "items": [
+          "Webbtjänster · administrationssystem",
+          "Mobilappar",
+          "AI-agenter · datapipelines",
+          "Integration med interna system · migrering"
+        ]
+      },
+      "cta": {
+        "title": "Om ni inte vet vilken form som passar",
+        "desc": "Berätta om situationen, så reder vi först ut om det är bättre att lämna över helheten eller bara förstärka med personal.",
+        "primary": {
+          "label": "Kontakta oss",
+          "href": "/contact"
+        }
+      }
+    },
+    "software": {
+      "hero": {
+        "eyebrow": "Helhetsutveckling av mjukvara",
+        "title": "Från kravgenomgång till drift",
+        "lead": "Vi deltar redan när det bestäms vad som ska byggas. Arbetet avslutas inte bara när något är byggt, utan när det kan lämnas över."
+      },
+      "areas": {
+        "id": "areas",
+        "eyebrow": "Utvecklingsområden",
+        "title": "Fyra områden",
+        "items": [
+          {
+            "title": "Webbtjänster",
+            "desc": "Vi designar kundtjänster och interna administrationssystem tillsammans."
+          },
+          {
+            "title": "Mobilappar",
+            "desc": "Vi väljer native eller cross-platform utifrån behovets omfattning."
+          },
+          {
+            "title": "AI · data",
+            "desc": "Vi kopplar agenter till punkter där bedömning krävs och ordnar dataflödet."
+          },
+          {
+            "title": "Systemintegration",
+            "desc": "Vi kopplar ihop med system som redan används utan avbrott."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Arbetsprocess",
+        "title": "Fem steg",
+        "steps": [
+          "Kravgenomgång",
+          "Fastställ omfattning och tidplan",
+          "Design · utveckling",
+          "Acceptans · driftsättning",
+          "Överlämning · drift"
+        ]
+      },
+      "quality": {
+        "id": "quality",
+        "eyebrow": "Leveranser · kvalitetskriterier",
+        "title": "Vi bestämmer i förväg vad ni får",
+        "items": [
+          "Källkod och åtkomst till kodarkiv",
+          "Dokumenterad driftsättningsprocess och körbara driftsättningsskript",
+          "API-specifikation och dokumentation av datastrukturer",
+          "Överlämningsmöte och utbildning av driftansvariga"
+        ],
+        "note": "Kvalitetskriterierna avtalas skriftligen före avtal. Det förhindrar att olika kriterier tas fram vid acceptans."
+      },
+      "cta": {
+        "title": "Det behöver inte vara bestämt vad som ska byggas",
+        "desc": "Berätta bara vilket problem ni vill lösa, så börjar vi med att avgränsa omfattningen tillsammans.",
+        "primary": {
+          "label": "Kontakta oss",
+          "href": "/contact"
+        }
+      }
+    },
+    "staffing": {
+      "hero": {
+        "eyebrow": "Bemanning · outsourcing",
+        "title": "Ni får utvecklare, och bolaget sköter hanteringen",
+        "lead": "Vi sätter in personal under den period den behövs. DevFirm hanterar avtal och arbetsrätt."
+      },
+      "difference": {
+        "id": "difference",
+        "eyebrow": "Skillnad",
+        "title": "Vad skiljer från direktavtal med frilansare",
+        "lead": "Bolaget absorberar de risker som uppstår när beställaren tecknar avtal direkt med en privatperson.",
+        "items": [
+          {
+            "title": "Avtalspart är ett bolag",
+            "desc": "Vid avhopp eller tvist ansvarar bolaget och sätter in ersättningspersonal."
+          },
+          {
+            "title": "Skatte- och arbetsrättshantering",
+            "desc": "Beställaren behöver inte bedöma källskatt eller socialförsäkring."
+          },
+          {
+            "title": "Verifierad personalpool",
+            "desc": "Vi tilldelar utvecklare som vi har genomfört projekt med tidigare."
+          },
+          {
+            "title": "Backoffice-stöd",
+            "desc": "DevFirms affärsstöd hanterar avräkning och närvaro för de utvecklare som sätts in."
+          }
+        ]
+      },
+      "formats": {
+        "id": "formats",
+        "eyebrow": "Insatsformer",
+        "title": "Välj mellan tre former",
+        "items": [
+          {
+            "title": "På plats",
+            "desc": "Utvecklaren arbetar från beställarens kontor och ingår i teamet."
+          },
+          {
+            "title": "Distans",
+            "desc": "Arbetet sker från DevFirms kontor eller ett delat kontor."
+          },
+          {
+            "title": "Per projekt",
+            "desc": "Period och leveranser fastställs och avräkning sker på resultat."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Process",
+        "title": "Fyra steg",
+        "steps": [
+          "Kartlägg nödvändig kompetens",
+          "Föreslå kandidater",
+          "Intervju · fastställande",
+          "Insats · regelbunden kontroll"
+        ]
+      },
+      "cta": {
+        "title": "Ange vilken kompetens ni behöver",
+        "desc": "Vi sammanställer kandidater utifrån period och insatsform.",
+        "primary": {
+          "label": "Kontakta oss",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "academy": {
+    "page": {
+      "hero": {
+        "eyebrow": "PBL-akademi",
+        "title": "Lär genom att bygga",
+        "lead": "Det är inte en utbildning som slutar med föreläsningar. NCS-läroplanen genomförs i projektform, och deltagaren går ut med ett resultat att använda i meritförteckningen."
+      },
+      "pbl": {
+        "id": "pbl",
+        "eyebrow": "Vad PBL är",
+        "title": "Projektet är läroplanen",
+        "lead": "Project Based Learning. Vi listar inte först vad som ska läras, utan bestämmer först vad som ska byggas. Den kunskap som behövs fylls på under byggandet.",
+        "items": [
+          {
+            "title": "Ett resultat blir kvar",
+            "desc": "Det som blir kvar är inte ett kursintyg utan ett fungerande projekt."
+          },
+          {
+            "title": "Du får erfarenhet av samarbete",
+            "desc": "Det är inte en individuell uppgift. Teamet delar tidplan och roller."
+          },
+          {
+            "title": "Bedömning enligt yrkesstandard",
+            "desc": "Utvecklare som arbetar med riktiga projekt granskar kod och resultat."
+          }
+        ]
+      },
+      "schools": {
+        "id": "schools",
+        "eyebrow": "Tre skolor",
+        "title": "Välj efter vad du vill bygga"
+      },
+      "external": {
+        "id": "external",
+        "eyebrow": "Samarbete",
+        "title": "Postproduktionskurs",
+        "desc": "Kursen i filmpostproduktion drivs i samarbete med Seoul Film Academy.",
+        "href": "https://www.seoulfilmacademy.com",
+        "linkLabel": "Seoul Film Academy"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Kursprocess",
+        "title": "Fyra steg",
+        "steps": [
+          "Välj kurs · ansök",
+          "Rådgivning · placering",
+          "Genomför projekt",
+          "Presentation · avslut"
+        ]
+      },
+      "cta": {
+        "title": "Om du inte vet vilken kurs som passar",
+        "desc": "Berätta vad du kan nu och vad du vill göra, så rekommenderar vi en kurs.",
+        "primary": {
+          "label": "Kursansökan",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Visa kurser",
+          "href": "/academy/courses"
+        }
+      }
+    },
+    "schools": [
+      {
+        "key": "solution",
+        "name": "Skola för lösningsutveckling",
+        "desc": "Bygg en tjänst från början till slut.",
+        "art": {
+          "src": "/images/cards/school-solution.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "office",
+        "name": "Skola för gemensamt kontorsarbete",
+        "desc": "Lär dig automatisera kontorsarbete med verktyg.",
+        "art": {
+          "src": "/images/cards/school-office.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "project",
+        "name": "Skola för projektarbete",
+        "desc": "Lär dig projektgenomförande med planering och tidsstyrning.",
+        "art": {
+          "src": "/images/cards/school-project.svg",
+          "width": 240,
+          "height": 180
+        }
+      }
+    ]
+  },
+  "courses": {
+    "list": [
+      {
+        "slug": "web-service-development",
+        "school": "solution",
+        "title": "Kurs i webbtjänstutveckling",
+        "summary": "Från planering till driftsättning bygger du en tjänst som faktiskt går att nå.",
+        "duration": "16 veckor",
+        "capacity": "20 personer",
+        "target": [
+          "För dig som kan grundläggande programmeringssyntax",
+          "För jobbsökande som behöver en portfolio",
+          "För yrkesverksamma som vill bygga en egen tjänst"
+        ],
+        "prerequisites": [
+          "Programmeringserfarenhet på grundläggande syntaxnivå",
+          "Grunder i HTML och CSS"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Utvecklingsmiljö och samarbetsverktyg",
+            "detail": "Git-flöde, ärendehantering och kodgranskningsregler sätts som teamregler."
+          },
+          {
+            "week": "3~6",
+            "topic": "Frontendgrunder",
+            "detail": "Vi går igenom komponentstruktur, tillståndshantering och responsiv layout."
+          },
+          {
+            "week": "7~10",
+            "topic": "Backend och data",
+            "detail": "Vi implementerar API-design, datamodellering och autentisering."
+          },
+          {
+            "week": "11~14",
+            "topic": "Teamprojekt",
+            "detail": "Teamet bygger den planerade tjänsten. Granskning sker en gång i veckan."
+          },
+          {
+            "week": "15~16",
+            "topic": "Driftsättning och presentation",
+            "detail": "Tjänsten driftsätts på en riktig domän och resultatet presenteras."
+          }
+        ],
+        "outcomes": [
+          "En åtkomlig webbtjänst",
+          "Kodarkiv och commithistorik",
+          "Driftsättningsdokumentation och README"
+        ],
+        "careers": [
+          "Webbutvecklare",
+          "Junior fullstackutvecklare",
+          "Ansvarig för interna tjänster"
+        ]
+      },
+      {
+        "slug": "ai-agent-basics",
+        "school": "solution",
+        "title": "Praktisk kurs i AI-agenter",
+        "summary": "Bygg själv en agent som tar över arbetsuppgifter. Kursen handlar inte om att skapa modeller, utan om att använda dem.",
+        "duration": "12 veckor",
+        "capacity": "16 personer",
+        "target": [
+          "Utvecklare som ska ansvara för arbetsautomatisering",
+          "Praktiker som utvärderar AI-införande",
+          "För dig som vill förstå agentstrukturer"
+        ],
+        "prerequisites": [
+          "Erfarenhet av Python eller JavaScript",
+          "Erfarenhet av API-anrop"
+        ],
+        "curriculum": [
+          {
+            "week": "1~3",
+            "topic": "Agentstruktur",
+            "detail": "Vi sätter grunderna för verktygsanrop, sökförstärkning och felhantering."
+          },
+          {
+            "week": "4~7",
+            "topic": "Koppling till arbete",
+            "detail": "Vi implementerar integrationer som läser och skriver dokument, e-post och kalkylblad."
+          },
+          {
+            "week": "8~10",
+            "topic": "Utvärdering och förbättring",
+            "detail": "Resultat mäts, kriterier sätts och förbättring sker iterativt."
+          },
+          {
+            "week": "11~12",
+            "topic": "Projekt för praktisk tillämpning",
+            "detail": "Varje deltagare väljer en arbetsuppgift från sin organisation och flyttar den till en agent."
+          }
+        ],
+        "outcomes": [
+          "En arbetsautomatiseringsagent",
+          "Dokument med utvärderingskriterier",
+          "Tillämpningsrapport"
+        ],
+        "careers": [
+          "AI-praktikansvarig",
+          "Automationsingenjör",
+          "Intern AI-införandeledare"
+        ]
+      },
+      {
+        "slug": "office-automation",
+        "school": "office",
+        "title": "Kurs i kontorsautomation",
+        "summary": "Minska dagligt repetitivt dokument- och kalkylbladsarbete med verktyg. Du kan börja utan att kunna kod.",
+        "duration": "8 veckor",
+        "capacity": "24 personer",
+        "target": [
+          "Yrkesverksamma med mycket repetitivt kontorsarbete",
+          "För dig som lägger mycket tid på Excel-arbete",
+          "Chefer som vill ordna avdelningens arbete"
+        ],
+        "prerequisites": ["Grundläggande erfarenhet av Excel"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Nedbrytning av arbete",
+            "detail": "Det arbete som görs nu delas upp i steg för att hitta punkter som kan automatiseras."
+          },
+          {
+            "week": "3~5",
+            "topic": "Dokument- och kalkylbladsautomation",
+            "detail": "Formulärifyllning, jämförelse och sammanställning hanteras automatiskt."
+          },
+          {
+            "week": "6~7",
+            "topic": "Användning av AI-verktyg",
+            "detail": "Dokumenttolkning och sammanfattning kopplas till arbetsflödet."
+          },
+          {
+            "week": "8",
+            "topic": "Tillämpning och delning",
+            "detail": "Det som byggts ordnas så att det kan lämnas över till teamet."
+          }
+        ],
+        "outcomes": ["Tre automatiserade arbetsuppgifter", "Användarguide"],
+        "careers": [
+          "Ansvarig för kontorsautomation",
+          "Ansvarig för förbättring av avdelningsarbete"
+        ]
+      },
+      {
+        "slug": "project-management",
+        "school": "project",
+        "title": "Kurs i projektgenomförande",
+        "summary": "Lär dig med faktiska exempel hur projekt avslutas genom att hantera tidplan och omfattning.",
+        "duration": "10 veckor",
+        "capacity": "18 personer",
+        "target": [
+          "För dig som får ansvar för ett projekt för första gången",
+          "Teamledare vars tidplaner ofta försenas",
+          "Ansvariga som behöver samordna med beställare"
+        ],
+        "prerequisites": ["Erfarenhet av att arbeta i team"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Omfattningsdefinition",
+            "detail": "Börja med att bestämma vad som inte ska göras."
+          },
+          {
+            "week": "3~5",
+            "topic": "Tidplan och risk",
+            "detail": "Skapa uppskattningar, buffertar och en risklista."
+          },
+          {
+            "week": "6~8",
+            "topic": "Genomförande och samordning",
+            "detail": "Hantera ändringsbegäranden och kommunikation med intressenter."
+          },
+          {
+            "week": "9~10",
+            "topic": "Avslut och retrospektiv",
+            "detail": "Avsluta med överlämning och retrospektiv."
+          }
+        ],
+        "outcomes": [
+          "En projektplan",
+          "Riskhanteringsdokument",
+          "Retrospektivrapport"
+        ],
+        "careers": ["Projektledare", "Teamledare", "Tjänsteplanerare"]
+      }
+    ],
+    "page": {
+      "hero": {
+        "eyebrow": "Kursöversikt",
+        "title": "Aktuella kurser",
+        "lead": "Kurserna är indelade efter skola. Kontrollera längd och målgrupp innan du ansöker."
+      },
+      "filterAll": "Alla",
+      "fields": {
+        "duration": "Längd",
+        "capacity": "Platser",
+        "target": "Målgrupp",
+        "prerequisites": "Förkunskaper",
+        "curriculum": "Läroplan",
+        "outcomes": "Leveransprojekt",
+        "careers": "Vägar efter avslut",
+        "week": "Vecka",
+        "topic": "Ämne",
+        "detail": "Innehåll",
+        "apply": "Kursansökan"
+      },
+      "cta": {
+        "title": "Du kan fråga innan du ansöker",
+        "desc": "Vi kontrollerar först om du kan följa kursen på din nuvarande nivå.",
+        "primary": {
+          "label": "Kursansökan",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Kontakta oss",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "workspace": {
+    "hero": {
+      "eyebrow": "Delat kontor",
+      "title": "En plats för dem som bygger",
+      "lead": "En arbetsplats där utveckling och innehållsproduktion kan slutföras i samma byggnad."
+    },
+    "concept": {
+      "id": "concept",
+      "eyebrow": "Koncept",
+      "title": "En utvecklarplats som även täcker postproduktion",
+      "lead": "Det är inte bara en plats för kod. Den är byggd så att arbete som kräver inspelning och redigering kan göras utan att lämna lokalen."
+    },
+    "facilities": {
+      "id": "facilities",
+      "eyebrow": "Faciliteter",
+      "title": "Vad som finns",
+      "items": [
+        {
+          "title": "Inspelningsstudio",
+          "desc": "Det finns ett ljudisolerat bås för inspelning av berättarröst och intervjuer.",
+          "art": {
+            "src": "/images/workspace/workspace-studio.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Inspelningsstudio med ljudpaneler, mikrofon och mixerbord"
+          }
+        },
+        {
+          "title": "Infrastruktur för innehållsproduktion",
+          "desc": "Utrustning och lagringsutrymme för videoredigering och rendering tillhandahålls.",
+          "art": {
+            "src": "/images/workspace/workspace-infra.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Infrastruktur för innehållsproduktion med arbetsstationer, lagring och rack för rendernoder"
+          }
+        },
+        {
+          "title": "Arbetsyta",
+          "desc": "Fasta platser, flexplatser och mindre mötesrum används gemensamt.",
+          "art": {
+            "src": "/images/workspace/workspace-desk.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Delad arbetsyta med fasta platser, flexplatser och mindre mötesrum"
+          }
+        }
+      ]
+    },
+    "tenants": {
+      "id": "tenants",
+      "eyebrow": "Målgrupp för inflyttning",
+      "title": "Används av dessa grupper",
+      "items": [
+        "Utvecklare som arbetar själva eller i små team",
+        "Team som också behöver video- och ljudarbete",
+        "Team som driver verksamhet som DevFirm CIC"
+      ]
+    },
+    "pricing": {
+      "id": "pricing",
+      "eyebrow": "Pris · kontakt",
+      "title": "Användningsvillkor",
+      "note": "Det beror på platsform och användningsperiod. Studion drivs med bokning. Kontakta oss för exakta villkor."
+    },
+    "location": {
+      "id": "location",
+      "eyebrow": "Hitta hit",
+      "title": "Seocho-gu, Seoul",
+      "address": "2 tr., Hanyang Building, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+      "mapTitle": "Karta över DevFirms plats",
+      "mapLinkLabel": "Visa i Kakao Map",
+      "mapHref": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C6%EA%B8%B8%2059-1%20%ED%95%9C%EC%96%91%EB%B9%8C%EB%94%A9%202%EC%B8%B5"
+    },
+    "cta": {
+      "title": "Ni kan titta först och bestämma sedan",
+      "desc": "Vi bokar ett besök.",
+      "primary": {
+        "label": "Kontakta oss",
+        "href": "/contact"
+      }
+    }
+  },
+  "forms": {
+    "contact": {
+      "hero": {
+        "eyebrow": "Kontakt",
+        "title": "Vad kan vi hjälpa till med",
+        "lead": "Det räcker att kort beskriva ärendet. En ansvarig person granskar och kontaktar dig."
+      },
+      "types": [
+        {
+          "value": "solution",
+          "label": "Införande av AI-lösning"
+        },
+        {
+          "value": "development",
+          "label": "Utvecklingsförfrågan"
+        },
+        {
+          "value": "staffing",
+          "label": "Bemanning"
+        },
+        {
+          "value": "academy",
+          "label": "Akademi"
+        },
+        {
+          "value": "workspace",
+          "label": "Inflyttning i delat kontor"
+        },
+        {
+          "value": "etc",
+          "label": "Övrigt"
+        }
+      ],
+      "labels": {
+        "type": "Typ av förfrågan",
+        "name": "Namn",
+        "company": "Företag · tillhörighet",
+        "email": "E-post",
+        "phone": "Kontaktuppgifter",
+        "message": "Meddelande",
+        "consent": "Jag samtycker till insamling och användning av personuppgifter",
+        "submit": "Skicka förfrågan",
+        "submitting": "Skickar"
+      },
+      "placeholders": {
+        "name": "Anna Andersson",
+        "company": "Företagsnamn (valfritt)",
+        "email": "name@example.com",
+        "phone": "010-0000-0000 (valfritt)",
+        "message": "Beskriv situationen och vad som behövs."
+      },
+      "consentNote": "För att hantera och besvara förfrågningar samlar vi in namn, kontaktuppgifter, e-post och meddelande. Uppgifterna sparas i 3 år efter avslutad behandling och raderas därefter.",
+      "success": {
+        "title": "Förfrågan har tagits emot",
+        "desc": "Vi kontaktar dig inom 1–2 arbetsdagar."
+      },
+      "error": {
+        "title": "Det gick inte att skicka",
+        "desc": "Försök igen om en stund. Om det fortfarande inte fungerar, kontakta oss via telefon eller e-post nedan."
+      }
+    },
+    "apply": {
+      "hero": {
+        "eyebrow": "Kursansökan",
+        "title": "Ansökan till akademikurs",
+        "lead": "Vi kontrollerar tillsammans om kursen passar din nuvarande nivå innan placering."
+      },
+      "levels": [
+        {
+          "value": "none",
+          "label": "Jag är nybörjare"
+        },
+        {
+          "value": "basic",
+          "label": "Jag kan grunderna"
+        },
+        {
+          "value": "practical",
+          "label": "Jag har praktisk erfarenhet"
+        }
+      ],
+      "labels": {
+        "name": "Namn",
+        "email": "E-post",
+        "phone": "Kontaktuppgifter",
+        "course": "Önskad kurs",
+        "level": "Erfarenhetsnivå",
+        "motivation": "Motivation",
+        "consent": "Jag samtycker till insamling och användning av personuppgifter",
+        "submit": "Skicka ansökan",
+        "submitting": "Skickar"
+      },
+      "placeholders": {
+        "name": "Anna Andersson",
+        "email": "name@example.com",
+        "phone": "010-0000-0000",
+        "motivation": "Skriv vad du vill bygga och varför du vill lära dig."
+      },
+      "consentNote": "För kursrådgivning och placering samlar vi in namn, kontaktuppgifter, e-post och ansökningsinnehåll. Uppgifterna sparas i 1 år efter avslutad rådgivning och raderas därefter.",
+      "success": {
+        "title": "Ansökan har tagits emot",
+        "desc": "En ansvarig person granskar den och informerar om rådgivningstid."
+      },
+      "error": {
+        "title": "Det gick inte att skicka",
+        "desc": "Försök igen om en stund."
+      }
+    },
+    "validation": {
+      "required": "Obligatoriskt fält",
+      "nameTooShort": "Ange namn",
+      "emailInvalid": "E-postformatet är inte giltigt",
+      "phoneInvalid": "Kontaktuppgifternas format är inte giltigt",
+      "messageTooShort": "Ange minst 10 tecken",
+      "consentRequired": "Samtycke krävs för att skicka",
+      "tooFast": "Försök igen om en stund",
+      "expired": "Inmatningstiden har löpt ut. Uppdatera sidan och försök igen.",
+      "serverError": "Ett problem uppstod under behandlingen"
+    }
+  },
+  "legal": {
+    "ui": {
+      "updatedAtLabel": "Senast ändrad"
+    },
+    "privacy": {
+      "title": "Integritetspolicy",
+      "intro": "CMNYX Co., Ltd. (nedan \"bolaget\") hanterar användarnas personuppgifter omsorgsfullt och följer tillämpliga lagar. Denna policy gäller bolagets webbplats.",
+      "sections": [
+        {
+          "id": "items",
+          "title": "1. Personuppgifter som samlas in",
+          "body": [
+            "Bolaget samlar endast in personuppgifter via webbplatsens kontakt- och kursansökningsformulär.",
+            "Kontakt: namn, e-post, kontaktuppgifter (valfritt), företag/tillhörighet (valfritt), meddelande",
+            "Kursansökan: namn, e-post, kontaktuppgifter, önskad kurs, erfarenhetsnivå, motivation",
+            "Bolaget använder inte analysverktyg eller annonscookies som spårar besökares beteende. Därför samlas inga personuppgifter in enbart genom användning av webbplatsen."
+          ]
+        },
+        {
+          "id": "purpose",
+          "title": "2. Syfte med insamling och användning",
+          "body": [
+            "Svar på förfrågningar och genomförande av rådgivning",
+            "Mottagning av kursansökningar, kursplacering och information"
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "3. Lagrings- och användningsperiod",
+          "body": [
+            "Förfrågningsuppgifter: sparas i 3 år efter avslutad behandling och raderas utan dröjsmål därefter.",
+            "Kursansökningsuppgifter: sparas i 1 år efter avslutad rådgivning och raderas utan dröjsmål därefter.",
+            "Om den registrerade begär radering raderas uppgifterna omedelbart."
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "4. Utlämnande till tredje part och personuppgiftsbiträde",
+          "body": [
+            "Bolaget lämnar inte ut användarnas personuppgifter till tredje part.",
+            "För att vidarebefordra förfrågningar till ansvarig person används dock en e-postsändningstjänst, och det angivna innehållet överförs i den processen."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "5. Den registrerades rättigheter",
+          "body": [
+            "Användare kan när som helst begära tillgång till, rättelse, radering av eller begränsning av behandling av sina personuppgifter.",
+            "Begäran kan lämnas till contact@devfirm.co eller 02-2058-0680, och bolaget vidtar åtgärder utan dröjsmål."
+          ]
+        },
+        {
+          "id": "manager",
+          "title": "6. Personuppgiftsansvarig kontakt",
+          "body": [
+            "CMNYX Co., Ltd. affärsstöd",
+            "E-post: contact@devfirm.co",
+            "Telefon: 02-2058-0680"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "7. Ändringar av policyn",
+          "body": [
+            "Om denna policy ändras meddelas ändringarna och ikraftträdandedatumet via webbplatsen."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Användarvillkor",
+      "intro": "Dessa villkor anger användningsvillkoren för den webbplats som drivs av CMNYX Co., Ltd. (nedan \"bolaget\").",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "1. Syfte",
+          "body": [
+            "Dessa villkor reglerar bolagets och användarnas rättigheter, skyldigheter och ansvar i samband med användning av den webbplatstjänst som bolaget tillhandahåller."
+          ]
+        },
+        {
+          "id": "service",
+          "title": "2. Tjänstens innehåll",
+          "body": [
+            "Bolaget tillhandahåller information om bolaget och dess tjänster via webbplatsen och tar emot förfrågningar och kursansökningar.",
+            "Ingen separat medlemsregistrering krävs för att använda webbplatsen."
+          ]
+        },
+        {
+          "id": "obligations",
+          "title": "3. Användarens skyldigheter",
+          "body": [
+            "Användare får inte använda andras uppgifter eller ange falska uppgifter.",
+            "Användare får inte kopiera, distribuera eller kommersiellt använda webbplatsens innehåll utan bolagets förhandsgodkännande."
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "4. Upphovsrätt",
+          "body": [
+            "Upphovsrätten till text, bilder och material som publiceras på webbplatsen tillhör bolaget."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "5. Ansvarsbegränsning",
+          "body": [
+            "Bolaget ansvarar inte för avbrott i tjänsten som orsakas av force majeure såsom naturkatastrofer eller kommunikationsstörningar.",
+            "Informationen på webbplatsen är avsedd som referens, och konkreta avtalsvillkor följer separat överenskommelse och avtal."
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "title": "6. Jurisdiktion",
+          "body": [
+            "Tvister som rör dessa villkor ska prövas av den domstol som är behörig för platsen för bolagets huvudkontor."
+          ]
+        }
+      ]
+    },
+    "updatedAt": "2026-07-28"
+  },
+  "seo": {
+    "home": {
+      "description": "Physical AI för industriella miljöer, Chef Choi AI för kontor. DevFirm, ett utvecklingsbolag med utvecklare, tillhandahåller AI-lösningar, mjukvaruutveckling, utvecklarbemanning och PBL-akademi."
+    },
+    "page": {
+      "about": {
+        "title": "Om oss",
+        "description": "Ett utvecklingsbolag där utvecklare samlas, på samma sätt som jurister samlas på en advokatbyrå. Här presenteras DevFirms arbetssätt där affärsstödet hanterar avtal och avräkning medan utvecklarna fokuserar på att bygga."
+      },
+      "cic": {
+        "title": "Internföretag (CIC)",
+        "description": "CIC-systemet där utvecklare driver sin egen verksamhet inom DevFirm. Här beskrivs deltagarkrav, stödets omfattning och färdplanen för vidareutveckling av agent-AI."
+      },
+      "careers": {
+        "title": "Utvecklarjobb",
+        "description": "DevFirm söker utvecklare som vill arbeta med oss. Se ansvarsområden, krav och villkor för aktuella öppna roller."
+      },
+      "solutions": {
+        "title": "AI-lösningar",
+        "description": "Vi tillhandahåller Physical AI för industriella miljöer, Chef Choi AI för kontor samt branschspecifika AI-agenter för bygg, innehåll, tillverkning, distribution, tjänster och brottsförebyggande."
+      },
+      "officeAi": {
+        "title": "Chef Choi AI - agent för kontorsmiljöer",
+        "description": "En AI-agent som tar över repetitivt kontorsarbete som att läsa och ordna dokument samt skriva rapporter. Här presenteras införandesätt och användningsfall."
+      },
+      "physicalAi": {
+        "title": "Physical AI - agent för industriella miljöer",
+        "description": "AI för industriella miljöer som omvandlar det kameror och sensorer läser på plats till bedömningar som människor kan använda. Här presenteras teknisk kapacitet och tillämpade branscher."
+      },
+      "services": {
+        "title": "Utvecklingstjänster",
+        "description": "Helhetsutveckling av mjukvara och utvecklarbemanning. DevFirms utvecklingstjänster tillhandahåller både arbetet och människorna som bygger."
+      },
+      "software": {
+        "title": "Helhetsutveckling av mjukvara",
+        "description": "Vi tar hand om byggande av webb, appar, AI och system. Kontrollera arbetsprocess och leveranskvalitet i förväg."
+      },
+      "staffing": {
+        "title": "Utvecklarbemanning · outsourcing",
+        "description": "Vi sätter in utvecklare på plats, på distans eller per projekt. Eftersom avtalsparten är ett bolag minskar beställarens hanteringsbörda."
+      },
+      "academy": {
+        "title": "PBL-akademi",
+        "description": "Praktisk utbildning där NCS-läroplanen genomförs i projektform. Vi driver skolan för lösningsutveckling, skolan för gemensamt kontorsarbete och skolan för projektarbete."
+      },
+      "courses": {
+        "title": "Kursöversikt",
+        "description": "Fullständig kurslista för DevFirms PBL-akademi. Längd, platser, målgrupp och läroplan kan kontrolleras per skola."
+      },
+      "apply": {
+        "title": "Kursansökan",
+        "description": "Vi tar emot kursansökningar till PBL-akademin. Ange önskad kurs och erfarenhetsnivå, så kontaktar en ansvarig person dig."
+      },
+      "workspace": {
+        "title": "Delat kontor för utvecklare",
+        "description": "Ett delat kontor för utvecklare med postproduktionsfokus, inspelningsstudio och infrastruktur för innehållsproduktion. Här beskrivs faciliteter och inflyttningsvillkor."
+      },
+      "contact": {
+        "title": "Kontakta oss",
+        "description": "Vi tar emot frågor om lösningsinförande, utvecklingsuppdrag, bemanning, akademin och inflyttning. 2 tr., Hanyang Building, Gangnam-daero 6-gil, Seocho-gu, Seoul."
+      },
+      "privacy": {
+        "title": "Integritetspolicy",
+        "description": "Information om vilka personuppgifter DevFirm samlar in, syftet med användningen, lagringsperioden och användarens rättigheter."
+      },
+      "terms": {
+        "title": "Användarvillkor",
+        "description": "Villkor för användning av DevFirms webbplats."
+      }
+    },
+    "ogImageAlt": "DevFirm - ett utvecklingsbolag med utvecklare. Physical AI för industriella miljöer, Chef Choi AI för kontor."
+  }
+}

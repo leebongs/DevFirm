@@ -1,1 +1,2308 @@
-{}
+{
+  "site": {
+    "nameKo": "DevFirm",
+    "legalName": "CMNYX Co., Ltd.",
+    "footerBrand": "DevFirm CIC",
+    "brand": "Computing Management",
+    "tagline": "DevFirm, syarikat pembangunan yang diterajui pembangun",
+    "addressFull": "Aras 2, Bangunan Hanyang, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+    "addressLocality": "Seocho-gu",
+    "addressRegion": "Seoul"
+  },
+  "ui": {
+    "nav": {
+      "openMenu": "Buka menu",
+      "closeMenu": "Tutup menu",
+      "mainNavLabel": "Menu utama",
+      "sectionNavLabel": "Menu seksyen",
+      "breadcrumbLabel": "Lokasi semasa",
+      "home": "Laman utama",
+      "skipToContent": "Langkau ke kandungan",
+      "externalLink": "Dibuka dalam tetingkap baharu"
+    },
+    "toc": {
+      "title": "Kandungan halaman ini"
+    },
+    "error": {
+      "notFoundTitle": "Halaman tidak ditemui",
+      "notFoundBody": "Alamat mungkin telah berubah atau halaman telah dipadam. Gunakan pautan di bawah untuk meneruskan.",
+      "errorTitle": "Masalah berlaku",
+      "errorBody": "Sila cuba lagi sebentar lagi. Jika masalah berterusan, maklumkan kepada kami melalui pertanyaan.",
+      "retry": "Cuba lagi",
+      "goHome": "Ke laman utama"
+    },
+    "footer": {
+      "businessNumberLabel": "No. pendaftaran perniagaan",
+      "addressLabel": "Alamat",
+      "telLabel": "Telefon"
+    }
+  },
+  "nav": {
+    "mainNav": [
+      {
+        "label": "Tentang Kami",
+        "href": "/about",
+        "description": "Cara syarikat pembangunan yang diterajui pembangun bekerja",
+        "children": [
+          {
+            "label": "Apa Itu DevFirm",
+            "href": "/about",
+            "description": "Model syarikat pembangunan yang bekerja seperti firma guaman"
+          },
+          {
+            "label": "Company In Company (CIC)",
+            "href": "/about/cic",
+            "description": "Struktur untuk pembangun mengendalikan perniagaan sendiri"
+          },
+          {
+            "label": "Kerjaya Pembangun",
+            "href": "/about/careers",
+            "description": "Jawatan yang sedang dibuka"
+          }
+        ]
+      },
+      {
+        "label": "Penyelesaian AI",
+        "href": "/solutions",
+        "description": "Physical AI untuk tapak industri, Pengurus Choi AI untuk pejabat",
+        "children": [
+          {
+            "label": "Pengurus Choi AI",
+            "href": "/solutions/office-ai",
+            "description": "Ejen untuk kerja pejabat berulang"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai",
+            "description": "Ejen yang memerhati dan membuat pertimbangan di tapak industri"
+          },
+          {
+            "label": "AI Pembinaan",
+            "href": "/solutions/agents/construction",
+            "description": "Automasi pengurusan proses, keselamatan dan bahan"
+          },
+          {
+            "label": "AI Kandungan",
+            "href": "/solutions/agents/content",
+            "description": "Sokongan perancangan, produksi dan pascaproduksi"
+          },
+          {
+            "label": "AI Proses Pembuatan",
+            "href": "/solutions/agents/manufacturing",
+            "description": "Pemantauan peralatan, kualiti dan hasil"
+          },
+          {
+            "label": "AI Pengurusan Pengedaran",
+            "href": "/solutions/agents/distribution",
+            "description": "Inventori, logistik dan ramalan permintaan"
+          },
+          {
+            "label": "AI Operasi Perkhidmatan",
+            "href": "/solutions/agents/service",
+            "description": "Penempatan tenaga kerja, kehadiran dan penyelesaian bayaran"
+          },
+          {
+            "label": "AI Pencegahan Jenayah",
+            "href": "/solutions/agents/safety",
+            "description": "Pengesanan tanda luar biasa berasaskan analisis video"
+          }
+        ]
+      },
+      {
+        "label": "Perkhidmatan Pembangunan",
+        "href": "/services",
+        "description": "Menyediakan kerja dan orang yang membinanya bersama-sama",
+        "children": [
+          {
+            "label": "Pembangunan Perisian Menyeluruh",
+            "href": "/services/software",
+            "description": "Pembinaan web, aplikasi, AI dan sistem"
+          },
+          {
+            "label": "Penempatan Pembangun",
+            "href": "/services/staffing",
+            "description": "Penempatan di tapak, jarak jauh dan mengikut projek"
+          }
+        ]
+      },
+      {
+        "label": "Akademi",
+        "href": "/academy",
+        "description": "Pembelajaran projek (PBL) berasaskan kurikulum NCS",
+        "children": [
+          {
+            "label": "Panduan Kursus",
+            "href": "/academy/courses",
+            "description": "Senarai kursus untuk tiga sekolah"
+          },
+          {
+            "label": "Permohonan Kursus",
+            "href": "/academy/apply",
+            "description": "Penerimaan permohonan kursus"
+          }
+        ]
+      },
+      {
+        "label": "Pejabat Kongsi",
+        "href": "/workspace",
+        "description": "Ruang kerja pembangun khusus untuk pascaproduksi"
+      }
+    ],
+    "footerNav": [
+      {
+        "label": "Syarikat",
+        "href": "/about",
+        "children": [
+          {
+            "label": "Apa Itu DevFirm",
+            "href": "/about"
+          },
+          {
+            "label": "Company In Company (CIC)",
+            "href": "/about/cic"
+          },
+          {
+            "label": "Kerjaya Pembangun",
+            "href": "/about/careers"
+          }
+        ]
+      },
+      {
+        "label": "Penyelesaian AI",
+        "href": "/solutions",
+        "children": [
+          {
+            "label": "Semua Penyelesaian AI",
+            "href": "/solutions"
+          },
+          {
+            "label": "Pengurus Choi AI",
+            "href": "/solutions/office-ai"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai"
+          },
+          {
+            "label": "AI Pembinaan",
+            "href": "/solutions/agents/construction"
+          },
+          {
+            "label": "AI Kandungan",
+            "href": "/solutions/agents/content"
+          },
+          {
+            "label": "AI Proses Pembuatan",
+            "href": "/solutions/agents/manufacturing"
+          },
+          {
+            "label": "AI Pengurusan Pengedaran",
+            "href": "/solutions/agents/distribution"
+          },
+          {
+            "label": "AI Operasi Perkhidmatan",
+            "href": "/solutions/agents/service"
+          },
+          {
+            "label": "AI Pencegahan Jenayah",
+            "href": "/solutions/agents/safety"
+          }
+        ]
+      },
+      {
+        "label": "Perkhidmatan dan Pendidikan",
+        "href": "/services",
+        "children": [
+          {
+            "label": "Semua Perkhidmatan Pembangunan",
+            "href": "/services"
+          },
+          {
+            "label": "Pembangunan Perisian Menyeluruh",
+            "href": "/services/software"
+          },
+          {
+            "label": "Penempatan Pembangun",
+            "href": "/services/staffing"
+          },
+          {
+            "label": "Akademi PBL",
+            "href": "/academy"
+          },
+          {
+            "label": "Panduan Kursus",
+            "href": "/academy/courses"
+          },
+          {
+            "label": "Permohonan Kursus",
+            "href": "/academy/apply"
+          },
+          {
+            "label": "Pejabat Kongsi",
+            "href": "/workspace"
+          }
+        ]
+      },
+      {
+        "label": "Pertanyaan dan Polisi",
+        "href": "/contact",
+        "children": [
+          {
+            "label": "Hubungi Kami",
+            "href": "/contact"
+          },
+          {
+            "label": "Dasar Privasi",
+            "href": "/privacy"
+          },
+          {
+            "label": "Terma Perkhidmatan",
+            "href": "/terms"
+          }
+        ]
+      }
+    ],
+    "sectionNav": {
+      "/about": [
+        {
+          "label": "Apa Itu DevFirm",
+          "href": "/about",
+          "description": "Model syarikat pembangunan yang bekerja seperti firma guaman"
+        },
+        {
+          "label": "Company In Company (CIC)",
+          "href": "/about/cic",
+          "description": "Struktur untuk pembangun mengendalikan perniagaan sendiri"
+        },
+        {
+          "label": "Kerjaya Pembangun",
+          "href": "/about/careers",
+          "description": "Jawatan yang sedang dibuka"
+        }
+      ],
+      "/solutions": [
+        {
+          "label": "Pengurus Choi AI",
+          "href": "/solutions/office-ai",
+          "description": "Ejen untuk kerja pejabat berulang"
+        },
+        {
+          "label": "Physical AI",
+          "href": "/solutions/physical-ai",
+          "description": "Ejen yang memerhati dan membuat pertimbangan di tapak industri"
+        },
+        {
+          "label": "AI Pembinaan",
+          "href": "/solutions/agents/construction",
+          "description": "Automasi pengurusan proses, keselamatan dan bahan"
+        },
+        {
+          "label": "AI Kandungan",
+          "href": "/solutions/agents/content",
+          "description": "Sokongan perancangan, produksi dan pascaproduksi"
+        },
+        {
+          "label": "AI Proses Pembuatan",
+          "href": "/solutions/agents/manufacturing",
+          "description": "Pemantauan peralatan, kualiti dan hasil"
+        },
+        {
+          "label": "AI Pengurusan Pengedaran",
+          "href": "/solutions/agents/distribution",
+          "description": "Inventori, logistik dan ramalan permintaan"
+        },
+        {
+          "label": "AI Operasi Perkhidmatan",
+          "href": "/solutions/agents/service",
+          "description": "Penempatan tenaga kerja, kehadiran dan penyelesaian bayaran"
+        },
+        {
+          "label": "AI Pencegahan Jenayah",
+          "href": "/solutions/agents/safety",
+          "description": "Pengesanan tanda luar biasa berasaskan analisis video"
+        }
+      ],
+      "/services": [
+        {
+          "label": "Pembangunan Perisian Menyeluruh",
+          "href": "/services/software",
+          "description": "Pembinaan web, aplikasi, AI dan sistem"
+        },
+        {
+          "label": "Penempatan Pembangun",
+          "href": "/services/staffing",
+          "description": "Penempatan di tapak, jarak jauh dan mengikut projek"
+        }
+      ],
+      "/academy": [
+        {
+          "label": "Panduan Kursus",
+          "href": "/academy/courses",
+          "description": "Senarai kursus untuk tiga sekolah"
+        },
+        {
+          "label": "Permohonan Kursus",
+          "href": "/academy/apply",
+          "description": "Penerimaan permohonan kursus"
+        }
+      ]
+    },
+    "primaryCta": {
+      "label": "Hubungi Kami",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DevFirm",
+      "title": "DevFirm, syarikat pembangunan yang diterajui pembangun",
+      "lead": "Seperti peguam berkumpul di firma guaman untuk menerima kes, pembangun berkumpul di DevFirm untuk mengambil kerja pembangunan. Syarikat mengurus kontrak dan penyelesaian bayaran, dan pembangun menumpukan pada pembinaan.",
+      "primaryCta": {
+        "label": "Hubungi Kami",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "Lihat Penyelesaian AI",
+        "href": "/solutions"
+      }
+    },
+    "slogan": {
+      "title": "Tempat kerja berbeza memerlukan AI berbeza",
+      "left": {
+        "eyebrow": "Tapak Industri",
+        "name": "Physical AI",
+        "desc": "Ia digunakan di tempat yang memerlukan pemerhatian dan pertimbangan. Ia menukar perkara yang dibaca kamera dan sensor kepada keputusan yang boleh digunakan manusia.",
+        "href": "/solutions/physical-ai"
+      },
+      "right": {
+        "eyebrow": "Tempat Kerja Pejabat",
+        "name": "Pengurus Choi AI",
+        "desc": "Ia mengendalikan kerja pejabat berulang. Ia membaca dan menyusun dokumen serta menyediakan laporan.",
+        "href": "/solutions/office-ai"
+      }
+    },
+    "audience": {
+      "eyebrow": "Sebab anda datang ke sini",
+      "title": "Mulakan dengan perkara yang anda perlukan",
+      "cards": [
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-client.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Pelanggan Korporat",
+          "desc": "Jika anda memerlukan penerapan AI atau bakat pembangunan",
+          "href": "/solutions",
+          "linkLabel": "Lihat Penyelesaian AI"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-learner.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Pelajar",
+          "desc": "Jika anda mahu belajar kerja praktikal melalui projek",
+          "href": "/academy",
+          "linkLabel": "Lihat Akademi"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-developer.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Pembangun untuk Bekerja Bersama Kami",
+          "desc": "Jika anda mahu menyertai kami atau mengendalikan CIC",
+          "href": "/about/careers",
+          "linkLabel": "Lihat Kerjaya"
+        }
+      ]
+    },
+    "agentsSection": {
+      "eyebrow": "Ejen AI Khusus Industri",
+      "title": "Biarkan pembantu AI industri menyusun kerja; anda membuat keputusan",
+      "lead": "Ejen menyusun pertimbangan berulang dalam enam industri terlebih dahulu. Manusia masuk hanya di bahagian yang memerlukan pertimbangan."
+    },
+    "model": {
+      "eyebrow": "Model DevFirm",
+      "title": "DevFirm melakukan untuk pembangun apa yang firma guaman lakukan untuk peguam",
+      "lead": "Pembangun menggunakan masa untuk membina, bukan mengurus jualan, kontrak, penyelesaian bayaran dan cukai. Pelanggan berkontrak dengan syarikat, bukan individu.",
+      "comparison": {
+        "leftLabel": "Firma Guaman",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Peguam",
+            "right": "Pembangun"
+          },
+          {
+            "left": "Penerimaan Kes",
+            "right": "Penerimaan Projek"
+          },
+          {
+            "left": "Pejabat pentadbiran mengurus pentadbiran",
+            "right": "Sokongan perniagaan mengurus back office"
+          },
+          {
+            "left": "Peguam Rakan Kongsi",
+            "right": "Ketua CIC"
+          },
+          {
+            "left": "Pelanggan berkontrak dengan firma",
+            "right": "Pelanggan berkontrak dengan syarikat"
+          }
+        ]
+      },
+      "note": "Bagi pelanggan, risiko berkontrak dengan pekerja bebas individu dihapuskan. Bagi pembangun, kerja yang sukar diurus sendirian dihapuskan."
+    },
+    "bands": {
+      "academy": {
+        "eyebrow": "Akademi PBL",
+        "title": "Belajar dengan Membina",
+        "desc": "Kurikulum NCS diselesaikan melalui projek. Apabila tamat, pelajar mempunyai hasil yang boleh dimasukkan ke dalam resume.",
+        "href": "/academy",
+        "linkLabel": "Lihat Kursus"
+      },
+      "workspace": {
+        "eyebrow": "Pejabat Kongsi",
+        "title": "Ruang kerja yang menyokong pascaproduksi",
+        "desc": "Pejabat kongsi pembangun dengan studio rakaman dan infrastruktur produksi kandungan.",
+        "href": "/workspace",
+        "linkLabel": "Lihat Ruang"
+      }
+    },
+    "trust": {
+      "eyebrow": "Syarikat",
+      "title": "Sejak 2007",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "Ditubuhkan"
+        },
+        {
+          "value": "CIC",
+          "label": "Operasi CIC"
+        },
+        {
+          "value": "Seocho, Seoul",
+          "label": "Berhampiran Gangnam-daero"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Anda belum perlu tahu apa yang hendak dibina",
+      "desc": "Beritahu kami keadaan semasa anda, dan kami akan menyusun dahulu tempat untuk bermula.",
+      "cta": {
+        "label": "Hubungi Kami",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Tentang Kami",
+      "title": "Syarikat pembangunan yang terdiri daripada pembangun",
+      "lead": "DevFirm membina struktur supaya pembangun boleh menumpukan hanya pada pembangunan. Syarikat mengurus selebihnya."
+    },
+    "metaphor": {
+      "id": "model",
+      "eyebrow": "Model DevFirm",
+      "title": "Kami menerapkan struktur firma guaman kepada pembangunan",
+      "lead": "Seperti peguam menumpukan hanya pada kes dengan sokongan pejabat pentadbiran, pembangun DevFirm menumpukan hanya pada pembangunan dengan sokongan perniagaan.",
+      "comparison": {
+        "leftLabel": "Firma Guaman",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Peguam menerima kes",
+            "right": "Pembangun menerima projek"
+          },
+          {
+            "left": "Pejabat pentadbiran mengurus pentadbiran",
+            "right": "Sokongan perniagaan mengurus back office"
+          },
+          {
+            "left": "Pelanggan berkontrak dengan firma",
+            "right": "Pelanggan berkontrak dengan syarikat"
+          },
+          {
+            "left": "Rakan kongsi memegang ekuiti",
+            "right": "Ketua CIC memiliki unit perniagaan"
+          }
+        ]
+      }
+    },
+    "backoffice": {
+      "id": "backoffice",
+      "eyebrow": "Sokongan Perniagaan",
+      "title": "Kerja yang tidak perlu dilakukan pembangun",
+      "lead": "Ini ialah perkara yang paling banyak mengambil masa pembangun yang bekerja sendirian. Di DevFirm, kerja ini tidak sampai ke meja pembangun.",
+      "items": [
+        {
+          "title": "Kontrak dan Rundingan",
+          "desc": "Syarikat mengekalkan kontrak standard dan prosedur semakan. Pembangun tidak menilai klausa berisiko sendirian."
+        },
+        {
+          "title": "Cukai dan Penyelesaian Bayaran",
+          "desc": "Syarikat mengurus pengeluaran invois cukai, cukai pegangan dan pemfailan VAT."
+        },
+        {
+          "title": "Kutipan Bayaran",
+          "desc": "Syarikat mengurus pengurusan akaun belum terima dan susulan. Pembangun tidak perlu berdebat dengan pelanggan tentang wang."
+        },
+        {
+          "title": "Empat Insurans Utama dan Hal Ehwal Buruh",
+          "desc": "Syarikat mengurus pemfailan dan pengurusan buruh mengikut jenis pekerjaan."
+        }
+      ]
+    },
+    "history": {
+      "id": "history",
+      "eyebrow": "Sejarah",
+      "title": "Sejak 2007",
+      "items": [
+        {
+          "year": "2007",
+          "title": "Syarikat Ditubuhkan",
+          "desc": "Kami memulakan pembangunan perisian dan pelaksanaan sistem."
+        },
+        {
+          "year": "2010-an",
+          "title": "Penempatan Pembangun dan Penyumberan Luar",
+          "desc": "Kami mengembangkan perkhidmatan melalui penempatan di tapak dan mengikut projek."
+        },
+        {
+          "year": "2020-an",
+          "title": "CIC Diperkenalkan",
+          "desc": "Kami membina struktur untuk pembangun mengendalikan perniagaan sendiri di dalam syarikat."
+        },
+        {
+          "year": "Kini",
+          "title": "Perniagaan Ejen AI",
+          "desc": "Kami menyusun semula perniagaan di sekitar Physical AI untuk tapak industri dan Pengurus Choi AI untuk pejabat."
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "eyebrow": "Gambaran Syarikat",
+      "title": "Maklumat Asas"
+    },
+    "cta": {
+      "title": "Ada tiga cara untuk bekerja dengan DevFirm",
+      "desc": "Temui kami sebagai pelanggan, sertai sebagai pembangun, atau bermula di akademi.",
+      "primary": {
+        "label": "Hubungi Kami",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Lihat Kerjaya",
+        "href": "/about/careers"
+      }
+    }
+  },
+  "cic": {
+    "hero": {
+      "eyebrow": "Company In Company",
+      "title": "Jalankan perniagaan sendiri di dalam syarikat",
+      "lead": "CIC (Company In Company) ialah sistem untuk pembangun mengendalikan unit perniagaan sendiri di dalam DevFirm. Mereka menggunakan kredit korporat dan back office syarikat sambil menetapkan sendiri arah perniagaan."
+    },
+    "what": {
+      "id": "what",
+      "eyebrow": "Apa Itu CIC",
+      "title": "Kurangkan risiko memulakan syarikat, kekalkan autonomi",
+      "lead": "Apabila anda menubuhkan syarikat sendirian, anda mesti membina kredit dan pentadbiran dari awal. CIC menggunakan kedua-duanya daripada syarikat, sementara ketua mengekalkan hak membuat keputusan ke atas perniagaan.",
+      "items": [
+        {
+          "title": "Gunakan kredit korporat",
+          "desc": "Pelanggan berkontrak dengan syarikat yang ditubuhkan pada 2007, bukan pemilik tunggal baharu."
+        },
+        {
+          "title": "Gunakan back office",
+          "desc": "Sokongan perniagaan mengurus kontrak, cukai, penyelesaian bayaran dan hal ehwal buruh."
+        },
+        {
+          "title": "Ketua menentukan perniagaan",
+          "desc": "Ketua CIC menentukan kerja yang diterima dan pasukan yang dibina."
+        },
+        {
+          "title": "Hasil diselesaikan mengikut unit perniagaan",
+          "desc": "Pembahagian dibuat berdasarkan prestasi perniagaan, bukan gaji."
+        }
+      ]
+    },
+    "operation": {
+      "id": "operation",
+      "eyebrow": "Kaedah Operasi",
+      "title": "Beginilah DevFirm beroperasi",
+      "steps": [
+        "Bincangkan rancangan perniagaan",
+        "Tubuhkan CIC dan persetujui syarat",
+        "Dapatkan projek dan bina pasukan",
+        "Selesaikan hasil dan labur semula"
+      ]
+    },
+    "roadmap": {
+      "id": "roadmap",
+      "eyebrow": "Hala Tuju",
+      "title": "Peningkatan Ejen AI",
+      "lead": "Setiap CIC membina ejen untuk domainnya, dan syarikat membina asas bersama. Pengetahuan domain terkumpul di CIC, dan teknologi umum terkumpul di syarikat.",
+      "items": [
+        {
+          "title": "Pastikan Data Domain",
+          "desc": "Setiap CIC mengumpul data sebenar dan kriteria pertimbangan daripada tapak yang dikendalikannya."
+        },
+        {
+          "title": "Bina Asas Bersama",
+          "desc": "Syarikat membina fungsi umum seperti pembacaan, carian dan pelaporan untuk digunakan semua CIC."
+        },
+        {
+          "title": "Jadikan Ejen sebagai Produk",
+          "desc": "Pertimbangan yang disahkan dibungkus menjadi produk ejen khusus industri."
+        }
+      ]
+    },
+    "conditions": {
+      "id": "conditions",
+      "eyebrow": "Syarat Penyertaan",
+      "title": "Kami bekerja dengan orang seperti ini",
+      "items": [
+        "Pengalaman mencipta kerja secara bebas dalam domain anda",
+        "Sikap bertanggungjawab terhadap hasil",
+        "Kesediaan untuk membina dan mengendalikan pasukan"
+      ],
+      "note": "Kami kurang melihat tempoh pengalaman dan lebih melihat sama ada anda boleh membina perniagaan yang berjalan sendiri. Tidak mengapa jika anda belum mempunyai pasukan."
+    },
+    "cta": {
+      "title": "Jika anda mempertimbangkan untuk bermula sebagai CIC",
+      "desc": "Beritahu kami perniagaan yang anda rancang. Syarat ditetapkan mengikut sifat perniagaan.",
+      "primary": {
+        "label": "Hubungi Kami",
+        "href": "/contact"
+      }
+    }
+  },
+  "careers": {
+    "page": {
+      "hero": {
+        "eyebrow": "Kerjaya",
+        "title": "Kami mencari pembangun untuk membina bersama kami",
+        "lead": "DevFirm membina struktur supaya pembangun boleh menumpukan pada pembangunan. Kami mencari orang yang akan menggunakan struktur itu bersama kami."
+      },
+      "emptyState": "Tiada pengumuman jawatan terbuka buat masa ini. Permohonan terbuka diterima melalui Hubungi Kami.",
+      "statusLabel": {
+        "open": "Dibuka",
+        "closed": "Ditutup"
+      },
+      "fields": {
+        "responsibilities": "Tanggungjawab",
+        "requirements": "Keperluan",
+        "preferred": "Kelayakan Diutamakan",
+        "conditions": "Syarat Kerja",
+        "deadline": "Tarikh Akhir",
+        "apply": "Mohon"
+      },
+      "cta": {
+        "title": "Walaupun tiada jawatan yang sepadan",
+        "desc": "Beritahu kami kerja yang anda mahu lakukan, dan kami akan mencari tempat bersama. Bermula sebagai CIC juga satu pilihan.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Ketahui CIC",
+          "href": "/about/cic"
+        }
+      }
+    },
+    "jobs": [
+      {
+        "slug": "ai-engineer",
+        "title": "Jurutera Ejen AI",
+        "team": "Penyelesaian AI",
+        "employmentType": "Sepenuh masa",
+        "status": "open",
+        "deadline": "Terbuka",
+        "responsibilities": [
+          "Mereka bentuk dan melaksanakan saluran pembacaan dan penaakulan untuk ejen AI khusus industri",
+          "Menyusun laluan pengumpulan data tapak dan mengesahkan kualiti",
+          "Menala ketepatan dan menangani isu operasi di tapak pelaksanaan"
+        ],
+        "requirements": [
+          "Sekurang-kurangnya 3 tahun pengalaman praktikal dengan saluran data dan model berasaskan Python",
+          "Pengalaman melaksanakan dan mengendalikan model dalam perkhidmatan sebenar",
+          "Pengalaman menyepakati kriteria dengan kakitangan tapak"
+        ],
+        "preferred": [
+          "Pengalaman dengan pengecaman video atau pengesanan anomali siri masa",
+          "Pemahaman tentang domain pembuatan, pembinaan atau logistik",
+          "Pengalaman mengkonfigurasi ejen LLM"
+        ],
+        "conditions": [
+          "Pejabat Seocho-gu, Seoul; boleh dirunding",
+          "Minggu kerja lima hari, waktu ulang-alik fleksibel",
+          "Sokongan peralatan dan perbelanjaan pembelajaran"
+        ]
+      },
+      {
+        "slug": "fullstack-developer",
+        "title": "Pembangun Full-Stack",
+        "team": "Perkhidmatan Pembangunan",
+        "employmentType": "Sepenuh masa",
+        "status": "open",
+        "deadline": "Terbuka",
+        "responsibilities": [
+          "Reka bentuk hingga pelaksanaan perkhidmatan web dan aplikasi pelanggan",
+          "Menambah baik dan memigrasikan sistem sedia ada",
+          "Menyertai dari peringkat penyusunan keperluan"
+        ],
+        "requirements": [
+          "Sekurang-kurangnya 3 tahun pengalaman pembangunan perkhidmatan web",
+          "Kemahiran dalam TypeScript atau bahasa bertaip statik yang setara",
+          "Pengalaman melaksanakan dan mengendalikan perkhidmatan secara langsung"
+        ],
+        "preferred": [
+          "Pengalaman dengan Next.js App Router",
+          "Pengalaman mengkonfigurasi infrastruktur awan",
+          "Pengalaman berkomunikasi terus dengan pelanggan"
+        ],
+        "conditions": [
+          "Pejabat Seocho-gu, Seoul; kerja di tapak mungkin bergantung pada projek",
+          "Minggu kerja lima hari, waktu ulang-alik fleksibel",
+          "Akses pejabat kongsi tersedia"
+        ]
+      },
+      {
+        "slug": "cic-lead",
+        "title": "Ketua CIC",
+        "team": "CIC",
+        "employmentType": "Kontrak",
+        "status": "open",
+        "deadline": "Terbuka",
+        "responsibilities": [
+          "Perancangan perniagaan dan pemerolehan projek untuk domain yang ditetapkan",
+          "Pembinaan pasukan dan operasi projek",
+          "Menetapkan arah pemprodukkan ejen domain"
+        ],
+        "requirements": [
+          "Pengalaman mencipta kerja secara bebas dalam domain tertentu",
+          "Pengalaman membina pasukan dan menyiapkan projek",
+          "Sikap bertanggungjawab terhadap hasil perniagaan"
+        ],
+        "preferred": [
+          "Rangkaian pelanggan sedia ada",
+          "Pengalaman projek penerapan AI",
+          "Pengalaman pemula niaga atau operasi perniagaan"
+        ],
+        "conditions": [
+          "Penyelesaian berasaskan prestasi; syarat dibincangkan mengikut perniagaan",
+          "Sokongan penuh dengan kredit korporat dan back office",
+          "Format kerja fleksibel"
+        ]
+      }
+    ]
+  },
+  "solutions": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Penyelesaian AI",
+        "title": "Physical AI untuk tapak industri, Pengurus Choi AI untuk pejabat",
+        "lead": "Tempat kerja berbeza memerlukan pertimbangan berbeza. DevFirm mendekatinya melalui dua paksi."
+      },
+      "axes": [
+        {
+          "eyebrow": "Tapak Industri",
+          "name": "Physical AI",
+          "desc": "Ia menukar tapak kerja yang dibaca kamera dan sensor kepada pertimbangan yang boleh digunakan manusia.",
+          "href": "/solutions/physical-ai",
+          "linkLabel": "Lihat Physical AI"
+        },
+        {
+          "eyebrow": "Tempat Kerja Pejabat",
+          "name": "Pengurus Choi AI",
+          "desc": "Ia mengendalikan kerja berulang seperti membaca dokumen, menyusunnya dan menulis laporan.",
+          "href": "/solutions/office-ai",
+          "linkLabel": "Lihat Pengurus Choi AI"
+        }
+      ],
+      "agentsSection": {
+        "id": "agents",
+        "eyebrow": "Ejen Khusus Industri",
+        "title": "Enam industri, enam jenis pertimbangan",
+        "lead": "Kriteria pertimbangan khusus industri diletakkan pada asas yang sama. Ejen bercakap dalam bahasa tapak kerja."
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Proses Penerapan",
+        "title": "Mulakan dalam empat langkah",
+        "steps": [
+          "Nilai keadaan semasa dan semak data",
+          "Sepakati kriteria pertimbangan",
+          "Jalankan rintis selama 4 hingga 8 minggu",
+          "Beralih ke operasi dan luaskan"
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "eyebrow": "Soalan Lazim",
+        "title": "Soalan biasa sebelum penerapan",
+        "items": [
+          {
+            "q": "Bolehkah kami bermula jika data kami belum tersusun?",
+            "a": "Kebanyakan tapak begitu. Sebab itu langkah pertama ialah semakan data. Kami mula-mula mengesahkan perkara yang boleh dilakukan dengan data yang sudah terkumpul, kemudian membuat laluan pengumpulan untuk perkara yang kurang."
+          },
+          {
+            "q": "Sejauh mana ketepatannya?",
+            "a": "Ia bergantung pada tapak dan item pertimbangan. Oleh itu, kami menetapkan tempoh rintis sebelum kontrak dan mengukur dengan data sebenar. Angka sasaran ditetapkan bersama selepas menyemak hasilnya."
+          },
+          {
+            "q": "Adakah kami perlu menukar sistem sedia ada?",
+            "a": "Dalam kebanyakan kes, tidak. Ia bersambung dengan membaca data daripada sistem sedia ada dan memulangkan hasil. Jika penggantian diperlukan, kami menerangkan sebabnya terlebih dahulu."
+          },
+          {
+            "q": "Siapa yang mengendalikannya selepas penerapan?",
+            "a": "DevFirm mengendalikan peringkat awal. Setelah kriteria pertimbangan stabil, kami menyerahkannya kepada orang yang bertanggungjawab. Operasi penyumberan luar berterusan juga boleh dilakukan."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Kami menentukan dahulu pertimbangan yang hendak diautomasi",
+        "desc": "Beritahu kami pertimbangan yang sedang diulang oleh manusia di tapak anda.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        }
+      }
+    },
+    "physicalAi": {
+      "hero": {
+        "eyebrow": "Physical AI",
+        "title": "Tambah mata yang membaca tapak",
+        "lead": "Ia memerhati perkara yang manusia tidak dapat terus pantau. Perkara yang dilihatnya ditinggalkan sebagai pertimbangan, bukan sekadar rekod."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Masalah",
+        "title": "Kebanyakan maklumat tapak berlalu begitu sahaja",
+        "items": [
+          {
+            "title": "Anda tidak dapat melihat semuanya",
+            "desc": "Ada banyak kamera, tetapi orang yang memantaunya terhad."
+          },
+          {
+            "title": "Apabila berlalu, ia sukar dicari",
+            "desc": "Apabila pengesahan diperlukan, memutar semula video mengambil masa."
+          },
+          {
+            "title": "Standard berbeza",
+            "desc": "Orang berbeza menilai adegan yang sama dengan cara berbeza."
+          }
+        ]
+      },
+      "stack": {
+        "id": "stack",
+        "eyebrow": "Keupayaan Teknikal",
+        "title": "Baca, nilai dan serahkan",
+        "items": [
+          {
+            "title": "Pengecaman Video",
+            "desc": "Ia membezakan orang, peralatan dan keadaan, serta mencari corak risiko."
+          },
+          {
+            "title": "Analisis Siri Masa Sensor",
+            "desc": "Ia mengesan aliran yang berbeza daripada normal sebagai isyarat anomali."
+          },
+          {
+            "title": "Pemprosesan Edge di Tapak",
+            "desc": "Ia membuat pertimbangan setempat walaupun di tapak dengan rangkaian tidak stabil."
+          },
+          {
+            "title": "Integrasi Sistem Perniagaan",
+            "desc": "Ia menghantar hasil pertimbangan ke dalam aliran kelulusan dan pelaporan."
+          }
+        ]
+      },
+      "industries": {
+        "id": "industries",
+        "eyebrow": "Industri Berkenaan",
+        "title": "Digunakan dalam enam jenis tapak kerja"
+      },
+      "cta": {
+        "title": "Mulakan dengan satu tapak",
+        "desc": "Jika kamera dan sensor sudah ada, kami bermula dengan itu.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Lihat Pengurus Choi AI",
+          "href": "/solutions/office-ai"
+        }
+      }
+    },
+    "officeAi": {
+      "hero": {
+        "eyebrow": "Pengurus Choi AI",
+        "title": "Kerja pejabat berulang bukan kerja yang patut dilakukan manusia",
+        "lead": "Membaca dokumen yang diterima, menyusunnya, memindahkannya ke dalam borang dan menulis laporan. Pengurus Choi AI mengendalikannya."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Masalah",
+        "title": "Tiada masa tinggal untuk membuat pertimbangan",
+        "items": [
+          {
+            "title": "Kerja menyalin",
+            "desc": "Orang memasukkan semula kandungan daripada e-mel dan lampiran ke dalam borang dalaman."
+          },
+          {
+            "title": "Mencari maklumat",
+            "desc": "Masa digunakan untuk mencari dokumen lama bagi mengesahkan bukti."
+          },
+          {
+            "title": "Semakan silang",
+            "desc": "Dokumen dibandingkan untuk menyemak sama ada nombor sepadan."
+          },
+          {
+            "title": "Menyediakan ringkasan",
+            "desc": "Kandungan yang sama ditulis semula untuk setiap penerima laporan."
+          }
+        ]
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Perkara yang Dilakukan",
+        "title": "Daripada dokumen kepada pelaporan",
+        "items": [
+          {
+            "title": "Pembacaan Dokumen",
+            "desc": "Ia mengekstrak item yang diperlukan daripada kontrak, penyata transaksi dan anggaran."
+          },
+          {
+            "title": "Pengisian Borang Dalaman",
+            "desc": "Ia mengisi item yang diekstrak ke dalam borang syarikat."
+          },
+          {
+            "title": "Carian Bukti",
+            "desc": "Ia mencari kandungan berkaitan dalam dokumen lalu dan membentangkannya bersama sumber."
+          },
+          {
+            "title": "Semakan Silang",
+            "desc": "Ia mengenal pasti tempat nombor dan syarat berbeza antara dokumen."
+          },
+          {
+            "title": "Draf Laporan",
+            "desc": "Ia mencipta ringkasan yang disesuaikan dengan penerima laporan."
+          },
+          {
+            "title": "Makluman Susulan",
+            "desc": "Ia menjejak item yang hampir kepada tarikh akhir dan item yang kurang."
+          }
+        ]
+      },
+      "physical": {
+        "id": "physical",
+        "eyebrow": "Integrasi Physical AI",
+        "title": "Pastikan kerja pejabat dan tapak bersambung",
+        "lead": "Perkara yang dibaca Physical AI di tapak mengalir ke dalam laporan Pengurus Choi AI. Ia mencipta satu laluan daripada foto tapak kepada dokumen kelulusan."
+      },
+      "cta": {
+        "title": "Tentukan dokumen yang hendak diserahkan dahulu",
+        "desc": "Beritahu kami satu jenis dokumen yang paling kerap anda proses.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Lihat Ejen Industri",
+          "href": "/solutions"
+        }
+      }
+    },
+    "agentPage": {
+      "problems": {
+        "id": "problems",
+        "eyebrow": "Masalah Tapak",
+        "title": "Anda mungkin sedang melakukan ini sekarang"
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Perkara yang Dilakukan",
+        "title": "Perkara yang dikendalikan ejen"
+      },
+      "outcomes": {
+        "id": "outcomes",
+        "eyebrow": "Kesan Dijangka",
+        "title": "Perkara yang berubah",
+        "note": "Selepas mengukur dengan data sebenar dalam tempoh rintis, kami menetapkan semula sasaran."
+      },
+      "steps": {
+        "id": "steps",
+        "eyebrow": "Aliran Penerapan",
+        "title": "Dilaksanakan dalam empat langkah"
+      },
+      "siblings": {
+        "id": "siblings",
+        "eyebrow": "Industri Lain",
+        "title": "Cara tapak lain menggunakannya"
+      },
+      "cta": {
+        "title": "Semak sama ada ia berfungsi untuk tapak anda",
+        "desc": "Kami mula-mula menyemak perkara yang boleh dilakukan dengan data yang sudah anda kumpulkan.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Lihat Semua Penyelesaian AI",
+          "href": "/solutions"
+        }
+      }
+    }
+  },
+  "agents": [
+    {
+      "slug": "construction",
+      "name": "AI Pembinaan",
+      "tagline": "Kurangkan jurang antara lukisan dan tapak.",
+      "icon": {},
+      "problems": [
+        "Laporan kemajuan diagregatkan secara berbeza oleh setiap orang",
+        "Rekod pemeriksaan keselamatan berselerak di kertas dan pemesej",
+        "Kemasukan bahan tidak sepadan dengan penggunaan sebenar"
+      ],
+      "capabilities": [
+        {
+          "title": "Pembacaan Kemajuan",
+          "desc": "Ia membandingkan foto tapak dengan log kerja harian dan mengira kemajuan berdasarkan standard yang sama setiap hari."
+        },
+        {
+          "title": "Pengesanan Risiko Keselamatan",
+          "desc": "Ia mengesan kekurangan alat pelindung dan kemasukan ke zon berbahaya dalam rakaman CCTV lalu memberi amaran segera."
+        },
+        {
+          "title": "Penyusunan Kemasukan dan Pengeluaran Bahan",
+          "desc": "Ia memadankan slip kemasukan dengan kuantiti pembinaan dan melaporkan kekurangan atau lebihan setiap minggu."
+        },
+        {
+          "title": "Penulisan Laporan Harian",
+          "desc": "Ia mengumpulkan rekod yang berselerak dan secara automatik mencipta laporan dalam format pelanggan."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Masa penulisan laporan harian",
+          "value": "-70%"
+        },
+        {
+          "label": "Pemeriksaan keselamatan terlepas",
+          "value": "0 kes"
+        },
+        {
+          "label": "Semakan variasi bahan",
+          "value": "Sekali seminggu"
+        }
+      ],
+      "steps": [
+        "Semak data tapak",
+        "Sepakati kriteria pembacaan",
+        "Rintis selama 4 minggu",
+        "Luaskan ke semua tapak"
+      ],
+      "seo": {
+        "title": "AI Pembinaan",
+        "description": "Ejen AI untuk tapak pembinaan yang mengira kemajuan setiap hari berdasarkan standard yang sama menggunakan foto tapak dan log kerja harian, serta menyusun pemeriksaan keselamatan dan kemasukan serta pengeluaran bahan secara automatik."
+      }
+    },
+    {
+      "slug": "content",
+      "name": "AI Kandungan",
+      "tagline": "Gunakan masa produksi untuk membuat.",
+      "icon": {},
+      "problems": [
+        "Terlalu banyak masa digunakan untuk mencari adegan yang boleh digunakan dalam rakaman mentah",
+        "Kerja berulang seperti sari kata dan imej kecil menolak jadual produksi",
+        "Pengolahan semula kandungan untuk setiap format saluran tidak berakhir"
+      ],
+      "capabilities": [
+        {
+          "title": "Pengindeksan Aset Mentah",
+          "desc": "Ia mengindeks rakaman mentah mengikut orang, tempat dan dialog supaya adegan yang diperlukan boleh ditemui segera."
+        },
+        {
+          "title": "Draf Sari Kata dan Terjemahan",
+          "desc": "Ia menyalin audio dan mencipta draf sari kata yang selaras dengan nada saluran."
+        },
+        {
+          "title": "Penggunaan Semula Khusus Saluran",
+          "desc": "Ia menghasilkan suntingan untuk format saluran berbeza daripada satu sumber."
+        },
+        {
+          "title": "Penyusunan Metadata",
+          "desc": "Ia menyusun tajuk, tag dan penerangan untuk carian serta menyiapkan persediaan muat naik."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Masa carian adegan",
+          "value": "-80%"
+        },
+        {
+          "label": "Penciptaan draf sari kata",
+          "value": "Serta-merta"
+        },
+        {
+          "label": "Terbitan saluran",
+          "value": "1 ke N"
+        }
+      ],
+      "steps": [
+        "Sambungkan aset sumber",
+        "Pelajari standard nada",
+        "Produksi rintis",
+        "Integrasi ke dalam barisan produksi"
+      ],
+      "seo": {
+        "title": "AI Kandungan",
+        "description": "Ejen AI yang mengurangkan kerja berulang dalam produksi kandungan melalui pengindeksan rakaman mentah, draf sari kata dan penggunaan semula khusus saluran."
+      }
+    },
+    {
+      "slug": "manufacturing",
+      "name": "AI Proses Pembuatan",
+      "tagline": "Baca isyarat sebelum kecacatan berlaku.",
+      "icon": {},
+      "problems": [
+        "Anomali peralatan hanya ditemui selepas henti operasi",
+        "Standard pemeriksaan berbeza mengikut pemeriksa",
+        "Punca penurunan hasil tidak dapat dikenal pasti walaupun selepas itu"
+      ],
+      "capabilities": [
+        {
+          "title": "Ramalan Anomali Peralatan",
+          "desc": "Ia mencari corak dalam trend sensor yang berbeza daripada normal dan memberi amaran sebelum henti operasi."
+        },
+        {
+          "title": "Pemeriksaan Visual",
+          "desc": "Ia menilai kecacatan daripada video dan menghapuskan variasi antara pemeriksa."
+        },
+        {
+          "title": "Penjejakan Punca Hasil",
+          "desc": "Ia menghubungkan pemboleh ubah proses dengan kadar kecacatan dan mengenal pasti keadaan ketika prestasi memburuk."
+        },
+        {
+          "title": "Semakan Standard Kerja",
+          "desc": "Ia merekodkan perbezaan antara kerja standard dan kerja sebenar, meninggalkan perkara untuk penambahbaikan."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Henti operasi tidak dirancang",
+          "value": "-40%"
+        },
+        {
+          "label": "Variasi pemeriksaan",
+          "value": "Diselesaikan"
+        },
+        {
+          "label": "Pengenalpastian punca",
+          "value": "Hari yang sama"
+        }
+      ],
+      "steps": [
+        "Sambungkan data peralatan",
+        "Pelajari julat normal",
+        "Sahkan satu barisan",
+        "Luaskan barisan"
+      ],
+      "seo": {
+        "title": "AI Proses Pembuatan",
+        "description": "Ejen AI yang mengurangkan kerugian tapak pembuatan melalui ramalan anomali peralatan, pemeriksaan visual berasaskan video dan penjejakan punca hasil."
+      }
+    },
+    {
+      "slug": "distribution",
+      "name": "AI Pengurusan Pengedaran",
+      "tagline": "Kurangkan inventori dan cegah kehabisan stok.",
+      "icon": {},
+      "problems": [
+        "Produk yang bergerak pantas habis dahulu",
+        "Inventori bergerak perlahan mengambil ruang gudang",
+        "Keputusan pesanan bergantung pada pengalaman seseorang"
+      ],
+      "capabilities": [
+        {
+          "title": "Ramalan Permintaan",
+          "desc": "Ia meramalkan permintaan peringkat item berdasarkan trend jualan dan musim."
+        },
+        {
+          "title": "Cadangan Pesanan",
+          "desc": "Ia mengira masa tunggu dan stok keselamatan untuk mencadangkan kuantiti pesanan."
+        },
+        {
+          "title": "Semakan Kesihatan Inventori",
+          "desc": "Ia mencari inventori yang tidak lagi bergerak dan menunjukkan masa untuk melupuskannya."
+        },
+        {
+          "title": "Penyusunan Laluan Logistik",
+          "desc": "Ia mencari bahagian kelewatan dalam sejarah penghantaran dan menyusun semula laluan."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Kadar kehabisan stok",
+          "value": "-50%"
+        },
+        {
+          "label": "Hari pegangan inventori",
+          "value": "-25%"
+        },
+        {
+          "label": "Keputusan pesanan",
+          "value": "Berasaskan bukti"
+        }
+      ],
+      "steps": [
+        "Sambungkan data jualan",
+        "Sahkan ketepatan ramalan",
+        "Terapkan pada item terpilih",
+        "Semua item"
+      ],
+      "seo": {
+        "title": "AI Pengurusan Pengedaran",
+        "description": "Ejen AI untuk tapak pengedaran yang mengurangkan kehabisan stok dan lebihan inventori melalui ramalan permintaan dan cadangan pesanan."
+      }
+    },
+    {
+      "slug": "service",
+      "name": "AI Operasi Perkhidmatan",
+      "tagline": "Keputusan penempatan kakitangan juga memerlukan bukti.",
+      "icon": {},
+      "problems": [
+        "Kakitangan diperlukan mengikut tapak ditentukan berdasarkan gerak hati",
+        "Semakan kehadiran dan penyelesaian bayaran mengambil beberapa hari setiap bulan",
+        "Kesilapan berlaku kerana syarat kontrak berbeza mengikut tapak"
+      ],
+      "capabilities": [
+        {
+          "title": "Cadangan Penempatan Kakitangan",
+          "desc": "Ia mengira kakitangan diperlukan berdasarkan saiz tapak dan keperluan masa lalu."
+        },
+        {
+          "title": "Agregasi Kehadiran Automatik",
+          "desc": "Ia mengagregatkan rekod masuk dan keluar kerja mengikut syarat kontrak dan meninggalkan hanya pengecualian kepada manusia."
+        },
+        {
+          "title": "Penyediaan Draf Penyata Penyelesaian",
+          "desc": "Ia memadankan kadar khusus tapak dengan rekod kerja dan menyediakan draf penyata penyelesaian."
+        },
+        {
+          "title": "Semakan Syarat Kontrak",
+          "desc": "Ia mencari dan memberi amaran tentang ketidakpadanan antara syarat khusus tapak dan operasi sebenar."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Masa penyelesaian bayaran",
+          "value": "-60%"
+        },
+        {
+          "label": "Asas penempatan",
+          "value": "Dikuantifikasi"
+        },
+        {
+          "label": "Pelanggaran syarat",
+          "value": "Dikesan lebih awal"
+        }
+      ],
+      "steps": [
+        "Susun syarat kontrak",
+        "Sambungkan sistem kehadiran",
+        "Rintis di satu tapak",
+        "Semua tapak"
+      ],
+      "seo": {
+        "title": "AI Operasi Perkhidmatan",
+        "description": "Ejen AI yang mengurangkan kerja berulang dalam operasi perkhidmatan dengan mengautomasikan pengiraan penempatan kakitangan, agregasi kehadiran dan penyediaan draf penyata penyelesaian."
+      }
+    },
+    {
+      "slug": "safety",
+      "name": "AI Pencegahan Jenayah",
+      "tagline": "Lihat isyarat sebelum ia menjadi insiden.",
+      "icon": {},
+      "problems": [
+        "Kakitangan kawalan tidak dapat melihat semua skrin serentak",
+        "Semakan video selepas kejadian mengambil masa lama",
+        "Kriteria pertimbangan risiko berbeza mengikut operator kawalan"
+      ],
+      "capabilities": [
+        {
+          "title": "Pengesanan Tingkah Laku Tidak Normal",
+          "desc": "Ia mencari dan memberi amaran tentang corak seperti berkeliaran, pencerobohan dan jatuh dalam masa nyata."
+        },
+        {
+          "title": "Carian Segmen",
+          "desc": "Ia segera mencari segmen video mengikut syarat orang, kenderaan dan masa."
+        },
+        {
+          "title": "Pemantauan Keutamaan",
+          "desc": "Ia membawa skrin berisiko tinggi kepada operator kawalan terlebih dahulu."
+        },
+        {
+          "title": "Penyusunan Rekod Insiden",
+          "desc": "Ia merekodkan urutan daripada pengesanan hingga tindakan secara automatik."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Carian video",
+          "value": "Minit"
+        },
+        {
+          "label": "Pengesanan terlepas",
+          "value": "Berkurang"
+        },
+        {
+          "label": "Kriteria pertimbangan",
+          "value": "Disatukan"
+        }
+      ],
+      "steps": [
+        "Sambungkan kamera",
+        "Laraskan kriteria pengesanan",
+        "Operasi rintis waktu malam",
+        "Luaskan ke semua kawasan"
+      ],
+      "seo": {
+        "title": "AI Pencegahan Jenayah",
+        "description": "Ejen AI pencegahan jenayah yang menyokong pertimbangan kakitangan kawalan melalui pengesanan tingkah laku tidak normal dan carian video berasaskan syarat."
+      }
+    }
+  ],
+  "services": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Perkhidmatan Pembangunan",
+        "title": "Kami menyediakan kerja dan orang yang membinanya",
+        "lead": "Anda boleh mempercayakan keseluruhan projek atau meminta hanya tenaga kerja yang diperlukan. Pihak kontrak anda ialah syarikat, bukan individu."
+      },
+      "cards": [
+        {
+          "title": "Pembangunan Perisian Menyeluruh",
+          "desc": "Kami mengurus daripada penyusunan keperluan hingga pelaksanaan dan operasi.",
+          "href": "/services/software",
+          "linkLabel": "Lihat Perkhidmatan Pembangunan"
+        },
+        {
+          "title": "Penempatan Pembangun dan Penyumberan Luar",
+          "desc": "Kami menempatkan pembangun di tapak, secara jarak jauh atau mengikut projek.",
+          "href": "/services/staffing",
+          "linkLabel": "Lihat Penempatan"
+        }
+      ],
+      "collaboration": {
+        "id": "collaboration",
+        "eyebrow": "Kaedah Kerjasama",
+        "title": "Ke arah mengurangkan beban pengurusan pelanggan",
+        "items": [
+          {
+            "title": "Satu Titik Hubungan",
+            "desc": "Anda tidak berkomunikasi secara berasingan dengan beberapa pembangun. Komunikasi disusun melalui satu titik hubungan."
+          },
+          {
+            "title": "Kontrak Korporat",
+            "desc": "Syarikat bertanggungjawab terhadap kontrak, invois cukai dan pembaikan kecacatan."
+          },
+          {
+            "title": "Dokumen Serah Terima",
+            "desc": "Apabila projek selesai, kami menyerahkan dokumen yang diperlukan untuk operasi."
+          }
+        ]
+      },
+      "domains": {
+        "id": "domains",
+        "eyebrow": "Bidang Teknikal",
+        "title": "Skop yang Diliputi",
+        "items": [
+          "Perkhidmatan web dan sistem pentadbir",
+          "Aplikasi mudah alih",
+          "Ejen AI dan saluran data",
+          "Integrasi dan migrasi sistem dalaman"
+        ]
+      },
+      "cta": {
+        "title": "Jika anda tidak pasti format yang sesuai",
+        "desc": "Beritahu kami keadaan anda, dan kami akan menentukan dahulu sama ada projek penuh atau penempatan lebih sesuai.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        }
+      }
+    },
+    "software": {
+      "hero": {
+        "eyebrow": "Pembangunan Perisian Menyeluruh",
+        "title": "Daripada penyusunan keperluan hingga operasi",
+        "lead": "Kami menyertai dari peringkat menentukan apa yang hendak dibina. Kami tidak berhenti pada pembinaan; kami menamatkan dengan keadaan yang boleh diserah terima."
+      },
+      "areas": {
+        "id": "areas",
+        "eyebrow": "Bidang Pembangunan",
+        "title": "Empat bidang",
+        "items": [
+          {
+            "title": "Perkhidmatan Web",
+            "desc": "Kami mereka bentuk perkhidmatan untuk pelanggan dan sistem pentadbir dalaman bersama-sama."
+          },
+          {
+            "title": "Aplikasi Mudah Alih",
+            "desc": "Kami memilih natif atau rentas platform mengikut skop yang diperlukan."
+          },
+          {
+            "title": "AI dan Data",
+            "desc": "Kami melampirkan ejen di tempat pertimbangan diperlukan dan menyusun aliran data."
+          },
+          {
+            "title": "Integrasi Sistem",
+            "desc": "Kami bersambung dengan sistem yang sudah digunakan tanpa memecahkan aliran kerja."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Proses",
+        "title": "Lima langkah",
+        "steps": [
+          "Susun keperluan",
+          "Sahkan skop dan jadual",
+          "Reka bentuk dan pembangunan",
+          "Penerimaan dan pelaksanaan",
+          "Serah terima dan operasi"
+        ]
+      },
+      "quality": {
+        "id": "quality",
+        "eyebrow": "Serahan dan Standard Kualiti",
+        "title": "Kami menentukan lebih awal perkara yang akan anda terima",
+        "items": [
+          "Kod sumber dan akses repositori",
+          "Dokumen prosedur pelaksanaan dan skrip pelaksanaan boleh dijalankan",
+          "Spesifikasi API dan dokumen struktur data",
+          "Mesyuarat serah terima dan latihan untuk kakitangan operasi"
+        ],
+        "note": "Standard kualiti dipersetujui secara bertulis sebelum menandatangani kontrak. Ini menghalang standard berbeza muncul ketika penerimaan."
+      },
+      "cta": {
+        "title": "Anda tidak perlu telah menentukan binaan",
+        "desc": "Beritahu kami hanya masalah yang ingin anda selesaikan, dan kami akan mengecilkan skop bersama.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        }
+      }
+    },
+    "staffing": {
+      "hero": {
+        "eyebrow": "Penempatan dan Penyumberan Luar",
+        "title": "Tempatkan pembangun sementara syarikat menguruskannya",
+        "lead": "Kami menempatkan tenaga kerja untuk tempoh yang diperlukan. DevFirm mengurus kontrak dan hal ehwal buruh."
+      },
+      "difference": {
+        "id": "difference",
+        "eyebrow": "Perbezaan",
+        "title": "Perbezaannya daripada kontrak langsung dengan pekerja bebas",
+        "lead": "Syarikat menyerap risiko yang timbul apabila pelanggan berkontrak terus dengan individu.",
+        "items": [
+          {
+            "title": "Pihak kontrak ialah syarikat",
+            "desc": "Jika seseorang meninggalkan projek di tengah jalan atau pertikaian berlaku, syarikat bertanggungjawab dan menempatkan tenaga pengganti."
+          },
+          {
+            "title": "Pengendalian Cukai dan Buruh",
+            "desc": "Pelanggan tidak mengendalikan cukai pegangan atau penentuan empat insurans utama."
+          },
+          {
+            "title": "Kumpulan Bakat Disahkan",
+            "desc": "Kami menugaskan pembangun daripada mereka yang pernah bekerja dengan kami dalam projek."
+          },
+          {
+            "title": "Sokongan Back-Office",
+            "desc": "Sokongan perniagaan DevFirm mengurus penyelesaian bayaran dan kehadiran untuk pembangun yang ditempatkan."
+          }
+        ]
+      },
+      "formats": {
+        "id": "formats",
+        "eyebrow": "Format Penempatan",
+        "title": "Pilih daripada tiga format",
+        "items": [
+          {
+            "title": "Di tapak",
+            "desc": "Pembangun bekerja di pejabat pelanggan dan menyertai pasukan."
+          },
+          {
+            "title": "Jarak jauh",
+            "desc": "Kerja dilakukan di pejabat DevFirm atau pejabat kongsi."
+          },
+          {
+            "title": "Berasaskan projek",
+            "desc": "Tempoh dan serahan ditentukan, dan penyelesaian bayaran berdasarkan hasil."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Prosedur",
+        "title": "Empat langkah",
+        "steps": [
+          "Susun keupayaan diperlukan",
+          "Cadangkan calon",
+          "Temu duga dan sahkan",
+          "Tempatkan dan semak secara berkala"
+        ]
+      },
+      "cta": {
+        "title": "Beritahu kami keupayaan yang anda perlukan",
+        "desc": "Kami akan menyusun calon mengikut tempoh dan format penempatan.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "academy": {
+    "page": {
+      "hero": {
+        "eyebrow": "Akademi PBL",
+        "title": "Belajar dengan Membina",
+        "lead": "Ini bukan latihan yang tamat selepas kuliah. Kurikulum NCS diselesaikan melalui projek, dan pelajar keluar dengan hasil yang boleh dimasukkan ke dalam resume."
+      },
+      "pbl": {
+        "id": "pbl",
+        "eyebrow": "Apa Itu PBL",
+        "title": "Projek ialah kurikulum",
+        "lead": "Project Based Learning. Kami tidak menyenaraikan perkara yang perlu dipelajari dahulu. Kami mula-mula menentukan apa yang mesti dibina. Pengetahuan yang diperlukan diisi semasa proses pembinaan.",
+        "items": [
+          {
+            "title": "Hasil kekal",
+            "desc": "Perkara yang kekal bukan sijil, tetapi projek yang berfungsi."
+          },
+          {
+            "title": "Alami kerjasama",
+            "desc": "Ini bukan tugasan individu. Pasukan membahagikan jadual dan peranan."
+          },
+          {
+            "title": "Disemak mengikut standard kerja",
+            "desc": "Pembangun yang bekerja pada projek sebenar menyemak kod dan hasil."
+          }
+        ]
+      },
+      "schools": {
+        "id": "schools",
+        "eyebrow": "Tiga Sekolah",
+        "title": "Pilih berdasarkan perkara yang ingin anda bina"
+      },
+      "external": {
+        "id": "external",
+        "eyebrow": "Sambungan",
+        "title": "Kursus Pascaproduksi",
+        "desc": "Kursus pascaproduksi video dikendalikan bersama Seoul Film Academy.",
+        "href": "https://www.seoulfilmacademy.com",
+        "linkLabel": "Seoul Film Academy"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Proses Pendaftaran",
+        "title": "Empat langkah",
+        "steps": [
+          "Pilih kursus dan mohon",
+          "Konsultasi dan penempatan",
+          "Laksanakan projek",
+          "Bentang dan tamat"
+        ]
+      },
+      "cta": {
+        "title": "Jika anda tidak pasti kursus yang sesuai",
+        "desc": "Beritahu kami perkara yang boleh anda lakukan sekarang dan perkara yang ingin anda lakukan, dan kami akan mengesyorkan kursus.",
+        "primary": {
+          "label": "Mohon Kursus",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Lihat Kursus",
+          "href": "/academy/courses"
+        }
+      }
+    },
+    "schools": [
+      {
+        "key": "solution",
+        "name": "Sekolah Pembangunan Penyelesaian",
+        "desc": "Bina perkhidmatan dari awal hingga akhir.",
+        "art": {
+          "src": "/images/cards/school-solution.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "office",
+        "name": "Sekolah Kerja Pejabat Umum",
+        "desc": "Pelajari cara mengautomasikan kerja pejabat dengan alat.",
+        "art": {
+          "src": "/images/cards/school-office.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "project",
+        "name": "Sekolah Kerja Projek",
+        "desc": "Pelajari pelaksanaan projek, termasuk perancangan dan pengurusan jadual.",
+        "art": {
+          "src": "/images/cards/school-project.svg",
+          "width": 240,
+          "height": 180
+        }
+      }
+    ]
+  },
+  "courses": {
+    "list": [
+      {
+        "slug": "web-service-development",
+        "school": "solution",
+        "title": "Kursus Pembangunan Perkhidmatan Web",
+        "summary": "Daripada perancangan hingga pelaksanaan, siapkan satu perkhidmatan yang benar-benar boleh diakses orang.",
+        "duration": "16 minggu",
+        "capacity": "20 orang",
+        "target": [
+          "Orang yang mengetahui sintaks pengaturcaraan asas",
+          "Pencari kerja yang memerlukan portfolio",
+          "Pekerja yang mahu membina perkhidmatan sendiri"
+        ],
+        "prerequisites": [
+          "Pengalaman pengaturcaraan pada tahap sintaks asas",
+          "Asas HTML dan CSS"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Persekitaran Pembangunan dan Alat Kerjasama",
+            "detail": "Tetapkan aliran Git, pengurusan isu dan peraturan semakan kod sebagai peraturan pasukan."
+          },
+          {
+            "week": "3~6",
+            "topic": "Asas Frontend",
+            "detail": "Meliputi struktur komponen, pengurusan keadaan dan susun atur responsif."
+          },
+          {
+            "week": "7~10",
+            "topic": "Backend dan Data",
+            "detail": "Laksanakan reka bentuk API, pemodelan data dan pengesahan."
+          },
+          {
+            "week": "11~14",
+            "topic": "Projek Pasukan",
+            "detail": "Bina perkhidmatan yang dirancang sebagai pasukan. Terima semakan sekali seminggu."
+          },
+          {
+            "week": "15~16",
+            "topic": "Pelaksanaan dan Pembentangan",
+            "detail": "Laksanakan ke domain sebenar dan bentangkan hasilnya."
+          }
+        ],
+        "outcomes": [
+          "Satu perkhidmatan web yang boleh diakses",
+          "Repositori dan sejarah commit",
+          "Dokumen pelaksanaan dan README"
+        ],
+        "careers": [
+          "Pembangun Web",
+          "Pembangun Full-Stack Junior",
+          "Pemilik Perkhidmatan Dalaman"
+        ]
+      },
+      {
+        "slug": "ai-agent-basics",
+        "school": "solution",
+        "title": "Kursus Praktikal Ejen AI",
+        "summary": "Bina ejen yang mengendalikan kerja secara langsung. Kursus ini tentang menggunakan model, bukan membuat model.",
+        "duration": "12 minggu",
+        "capacity": "16 orang",
+        "target": [
+          "Pembangun yang ditugaskan kepada automasi kerja",
+          "Pengamal yang menyemak penerapan AI",
+          "Orang yang mahu memahami struktur ejen"
+        ],
+        "prerequisites": [
+          "Pengalaman menggunakan Python atau JavaScript",
+          "Pengalaman memanggil API"
+        ],
+        "curriculum": [
+          {
+            "week": "1~3",
+            "topic": "Struktur Ejen",
+            "detail": "Tetapkan struktur asas untuk panggilan alat, penambahan dapatan semula dan pengendalian kegagalan."
+          },
+          {
+            "week": "4~7",
+            "topic": "Integrasi Kerja",
+            "detail": "Laksanakan integrasi yang membaca dan menulis dokumen, e-mel dan helaian."
+          },
+          {
+            "week": "8~10",
+            "topic": "Penilaian dan Penambahbaikan",
+            "detail": "Ukur hasil, tetapkan kriteria dan tambah baik secara berulang."
+          },
+          {
+            "week": "11~12",
+            "topic": "Projek Aplikasi Praktikal",
+            "detail": "Setiap orang memilih satu tugas syarikat dan memindahkannya kepada ejen."
+          }
+        ],
+        "outcomes": [
+          "Satu ejen automasi kerja",
+          "Dokumen kriteria penilaian",
+          "Laporan aplikasi"
+        ],
+        "careers": [
+          "Pemilik Operasi AI",
+          "Jurutera Automasi",
+          "Ketua Penerapan AI Dalaman"
+        ]
+      },
+      {
+        "slug": "office-automation",
+        "school": "office",
+        "title": "Kursus Automasi Pejabat",
+        "summary": "Kurangkan kerja dokumen dan hamparan harian berulang dengan alat. Anda boleh bermula tanpa mengetahui kod.",
+        "duration": "8 minggu",
+        "capacity": "24 orang",
+        "target": [
+          "Pekerja dengan banyak tugas pejabat berulang",
+          "Orang yang menghabiskan banyak masa pada kerja Excel",
+          "Pengurus yang mahu menyusun kerja jabatan"
+        ],
+        "prerequisites": [
+          "Pengalaman penggunaan Excel asas"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Pecahan Kerja",
+            "detail": "Pecahkan kerja semasa kepada langkah dan cari titik yang boleh diautomasikan."
+          },
+          {
+            "week": "3~5",
+            "topic": "Automasi Dokumen dan Hamparan",
+            "detail": "Kendalikan pengisian borang, semakan silang dan agregasi secara automatik."
+          },
+          {
+            "week": "6~7",
+            "topic": "Menggunakan Alat AI",
+            "detail": "Lampirkan pembacaan dan ringkasan dokumen kepada aliran kerja."
+          },
+          {
+            "week": "8",
+            "topic": "Aplikasi dan Perkongsian",
+            "detail": "Susun perkara yang dibina supaya boleh diserahkan kepada pasukan."
+          }
+        ],
+        "outcomes": [
+          "Tiga tugas diautomasikan",
+          "Dokumen panduan pengguna"
+        ],
+        "careers": [
+          "Pemilik Automasi Pejabat",
+          "Pemilik Penambahbaikan Kerja Jabatan"
+        ]
+      },
+      {
+        "slug": "project-management",
+        "school": "project",
+        "title": "Kursus Pelaksanaan Projek",
+        "summary": "Pelajari cara menamatkan projek sambil mengurus jadual dan skop melalui kes sebenar.",
+        "duration": "10 minggu",
+        "capacity": "18 orang",
+        "target": [
+          "Orang yang mengambil projek buat kali pertama",
+          "Ketua pasukan yang jadualnya sering tertangguh",
+          "Orang yang mesti menyelaras dengan pelanggan"
+        ],
+        "prerequisites": [
+          "Pengalaman bekerja sebagai pasukan"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Definisi Skop",
+            "detail": "Mulakan dengan menentukan perkara yang tidak akan dilakukan."
+          },
+          {
+            "week": "3~5",
+            "topic": "Jadual dan Risiko",
+            "detail": "Buat anggaran, penimbal dan senarai risiko."
+          },
+          {
+            "week": "6~8",
+            "topic": "Pelaksanaan dan Penyelarasan",
+            "detail": "Kendalikan permintaan perubahan dan komunikasi pihak berkepentingan."
+          },
+          {
+            "week": "9~10",
+            "topic": "Penutupan dan Retrospektif",
+            "detail": "Akhiri dengan serah terima dan retrospektif."
+          }
+        ],
+        "outcomes": [
+          "Satu rancangan projek",
+          "Dokumen pengurusan risiko",
+          "Laporan retrospektif"
+        ],
+        "careers": [
+          "Pengurus Projek",
+          "Ketua Pasukan",
+          "Perancang Perkhidmatan"
+        ]
+      }
+    ],
+    "page": {
+      "hero": {
+        "eyebrow": "Kursus",
+        "title": "Kursus yang Sedang Dibuka",
+        "lead": "Kursus disusun mengikut sekolah. Semak tempoh dan sasaran peserta sebelum memohon."
+      },
+      "filterAll": "Semua",
+      "fields": {
+        "duration": "Tempoh",
+        "capacity": "Kapasiti",
+        "target": "Sasaran",
+        "prerequisites": "Prasyarat",
+        "curriculum": "Kurikulum",
+        "outcomes": "Hasil Projek",
+        "careers": "Laluan Selepas Tamat",
+        "week": "Minggu",
+        "topic": "Topik",
+        "detail": "Kandungan",
+        "apply": "Mohon Kursus"
+      },
+      "cta": {
+        "title": "Anda boleh bertanya sebelum memohon",
+        "desc": "Kami mula-mula menyemak sama ada anda boleh mengikuti kursus pada tahap semasa anda.",
+        "primary": {
+          "label": "Mohon Kursus",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "workspace": {
+    "hero": {
+      "eyebrow": "Pejabat Kongsi",
+      "title": "Ruang untuk orang yang membina",
+      "lead": "Ruang kerja di mana pembangunan dan produksi kandungan boleh diselesaikan dalam satu bangunan."
+    },
+    "concept": {
+      "id": "concept",
+      "eyebrow": "Konsep",
+      "title": "Ruang pembangun yang menyokong pascaproduksi",
+      "lead": "Ini bukan hanya tempat untuk menulis kod. Ia dibina supaya anda tidak perlu keluar apabila kerja rakaman atau penyuntingan diperlukan."
+    },
+    "facilities": {
+      "id": "facilities",
+      "eyebrow": "Kemudahan",
+      "title": "Perkara yang tersedia",
+      "items": [
+        {
+          "title": "Studio Rakaman",
+          "desc": "Ia mempunyai bilik kalis bunyi untuk rakaman narasi dan temu bual.",
+          "art": {
+            "src": "/images/workspace/workspace-studio.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Studio rakaman dengan panel kalis bunyi, mikrofon dan konsol pencampuran"
+          }
+        },
+        {
+          "title": "Infrastruktur Produksi Kandungan",
+          "desc": "Ia menyediakan peralatan dan storan untuk penyuntingan dan rendering video.",
+          "art": {
+            "src": "/images/workspace/workspace-infra.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Ruang infrastruktur produksi kandungan dengan stesen kerja, storan dan rak nod render"
+          }
+        },
+        {
+          "title": "Ruang Kerja",
+          "desc": "Tempat duduk tetap, tempat duduk terbuka dan bilik mesyuarat kecil digunakan bersama.",
+          "art": {
+            "src": "/images/workspace/workspace-desk.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Ruang kerja kongsi dengan tempat duduk tetap, tempat duduk terbuka dan bilik mesyuarat kecil"
+          }
+        }
+      ]
+    },
+    "tenants": {
+      "id": "tenants",
+      "eyebrow": "Siapa yang Menggunakannya",
+      "title": "Digunakan oleh orang seperti ini",
+      "items": [
+        "Pembangun yang bekerja sendiri atau dalam pasukan kecil",
+        "Pasukan yang juga memerlukan kerja video dan audio",
+        "Pasukan yang mengendalikan perniagaan sebagai DevFirm CIC"
+      ]
+    },
+    "pricing": {
+      "id": "pricing",
+      "eyebrow": "Kadar dan Pertanyaan",
+      "title": "Syarat Penggunaan",
+      "note": "Syarat berbeza mengikut jenis tempat duduk dan tempoh penggunaan. Studio beroperasi melalui tempahan. Hubungi kami untuk syarat tepat."
+    },
+    "location": {
+      "id": "location",
+      "eyebrow": "Lokasi",
+      "title": "Seocho-gu, Seoul",
+      "address": "Aras 2, Bangunan Hanyang, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+      "mapTitle": "Peta lokasi DevFirm",
+      "mapLinkLabel": "Lihat di Peta Kakao",
+      "mapHref": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C6%EA%B8%B8%2059-1%20%ED%95%9C%EC%96%91%EB%B9%8C%EB%94%A9%202%EC%B8%B5"
+    },
+    "cta": {
+      "title": "Anda boleh membuat keputusan selepas melawat",
+      "desc": "Kami akan menjadualkan lawatan.",
+      "primary": {
+        "label": "Hubungi Kami",
+        "href": "/contact"
+      }
+    }
+  },
+  "forms": {
+    "contact": {
+      "hero": {
+        "eyebrow": "Pertanyaan",
+        "title": "Bagaimana kami boleh membantu",
+        "lead": "Penerangan ringkas sudah memadai. Orang yang bertanggungjawab akan menyemaknya dan menghubungi anda."
+      },
+      "types": [
+        {
+          "value": "solution",
+          "label": "Penerapan Penyelesaian AI"
+        },
+        {
+          "value": "development",
+          "label": "Permintaan Pembangunan"
+        },
+        {
+          "value": "staffing",
+          "label": "Penempatan Tenaga"
+        },
+        {
+          "value": "academy",
+          "label": "Akademi"
+        },
+        {
+          "value": "workspace",
+          "label": "Masuk Pejabat Kongsi"
+        },
+        {
+          "value": "etc",
+          "label": "Lain-lain"
+        }
+      ],
+      "labels": {
+        "type": "Jenis Pertanyaan",
+        "name": "Nama",
+        "company": "Syarikat atau Gabungan",
+        "email": "E-mel",
+        "phone": "Nombor Hubungan",
+        "message": "Mesej",
+        "consent": "Saya bersetuju dengan pengumpulan dan penggunaan maklumat peribadi",
+        "submit": "Hantar Pertanyaan",
+        "submitting": "Menghantar"
+      },
+      "placeholders": {
+        "name": "Hong Gil-dong",
+        "company": "Nama syarikat (pilihan)",
+        "email": "name@example.com",
+        "phone": "010-0000-0000 (pilihan)",
+        "message": "Beritahu kami keadaan anda dan perkara yang anda perlukan."
+      },
+      "consentNote": "Kami mengumpul nama, nombor hubungan, e-mel dan kandungan pertanyaan anda untuk memproses dan menjawab pertanyaan. Maklumat disimpan selama 3 tahun selepas pemprosesan selesai dan kemudian dimusnahkan.",
+      "success": {
+        "title": "Pertanyaan diterima",
+        "desc": "Kami akan menghubungi anda dalam 1 hingga 2 hari bekerja."
+      },
+      "error": {
+        "title": "Tidak dapat menghantar",
+        "desc": "Sila cuba lagi sebentar lagi. Jika masih tidak berfungsi, hubungi kami melalui telefon atau e-mel di bawah."
+      }
+    },
+    "apply": {
+      "hero": {
+        "eyebrow": "Permohonan Kursus",
+        "title": "Permohonan Kursus Akademi",
+        "lead": "Kami menetapkan kursus selepas mengesahkan bersama sama ada ia sesuai dengan tahap semasa anda."
+      },
+      "levels": [
+        {
+          "value": "none",
+          "label": "Saya baharu dalam bidang ini"
+        },
+        {
+          "value": "basic",
+          "label": "Saya tahu asasnya"
+        },
+        {
+          "value": "practical",
+          "label": "Saya mempunyai pengalaman praktikal"
+        }
+      ],
+      "labels": {
+        "name": "Nama",
+        "email": "E-mel",
+        "phone": "Nombor Hubungan",
+        "course": "Kursus Diingini",
+        "level": "Tahap Pengalaman",
+        "motivation": "Sebab Memohon",
+        "consent": "Saya bersetuju dengan pengumpulan dan penggunaan maklumat peribadi",
+        "submit": "Hantar Permohonan",
+        "submitting": "Menghantar"
+      },
+      "placeholders": {
+        "name": "Hong Gil-dong",
+        "email": "name@example.com",
+        "phone": "010-0000-0000",
+        "motivation": "Tulis perkara yang ingin anda bina dan sebab anda mahu belajar."
+      },
+      "consentNote": "Kami mengumpul nama, nombor hubungan, e-mel dan kandungan permohonan anda untuk konsultasi dan penempatan kursus. Maklumat disimpan selama 1 tahun selepas konsultasi berakhir dan kemudian dimusnahkan.",
+      "success": {
+        "title": "Permohonan diterima",
+        "desc": "Orang yang bertanggungjawab akan menyemaknya dan memberikan jadual konsultasi."
+      },
+      "error": {
+        "title": "Tidak dapat menghantar",
+        "desc": "Sila cuba lagi sebentar lagi."
+      }
+    },
+    "validation": {
+      "required": "Medan ini diperlukan",
+      "nameTooShort": "Sila masukkan nama anda",
+      "emailInvalid": "Format e-mel tidak sah",
+      "phoneInvalid": "Format nombor hubungan tidak sah",
+      "messageTooShort": "Sila masukkan sekurang-kurangnya 10 aksara",
+      "consentRequired": "Anda mesti bersetuju sebelum menghantar",
+      "tooFast": "Sila cuba lagi sebentar lagi",
+      "expired": "Masa input telah tamat. Muat semula dan cuba lagi.",
+      "serverError": "Masalah berlaku semasa pemprosesan"
+    }
+  },
+  "legal": {
+    "ui": {
+      "updatedAtLabel": "Terakhir dikemas kini"
+    },
+    "privacy": {
+      "title": "Dasar Privasi",
+      "intro": "CMNYX Co., Ltd. (selepas ini disebut \"Syarikat\") menghargai maklumat peribadi pengguna dan mematuhi undang-undang serta peraturan berkaitan. Dasar ini terpakai kepada laman web yang dikendalikan oleh Syarikat.",
+      "sections": [
+        {
+          "id": "items",
+          "title": "1. Item Maklumat Peribadi yang Dikumpul",
+          "body": [
+            "Syarikat mengumpul maklumat peribadi hanya melalui borang pertanyaan dan permohonan kursus di laman web.",
+            "Hubungi Kami: nama, e-mel, nombor hubungan (pilihan), syarikat atau gabungan (pilihan), kandungan pertanyaan",
+            "Permohonan kursus: nama, e-mel, nombor hubungan, kursus diingini, tahap pengalaman, sebab memohon",
+            "Syarikat tidak menggunakan alat analitik atau kuki pengiklanan yang menjejak tingkah laku pelawat. Oleh itu, maklumat peribadi tidak dikumpul hanya dengan menggunakan laman web."
+          ]
+        },
+        {
+          "id": "purpose",
+          "title": "2. Tujuan Pengumpulan dan Penggunaan",
+          "body": [
+            "Menjawab pertanyaan dan menjalankan konsultasi",
+            "Menerima permohonan kursus, menetapkan kursus dan memberikan panduan"
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "3. Tempoh Penyimpanan dan Penggunaan",
+          "body": [
+            "Maklumat pertanyaan: disimpan selama 3 tahun selepas pemprosesan selesai dan dimusnahkan tanpa kelewatan.",
+            "Maklumat permohonan kursus: disimpan selama 1 tahun selepas konsultasi berakhir dan dimusnahkan tanpa kelewatan.",
+            "Jika subjek data meminta pemusnahan, maklumat dimusnahkan serta-merta."
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "4. Penyediaan kepada Pihak Ketiga dan Penyerahan Pemprosesan",
+          "body": [
+            "Syarikat tidak menyediakan maklumat peribadi pengguna kepada pihak ketiga.",
+            "Walau bagaimanapun, Syarikat menggunakan perkhidmatan penghantaran e-mel untuk menyampaikan kandungan pertanyaan kepada orang yang bertanggungjawab, dan kandungan yang dimasukkan dihantar dalam proses ini."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "5. Hak Subjek Data",
+          "body": [
+            "Pengguna boleh meminta akses kepada, pembetulan, pemadaman atau penggantungan pemprosesan maklumat peribadi mereka pada bila-bila masa.",
+            "Permintaan boleh dikemukakan kepada contact@devfirm.co atau 02-2058-0680, dan Syarikat akan mengambil tindakan tanpa kelewatan."
+          ]
+        },
+        {
+          "id": "manager",
+          "title": "6. Pegawai Perlindungan Maklumat Peribadi",
+          "body": [
+            "Jabatan Sokongan Perniagaan CMNYX Co., Ltd.",
+            "E-mel: contact@devfirm.co",
+            "Telefon: 02-2058-0680"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "7. Perubahan kepada Dasar Ini",
+          "body": [
+            "Jika dasar ini berubah, Syarikat akan mengumumkan perubahan dan tarikh kuat kuasa melalui laman web."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terma Perkhidmatan",
+      "intro": "Terma ini menetapkan syarat penggunaan laman web yang dikendalikan oleh CMNYX Co., Ltd. (selepas ini disebut \"Syarikat\").",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "1. Tujuan",
+          "body": [
+            "Terma ini mentakrifkan hak, kewajipan dan tanggungjawab Syarikat serta pengguna berkenaan penggunaan perkhidmatan laman web yang disediakan oleh Syarikat."
+          ]
+        },
+        {
+          "id": "service",
+          "title": "2. Kandungan Perkhidmatan",
+          "body": [
+            "Syarikat menyediakan maklumat syarikat dan perkhidmatan melalui laman web serta menerima pertanyaan dan permohonan kursus.",
+            "Pendaftaran keahlian berasingan tidak diperlukan untuk menggunakan laman web."
+          ]
+        },
+        {
+          "id": "obligations",
+          "title": "3. Kewajipan Pengguna",
+          "body": [
+            "Pengguna tidak boleh menyalahgunakan maklumat orang lain atau memasukkan maklumat palsu.",
+            "Pengguna tidak boleh menghasilkan semula, mengedar atau menggunakan kandungan laman web secara komersial tanpa persetujuan awal Syarikat."
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "4. Hak Cipta",
+          "body": [
+            "Hak cipta bagi teks, imej dan bahan yang disiarkan di laman web adalah milik Syarikat."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "5. Had Liabiliti",
+          "body": [
+            "Syarikat tidak bertanggungjawab atas gangguan perkhidmatan yang disebabkan oleh force majeure, seperti bencana alam atau kegagalan komunikasi.",
+            "Maklumat yang disiarkan di laman web adalah untuk rujukan, dan syarat kontrak khusus ditadbir oleh konsultasi dan kontrak berasingan."
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "title": "6. Bidang Kuasa",
+          "body": [
+            "Pertikaian berkaitan Terma ini hendaklah tertakluk kepada bidang kuasa mahkamah yang mempunyai bidang kuasa ke atas lokasi ibu pejabat Syarikat."
+          ]
+        }
+      ]
+    },
+    "updatedAt": "2026-07-28"
+  },
+  "seo": {
+    "home": {
+      "description": "Physical AI untuk tapak industri, Pengurus Choi AI untuk pejabat. DevFirm, syarikat pembangunan yang diterajui pembangun, menyediakan penyelesaian AI, pembangunan perisian, penempatan pembangun dan Akademi PBL."
+    },
+    "page": {
+      "about": {
+        "title": "Tentang Kami",
+        "description": "Syarikat pembangunan tempat pembangun berkumpul, seperti peguam berkumpul di firma guaman. Ketahui cara DevFirm beroperasi: sokongan perniagaan mengurus kontrak dan penyelesaian bayaran, dan pembangun menumpukan pada pembinaan."
+      },
+      "cic": {
+        "title": "Company In Company (CIC)",
+        "description": "Sistem Company In Company untuk pembangun mengendalikan perniagaan sendiri di dalam DevFirm. Lihat syarat penyertaan, skop sokongan dan hala tuju peningkatan ejen AI."
+      },
+      "careers": {
+        "title": "Kerjaya Pembangun",
+        "description": "DevFirm mengambil pembangun untuk bekerja bersama kami. Semak tanggungjawab, keperluan dan syarat kerja bagi jawatan yang sedang dibuka."
+      },
+      "solutions": {
+        "title": "Penyelesaian AI",
+        "description": "Kami menyediakan Physical AI untuk tapak industri, Pengurus Choi AI untuk pejabat dan ejen AI untuk enam industri: pembinaan, kandungan, pembuatan, pengedaran, operasi perkhidmatan dan pencegahan jenayah."
+      },
+      "officeAi": {
+        "title": "Pengurus Choi AI - Ejen Tempat Kerja Pejabat",
+        "description": "Ejen AI yang mengendalikan kerja pejabat berulang seperti membaca dan menyusun dokumen serta menulis laporan. Lihat kaedah penerapan dan kes penggunaan."
+      },
+      "physicalAi": {
+        "title": "Physical AI - Ejen Tapak Industri",
+        "description": "AI untuk tapak industri yang menukar perkara yang dibaca kamera dan sensor kepada pertimbangan yang boleh digunakan manusia. Lihat keupayaan teknikal dan industri berkenaan."
+      },
+      "services": {
+        "title": "Perkhidmatan Pembangunan",
+        "description": "Pembangunan perisian menyeluruh dan penempatan pembangun. Perkhidmatan pembangunan DevFirm menyediakan kerja dan orang yang membinanya."
+      },
+      "software": {
+        "title": "Pembangunan Perisian Menyeluruh",
+        "description": "Kami mengendalikan pembangunan web, aplikasi, AI dan sistem. Semak proses dan standard kualiti serahan terlebih dahulu."
+      },
+      "staffing": {
+        "title": "Penempatan Pembangun dan Penyumberan Luar",
+        "description": "Kami menempatkan tenaga pembangunan di tapak, secara jarak jauh atau mengikut projek. Oleh sebab pihak kontrak ialah syarikat, beban pengurusan pelanggan dikurangkan."
+      },
+      "academy": {
+        "title": "Akademi PBL",
+        "description": "Latihan praktikal yang menyelesaikan kurikulum NCS melalui projek. Kami mengendalikan Sekolah Pembangunan Penyelesaian, Sekolah Kerja Pejabat Umum dan Sekolah Kerja Projek."
+      },
+      "courses": {
+        "title": "Kursus",
+        "description": "Senarai penuh kursus Akademi PBL DevFirm. Semak tempoh, kapasiti, sasaran peserta dan kurikulum mengikut sekolah."
+      },
+      "apply": {
+        "title": "Permohonan Kursus",
+        "description": "Hantar permohonan kursus Akademi PBL. Tinggalkan kursus diingini dan tahap pengalaman anda, dan orang yang bertanggungjawab akan menghubungi anda."
+      },
+      "workspace": {
+        "title": "Pejabat Kongsi Pembangun",
+        "description": "Pejabat kongsi pembangun khusus untuk pascaproduksi, dengan studio rakaman dan infrastruktur produksi kandungan. Lihat kemudahan dan syarat masuk."
+      },
+      "contact": {
+        "title": "Hubungi Kami",
+        "description": "Kami menerima pertanyaan tentang penerapan penyelesaian, permintaan pembangunan, penempatan tenaga, program akademi dan kemasukan pejabat. Aras 2, Bangunan Hanyang, Gangnam-daero 6-gil, Seocho-gu, Seoul."
+      },
+      "privacy": {
+        "title": "Dasar Privasi",
+        "description": "Maklumat tentang maklumat peribadi yang dikumpul DevFirm, tujuan penggunaan, tempoh penyimpanan dan hak pengguna."
+      },
+      "terms": {
+        "title": "Terma Perkhidmatan",
+        "description": "Terma penggunaan laman web DevFirm."
+      }
+    },
+    "ogImageAlt": "DevFirm - syarikat pembangunan yang diterajui pembangun. Physical AI untuk tapak industri, Pengurus Choi AI untuk pejabat."
+  }
+}

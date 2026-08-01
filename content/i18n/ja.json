@@ -1,1 +1,2308 @@
-{}
+{
+  "site": {
+    "nameKo": "DevFirm",
+    "legalName": "株式会社CMNYX",
+    "footerBrand": "DevFirm CIC",
+    "brand": "コンピューティングマネジメント",
+    "tagline": "開発者が集まる開発法人、DevFirm",
+    "addressFull": "ソウル特別市瑞草区江南大路6ギル59-1 漢陽ビル2階",
+    "addressLocality": "瑞草区",
+    "addressRegion": "ソウル特別市"
+  },
+  "ui": {
+    "nav": {
+      "openMenu": "メニューを開く",
+      "closeMenu": "メニューを閉じる",
+      "mainNavLabel": "主要メニュー",
+      "sectionNavLabel": "セクションメニュー",
+      "breadcrumbLabel": "現在位置",
+      "home": "ホーム",
+      "skipToContent": "本文へ移動",
+      "externalLink": "新しいウィンドウで開く"
+    },
+    "toc": {
+      "title": "このページの内容"
+    },
+    "error": {
+      "notFoundTitle": "ページが見つかりません",
+      "notFoundBody": "アドレスが変更されたか、削除されたページです。以下から目的のページへ移動してください。",
+      "errorTitle": "問題が発生しました",
+      "errorBody": "しばらくしてからもう一度お試しください。問題が続く場合は、お問い合わせからお知らせください。",
+      "retry": "再試行",
+      "goHome": "ホームへ"
+    },
+    "footer": {
+      "businessNumberLabel": "事業者登録番号",
+      "addressLabel": "住所",
+      "telLabel": "電話"
+    }
+  },
+  "nav": {
+    "mainNav": [
+      {
+        "label": "会社紹介",
+        "href": "/about",
+        "description": "開発者が集まる開発法人の働き方",
+        "children": [
+          {
+            "label": "DevFirmとは",
+            "href": "/about",
+            "description": "法律事務所のように働く開発法人モデル"
+          },
+          {
+            "label": "社内独立企業(CIC)",
+            "href": "/about/cic",
+            "description": "開発者が自分の事業を運営する仕組み"
+          },
+          {
+            "label": "開発者採用",
+            "href": "/about/careers",
+            "description": "現在募集中のポジション"
+          }
+        ]
+      },
+      {
+        "label": "AIソリューション",
+        "href": "/solutions",
+        "description": "産業現場にはPhysical AI、オフィス現場にはチェ課長AI",
+        "children": [
+          {
+            "label": "チェ課長AI",
+            "href": "/solutions/office-ai",
+            "description": "オフィス現場の反復業務を代行するエージェント"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai",
+            "description": "産業現場で見て判断するエージェント"
+          },
+          {
+            "label": "建設工事AI",
+            "href": "/solutions/agents/construction",
+            "description": "工程・安全・資材管理の自動化"
+          },
+          {
+            "label": "コンテンツAI",
+            "href": "/solutions/agents/content",
+            "description": "企画・制作・ポストプロダクション支援"
+          },
+          {
+            "label": "製造工程AI",
+            "href": "/solutions/agents/manufacturing",
+            "description": "設備・品質・歩留まりのモニタリング"
+          },
+          {
+            "label": "流通管理AI",
+            "href": "/solutions/agents/distribution",
+            "description": "在庫・物流・需要予測"
+          },
+          {
+            "label": "業務委託サービスAI",
+            "href": "/solutions/agents/service",
+            "description": "人員配置・勤怠・精算"
+          },
+          {
+            "label": "犯罪予防AI",
+            "href": "/solutions/agents/safety",
+            "description": "映像分析に基づく異常兆候の検知"
+          }
+        ]
+      },
+      {
+        "label": "開発サービス",
+        "href": "/services",
+        "description": "開発業務と人材をあわせて提供します",
+        "children": [
+          {
+            "label": "総合ソフトウェア開発",
+            "href": "/services/software",
+            "description": "Web・アプリ・AI・システム構築"
+          },
+          {
+            "label": "開発人材派遣",
+            "href": "/services/staffing",
+            "description": "常駐・リモート・プロジェクト単位での参画"
+          }
+        ]
+      },
+      {
+        "label": "アカデミー",
+        "href": "/academy",
+        "description": "NCSカリキュラムに基づくプロジェクト学習(PBL)",
+        "children": [
+          {
+            "label": "コース案内",
+            "href": "/academy/courses",
+            "description": "3つのスクールのコース一覧"
+          },
+          {
+            "label": "受講申込",
+            "href": "/academy/apply",
+            "description": "コース申請書の受付"
+          }
+        ]
+      },
+      {
+        "label": "シェアオフィス",
+        "href": "/workspace",
+        "description": "ポストプロダクションに特化した開発者向けワークスペース"
+      }
+    ],
+    "footerNav": [
+      {
+        "label": "会社",
+        "href": "/about",
+        "children": [
+          {
+            "label": "DevFirmとは",
+            "href": "/about"
+          },
+          {
+            "label": "社内独立企業(CIC)",
+            "href": "/about/cic"
+          },
+          {
+            "label": "開発者採用",
+            "href": "/about/careers"
+          }
+        ]
+      },
+      {
+        "label": "AIソリューション",
+        "href": "/solutions",
+        "children": [
+          {
+            "label": "AIソリューション全体",
+            "href": "/solutions"
+          },
+          {
+            "label": "チェ課長AI",
+            "href": "/solutions/office-ai"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai"
+          },
+          {
+            "label": "建設工事AI",
+            "href": "/solutions/agents/construction"
+          },
+          {
+            "label": "コンテンツAI",
+            "href": "/solutions/agents/content"
+          },
+          {
+            "label": "製造工程AI",
+            "href": "/solutions/agents/manufacturing"
+          },
+          {
+            "label": "流通管理AI",
+            "href": "/solutions/agents/distribution"
+          },
+          {
+            "label": "業務委託サービスAI",
+            "href": "/solutions/agents/service"
+          },
+          {
+            "label": "犯罪予防AI",
+            "href": "/solutions/agents/safety"
+          }
+        ]
+      },
+      {
+        "label": "サービス・教育",
+        "href": "/services",
+        "children": [
+          {
+            "label": "開発サービス全体",
+            "href": "/services"
+          },
+          {
+            "label": "総合ソフトウェア開発",
+            "href": "/services/software"
+          },
+          {
+            "label": "開発人材派遣",
+            "href": "/services/staffing"
+          },
+          {
+            "label": "PBLアカデミー",
+            "href": "/academy"
+          },
+          {
+            "label": "コース案内",
+            "href": "/academy/courses"
+          },
+          {
+            "label": "受講申込",
+            "href": "/academy/apply"
+          },
+          {
+            "label": "シェアオフィス",
+            "href": "/workspace"
+          }
+        ]
+      },
+      {
+        "label": "お問い合わせ・規約",
+        "href": "/contact",
+        "children": [
+          {
+            "label": "お問い合わせ",
+            "href": "/contact"
+          },
+          {
+            "label": "個人情報処理方針",
+            "href": "/privacy"
+          },
+          {
+            "label": "利用規約",
+            "href": "/terms"
+          }
+        ]
+      }
+    ],
+    "sectionNav": {
+      "/about": [
+        {
+          "label": "DevFirmとは",
+          "href": "/about",
+          "description": "法律事務所のように働く開発法人モデル"
+        },
+        {
+          "label": "社内独立企業(CIC)",
+          "href": "/about/cic",
+          "description": "開発者が自分の事業を運営する仕組み"
+        },
+        {
+          "label": "開発者採用",
+          "href": "/about/careers",
+          "description": "現在募集中のポジション"
+        }
+      ],
+      "/solutions": [
+        {
+          "label": "チェ課長AI",
+          "href": "/solutions/office-ai",
+          "description": "オフィス現場の反復業務を代行するエージェント"
+        },
+        {
+          "label": "Physical AI",
+          "href": "/solutions/physical-ai",
+          "description": "産業現場で見て判断するエージェント"
+        },
+        {
+          "label": "建設工事AI",
+          "href": "/solutions/agents/construction",
+          "description": "工程・安全・資材管理の自動化"
+        },
+        {
+          "label": "コンテンツAI",
+          "href": "/solutions/agents/content",
+          "description": "企画・制作・ポストプロダクション支援"
+        },
+        {
+          "label": "製造工程AI",
+          "href": "/solutions/agents/manufacturing",
+          "description": "設備・品質・歩留まりのモニタリング"
+        },
+        {
+          "label": "流通管理AI",
+          "href": "/solutions/agents/distribution",
+          "description": "在庫・物流・需要予測"
+        },
+        {
+          "label": "業務委託サービスAI",
+          "href": "/solutions/agents/service",
+          "description": "人員配置・勤怠・精算"
+        },
+        {
+          "label": "犯罪予防AI",
+          "href": "/solutions/agents/safety",
+          "description": "映像分析に基づく異常兆候の検知"
+        }
+      ],
+      "/services": [
+        {
+          "label": "総合ソフトウェア開発",
+          "href": "/services/software",
+          "description": "Web・アプリ・AI・システム構築"
+        },
+        {
+          "label": "開発人材派遣",
+          "href": "/services/staffing",
+          "description": "常駐・リモート・プロジェクト単位での参画"
+        }
+      ],
+      "/academy": [
+        {
+          "label": "コース案内",
+          "href": "/academy/courses",
+          "description": "3つのスクールのコース一覧"
+        },
+        {
+          "label": "受講申込",
+          "href": "/academy/apply",
+          "description": "コース申請書の受付"
+        }
+      ]
+    },
+    "primaryCta": {
+      "label": "お問い合わせ",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DevFirm",
+      "title": "開発者が集まる開発法人、DevFirm",
+      "lead": "法律事務所に弁護士が集まり案件を担当するように、DevFirmには開発者が集まり開発を担当します。契約と精算は会社が行い、開発者は作る仕事に集中します。",
+      "primaryCta": {
+        "label": "お問い合わせ",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "AIソリューションを見る",
+        "href": "/solutions"
+      }
+    },
+    "slogan": {
+      "title": "現場が異なれば、必要なAIも異なります",
+      "left": {
+        "eyebrow": "産業現場",
+        "name": "Physical AI",
+        "desc": "見て判断する必要がある場所で使用します。カメラとセンサーが読み取った内容を、人が使える判断に変えます。",
+        "href": "/solutions/physical-ai"
+      },
+      "right": {
+        "eyebrow": "オフィス現場",
+        "name": "チェ課長AI",
+        "desc": "反復される事務業務を代行します。文書を読み、整理し、報告書を作成する業務まで担当します。",
+        "href": "/solutions/office-ai"
+      }
+    },
+    "audience": {
+      "eyebrow": "どのような目的でお越しですか",
+      "title": "お探しの内容からご案内します",
+      "cards": [
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-client.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "法人のお客様",
+          "desc": "AI導入や開発人材が必要な場合",
+          "href": "/solutions",
+          "linkLabel": "AIソリューションを見る"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-learner.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "学びたい方",
+          "desc": "プロジェクトを通じて実務を習得したい場合",
+          "href": "/academy",
+          "linkLabel": "アカデミーを見る"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-developer.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "一緒に働く開発者",
+          "desc": "入社、または社内独立企業を運営したい場合",
+          "href": "/about/careers",
+          "linkLabel": "採用を見る"
+        }
+      ]
+    },
+    "agentsSection": {
+      "eyebrow": "産業別AIエージェント",
+      "title": "分野別AIアシスタントの支援で、意思決定に集中できます",
+      "lead": "6つの産業における反復的な判断を、エージェントが先に整理します。人は判断が必要な場面にのみ関与します。"
+    },
+    "model": {
+      "eyebrow": "DevFirmモデル",
+      "title": "法律事務所が弁護士に提供する役割を、DevFirmは開発者に提供します",
+      "lead": "開発者は営業・契約・精算・税務に時間を使う代わりに、作る仕事に時間を使います。発注者は個人ではなく法人と契約します。",
+      "comparison": {
+        "leftLabel": "法律事務所",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "弁護士",
+            "right": "開発者"
+          },
+          {
+            "left": "案件受任",
+            "right": "プロジェクト受注"
+          },
+          {
+            "left": "事務局が管理業務を担当",
+            "right": "経営支援部がバックオフィスを担当"
+          },
+          {
+            "left": "パートナー弁護士",
+            "right": "社内独立企業(CIC)代表"
+          },
+          {
+            "left": "依頼者は法人と契約",
+            "right": "発注者は法人と契約"
+          }
+        ]
+      },
+      "note": "発注者にとっては個人フリーランサーと契約する際のリスクがなくなり、開発者にとっては一人では対応しにくい業務がなくなります。"
+    },
+    "bands": {
+      "academy": {
+        "eyebrow": "PBLアカデミー",
+        "title": "作りながら学びます",
+        "desc": "NCSカリキュラムをプロジェクトで習得します。修了時には履歴書に記載できる成果物が残ります。",
+        "href": "/academy",
+        "linkLabel": "コースを見る"
+      },
+      "workspace": {
+        "eyebrow": "シェアオフィス",
+        "title": "ポストプロダクションまで対応するワークスペース",
+        "desc": "録音スタジオとコンテンツ制作インフラを備えた、開発者向けシェアオフィスです。",
+        "href": "/workspace",
+        "linkLabel": "スペースを見る"
+      }
+    },
+    "trust": {
+      "eyebrow": "会社",
+      "title": "2007年から",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "設立"
+        },
+        {
+          "value": "CIC",
+          "label": "社内独立企業運営"
+        },
+        {
+          "value": "ソウル瑞草",
+          "label": "江南大路近く"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "何を作るか決まっていなくても問題ありません",
+      "desc": "現在の状況をお知らせいただければ、どこから着手すべきかを一緒に整理します。",
+      "cta": {
+        "label": "お問い合わせ",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "会社紹介",
+      "title": "開発者が集まる開発法人",
+      "lead": "DevFirmは、開発者が開発だけに集中できる仕組みをつくる会社です。それ以外のことは会社が担います。"
+    },
+    "metaphor": {
+      "id": "model",
+      "eyebrow": "DevFirmモデル",
+      "title": "法律事務所の構造を開発に移しました",
+      "lead": "弁護士が事務局の支援を受けて案件だけに集中するように、DevFirmの開発者は経営支援部の支援を受けて開発だけに集中します。",
+      "comparison": {
+        "leftLabel": "法律事務所",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "弁護士が案件を担当する",
+            "right": "開発者がプロジェクトを担当する"
+          },
+          {
+            "left": "事務局が事務を処理する",
+            "right": "経営支援部がバックオフィスを処理する"
+          },
+          {
+            "left": "依頼者は法人と契約する",
+            "right": "発注者は法人と契約する"
+          },
+          {
+            "left": "パートナーになると持分を持つ",
+            "right": "CIC代表になると事業を持つ"
+          }
+        ]
+      }
+    },
+    "backoffice": {
+      "id": "backoffice",
+      "eyebrow": "経営支援部",
+      "title": "開発者がしなくてもよい仕事",
+      "lead": "一人で働く開発者が最も多く時間を取られる項目です。DevFirmでは、これらの仕事が開発者の机の上に載ることはありません。",
+      "items": [
+        {
+          "title": "契約と交渉",
+          "desc": "標準契約書と確認手続きを法人が備えています。開発者が不利な条項を一人で判断することはありません。"
+        },
+        {
+          "title": "税務と精算",
+          "desc": "税金計算書の発行、源泉徴収、付加価値税申告を会社が処理します。"
+        },
+        {
+          "title": "代金回収",
+          "desc": "未収金管理と督促を法人が担います。開発者が発注者とお金の話で気まずくなることはありません。"
+        },
+        {
+          "title": "4大保険と労務",
+          "desc": "雇用形態に合った届出と労務管理を会社が行います。"
+        }
+      ]
+    },
+    "history": {
+      "id": "history",
+      "eyebrow": "沿革",
+      "title": "2007年から",
+      "items": [
+        {
+          "year": "2007",
+          "title": "法人設立",
+          "desc": "ソフトウェア開発とシステム構築を開始しました。"
+        },
+        {
+          "year": "2010s",
+          "title": "開発人材派遣・アウトソーシング",
+          "desc": "常駐とプロジェクト単位の参画によりサービスを広げました。"
+        },
+        {
+          "year": "2020s",
+          "title": "社内独立企業(CIC)の導入",
+          "desc": "開発者が会社の中で自分の事業を運営する仕組みをつくりました。"
+        },
+        {
+          "year": "現在",
+          "title": "AIエージェント事業",
+          "desc": "産業現場のPhysical AIとオフィス現場のチェ課長AIへ事業を再編しました。"
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "eyebrow": "会社概要",
+      "title": "基本情報"
+    },
+    "cta": {
+      "title": "DevFirmと働く方法は3つあります",
+      "desc": "発注者として出会う、開発者として参加する、アカデミーから始める。",
+      "primary": {
+        "label": "お問い合わせ",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "採用を見る",
+        "href": "/about/careers"
+      }
+    }
+  },
+  "cic": {
+    "hero": {
+      "eyebrow": "社内独立企業",
+      "title": "会社の中で自分の事業を行います",
+      "lead": "CIC(Company In Company)は、開発者がDevFirm内に自分の事業単位を置いて運営する制度です。法人の信用とバックオフィスを使いながら、事業の方向性は自ら決めます。"
+    },
+    "what": {
+      "id": "what",
+      "eyebrow": "CICとは",
+      "title": "起業のリスクを下げ、起業の自律性は残します",
+      "lead": "一人で法人を設立すると、信用と事務を一から積み上げる必要があります。CICはその二つを会社から借りて使い、その代わり事業の決定権は代表が持ちます。",
+      "items": [
+        {
+          "title": "法人の信用を使います",
+          "desc": "発注者は新設の個人事業主ではなく、2007年設立の法人と契約します。"
+        },
+        {
+          "title": "バックオフィスを使います",
+          "desc": "契約・税務・精算・労務を経営支援部が処理します。"
+        },
+        {
+          "title": "事業は代表が決めます",
+          "desc": "どの仕事を受けるか、どのようなチームを組むかはCIC代表が決定します。"
+        },
+        {
+          "title": "成果は事業単位で精算します",
+          "desc": "給与ではなく、事業成果に基づいて分配します。"
+        }
+      ]
+    },
+    "operation": {
+      "id": "operation",
+      "eyebrow": "運営方式",
+      "title": "DevFirmはこのように運営します",
+      "steps": [
+        "事業計画の協議",
+        "CIC設立・条件合意",
+        "受注・チーム編成",
+        "成果精算・再投資"
+      ]
+    },
+    "roadmap": {
+      "id": "roadmap",
+      "eyebrow": "ロードマップ",
+      "title": "エージェントAIの高度化",
+      "lead": "各CICが自分のドメインのエージェントをつくり、会社はそれらが共有する基盤をつくります。ドメイン知識はCICに、共通技術は会社に蓄積されます。",
+      "items": [
+        {
+          "title": "ドメインデータの確保",
+          "desc": "CICが担当する現場で、実データと判断基準を集めます。"
+        },
+        {
+          "title": "共通基盤の構築",
+          "desc": "判読・検索・報告などの共通機能を会社がつくり、すべてのCICが使います。"
+        },
+        {
+          "title": "エージェントの製品化",
+          "desc": "検証された判断を産業別エージェント製品としてまとめます。"
+        }
+      ]
+    },
+    "conditions": {
+      "id": "conditions",
+      "eyebrow": "参加条件",
+      "title": "このような方とご一緒します",
+      "items": [
+        "担当ドメインで自ら仕事をつくった経験",
+        "成果物に責任を持つ姿勢",
+        "チームを組み、運営する意志"
+      ],
+      "note": "経験年数よりも、自ら回る事業をつくれるかを見ます。今チームがなくても問題ありません。"
+    },
+    "cta": {
+      "title": "CICとして始める考えがある方へ",
+      "desc": "どのような事業を構想しているかお知らせください。条件は事業の性格に合わせて決めます。",
+      "primary": {
+        "label": "お問い合わせ",
+        "href": "/contact"
+      }
+    }
+  },
+  "careers": {
+    "page": {
+      "hero": {
+        "eyebrow": "採用",
+        "title": "共につくる開発者を探しています",
+        "lead": "DevFirmは、開発者が開発に集中できる仕組みをつくる会社です。その仕組みを共に使う人を探しています。"
+      },
+      "emptyState": "現在募集中の求人はありません。随時応募はお問い合わせから受け付けています。",
+      "statusLabel": {
+        "open": "募集中",
+        "closed": "締切"
+      },
+      "fields": {
+        "responsibilities": "担当業務",
+        "requirements": "応募資格",
+        "preferred": "歓迎条件",
+        "conditions": "勤務条件",
+        "deadline": "締切",
+        "apply": "応募する"
+      },
+      "cta": {
+        "title": "合う求人がなくても",
+        "desc": "どのような仕事をしたいかお知らせいただければ、役割を一緒に探します。CICとして始める方法もあります。",
+        "primary": {
+          "label": "お問い合わせ",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "CICについて知る",
+          "href": "/about/cic"
+        }
+      }
+    },
+    "jobs": [
+      {
+        "slug": "ai-engineer",
+        "title": "AIエージェントエンジニア",
+        "team": "AIソリューション",
+        "employmentType": "正社員",
+        "status": "open",
+        "deadline": "随時",
+        "responsibilities": [
+          "産業別AIエージェントの判読・推論パイプライン設計と実装",
+          "現場データ収集経路の整理と品質検証",
+          "導入現場での精度チューニングと運用課題への対応"
+        ],
+        "requirements": [
+          "Pythonベースのデータ・モデルパイプライン実務経験3年以上",
+          "実サービスにモデルを載せて運用した経験",
+          "現場担当者と基準を合意した経験"
+        ],
+        "preferred": [
+          "画像認識または時系列異常検知の経験",
+          "製造・建設・物流ドメインへの理解",
+          "LLMエージェント構成の経験"
+        ],
+        "conditions": [
+          "ソウル市瑞草区オフィス・相談可能",
+          "週5日、フレックスタイム",
+          "機材と学習費を支援"
+        ]
+      },
+      {
+        "slug": "fullstack-developer",
+        "title": "フルスタック開発者",
+        "team": "開発サービス",
+        "employmentType": "正社員",
+        "status": "open",
+        "deadline": "随時",
+        "responsibilities": [
+          "顧客企業のWeb・アプリサービスの設計からデプロイまで",
+          "既存システムの改善とマイグレーション",
+          "要件整理段階からの参加"
+        ],
+        "requirements": [
+          "Webサービス開発経験3年以上",
+          "TypeScriptまたは同等の静的型付け言語に習熟していること",
+          "自らデプロイし、運用した経験"
+        ],
+        "preferred": [
+          "Next.js App Routerの経験",
+          "クラウドインフラ構成の経験",
+          "発注者と直接コミュニケーションした経験"
+        ],
+        "conditions": [
+          "ソウル市瑞草区オフィス・プロジェクトにより常駐可能",
+          "週5日、フレックスタイム",
+          "シェアオフィス利用可能"
+        ]
+      },
+      {
+        "slug": "cic-lead",
+        "title": "社内独立企業(CIC)代表",
+        "team": "CIC",
+        "employmentType": "契約社員",
+        "status": "open",
+        "deadline": "随時",
+        "responsibilities": [
+          "担当ドメインの事業企画と受注",
+          "チーム編成とプロジェクト運営",
+          "ドメインエージェントの製品化方針の設定"
+        ],
+        "requirements": [
+          "特定ドメインで自ら仕事をつくった経験",
+          "チームを組んでプロジェクトを完了した経験",
+          "事業成果に責任を持つ姿勢"
+        ],
+        "preferred": [
+          "既存顧客ネットワークを保有",
+          "AI導入プロジェクトの経験",
+          "起業または事業運営の経験"
+        ],
+        "conditions": [
+          "成果ベースの精算・条件は事業の性格に応じて協議",
+          "法人信用とバックオフィスを全面支援",
+          "勤務形態は自由"
+        ]
+      }
+    ]
+  },
+  "solutions": {
+    "hub": {
+      "hero": {
+        "eyebrow": "AIソリューション",
+        "title": "産業現場にはPhysical AI、オフィス現場にはチェ課長AI",
+        "lead": "現場が異なれば、必要な判断も異なります。DevFirmは2つの軸に分けてアプローチします。"
+      },
+      "axes": [
+        {
+          "eyebrow": "産業現場",
+          "name": "Physical AI",
+          "desc": "カメラとセンサーが読み取った現場を、人が使える判断に変えます。",
+          "href": "/solutions/physical-ai",
+          "linkLabel": "Physical AIを見る"
+        },
+        {
+          "eyebrow": "オフィス現場",
+          "name": "チェ課長AI",
+          "desc": "文書を読み、整理し、報告書を書く反復業務を代行します。",
+          "href": "/solutions/office-ai",
+          "linkLabel": "チェ課長AIを見る"
+        }
+      ],
+      "agentsSection": {
+        "id": "agents",
+        "eyebrow": "産業別エージェント",
+        "title": "6つの産業、6つの判断",
+        "lead": "同じ基盤の上に、産業別の判断基準を重ねました。現場の言葉で話すエージェントになります。"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "導入プロセス",
+        "title": "4段階で開始します",
+        "steps": [
+          "現状診断・データ点検",
+          "判断基準の合意",
+          "試験適用4〜8週間",
+          "運用移行・拡大"
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "eyebrow": "よくある質問",
+        "title": "導入前によく聞かれること",
+        "items": [
+          {
+            "q": "データが整理されていなくても始められますか？",
+            "a": "ほとんどの現場がそうです。最初の段階をデータ点検にしている理由です。現在蓄積されているものだけでどこまで可能かを先に確認し、不足している部分は収集経路から作ります。"
+          },
+          {
+            "q": "どのくらい正確ですか？",
+            "a": "現場と判断項目によって異なります。そのため契約前に試験適用区間を設け、実データで測定します。目標値はその結果を見て一緒に決めます。"
+          },
+          {
+            "q": "既存システムを変える必要がありますか？",
+            "a": "ほとんどの場合、変更しません。既存システムからデータを読み取り、結果を返す形で接続します。入れ替えが必要な場合は、その理由を先に説明します。"
+          },
+          {
+            "q": "導入後の運用は誰が行いますか？",
+            "a": "初期はDevFirmが担当し、判断基準が安定すれば担当者へ引き継ぎます。運用を継続して委託する方式も可能です。"
+          }
+        ]
+      },
+      "cta": {
+        "title": "どの判断を自動化するかから一緒に決めます",
+        "desc": "現在の現場で人が繰り返している判断を教えてください。",
+        "primary": {
+          "label": "お問い合わせ",
+          "href": "/contact"
+        }
+      }
+    },
+    "physicalAi": {
+      "hero": {
+        "eyebrow": "Physical AI",
+        "title": "現場を読む目を加えます",
+        "lead": "人が継続して見守れないものを代わりに見ます。見たものを記録ではなく判断として残します。"
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "課題",
+        "title": "現場の情報はほとんど流れていきます",
+        "items": [
+          {
+            "title": "すべてを見ることはできません",
+            "desc": "カメラは多くても、見る人は限られています。"
+          },
+          {
+            "title": "過ぎると見つけにくくなります",
+            "desc": "確認が必要なとき、映像を巻き戻すのに時間がかかります。"
+          },
+          {
+            "title": "基準が異なります",
+            "desc": "同じ場面を見ても、担当者ごとに異なる判断をします。"
+          }
+        ]
+      },
+      "stack": {
+        "id": "stack",
+        "eyebrow": "技術力",
+        "title": "読み取り、判断し、引き渡します",
+        "items": [
+          {
+            "title": "映像認識",
+            "desc": "人・設備・状態を区分し、危険パターンを見つけます。"
+          },
+          {
+            "title": "センサー時系列分析",
+            "desc": "通常と異なる流れを異常信号として捉えます。"
+          },
+          {
+            "title": "現場エッジ処理",
+            "desc": "ネットワークが不安定な現場でも、ローカルで判断します。"
+          },
+          {
+            "title": "業務システム連携",
+            "desc": "判断結果を承認・報告の流れへ引き渡します。"
+          }
+        ]
+      },
+      "industries": {
+        "id": "industries",
+        "eyebrow": "適用産業",
+        "title": "6つの現場に導入されています"
+      },
+      "cta": {
+        "title": "現場1カ所から始めます",
+        "desc": "カメラとセンサーがすでにあれば、そこから使います。",
+        "primary": {
+          "label": "お問い合わせ",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "チェ課長AIを見る",
+          "href": "/solutions/office-ai"
+        }
+      }
+    },
+    "officeAi": {
+      "hero": {
+        "eyebrow": "チェ課長AI",
+        "title": "オフィスの反復作業は人が担う仕事ではありません",
+        "lead": "受け取った文書を読み、整理し、書式に移し、報告書を書く仕事。チェ課長AIが担当します。"
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "課題",
+        "title": "本来判断する時間がありません",
+        "items": [
+          {
+            "title": "転記する仕事",
+            "desc": "メールと添付ファイルで届いた内容を社内書式に再入力します。"
+          },
+          {
+            "title": "探す仕事",
+            "desc": "過去の文書を探して根拠を確認するのに時間がかかります。"
+          },
+          {
+            "title": "照合する仕事",
+            "desc": "数字が合っているか文書同士を照合します。"
+          },
+          {
+            "title": "整理して提出する仕事",
+            "desc": "同じ内容を報告先に合わせて書き直します。"
+          }
+        ]
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "できること",
+        "title": "文書から報告まで",
+        "items": [
+          {
+            "title": "文書読解",
+            "desc": "契約書・取引明細書・見積書から必要な項目を抽出します。"
+          },
+          {
+            "title": "社内書式の作成",
+            "desc": "抽出した項目を会社の書式に合わせて入力します。"
+          },
+          {
+            "title": "根拠検索",
+            "desc": "過去の文書から関連内容を探し、出典とともに提示します。"
+          },
+          {
+            "title": "照合点検",
+            "desc": "文書間の数字や条件が食い違う箇所を指摘します。"
+          },
+          {
+            "title": "報告書ドラフト",
+            "desc": "報告先に合わせた要約版を作成します。"
+          },
+          {
+            "title": "後続通知",
+            "desc": "期限が近づいた案件と抜けている案件を確認します。"
+          }
+        ]
+      },
+      "physical": {
+        "id": "physical",
+        "eyebrow": "Physical AI連携",
+        "title": "オフィスと現場が途切れないように",
+        "lead": "現場でPhysical AIが読み取った内容が、チェ課長AIの報告書につながります。現場写真1枚が承認文書まで進む経路を1つにします。"
+      },
+      "cta": {
+        "title": "どの文書から任せるか決めましょう",
+        "desc": "最も頻繁に処理する文書を1種類だけ教えてください。",
+        "primary": {
+          "label": "お問い合わせ",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "産業別エージェントを見る",
+          "href": "/solutions"
+        }
+      }
+    },
+    "agentPage": {
+      "problems": {
+        "id": "problems",
+        "eyebrow": "現場の課題",
+        "title": "現在、このように対応されているはずです"
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "できること",
+        "title": "エージェントが担当する部分"
+      },
+      "outcomes": {
+        "id": "outcomes",
+        "eyebrow": "期待効果",
+        "title": "何が変わるのか",
+        "note": "試験適用区間で実データにより測定した後、目標値を改めて設定します。"
+      },
+      "steps": {
+        "id": "steps",
+        "eyebrow": "導入の流れ",
+        "title": "4段階で導入します"
+      },
+      "siblings": {
+        "id": "siblings",
+        "eyebrow": "他の産業",
+        "title": "他の現場ではこのように使います"
+      },
+      "cta": {
+        "title": "自社の現場でも可能か確認してください",
+        "desc": "現在蓄積されているデータだけでどこまで可能かを先に確認します。",
+        "primary": {
+          "label": "お問い合わせ",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "AIソリューション全体を見る",
+          "href": "/solutions"
+        }
+      }
+    }
+  },
+  "agents": [
+    {
+      "slug": "construction",
+      "name": "建設工事AI",
+      "tagline": "図面と現場の距離を縮めます。",
+      "icon": {},
+      "problems": [
+        "工程率の報告が人によって異なる集計になる",
+        "安全点検記録が紙とメッセンジャーに分散している",
+        "資材搬入と実際の使用量が合わない"
+      ],
+      "capabilities": [
+        {
+          "title": "工程進捗の判読",
+          "desc": "現場写真と作業日報を照合し、工程率を毎日同じ基準で算出します。"
+        },
+        {
+          "title": "安全リスク検知",
+          "desc": "CCTV映像から保護具未着用や危険区域への進入を検知し、即時に通知します。"
+        },
+        {
+          "title": "資材受払の整理",
+          "desc": "搬入伝票と施工数量を照合し、過不足を週単位で報告します。"
+        },
+        {
+          "title": "日報作成",
+          "desc": "分散した記録を集め、発注者の書式に合わせた報告書を自動で作成します。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "日報作成時間",
+          "value": "-70%"
+        },
+        {
+          "label": "安全点検の抜け漏れ",
+          "value": "0件"
+        },
+        {
+          "label": "資材誤差の把握",
+          "value": "週1回"
+        }
+      ],
+      "steps": [
+        "現場データ点検",
+        "判読基準の合意",
+        "試験適用4週間",
+        "全現場へ拡大"
+      ],
+      "seo": {
+        "title": "建設工事AI",
+        "description": "現場写真と作業日報により工程率を毎日同じ基準で算出し、安全点検と資材受払を自動で整理する建設現場向けAIエージェントです。"
+      }
+    },
+    {
+      "slug": "content",
+      "name": "コンテンツAI",
+      "tagline": "作る時間を、作ることに使います。",
+      "icon": {},
+      "problems": [
+        "撮影原本から使う場面を探すだけで時間がかかる",
+        "字幕やサムネイルなどの反復作業が制作日程を圧迫する",
+        "チャネル別の仕様に合わせて作り直す作業が終わらない"
+      ],
+      "capabilities": [
+        {
+          "title": "原本インデックス化",
+          "desc": "撮影原本を人物・場所・セリフ基準でインデックス化し、必要な場面をすぐに見つけます。"
+        },
+        {
+          "title": "字幕・翻訳ドラフト",
+          "desc": "音声を書き起こし、チャネルのトーンに合わせた字幕ドラフトを作成します。"
+        },
+        {
+          "title": "チャネル別再構成",
+          "desc": "1つの原本から、チャネル仕様に合う編集版を派生させます。"
+        },
+        {
+          "title": "メタデータ整理",
+          "desc": "タイトル・タグ・説明を検索に合わせて整理し、アップロード準備を完了します。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "場面検索時間",
+          "value": "-80%"
+        },
+        {
+          "label": "字幕ドラフト作成",
+          "value": "即時"
+        },
+        {
+          "label": "チャネル派生版",
+          "value": "1→N"
+        }
+      ],
+      "steps": [
+        "原本資産の接続",
+        "トーン基準の学習",
+        "パイロット制作",
+        "制作ラインへの組み込み"
+      ],
+      "seo": {
+        "title": "コンテンツAI",
+        "description": "撮影原本のインデックス化、字幕ドラフト、チャネル別再構成により、コンテンツ制作の反復作業を減らすAIエージェントです。"
+      }
+    },
+    {
+      "slug": "manufacturing",
+      "name": "製造工程AI",
+      "tagline": "不良が出る前に信号を読み取ります。",
+      "icon": {},
+      "problems": [
+        "設備異常は停止してから初めて分かる",
+        "検査基準が検査者ごとに異なる",
+        "歩留まりが下がった原因を事後にも特定できない"
+      ],
+      "capabilities": [
+        {
+          "title": "設備異常予測",
+          "desc": "センサーの推移から通常と異なるパターンを見つけ、停止前に通知します。"
+        },
+        {
+          "title": "外観検査",
+          "desc": "映像で欠陥を判定し、検査者間のばらつきをなくします。"
+        },
+        {
+          "title": "歩留まり原因追跡",
+          "desc": "工程変数と不良率を結び付け、どの条件で悪化したかを指摘します。"
+        },
+        {
+          "title": "作業標準点検",
+          "desc": "標準作業と実際の作業の差を記録し、改善点を残します。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "計画外停止",
+          "value": "-40%"
+        },
+        {
+          "label": "検査ばらつき",
+          "value": "解消"
+        },
+        {
+          "label": "原因特定",
+          "value": "当日"
+        }
+      ],
+      "steps": [
+        "設備データ連携",
+        "正常範囲の学習",
+        "1ライン検証",
+        "ライン拡大"
+      ],
+      "seo": {
+        "title": "製造工程AI",
+        "description": "設備異常予測、映像外観検査、歩留まり原因追跡により、製造現場の損失を減らすAIエージェントです。"
+      }
+    },
+    {
+      "slug": "distribution",
+      "name": "流通管理AI",
+      "tagline": "在庫を減らし、欠品を防ぎます。",
+      "icon": {},
+      "problems": [
+        "売れ筋商品が先になくなる",
+        "動かない在庫が倉庫を占有している",
+        "発注判断が担当者の経験に依存している"
+      ],
+      "capabilities": [
+        {
+          "title": "需要予測",
+          "desc": "販売推移と季節性を反映し、品目別の需要を予測します。"
+        },
+        {
+          "title": "発注提案",
+          "desc": "リードタイムと安全在庫を計算し、発注数量を提案します。"
+        },
+        {
+          "title": "在庫健全性点検",
+          "desc": "回転が止まった在庫を見つけ、処分時点を通知します。"
+        },
+        {
+          "title": "物流経路整理",
+          "desc": "配送履歴から遅延区間を見つけ、経路を再編します。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "欠品率",
+          "value": "-50%"
+        },
+        {
+          "label": "在庫保有日数",
+          "value": "-25%"
+        },
+        {
+          "label": "発注判断",
+          "value": "根拠ベース"
+        }
+      ],
+      "steps": [
+        "販売データ連携",
+        "予測精度検証",
+        "一部品目への適用",
+        "全品目"
+      ],
+      "seo": {
+        "title": "流通管理AI",
+        "description": "需要予測と発注提案により、欠品と過剰在庫を同時に減らす流通現場向けAIエージェントです。"
+      }
+    },
+    {
+      "slug": "service",
+      "name": "業務委託サービスAI",
+      "tagline": "人を配置する仕事にも根拠が必要です。",
+      "icon": {},
+      "problems": [
+        "現場別の必要人員が勘で決められている",
+        "勤怠確認と精算に毎月数日かかる",
+        "契約条件が現場ごとに異なり、ミスが発生する"
+      ],
+      "capabilities": [
+        {
+          "title": "人員配置提案",
+          "desc": "現場規模と過去の所要時間を根拠に、必要人員を計算します。"
+        },
+        {
+          "title": "勤怠自動集計",
+          "desc": "出退勤記録を契約条件に合わせて集計し、例外だけを人に残します。"
+        },
+        {
+          "title": "精算書作成",
+          "desc": "現場別単価と勤務内訳を照合し、精算書ドラフトを作成します。"
+        },
+        {
+          "title": "契約条件点検",
+          "desc": "現場別条件と実際の運用の食い違いを見つけて通知します。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "精算所要時間",
+          "value": "-60%"
+        },
+        {
+          "label": "配置根拠",
+          "value": "数値化"
+        },
+        {
+          "label": "条件違反",
+          "value": "事前検知"
+        }
+      ],
+      "steps": [
+        "契約条件整理",
+        "勤怠システム連携",
+        "1現場で試験",
+        "全現場"
+      ],
+      "seo": {
+        "title": "業務委託サービスAI",
+        "description": "人員配置算定、勤怠集計、精算書作成を自動化し、業務委託運用の反復業務を減らすAIエージェントです。"
+      }
+    },
+    {
+      "slug": "safety",
+      "name": "犯罪予防AI",
+      "tagline": "事件になる前の信号を見ます。",
+      "icon": {},
+      "problems": [
+        "監視人員がすべての画面を同時に見ることはできない",
+        "事後の映像確認に時間がかかる",
+        "危険判断基準が監視担当者ごとに異なる"
+      ],
+      "capabilities": [
+        {
+          "title": "異常行動検知",
+          "desc": "徘徊・侵入・転倒などのパターンをリアルタイムで見つけて通知します。"
+        },
+        {
+          "title": "区間検索",
+          "desc": "人・車両・時間条件で映像区間を即時に見つけます。"
+        },
+        {
+          "title": "優先順位付き監視",
+          "desc": "危険度の高い画面を監視担当者の前に表示します。"
+        },
+        {
+          "title": "事件記録整理",
+          "desc": "検知から対応までの経過を自動で記録に残します。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "映像検索",
+          "value": "分単位"
+        },
+        {
+          "label": "検知漏れ",
+          "value": "減少"
+        },
+        {
+          "label": "判断基準",
+          "value": "統一"
+        }
+      ],
+      "steps": [
+        "カメラ連携",
+        "検知基準調整",
+        "夜間試験運用",
+        "全区域へ拡大"
+      ],
+      "seo": {
+        "title": "犯罪予防AI",
+        "description": "異常行動検知と条件ベースの映像検索により、監視人員の判断を支援する犯罪予防AIエージェントです。"
+      }
+    }
+  ],
+  "services": {
+    "hub": {
+      "hero": {
+        "eyebrow": "開発サービス",
+        "title": "開発業務と開発人材をあわせて提供します",
+        "lead": "プロジェクト全体の委託にも、人材のみのご要望にも対応します。契約先は個人ではなく法人です。"
+      },
+      "cards": [
+        {
+          "title": "総合ソフトウェア開発",
+          "desc": "要件整理からリリース、運用まで対応します。",
+          "href": "/services/software",
+          "linkLabel": "開発サービスを見る"
+        },
+        {
+          "title": "開発人材派遣・アウトソーシング",
+          "desc": "常駐、リモート、プロジェクト単位で開発者を配置します。",
+          "href": "/services/staffing",
+          "linkLabel": "人材派遣を見る"
+        }
+      ],
+      "collaboration": {
+        "id": "collaboration",
+        "eyebrow": "協業方式",
+        "title": "発注側の管理負担を減らす方向で進めます",
+        "items": [
+          {
+            "title": "単一窓口",
+            "desc": "複数の開発者と個別にやり取りする必要はありません。担当窓口を一本化します。"
+          },
+          {
+            "title": "法人契約",
+            "desc": "契約、税金計算書、瑕疵対応の責任を法人が負います。"
+          },
+          {
+            "title": "引き継ぎ文書",
+            "desc": "プロジェクト終了時に、運用に必要な文書もあわせて引き渡します。"
+          }
+        ]
+      },
+      "domains": {
+        "id": "domains",
+        "eyebrow": "技術領域",
+        "title": "対応範囲",
+        "items": [
+          "Webサービス・管理者システム",
+          "モバイルアプリ",
+          "AIエージェント・データパイプライン",
+          "社内システム連携・マイグレーション"
+        ]
+      },
+      "cta": {
+        "title": "どの形が適しているか分からない場合",
+        "desc": "状況をお知らせいただければ、一括で任せるべきか、人材だけを配置すべきかから整理します。",
+        "primary": {
+          "label": "お問い合わせ",
+          "href": "/contact"
+        }
+      }
+    },
+    "software": {
+      "hero": {
+        "eyebrow": "総合ソフトウェア開発",
+        "title": "要件整理から運用まで",
+        "lead": "何を作るかを決める段階から参加します。作って終わりではなく、引き継げる状態で完了します。"
+      },
+      "areas": {
+        "id": "areas",
+        "eyebrow": "開発領域",
+        "title": "4つの領域",
+        "items": [
+          {
+            "title": "Webサービス",
+            "desc": "顧客向けサービスと社内管理システムをあわせて設計します。"
+          },
+          {
+            "title": "モバイルアプリ",
+            "desc": "必要な範囲に応じて、ネイティブまたはクロスプラットフォームを選定します。"
+          },
+          {
+            "title": "AI・データ",
+            "desc": "判断が必要な箇所にエージェントを組み込み、データの流れを整理します。"
+          },
+          {
+            "title": "システム連携",
+            "desc": "既存システムと途切れなく接続します。"
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "進行プロセス",
+        "title": "5つの段階",
+        "steps": [
+          "要件整理",
+          "範囲・スケジュール確定",
+          "設計・開発",
+          "検収・リリース",
+          "引き継ぎ・運用"
+        ]
+      },
+      "quality": {
+        "id": "quality",
+        "eyebrow": "成果物・品質基準",
+        "title": "受け取るものを事前に定義します",
+        "items": [
+          "ソースコードとリポジトリアクセス権限",
+          "リリース手順書と実行可能なデプロイスクリプト",
+          "API仕様書とデータ構造文書",
+          "引き継ぎ会議と運用担当者向け教育"
+        ],
+        "note": "品質基準は契約前に文書で合意します。検収時に双方で異なる基準を持ち出すことを防ぐためです。"
+      },
+      "cta": {
+        "title": "作るものが決まっていなくても問題ありません",
+        "desc": "解決したい課題だけお知らせいただければ、範囲から一緒に絞り込みます。",
+        "primary": {
+          "label": "お問い合わせ",
+          "href": "/contact"
+        }
+      }
+    },
+    "staffing": {
+      "hero": {
+        "eyebrow": "人材派遣・アウトソーシング",
+        "title": "開発者を配置し、管理は法人が担います",
+        "lead": "必要な期間に応じて人材を配置します。契約と労務はDevFirmが処理します。"
+      },
+      "difference": {
+        "id": "difference",
+        "eyebrow": "違い",
+        "title": "フリーランスとの直接契約と何が違うのか",
+        "lead": "発注側が個人と直接契約する際に生じるリスクを、法人が吸収します。",
+        "items": [
+          {
+            "title": "契約主体が法人",
+            "desc": "途中離脱や紛争が発生した場合、法人が責任を持って代替人材を配置します。"
+          },
+          {
+            "title": "税務・労務処理",
+            "desc": "源泉徴収や4大保険の判断を発注側が行う必要はありません。"
+          },
+          {
+            "title": "検証済みの人材プール",
+            "desc": "これまで一緒にプロジェクトを行った開発者の中から配置します。"
+          },
+          {
+            "title": "バックオフィス支援",
+            "desc": "配置開発者の精算や勤怠をDevFirm経営支援部が管理します。"
+          }
+        ]
+      },
+      "formats": {
+        "id": "formats",
+        "eyebrow": "配置形態",
+        "title": "3つの形態から選択します",
+        "items": [
+          {
+            "title": "常駐",
+            "desc": "発注者のオフィスに出勤し、チームに参加します。"
+          },
+          {
+            "title": "リモート",
+            "desc": "DevFirmのオフィスまたはシェアオフィスで作業します。"
+          },
+          {
+            "title": "プロジェクト単位",
+            "desc": "期間と成果物を定め、結果に基づいて精算します。"
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "進行手順",
+        "title": "4つの段階",
+        "steps": [
+          "必要スキルの整理",
+          "候補者の提案",
+          "面談・確定",
+          "配置・定期確認"
+        ]
+      },
+      "cta": {
+        "title": "必要なスキルをお知らせください",
+        "desc": "期間と配置形態に合わせて候補者を整理します。",
+        "primary": {
+          "label": "お問い合わせ",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "academy": {
+    "page": {
+      "hero": {
+        "eyebrow": "PBLアカデミー",
+        "title": "作りながら学びます",
+        "lead": "講義を聞いて終わる教育ではありません。NCSカリキュラムをプロジェクトとして消化し、修了時には履歴書に記載できる成果物を持ち帰ります。"
+      },
+      "pbl": {
+        "id": "pbl",
+        "eyebrow": "PBLとは",
+        "title": "プロジェクトがカリキュラムです",
+        "lead": "Project Based Learning。学ぶ内容を先に並べるのではなく、作るべきものを先に決めます。必要な知識は制作過程で補います。",
+        "items": [
+          {
+            "title": "成果物が残ります",
+            "desc": "修了証ではなく、動作するプロジェクトが残ります。"
+          },
+          {
+            "title": "協業を経験します",
+            "desc": "一人で行う課題ではなく、チームでスケジュールと役割を分担します。"
+          },
+          {
+            "title": "実務基準で確認します",
+            "desc": "実際にプロジェクトを行う開発者がコードと成果をレビューします。"
+          }
+        ]
+      },
+      "schools": {
+        "id": "schools",
+        "eyebrow": "3つのスクール",
+        "title": "何を作りたいかに応じて選びます"
+      },
+      "external": {
+        "id": "external",
+        "eyebrow": "連携",
+        "title": "ポストプロダクション課程",
+        "desc": "映像の後処理課程はソウルフィルムアカデミーと連携して運営します。",
+        "href": "https://www.seoulfilmacademy.com",
+        "linkLabel": "ソウルフィルムアカデミー"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "受講手順",
+        "title": "4つの段階",
+        "steps": [
+          "課程選択・申請",
+          "相談・配属",
+          "プロジェクト実施",
+          "発表・修了"
+        ]
+      },
+      "cta": {
+        "title": "どの課程が合うか分からない場合",
+        "desc": "現在できることと、これからやりたいことをお知らせいただければ、課程をご提案します。",
+        "primary": {
+          "label": "受講申請",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "課程を見る",
+          "href": "/academy/courses"
+        }
+      }
+    },
+    "schools": [
+      {
+        "key": "solution",
+        "name": "ソリューション開発スクール",
+        "desc": "サービスを最初から最後まで作ってみます。",
+        "art": {
+          "src": "/images/cards/school-solution.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "office",
+        "name": "共通事務業務スクール",
+        "desc": "事務業務をツールで自動化する方法を学びます。",
+        "art": {
+          "src": "/images/cards/school-office.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "project",
+        "name": "プロジェクト業務スクール",
+        "desc": "企画とスケジュール管理を含むプロジェクト進行を学びます。",
+        "art": {
+          "src": "/images/cards/school-project.svg",
+          "width": 240,
+          "height": 180
+        }
+      }
+    ]
+  },
+  "courses": {
+    "list": [
+      {
+        "slug": "web-service-development",
+        "school": "solution",
+        "title": "Webサービス開発課程",
+        "summary": "企画からリリースまで、実際にアクセスできるサービスを1つ作って完了します。",
+        "duration": "16週間",
+        "capacity": "20名",
+        "target": [
+          "プログラミングの基礎文法を理解している方",
+          "ポートフォリオが必要な就職準備中の方",
+          "自分でサービスを作ってみたい社会人"
+        ],
+        "prerequisites": [
+          "基本文法レベルのプログラミング経験",
+          "HTML・CSSの基礎"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "開発環境と協業ツール",
+            "detail": "Gitフロー、課題管理、コードレビューのルールをチームルールとして定めます。"
+          },
+          {
+            "week": "3~6",
+            "topic": "フロントエンド基礎",
+            "detail": "コンポーネント構造、状態管理、レスポンシブレイアウトを扱います。"
+          },
+          {
+            "week": "7~10",
+            "topic": "バックエンドとデータ",
+            "detail": "API設計、データモデリング、認証を実装します。"
+          },
+          {
+            "week": "11~14",
+            "topic": "チームプロジェクト",
+            "detail": "企画したサービスをチームで作ります。週1回レビューを受けます。"
+          },
+          {
+            "week": "15~16",
+            "topic": "リリースと発表",
+            "detail": "実際のドメインにリリースし、成果を発表します。"
+          }
+        ],
+        "outcomes": [
+          "アクセス可能なWebサービス1件",
+          "リポジトリとコミット履歴",
+          "リリース文書とREADME"
+        ],
+        "careers": [
+          "Web開発者",
+          "フルスタックジュニア",
+          "社内サービス担当者"
+        ]
+      },
+      {
+        "slug": "ai-agent-basics",
+        "school": "solution",
+        "title": "AIエージェント実務課程",
+        "summary": "業務を代行するエージェントを自分で作ってみます。モデルを作る課程ではなく、使う課程です。",
+        "duration": "12週間",
+        "capacity": "16名",
+        "target": [
+          "業務自動化を担当することになった開発者",
+          "AI導入を検討中の実務担当者",
+          "エージェント構造を理解したい方"
+        ],
+        "prerequisites": [
+          "PythonまたはJavaScriptの使用経験",
+          "API呼び出しの経験"
+        ],
+        "curriculum": [
+          {
+            "week": "1~3",
+            "topic": "エージェント構造",
+            "detail": "ツール呼び出し、検索拡張、失敗処理の基本構成を整えます。"
+          },
+          {
+            "week": "4~7",
+            "topic": "業務連携",
+            "detail": "文書、メール、シートを読み書きする連携を実装します。"
+          },
+          {
+            "week": "8~10",
+            "topic": "評価と改善",
+            "detail": "結果を測定し、基準を定めて反復改善します。"
+          },
+          {
+            "week": "11~12",
+            "topic": "実務適用プロジェクト",
+            "detail": "各自の会社業務を1つ選び、エージェントに移行します。"
+          }
+        ],
+        "outcomes": [
+          "業務自動化エージェント1件",
+          "評価基準文書",
+          "適用レポート"
+        ],
+        "careers": [
+          "AI実務担当",
+          "自動化エンジニア",
+          "社内AI導入リード"
+        ]
+      },
+      {
+        "slug": "office-automation",
+        "school": "office",
+        "title": "事務自動化課程",
+        "summary": "毎日繰り返す文書や表の作業をツールで減らします。コードを知らなくても始められます。",
+        "duration": "8週間",
+        "capacity": "24名",
+        "target": [
+          "反復的な事務業務が多い社会人",
+          "Excel作業に多くの時間を使っている方",
+          "部門業務を整理したい管理者"
+        ],
+        "prerequisites": [
+          "Excelの基本的な使用経験"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "業務分解",
+            "detail": "現在の業務を段階に分け、自動化できる箇所を探します。"
+          },
+          {
+            "week": "3~5",
+            "topic": "文書・表の自動化",
+            "detail": "フォーム入力、照合、集計を自動で処理します。"
+          },
+          {
+            "week": "6~7",
+            "topic": "AIツール活用",
+            "detail": "文書読み取りと要約を業務フローに組み込みます。"
+          },
+          {
+            "week": "8",
+            "topic": "適用と共有",
+            "detail": "作ったものをチームに引き渡せるよう整理します。"
+          }
+        ],
+        "outcomes": [
+          "自動化した業務3件",
+          "利用案内文書"
+        ],
+        "careers": [
+          "事務自動化担当",
+          "部門業務改善担当"
+        ]
+      },
+      {
+        "slug": "project-management",
+        "school": "project",
+        "title": "プロジェクト進行課程",
+        "summary": "スケジュールと範囲を管理しながらプロジェクトを完了させる方法を、実際の事例で学びます。",
+        "duration": "10週間",
+        "capacity": "18名",
+        "target": [
+          "初めてプロジェクトを担当する方",
+          "スケジュールがたびたび遅れるチームのリーダー",
+          "発注側と調整する必要がある担当者"
+        ],
+        "prerequisites": [
+          "チームで働いた経験"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "範囲定義",
+            "detail": "何をしないかから先に決めます。"
+          },
+          {
+            "week": "3~5",
+            "topic": "スケジュールとリスク",
+            "detail": "見積もり、バッファ、リスク一覧を作成します。"
+          },
+          {
+            "week": "6~8",
+            "topic": "実行と調整",
+            "detail": "変更依頼とステークホルダーとのコミュニケーションを扱います。"
+          },
+          {
+            "week": "9~10",
+            "topic": "終了と振り返り",
+            "detail": "引き継ぎと振り返りで締めくくります。"
+          }
+        ],
+        "outcomes": [
+          "プロジェクト計画書1件",
+          "リスク管理文書",
+          "振り返りレポート"
+        ],
+        "careers": [
+          "プロジェクトマネージャー",
+          "チームリード",
+          "サービス企画者"
+        ]
+      }
+    ],
+    "page": {
+      "hero": {
+        "eyebrow": "課程案内",
+        "title": "現在開講中の課程",
+        "lead": "スクール別に分かれています。期間と対象を確認して申請してください。"
+      },
+      "filterAll": "すべて",
+      "fields": {
+        "duration": "期間",
+        "capacity": "定員",
+        "target": "対象",
+        "prerequisites": "前提知識",
+        "curriculum": "カリキュラム",
+        "outcomes": "成果プロジェクト",
+        "careers": "修了後の進路",
+        "week": "週",
+        "topic": "テーマ",
+        "detail": "内容",
+        "apply": "受講申請"
+      },
+      "cta": {
+        "title": "申請前にご相談いただけます",
+        "desc": "現在のレベルでついていけるかを先に確認します。",
+        "primary": {
+          "label": "受講申請",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "お問い合わせ",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "workspace": {
+    "hero": {
+      "eyebrow": "シェアオフィス",
+      "title": "つくる人のための空間",
+      "lead": "開発とコンテンツ制作が一つの建物内で完結する業務空間です。"
+    },
+    "concept": {
+      "id": "concept",
+      "eyebrow": "コンセプト",
+      "title": "ポストプロダクションまで対応する開発者向け空間",
+      "lead": "コードを書くだけの空間ではありません。録音や編集が必要になったとき、外に出なくてもよいように整えました。"
+    },
+    "facilities": {
+      "id": "facilities",
+      "eyebrow": "設備",
+      "title": "備えているもの",
+      "items": [
+        {
+          "title": "録音スタジオ",
+          "desc": "ナレーションやインタビューの録音が可能な防音ブースを備えています。",
+          "art": {
+            "src": "/images/workspace/workspace-studio.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "防音パネル、マイク、ミキシングコンソールを備えた録音スタジオ"
+          }
+        },
+        {
+          "title": "コンテンツ制作インフラ",
+          "desc": "映像編集とレンダリングのための機材とストレージを提供します。",
+          "art": {
+            "src": "/images/workspace/workspace-infra.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "ワークステーション、ストレージ、レンダーノードラックを備えたコンテンツ制作インフラ空間"
+          }
+        },
+        {
+          "title": "業務空間",
+          "desc": "固定席、フリー席、小規模会議室を共用します。",
+          "art": {
+            "src": "/images/workspace/workspace-desk.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "固定席、フリー席、小会議室のある共有業務空間"
+          }
+        }
+      ]
+    },
+    "tenants": {
+      "id": "tenants",
+      "eyebrow": "入居対象",
+      "title": "このような方が利用しています",
+      "items": [
+        "個人または小規模で働く開発者",
+        "映像・音声作業も必要なチーム",
+        "DevFirm CICとして事業を運営するチーム"
+      ]
+    },
+    "pricing": {
+      "id": "pricing",
+      "eyebrow": "料金・お問い合わせ",
+      "title": "利用条件",
+      "note": "座席形態と利用期間により異なります。スタジオは予約制で運営しています。正確な条件はお問い合わせいただければご案内します。"
+    },
+    "location": {
+      "id": "location",
+      "eyebrow": "アクセス",
+      "title": "ソウル瑞草区",
+      "address": "ソウル特別市瑞草区江南大路6ギル59-1 漢陽ビル2階",
+      "mapTitle": "DevFirm所在地地図",
+      "mapLinkLabel": "Kakao Mapで見る",
+      "mapHref": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C6%EA%B8%B8%2059-1%20%ED%95%9C%EC%96%91%EB%B9%8C%EB%94%A9%202%EC%B8%B5"
+    },
+    "cta": {
+      "title": "一度ご覧になってから決めていただけます",
+      "desc": "訪問日程を調整します。",
+      "primary": {
+        "label": "お問い合わせ",
+        "href": "/contact"
+      }
+    }
+  },
+  "forms": {
+    "contact": {
+      "hero": {
+        "eyebrow": "お問い合わせ",
+        "title": "どのようなことでお困りですか",
+        "lead": "内容を簡単にご記入いただくだけで結構です。担当者が確認後、ご連絡します。"
+      },
+      "types": [
+        {
+          "value": "solution",
+          "label": "AIソリューション導入"
+        },
+        {
+          "value": "development",
+          "label": "開発依頼"
+        },
+        {
+          "value": "staffing",
+          "label": "人材派遣"
+        },
+        {
+          "value": "academy",
+          "label": "アカデミー"
+        },
+        {
+          "value": "workspace",
+          "label": "シェアオフィス入居"
+        },
+        {
+          "value": "etc",
+          "label": "その他"
+        }
+      ],
+      "labels": {
+        "type": "お問い合わせ種別",
+        "name": "氏名",
+        "company": "会社・所属",
+        "email": "メールアドレス",
+        "phone": "連絡先",
+        "message": "お問い合わせ内容",
+        "consent": "個人情報の収集・利用に同意します",
+        "submit": "お問い合わせを送信",
+        "submitting": "送信中"
+      },
+      "placeholders": {
+        "name": "山田太郎",
+        "company": "会社名（任意）",
+        "email": "name@example.com",
+        "phone": "010-0000-0000（任意）",
+        "message": "状況と必要な内容をお知らせください。"
+      },
+      "consentNote": "お問い合わせの処理と回答のため、氏名・連絡先・メールアドレス・お問い合わせ内容を収集します。処理完了後3年間保管し、破棄します。",
+      "success": {
+        "title": "お問い合わせを受け付けました",
+        "desc": "営業日基準で1〜2日以内にご連絡します。"
+      },
+      "error": {
+        "title": "送信できませんでした",
+        "desc": "しばらくしてから再度お試しください。解決しない場合は、下記の電話またはメールでご連絡ください。"
+      }
+    },
+    "apply": {
+      "hero": {
+        "eyebrow": "受講申請",
+        "title": "アカデミー課程申請書",
+        "lead": "現在のレベルに合う課程かどうかを一緒に確認したうえで配定します。"
+      },
+      "levels": [
+        {
+          "value": "none",
+          "label": "初めてです"
+        },
+        {
+          "value": "basic",
+          "label": "基礎は理解しています"
+        },
+        {
+          "value": "practical",
+          "label": "実務経験があります"
+        }
+      ],
+      "labels": {
+        "name": "氏名",
+        "email": "メールアドレス",
+        "phone": "連絡先",
+        "course": "希望課程",
+        "level": "経歴レベル",
+        "motivation": "志望動機",
+        "consent": "個人情報の収集・利用に同意します",
+        "submit": "申請書を送信",
+        "submitting": "送信中"
+      },
+      "placeholders": {
+        "name": "山田太郎",
+        "email": "name@example.com",
+        "phone": "010-0000-0000",
+        "motivation": "何を作りたいのか、なぜ学びたいのかをご記入ください。"
+      },
+      "consentNote": "受講相談と配定のため、氏名・連絡先・メールアドレス・申請内容を収集します。相談終了後1年間保管し、破棄します。",
+      "success": {
+        "title": "申請書を受け付けました",
+        "desc": "担当者が確認後、相談日程をご案内します。"
+      },
+      "error": {
+        "title": "送信できませんでした",
+        "desc": "しばらくしてから再度お試しください。"
+      }
+    },
+    "validation": {
+      "required": "必須入力です",
+      "nameTooShort": "氏名を入力してください",
+      "emailInvalid": "メールアドレスの形式が正しくありません",
+      "phoneInvalid": "連絡先の形式が正しくありません",
+      "messageTooShort": "10文字以上入力してください",
+      "consentRequired": "同意しなければ提出できません",
+      "tooFast": "しばらくしてから再度お試しください",
+      "expired": "入力時間が終了しました。ページを再読み込みしてから再度お試しください",
+      "serverError": "処理中に問題が発生しました"
+    }
+  },
+  "legal": {
+    "ui": {
+      "updatedAtLabel": "最終改定日"
+    },
+    "privacy": {
+      "title": "個人情報処理方針",
+      "intro": "株式会社CMNYX（以下「会社」）は、利用者の個人情報を大切に取り扱い、関連法令を遵守します。本方針は、会社が運営するホームページに適用されます。",
+      "sections": [
+        {
+          "id": "items",
+          "title": "1. 収集する個人情報の項目",
+          "body": [
+            "会社は、ホームページのお問い合わせおよび受講申請フォームを通じてのみ個人情報を収集します。",
+            "お問い合わせ: 氏名、メールアドレス、連絡先（任意）、会社・所属（任意）、お問い合わせ内容",
+            "受講申請: 氏名、メールアドレス、連絡先、希望課程、経歴レベル、志望動機",
+            "会社は、訪問者の行動を追跡する分析ツールまたは広告Cookieを使用しません。したがって、ホームページの利用のみでは個人情報は収集されません。"
+          ]
+        },
+        {
+          "id": "purpose",
+          "title": "2. 収集・利用目的",
+          "body": [
+            "お問い合わせへの回答と相談の進行",
+            "受講申請の受付、課程の配定および案内"
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "3. 保有および利用期間",
+          "body": [
+            "お問い合わせ情報: 処理完了後3年間保管し、遅滞なく破棄します。",
+            "受講申請情報: 相談終了後1年間保管し、遅滞なく破棄します。",
+            "情報主体が破棄を要請する場合、直ちに破棄します。"
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "4. 第三者提供および処理委託",
+          "body": [
+            "会社は、利用者の個人情報を第三者に提供しません。",
+            "ただし、お問い合わせ内容を担当者に伝達するためにメール送信サービスを利用し、この過程で入力された内容が送信されます。"
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "5. 情報主体の権利",
+          "body": [
+            "利用者は、いつでも自身の個人情報について閲覧・訂正・削除・処理停止を要求することができます。",
+            "要請は contact@devfirm.co または 02-2058-0680 で受け付けることができ、会社は遅滞なく措置します。"
+          ]
+        },
+        {
+          "id": "manager",
+          "title": "6. 個人情報保護責任者",
+          "body": [
+            "株式会社CMNYX 経営支援部",
+            "メール: contact@devfirm.co",
+            "電話: 02-2058-0680"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "7. 方針の変更",
+          "body": [
+            "本方針が変更される場合、ホームページを通じて変更事項と施行日を公示します。"
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "利用規約",
+      "intro": "本規約は、株式会社CMNYX（以下「会社」）が運営するホームページの利用条件を定めます。",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "1. 目的",
+          "body": [
+            "本規約は、会社が提供するホームページサービスの利用に関連して、会社と利用者の権利・義務および責任事項を規定します。"
+          ]
+        },
+        {
+          "id": "service",
+          "title": "2. サービスの内容",
+          "body": [
+            "会社は、ホームページを通じて会社およびサービス情報を提供し、お問い合わせおよび受講申請の受付を行います。",
+            "ホームページの利用に別途会員登録は必要ありません。"
+          ]
+        },
+        {
+          "id": "obligations",
+          "title": "3. 利用者の義務",
+          "body": [
+            "利用者は、他人の情報を盗用したり虚偽の情報を入力してはなりません。",
+            "利用者は、会社の事前同意なしにホームページのコンテンツを複製・配布・商業的に利用することはできません。"
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "4. 著作権",
+          "body": [
+            "ホームページに掲示されたテキスト・画像・資料に対する著作権は、会社に帰属します。"
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "5. 責任の限界",
+          "body": [
+            "会社は、天災地変、通信障害など不可抗力によるサービス中断について責任を負いません。",
+            "ホームページに掲載された情報は参考用であり、具体的な契約条件は別途協議および契約書に従います。"
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "title": "6. 管轄",
+          "body": [
+            "本規約に関連する紛争は、会社の本店所在地を管轄する裁判所を管轄裁判所とします。"
+          ]
+        }
+      ]
+    },
+    "updatedAt": "2026-07-28"
+  },
+  "seo": {
+    "home": {
+      "description": "産業現場にはPhysical AI、オフィス現場にはチェ課長AI。開発者が集まる開発法人DevFirmが、AIソリューション、ソフトウェア開発、開発人材派遣、PBLアカデミーを提供します。"
+    },
+    "page": {
+      "about": {
+        "title": "会社紹介",
+        "description": "法律事務所に弁護士が集まるように、開発者が集まる開発法人。経営支援部が契約と精算を担当し、開発者はつくる仕事に集中するDevFirmの運営方式を紹介します。"
+      },
+      "cic": {
+        "title": "社内独立企業(CIC)",
+        "description": "開発者がDevFirm内で自分の事業を運営する社内独立企業制度。参加条件、支援範囲、エージェントAI高度化ロードマップをご案内します。"
+      },
+      "careers": {
+        "title": "開発者採用",
+        "description": "DevFirmで共に働く開発者を募集しています。現在募集中のポジションの担当業務、資格要件、勤務条件をご確認ください。"
+      },
+      "solutions": {
+        "title": "AIソリューション",
+        "description": "産業現場のPhysical AIとオフィス現場のチェ課長AI、そして建設・コンテンツ・製造・流通・業務委託サービス・犯罪予防の6産業別AIエージェントを提供します。"
+      },
+      "officeAi": {
+        "title": "チェ課長AI — オフィス現場エージェント",
+        "description": "文書を読み、整理し、報告書を作成する反復的な事務業務を代行するAIエージェント。導入方式と適用事例を紹介します。"
+      },
+      "physicalAi": {
+        "title": "Physical AI — 産業現場エージェント",
+        "description": "カメラとセンサーが読み取った現場を、人が使える判断に変える産業現場向けAI。技術力と適用産業を紹介します。"
+      },
+      "services": {
+        "title": "開発サービス",
+        "description": "総合ソフトウェア開発と開発人材派遣。つくる仕事とつくる人を共に提供するDevFirmの開発サービスです。"
+      },
+      "software": {
+        "title": "総合ソフトウェア開発",
+        "description": "Web・アプリ・AI・システム構築を担当します。進行プロセスと成果物の品質基準を事前にご確認ください。"
+      },
+      "staffing": {
+        "title": "開発人材派遣・アウトソーシング",
+        "description": "常駐・リモート・プロジェクト単位で開発人材を配置します。法人が契約主体となるため、発注者の管理負担が軽減されます。"
+      },
+      "academy": {
+        "title": "PBLアカデミー",
+        "description": "NCSカリキュラムをプロジェクトで消化する実務教育。ソリューション開発スクール、共通事務業務スクール、プロジェクト業務スクールを運営します。"
+      },
+      "courses": {
+        "title": "課程案内",
+        "description": "DevFirm PBLアカデミーの全課程一覧。期間、定員、対象、カリキュラムをスクール別に確認できます。"
+      },
+      "apply": {
+        "title": "受講申請",
+        "description": "PBLアカデミー受講申請書を受け付けます。希望課程と経歴レベルを残していただければ、担当者がご連絡します。"
+      },
+      "workspace": {
+        "title": "開発者シェアオフィス",
+        "description": "録音スタジオとコンテンツ制作インフラを備えた、ポストプロダクション特化型の開発者シェアオフィス。設備と入居条件をご案内します。"
+      },
+      "contact": {
+        "title": "お問い合わせ",
+        "description": "ソリューション導入、開発依頼、人材派遣、アカデミー、入居に関するお問い合わせを受け付けます。ソウル瑞草区江南大路6ギル漢陽ビル2階。"
+      },
+      "privacy": {
+        "title": "個人情報処理方針",
+        "description": "DevFirmが収集する個人情報の項目、利用目的、保有期間および利用者の権利をご案内します。"
+      },
+      "terms": {
+        "title": "利用規約",
+        "description": "DevFirmホームページの利用に関する規約です。"
+      }
+    },
+    "ogImageAlt": "DevFirm — 開発者が集まる開発法人。産業現場にはPhysical AI、オフィス現場にはチェ課長AI。"
+  }
+}
