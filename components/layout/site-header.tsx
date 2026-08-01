@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Container } from "./container";
 import { HeaderNavClient } from "./header-nav-client";
 import { BrandLogo } from "./brand-logo";
+import { LocaleSwitcher } from "./locale-switcher";
 import { primaryCta } from "@/content/navigation";
 import { site } from "@/content/site";
 import { ui } from "@/content/ui";
@@ -39,6 +40,9 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-1 lg:gap-2">
           <HeaderNavClient />
+          {/* 언어 선택기. 좁은 화면에서는 드로어 안이 아니라 여기 남긴다 —
+              언어를 못 찾는 방문자는 메뉴를 열어 볼 생각을 하지 않는다. */}
+          <LocaleSwitcher label={ui.nav.language} className="hidden sm:inline-flex" />
           <Link
             href={primaryCta.href}
             className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-ring hidden min-h-11 items-center rounded-md px-4 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none md:inline-flex"
