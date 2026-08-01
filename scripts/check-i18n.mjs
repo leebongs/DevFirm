@@ -33,21 +33,22 @@ if (!existsSync(SOURCE)) {
 const { locales, DEFAULT_LOCALE } = await import("../content/locales.ts");
 const source = JSON.parse(readFileSync(SOURCE, "utf8"));
 
-/** 번역하면 안 되는 잎. 키 이름이나 값 모양으로 판정한다. */
-const LITERAL_KEYS = new Set([
-  "href",
-  "src",
-  "base",
-  "slug",
-  "id",
-  "code",
-  "mapHref",
-  "telHref",
-  "tel",
-  "email",
-  "businessNumber",
-]);
-const LITERAL_VALUE = /^(\/|#|https?:|mailto:|tel:)/;
+/**
+ * 번역하면 안 되는 잎.
+ *
+ * **키 이름만으로 판정하지 않는다.** `email` 은 주소를 담는 키이기도 하고
+ * 폼 필드 라벨("이메일")을 담는 키이기도 하다 — 앞은 그대로 둬야 하고
+ * 뒤는 번역해야 한다. 키 이름으로 잡으면 라벨 번역을 결함으로 신고한다.
+ * 실제로 영어 번역에서 그렇게 오탐이 났다.
+ *
+ * 그래서 구조 키(값이 절대 산문일 수 없는 것)만 이름으로 잡고,
+ * 나머지는 **값의 모양**으로 판정한다.
+ */
+const LITERAL_KEYS = new Set(["href", "src", "base", "slug", "id", "code"]);
+
+/** 경로·URL·mailto·tel, 그리고 실제 주소·전화번호·사업자번호의 모양 */
+const LITERAL_VALUE =
+  /^(\/|#|https?:|mailto:|tel:)|^[\w.+-]+@[\w-]+\.[\w.]+$|^[\d-]{9,}$/;
 
 /** 잎 노드를 경로와 함께 평탄화한다 */
 function* leaves(node, path = "", key = "") {

@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
+import {
+  DEFAULT_LOCALE,
+  hreflangOf,
+  locales,
+  type Locale,
+} from "@/content/locales";
 import { ogImageAlt } from "@/content/seo";
 
 /**
@@ -26,22 +32,43 @@ export function buildMetadata({
   title,
   description,
   path,
+  lang = DEFAULT_LOCALE,
 }: {
   title: string;
   description: string;
-  /** 사이트 루트 기준 경로. 예: "/about/cic" */
+  /** 사이트 루트 기준 **논리** 경로. 예: "/about/cic". 언어 접두사는 여기서 붙인다. */
   path: string;
+  lang?: Locale;
 }): Metadata {
-  const url = path === "/" ? site.url : `${site.url}${path}`;
+  const localized = (locale: Locale) =>
+    `${site.url}/${locale}${path === "/" ? "" : path}`;
+  const url = localized(lang);
+
+  /*
+   * hreflang.
+   *
+   * 같은 문서의 17개 언어판이 서로를 가리켜야 한다. 이걸 빼면 검색엔진이
+   * 각 언어판을 **중복 문서**로 보고 하나만 남긴다 — 번역을 해 놓고도
+   * 다른 언어권 검색에 안 걸리는 상태가 된다.
+   *
+   * x-default 는 언어 협상이 안 될 때의 기본이다. 접두사 없는 주소를 주면
+   * proxy 가 방문자에 맞춰 보내주므로 그쪽이 정확하다.
+   */
+  const languages = Object.fromEntries(
+    locales.map((l) => [hreflangOf(l.code), localized(l.code)]),
+  );
 
   return {
     title,
     description,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: { ...languages, "x-default": site.url },
+    },
     openGraph: {
       type: "website",
       siteName: site.name,
-      locale: "ko_KR",
+      locale: lang,
       title,
       description,
       url,
