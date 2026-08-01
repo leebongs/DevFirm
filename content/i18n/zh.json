@@ -1,0 +1,2223 @@
+{
+  "site": {
+    "nameKo": "DevFirm",
+    "legalName": "CMNYX股份有限公司",
+    "footerBrand": "DevFirm CIC",
+    "brand": "计算管理",
+    "tagline": "由开发者组成的软件开发公司，DevFirm",
+    "addressFull": "首尔特别市瑞草区江南大路6街59-1 汉阳大厦2层",
+    "addressLocality": "瑞草区",
+    "addressRegion": "首尔特别市"
+  },
+  "ui": {
+    "nav": {
+      "openMenu": "打开菜单",
+      "closeMenu": "关闭菜单",
+      "mainNavLabel": "主菜单",
+      "sectionNavLabel": "分区菜单",
+      "breadcrumbLabel": "当前位置",
+      "home": "首页",
+      "skipToContent": "跳到正文",
+      "externalLink": "在新窗口打开"
+    },
+    "toc": {
+      "title": "本页内容"
+    },
+    "error": {
+      "notFoundTitle": "找不到页面",
+      "notFoundBody": "地址可能已更改，或页面已被删除。请从下方前往需要的位置。",
+      "errorTitle": "发生问题",
+      "errorBody": "请稍后重试。如果问题持续，请通过咨询告知我们。",
+      "retry": "重试",
+      "goHome": "返回首页"
+    },
+    "footer": {
+      "businessNumberLabel": "营业执照号码",
+      "addressLabel": "地址",
+      "telLabel": "电话"
+    }
+  },
+  "nav": {
+    "mainNav": [
+      {
+        "label": "公司介绍",
+        "href": "/about",
+        "description": "开发者组成的软件开发公司的工作方式",
+        "children": [
+          {
+            "label": "什么是DevFirm",
+            "href": "/about",
+            "description": "像律所一样工作的开发公司模式"
+          },
+          {
+            "label": "公司内部独立企业(CIC)",
+            "href": "/about/cic",
+            "description": "开发者运营自己业务的结构"
+          },
+          {
+            "label": "开发者招聘",
+            "href": "/about/careers",
+            "description": "当前招聘职位"
+          }
+        ]
+      },
+      {
+        "label": "AI解决方案",
+        "href": "/solutions",
+        "description": "工业现场用Physical AI，办公现场用崔经理AI",
+        "children": [
+          {
+            "label": "崔经理AI",
+            "href": "/solutions/office-ai",
+            "description": "代办办公现场重复工作的智能体"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai",
+            "description": "在工业现场观察并判断的智能体"
+          },
+          {
+            "label": "建筑施工AI",
+            "href": "/solutions/agents/construction",
+            "description": "进度、安全、材料管理自动化"
+          },
+          {
+            "label": "内容AI",
+            "href": "/solutions/agents/content",
+            "description": "策划、制作、后期工作辅助"
+          },
+          {
+            "label": "制造工序AI",
+            "href": "/solutions/agents/manufacturing",
+            "description": "设备、质量、良率监控"
+          },
+          {
+            "label": "流通管理AI",
+            "href": "/solutions/agents/distribution",
+            "description": "库存、物流、需求预测"
+          },
+          {
+            "label": "服务运营AI",
+            "href": "/solutions/agents/service",
+            "description": "人员配置、考勤、结算"
+          },
+          {
+            "label": "犯罪预防AI",
+            "href": "/solutions/agents/safety",
+            "description": "基于视频分析的异常征兆检测"
+          }
+        ]
+      },
+      {
+        "label": "开发服务",
+        "href": "/services",
+        "description": "同时提供要做的工作和做事的人",
+        "children": [
+          {
+            "label": "综合软件开发",
+            "href": "/services/software",
+            "description": "Web、App、AI、系统建设"
+          },
+          {
+            "label": "开发人才派遣",
+            "href": "/services/staffing",
+            "description": "驻场、远程、项目制投入"
+          }
+        ]
+      },
+      {
+        "label": "学院",
+        "href": "/academy",
+        "description": "基于NCS课程体系的项目学习(PBL)",
+        "children": [
+          {
+            "label": "课程介绍",
+            "href": "/academy/courses",
+            "description": "三个学院的课程列表"
+          },
+          {
+            "label": "报名",
+            "href": "/academy/apply",
+            "description": "课程申请受理"
+          }
+        ]
+      },
+      {
+        "label": "共享办公室",
+        "href": "/workspace",
+        "description": "面向开发者、专注后期制作的办公空间"
+      }
+    ],
+    "footerNav": [
+      {
+        "label": "公司",
+        "href": "/about",
+        "children": [
+          {
+            "label": "什么是DevFirm",
+            "href": "/about"
+          },
+          {
+            "label": "公司内部独立企业(CIC)",
+            "href": "/about/cic"
+          },
+          {
+            "label": "开发者招聘",
+            "href": "/about/careers"
+          }
+        ]
+      },
+      {
+        "label": "AI解决方案",
+        "href": "/solutions",
+        "children": [
+          {
+            "label": "全部AI解决方案",
+            "href": "/solutions"
+          },
+          {
+            "label": "崔经理AI",
+            "href": "/solutions/office-ai"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai"
+          },
+          {
+            "label": "建筑施工AI",
+            "href": "/solutions/agents/construction"
+          },
+          {
+            "label": "内容AI",
+            "href": "/solutions/agents/content"
+          },
+          {
+            "label": "制造工序AI",
+            "href": "/solutions/agents/manufacturing"
+          },
+          {
+            "label": "流通管理AI",
+            "href": "/solutions/agents/distribution"
+          },
+          {
+            "label": "服务运营AI",
+            "href": "/solutions/agents/service"
+          },
+          {
+            "label": "犯罪预防AI",
+            "href": "/solutions/agents/safety"
+          }
+        ]
+      },
+      {
+        "label": "服务、教育",
+        "href": "/services",
+        "children": [
+          {
+            "label": "全部开发服务",
+            "href": "/services"
+          },
+          {
+            "label": "综合软件开发",
+            "href": "/services/software"
+          },
+          {
+            "label": "开发人才派遣",
+            "href": "/services/staffing"
+          },
+          {
+            "label": "PBL学院",
+            "href": "/academy"
+          },
+          {
+            "label": "课程介绍",
+            "href": "/academy/courses"
+          },
+          {
+            "label": "报名",
+            "href": "/academy/apply"
+          },
+          {
+            "label": "共享办公室",
+            "href": "/workspace"
+          }
+        ]
+      },
+      {
+        "label": "咨询、条款",
+        "href": "/contact",
+        "children": [
+          {
+            "label": "咨询",
+            "href": "/contact"
+          },
+          {
+            "label": "个人信息处理方针",
+            "href": "/privacy"
+          },
+          {
+            "label": "使用条款",
+            "href": "/terms"
+          }
+        ]
+      }
+    ],
+    "sectionNav": {
+      "/about": [
+        {
+          "label": "什么是DevFirm",
+          "href": "/about",
+          "description": "像律所一样工作的开发公司模式"
+        },
+        {
+          "label": "公司内部独立企业(CIC)",
+          "href": "/about/cic",
+          "description": "开发者运营自己业务的结构"
+        },
+        {
+          "label": "开发者招聘",
+          "href": "/about/careers",
+          "description": "当前招聘职位"
+        }
+      ],
+      "/solutions": [
+        {
+          "label": "崔经理AI",
+          "href": "/solutions/office-ai",
+          "description": "代办办公现场重复工作的智能体"
+        },
+        {
+          "label": "Physical AI",
+          "href": "/solutions/physical-ai",
+          "description": "在工业现场观察并判断的智能体"
+        },
+        {
+          "label": "建筑施工AI",
+          "href": "/solutions/agents/construction",
+          "description": "进度、安全、材料管理自动化"
+        },
+        {
+          "label": "内容AI",
+          "href": "/solutions/agents/content",
+          "description": "策划、制作、后期工作辅助"
+        },
+        {
+          "label": "制造工序AI",
+          "href": "/solutions/agents/manufacturing",
+          "description": "设备、质量、良率监控"
+        },
+        {
+          "label": "流通管理AI",
+          "href": "/solutions/agents/distribution",
+          "description": "库存、物流、需求预测"
+        },
+        {
+          "label": "服务运营AI",
+          "href": "/solutions/agents/service",
+          "description": "人员配置、考勤、结算"
+        },
+        {
+          "label": "犯罪预防AI",
+          "href": "/solutions/agents/safety",
+          "description": "基于视频分析的异常征兆检测"
+        }
+      ],
+      "/services": [
+        {
+          "label": "综合软件开发",
+          "href": "/services/software",
+          "description": "Web、App、AI、系统建设"
+        },
+        {
+          "label": "开发人才派遣",
+          "href": "/services/staffing",
+          "description": "驻场、远程、项目制投入"
+        }
+      ],
+      "/academy": [
+        {
+          "label": "课程介绍",
+          "href": "/academy/courses",
+          "description": "三个学院的课程列表"
+        },
+        {
+          "label": "报名",
+          "href": "/academy/apply",
+          "description": "课程申请受理"
+        }
+      ]
+    },
+    "primaryCta": {
+      "label": "咨询",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DevFirm",
+      "title": "由开发者组成的软件开发公司，DevFirm",
+      "lead": "就像律师聚集在律所承接案件一样，DevFirm聚集开发者承接开发。合同和结算由公司负责，开发者专注于制作。",
+      "primaryCta": {
+        "label": "咨询",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "查看AI解决方案",
+        "href": "/solutions"
+      }
+    },
+    "slogan": {
+      "title": "现场不同，需要的AI也不同",
+      "left": {
+        "eyebrow": "工业现场",
+        "name": "Physical AI",
+        "desc": "用于需要观察并判断的地方。把摄像头和传感器读取到的内容转化为人可以使用的判断。",
+        "href": "/solutions/physical-ai"
+      },
+      "right": {
+        "eyebrow": "办公现场",
+        "name": "崔经理AI",
+        "desc": "代办重复的办公工作。负责读取和整理文档，直到生成报告。",
+        "href": "/solutions/office-ai"
+      }
+    },
+    "audience": {
+      "eyebrow": "您为何而来",
+      "title": "先展示您要找的内容",
+      "cards": [
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-client.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "企业客户",
+          "desc": "需要引入AI或开发人员时",
+          "href": "/solutions",
+          "linkLabel": "查看AI解决方案"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-learner.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "想学习的人",
+          "desc": "想通过项目学习实务时",
+          "href": "/academy",
+          "linkLabel": "查看学院"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-developer.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "一起工作的开发者",
+          "desc": "想入职或运营CIC时",
+          "href": "/about/careers",
+          "linkLabel": "查看招聘"
+        }
+      ]
+    },
+    "agentsSection": {
+      "eyebrow": "按行业划分的AI智能体",
+      "title": "借助各领域AI助手，现在只需做决定",
+      "lead": "六个行业的重复判断由智能体先整理。人只介入需要判断的节点。"
+    },
+    "model": {
+      "eyebrow": "DevFirm模式",
+      "title": "律所为律师做的事，DevFirm为开发者做",
+      "lead": "开发者不把时间用于销售、合同、结算、税务，而是用于制作。委托方签约的对象不是个人，而是法人。",
+      "comparison": {
+        "leftLabel": "律所",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "律师",
+            "right": "开发者"
+          },
+          {
+            "left": "承接案件",
+            "right": "承接项目"
+          },
+          {
+            "left": "事务局负责行政",
+            "right": "经营支持部负责后台事务"
+          },
+          {
+            "left": "合伙人律师",
+            "right": "CIC代表"
+          },
+          {
+            "left": "委托人与法人签约",
+            "right": "委托方与法人签约"
+          }
+        ]
+      },
+      "note": "对委托方而言，和个人自由职业者签约时产生的风险会消失；对开发者而言，独自难以承担的事务会消失。"
+    },
+    "bands": {
+      "academy": {
+        "eyebrow": "PBL学院",
+        "title": "边做边学",
+        "desc": "用项目消化NCS课程体系。结业时会留下可写入简历的成果。",
+        "href": "/academy",
+        "linkLabel": "查看课程"
+      },
+      "workspace": {
+        "eyebrow": "共享办公室",
+        "title": "可完成后期制作的办公空间",
+        "desc": "面向开发者的共享办公室，配备录音室和内容制作基础设施。",
+        "href": "/workspace",
+        "linkLabel": "查看空间"
+      }
+    },
+    "trust": {
+      "eyebrow": "公司",
+      "title": "自2007年起",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "成立"
+        },
+        {
+          "value": "CIC",
+          "label": "运营公司内部独立企业"
+        },
+        {
+          "value": "首尔瑞草",
+          "label": "江南大路附近"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "即使还没决定要做什么也可以",
+      "desc": "告诉我们当前情况，我们会先一起梳理从哪里开始。",
+      "cta": {
+        "label": "咨询",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "公司介绍",
+      "title": "由开发者组成的软件开发公司",
+      "lead": "DevFirm是一家建立结构、让开发者只专注开发的公司。其余事项由公司负责。"
+    },
+    "metaphor": {
+      "id": "model",
+      "eyebrow": "DevFirm模式",
+      "title": "把律所结构转移到开发领域",
+      "lead": "就像律师在事务局支持下只专注案件一样，DevFirm的开发者在经营支持部支持下只专注开发。",
+      "comparison": {
+        "leftLabel": "律所",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "律师负责案件",
+            "right": "开发者负责项目"
+          },
+          {
+            "left": "事务局处理行政",
+            "right": "经营支持部处理后台事务"
+          },
+          {
+            "left": "委托人与法人签约",
+            "right": "委托方与法人签约"
+          },
+          {
+            "left": "成为合伙人后持有份额",
+            "right": "成为CIC代表后拥有业务"
+          }
+        ]
+      }
+    },
+    "backoffice": {
+      "id": "backoffice",
+      "eyebrow": "经营支持部",
+      "title": "开发者不必做的事",
+      "lead": "这些是独立工作的开发者最常被占用时间的事项。在DevFirm，这些事情不会摆到开发者桌上。",
+      "items": [
+        {
+          "title": "合同与谈判",
+          "desc": "法人具备标准合同和审查流程。开发者不必独自判断不利条款。"
+        },
+        {
+          "title": "税务与结算",
+          "desc": "公司处理税务发票开具、预扣税和增值税申报。"
+        },
+        {
+          "title": "款项回收",
+          "desc": "法人负责未收款管理和催收。开发者不必因款项问题与委托方产生冲突。"
+        },
+        {
+          "title": "四大保险与劳务",
+          "desc": "公司根据雇佣形式处理申报和劳务管理。"
+        }
+      ]
+    },
+    "history": {
+      "id": "history",
+      "eyebrow": "沿革",
+      "title": "自2007年起",
+      "items": [
+        {
+          "year": "2007",
+          "title": "法人设立",
+          "desc": "开始软件开发和系统建设。"
+        },
+        {
+          "year": "2010s",
+          "title": "开发人才派遣、外包",
+          "desc": "通过驻场和项目制投入扩大服务。"
+        },
+        {
+          "year": "2020s",
+          "title": "引入公司内部独立企业(CIC)",
+          "desc": "建立开发者在公司内运营自己业务的结构。"
+        },
+        {
+          "year": "现在",
+          "title": "AI智能体业务",
+          "desc": "以工业现场的Physical AI和办公现场的崔经理AI重组业务。"
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "eyebrow": "公司概要",
+      "title": "基本信息"
+    },
+    "cta": {
+      "title": "与DevFirm合作有三种方式",
+      "desc": "作为委托方合作，作为开发者加入，或从学院开始。",
+      "primary": {
+        "label": "咨询",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "查看招聘",
+        "href": "/about/careers"
+      }
+    }
+  },
+  "cic": {
+    "hero": {
+      "eyebrow": "公司内部独立企业",
+      "title": "在公司内运营自己的业务",
+      "lead": "CIC(Company In Company)是开发者在DevFirm内部设立并运营自己业务单元的制度。使用法人的信用和后台支持，同时自行决定业务方向。"
+    },
+    "what": {
+      "id": "what",
+      "eyebrow": "什么是CIC",
+      "title": "降低创业风险，保留创业自主权",
+      "lead": "独自设立法人时，必须从头建立信用和行政体系。CIC从公司借用这两项资源，同时由代表拥有业务决策权。",
+      "items": [
+        {
+          "title": "使用法人信用",
+          "desc": "委托方签约的不是新设个体经营者，而是2007年成立的法人。"
+        },
+        {
+          "title": "使用后台支持",
+          "desc": "经营支持部处理合同、税务、结算和劳务。"
+        },
+        {
+          "title": "业务由代表决定",
+          "desc": "承接什么工作、组建什么团队，由CIC代表决定。"
+        },
+        {
+          "title": "成果按业务单元结算",
+          "desc": "不是按工资，而是按业务成果分配。"
+        }
+      ]
+    },
+    "operation": {
+      "id": "operation",
+      "eyebrow": "运营方式",
+      "title": "DevFirm这样运营",
+      "steps": [
+        "讨论业务计划",
+        "设立CIC、协商条件",
+        "承接项目、组建团队",
+        "成果结算、再投资"
+      ]
+    },
+    "roadmap": {
+      "id": "roadmap",
+      "eyebrow": "路线图",
+      "title": "智能体AI深化",
+      "lead": "各CIC制作自身领域的智能体，公司构建这些智能体共享的基础。领域知识沉淀在CIC，共通技术沉淀在公司。",
+      "items": [
+        {
+          "title": "获取领域数据",
+          "desc": "CIC在负责的现场收集实际数据和判断标准。"
+        },
+        {
+          "title": "建设共通基础",
+          "desc": "判读、搜索、报告等共通功能由公司开发，供所有CIC使用。"
+        },
+        {
+          "title": "智能体产品化",
+          "desc": "把经过验证的判断打包为按行业划分的智能体产品。"
+        }
+      ]
+    },
+    "conditions": {
+      "id": "conditions",
+      "eyebrow": "参与条件",
+      "title": "与这样的人合作",
+      "items": [
+        "在负责领域内有自行创造工作的经验",
+        "对成果负责的态度",
+        "组建并运营团队的意愿"
+      ],
+      "note": "相比工作年限，我们更看是否能建立自行运转的业务。现在没有团队也可以。"
+    },
+    "cta": {
+      "title": "如果您考虑从CIC开始",
+      "desc": "请告诉我们您正在构想什么业务。条件会根据业务性质确定。",
+      "primary": {
+        "label": "咨询",
+        "href": "/contact"
+      }
+    }
+  },
+  "careers": {
+    "page": {
+      "hero": {
+        "eyebrow": "招聘",
+        "title": "寻找一起制作的开发者",
+        "lead": "DevFirm是一家建立结构、让开发者专注开发的公司。我们寻找一起使用这种结构的人。"
+      },
+      "emptyState": "当前没有正在招聘的职位。常时申请请通过咨询提交。",
+      "statusLabel": {
+        "open": "招聘中",
+        "closed": "已截止"
+      },
+      "fields": {
+        "responsibilities": "负责工作",
+        "requirements": "资格要求",
+        "preferred": "优先条件",
+        "conditions": "工作条件",
+        "deadline": "截止",
+        "apply": "申请"
+      },
+      "cta": {
+        "title": "即使没有合适职位",
+        "desc": "告诉我们您想做什么，我们会一起寻找位置。也可以从CIC开始。",
+        "primary": {
+          "label": "咨询",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "了解CIC",
+          "href": "/about/cic"
+        }
+      }
+    },
+    "jobs": [
+      {
+        "slug": "ai-engineer",
+        "title": "AI智能体工程师",
+        "team": "AI解决方案",
+        "employmentType": "正式员工",
+        "status": "open",
+        "deadline": "长期",
+        "responsibilities": [
+          "设计并实现按行业划分的AI智能体判读、推理管线",
+          "整理现场数据采集路径并验证质量",
+          "在引入现场调优准确度并应对运营问题"
+        ],
+        "requirements": [
+          "3年以上基于Python的数据、模型管线实务经验",
+          "有将模型上线到实际服务并运营的经验",
+          "有与现场负责人协商标准的经验"
+        ],
+        "preferred": [
+          "视频识别或时间序列异常检测经验",
+          "理解制造、建筑、物流领域",
+          "LLM智能体构建经验"
+        ],
+        "conditions": [
+          "首尔瑞草区办公室，可协商",
+          "每周5天，弹性上下班",
+          "支持设备和学习费用"
+        ]
+      },
+      {
+        "slug": "fullstack-developer",
+        "title": "全栈开发者",
+        "team": "开发服务",
+        "employmentType": "正式员工",
+        "status": "open",
+        "deadline": "长期",
+        "responsibilities": [
+          "负责客户Web、App服务从设计到部署",
+          "改进并迁移既有系统",
+          "从需求整理阶段开始参与"
+        ],
+        "requirements": [
+          "3年以上Web服务开发经验",
+          "熟练使用TypeScript或同等静态类型语言",
+          "有直接部署和运营经验"
+        ],
+        "preferred": [
+          "Next.js App Router经验",
+          "云基础设施构建经验",
+          "有与委托方直接沟通的经验"
+        ],
+        "conditions": [
+          "首尔瑞草区办公室，可按项目驻场",
+          "每周5天，弹性上下班",
+          "可使用共享办公室"
+        ]
+      },
+      {
+        "slug": "cic-lead",
+        "title": "公司内部独立企业(CIC)代表",
+        "team": "CIC",
+        "employmentType": "合同制",
+        "status": "open",
+        "deadline": "长期",
+        "responsibilities": [
+          "负责领域的业务策划和项目承接",
+          "团队组建和项目运营",
+          "设定领域智能体产品化方向"
+        ],
+        "requirements": [
+          "有在特定领域自行创造工作的经验",
+          "有组建团队并完成项目的经验",
+          "对业务成果负责的态度"
+        ],
+        "preferred": [
+          "拥有既有客户网络",
+          "AI引入项目经验",
+          "创业或业务运营经验"
+        ],
+        "conditions": [
+          "按成果结算，条件根据业务性质协商",
+          "全面支持法人信用和后台事务",
+          "工作形式自主"
+        ]
+      }
+    ]
+  },
+  "solutions": {
+    "hub": {
+      "hero": {
+        "eyebrow": "AI解决方案",
+        "title": "工业现场用Physical AI，办公现场用崔经理AI",
+        "lead": "现场不同，需要的判断也不同。DevFirm分为两条轴线处理。"
+      },
+      "axes": [
+        {
+          "eyebrow": "工业现场",
+          "name": "Physical AI",
+          "desc": "把摄像头和传感器读取的现场转化为人可以使用的判断。",
+          "href": "/solutions/physical-ai",
+          "linkLabel": "查看Physical AI"
+        },
+        {
+          "eyebrow": "办公现场",
+          "name": "崔经理AI",
+          "desc": "代办读取、整理文档并撰写报告的重复工作。",
+          "href": "/solutions/office-ai",
+          "linkLabel": "查看崔经理AI"
+        }
+      ],
+      "agentsSection": {
+        "id": "agents",
+        "eyebrow": "按行业划分的智能体",
+        "title": "六个行业，六种判断",
+        "lead": "在同一基础上叠加各行业的判断标准。它会成为用现场语言说话的智能体。"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "引入流程",
+        "title": "分四步开始",
+        "steps": [
+          "现状诊断、数据检查",
+          "协商判断标准",
+          "试点应用4~8周",
+          "转入运营、扩大范围"
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "eyebrow": "常见问题",
+        "title": "引入前常被问到的问题",
+        "items": [
+          {
+            "q": "数据还没有整理，可以开始吗？",
+            "a": "大多数现场都是这样。这就是第一步是数据检查的原因。先确认仅凭当前积累的数据能做到哪里，不足的部分从采集路径开始建立。"
+          },
+          {
+            "q": "准确度有多高？",
+            "a": "取决于现场和判断项目。因此签约前会设置试点应用区间，用实际数据测量。目标数值会根据结果共同确定。"
+          },
+          {
+            "q": "必须更换既有系统吗？",
+            "a": "大多数情况下不更换。以从既有系统读取数据并返回结果的形式接入。需要更换时，会先说明原因。"
+          },
+          {
+            "q": "引入后的运营由谁负责？",
+            "a": "初期由DevFirm负责，判断标准稳定后移交给负责人。也可以继续委托运营。"
+          }
+        ]
+      },
+      "cta": {
+        "title": "先一起确定要自动化什么判断",
+        "desc": "请告诉我们当前现场中人正在重复的判断。",
+        "primary": {
+          "label": "咨询",
+          "href": "/contact"
+        }
+      }
+    },
+    "physicalAi": {
+      "hero": {
+        "eyebrow": "Physical AI",
+        "title": "为现场接入读取现场的眼睛",
+        "lead": "代替人持续观察人无法一直盯看的事项。看到的内容不是留下记录，而是留下判断。"
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "问题",
+        "title": "现场信息大多会流逝",
+        "items": [
+          {
+            "title": "无法全部看到",
+            "desc": "摄像头很多，但观看的人有限。"
+          },
+          {
+            "title": "过去后很难查找",
+            "desc": "需要确认时，倒查视频会耗费时间。"
+          },
+          {
+            "title": "标准不同",
+            "desc": "即使看到同一画面，不同负责人也会做出不同判断。"
+          }
+        ]
+      },
+      "stack": {
+        "id": "stack",
+        "eyebrow": "技术能力",
+        "title": "读取、判断、交接",
+        "items": [
+          {
+            "title": "视频识别",
+            "desc": "区分人员、设备和状态，寻找危险模式。"
+          },
+          {
+            "title": "传感器时间序列分析",
+            "desc": "把不同于平时的趋势识别为异常信号。"
+          },
+          {
+            "title": "现场边缘处理",
+            "desc": "即使在网络不稳定的现场，也可在本地做判断。"
+          },
+          {
+            "title": "业务系统联动",
+            "desc": "将判断结果转入审批和报告流程。"
+          }
+        ]
+      },
+      "industries": {
+        "id": "industries",
+        "eyebrow": "适用行业",
+        "title": "已经进入六类现场"
+      },
+      "cta": {
+        "title": "从一个现场开始",
+        "desc": "如果已经有摄像头和传感器，就先使用它们。",
+        "primary": {
+          "label": "咨询",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "查看崔经理AI",
+          "href": "/solutions/office-ai"
+        }
+      }
+    },
+    "officeAi": {
+      "hero": {
+        "eyebrow": "崔经理AI",
+        "title": "办公室的重复工作不应由人来做",
+        "lead": "读取收到的文档、整理、转填到表单、撰写报告。由崔经理AI负责。"
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "问题",
+        "title": "真正需要判断的时间并不存在",
+        "items": [
+          {
+            "title": "搬录内容的工作",
+            "desc": "把邮件和附件中的内容重新输入公司内部表单。"
+          },
+          {
+            "title": "查找资料的工作",
+            "desc": "翻找过去的文档来确认依据，会消耗时间。"
+          },
+          {
+            "title": "核对的工作",
+            "desc": "在文档之间对照数字是否一致。"
+          },
+          {
+            "title": "整理上报的工作",
+            "desc": "同一内容要根据报告对象重新撰写。"
+          }
+        ]
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "负责的事",
+        "title": "从文档开始到报告为止",
+        "items": [
+          {
+            "title": "文档判读",
+            "desc": "从合同、交易明细、报价单中提取所需项目。"
+          },
+          {
+            "title": "填写公司内部表单",
+            "desc": "将提取项目按公司表单填写。"
+          },
+          {
+            "title": "依据搜索",
+            "desc": "从过去文档中查找相关内容，并连同出处一起提出。"
+          },
+          {
+            "title": "对照检查",
+            "desc": "指出文档之间数字和条件不一致的部分。"
+          },
+          {
+            "title": "报告草稿",
+            "desc": "制作符合报告对象的摘要。"
+          },
+          {
+            "title": "后续提醒",
+            "desc": "提醒临近期限和遗漏事项。"
+          }
+        ]
+      },
+      "physical": {
+        "id": "physical",
+        "eyebrow": "结合Physical AI",
+        "title": "让办公室和现场不断开",
+        "lead": "现场由Physical AI读取的内容会接入崔经理AI的报告。让一张现场照片直到审批文档的路径合为一体。"
+      },
+      "cta": {
+        "title": "先确定从哪类文档开始交给它",
+        "desc": "只需告诉我们最常处理的一类文档。",
+        "primary": {
+          "label": "咨询",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "查看行业智能体",
+          "href": "/solutions"
+        }
+      }
+    },
+    "agentPage": {
+      "problems": {
+        "id": "problems",
+        "eyebrow": "现场问题",
+        "title": "现在大概是这样处理"
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "负责的事",
+        "title": "智能体负责的部分"
+      },
+      "outcomes": {
+        "id": "outcomes",
+        "eyebrow": "预期效果",
+        "title": "会发生什么变化",
+        "note": "在试点应用区间用实际数据测量后，再重新确定目标值。"
+      },
+      "steps": {
+        "id": "steps",
+        "eyebrow": "引入流程",
+        "title": "分四步进入"
+      },
+      "siblings": {
+        "id": "siblings",
+        "eyebrow": "其他行业",
+        "title": "其他现场这样使用"
+      },
+      "cta": {
+        "title": "请确认是否也适用于我们的现场",
+        "desc": "我们会先看仅凭当前积累的数据能做到哪里。",
+        "primary": {
+          "label": "咨询",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "查看全部AI解决方案",
+          "href": "/solutions"
+        }
+      }
+    }
+  },
+  "agents": [
+    {
+      "slug": "construction",
+      "name": "建筑施工AI",
+      "tagline": "缩短图纸与现场之间的距离。",
+      "icon": {},
+      "problems": [
+        "进度率报告因人而异地汇总",
+        "安全检查记录分散在纸张和消息工具中",
+        "材料进场与实际用量不一致"
+      ],
+      "capabilities": [
+        {
+          "title": "进度进展判读",
+          "desc": "对照现场照片和工作日报，按每日相同标准计算进度率。"
+        },
+        {
+          "title": "安全风险检测",
+          "desc": "从CCTV视频中检测未佩戴防护用品和进入危险区域，并立即通知。"
+        },
+        {
+          "title": "材料收发整理",
+          "desc": "对照进场单据和施工量，按周报告多余或不足。"
+        },
+        {
+          "title": "日常报告编写",
+          "desc": "汇总分散记录，自动生成符合委托方格式的报告。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "日常报告编写时间",
+          "value": "-70%"
+        },
+        {
+          "label": "安全检查遗漏",
+          "value": "0件"
+        },
+        {
+          "label": "材料误差掌握",
+          "value": "每周1次"
+        }
+      ],
+      "steps": ["现场数据检查", "协商判读标准", "试点应用4周", "扩大到全现场"],
+      "seo": {
+        "title": "建筑施工AI",
+        "description": "通过现场照片和工作日报按每日相同标准计算进度率，并自动整理安全检查和材料收发的建筑现场用AI智能体。"
+      }
+    },
+    {
+      "slug": "content",
+      "name": "内容AI",
+      "tagline": "把制作时间用在制作本身。",
+      "icon": {},
+      "problems": [
+        "在拍摄原片中寻找可用画面耗尽时间",
+        "字幕和缩略图等重复工作推迟制作日程",
+        "按各渠道规格重新制作的工作没有结束"
+      ],
+      "capabilities": [
+        {
+          "title": "原片索引",
+          "desc": "按人物、地点、台词为拍摄原片建立索引，立即找到所需画面。"
+        },
+        {
+          "title": "字幕、翻译草稿",
+          "desc": "转写语音，并制作符合渠道语气的字幕草稿。"
+        },
+        {
+          "title": "按渠道重构",
+          "desc": "从一个原片衍生出符合渠道规格的剪辑版本。"
+        },
+        {
+          "title": "元数据整理",
+          "desc": "按搜索需求整理标题、标签、说明，完成上传准备。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "画面搜索时间",
+          "value": "-80%"
+        },
+        {
+          "label": "字幕草稿编写",
+          "value": "即时"
+        },
+        {
+          "label": "渠道衍生版本",
+          "value": "1→N"
+        }
+      ],
+      "steps": ["连接原始资产", "学习语气标准", "试点制作", "纳入制作线"],
+      "seo": {
+        "title": "内容AI",
+        "description": "通过拍摄原片索引、字幕草稿、按渠道重构，减少内容制作重复工作的AI智能体。"
+      }
+    },
+    {
+      "slug": "manufacturing",
+      "name": "制造工序AI",
+      "tagline": "在不良发生前读取信号。",
+      "icon": {},
+      "problems": [
+        "设备异常要等停机后才知道",
+        "检查标准因检查人员而异",
+        "即使事后也无法确定良率下降原因"
+      ],
+      "capabilities": [
+        {
+          "title": "设备异常预测",
+          "desc": "从传感器趋势中找出不同于平时的模式，在停机前通知。"
+        },
+        {
+          "title": "外观检查",
+          "desc": "用视频判断缺陷，消除检查人员之间的偏差。"
+        },
+        {
+          "title": "良率原因追踪",
+          "desc": "连接工序变量和不良率，指出在哪些条件下变差。"
+        },
+        {
+          "title": "作业标准检查",
+          "desc": "记录标准作业和实际作业的差异，留下改进点。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "非计划停机",
+          "value": "-40%"
+        },
+        {
+          "label": "检查偏差",
+          "value": "消除"
+        },
+        {
+          "label": "原因确定",
+          "value": "当天"
+        }
+      ],
+      "steps": ["联动设备数据", "学习正常范围", "验证1条产线", "扩大产线"],
+      "seo": {
+        "title": "制造工序AI",
+        "description": "通过设备异常预测、视频外观检查、良率原因追踪，减少制造现场损失的AI智能体。"
+      }
+    },
+    {
+      "slug": "distribution",
+      "name": "流通管理AI",
+      "tagline": "减少库存，防止缺货。",
+      "icon": {},
+      "problems": [
+        "畅销商品先断货",
+        "滞销库存占据仓库",
+        "订货判断取决于负责人经验"
+      ],
+      "capabilities": [
+        {
+          "title": "需求预测",
+          "desc": "反映销售趋势和季节性，预测各品类需求。"
+        },
+        {
+          "title": "订货建议",
+          "desc": "计算交期和安全库存，建议订货数量。"
+        },
+        {
+          "title": "库存健康度检查",
+          "desc": "找出停止周转的库存，并告知处置时点。"
+        },
+        {
+          "title": "物流路径整理",
+          "desc": "从配送记录中找出延迟区间，重新规划路径。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "缺货率",
+          "value": "-50%"
+        },
+        {
+          "label": "库存持有天数",
+          "value": "-25%"
+        },
+        {
+          "label": "订货判断",
+          "value": "基于依据"
+        }
+      ],
+      "steps": ["联动销售数据", "验证预测准确度", "适用于部分品类", "全部品类"],
+      "seo": {
+        "title": "流通管理AI",
+        "description": "通过需求预测和订货建议，同时减少缺货和过剩库存的流通现场用AI智能体。"
+      }
+    },
+    {
+      "slug": "service",
+      "name": "服务运营AI",
+      "tagline": "人员配置也需要依据。",
+      "icon": {},
+      "problems": [
+        "各现场所需人数凭感觉决定",
+        "考勤确认和结算每月耗费数日",
+        "合同条件因现场不同而不同，容易出错"
+      ],
+      "capabilities": [
+        {
+          "title": "人员配置建议",
+          "desc": "根据现场规模和过往所需时间计算所需人数。"
+        },
+        {
+          "title": "考勤自动汇总",
+          "desc": "按合同条件汇总上下班记录，只把例外留给人处理。"
+        },
+        {
+          "title": "结算单编写",
+          "desc": "对照各现场单价和工作明细，制作结算单草稿。"
+        },
+        {
+          "title": "合同条件检查",
+          "desc": "找出各现场条件和实际运营之间的不一致并通知。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "结算耗时",
+          "value": "-60%"
+        },
+        {
+          "label": "配置依据",
+          "value": "数值化"
+        },
+        {
+          "label": "条件违反",
+          "value": "事前检测"
+        }
+      ],
+      "steps": ["整理合同条件", "联动考勤系统", "1个现场试点", "全部现场"],
+      "seo": {
+        "title": "服务运营AI",
+        "description": "自动化人员配置测算、考勤汇总、结算单编写，减少服务运营重复工作的AI智能体。"
+      }
+    },
+    {
+      "slug": "safety",
+      "name": "犯罪预防AI",
+      "tagline": "观察成为事件之前的信号。",
+      "icon": {},
+      "problems": [
+        "监控人员无法同时观看所有画面",
+        "事后确认视频耗时很长",
+        "风险判断标准因监控员而异"
+      ],
+      "capabilities": [
+        {
+          "title": "异常行为检测",
+          "desc": "实时寻找徘徊、侵入、跌倒等模式并通知。"
+        },
+        {
+          "title": "区间搜索",
+          "desc": "按人员、车辆、时间条件立即找出视频区间。"
+        },
+        {
+          "title": "优先级监控",
+          "desc": "把风险较高的画面推到监控员前面。"
+        },
+        {
+          "title": "事件记录整理",
+          "desc": "自动记录从检测到处置的经过。"
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "视频搜索",
+          "value": "分钟级"
+        },
+        {
+          "label": "检测遗漏",
+          "value": "减少"
+        },
+        {
+          "label": "判断标准",
+          "value": "统一"
+        }
+      ],
+      "steps": ["联动摄像头", "调整检测标准", "夜间试点运营", "扩大到全区域"],
+      "seo": {
+        "title": "犯罪预防AI",
+        "description": "通过异常行为检测和基于条件的视频搜索，帮助监控人员判断的犯罪预防AI智能体。"
+      }
+    }
+  ],
+  "services": {
+    "hub": {
+      "hero": {
+        "eyebrow": "开发服务",
+        "title": "同时提供要做的工作和做事的人",
+        "lead": "可以把项目整体交给我们，也可以只需要人员。签约对象不是个人，而是法人。"
+      },
+      "cards": [
+        {
+          "title": "综合软件开发",
+          "desc": "从需求整理到部署、运营都可负责。",
+          "href": "/services/software",
+          "linkLabel": "查看开发服务"
+        },
+        {
+          "title": "开发人才派遣、外包",
+          "desc": "按驻场、远程、项目制投入开发者。",
+          "href": "/services/staffing",
+          "linkLabel": "查看人才派遣"
+        }
+      ],
+      "collaboration": {
+        "id": "collaboration",
+        "eyebrow": "协作方式",
+        "title": "朝减少委托方管理负担的方向",
+        "items": [
+          {
+            "title": "单一窗口",
+            "desc": "不需要分别与多名开发者沟通。统一到一个负责窗口。"
+          },
+          {
+            "title": "法人合同",
+            "desc": "合同、税务发票、缺陷维护责任由法人承担。"
+          },
+          {
+            "title": "交接文档",
+            "desc": "项目结束时，一并移交运营所需文档。"
+          }
+        ]
+      },
+      "domains": {
+        "id": "domains",
+        "eyebrow": "技术领域",
+        "title": "处理范围",
+        "items": [
+          "Web服务、管理系统",
+          "移动App",
+          "AI智能体、数据管线",
+          "公司内部系统联动、迁移"
+        ]
+      },
+      "cta": {
+        "title": "如果不确定哪种形式合适",
+        "desc": "告诉我们情况，我们会先判断整体委托更合适，还是只配置人员更合适。",
+        "primary": {
+          "label": "咨询",
+          "href": "/contact"
+        }
+      }
+    },
+    "software": {
+      "hero": {
+        "eyebrow": "综合软件开发",
+        "title": "从需求整理到运营",
+        "lead": "我们从确定要做什么的阶段开始参与。不只是做完结束，而是以可以交接的状态完成。"
+      },
+      "areas": {
+        "id": "areas",
+        "eyebrow": "开发领域",
+        "title": "四个领域",
+        "items": [
+          {
+            "title": "Web服务",
+            "desc": "一起设计客户用服务和内部管理系统。"
+          },
+          {
+            "title": "移动App",
+            "desc": "根据所需范围选择原生或跨平台。"
+          },
+          {
+            "title": "AI、数据",
+            "desc": "在需要判断的节点接入智能体，并整理数据流。"
+          },
+          {
+            "title": "系统联动",
+            "desc": "与已经使用的系统不断开地连接。"
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "推进流程",
+        "title": "五个阶段",
+        "steps": [
+          "需求整理",
+          "确定范围、日程",
+          "设计、开发",
+          "验收、部署",
+          "交接、运营"
+        ]
+      },
+      "quality": {
+        "id": "quality",
+        "eyebrow": "交付物、质量标准",
+        "title": "预先确定您会收到什么",
+        "items": [
+          "源代码和仓库访问权限",
+          "部署流程文档和可执行的部署脚本",
+          "API规格和数据结构文档",
+          "交接会议和运营负责人培训"
+        ],
+        "note": "质量标准会在签约前以文档协商。这样可以避免验收时双方提出不同标准。"
+      },
+      "cta": {
+        "title": "还没确定要做什么也可以",
+        "desc": "只要告诉我们想解决的问题，我们会一起先缩小范围。",
+        "primary": {
+          "label": "咨询",
+          "href": "/contact"
+        }
+      }
+    },
+    "staffing": {
+      "hero": {
+        "eyebrow": "人才派遣、外包",
+        "title": "配置开发者，管理由法人负责",
+        "lead": "按需要人员的期间投入。合同和劳务由DevFirm处理。"
+      },
+      "difference": {
+        "id": "difference",
+        "eyebrow": "差异",
+        "title": "与直接签约自由职业者有何不同",
+        "lead": "委托方与个人直接签约时产生的风险由法人吸收。",
+        "items": [
+          {
+            "title": "合同主体是法人",
+            "desc": "发生中途退出或争议时，法人负责并投入替代人员。"
+          },
+          {
+            "title": "税务、劳务处理",
+            "desc": "委托方不需要判断预扣税和四大保险。"
+          },
+          {
+            "title": "经过验证的人才池",
+            "desc": "从一起做过项目的开发者中分配。"
+          },
+          {
+            "title": "后台支持",
+            "desc": "投入开发者的结算和考勤由DevFirm经营支持部管理。"
+          }
+        ]
+      },
+      "formats": {
+        "id": "formats",
+        "eyebrow": "投入形式",
+        "title": "从三种方式中选择",
+        "items": [
+          {
+            "title": "驻场",
+            "desc": "到委托方办公室上班并加入团队。"
+          },
+          {
+            "title": "远程",
+            "desc": "在DevFirm办公室或共享办公室工作。"
+          },
+          {
+            "title": "项目制",
+            "desc": "确定期间和交付物，按结果结算。"
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "推进流程",
+        "title": "四个阶段",
+        "steps": ["整理所需能力", "提出候选人", "面试、确定", "投入、定期检查"]
+      },
+      "cta": {
+        "title": "请告诉我们需要的能力",
+        "desc": "我们会按期间和投入形式整理候选人。",
+        "primary": {
+          "label": "咨询",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "academy": {
+    "page": {
+      "hero": {
+        "eyebrow": "PBL学院",
+        "title": "边做边学",
+        "lead": "不是听完课程就结束的教育。用项目消化NCS课程体系，结业时带着可写入简历的成果离开。"
+      },
+      "pbl": {
+        "id": "pbl",
+        "eyebrow": "什么是PBL",
+        "title": "项目就是课程体系",
+        "lead": "Project Based Learning。不先罗列要学的内容，而是先确定要制作的东西。需要的知识在制作过程中补上。",
+        "items": [
+          {
+            "title": "留下成果",
+            "desc": "留下的不是结业证书，而是可运行的项目。"
+          },
+          {
+            "title": "经历协作",
+            "desc": "不是独自完成的作业，而是以团队分配日程和角色。"
+          },
+          {
+            "title": "按实际工作标准查看",
+            "desc": "由从事实际项目的开发者审查代码和结果。"
+          }
+        ]
+      },
+      "schools": {
+        "id": "schools",
+        "eyebrow": "3个学院",
+        "title": "按想制作什么来选择"
+      },
+      "external": {
+        "id": "external",
+        "eyebrow": "联动",
+        "title": "后期制作课程",
+        "desc": "视频后期制作课程与首尔电影学院联动运营。",
+        "href": "https://www.seoulfilmacademy.com",
+        "linkLabel": "首尔电影学院"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "报名流程",
+        "title": "四个阶段",
+        "steps": ["选择课程、申请", "咨询、分配", "执行项目", "发表、结业"]
+      },
+      "cta": {
+        "title": "如果不确定适合哪门课程",
+        "desc": "告诉我们现在能做什么、想做什么，我们会推荐课程。",
+        "primary": {
+          "label": "报名",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "查看课程",
+          "href": "/academy/courses"
+        }
+      }
+    },
+    "schools": [
+      {
+        "key": "solution",
+        "name": "解决方案开发学院",
+        "desc": "从头到尾制作一个服务。",
+        "art": {
+          "src": "/images/cards/school-solution.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "office",
+        "name": "通用办公业务学院",
+        "desc": "学习用工具自动化办公业务的方法。",
+        "art": {
+          "src": "/images/cards/school-office.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "project",
+        "name": "项目业务学院",
+        "desc": "学习包含策划和日程管理的项目推进。",
+        "art": {
+          "src": "/images/cards/school-project.svg",
+          "width": 240,
+          "height": 180
+        }
+      }
+    ]
+  },
+  "courses": {
+    "list": [
+      {
+        "slug": "web-service-development",
+        "school": "solution",
+        "title": "Web服务开发课程",
+        "summary": "从策划到部署，最终制作一个可实际访问的服务。",
+        "duration": "16周",
+        "capacity": "20人",
+        "target": [
+          "了解编程基础语法的人",
+          "需要作品集的求职准备者",
+          "想亲自制作服务的职场人士"
+        ],
+        "prerequisites": ["基础语法水平的编程经验", "HTML、CSS基础"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "开发环境与协作工具",
+            "detail": "将Git流程、问题管理、代码评审规则确定为团队规则。"
+          },
+          {
+            "week": "3~6",
+            "topic": "前端基础",
+            "detail": "处理组件结构、状态管理和响应式布局。"
+          },
+          {
+            "week": "7~10",
+            "topic": "后端与数据",
+            "detail": "实现API设计、数据建模和认证。"
+          },
+          {
+            "week": "11~14",
+            "topic": "团队项目",
+            "detail": "以团队制作策划的服务。每周接受1次评审。"
+          },
+          {
+            "week": "15~16",
+            "topic": "部署与发表",
+            "detail": "部署到实际域名并发表结果。"
+          }
+        ],
+        "outcomes": [
+          "1个可访问的Web服务",
+          "仓库和提交历史",
+          "部署文档和README"
+        ],
+        "careers": ["Web开发者", "全栈初级开发者", "公司内部服务负责人"]
+      },
+      {
+        "slug": "ai-agent-basics",
+        "school": "solution",
+        "title": "AI智能体实务课程",
+        "summary": "亲自制作代办业务的智能体。不是制作模型的过程，而是使用模型的过程。",
+        "duration": "12周",
+        "capacity": "16人",
+        "target": [
+          "负责业务自动化的开发者",
+          "正在评估引入AI的实务人员",
+          "想理解智能体结构的人"
+        ],
+        "prerequisites": ["Python或JavaScript使用经验", "API调用经验"],
+        "curriculum": [
+          {
+            "week": "1~3",
+            "topic": "智能体结构",
+            "detail": "建立工具调用、检索增强、失败处理的基本框架。"
+          },
+          {
+            "week": "4~7",
+            "topic": "业务连接",
+            "detail": "实现读取和写入文档、邮件、表格的联动。"
+          },
+          {
+            "week": "8~10",
+            "topic": "评估与改进",
+            "detail": "测量结果、建立标准，并反复改进。"
+          },
+          {
+            "week": "11~12",
+            "topic": "实务应用项目",
+            "detail": "各自选择公司的一项业务，迁移为智能体。"
+          }
+        ],
+        "outcomes": ["1个业务自动化智能体", "评估标准文档", "应用报告"],
+        "careers": ["AI实务负责人", "自动化工程师", "公司内部AI引入负责人"]
+      },
+      {
+        "slug": "office-automation",
+        "school": "office",
+        "title": "办公自动化课程",
+        "summary": "用工具减少每天重复的文档、表格工作。即使不会代码也可以开始。",
+        "duration": "8周",
+        "capacity": "24人",
+        "target": [
+          "重复办公工作较多的职场人士",
+          "在Excel工作上花费大量时间的人",
+          "想整理部门业务的管理者"
+        ],
+        "prerequisites": ["Excel基本使用经验"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "业务拆解",
+            "detail": "把现在做的工作拆成步骤，寻找可自动化的节点。"
+          },
+          {
+            "week": "3~5",
+            "topic": "文档、表格自动化",
+            "detail": "自动处理表单填写、对照、汇总。"
+          },
+          {
+            "week": "6~7",
+            "topic": "AI工具使用",
+            "detail": "把文档判读和摘要接入业务流程。"
+          },
+          {
+            "week": "8",
+            "topic": "应用与共享",
+            "detail": "整理制作的内容，使其可以交给团队。"
+          }
+        ],
+        "outcomes": ["3项已自动化业务", "使用说明文档"],
+        "careers": ["办公自动化负责人", "部门业务改进负责人"]
+      },
+      {
+        "slug": "project-management",
+        "school": "project",
+        "title": "项目推进课程",
+        "summary": "通过实际案例学习如何管理日程和范围并完成项目。",
+        "duration": "10周",
+        "capacity": "18人",
+        "target": [
+          "第一次负责项目的人",
+          "日程经常延后的团队负责人",
+          "需要与委托方协调的负责人"
+        ],
+        "prerequisites": ["以团队方式工作过的经验"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "范围定义",
+            "detail": "先确定不做什么。"
+          },
+          {
+            "week": "3~5",
+            "topic": "日程与风险",
+            "detail": "制定估算、缓冲和风险清单。"
+          },
+          {
+            "week": "6~8",
+            "topic": "执行与协调",
+            "detail": "处理变更请求和利益相关方沟通。"
+          },
+          {
+            "week": "9~10",
+            "topic": "结束与回顾",
+            "detail": "以交接和回顾完成项目。"
+          }
+        ],
+        "outcomes": ["1份项目计划书", "风险管理文档", "回顾报告"],
+        "careers": ["项目经理", "团队负责人", "服务策划者"]
+      }
+    ],
+    "page": {
+      "hero": {
+        "eyebrow": "课程介绍",
+        "title": "当前开放的课程",
+        "lead": "按学院划分。请确认期间和对象后报名。"
+      },
+      "filterAll": "全部",
+      "fields": {
+        "duration": "期间",
+        "capacity": "名额",
+        "target": "对象",
+        "prerequisites": "先修知识",
+        "curriculum": "课程体系",
+        "outcomes": "产出项目",
+        "careers": "结业后方向",
+        "week": "周次",
+        "topic": "主题",
+        "detail": "内容",
+        "apply": "报名"
+      },
+      "cta": {
+        "title": "报名前也可以先咨询",
+        "desc": "我们会先确认以当前水平是否能跟上。",
+        "primary": {
+          "label": "报名",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "咨询",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "workspace": {
+    "hero": {
+      "eyebrow": "共享办公室",
+      "title": "为制作的人准备的空间",
+      "lead": "开发和内容制作可在同一栋楼内完成的办公空间。"
+    },
+    "concept": {
+      "id": "concept",
+      "eyebrow": "概念",
+      "title": "可完成后期制作的开发者空间",
+      "lead": "这不是只写代码的空间。当需要录音和剪辑时，无需到外部处理。"
+    },
+    "facilities": {
+      "id": "facilities",
+      "eyebrow": "设施",
+      "title": "有什么",
+      "items": [
+        {
+          "title": "录音室",
+          "desc": "配备可进行旁白和采访录音的隔音棚。",
+          "art": {
+            "src": "/images/workspace/workspace-studio.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "配备隔音板、麦克风和混音控制台的录音室"
+          }
+        },
+        {
+          "title": "内容制作基础设施",
+          "desc": "提供用于视频剪辑和渲染的设备与存储空间。",
+          "art": {
+            "src": "/images/workspace/workspace-infra.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "配备工作站、存储和渲染节点机架的内容制作基础设施空间"
+          }
+        },
+        {
+          "title": "办公空间",
+          "desc": "共同使用固定席、自由席和小型会议室。",
+          "art": {
+            "src": "/images/workspace/workspace-desk.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "有固定席、自由席和小会议室的共享办公空间"
+          }
+        }
+      ]
+    },
+    "tenants": {
+      "id": "tenants",
+      "eyebrow": "入驻对象",
+      "title": "这些人会使用",
+      "items": [
+        "独自或小规模工作的开发者",
+        "同时需要视频、音频工作的团队",
+        "以DevFirm CIC运营业务的团队"
+      ]
+    },
+    "pricing": {
+      "id": "pricing",
+      "eyebrow": "费用、咨询",
+      "title": "使用条件",
+      "note": "根据座位形式和使用期间而不同。录音室以预约制运营。准确条件请咨询，我们会为您说明。"
+    },
+    "location": {
+      "id": "location",
+      "eyebrow": "到访路线",
+      "title": "首尔瑞草区",
+      "address": "首尔特别市瑞草区江南大路6街59-1 汉阳大厦2层",
+      "mapTitle": "DevFirm位置地图",
+      "mapLinkLabel": "在Kakao地图中查看",
+      "mapHref": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C6%EA%B8%B8%2059-1%20%ED%95%9C%EC%96%91%EB%B9%8C%EB%94%A9%202%EC%B8%B5"
+    },
+    "cta": {
+      "title": "也可以先看一次再决定",
+      "desc": "我们会安排到访日程。",
+      "primary": {
+        "label": "咨询",
+        "href": "/contact"
+      }
+    }
+  },
+  "forms": {
+    "contact": {
+      "hero": {
+        "eyebrow": "咨询",
+        "title": "我们可以帮您什么",
+        "lead": "只需简单写明是什么事情。负责人确认后会联系您。"
+      },
+      "types": [
+        {
+          "value": "solution",
+          "label": "引入AI解决方案"
+        },
+        {
+          "value": "development",
+          "label": "开发委托"
+        },
+        {
+          "value": "staffing",
+          "label": "人才派遣"
+        },
+        {
+          "value": "academy",
+          "label": "学院"
+        },
+        {
+          "value": "workspace",
+          "label": "共享办公室入驻"
+        },
+        {
+          "value": "etc",
+          "label": "其他"
+        }
+      ],
+      "labels": {
+        "type": "咨询类型",
+        "name": "姓名",
+        "company": "公司、所属",
+        "email": "邮箱",
+        "phone": "联系方式",
+        "message": "咨询内容",
+        "consent": "同意收集和使用个人信息",
+        "submit": "发送咨询",
+        "submitting": "发送中"
+      },
+      "placeholders": {
+        "name": "张三",
+        "company": "公司名（可选）",
+        "email": "name@example.com",
+        "phone": "010-0000-0000（可选）",
+        "message": "请告诉我们当前情况以及需要什么。"
+      },
+      "consentNote": "为处理咨询和答复，收集姓名、联系方式、邮箱和咨询内容。处理完成后保存3年并销毁。",
+      "success": {
+        "title": "已收到咨询",
+        "desc": "将在1~2个工作日内联系您。"
+      },
+      "error": {
+        "title": "未能发送",
+        "desc": "请稍后重试。如果仍无法发送，请通过下方电话或邮箱联系。"
+      }
+    },
+    "apply": {
+      "hero": {
+        "eyebrow": "报名",
+        "title": "学院课程申请表",
+        "lead": "我们会一起确认是否适合当前水平后再分配。"
+      },
+      "levels": [
+        {
+          "value": "none",
+          "label": "我是初学者"
+        },
+        {
+          "value": "basic",
+          "label": "了解基础"
+        },
+        {
+          "value": "practical",
+          "label": "有实务经验"
+        }
+      ],
+      "labels": {
+        "name": "姓名",
+        "email": "邮箱",
+        "phone": "联系方式",
+        "course": "希望课程",
+        "level": "经验水平",
+        "motivation": "申请动机",
+        "consent": "同意收集和使用个人信息",
+        "submit": "发送申请表",
+        "submitting": "发送中"
+      },
+      "placeholders": {
+        "name": "张三",
+        "email": "name@example.com",
+        "phone": "010-0000-0000",
+        "motivation": "请写下想制作什么，以及为什么想学习。"
+      },
+      "consentNote": "为课程咨询和分配，收集姓名、联系方式、邮箱和申请内容。咨询结束后保存1年并销毁。",
+      "success": {
+        "title": "已收到申请表",
+        "desc": "负责人确认后会告知咨询日程。"
+      },
+      "error": {
+        "title": "未能发送",
+        "desc": "请稍后重试。"
+      }
+    },
+    "validation": {
+      "required": "必填项",
+      "nameTooShort": "请输入姓名",
+      "emailInvalid": "邮箱格式不正确",
+      "phoneInvalid": "联系方式格式不正确",
+      "messageTooShort": "请输入至少10个字",
+      "consentRequired": "必须同意后才能提交",
+      "tooFast": "请稍后重试",
+      "expired": "输入时间已过期。请刷新后重试",
+      "serverError": "处理过程中发生问题"
+    }
+  },
+  "legal": {
+    "ui": {
+      "updatedAtLabel": "最终修订日"
+    },
+    "privacy": {
+      "title": "个人信息处理方针",
+      "intro": "CMNYX股份有限公司（以下简称“公司”）重视用户的个人信息，并遵守相关法律法规。本方针适用于公司运营的网站。",
+      "sections": [
+        {
+          "id": "items",
+          "title": "1. 收集的个人信息项目",
+          "body": [
+            "公司仅通过网站的咨询和课程申请表收集个人信息。",
+            "咨询：姓名、邮箱、联系方式（可选）、公司和所属（可选）、咨询内容",
+            "课程申请：姓名、邮箱、联系方式、希望课程、经验水平、申请动机",
+            "公司不使用追踪访问者行为的分析工具或广告Cookie。因此，仅使用网站不会收集个人信息。"
+          ]
+        },
+        {
+          "id": "purpose",
+          "title": "2. 收集、使用目的",
+          "body": ["答复咨询并进行咨询沟通", "受理课程申请、分配课程并提供说明"]
+        },
+        {
+          "id": "retention",
+          "title": "3. 保存和使用期间",
+          "body": [
+            "咨询信息：处理完成后保存3年，并不迟延销毁。",
+            "课程申请信息：咨询结束后保存1年，并不迟延销毁。",
+            "信息主体请求销毁时，立即销毁。"
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "4. 向第三方提供及委托处理",
+          "body": [
+            "公司不向第三方提供用户的个人信息。",
+            "但为将咨询内容传达给负责人，公司使用邮件发送服务，在此过程中会传输您输入的内容。"
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "5. 信息主体的权利",
+          "body": [
+            "用户可随时要求查阅、更正、删除、停止处理自己的个人信息。",
+            "请求可通过contact@devfirm.co或02-2058-0680受理，公司将不迟延采取措施。"
+          ]
+        },
+        {
+          "id": "manager",
+          "title": "6. 个人信息保护负责人",
+          "body": [
+            "CMNYX股份有限公司经营支持部",
+            "邮箱：contact@devfirm.co",
+            "电话：02-2058-0680"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "7. 方针的变更",
+          "body": ["本方针发生变更时，公司将在网站公告变更事项和施行日。"]
+        }
+      ]
+    },
+    "terms": {
+      "title": "使用条款",
+      "intro": "本条款规定CMNYX股份有限公司（以下简称“公司”）运营的网站使用条件。",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "1. 目的",
+          "body": [
+            "本条款规定与使用公司提供的网站服务相关的公司与用户的权利、义务及责任事项。"
+          ]
+        },
+        {
+          "id": "service",
+          "title": "2. 服务内容",
+          "body": [
+            "公司通过网站提供公司及服务信息，并受理咨询和课程申请。",
+            "使用网站不需要另行注册会员。"
+          ]
+        },
+        {
+          "id": "obligations",
+          "title": "3. 用户义务",
+          "body": [
+            "用户不得盗用他人信息或输入虚假信息。",
+            "未经公司事先同意，用户不得复制、分发或商业使用网站内容。"
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "4. 著作权",
+          "body": ["网站发布的文本、图片、资料的著作权归公司所有。"]
+        },
+        {
+          "id": "liability",
+          "title": "5. 责任限制",
+          "body": [
+            "公司对因自然灾害、通信故障等不可抗力导致的服务中断不承担责任。",
+            "网站刊载的信息仅供参考，具体合同条件以另行协商和合同书为准。"
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "title": "6. 管辖",
+          "body": ["与本条款相关的争议，以管辖公司总部所在地的法院为管辖法院。"]
+        }
+      ]
+    },
+    "updatedAt": "2026-07-28"
+  },
+  "seo": {
+    "home": {
+      "description": "工业现场用Physical AI，办公现场用崔经理AI。由开发者组成的软件开发公司DevFirm提供AI解决方案、软件开发、开发人才派遣、PBL学院。"
+    },
+    "page": {
+      "about": {
+        "title": "公司介绍",
+        "description": "像律师聚集在律所一样，由开发者组成的软件开发公司。介绍DevFirm的运营方式：经营支持部负责合同和结算，开发者专注于制作。"
+      },
+      "cic": {
+        "title": "公司内部独立企业(CIC)",
+        "description": "开发者在DevFirm内部运营自己业务的公司内部独立企业制度。介绍参与条件、支持范围和智能体AI深化路线图。"
+      },
+      "careers": {
+        "title": "开发者招聘",
+        "description": "DevFirm招聘一起工作的开发者。请确认当前开放职位的负责工作、资格要求和工作条件。"
+      },
+      "solutions": {
+        "title": "AI解决方案",
+        "description": "提供工业现场的Physical AI、办公现场的崔经理AI，以及建筑、内容、制造、流通、服务、犯罪预防六个行业AI智能体。"
+      },
+      "officeAi": {
+        "title": "崔经理AI — 办公现场智能体",
+        "description": "代办读取和整理文档、撰写报告等重复办公工作的AI智能体。介绍引入方式和适用案例。"
+      },
+      "physicalAi": {
+        "title": "Physical AI — 工业现场智能体",
+        "description": "把摄像头和传感器读取的现场转化为人可以使用的判断的工业现场用AI。介绍技术能力和适用行业。"
+      },
+      "services": {
+        "title": "开发服务",
+        "description": "综合软件开发和开发人才派遣。DevFirm的开发服务同时提供要做的工作和做事的人。"
+      },
+      "software": {
+        "title": "综合软件开发",
+        "description": "负责Web、App、AI、系统建设。请提前确认推进流程和交付物质量标准。"
+      },
+      "staffing": {
+        "title": "开发人才派遣、外包",
+        "description": "按驻场、远程、项目制投入开发人员。法人作为合同主体，减少委托方的管理负担。"
+      },
+      "academy": {
+        "title": "PBL学院",
+        "description": "用项目消化NCS课程体系的实务教育。运营解决方案开发学院、通用办公业务学院、项目业务学院。"
+      },
+      "courses": {
+        "title": "课程介绍",
+        "description": "DevFirm PBL学院的全部课程列表。可按学院确认期间、名额、对象、课程体系。"
+      },
+      "apply": {
+        "title": "报名",
+        "description": "受理PBL学院课程申请表。留下希望课程和经验水平后，负责人会联系您。"
+      },
+      "workspace": {
+        "title": "开发者共享办公室",
+        "description": "配备录音室和内容制作基础设施、专注后期制作的开发者共享办公室。介绍设施和入驻条件。"
+      },
+      "contact": {
+        "title": "咨询",
+        "description": "受理解决方案引入、开发委托、人才派遣、学院、入驻咨询。首尔瑞草区江南大路6街汉阳大厦2层。"
+      },
+      "privacy": {
+        "title": "个人信息处理方针",
+        "description": "说明DevFirm收集的个人信息项目、使用目的、保存期间和用户权利。"
+      },
+      "terms": {
+        "title": "使用条款",
+        "description": "关于使用DevFirm网站的条款。"
+      }
+    },
+    "ogImageAlt": "DevFirm — 由开发者组成的软件开发公司。工业现场用Physical AI，办公现场用崔经理AI。"
+  }
+}

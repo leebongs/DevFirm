@@ -1,0 +1,2297 @@
+{
+  "site": {
+    "nameKo": "DevFirm",
+    "legalName": "CMNYX Co., Ltd.",
+    "footerBrand": "DevFirm CIC",
+    "brand": "Computing Management",
+    "tagline": "DevFirm, perusahaan pengembangan yang dipimpin developer",
+    "addressFull": "Lantai 2, Gedung Hanyang, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+    "addressLocality": "Seocho-gu",
+    "addressRegion": "Seoul"
+  },
+  "ui": {
+    "nav": {
+      "openMenu": "Buka menu",
+      "closeMenu": "Tutup menu",
+      "mainNavLabel": "Menu utama",
+      "sectionNavLabel": "Menu bagian",
+      "breadcrumbLabel": "Lokasi saat ini",
+      "home": "Beranda",
+      "skipToContent": "Lewati ke konten",
+      "externalLink": "Dibuka dalam jendela baru"
+    },
+    "toc": {
+      "title": "Konten halaman ini"
+    },
+    "error": {
+      "notFoundTitle": "Halaman tidak ditemukan",
+      "notFoundBody": "Alamat mungkin telah berubah atau halaman telah dihapus. Gunakan tautan di bawah untuk melanjutkan.",
+      "errorTitle": "Terjadi masalah",
+      "errorBody": "Silakan coba lagi sebentar lagi. Jika masalah berlanjut, beri tahu kami melalui pertanyaan.",
+      "retry": "Coba lagi",
+      "goHome": "Ke beranda"
+    },
+    "footer": {
+      "businessNumberLabel": "No. pendaftaran bisnis",
+      "addressLabel": "Alamat",
+      "telLabel": "Telepon"
+    }
+  },
+  "nav": {
+    "mainNav": [
+      {
+        "label": "Tentang Kami",
+        "href": "/about",
+        "description": "Cara perusahaan pengembangan yang dipimpin developer bekerja",
+        "children": [
+          {
+            "label": "Apa Itu DevFirm",
+            "href": "/about",
+            "description": "Model perusahaan pengembangan yang bekerja seperti firma hukum"
+          },
+          {
+            "label": "Company In Company (CIC)",
+            "href": "/about/cic",
+            "description": "Struktur untuk developer mengendalikan bisnis sendiri"
+          },
+          {
+            "label": "Karier Developer",
+            "href": "/about/careers",
+            "description": "Posisi yang sedang dibuka"
+          }
+        ]
+      },
+      {
+        "label": "Solusi AI",
+        "href": "/solutions",
+        "description": "Physical AI untuk lokasi industri, Manajer Choi AI untuk kantor",
+        "children": [
+          {
+            "label": "Manajer Choi AI",
+            "href": "/solutions/office-ai",
+            "description": "Agen untuk kerja kantor berulang"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai",
+            "description": "Agen yang mengamati dan membuat penilaian di lokasi industri"
+          },
+          {
+            "label": "AI Konstruksi",
+            "href": "/solutions/agents/construction",
+            "description": "Otomatisasi pengelolaan proses, keselamatan dan bahan"
+          },
+          {
+            "label": "AI Konten",
+            "href": "/solutions/agents/content",
+            "description": "Dukungan perencanaan, produksi dan pascaproduksi"
+          },
+          {
+            "label": "AI Proses Manufaktur",
+            "href": "/solutions/agents/manufacturing",
+            "description": "Pemantauan peralatan, kualitas dan hasil"
+          },
+          {
+            "label": "AI Manajemen Distribusi",
+            "href": "/solutions/agents/distribution",
+            "description": "Inventaris, logistik dan prediksi permintaan"
+          },
+          {
+            "label": "AI Operasi Layanan",
+            "href": "/solutions/agents/service",
+            "description": "Penempatan tenaga kerja, kehadiran dan penyelesaian pembayaran"
+          },
+          {
+            "label": "AI Pencegahan Kejahatan",
+            "href": "/solutions/agents/safety",
+            "description": "Deteksi tanda abnormal berbasis analisis video"
+          }
+        ]
+      },
+      {
+        "label": "Jasa Pengembangan",
+        "href": "/services",
+        "description": "Menyediakan pekerjaan dan orang yang mengerjakannya",
+        "children": [
+          {
+            "label": "Pengembangan Perangkat Lunak Menyeluruh",
+            "href": "/services/software",
+            "description": "Pengembangan web, aplikasi, AI dan sistem"
+          },
+          {
+            "label": "Penempatan Developer",
+            "href": "/services/staffing",
+            "description": "Penempatan di lokasi, remote dan berdasarkan proyek"
+          }
+        ]
+      },
+      {
+        "label": "Akademi",
+        "href": "/academy",
+        "description": "Pembelajaran proyek (PBL) berbasis kurikulum NCS",
+        "children": [
+          {
+            "label": "Panduan Kursus",
+            "href": "/academy/courses",
+            "description": "Daftar kursus dari tiga sekolah"
+          },
+          {
+            "label": "Pendaftaran Kursus",
+            "href": "/academy/apply",
+            "description": "Penerimaan pendaftaran kursus"
+          }
+        ]
+      },
+      {
+        "label": "Kantor Bersama",
+        "href": "/workspace",
+        "description": "Ruang kerja developer khusus untuk pascaproduksi"
+      }
+    ],
+    "footerNav": [
+      {
+        "label": "Perusahaan",
+        "href": "/about",
+        "children": [
+          {
+            "label": "Apa Itu DevFirm",
+            "href": "/about"
+          },
+          {
+            "label": "Company In Company (CIC)",
+            "href": "/about/cic"
+          },
+          {
+            "label": "Karier Developer",
+            "href": "/about/careers"
+          }
+        ]
+      },
+      {
+        "label": "Solusi AI",
+        "href": "/solutions",
+        "children": [
+          {
+            "label": "Semua Solusi AI",
+            "href": "/solutions"
+          },
+          {
+            "label": "Manajer Choi AI",
+            "href": "/solutions/office-ai"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai"
+          },
+          {
+            "label": "AI Konstruksi",
+            "href": "/solutions/agents/construction"
+          },
+          {
+            "label": "AI Konten",
+            "href": "/solutions/agents/content"
+          },
+          {
+            "label": "AI Proses Manufaktur",
+            "href": "/solutions/agents/manufacturing"
+          },
+          {
+            "label": "AI Manajemen Distribusi",
+            "href": "/solutions/agents/distribution"
+          },
+          {
+            "label": "AI Operasi Layanan",
+            "href": "/solutions/agents/service"
+          },
+          {
+            "label": "AI Pencegahan Kejahatan",
+            "href": "/solutions/agents/safety"
+          }
+        ]
+      },
+      {
+        "label": "Layanan dan Pendidikan",
+        "href": "/services",
+        "children": [
+          {
+            "label": "Semua Jasa Pengembangan",
+            "href": "/services"
+          },
+          {
+            "label": "Pengembangan Perangkat Lunak Menyeluruh",
+            "href": "/services/software"
+          },
+          {
+            "label": "Penempatan Developer",
+            "href": "/services/staffing"
+          },
+          {
+            "label": "Akademi PBL",
+            "href": "/academy"
+          },
+          {
+            "label": "Panduan Kursus",
+            "href": "/academy/courses"
+          },
+          {
+            "label": "Pendaftaran Kursus",
+            "href": "/academy/apply"
+          },
+          {
+            "label": "Kantor Bersama",
+            "href": "/workspace"
+          }
+        ]
+      },
+      {
+        "label": "Pertanyaan dan Polisi",
+        "href": "/contact",
+        "children": [
+          {
+            "label": "Hubungi Kami",
+            "href": "/contact"
+          },
+          {
+            "label": "Kebijakan Privasi",
+            "href": "/privacy"
+          },
+          {
+            "label": "Ketentuan Layanan",
+            "href": "/terms"
+          }
+        ]
+      }
+    ],
+    "sectionNav": {
+      "/about": [
+        {
+          "label": "Apa Itu DevFirm",
+          "href": "/about",
+          "description": "Model perusahaan pengembangan yang bekerja seperti firma hukum"
+        },
+        {
+          "label": "Company In Company (CIC)",
+          "href": "/about/cic",
+          "description": "Struktur untuk developer mengendalikan bisnis sendiri"
+        },
+        {
+          "label": "Karier Developer",
+          "href": "/about/careers",
+          "description": "Posisi yang sedang dibuka"
+        }
+      ],
+      "/solutions": [
+        {
+          "label": "Manajer Choi AI",
+          "href": "/solutions/office-ai",
+          "description": "Agen untuk kerja kantor berulang"
+        },
+        {
+          "label": "Physical AI",
+          "href": "/solutions/physical-ai",
+          "description": "Agen yang mengamati dan membuat penilaian di lokasi industri"
+        },
+        {
+          "label": "AI Konstruksi",
+          "href": "/solutions/agents/construction",
+          "description": "Otomatisasi pengelolaan proses, keselamatan dan bahan"
+        },
+        {
+          "label": "AI Konten",
+          "href": "/solutions/agents/content",
+          "description": "Dukungan perencanaan, produksi dan pascaproduksi"
+        },
+        {
+          "label": "AI Proses Manufaktur",
+          "href": "/solutions/agents/manufacturing",
+          "description": "Pemantauan peralatan, kualitas dan hasil"
+        },
+        {
+          "label": "AI Manajemen Distribusi",
+          "href": "/solutions/agents/distribution",
+          "description": "Inventaris, logistik dan prediksi permintaan"
+        },
+        {
+          "label": "AI Operasi Layanan",
+          "href": "/solutions/agents/service",
+          "description": "Penempatan tenaga kerja, kehadiran dan penyelesaian pembayaran"
+        },
+        {
+          "label": "AI Pencegahan Kejahatan",
+          "href": "/solutions/agents/safety",
+          "description": "Deteksi tanda abnormal berbasis analisis video"
+        }
+      ],
+      "/services": [
+        {
+          "label": "Pengembangan Perangkat Lunak Menyeluruh",
+          "href": "/services/software",
+          "description": "Pengembangan web, aplikasi, AI dan sistem"
+        },
+        {
+          "label": "Penempatan Developer",
+          "href": "/services/staffing",
+          "description": "Penempatan di lokasi, remote dan berdasarkan proyek"
+        }
+      ],
+      "/academy": [
+        {
+          "label": "Panduan Kursus",
+          "href": "/academy/courses",
+          "description": "Daftar kursus dari tiga sekolah"
+        },
+        {
+          "label": "Pendaftaran Kursus",
+          "href": "/academy/apply",
+          "description": "Penerimaan pendaftaran kursus"
+        }
+      ]
+    },
+    "primaryCta": {
+      "label": "Hubungi Kami",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DevFirm",
+      "title": "DevFirm, perusahaan pengembangan yang dipimpin developer",
+      "lead": "Seperti pengacara berkumpul di firma hukum untuk menangani kasus, developer berkumpul di DevFirm untuk menangani pekerjaan pengembangan. Perusahaan mengurus kontrak dan penyelesaian pembayaran, dan developer berfokus pada pengembangan.",
+      "primaryCta": {
+        "label": "Hubungi Kami",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "Lihat Solusi AI",
+        "href": "/solutions"
+      }
+    },
+    "slogan": {
+      "title": "Tempat kerja berbeda memerlukan AI berbeda",
+      "left": {
+        "eyebrow": "Lokasi Industri",
+        "name": "Physical AI",
+        "desc": "Ini digunakan di tempat yang membutuhkan observasi dan penilaian. Ini mengubah pembacaan kamera dan sensor menjadi keputusan yang dapat digunakan manusia.",
+        "href": "/solutions/physical-ai"
+      },
+      "right": {
+        "eyebrow": "Area Kerja Kantor",
+        "name": "Manajer Choi AI",
+        "desc": "Ini menangani pekerjaan kantor berulang. Ini membaca dan menyusun dokumen serta menyiapkan laporan.",
+        "href": "/solutions/office-ai"
+      }
+    },
+    "audience": {
+      "eyebrow": "Alasan Anda datang ke sini",
+      "title": "Mulai dari hal yang Anda perlukan",
+      "cards": [
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-client.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Klien Korporat",
+          "desc": "Jika Anda membutuhkan adopsi AI atau talenta pengembangan",
+          "href": "/solutions",
+          "linkLabel": "Lihat Solusi AI"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-learner.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Peserta",
+          "desc": "Jika Anda ingin belajar pekerjaan praktis melalui proyek",
+          "href": "/academy",
+          "linkLabel": "Lihat Akademi"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-developer.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Developer untuk Bekerja Bersama Kami",
+          "desc": "Jika Anda ingin bergabung dengan kami atau menjalankan CIC",
+          "href": "/about/careers",
+          "linkLabel": "Lihat Karier"
+        }
+      ]
+    },
+    "agentsSection": {
+      "eyebrow": "Agen AI Khusus Industri",
+      "title": "Biarkan asisten AI industri menyusun pekerjaan; Anda membuat keputusan",
+      "lead": "Agen menyusun penilaian berulang di enam industri lebih dulu. Manusia masuk hanya pada bagian yang membutuhkan penilaian."
+    },
+    "model": {
+      "eyebrow": "Model DevFirm",
+      "title": "DevFirm melakukan untuk developer apa yang firma hukum lakukan untuk pengacara",
+      "lead": "Developer menggunakan waktu untuk membangun, bukan mengurus penjualan, kontrak, penyelesaian pembayaran, dan pajak. Klien berkontrak dengan perusahaan, bukan individu.",
+      "comparison": {
+        "leftLabel": "Firma Hukum",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Pengacara",
+            "right": "Developer"
+          },
+          {
+            "left": "Penerimaan Kasus",
+            "right": "Penerimaan Proyek"
+          },
+          {
+            "left": "Kantor administrasi mengurus administrasi",
+            "right": "Dukungan bisnis mengurus back office"
+          },
+          {
+            "left": "Pengacara Mitra",
+            "right": "Ketua CIC"
+          },
+          {
+            "left": "Klien berkontrak dengan firma",
+            "right": "Klien berkontrak dengan perusahaan"
+          }
+        ]
+      },
+      "note": "Bagi klien, risiko berkontrak dengan freelancer individu dihapus. Bagi developer, pekerjaan yang sulit ditangani sendiri dihapus."
+    },
+    "bands": {
+      "academy": {
+        "eyebrow": "Akademi PBL",
+        "title": "Belajar dengan Membangun",
+        "desc": "Kurikulum NCS diselesaikan melalui proyek. Saat selesai, peserta memiliki hasil yang dapat dimasukkan ke dalam resume.",
+        "href": "/academy",
+        "linkLabel": "Lihat Kursus"
+      },
+      "workspace": {
+        "eyebrow": "Kantor Bersama",
+        "title": "Ruang kerja yang mendukung pascaproduksi",
+        "desc": "Kantor bersama developer dengan studio rekaman dan infrastruktur produksi konten.",
+        "href": "/workspace",
+        "linkLabel": "Lihat Ruang"
+      }
+    },
+    "trust": {
+      "eyebrow": "Perusahaan",
+      "title": "Sejak 2007",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "Didirikan"
+        },
+        {
+          "value": "CIC",
+          "label": "Operasi CIC"
+        },
+        {
+          "value": "Seocho, Seoul",
+          "label": "Dekat Gangnam-daero"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Anda belum perlu tahu apa yang ingin dibangun",
+      "desc": "Beri tahu kami kondisi Anda saat ini, dan kami akan menyusun titik awalnya lebih dulu.",
+      "cta": {
+        "label": "Hubungi Kami",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Tentang Kami",
+      "title": "Perusahaan pengembangan yang terdiri dari developer",
+      "lead": "DevFirm membangun struktur supaya developer dapat berfokus hanya pada pengembangan. Perusahaan mengurus sisanya."
+    },
+    "metaphor": {
+      "id": "model",
+      "eyebrow": "Model DevFirm",
+      "title": "Kami menerapkan struktur firma hukum pada pengembangan",
+      "lead": "Seperti pengacara berfokus hanya pada kasus dengan dukungan kantor administrasi, developer DevFirm berfokus hanya pada pengembangan dengan dukungan bisnis.",
+      "comparison": {
+        "leftLabel": "Firma Hukum",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Pengacara menerima kasus",
+            "right": "Developer menerima proyek"
+          },
+          {
+            "left": "Kantor administrasi mengurus administrasi",
+            "right": "Dukungan bisnis mengurus back office"
+          },
+          {
+            "left": "Klien berkontrak dengan firma",
+            "right": "Klien berkontrak dengan perusahaan"
+          },
+          {
+            "left": "Mitra memegang ekuitas",
+            "right": "Ketua CIC memiliki unit bisnis"
+          }
+        ]
+      }
+    },
+    "backoffice": {
+      "id": "backoffice",
+      "eyebrow": "Dukungan Bisnis",
+      "title": "Kerja yang tidak perlu dilakukan developer",
+      "lead": "Ini adalah hal yang paling banyak mengambil waktu developer yang bekerja sendiri. Di DevFirm, pekerjaan ini tidak sampai ke meja developer.",
+      "items": [
+        {
+          "title": "Kontrak dan Negosiasi",
+          "desc": "Perusahaan menjaga kontrak standar dan prosedur pemeriksaan. Developer tidak menilai klausa berisiko sendirian."
+        },
+        {
+          "title": "Pajak dan Penyelesaian Pembayaran",
+          "desc": "Perusahaan mengurus penerbitan faktur pajak, pajak penghasilan yang dipotong dan pelaporan PPN."
+        },
+        {
+          "title": "Kutipan Pembayaran",
+          "desc": "Perusahaan mengurus pengelolaan piutang dan tindak lanjut. Developer tidak perlu berdebat dengan klien tentang uang."
+        },
+        {
+          "title": "Empat Asuransi Utama dan Urusan Ketenagakerjaan",
+          "desc": "Perusahaan mengurus pelaporan dan pengelolaan ketenagakerjaan berdasarkan jenis pekerjaan."
+        }
+      ]
+    },
+    "history": {
+      "id": "history",
+      "eyebrow": "Sejarah",
+      "title": "Sejak 2007",
+      "items": [
+        {
+          "year": "2007",
+          "title": "Perusahaan Didirikan",
+          "desc": "Kami memulai pengembangan perangkat lunak dan implementasi sistem."
+        },
+        {
+          "year": "2010-an",
+          "title": "Penempatan Developer dan Outsourcing",
+          "desc": "Kami mengembangkan layanan melalui penempatan di lokasi dan berdasarkan proyek."
+        },
+        {
+          "year": "2020-an",
+          "title": "CIC Diperkenalkan",
+          "desc": "Kami membangun struktur untuk developer mengendalikan bisnis sendiri di dalam perusahaan."
+        },
+        {
+          "year": "Kini",
+          "title": "Bisnis Agen AI",
+          "desc": "Kami menyusun ulang bisnis di sekitar Physical AI untuk lokasi industri dan Manajer Choi AI untuk kantor."
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "eyebrow": "Gambaran Perusahaan",
+      "title": "Informasi Dasar"
+    },
+    "cta": {
+      "title": "Ada tiga cara untuk bekerja dengan DevFirm",
+      "desc": "Temui kami sebagai klien, bergabung sebagai developer, atau mulai dari akademi.",
+      "primary": {
+        "label": "Hubungi Kami",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Lihat Karier",
+        "href": "/about/careers"
+      }
+    }
+  },
+  "cic": {
+    "hero": {
+      "eyebrow": "Company In Company",
+      "title": "Jalankan bisnis sendiri di dalam perusahaan",
+      "lead": "CIC (Company In Company) adalah sistem bagi developer untuk menjalankan unit bisnis sendiri di dalam DevFirm. Mereka menggunakan kredibilitas korporasi dan back office perusahaan sambil menetapkan sendiri arah bisnis."
+    },
+    "what": {
+      "id": "what",
+      "eyebrow": "Apa Itu CIC",
+      "title": "Kurangi risiko memulai perusahaan, pertahankan otonomi",
+      "lead": "Ketika Anda mendirikan perusahaan sendiri, Anda harus membangun kredibilitas dan administrasi dari awal. CIC menggunakan keduanya dari perusahaan, sementara lead mempertahankan hak keputusan atas bisnis.",
+      "items": [
+        {
+          "title": "Gunakan kredibilitas korporasi",
+          "desc": "Klien berkontrak dengan perusahaan yang didirikan pada 2007, bukan pemilik tunggal baru."
+        },
+        {
+          "title": "Gunakan back office",
+          "desc": "Dukungan bisnis mengurus kontrak, pajak, penyelesaian pembayaran dan urusan ketenagakerjaan."
+        },
+        {
+          "title": "Lead menentukan bisnis",
+          "desc": "Lead CIC menentukan pekerjaan yang diterima dan tim yang dibangun."
+        },
+        {
+          "title": "Hasil diselesaikan berdasarkan unit bisnis",
+          "desc": "Pembagian dibuat berdasarkan kinerja bisnis, bukan gaji."
+        }
+      ]
+    },
+    "operation": {
+      "id": "operation",
+      "eyebrow": "Metode Operasi",
+      "title": "Begini cara DevFirm beroperasi",
+      "steps": [
+        "Diskusikan rencana bisnis",
+        "Bentuk CIC dan sepakati syarat",
+        "Dapatkan proyek dan bangun tim",
+        "Selesaikan hasil dan reinvestasikan"
+      ]
+    },
+    "roadmap": {
+      "id": "roadmap",
+      "eyebrow": "Roadmap",
+      "title": "Peningkatan Agen AI",
+      "lead": "Setiap CIC membangun agen untuk domainnya, dan perusahaan membangun fondasi bersama. Pengetahuan domain terkumpul di CIC, dan teknologi umum terkumpul di perusahaan.",
+      "items": [
+        {
+          "title": "Amankan Data Domain",
+          "desc": "Setiap CIC mengumpulkan data nyata dan kriteria penilaian dari lokasi yang ditanganinya."
+        },
+        {
+          "title": "Bangun Fondasi Bersama",
+          "desc": "Perusahaan membangun fungsi umum seperti pembacaan, pencarian, dan pelaporan untuk digunakan semua CIC."
+        },
+        {
+          "title": "Produkkan Agen",
+          "desc": "Penilaian yang divalidasi dikemas menjadi produk agen khusus industri."
+        }
+      ]
+    },
+    "conditions": {
+      "id": "conditions",
+      "eyebrow": "Syarat Partisipasi",
+      "title": "Kami bekerja dengan orang seperti ini",
+      "items": [
+        "Pengalaman menciptakan pekerjaan secara mandiri di domain Anda",
+        "Sikap bertanggung jawab terhadap hasil",
+        "Kesediaan untuk membangun dan menjalankan tim"
+      ],
+      "note": "Kami tidak terlalu melihat lama pengalaman, tetapi apakah Anda dapat membangun bisnis yang berjalan sendiri. Tidak masalah jika Anda belum memiliki tim."
+    },
+    "cta": {
+      "title": "Jika Anda mempertimbangkan untuk memulai sebagai CIC",
+      "desc": "Beri tahu kami bisnis yang Anda rencanakan. Syarat ditentukan berdasarkan sifat bisnis.",
+      "primary": {
+        "label": "Hubungi Kami",
+        "href": "/contact"
+      }
+    }
+  },
+  "careers": {
+    "page": {
+      "hero": {
+        "eyebrow": "Karier",
+        "title": "Kami mencari developer untuk membangun bersama kami",
+        "lead": "DevFirm membangun struktur supaya developer dapat berfokus pada pengembangan. Kami mencari orang yang akan menggunakan struktur itu bersama kami."
+      },
+      "emptyState": "Tidak ada lowongan terbuka saat ini. Lamaran terbuka diterima melalui Hubungi Kami.",
+      "statusLabel": {
+        "open": "Dibuka",
+        "closed": "Ditutup"
+      },
+      "fields": {
+        "responsibilities": "Tanggung Jawab",
+        "requirements": "Persyaratan",
+        "preferred": "Kualifikasi Diutamakan",
+        "conditions": "Syarat Kerja",
+        "deadline": "Batas Waktu",
+        "apply": "Lamar"
+      },
+      "cta": {
+        "title": "Walaupun tidak ada posisi yang sesuai",
+        "desc": "Beri tahu kami pekerjaan yang ingin Anda lakukan, dan kami akan mencari tempatnya bersama. Memulai sebagai CIC juga menjadi opsi.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Pelajari CIC",
+          "href": "/about/cic"
+        }
+      }
+    },
+    "jobs": [
+      {
+        "slug": "ai-engineer",
+        "title": "Engineer Agen AI",
+        "team": "Solusi AI",
+        "employmentType": "Penuh waktu",
+        "status": "open",
+        "deadline": "Terbuka",
+        "responsibilities": [
+          "Merancang dan mengimplementasikan pipeline pembacaan dan penalaran untuk agen AI khusus industri",
+          "Menyusun jalur pengumpulan data lokasi dan memvalidasi kualitas",
+          "Menyetel akurasi dan menangani isu operasional di lokasi implementasi"
+        ],
+        "requirements": [
+          "Minimal 3 tahun pengalaman praktis dengan pipeline data dan model berbasis Python",
+          "Pengalaman menerapkan dan mengoperasikan model dalam layanan nyata",
+          "Pengalaman menyepakati kriteria dengan staf lokasi"
+        ],
+        "preferred": [
+          "Pengalaman dengan pengenalan video atau deteksi anomali deret waktu",
+          "Pemahaman tentang domain pembuatan, konstruksi atau logistik",
+          "Pengalaman mengonfigurasi agen LLM"
+        ],
+        "conditions": [
+          "Kantor Seocho-gu, Seoul; dapat dinegosiasikan",
+          "Lima hari kerja, jam kerja fleksibel",
+          "Dukungan peralatan dan biaya pembelajaran"
+        ]
+      },
+      {
+        "slug": "fullstack-developer",
+        "title": "Developer Full-Stack",
+        "team": "Jasa Pengembangan",
+        "employmentType": "Penuh waktu",
+        "status": "open",
+        "deadline": "Terbuka",
+        "responsibilities": [
+          "Desain hingga implementasi layanan web dan aplikasi klien",
+          "Meningkatkan dan memigrasikan sistem yang sudah ada",
+          "Berpartisipasi sejak tahap penyusunan kebutuhan"
+        ],
+        "requirements": [
+          "Minimal 3 tahun pengalaman pengembangan layanan web",
+          "Kemampuan dalam TypeScript atau bahasa bertipe statis yang setara",
+          "Pengalaman menerapkan dan mengoperasikan layanan secara langsung"
+        ],
+        "preferred": [
+          "Pengalaman dengan Next.js App Router",
+          "Pengalaman mengonfigurasi infrastruktur cloud",
+          "Pengalaman berkomunikasi langsung dengan klien"
+        ],
+        "conditions": [
+          "Kantor Seocho-gu, Seoul; kerja di lokasi dapat bergantung pada proyek",
+          "Lima hari kerja, jam kerja fleksibel",
+          "Akses kantor bersama tersedia"
+        ]
+      },
+      {
+        "slug": "cic-lead",
+        "title": "Ketua CIC",
+        "team": "CIC",
+        "employmentType": "Kontrak",
+        "status": "open",
+        "deadline": "Terbuka",
+        "responsibilities": [
+          "Perencanaan bisnis dan akuisisi proyek untuk domain yang ditetapkan",
+          "Pembangunan tim dan operasi proyek",
+          "Menetapkan arah produkisasi agen domain"
+        ],
+        "requirements": [
+          "Pengalaman menciptakan pekerjaan secara mandiri di domain tertentu",
+          "Pengalaman membangun tim dan menyiapkan proyek",
+          "Sikap bertanggung jawab terhadap hasil bisnis"
+        ],
+        "preferred": [
+          "Jaringan klien yang sudah ada",
+          "Pengalaman proyek adopsi AI",
+          "Pengalaman startup atau operasi bisnis"
+        ],
+        "conditions": [
+          "Penyelesaian berbasis kinerja; syarat dibahas berdasarkan bisnis",
+          "Dukungan penuh dengan kredibilitas korporasi dan back office",
+          "Format kerja fleksibel"
+        ]
+      }
+    ]
+  },
+  "solutions": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Solusi AI",
+        "title": "Physical AI untuk lokasi industri, Manajer Choi AI untuk kantor",
+        "lead": "Tempat kerja berbeda memerlukan penilaian berbeda. DevFirm mendekatinya melalui dua sumbu."
+      },
+      "axes": [
+        {
+          "eyebrow": "Lokasi Industri",
+          "name": "Physical AI",
+          "desc": "Ini mengubah lokasi kerja yang dibaca kamera dan sensor menjadi penilaian yang dapat digunakan manusia.",
+          "href": "/solutions/physical-ai",
+          "linkLabel": "Lihat Physical AI"
+        },
+        {
+          "eyebrow": "Area Kerja Kantor",
+          "name": "Manajer Choi AI",
+          "desc": "Ini menangani pekerjaan berulang seperti membaca dokumen, menyusunnya, dan menulis laporan.",
+          "href": "/solutions/office-ai",
+          "linkLabel": "Lihat Manajer Choi AI"
+        }
+      ],
+      "agentsSection": {
+        "id": "agents",
+        "eyebrow": "Agen Khusus Industri",
+        "title": "Enam industri, enam jenis penilaian",
+        "lead": "Kriteria penilaian khusus industri ditempatkan di fondasi yang sama. Agen berbicara dalam bahasa lokasi kerja."
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Proses Adopsi",
+        "title": "Mulai dalam empat langkah",
+        "steps": [
+          "Nilai kondisi saat ini dan periksa data",
+          "Sepakati kriteria penilaian",
+          "Jalankan pilot selama 4 hingga 8 minggu",
+          "Beralih ke operasi dan perluas"
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "eyebrow": "Pertanyaan Umum",
+        "title": "Pertanyaan umum sebelum adopsi",
+        "items": [
+          {
+            "q": "Apakah kami dapat mulai jika data kami belum tersusun?",
+            "a": "Sebagian besar lokasi seperti itu. Karena itu, langkah pertama adalah pemeriksaan data. Kami lebih dulu memastikan hal yang dapat dilakukan dengan data yang sudah terkumpul, lalu membuat jalur pengumpulan untuk hal yang kurang."
+          },
+          {
+            "q": "Seberapa akurat hasilnya?",
+            "a": "Ini bergantung pada lokasi dan item penilaian. Karena itu, kami menetapkan periode pilot sebelum kontrak dan mengukur dengan data nyata. Angka target ditentukan bersama setelah hasilnya diperiksa."
+          },
+          {
+            "q": "Apakah kami perlu mengganti sistem yang sudah ada?",
+            "a": "Dalam sebagian besar kasus, tidak. Ini terhubung dengan membaca data dari sistem yang sudah ada dan mengembalikan hasil. Jika penggantian diperlukan, kami menjelaskan alasannya lebih dulu."
+          },
+          {
+            "q": "Siapa yang mengoperasikannya setelah adopsi?",
+            "a": "DevFirm menangani tahap awal. Setelah kriteria penilaian stabil, kami menyerahkannya kepada penanggung jawab. Operasi outsourcing berkelanjutan juga dapat dilakukan."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Kami menentukan lebih dulu penilaian yang akan diotomatiskan",
+        "desc": "Beri tahu kami penilaian yang sedang diulang oleh orang di lokasi Anda.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        }
+      }
+    },
+    "physicalAi": {
+      "hero": {
+        "eyebrow": "Physical AI",
+        "title": "Tambahkan mata yang membaca lokasi",
+        "lead": "Ini mengamati hal yang tidak dapat langsung dipantau manusia. Hal yang dilihatnya ditinggalkan sebagai penilaian, bukan sekadar catatan."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Masalah",
+        "title": "Sebagian besar informasi lokasi berlalu begitu saja",
+        "items": [
+          {
+            "title": "Anda tidak dapat melihat semuanya",
+            "desc": "Ada banyak kamera, tetapi orang yang memantaunya terbatas."
+          },
+          {
+            "title": "Setelah berlalu, hal itu sulit ditemukan",
+            "desc": "Ketika validasi diperlukan, memutar ulang video membutuhkan waktu."
+          },
+          {
+            "title": "Standar berbeda",
+            "desc": "Orang berbeda menilai adegan yang sama dengan cara berbeda."
+          }
+        ]
+      },
+      "stack": {
+        "id": "stack",
+        "eyebrow": "Kemampuan Teknis",
+        "title": "Baca, nilai dan serahkan",
+        "items": [
+          {
+            "title": "Pengenalan Video",
+            "desc": "Ini membedakan orang, peralatan, dan kondisi, serta mencari pola risiko."
+          },
+          {
+            "title": "Analisis Deret Waktu Sensor",
+            "desc": "Ini mendeteksi aliran yang berbeda dari normal sebagai sinyal anomali."
+          },
+          {
+            "title": "Pemrosesan Edge di Lokasi",
+            "desc": "Ini membuat penilaian lokal meskipun di lokasi dengan jaringan tidak stabil."
+          },
+          {
+            "title": "Integrasi Sistem Bisnis",
+            "desc": "Ini mengirim hasil penilaian ke alur persetujuan dan pelaporan."
+          }
+        ]
+      },
+      "industries": {
+        "id": "industries",
+        "eyebrow": "Industri Terkait",
+        "title": "Digunakan dalam enam jenis lokasi kerja"
+      },
+      "cta": {
+        "title": "Mulai dengan satu lokasi",
+        "desc": "Jika kamera dan sensor sudah ada, kami mulai dari sana.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Lihat Manajer Choi AI",
+          "href": "/solutions/office-ai"
+        }
+      }
+    },
+    "officeAi": {
+      "hero": {
+        "eyebrow": "Manajer Choi AI",
+        "title": "Pekerjaan kantor berulang bukan pekerjaan yang seharusnya dilakukan manusia",
+        "lead": "Membaca dokumen yang diterima, menyusunnya, memindahkannya ke dalam formulir, dan menulis laporan. Manajer Choi AI menanganinya."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Masalah",
+        "title": "Tidak ada waktu tersisa untuk penilaian",
+        "items": [
+          {
+            "title": "Kerja menyalin",
+            "desc": "Orang memasukkan ulang konten dari email dan lampiran ke formulir internal."
+          },
+          {
+            "title": "Mencari informasi",
+            "desc": "Waktu digunakan untuk mencari dokumen lama guna memvalidasi bukti."
+          },
+          {
+            "title": "Pemeriksaan silang",
+            "desc": "Dokumen dibandingkan untuk memeriksa apakah angka sesuai."
+          },
+          {
+            "title": "Menyiapkan ringkasan",
+            "desc": "Konten yang sama ditulis ulang untuk setiap penerima laporan."
+          }
+        ]
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Yang Dilakukan",
+        "title": "Dari dokumen ke pelaporan",
+        "items": [
+          {
+            "title": "Pembacaan Dokumen",
+            "desc": "Ini mengekstrak item yang diperlukan dari kontrak, laporan transaksi, dan estimasi."
+          },
+          {
+            "title": "Pengisian Formulir Internal",
+            "desc": "Ini mengisi item yang diekstrak ke formulir perusahaan."
+          },
+          {
+            "title": "Pencarian Bukti",
+            "desc": "Ini mencari konten terkait dalam dokumen sebelumnya dan menyajikannya bersama sumber."
+          },
+          {
+            "title": "Pemeriksaan Silang",
+            "desc": "Ini mengidentifikasi bagian tempat angka dan syarat berbeda antar dokumen."
+          },
+          {
+            "title": "Draf Laporan",
+            "desc": "Ini membuat ringkasan yang disesuaikan dengan penerima laporan."
+          },
+          {
+            "title": "Notifikasi Tindak Lanjut",
+            "desc": "Ini melacak item yang mendekati tenggat dan item yang kurang."
+          }
+        ]
+      },
+      "physical": {
+        "id": "physical",
+        "eyebrow": "Integrasi Physical AI",
+        "title": "Jaga agar pekerjaan kantor dan lokasi tetap terhubung",
+        "lead": "Hal yang dibaca Physical AI di lokasi mengalir ke laporan Manajer Choi AI. Ini membuat satu jalur dari foto lokasi ke dokumen persetujuan."
+      },
+      "cta": {
+        "title": "Tentukan dokumen yang akan diserahkan lebih dulu",
+        "desc": "Beri tahu kami satu jenis dokumen yang paling sering Anda proses.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Lihat Agen Industri",
+          "href": "/solutions"
+        }
+      }
+    },
+    "agentPage": {
+      "problems": {
+        "id": "problems",
+        "eyebrow": "Masalah Lokasi",
+        "title": "Anda mungkin sedang melakukan ini sekarang"
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Yang Dilakukan",
+        "title": "Yang ditangani agen"
+      },
+      "outcomes": {
+        "id": "outcomes",
+        "eyebrow": "Efek yang Diharapkan",
+        "title": "Yang berubah",
+        "note": "Setelah mengukur dengan data nyata selama periode pilot, kami menetapkan ulang target."
+      },
+      "steps": {
+        "id": "steps",
+        "eyebrow": "Alur Adopsi",
+        "title": "Diimplementasikan dalam empat langkah"
+      },
+      "siblings": {
+        "id": "siblings",
+        "eyebrow": "Industri Lain",
+        "title": "Cara lokasi lain menggunakannya"
+      },
+      "cta": {
+        "title": "Periksa apakah ini berfungsi untuk lokasi Anda",
+        "desc": "Kami lebih dulu memeriksa hal yang dapat dilakukan dengan data yang sudah Anda kumpulkan.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Lihat Semua Solusi AI",
+          "href": "/solutions"
+        }
+      }
+    }
+  },
+  "agents": [
+    {
+      "slug": "construction",
+      "name": "AI Konstruksi",
+      "tagline": "Kurangi kesenjangan antara gambar kerja dan lokasi.",
+      "icon": {},
+      "problems": [
+        "Laporan kemajuan digabungkan secara berbeda oleh setiap orang",
+        "Catatan pemeriksaan keselamatan tersebar di kertas dan messenger",
+        "Penerimaan bahan tidak sesuai dengan penggunaan nyata"
+      ],
+      "capabilities": [
+        {
+          "title": "Pembacaan Kemajuan",
+          "desc": "Ini membandingkan foto lokasi dengan log kerja harian dan menghitung kemajuan dengan standar yang sama setiap hari."
+        },
+        {
+          "title": "Deteksi Risiko Keselamatan",
+          "desc": "Ini mendeteksi kurangnya alat pelindung dan masuknya orang ke zona berbahaya dalam rekaman CCTV, lalu memberi peringatan segera."
+        },
+        {
+          "title": "Penyusunan Penerimaan dan Pengeluaran Bahan",
+          "desc": "Ini mencocokkan slip penerimaan dengan kuantitas konstruksi dan melaporkan kekurangan atau kelebihan setiap minggu."
+        },
+        {
+          "title": "Penulisan Laporan Harian",
+          "desc": "Ini mengumpulkan catatan yang tersebar dan otomatis membuat laporan dalam format klien."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Waktu penulisan laporan harian",
+          "value": "-70%"
+        },
+        {
+          "label": "Pemeriksaan keselamatan terlewat",
+          "value": "0 kasus"
+        },
+        {
+          "label": "Pemeriksaan selisih bahan",
+          "value": "Sekali seminggu"
+        }
+      ],
+      "steps": [
+        "Periksa data lokasi",
+        "Sepakati kriteria pembacaan",
+        "Pilot selama 4 minggu",
+        "Perluas ke semua lokasi"
+      ],
+      "seo": {
+        "title": "AI Konstruksi",
+        "description": "Agen AI untuk lokasi konstruksi yang menghitung kemajuan setiap hari berdasarkan standar yang sama menggunakan foto lokasi dan log kerja harian, serta menyusun pemeriksaan keselamatan dan penerimaan serta pengeluaran bahan secara otomatis."
+      }
+    },
+    {
+      "slug": "content",
+      "name": "AI Konten",
+      "tagline": "Gunakan waktu produksi untuk membuat.",
+      "icon": {},
+      "problems": [
+        "Terlalu banyak waktu digunakan untuk mencari adegan yang dapat digunakan dalam rekaman mentah",
+        "Pekerjaan berulang seperti subtitle dan thumbnail mendorong mundur jadwal produksi",
+        "Pengolahan ulang konten untuk setiap format kanal tidak selesai"
+      ],
+      "capabilities": [
+        {
+          "title": "Pengindeksan Aset Mentah",
+          "desc": "Ini mengindeks rekaman mentah berdasarkan orang, tempat dan dialog agar adegan yang diperlukan dapat ditemukan segera."
+        },
+        {
+          "title": "Draf Subtitle dan Terjemahan",
+          "desc": "Ini mentranskripsi audio dan membuat draf subtitle yang selaras dengan nada kanal."
+        },
+        {
+          "title": "Penggunaan Ulang Khusus Kanal",
+          "desc": "Ini menghasilkan edit untuk format kanal berbeda dari satu sumber."
+        },
+        {
+          "title": "Penyusunan Metadata",
+          "desc": "Ini menyusun judul, tag, dan deskripsi untuk pencarian serta menyiapkan persiapan unggah."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Waktu pencarian adegan",
+          "value": "-80%"
+        },
+        {
+          "label": "Pembuatan draf subtitle",
+          "value": "Segera"
+        },
+        {
+          "label": "Turunan kanal",
+          "value": "1 ke N"
+        }
+      ],
+      "steps": [
+        "Hubungkan aset sumber",
+        "Pelajari standar nada",
+        "Produksi pilot",
+        "Integrasi ke dalam lini produksi"
+      ],
+      "seo": {
+        "title": "AI Konten",
+        "description": "Agen AI yang mengurangi pekerjaan berulang dalam produksi konten melalui pengindeksan rekaman mentah, draf subtitle, dan penggunaan ulang khusus kanal."
+      }
+    },
+    {
+      "slug": "manufacturing",
+      "name": "AI Proses Manufaktur",
+      "tagline": "Baca sinyal sebelum cacat terjadi.",
+      "icon": {},
+      "problems": [
+        "Anomali peralatan baru ditemukan setelah penghentian operasi",
+        "Standar pemeriksaan berbeda berdasarkan pemeriksa",
+        "Penyebab penurunan hasil tidak dapat diidentifikasi bahkan setelahnya"
+      ],
+      "capabilities": [
+        {
+          "title": "Prediksi Anomali Peralatan",
+          "desc": "Ini mencari pola dalam tren sensor yang berbeda dari normal dan memberi peringatan sebelum penghentian operasi."
+        },
+        {
+          "title": "Pemeriksaan Visual",
+          "desc": "Ini menilai cacat dari video dan menghapus variasi antar pemeriksa."
+        },
+        {
+          "title": "Pelacakan Penyebab Hasil",
+          "desc": "Ini menghubungkan variabel proses dengan tingkat cacat dan mengidentifikasi kondisi ketika kinerja memburuk."
+        },
+        {
+          "title": "Pemeriksaan Standar Kerja",
+          "desc": "Ini mencatat perbedaan antara kerja standar dan kerja nyata, serta meninggalkan poin peningkatan."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Penghentian tidak terencana",
+          "value": "-40%"
+        },
+        {
+          "label": "Variasi pemeriksaan",
+          "value": "Diselesaikan"
+        },
+        {
+          "label": "Identifikasi penyebab",
+          "value": "Hari yang sama"
+        }
+      ],
+      "steps": [
+        "Hubungkan data peralatan",
+        "Pelajari rentang normal",
+        "Validasi satu lini",
+        "Perluas lini"
+      ],
+      "seo": {
+        "title": "AI Proses Manufaktur",
+        "description": "Agen AI yang mengurangi kerugian lokasi pembuatan melalui prediksi anomali peralatan, pemeriksaan visual berbasis video, dan pelacakan penyebab hasil."
+      }
+    },
+    {
+      "slug": "distribution",
+      "name": "AI Manajemen Distribusi",
+      "tagline": "Kurangi inventaris dan cegah kehabisan stok.",
+      "icon": {},
+      "problems": [
+        "Produk yang bergerak cepat habis lebih dulu",
+        "Inventaris yang bergerak lambat memakan ruang gudang",
+        "Keputusan pesanan bergantung pada pengalaman seseorang"
+      ],
+      "capabilities": [
+        {
+          "title": "Prediksi Permintaan",
+          "desc": "Ini memprediksi permintaan tingkat item berdasarkan tren penjualan dan musiman."
+        },
+        {
+          "title": "Saran Pemesanan",
+          "desc": "Ini menghitung lead time dan stok pengaman untuk menyarankan kuantitas pemesanan."
+        },
+        {
+          "title": "Pemeriksaan Kesehatan Inventaris",
+          "desc": "Ini menemukan inventaris yang tidak lagi bergerak dan menunjukkan waktu untuk menyingkirkannya."
+        },
+        {
+          "title": "Penyusunan Rute Logistik",
+          "desc": "Ini menemukan bagian keterlambatan dalam riwayat pengiriman dan menyusun ulang rute."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Tingkat kehabisan stok",
+          "value": "-50%"
+        },
+        {
+          "label": "Hari pegangan inventaris",
+          "value": "-25%"
+        },
+        {
+          "label": "Keputusan pesanan",
+          "value": "Berbasis bukti"
+        }
+      ],
+      "steps": [
+        "Hubungkan data penjualan",
+        "Validasi akurasi prediksi",
+        "Terapkan pada item terpilih",
+        "Semua item"
+      ],
+      "seo": {
+        "title": "AI Manajemen Distribusi",
+        "description": "Agen AI untuk lokasi distribusi yang mengurangi kehabisan stok dan kelebihan inventaris melalui prediksi permintaan dan saran pemesanan."
+      }
+    },
+    {
+      "slug": "service",
+      "name": "AI Operasi Layanan",
+      "tagline": "Keputusan penempatan staf juga memerlukan bukti.",
+      "icon": {},
+      "problems": [
+        "Staf yang diperlukan per lokasi ditentukan berdasarkan intuisi",
+        "Pemeriksaan kehadiran dan penyelesaian pembayaran mengambil beberapa hari setiap bulan",
+        "Kesalahan terjadi karena syarat kontrak berbeda menurut lokasi"
+      ],
+      "capabilities": [
+        {
+          "title": "Saran Penempatan Staf",
+          "desc": "Ini menghitung staf yang diperlukan berdasarkan ukuran lokasi dan kebutuhan waktu sebelumnya."
+        },
+        {
+          "title": "Penggabungan Kehadiran Otomatis",
+          "desc": "Ini menggabungkan catatan masuk dan pulang kerja berdasarkan syarat kontrak dan menyisakan hanya pengecualian untuk manusia."
+        },
+        {
+          "title": "Penyusunan Draf Laporan Penyelesaian",
+          "desc": "Ini mencocokkan tarif khusus lokasi dengan catatan kerja dan menyusun draf laporan penyelesaian."
+        },
+        {
+          "title": "Pemeriksaan Syarat Kontrak",
+          "desc": "Ini menemukan dan memberi peringatan tentang ketidaksesuaian antara syarat khusus lokasi dan operasi nyata."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Waktu penyelesaian pembayaran",
+          "value": "-60%"
+        },
+        {
+          "label": "Dasar penempatan",
+          "value": "Dikuantifikasi"
+        },
+        {
+          "label": "Pelanggaran syarat",
+          "value": "Dideteksi lebih awal"
+        }
+      ],
+      "steps": [
+        "Susun syarat kontrak",
+        "Hubungkan sistem kehadiran",
+        "Pilot di satu lokasi",
+        "Semua lokasi"
+      ],
+      "seo": {
+        "title": "AI Operasi Layanan",
+        "description": "Agen AI yang mengurangi pekerjaan berulang dalam operasi layanan dengan mengotomatiskan perhitungan penempatan staf, penggabungan kehadiran, dan penyusunan draf laporan penyelesaian."
+      }
+    },
+    {
+      "slug": "safety",
+      "name": "AI Pencegahan Kejahatan",
+      "tagline": "Lihat sinyal sebelum menjadi insiden.",
+      "icon": {},
+      "problems": [
+        "Staf kontrol tidak dapat melihat semua layar sekaligus",
+        "Pemeriksaan video setelah kejadian membutuhkan waktu lama",
+        "Kriteria penilaian risiko berbeda menurut operator kontrol"
+      ],
+      "capabilities": [
+        {
+          "title": "Deteksi Perilaku Tidak Normal",
+          "desc": "Ini menemukan dan memberi peringatan tentang pola seperti berkeliaran, penyusupan, dan jatuh secara real time."
+        },
+        {
+          "title": "Pencarian Segmen",
+          "desc": "Ini segera mencari segmen video berdasarkan syarat orang, kendaraan, dan waktu."
+        },
+        {
+          "title": "Pemantauan Prioritas",
+          "desc": "Ini membawa layar berisiko tinggi ke operator kontrol lebih dulu."
+        },
+        {
+          "title": "Penyusunan Catatan Insiden",
+          "desc": "Ini mencatat urutan dari deteksi hingga tindakan secara otomatis."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Pencarian video",
+          "value": "Menit"
+        },
+        {
+          "label": "Deteksi terlepas",
+          "value": "Berkurang"
+        },
+        {
+          "label": "Kriteria penilaian",
+          "value": "Disatukan"
+        }
+      ],
+      "steps": [
+        "Hubungkan kamera",
+        "Sesuaikan kriteria deteksi",
+        "Operasi pilot waktu malam",
+        "Perluas ke semua area"
+      ],
+      "seo": {
+        "title": "AI Pencegahan Kejahatan",
+        "description": "Agen AI pencegahan kejahatan yang mendukung penilaian staf kontrol melalui deteksi perilaku tidak normal dan pencarian video berbasis syarat."
+      }
+    }
+  ],
+  "services": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Jasa Pengembangan",
+        "title": "Kami menyediakan pekerjaan dan orang yang mengerjakannya",
+        "lead": "Anda dapat mempercayakan seluruh proyek atau meminta hanya tenaga kerja yang diperlukan. Pihak kontrak Anda adalah perusahaan, bukan individu."
+      },
+      "cards": [
+        {
+          "title": "Pengembangan Perangkat Lunak Menyeluruh",
+          "desc": "Kami mengurus dari penyusunan kebutuhan hingga implementasi dan operasi.",
+          "href": "/services/software",
+          "linkLabel": "Lihat Jasa Pengembangan"
+        },
+        {
+          "title": "Penempatan Developer dan Outsourcing",
+          "desc": "Kami menempatkan developer di lokasi, secara remote atau berdasarkan proyek.",
+          "href": "/services/staffing",
+          "linkLabel": "Lihat Penempatan"
+        }
+      ],
+      "collaboration": {
+        "id": "collaboration",
+        "eyebrow": "Metode Kerja Sama",
+        "title": "Untuk mengurangi beban pengelolaan klien",
+        "items": [
+          {
+            "title": "Satu Titik Kontak",
+            "desc": "Anda tidak berkomunikasi secara terpisah dengan beberapa developer. Komunikasi disusun melalui satu titik kontak."
+          },
+          {
+            "title": "Kontrak Korporat",
+            "desc": "Perusahaan bertanggung jawab terhadap kontrak, faktur pajak, dan perbaikan cacat."
+          },
+          {
+            "title": "Dokumen Serah Terima",
+            "desc": "Ketika proyek selesai, kami menyerahkan dokumen yang diperlukan untuk operasi."
+          }
+        ]
+      },
+      "domains": {
+        "id": "domains",
+        "eyebrow": "Bidang Teknis",
+        "title": "Cakupan",
+        "items": [
+          "Layanan web dan sistem admin",
+          "Aplikasi mobile",
+          "Agen AI dan pipeline data",
+          "Integrasi dan migrasi sistem internal"
+        ]
+      },
+      "cta": {
+        "title": "Jika Anda tidak yakin format yang sesuai",
+        "desc": "Beri tahu kami kondisi Anda, dan kami akan menentukan lebih dulu apakah proyek penuh atau penempatan lebih sesuai.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        }
+      }
+    },
+    "software": {
+      "hero": {
+        "eyebrow": "Pengembangan Perangkat Lunak Menyeluruh",
+        "title": "Dari penyusunan kebutuhan hingga operasi",
+        "lead": "Kami berpartisipasi sejak tahap menentukan apa yang akan dibangun. Kami tidak berhenti pada pembangunan; kami menyelesaikannya dalam kondisi yang dapat diserahterimakan."
+      },
+      "areas": {
+        "id": "areas",
+        "eyebrow": "Bidang Pengembangan",
+        "title": "Empat bidang",
+        "items": [
+          {
+            "title": "Layanan Web",
+            "desc": "Kami merancang layanan untuk klien dan sistem admin internal secara bersama."
+          },
+          {
+            "title": "Aplikasi Mobile",
+            "desc": "Kami memilih native atau lintas platform berdasarkan cakupan yang diperlukan."
+          },
+          {
+            "title": "AI dan Data",
+            "desc": "Kami memasang agen di tempat penilaian diperlukan dan menyusun alur data."
+          },
+          {
+            "title": "Integrasi Sistem",
+            "desc": "Kami terhubung dengan sistem yang sudah digunakan tanpa merusak alur kerja."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Proses",
+        "title": "Lima langkah",
+        "steps": [
+          "Susun kebutuhan",
+          "Konfirmasi cakupan dan jadwal",
+          "Desain dan pengembangan",
+          "Penerimaan dan implementasi",
+          "Serah terima dan operasi"
+        ]
+      },
+      "quality": {
+        "id": "quality",
+        "eyebrow": "Deliverable dan Standar Kualitas",
+        "title": "Kami menentukan lebih awal hal yang akan Anda terima",
+        "items": [
+          "Kode sumber dan akses repositori",
+          "Dokumen prosedur implementasi dan skrip implementasi dapat dijalankan",
+          "Spesifikasi API dan dokumen struktur data",
+          "Rapat serah terima dan pelatihan untuk staf operasi"
+        ],
+        "note": "Standar kualitas disepakati secara tertulis sebelum penandatanganan kontrak. Ini mencegah munculnya standar berbeda saat penerimaan."
+      },
+      "cta": {
+        "title": "Anda tidak perlu sudah menentukan apa yang akan dibangun",
+        "desc": "Beri tahu kami hanya masalah yang ingin Anda selesaikan, dan kami akan mempersempit cakupannya bersama.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        }
+      }
+    },
+    "staffing": {
+      "hero": {
+        "eyebrow": "Penempatan dan Outsourcing",
+        "title": "Tempatkan developer sementara perusahaan mengelolanya",
+        "lead": "Kami menempatkan tenaga kerja untuk periode yang diperlukan. DevFirm mengurus kontrak dan urusan ketenagakerjaan."
+      },
+      "difference": {
+        "id": "difference",
+        "eyebrow": "Perbedaan",
+        "title": "Perbedaannya dari kontrak langsung dengan pekerja bebas",
+        "lead": "Perusahaan menyerap risiko yang timbul ketika klien berkontrak langsung dengan individu.",
+        "items": [
+          {
+            "title": "Pihak kontrak adalah perusahaan",
+            "desc": "Jika seseorang meninggalkan proyek di tengah jalan atau terjadi sengketa, perusahaan bertanggung jawab dan menempatkan tenaga pengganti."
+          },
+          {
+            "title": "Pengendalian Pajak dan Ketenagakerjaan",
+            "desc": "Klien tidak menangani pemotongan pajak atau penentuan empat asuransi utama."
+          },
+          {
+            "title": "Kumpulan Talenta Terverifikasi",
+            "desc": "Kami menugaskan developer dari mereka yang pernah bekerja dengan kami dalam proyek."
+          },
+          {
+            "title": "Dukungan Back-Office",
+            "desc": "Dukungan bisnis DevFirm mengurus penyelesaian pembayaran dan kehadiran untuk developer yang ditempatkan."
+          }
+        ]
+      },
+      "formats": {
+        "id": "formats",
+        "eyebrow": "Format Penempatan",
+        "title": "Pilih dari tiga format",
+        "items": [
+          {
+            "title": "Di lokasi",
+            "desc": "Developer bekerja di kantor klien dan bergabung dengan tim."
+          },
+          {
+            "title": "Remote",
+            "desc": "Pekerjaan dilakukan di kantor DevFirm atau kantor bersama."
+          },
+          {
+            "title": "Berbasis proyek",
+            "desc": "Periode dan deliverable ditentukan, dan penyelesaian pembayaran berdasarkan hasil."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Prosedur",
+        "title": "Empat langkah",
+        "steps": [
+          "Susun kemampuan yang diperlukan",
+          "Ajukan kandidat",
+          "Wawancara dan konfirmasi",
+          "Tempatkan dan periksa secara berkala"
+        ]
+      },
+      "cta": {
+        "title": "Beri tahu kami kemampuan yang Anda perlukan",
+        "desc": "Kami akan menyusun kandidat berdasarkan periode dan format penempatan.",
+        "primary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "academy": {
+    "page": {
+      "hero": {
+        "eyebrow": "Akademi PBL",
+        "title": "Belajar dengan Membangun",
+        "lead": "Ini bukan pelatihan yang selesai setelah kuliah. Kurikulum NCS diselesaikan melalui proyek, dan peserta keluar dengan hasil yang dapat dimasukkan ke dalam resume."
+      },
+      "pbl": {
+        "id": "pbl",
+        "eyebrow": "Apa Itu PBL",
+        "title": "Proyek adalah kurikulum",
+        "lead": "Project Based Learning. Kami tidak lebih dulu menyusun daftar hal yang harus dipelajari. Kami lebih dulu menentukan apa yang harus dibangun. Pengetahuan yang diperlukan diisi selama proses pembangunan.",
+        "items": [
+          {
+            "title": "Hasil tetap ada",
+            "desc": "Yang tersisa bukan sertifikat, tetapi proyek yang berfungsi."
+          },
+          {
+            "title": "Alami kerja sama",
+            "desc": "Ini bukan tugas individu. Tim membagi jadwal dan peran."
+          },
+          {
+            "title": "Ditinjau berdasarkan standar kerja",
+            "desc": "Developer yang bekerja pada proyek nyata memeriksa kode dan hasil."
+          }
+        ]
+      },
+      "schools": {
+        "id": "schools",
+        "eyebrow": "Tiga Sekolah",
+        "title": "Pilih berdasarkan hal yang ingin Anda bangun"
+      },
+      "external": {
+        "id": "external",
+        "eyebrow": "Koneksi",
+        "title": "Kursus Pascaproduksi",
+        "desc": "Kursus pascaproduksi video dijalankan bersama Seoul Film Academy.",
+        "href": "https://www.seoulfilmacademy.com",
+        "linkLabel": "Seoul Film Academy"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Proses Pendaftaran",
+        "title": "Empat langkah",
+        "steps": [
+          "Pilih kursus dan daftar",
+          "Konsultasi dan penempatan",
+          "Jalankan proyek",
+          "Presentasi dan selesai"
+        ]
+      },
+      "cta": {
+        "title": "Jika Anda tidak yakin kursus yang sesuai",
+        "desc": "Beri tahu kami hal yang dapat Anda lakukan sekarang dan hal yang ingin Anda lakukan, dan kami akan merekomendasikan kursus.",
+        "primary": {
+          "label": "Daftar Kursus",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Lihat Kursus",
+          "href": "/academy/courses"
+        }
+      }
+    },
+    "schools": [
+      {
+        "key": "solution",
+        "name": "Sekolah Pengembangan Solusi",
+        "desc": "Bangun layanan dari awal hingga akhir.",
+        "art": {
+          "src": "/images/cards/school-solution.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "office",
+        "name": "Sekolah Kerja Kantor Umum",
+        "desc": "Pelajari cara mengotomatiskan kerja kantor dengan alat.",
+        "art": {
+          "src": "/images/cards/school-office.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "project",
+        "name": "Sekolah Kerja Proyek",
+        "desc": "Pelajari implementasi proyek, termasuk perencanaan dan pengelolaan jadwal.",
+        "art": {
+          "src": "/images/cards/school-project.svg",
+          "width": 240,
+          "height": 180
+        }
+      }
+    ]
+  },
+  "courses": {
+    "list": [
+      {
+        "slug": "web-service-development",
+        "school": "solution",
+        "title": "Kursus Pengembangan Layanan Web",
+        "summary": "Dari perencanaan hingga implementasi, siapkan satu layanan yang benar-benar dapat diakses orang.",
+        "duration": "16 minggu",
+        "capacity": "20 orang",
+        "target": [
+          "Orang yang mengetahui sintaks pemrograman dasar",
+          "Pencari kerja yang memerlukan portfolio",
+          "Pekerja yang ingin membangun layanan sendiri"
+        ],
+        "prerequisites": [
+          "Pengalaman pemrograman pada tahap sintaks dasar",
+          "Dasar HTML dan CSS"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Lingkungan Pengembangan dan Alat Kerja Sama",
+            "detail": "Tetapkan aliran Git, pengelolaan isu dan aturan review kode sebagai aturan tim."
+          },
+          {
+            "week": "3~6",
+            "topic": "Dasar Frontend",
+            "detail": "Meliputi struktur komponen, pengelolaan state dan layout responsif."
+          },
+          {
+            "week": "7~10",
+            "topic": "Backend dan Data",
+            "detail": "Implementasikan desain API, pemodelan data dan validasi."
+          },
+          {
+            "week": "11~14",
+            "topic": "Proyek Tim",
+            "detail": "Bangun layanan yang direncanakan sebagai tim. Terima review sekali seminggu."
+          },
+          {
+            "week": "15~16",
+            "topic": "Implementasi dan Presentasi",
+            "detail": "Deploy ke domain nyata dan presentasikan hasilnya."
+          }
+        ],
+        "outcomes": [
+          "Satu layanan web yang dapat diakses",
+          "Repositori dan sejarah commit",
+          "Dokumen deployment dan README"
+        ],
+        "careers": [
+          "Developer Web",
+          "Developer Full-Stack Junior",
+          "Pemilik Layanan Internal"
+        ]
+      },
+      {
+        "slug": "ai-agent-basics",
+        "school": "solution",
+        "title": "Kursus Praktis Agen AI",
+        "summary": "Bangun agen yang menangani pekerjaan secara langsung. Kursus ini tentang menggunakan model, bukan membuat model.",
+        "duration": "12 minggu",
+        "capacity": "16 orang",
+        "target": [
+          "Developer yang ditugaskan untuk otomatisasi kerja",
+          "Praktisi yang memeriksa adopsi AI",
+          "Orang yang ingin memahami struktur agen"
+        ],
+        "prerequisites": [
+          "Pengalaman menggunakan Python atau JavaScript",
+          "Pengalaman memanggil API"
+        ],
+        "curriculum": [
+          {
+            "week": "1~3",
+            "topic": "Struktur Agen",
+            "detail": "Tetapkan struktur dasar untuk pemanggilan tool, retrieval augmentation, dan penanganan kegagalan."
+          },
+          {
+            "week": "4~7",
+            "topic": "Integrasi Kerja",
+            "detail": "Jalankan integrasi yang membaca dan menulis dokumen, email dan spreadsheet."
+          },
+          {
+            "week": "8~10",
+            "topic": "Penilaian dan Peningkatan",
+            "detail": "Ukur hasil, tetapkan kriteria, dan tingkatkan secara berulang."
+          },
+          {
+            "week": "11~12",
+            "topic": "Proyek Aplikasi Praktis",
+            "detail": "Setiap orang memilih satu tugas perusahaan dan memindahkannya ke agen."
+          }
+        ],
+        "outcomes": [
+          "Satu agen otomatisasi kerja",
+          "Dokumen kriteria penilaian",
+          "Laporan aplikasi"
+        ],
+        "careers": [
+          "Pemilik Operasi AI",
+          "Engineer Otomatisasi",
+          "Lead Adopsi AI Internal"
+        ]
+      },
+      {
+        "slug": "office-automation",
+        "school": "office",
+        "title": "Kursus Otomatisasi Kantor",
+        "summary": "Kurangi pekerjaan dokumen dan spreadsheet harian berulang dengan alat. Anda dapat mulai tanpa mengetahui kode.",
+        "duration": "8 minggu",
+        "capacity": "24 orang",
+        "target": [
+          "Pekerja dengan banyak tugas kantor berulang",
+          "Orang yang menghabiskan banyak waktu pada kerja Excel",
+          "Manajer yang ingin menyusun pekerjaan departemen"
+        ],
+        "prerequisites": ["Pengalaman penggunaan Excel dasar"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Pecahan Kerja",
+            "detail": "Pecah pekerjaan saat ini menjadi langkah dan cari titik yang dapat diotomatiskan."
+          },
+          {
+            "week": "3~5",
+            "topic": "Otomatisasi Dokumen dan Spreadsheet",
+            "detail": "Kendalikan pengisian formulir, pemeriksaan silang dan penggabungan secara otomatis."
+          },
+          {
+            "week": "6~7",
+            "topic": "Menggunakan Alat AI",
+            "detail": "Lampirkan pembacaan dan ringkasan dokumen ke alur kerja."
+          },
+          {
+            "week": "8",
+            "topic": "Penerapan dan Berbagi",
+            "detail": "Susun hal yang dibangun agar dapat diserahkan kepada tim."
+          }
+        ],
+        "outcomes": ["Tiga tugas diotomatiskan", "Dokumen panduan pengguna"],
+        "careers": [
+          "Pemilik Otomatisasi Kantor",
+          "Pemilik Peningkatan Kerja Departemen"
+        ]
+      },
+      {
+        "slug": "project-management",
+        "school": "project",
+        "title": "Kursus Eksekusi Proyek",
+        "summary": "Pelajari cara menyelesaikan proyek sambil mengurus jadwal dan cakupan melalui kasus nyata.",
+        "duration": "10 minggu",
+        "capacity": "18 orang",
+        "target": [
+          "Orang yang mengambil proyek untuk pertama kali",
+          "Ketua tim yang jadwalnya sering tertunda",
+          "Orang yang harus berkoordinasi dengan klien"
+        ],
+        "prerequisites": ["Pengalaman bekerja sebagai tim"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Definisi Cakupan",
+            "detail": "Mulai dengan menentukan hal yang tidak akan dilakukan."
+          },
+          {
+            "week": "3~5",
+            "topic": "Jadwal dan Risiko",
+            "detail": "Buat anggaran, buffer dan daftar risiko."
+          },
+          {
+            "week": "6~8",
+            "topic": "Implementasi dan Koordinasi",
+            "detail": "Kendalikan permintaan perubahan dan komunikasi pemangku kepentingan."
+          },
+          {
+            "week": "9~10",
+            "topic": "Penutupan dan Retrospektif",
+            "detail": "Akhiri dengan serah terima dan retrospektif."
+          }
+        ],
+        "outcomes": [
+          "Satu rencana proyek",
+          "Dokumen pengelolaan risiko",
+          "Laporan retrospektif"
+        ],
+        "careers": ["Manajer Proyek", "Ketua Tim", "Perancang Layanan"]
+      }
+    ],
+    "page": {
+      "hero": {
+        "eyebrow": "Kursus",
+        "title": "Kursus yang Sedang Dibuka",
+        "lead": "Kursus disusun berdasarkan sekolah. Periksa periode dan sasaran peserta sebelum mendaftar."
+      },
+      "filterAll": "Semua",
+      "fields": {
+        "duration": "Periode",
+        "capacity": "Kapasitas",
+        "target": "Sasaran",
+        "prerequisites": "Prasyarat",
+        "curriculum": "Kurikulum",
+        "outcomes": "Hasil Proyek",
+        "careers": "Jalur Setelah Selesai",
+        "week": "Minggu",
+        "topic": "Topik",
+        "detail": "Konten",
+        "apply": "Daftar Kursus"
+      },
+      "cta": {
+        "title": "Anda dapat bertanya sebelum mendaftar",
+        "desc": "Kami lebih dulu memeriksa apakah Anda dapat mengikuti kursus pada level Anda saat ini.",
+        "primary": {
+          "label": "Daftar Kursus",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Hubungi Kami",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "workspace": {
+    "hero": {
+      "eyebrow": "Kantor Bersama",
+      "title": "Ruang untuk orang yang membangun",
+      "lead": "Ruang kerja di mana pengembangan dan produksi konten dapat diselesaikan dalam satu bangunan."
+    },
+    "concept": {
+      "id": "concept",
+      "eyebrow": "Konsep",
+      "title": "Ruang developer yang mendukung pascaproduksi",
+      "lead": "Ini bukan hanya tempat untuk menulis kode. Ruang ini dibangun agar Anda tidak perlu keluar saat pekerjaan rekaman atau editing diperlukan."
+    },
+    "facilities": {
+      "id": "facilities",
+      "eyebrow": "Fasilitas",
+      "title": "Yang tersedia",
+      "items": [
+        {
+          "title": "Studio Rekaman",
+          "desc": "Ruang ini memiliki ruang kedap suara untuk rekaman narasi dan wawancara.",
+          "art": {
+            "src": "/images/workspace/workspace-studio.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Studio rekaman dengan panel kedap suara, mikrofon dan konsol mixing"
+          }
+        },
+        {
+          "title": "Infrastruktur Produksi Konten",
+          "desc": "Ruang ini menyediakan peralatan dan penyimpanan untuk penyuntingan dan rendering video.",
+          "art": {
+            "src": "/images/workspace/workspace-infra.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Ruang infrastruktur produksi konten dengan workstation, penyimpanan dan rak node render"
+          }
+        },
+        {
+          "title": "Ruang Kerja",
+          "desc": "Kursi tetap, kursi terbuka, dan ruang rapat kecil digunakan bersama.",
+          "art": {
+            "src": "/images/workspace/workspace-desk.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Ruang kerja bersama dengan tempat duduk tetap, tempat duduk terbuka dan ruang rapat kecil"
+          }
+        }
+      ]
+    },
+    "tenants": {
+      "id": "tenants",
+      "eyebrow": "Siapa yang Menggunakannya",
+      "title": "Digunakan oleh orang seperti ini",
+      "items": [
+        "Developer yang bekerja sendiri atau dalam tim kecil",
+        "Tim yang juga membutuhkan pekerjaan video dan audio",
+        "Tim yang mengendalikan bisnis sebagai DevFirm CIC"
+      ]
+    },
+    "pricing": {
+      "id": "pricing",
+      "eyebrow": "Tarif dan Pertanyaan",
+      "title": "Syarat Penggunaan",
+      "note": "Syarat berbeda berdasarkan jenis tempat duduk dan periode penggunaan. Studio beroperasi dengan reservasi. Hubungi kami untuk syarat tepat."
+    },
+    "location": {
+      "id": "location",
+      "eyebrow": "Lokasi",
+      "title": "Seocho-gu, Seoul",
+      "address": "Lantai 2, Gedung Hanyang, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+      "mapTitle": "Peta lokasi DevFirm",
+      "mapLinkLabel": "Lihat di Peta Kakao",
+      "mapHref": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C6%EA%B8%B8%2059-1%20%ED%95%9C%EC%96%91%EB%B9%8C%EB%94%A9%202%EC%B8%B5"
+    },
+    "cta": {
+      "title": "Anda dapat memutuskan setelah berkunjung",
+      "desc": "Kami akan menjadwalkan kunjungan.",
+      "primary": {
+        "label": "Hubungi Kami",
+        "href": "/contact"
+      }
+    }
+  },
+  "forms": {
+    "contact": {
+      "hero": {
+        "eyebrow": "Pertanyaan",
+        "title": "Bagaimana kami dapat membantu",
+        "lead": "Deskripsi singkat sudah cukup. Penanggung jawab akan meninjaunya dan menghubungi Anda."
+      },
+      "types": [
+        {
+          "value": "solution",
+          "label": "Adopsi Solusi AI"
+        },
+        {
+          "value": "development",
+          "label": "Permintaan Pengembangan"
+        },
+        {
+          "value": "staffing",
+          "label": "Staffing"
+        },
+        {
+          "value": "academy",
+          "label": "Akademi"
+        },
+        {
+          "value": "workspace",
+          "label": "Masuk Kantor Bersama"
+        },
+        {
+          "value": "etc",
+          "label": "Lainnya"
+        }
+      ],
+      "labels": {
+        "type": "Jenis Pertanyaan",
+        "name": "Nama",
+        "company": "Perusahaan atau Afiliasi",
+        "email": "Email",
+        "phone": "Nomor Kontak",
+        "message": "Pesan",
+        "consent": "Saya menyetujui pengumpulan dan penggunaan informasi pribadi",
+        "submit": "Kirim Pertanyaan",
+        "submitting": "Mengirim"
+      },
+      "placeholders": {
+        "name": "Hong Gil-dong",
+        "company": "Nama perusahaan (opsional)",
+        "email": "name@example.com",
+        "phone": "010-0000-0000 (opsional)",
+        "message": "Beri tahu kami kondisi Anda dan hal yang Anda perlukan."
+      },
+      "consentNote": "Kami mengumpulkan nama, nomor kontak, email, dan konten pertanyaan Anda untuk memproses dan menjawab pertanyaan. Informasi disimpan selama 3 tahun setelah pemrosesan selesai, lalu dimusnahkan.",
+      "success": {
+        "title": "Pertanyaan diterima",
+        "desc": "Kami akan menghubungi Anda dalam 1 hingga 2 hari kerja."
+      },
+      "error": {
+        "title": "Tidak dapat mengirim",
+        "desc": "Silakan coba lagi sebentar lagi. Jika masih tidak berfungsi, hubungi kami melalui telepon atau email di bawah."
+      }
+    },
+    "apply": {
+      "hero": {
+        "eyebrow": "Pendaftaran Kursus",
+        "title": "Pendaftaran Kursus Akademi",
+        "lead": "Kami menetapkan kursus setelah memastikan bersama apakah kursus sesuai dengan level Anda saat ini."
+      },
+      "levels": [
+        {
+          "value": "none",
+          "label": "Saya baru dalam bidang ini"
+        },
+        {
+          "value": "basic",
+          "label": "Saya mengetahui dasarnya"
+        },
+        {
+          "value": "practical",
+          "label": "Saya memiliki pengalaman praktis"
+        }
+      ],
+      "labels": {
+        "name": "Nama",
+        "email": "Email",
+        "phone": "Nomor Kontak",
+        "course": "Kursus yang Diinginkan",
+        "level": "Tahap Pengalaman",
+        "motivation": "Alasan Mendaftar",
+        "consent": "Saya menyetujui pengumpulan dan penggunaan informasi pribadi",
+        "submit": "Kirim Pendaftaran",
+        "submitting": "Mengirim"
+      },
+      "placeholders": {
+        "name": "Hong Gil-dong",
+        "email": "name@example.com",
+        "phone": "010-0000-0000",
+        "motivation": "Tulis hal yang ingin Anda bangun dan alasan Anda ingin belajar."
+      },
+      "consentNote": "Kami mengumpulkan nama, nomor kontak, email, dan konten pendaftaran Anda untuk konsultasi dan penempatan kursus. Informasi disimpan selama 1 tahun setelah konsultasi berakhir, lalu dimusnahkan.",
+      "success": {
+        "title": "Pendaftaran diterima",
+        "desc": "Penanggung jawab akan meninjaunya dan memberikan jadwal konsultasi."
+      },
+      "error": {
+        "title": "Tidak dapat mengirim",
+        "desc": "Silakan coba lagi sebentar lagi."
+      }
+    },
+    "validation": {
+      "required": "Kolom ini wajib diisi",
+      "nameTooShort": "Silakan masukkan nama Anda",
+      "emailInvalid": "Format email tidak valid",
+      "phoneInvalid": "Format nomor kontak tidak valid",
+      "messageTooShort": "Silakan masukkan minimal 10 karakter",
+      "consentRequired": "Anda harus menyetujui sebelum mengirim",
+      "tooFast": "Silakan coba lagi sebentar lagi",
+      "expired": "Waktu input telah kedaluwarsa. Muat ulang dan coba lagi.",
+      "serverError": "Terjadi masalah selama pemrosesan"
+    }
+  },
+  "legal": {
+    "ui": {
+      "updatedAtLabel": "Terakhir diperbarui"
+    },
+    "privacy": {
+      "title": "Kebijakan Privasi",
+      "intro": "CMNYX Co., Ltd. (selanjutnya disebut \"Perusahaan\") menghargai informasi pribadi pengguna dan mematuhi hukum dan peraturan terkait. Kebijakan ini berlaku untuk situs web yang dijalankan oleh Perusahaan.",
+      "sections": [
+        {
+          "id": "items",
+          "title": "1. Item Informasi Pribadi yang Dikumpulkan",
+          "body": [
+            "Perusahaan mengumpulkan informasi pribadi hanya melalui formulir pertanyaan dan pendaftaran kursus di situs web.",
+            "Hubungi Kami: nama, email, nomor kontak (opsional), perusahaan atau afiliasi (opsional), konten pertanyaan",
+            "Pendaftaran kursus: nama, email, nomor kontak, kursus yang diinginkan, level pengalaman, alasan mendaftar",
+            "Perusahaan tidak menggunakan alat analitik atau cookie iklan yang melacak perilaku pengunjung. Oleh karena itu, informasi pribadi tidak dikumpulkan hanya dengan menggunakan situs web."
+          ]
+        },
+        {
+          "id": "purpose",
+          "title": "2. Tujuan Pengumpulan dan Penggunaan",
+          "body": [
+            "Menjawab pertanyaan dan menjalankan konsultasi",
+            "Menerima pendaftaran kursus, menetapkan kursus, dan memberikan panduan"
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "3. Periode Retensi dan Penggunaan",
+          "body": [
+            "Informasi pertanyaan: disimpan selama 3 tahun setelah pemrosesan selesai dan dimusnahkan tanpa penundaan.",
+            "Informasi pendaftaran kursus: disimpan selama 1 tahun setelah konsultasi berakhir dan dimusnahkan tanpa penundaan.",
+            "Jika subjek data meminta pemusnahan, informasi dimusnahkan segera."
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "4. Pemberian kepada Pihak Ketiga dan Pendelegasian Pemrosesan",
+          "body": [
+            "Perusahaan tidak memberikan informasi pribadi pengguna kepada pihak ketiga.",
+            "Namun, Perusahaan menggunakan layanan pengiriman email untuk menyampaikan konten pertanyaan kepada penanggung jawab, dan konten yang dimasukkan dikirim dalam proses ini."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "5. Hak Subjek Data",
+          "body": [
+            "Pengguna dapat meminta akses, perbaikan, penghapusan, atau penghentian pemrosesan informasi pribadi mereka kapan saja.",
+            "Permintaan dapat diajukan ke contact@devfirm.co atau 02-2058-0680, dan Perusahaan akan mengambil tindakan tanpa penundaan."
+          ]
+        },
+        {
+          "id": "manager",
+          "title": "6. Petugas Perlindungan Informasi Pribadi",
+          "body": [
+            "Departemen Dukungan Bisnis CMNYX Co., Ltd.",
+            "Email: contact@devfirm.co",
+            "Telepon: 02-2058-0680"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "7. Perubahan atas Kebijakan Ini",
+          "body": [
+            "Jika kebijakan ini berubah, Perusahaan akan mengumumkan perubahan dan tanggal berlaku melalui situs web."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Ketentuan Layanan",
+      "intro": "Ketentuan ini menetapkan syarat penggunaan situs web yang dijalankan oleh CMNYX Co., Ltd. (selanjutnya disebut \"Perusahaan\").",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "1. Tujuan",
+          "body": [
+            "Ketentuan ini menetapkan hak, kewajiban, dan tanggung jawab Perusahaan serta pengguna terkait penggunaan layanan situs web yang disediakan oleh Perusahaan."
+          ]
+        },
+        {
+          "id": "service",
+          "title": "2. Konten Layanan",
+          "body": [
+            "Perusahaan menyediakan informasi perusahaan dan layanan melalui situs web serta menerima pertanyaan dan pendaftaran kursus.",
+            "Pendaftaran keanggotaan terpisah tidak diperlukan untuk menggunakan situs web."
+          ]
+        },
+        {
+          "id": "obligations",
+          "title": "3. Kewajiban Pengguna",
+          "body": [
+            "Pengguna tidak boleh menyalahgunakan informasi orang lain atau memasukkan informasi palsu.",
+            "Pengguna tidak boleh mereproduksi, mendistribusikan, atau menggunakan konten situs web secara komersial tanpa persetujuan sebelumnya Perusahaan."
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "4. Hak Cipta",
+          "body": [
+            "Hak cipta bagi teks, gambar dan materi yang diposting di situs web adalah milik Perusahaan."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "5. Batasan Tanggung Jawab",
+          "body": [
+            "Perusahaan tidak bertanggung jawab atas gangguan layanan yang disebabkan oleh kondisi kahar, seperti bencana alam atau kegagalan komunikasi.",
+            "Informasi yang diposting di situs web bersifat referensi, dan syarat kontrak khusus diatur oleh konsultasi dan kontrak terpisah."
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "title": "6. Yurisdiksi",
+          "body": [
+            "Sengketa terkait Ketentuan ini tunduk pada yurisdiksi pengadilan yang berwenang atas lokasi kantor pusat Perusahaan."
+          ]
+        }
+      ]
+    },
+    "updatedAt": "2026-07-28"
+  },
+  "seo": {
+    "home": {
+      "description": "Physical AI untuk lokasi industri, Manajer Choi AI untuk kantor. DevFirm, perusahaan pengembangan yang dipimpin developer, menyediakan solusi AI, pengembangan perangkat lunak, penempatan developer, dan Akademi PBL."
+    },
+    "page": {
+      "about": {
+        "title": "Tentang Kami",
+        "description": "Perusahaan pengembangan tempat developer berkumpul, seperti pengacara berkumpul di firma hukum. Pelajari cara DevFirm beroperasi: dukungan bisnis mengurus kontrak dan penyelesaian pembayaran, dan developer berfokus pada pengembangan."
+      },
+      "cic": {
+        "title": "Company In Company (CIC)",
+        "description": "Sistem Company In Company untuk developer mengendalikan bisnis sendiri di dalam DevFirm. Lihat syarat partisipasi, cakupan dukungan, dan roadmap peningkatan agen AI."
+      },
+      "careers": {
+        "title": "Karier Developer",
+        "description": "DevFirm mengambil developer untuk bekerja bersama kami. Periksa tanggung jawab, persyaratan, dan syarat kerja bagi posisi yang sedang dibuka."
+      },
+      "solutions": {
+        "title": "Solusi AI",
+        "description": "Kami menyediakan Physical AI untuk lokasi industri, Manajer Choi AI untuk kantor, dan agen AI untuk enam industri: konstruksi, konten, pembuatan, distribusi, operasi layanan, dan pencegahan kejahatan."
+      },
+      "officeAi": {
+        "title": "Manajer Choi AI - Agen Area Kerja Kantor",
+        "description": "Agen AI yang mengendalikan kerja kantor berulang seperti membaca dan menyusun dokumen serta menulis laporan. Lihat metode adopsi dan kasus penggunaan."
+      },
+      "physicalAi": {
+        "title": "Physical AI - Agen Lokasi Industri",
+        "description": "AI untuk lokasi industri yang mengubah pembacaan kamera dan sensor menjadi penilaian yang dapat digunakan manusia. Lihat kemampuan teknis dan industri terkait."
+      },
+      "services": {
+        "title": "Jasa Pengembangan",
+        "description": "Pengembangan perangkat lunak menyeluruh dan penempatan developer. Layanan pengembangan DevFirm menyediakan pekerjaan dan orang yang mengerjakannya."
+      },
+      "software": {
+        "title": "Pengembangan Perangkat Lunak Menyeluruh",
+        "description": "Kami menangani pengembangan web, aplikasi, AI, dan sistem. Periksa proses dan standar kualitas deliverable lebih dulu."
+      },
+      "staffing": {
+        "title": "Penempatan Developer dan Outsourcing",
+        "description": "Kami menempatkan tenaga pengembangan di lokasi, secara remote atau berdasarkan proyek. Karena pihak kontrak adalah perusahaan, beban pengelolaan klien berkurang."
+      },
+      "academy": {
+        "title": "Akademi PBL",
+        "description": "Pelatihan praktis yang menyelesaikan kurikulum NCS melalui proyek. Kami menjalankan Sekolah Pengembangan Solusi, Sekolah Kerja Kantor Umum dan Sekolah Kerja Proyek."
+      },
+      "courses": {
+        "title": "Kursus",
+        "description": "Daftar lengkap kursus Akademi PBL DevFirm. Periksa periode, kapasitas, sasaran peserta dan kurikulum berdasarkan sekolah."
+      },
+      "apply": {
+        "title": "Pendaftaran Kursus",
+        "description": "Kirim pendaftaran kursus Akademi PBL. Tinggalkan kursus yang diinginkan dan level pengalaman Anda, lalu penanggung jawab akan menghubungi Anda."
+      },
+      "workspace": {
+        "title": "Kantor Bersama Developer",
+        "description": "Kantor bersama developer khusus untuk pascaproduksi, dengan studio rekaman dan infrastruktur produksi konten. Lihat fasilitas dan syarat masuk."
+      },
+      "contact": {
+        "title": "Hubungi Kami",
+        "description": "Kami menerima pertanyaan tentang adopsi solusi, permintaan pengembangan, staffing, program akademi dan masuk kantor. Lantai 2, Gedung Hanyang, Gangnam-daero 6-gil, Seocho-gu, Seoul."
+      },
+      "privacy": {
+        "title": "Kebijakan Privasi",
+        "description": "Informasi tentang informasi pribadi yang dikumpulkan DevFirm, tujuan penggunaan, periode penyimpanan, dan hak pengguna."
+      },
+      "terms": {
+        "title": "Ketentuan Layanan",
+        "description": "Ketentuan penggunaan situs web DevFirm."
+      }
+    },
+    "ogImageAlt": "DevFirm - perusahaan pengembangan yang dipimpin developer. Physical AI untuk lokasi industri, Manajer Choi AI untuk kantor."
+  }
+}

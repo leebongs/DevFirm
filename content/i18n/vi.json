@@ -1,0 +1,2304 @@
+{
+  "site": {
+    "nameKo": "DevFirm",
+    "legalName": "Công ty Cổ phần CMNYX",
+    "footerBrand": "DevFirm CIC",
+    "brand": "Computing Management",
+    "tagline": "DevFirm, pháp nhân phát triển phần mềm do các lập trình viên tập hợp",
+    "addressFull": "Tầng 2, Tòa nhà Hanyang, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+    "addressLocality": "Seocho-gu",
+    "addressRegion": "Seoul"
+  },
+  "ui": {
+    "nav": {
+      "openMenu": "Mở menu",
+      "closeMenu": "Đóng menu",
+      "mainNavLabel": "Menu chính",
+      "sectionNavLabel": "Menu mục",
+      "breadcrumbLabel": "Vị trí hiện tại",
+      "home": "Trang chủ",
+      "skipToContent": "Chuyển đến nội dung",
+      "externalLink": "Mở trong cửa sổ mới"
+    },
+    "toc": {
+      "title": "Nội dung trang này"
+    },
+    "error": {
+      "notFoundTitle": "Không tìm thấy trang",
+      "notFoundBody": "Địa chỉ có thể đã thay đổi hoặc trang đã bị xóa. Hãy dùng các liên kết bên dưới để tiếp tục.",
+      "errorTitle": "Đã xảy ra sự cố",
+      "errorBody": "Vui lòng thử lại sau ít phút. Nếu sự cố tiếp diễn, hãy liên hệ với chúng tôi.",
+      "retry": "Thử lại",
+      "goHome": "Về trang chủ"
+    },
+    "footer": {
+      "businessNumberLabel": "Mã đăng ký kinh doanh",
+      "addressLabel": "Địa chỉ",
+      "telLabel": "Điện thoại"
+    }
+  },
+  "nav": {
+    "mainNav": [
+      {
+        "label": "Giới thiệu",
+        "href": "/about",
+        "description": "Cách một pháp nhân phát triển do các lập trình viên tập hợp làm việc",
+        "children": [
+          {
+            "label": "DevFirm là gì",
+            "href": "/about",
+            "description": "Mô hình pháp nhân phát triển làm việc như một công ty luật"
+          },
+          {
+            "label": "Công ty trong công ty (CIC)",
+            "href": "/about/cic",
+            "description": "Cấu trúc để lập trình viên vận hành hoạt động kinh doanh của mình"
+          },
+          {
+            "label": "Tuyển dụng lập trình viên",
+            "href": "/about/careers",
+            "description": "Các vị trí đang tuyển"
+          }
+        ]
+      },
+      {
+        "label": "Giải pháp AI",
+        "href": "/solutions",
+        "description": "Physical AI cho hiện trường công nghiệp, Trưởng phòng Choi AI cho văn phòng",
+        "children": [
+          {
+            "label": "Trưởng phòng Choi AI",
+            "href": "/solutions/office-ai",
+            "description": "Agent thay thế các công việc lặp lại tại văn phòng"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai",
+            "description": "Agent quan sát và đưa ra phán đoán tại hiện trường công nghiệp"
+          },
+          {
+            "label": "AI xây dựng",
+            "href": "/solutions/agents/construction",
+            "description": "Tự động hóa quản lý tiến độ, an toàn và vật tư"
+          },
+          {
+            "label": "AI nội dung",
+            "href": "/solutions/agents/content",
+            "description": "Hỗ trợ lập kế hoạch, sản xuất và hậu kỳ"
+          },
+          {
+            "label": "AI quy trình sản xuất",
+            "href": "/solutions/agents/manufacturing",
+            "description": "Giám sát thiết bị, chất lượng và tỷ lệ đạt"
+          },
+          {
+            "label": "AI quản lý phân phối",
+            "href": "/solutions/agents/distribution",
+            "description": "Tồn kho, logistics và dự báo nhu cầu"
+          },
+          {
+            "label": "AI dịch vụ nhân lực",
+            "href": "/solutions/agents/service",
+            "description": "Phân bổ nhân sự, chấm công và quyết toán"
+          },
+          {
+            "label": "AI phòng ngừa tội phạm",
+            "href": "/solutions/agents/safety",
+            "description": "Phát hiện dấu hiệu bất thường dựa trên phân tích video"
+          }
+        ]
+      },
+      {
+        "label": "Dịch vụ phát triển",
+        "href": "/services",
+        "description": "Cung cấp cả việc cần làm và người làm ra sản phẩm",
+        "children": [
+          {
+            "label": "Phát triển phần mềm tổng hợp",
+            "href": "/services/software",
+            "description": "Xây dựng web, app, AI và hệ thống"
+          },
+          {
+            "label": "Cử nhân sự phát triển",
+            "href": "/services/staffing",
+            "description": "Bố trí tại chỗ, từ xa hoặc theo dự án"
+          }
+        ]
+      },
+      {
+        "label": "Academy",
+        "href": "/academy",
+        "description": "Học theo dự án (PBL) dựa trên chương trình NCS",
+        "children": [
+          {
+            "label": "Thông tin khóa học",
+            "href": "/academy/courses",
+            "description": "Danh sách khóa học của ba school"
+          },
+          {
+            "label": "Đăng ký học",
+            "href": "/academy/apply",
+            "description": "Tiếp nhận đơn đăng ký khóa học"
+          }
+        ]
+      },
+      {
+        "label": "Văn phòng chia sẻ",
+        "href": "/workspace",
+        "description": "Không gian làm việc cho lập trình viên, chuyên về hậu kỳ"
+      }
+    ],
+    "footerNav": [
+      {
+        "label": "Công ty",
+        "href": "/about",
+        "children": [
+          {
+            "label": "DevFirm là gì",
+            "href": "/about"
+          },
+          {
+            "label": "Công ty trong công ty (CIC)",
+            "href": "/about/cic"
+          },
+          {
+            "label": "Tuyển dụng lập trình viên",
+            "href": "/about/careers"
+          }
+        ]
+      },
+      {
+        "label": "Giải pháp AI",
+        "href": "/solutions",
+        "children": [
+          {
+            "label": "Tất cả giải pháp AI",
+            "href": "/solutions"
+          },
+          {
+            "label": "Trưởng phòng Choi AI",
+            "href": "/solutions/office-ai"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai"
+          },
+          {
+            "label": "AI xây dựng",
+            "href": "/solutions/agents/construction"
+          },
+          {
+            "label": "AI nội dung",
+            "href": "/solutions/agents/content"
+          },
+          {
+            "label": "AI quy trình sản xuất",
+            "href": "/solutions/agents/manufacturing"
+          },
+          {
+            "label": "AI quản lý phân phối",
+            "href": "/solutions/agents/distribution"
+          },
+          {
+            "label": "AI dịch vụ nhân lực",
+            "href": "/solutions/agents/service"
+          },
+          {
+            "label": "AI phòng ngừa tội phạm",
+            "href": "/solutions/agents/safety"
+          }
+        ]
+      },
+      {
+        "label": "Dịch vụ · Đào tạo",
+        "href": "/services",
+        "children": [
+          {
+            "label": "Tất cả dịch vụ phát triển",
+            "href": "/services"
+          },
+          {
+            "label": "Phát triển phần mềm tổng hợp",
+            "href": "/services/software"
+          },
+          {
+            "label": "Cử nhân sự phát triển",
+            "href": "/services/staffing"
+          },
+          {
+            "label": "PBL Academy",
+            "href": "/academy"
+          },
+          {
+            "label": "Thông tin khóa học",
+            "href": "/academy/courses"
+          },
+          {
+            "label": "Đăng ký học",
+            "href": "/academy/apply"
+          },
+          {
+            "label": "Văn phòng chia sẻ",
+            "href": "/workspace"
+          }
+        ]
+      },
+      {
+        "label": "Liên hệ · Điều khoản",
+        "href": "/contact",
+        "children": [
+          {
+            "label": "Liên hệ",
+            "href": "/contact"
+          },
+          {
+            "label": "Chính sách quyền riêng tư",
+            "href": "/privacy"
+          },
+          {
+            "label": "Điều khoản sử dụng",
+            "href": "/terms"
+          }
+        ]
+      }
+    ],
+    "sectionNav": {
+      "/about": [
+        {
+          "label": "DevFirm là gì",
+          "href": "/about",
+          "description": "Mô hình pháp nhân phát triển làm việc như một công ty luật"
+        },
+        {
+          "label": "Công ty trong công ty (CIC)",
+          "href": "/about/cic",
+          "description": "Cấu trúc để lập trình viên vận hành hoạt động kinh doanh của mình"
+        },
+        {
+          "label": "Tuyển dụng lập trình viên",
+          "href": "/about/careers",
+          "description": "Các vị trí đang tuyển"
+        }
+      ],
+      "/solutions": [
+        {
+          "label": "Trưởng phòng Choi AI",
+          "href": "/solutions/office-ai",
+          "description": "Agent thay thế các công việc lặp lại tại văn phòng"
+        },
+        {
+          "label": "Physical AI",
+          "href": "/solutions/physical-ai",
+          "description": "Agent quan sát và đưa ra phán đoán tại hiện trường công nghiệp"
+        },
+        {
+          "label": "AI xây dựng",
+          "href": "/solutions/agents/construction",
+          "description": "Tự động hóa quản lý tiến độ, an toàn và vật tư"
+        },
+        {
+          "label": "AI nội dung",
+          "href": "/solutions/agents/content",
+          "description": "Hỗ trợ lập kế hoạch, sản xuất và hậu kỳ"
+        },
+        {
+          "label": "AI quy trình sản xuất",
+          "href": "/solutions/agents/manufacturing",
+          "description": "Giám sát thiết bị, chất lượng và tỷ lệ đạt"
+        },
+        {
+          "label": "AI quản lý phân phối",
+          "href": "/solutions/agents/distribution",
+          "description": "Tồn kho, logistics và dự báo nhu cầu"
+        },
+        {
+          "label": "AI dịch vụ nhân lực",
+          "href": "/solutions/agents/service",
+          "description": "Phân bổ nhân sự, chấm công và quyết toán"
+        },
+        {
+          "label": "AI phòng ngừa tội phạm",
+          "href": "/solutions/agents/safety",
+          "description": "Phát hiện dấu hiệu bất thường dựa trên phân tích video"
+        }
+      ],
+      "/services": [
+        {
+          "label": "Phát triển phần mềm tổng hợp",
+          "href": "/services/software",
+          "description": "Xây dựng web, app, AI và hệ thống"
+        },
+        {
+          "label": "Cử nhân sự phát triển",
+          "href": "/services/staffing",
+          "description": "Bố trí tại chỗ, từ xa hoặc theo dự án"
+        }
+      ],
+      "/academy": [
+        {
+          "label": "Thông tin khóa học",
+          "href": "/academy/courses",
+          "description": "Danh sách khóa học của ba school"
+        },
+        {
+          "label": "Đăng ký học",
+          "href": "/academy/apply",
+          "description": "Tiếp nhận đơn đăng ký khóa học"
+        }
+      ]
+    },
+    "primaryCta": {
+      "label": "Liên hệ",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DevFirm",
+      "title": "DevFirm, pháp nhân phát triển phần mềm do các lập trình viên tập hợp",
+      "lead": "Như các luật sư tập hợp trong công ty luật để nhận vụ việc, các lập trình viên tập hợp tại DevFirm để nhận phát triển phần mềm. Công ty phụ trách hợp đồng và quyết toán, còn lập trình viên tập trung vào việc tạo ra sản phẩm.",
+      "primaryCta": {
+        "label": "Liên hệ",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "Xem giải pháp AI",
+        "href": "/solutions"
+      }
+    },
+    "slogan": {
+      "title": "Hiện trường khác nhau thì AI cần thiết cũng khác nhau",
+      "left": {
+        "eyebrow": "Hiện trường công nghiệp",
+        "name": "Physical AI",
+        "desc": "Dùng ở nơi cần quan sát và phán đoán. Nó chuyển những gì camera và cảm biến đọc được thành phán đoán con người có thể sử dụng.",
+        "href": "/solutions/physical-ai"
+      },
+      "right": {
+        "eyebrow": "Văn phòng",
+        "name": "Trưởng phòng Choi AI",
+        "desc": "Thay thế các công việc văn phòng lặp lại. Nó đảm nhận cả việc đọc, sắp xếp tài liệu và lập báo cáo.",
+        "href": "/solutions/office-ai"
+      }
+    },
+    "audience": {
+      "eyebrow": "Bạn đến vì nhu cầu nào",
+      "title": "Chúng tôi hiển thị trước điều bạn đang tìm",
+      "cards": [
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-client.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Khách hàng doanh nghiệp",
+          "desc": "Khi cần triển khai AI hoặc nhân sự phát triển",
+          "href": "/solutions",
+          "linkLabel": "Xem giải pháp AI"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-learner.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Người muốn học",
+          "desc": "Khi muốn học thực tế qua dự án",
+          "href": "/academy",
+          "linkLabel": "Xem Academy"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-developer.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Lập trình viên làm cùng",
+          "desc": "Khi muốn gia nhập hoặc vận hành CIC",
+          "href": "/about/careers",
+          "linkLabel": "Xem tuyển dụng"
+        }
+      ]
+    },
+    "agentsSection": {
+      "eyebrow": "AI agent theo ngành",
+      "title": "Với hỗ trợ từ trợ lý AI theo lĩnh vực, bạn chỉ cần ra quyết định",
+      "lead": "Agent sắp xếp trước các phán đoán lặp lại của sáu ngành. Con người chỉ can thiệp ở những điểm cần phán đoán."
+    },
+    "model": {
+      "eyebrow": "Mô hình DevFirm",
+      "title": "Điều công ty luật làm cho luật sư, DevFirm làm cho lập trình viên",
+      "lead": "Lập trình viên dành thời gian cho việc tạo ra sản phẩm thay vì bán hàng, hợp đồng, quyết toán và thuế. Bên đặt hàng ký hợp đồng với pháp nhân, không phải cá nhân.",
+      "comparison": {
+        "leftLabel": "Công ty luật",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Luật sư",
+            "right": "Lập trình viên"
+          },
+          {
+            "left": "Nhận vụ việc",
+            "right": "Nhận dự án"
+          },
+          {
+            "left": "Văn phòng phụ trách hành chính",
+            "right": "Bộ phận hỗ trợ quản trị phụ trách back office"
+          },
+          {
+            "left": "Luật sư đối tác",
+            "right": "Đại diện CIC"
+          },
+          {
+            "left": "Khách hàng ký với pháp nhân",
+            "right": "Bên đặt hàng ký với pháp nhân"
+          }
+        ]
+      },
+      "note": "Với bên đặt hàng, rủi ro khi ký hợp đồng với freelancer cá nhân được loại bỏ. Với lập trình viên, những việc khó gánh một mình cũng được loại bỏ."
+    },
+    "bands": {
+      "academy": {
+        "eyebrow": "PBL Academy",
+        "title": "Học bằng cách làm",
+        "desc": "Chương trình NCS được triển khai thành dự án. Khi hoàn thành, học viên có sản phẩm để đưa vào hồ sơ.",
+        "href": "/academy",
+        "linkLabel": "Xem khóa học"
+      },
+      "workspace": {
+        "eyebrow": "Văn phòng chia sẻ",
+        "title": "Không gian làm việc hỗ trợ cả hậu kỳ",
+        "desc": "Văn phòng chia sẻ cho lập trình viên, có phòng thu âm và hạ tầng sản xuất nội dung.",
+        "href": "/workspace",
+        "linkLabel": "Xem không gian"
+      }
+    },
+    "trust": {
+      "eyebrow": "Công ty",
+      "title": "Từ năm 2007",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "Thành lập"
+        },
+        {
+          "value": "CIC",
+          "label": "Vận hành CIC"
+        },
+        {
+          "value": "Seoul Seocho",
+          "label": "Gần Gangnam-daero"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Bạn chưa cần xác định sẽ xây dựng gì",
+      "desc": "Hãy cho chúng tôi biết tình hình hiện tại. Chúng tôi sẽ cùng sắp xếp nên bắt đầu từ đâu.",
+      "cta": {
+        "label": "Liên hệ",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Giới thiệu công ty",
+      "title": "Pháp nhân phát triển do các lập trình viên tập hợp",
+      "lead": "DevFirm là công ty tạo cấu trúc để lập trình viên chỉ cần tập trung vào phát triển. Các việc còn lại do công ty đảm nhận."
+    },
+    "metaphor": {
+      "id": "model",
+      "eyebrow": "Mô hình DevFirm",
+      "title": "Chúng tôi chuyển cấu trúc công ty luật sang lĩnh vực phát triển",
+      "lead": "Như luật sư tập trung vào vụ việc với sự hỗ trợ của văn phòng, lập trình viên của DevFirm tập trung vào phát triển với sự hỗ trợ của bộ phận hỗ trợ quản trị.",
+      "comparison": {
+        "leftLabel": "Công ty luật",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Luật sư nhận vụ việc",
+            "right": "Lập trình viên nhận dự án"
+          },
+          {
+            "left": "Văn phòng xử lý hành chính",
+            "right": "Bộ phận hỗ trợ quản trị xử lý back office"
+          },
+          {
+            "left": "Khách hàng ký với pháp nhân",
+            "right": "Bên đặt hàng ký với pháp nhân"
+          },
+          {
+            "left": "Trở thành đối tác thì có cổ phần",
+            "right": "Trở thành đại diện CIC thì có hoạt động kinh doanh"
+          }
+        ]
+      }
+    },
+    "backoffice": {
+      "id": "backoffice",
+      "eyebrow": "Bộ phận hỗ trợ quản trị",
+      "title": "Những việc lập trình viên không cần làm",
+      "lead": "Đây là những hạng mục chiếm nhiều thời gian nhất của lập trình viên làm việc một mình. Tại DevFirm, những việc này không nằm trên bàn làm việc của lập trình viên.",
+      "items": [
+        {
+          "title": "Hợp đồng và đàm phán",
+          "desc": "Pháp nhân có hợp đồng mẫu và quy trình rà soát. Lập trình viên không tự mình phán đoán các điều khoản bất lợi."
+        },
+        {
+          "title": "Thuế và quyết toán",
+          "desc": "Công ty xử lý phát hành hóa đơn thuế, khấu trừ tại nguồn và kê khai VAT."
+        },
+        {
+          "title": "Thu hồi thanh toán",
+          "desc": "Pháp nhân phụ trách quản lý và nhắc nợ. Lập trình viên không phải căng thẳng với bên đặt hàng về chuyện tiền bạc."
+        },
+        {
+          "title": "Bốn bảo hiểm chính và lao động",
+          "desc": "Công ty thực hiện khai báo và quản lý lao động phù hợp với hình thức làm việc."
+        }
+      ]
+    },
+    "history": {
+      "id": "history",
+      "eyebrow": "Lịch sử",
+      "title": "Từ năm 2007",
+      "items": [
+        {
+          "year": "2007",
+          "title": "Thành lập pháp nhân",
+          "desc": "Bắt đầu phát triển phần mềm và xây dựng hệ thống."
+        },
+        {
+          "year": "2010s",
+          "title": "Cử nhân sự phát triển · Outsourcing",
+          "desc": "Mở rộng dịch vụ bằng bố trí tại chỗ và theo dự án."
+        },
+        {
+          "year": "2020s",
+          "title": "Áp dụng CIC",
+          "desc": "Tạo cấu trúc để lập trình viên vận hành hoạt động kinh doanh của mình trong công ty."
+        },
+        {
+          "year": "Hiện nay",
+          "title": "Kinh doanh AI agent",
+          "desc": "Tái cấu trúc hoạt động kinh doanh quanh Physical AI cho hiện trường công nghiệp và Trưởng phòng Choi AI cho văn phòng."
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "eyebrow": "Tổng quan công ty",
+      "title": "Thông tin cơ bản"
+    },
+    "cta": {
+      "title": "Có ba cách làm việc với DevFirm",
+      "desc": "Gặp chúng tôi với tư cách bên đặt hàng, gia nhập với tư cách lập trình viên, hoặc bắt đầu tại Academy.",
+      "primary": {
+        "label": "Liên hệ",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Xem tuyển dụng",
+        "href": "/about/careers"
+      }
+    }
+  },
+  "cic": {
+    "hero": {
+      "eyebrow": "Công ty độc lập nội bộ",
+      "title": "Vận hành hoạt động kinh doanh của mình trong công ty",
+      "lead": "CIC(Company In Company) là chế độ để lập trình viên đặt và vận hành đơn vị kinh doanh của mình bên trong DevFirm. Họ sử dụng uy tín pháp nhân và back office, đồng thời tự quyết định hướng đi của hoạt động kinh doanh."
+    },
+    "what": {
+      "id": "what",
+      "eyebrow": "CIC là gì",
+      "title": "Giảm rủi ro khởi nghiệp, giữ lại quyền tự chủ của khởi nghiệp",
+      "lead": "Nếu tự thành lập pháp nhân, bạn phải xây dựng uy tín và hành chính từ đầu. CIC mượn hai yếu tố đó từ công ty, còn quyền quyết định kinh doanh thuộc về người đại diện.",
+      "items": [
+        {
+          "title": "Sử dụng uy tín pháp nhân",
+          "desc": "Bên đặt hàng ký hợp đồng với pháp nhân thành lập từ năm 2007, không phải một hộ kinh doanh cá nhân mới."
+        },
+        {
+          "title": "Sử dụng back office",
+          "desc": "Bộ phận hỗ trợ quản trị xử lý hợp đồng, thuế, quyết toán và lao động."
+        },
+        {
+          "title": "Người đại diện quyết định kinh doanh",
+          "desc": "Đại diện CIC quyết định nhận việc gì và xây dựng đội ngũ như thế nào."
+        },
+        {
+          "title": "Kết quả được quyết toán theo đơn vị kinh doanh",
+          "desc": "Phân bổ dựa trên kết quả kinh doanh, không phải lương tháng."
+        }
+      ]
+    },
+    "operation": {
+      "id": "operation",
+      "eyebrow": "Cách vận hành",
+      "title": "DevFirm vận hành theo cách này",
+      "steps": [
+        "Thảo luận kế hoạch kinh doanh",
+        "Thành lập CIC · thỏa thuận điều kiện",
+        "Nhận dự án · lập đội",
+        "Quyết toán kết quả · tái đầu tư"
+      ]
+    },
+    "roadmap": {
+      "id": "roadmap",
+      "eyebrow": "Lộ trình",
+      "title": "Nâng cấp agent AI",
+      "lead": "Mỗi CIC tạo agent cho miền của mình, còn công ty tạo nền tảng dùng chung cho các agent đó. Kiến thức miền tích lũy trong CIC, công nghệ chung tích lũy trong công ty.",
+      "items": [
+        {
+          "title": "Bảo đảm dữ liệu miền",
+          "desc": "CIC thu thập dữ liệu thực tế và tiêu chí phán đoán tại hiện trường mình phụ trách."
+        },
+        {
+          "title": "Xây dựng nền tảng chung",
+          "desc": "Công ty xây dựng các chức năng chung như đọc hiểu, tìm kiếm và báo cáo để mọi CIC sử dụng."
+        },
+        {
+          "title": "Sản phẩm hóa agent",
+          "desc": "Đóng gói các phán đoán đã được kiểm chứng thành sản phẩm agent theo ngành."
+        }
+      ]
+    },
+    "conditions": {
+      "id": "conditions",
+      "eyebrow": "Điều kiện tham gia",
+      "title": "Chúng tôi làm cùng những người như sau",
+      "items": [
+        "Kinh nghiệm tự tạo ra công việc trong miền phụ trách",
+        "Thái độ chịu trách nhiệm với sản phẩm đầu ra",
+        "Ý chí xây dựng và vận hành đội ngũ"
+      ],
+      "note": "Chúng tôi xem người đó có thể tạo ra một hoạt động kinh doanh tự vận hành hay không, hơn là số năm kinh nghiệm. Hiện tại chưa có đội ngũ cũng không sao."
+    },
+    "cta": {
+      "title": "Nếu bạn đang nghĩ đến việc bắt đầu bằng CIC",
+      "desc": "Hãy cho chúng tôi biết bạn đang hình dung hoạt động kinh doanh nào. Điều kiện sẽ được xác định theo tính chất kinh doanh.",
+      "primary": {
+        "label": "Liên hệ",
+        "href": "/contact"
+      }
+    }
+  },
+  "careers": {
+    "page": {
+      "hero": {
+        "eyebrow": "Tuyển dụng",
+        "title": "Chúng tôi tìm lập trình viên để cùng xây dựng",
+        "lead": "DevFirm là công ty tạo cấu trúc để lập trình viên tập trung vào phát triển. Chúng tôi tìm người cùng sử dụng cấu trúc đó."
+      },
+      "emptyState": "Hiện không có tin tuyển dụng đang mở. Hồ sơ ứng tuyển thường xuyên được tiếp nhận qua mục liên hệ.",
+      "statusLabel": {
+        "open": "Đang tuyển",
+        "closed": "Đã đóng"
+      },
+      "fields": {
+        "responsibilities": "Công việc phụ trách",
+        "requirements": "Yêu cầu",
+        "preferred": "Ưu tiên",
+        "conditions": "Điều kiện làm việc",
+        "deadline": "Hạn nộp",
+        "apply": "Ứng tuyển"
+      },
+      "cta": {
+        "title": "Ngay cả khi chưa có vị trí phù hợp",
+        "desc": "Hãy cho chúng tôi biết bạn muốn làm việc gì. Chúng tôi sẽ cùng tìm vị trí. Cũng có cách bắt đầu bằng CIC.",
+        "primary": {
+          "label": "Liên hệ",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Tìm hiểu CIC",
+          "href": "/about/cic"
+        }
+      }
+    },
+    "jobs": [
+      {
+        "slug": "ai-engineer",
+        "title": "Kỹ sư AI agent",
+        "team": "Giải pháp AI",
+        "employmentType": "Nhân viên chính thức",
+        "status": "open",
+        "deadline": "Thường xuyên",
+        "responsibilities": [
+          "Thiết kế và triển khai pipeline đọc hiểu, suy luận cho AI agent theo ngành",
+          "Sắp xếp tuyến thu thập dữ liệu hiện trường và kiểm chứng chất lượng",
+          "Tinh chỉnh độ chính xác tại hiện trường triển khai và xử lý vấn đề vận hành"
+        ],
+        "requirements": [
+          "Từ 3 năm kinh nghiệm thực tế với pipeline dữ liệu và mô hình dựa trên Python",
+          "Kinh nghiệm đưa mô hình lên vận hành trong dịch vụ thực tế",
+          "Kinh nghiệm thống nhất tiêu chí với người phụ trách hiện trường"
+        ],
+        "preferred": [
+          "Kinh nghiệm nhận dạng hình ảnh hoặc phát hiện bất thường chuỗi thời gian",
+          "Hiểu biết miền sản xuất, xây dựng hoặc logistics",
+          "Kinh nghiệm cấu hình LLM agent"
+        ],
+        "conditions": [
+          "Văn phòng tại Seocho-gu, Seoul · có thể thỏa thuận",
+          "5 ngày/tuần, giờ vào ra linh hoạt",
+          "Hỗ trợ thiết bị và chi phí học tập"
+        ]
+      },
+      {
+        "slug": "fullstack-developer",
+        "title": "Lập trình viên full-stack",
+        "team": "Dịch vụ phát triển",
+        "employmentType": "Nhân viên chính thức",
+        "status": "open",
+        "deadline": "Thường xuyên",
+        "responsibilities": [
+          "Từ thiết kế đến triển khai dịch vụ web và app của khách hàng",
+          "Cải thiện và migration hệ thống hiện có",
+          "Tham gia từ giai đoạn sắp xếp yêu cầu"
+        ],
+        "requirements": [
+          "Từ 3 năm kinh nghiệm phát triển dịch vụ web",
+          "Thành thạo TypeScript hoặc ngôn ngữ kiểu tĩnh tương đương",
+          "Kinh nghiệm trực tiếp triển khai và vận hành"
+        ],
+        "preferred": [
+          "Kinh nghiệm Next.js App Router",
+          "Kinh nghiệm cấu hình hạ tầng cloud",
+          "Kinh nghiệm giao tiếp trực tiếp với bên đặt hàng"
+        ],
+        "conditions": [
+          "Văn phòng tại Seocho-gu, Seoul · có thể làm tại chỗ tùy dự án",
+          "5 ngày/tuần, giờ vào ra linh hoạt",
+          "Có thể sử dụng văn phòng chia sẻ"
+        ]
+      },
+      {
+        "slug": "cic-lead",
+        "title": "Đại diện CIC",
+        "team": "CIC",
+        "employmentType": "Hợp đồng",
+        "status": "open",
+        "deadline": "Thường xuyên",
+        "responsibilities": [
+          "Lập kế hoạch kinh doanh và nhận dự án trong miền phụ trách",
+          "Xây dựng đội ngũ và vận hành dự án",
+          "Xác định hướng sản phẩm hóa agent miền"
+        ],
+        "requirements": [
+          "Kinh nghiệm tự tạo ra công việc trong một miền cụ thể",
+          "Kinh nghiệm lập đội và hoàn tất dự án",
+          "Thái độ chịu trách nhiệm với kết quả kinh doanh"
+        ],
+        "preferred": [
+          "Có mạng lưới khách hàng hiện có",
+          "Kinh nghiệm dự án triển khai AI",
+          "Kinh nghiệm khởi nghiệp hoặc vận hành kinh doanh"
+        ],
+        "conditions": [
+          "Quyết toán dựa trên kết quả · điều kiện thỏa thuận theo tính chất kinh doanh",
+          "Hỗ trợ toàn diện uy tín pháp nhân và back office",
+          "Hình thức làm việc tự chủ"
+        ]
+      }
+    ]
+  },
+  "solutions": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Giải pháp AI",
+        "title": "Physical AI cho hiện trường công nghiệp, Trưởng phòng Choi AI cho văn phòng",
+        "lead": "Hiện trường khác nhau thì phán đoán cần thiết cũng khác nhau. DevFirm tiếp cận theo hai trục."
+      },
+      "axes": [
+        {
+          "eyebrow": "Hiện trường công nghiệp",
+          "name": "Physical AI",
+          "desc": "Chuyển hiện trường mà camera và cảm biến đọc được thành phán đoán con người có thể sử dụng.",
+          "href": "/solutions/physical-ai",
+          "linkLabel": "Xem Physical AI"
+        },
+        {
+          "eyebrow": "Văn phòng",
+          "name": "Trưởng phòng Choi AI",
+          "desc": "Thay thế các công việc lặp lại như đọc, sắp xếp tài liệu và viết báo cáo.",
+          "href": "/solutions/office-ai",
+          "linkLabel": "Xem Trưởng phòng Choi AI"
+        }
+      ],
+      "agentsSection": {
+        "id": "agents",
+        "eyebrow": "Agent theo ngành",
+        "title": "Sáu ngành, sáu kiểu phán đoán",
+        "lead": "Chúng tôi đặt tiêu chí phán đoán theo ngành trên cùng một nền tảng. Nó trở thành agent nói bằng ngôn ngữ của hiện trường."
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Quy trình triển khai",
+        "title": "Bắt đầu với bốn bước",
+        "steps": [
+          "Chẩn đoán hiện trạng · kiểm tra dữ liệu",
+          "Thống nhất tiêu chí phán đoán",
+          "Áp dụng thử 4~8 tuần",
+          "Chuyển sang vận hành · mở rộng"
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "eyebrow": "Câu hỏi thường gặp",
+        "title": "Những điều thường được hỏi trước khi triển khai",
+        "items": [
+          {
+            "q": "Dữ liệu chưa được sắp xếp thì có thể bắt đầu không?",
+            "a": "Phần lớn hiện trường đều như vậy. Đó là lý do bước đầu tiên là kiểm tra dữ liệu. Trước tiên chúng tôi xác nhận có thể làm đến đâu với những gì đang tích lũy, và với phần còn thiếu thì bắt đầu từ tuyến thu thập."
+          },
+          {
+            "q": "Độ chính xác đến mức nào?",
+            "a": "Điều này tùy theo hiện trường và hạng mục phán đoán. Vì vậy trước khi ký hợp đồng, chúng tôi đặt giai đoạn áp dụng thử và đo bằng dữ liệu thực tế. Chỉ tiêu mục tiêu được xác định cùng nhau sau khi xem kết quả đó."
+          },
+          {
+            "q": "Có phải thay hệ thống hiện có không?",
+            "a": "Trong hầu hết trường hợp là không. Chúng tôi kết nối theo dạng đọc dữ liệu từ hệ thống hiện có và trả kết quả lại. Nếu cần thay thế, chúng tôi sẽ giải thích lý do trước."
+          },
+          {
+            "q": "Sau khi triển khai thì ai vận hành?",
+            "a": "Giai đoạn đầu DevFirm phụ trách. Khi tiêu chí phán đoán ổn định, chúng tôi chuyển giao cho người phụ trách. Cũng có thể tiếp tục ủy thác vận hành."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Chúng tôi cùng xác định trước phán đoán cần tự động hóa",
+        "desc": "Hãy cho chúng tôi biết phán đoán nào con người đang lặp lại tại hiện trường.",
+        "primary": {
+          "label": "Liên hệ",
+          "href": "/contact"
+        }
+      }
+    },
+    "physicalAi": {
+      "hero": {
+        "eyebrow": "Physical AI",
+        "title": "Gắn thêm đôi mắt đọc hiện trường",
+        "lead": "Nó thay con người quan sát những thứ không thể theo dõi liên tục. Những gì nhìn thấy được để lại không phải dưới dạng ghi chép, mà dưới dạng phán đoán."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Vấn đề",
+        "title": "Phần lớn thông tin hiện trường trôi qua",
+        "items": [
+          {
+            "title": "Không thể xem hết",
+            "desc": "Có nhiều camera, nhưng số người xem thì có hạn."
+          },
+          {
+            "title": "Sau khi trôi qua thì khó tìm",
+            "desc": "Khi cần kiểm tra, việc tua lại video mất thời gian."
+          },
+          {
+            "title": "Tiêu chí khác nhau",
+            "desc": "Cùng một cảnh nhưng mỗi người phụ trách lại phán đoán khác nhau."
+          }
+        ]
+      },
+      "stack": {
+        "id": "stack",
+        "eyebrow": "Năng lực công nghệ",
+        "title": "Đọc, phán đoán và chuyển tiếp",
+        "items": [
+          {
+            "title": "Nhận dạng hình ảnh",
+            "desc": "Phân biệt người, thiết bị và trạng thái, đồng thời tìm mẫu nguy hiểm."
+          },
+          {
+            "title": "Phân tích chuỗi thời gian cảm biến",
+            "desc": "Phát hiện dòng chảy khác thường ngày như tín hiệu bất thường."
+          },
+          {
+            "title": "Xử lý edge tại hiện trường",
+            "desc": "Phán đoán cục bộ ngay cả tại hiện trường có mạng không ổn định."
+          },
+          {
+            "title": "Liên kết hệ thống nghiệp vụ",
+            "desc": "Chuyển kết quả phán đoán vào luồng phê duyệt và báo cáo."
+          }
+        ]
+      },
+      "industries": {
+        "id": "industries",
+        "eyebrow": "Ngành áp dụng",
+        "title": "Đang được đưa vào sáu loại hiện trường"
+      },
+      "cta": {
+        "title": "Bắt đầu từ một hiện trường",
+        "desc": "Nếu đã có camera và cảm biến, chúng tôi dùng chúng trước.",
+        "primary": {
+          "label": "Liên hệ",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Xem Trưởng phòng Choi AI",
+          "href": "/solutions/office-ai"
+        }
+      }
+    },
+    "officeAi": {
+      "hero": {
+        "eyebrow": "Trưởng phòng Choi AI",
+        "title": "Việc lặp lại trong văn phòng không phải là việc con người nên làm",
+        "lead": "Đọc tài liệu nhận được, sắp xếp, chuyển vào biểu mẫu và viết báo cáo. Trưởng phòng Choi AI đảm nhận những việc đó."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Vấn đề",
+        "title": "Không còn thời gian để phán đoán",
+        "items": [
+          {
+            "title": "Sao chép lại",
+            "desc": "Nhập lại nội dung từ email và tệp đính kèm vào biểu mẫu nội bộ."
+          },
+          {
+            "title": "Tìm lại",
+            "desc": "Mất thời gian lục tài liệu cũ để kiểm tra căn cứ."
+          },
+          {
+            "title": "Đối chiếu",
+            "desc": "So sánh giữa các tài liệu để xem con số có khớp hay không."
+          },
+          {
+            "title": "Sắp xếp và trình lên",
+            "desc": "Viết lại cùng một nội dung theo từng đối tượng báo cáo."
+          }
+        ]
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Việc đảm nhận",
+        "title": "Từ tài liệu đến báo cáo",
+        "items": [
+          {
+            "title": "Đọc tài liệu",
+            "desc": "Trích xuất các hạng mục cần thiết từ hợp đồng, bảng kê giao dịch và báo giá."
+          },
+          {
+            "title": "Điền biểu mẫu nội bộ",
+            "desc": "Điền các hạng mục đã trích xuất theo biểu mẫu của công ty."
+          },
+          {
+            "title": "Tìm căn cứ",
+            "desc": "Tìm nội dung liên quan trong tài liệu trước đây và trình bày cùng nguồn."
+          },
+          {
+            "title": "Kiểm tra đối chiếu",
+            "desc": "Chỉ ra nơi số liệu và điều kiện không khớp giữa các tài liệu."
+          },
+          {
+            "title": "Bản nháp báo cáo",
+            "desc": "Tạo bản tóm tắt phù hợp với đối tượng báo cáo."
+          },
+          {
+            "title": "Nhắc việc tiếp theo",
+            "desc": "Theo dõi các việc sắp đến hạn và các việc bị thiếu."
+          }
+        ]
+      },
+      "physical": {
+        "id": "physical",
+        "eyebrow": "Kết hợp Physical AI",
+        "title": "Để văn phòng và hiện trường không bị đứt đoạn",
+        "lead": "Những gì Physical AI đọc tại hiện trường được nối tiếp vào báo cáo của Trưởng phòng Choi AI. Một ảnh hiện trường có một đường đi thống nhất đến tài liệu phê duyệt."
+      },
+      "cta": {
+        "title": "Hãy xác định tài liệu nào sẽ giao trước",
+        "desc": "Chỉ cần cho chúng tôi biết một loại tài liệu bạn xử lý thường xuyên nhất.",
+        "primary": {
+          "label": "Liên hệ",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Xem agent theo ngành",
+          "href": "/solutions"
+        }
+      }
+    },
+    "agentPage": {
+      "problems": {
+        "id": "problems",
+        "eyebrow": "Vấn đề tại hiện trường",
+        "title": "Có lẽ hiện nay bạn đang làm như vậy"
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Việc đảm nhận",
+        "title": "Phần agent phụ trách"
+      },
+      "outcomes": {
+        "id": "outcomes",
+        "eyebrow": "Hiệu quả kỳ vọng",
+        "title": "Điều gì thay đổi",
+        "note": "Sau khi đo bằng dữ liệu thực tế trong giai đoạn áp dụng thử, chúng tôi xác định lại chỉ tiêu mục tiêu."
+      },
+      "steps": {
+        "id": "steps",
+        "eyebrow": "Luồng triển khai",
+        "title": "Đưa vào bằng bốn bước"
+      },
+      "siblings": {
+        "id": "siblings",
+        "eyebrow": "Ngành khác",
+        "title": "Hiện trường khác sử dụng như sau"
+      },
+      "cta": {
+        "title": "Hãy kiểm tra liệu có áp dụng được cho hiện trường của bạn",
+        "desc": "Trước tiên chúng tôi xem với dữ liệu đang tích lũy hiện nay thì có thể làm đến đâu.",
+        "primary": {
+          "label": "Liên hệ",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Xem tất cả giải pháp AI",
+          "href": "/solutions"
+        }
+      }
+    }
+  },
+  "agents": [
+    {
+      "slug": "construction",
+      "name": "AI xây dựng",
+      "tagline": "Giảm khoảng cách giữa bản vẽ và hiện trường.",
+      "icon": {},
+      "problems": [
+        "Báo cáo tiến độ được tổng hợp khác nhau tùy từng người",
+        "Biên bản kiểm tra an toàn nằm rải rác trên giấy và messenger",
+        "Vật tư nhập vào không khớp với lượng sử dụng thực tế"
+      ],
+      "capabilities": [
+        {
+          "title": "Đọc tiến độ thi công",
+          "desc": "Đối chiếu ảnh hiện trường và nhật ký công việc để tính tiến độ mỗi ngày theo cùng một tiêu chí."
+        },
+        {
+          "title": "Phát hiện rủi ro an toàn",
+          "desc": "Phát hiện trong video CCTV việc không mang đồ bảo hộ hoặc đi vào khu vực nguy hiểm và thông báo ngay."
+        },
+        {
+          "title": "Sắp xếp nhập xuất vật tư",
+          "desc": "Khớp phiếu nhập với khối lượng thi công và báo cáo thừa thiếu theo tuần."
+        },
+        {
+          "title": "Lập báo cáo hằng ngày",
+          "desc": "Tập hợp các ghi chép rải rác và tự động tạo báo cáo theo biểu mẫu của bên đặt hàng."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Thời gian lập báo cáo hằng ngày",
+          "value": "-70%"
+        },
+        {
+          "label": "Bỏ sót kiểm tra an toàn",
+          "value": "0 trường hợp"
+        },
+        {
+          "label": "Kiểm tra sai lệch vật tư",
+          "value": "1 lần/tuần"
+        }
+      ],
+      "steps": [
+        "Kiểm tra dữ liệu hiện trường",
+        "Thống nhất tiêu chí đọc",
+        "Áp dụng thử 4 tuần",
+        "Mở rộng toàn bộ hiện trường"
+      ],
+      "seo": {
+        "title": "AI xây dựng",
+        "description": "AI agent dành cho công trường xây dựng, tính tiến độ mỗi ngày theo cùng một tiêu chí bằng ảnh hiện trường và nhật ký công việc, đồng thời tự động sắp xếp kiểm tra an toàn và nhập xuất vật tư."
+      }
+    },
+    {
+      "slug": "content",
+      "name": "AI nội dung",
+      "tagline": "Dành thời gian tạo nội dung cho việc tạo ra nội dung.",
+      "icon": {},
+      "problems": [
+        "Mất quá nhiều thời gian để tìm cảnh dùng được trong footage gốc",
+        "Các việc lặp lại như phụ đề và thumbnail đẩy lùi lịch sản xuất",
+        "Việc làm lại theo quy cách từng kênh không kết thúc"
+      ],
+      "capabilities": [
+        {
+          "title": "Lập chỉ mục nguồn gốc",
+          "desc": "Lập chỉ mục footage gốc theo nhân vật, địa điểm và lời thoại để tìm ngay cảnh cần thiết."
+        },
+        {
+          "title": "Bản nháp phụ đề · dịch",
+          "desc": "Chép lời từ âm thanh và tạo bản nháp phụ đề phù hợp với giọng điệu kênh."
+        },
+        {
+          "title": "Tái cấu trúc theo kênh",
+          "desc": "Tạo các bản dựng phù hợp với quy cách từng kênh từ một nguồn gốc."
+        },
+        {
+          "title": "Sắp xếp metadata",
+          "desc": "Sắp xếp tiêu đề, tag và mô tả theo tìm kiếm để hoàn tất chuẩn bị upload."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Thời gian tìm cảnh",
+          "value": "-80%"
+        },
+        {
+          "label": "Tạo bản nháp phụ đề",
+          "value": "Ngay lập tức"
+        },
+        {
+          "label": "Bản phái sinh theo kênh",
+          "value": "1→N"
+        }
+      ],
+      "steps": [
+        "Kết nối tài sản gốc",
+        "Học tiêu chí giọng điệu",
+        "Sản xuất pilot",
+        "Đưa vào dây chuyền sản xuất"
+      ],
+      "seo": {
+        "title": "AI nội dung",
+        "description": "AI agent giảm các công việc lặp lại trong sản xuất nội dung bằng lập chỉ mục footage gốc, bản nháp phụ đề và tái cấu trúc theo kênh."
+      }
+    },
+    {
+      "slug": "manufacturing",
+      "name": "AI quy trình sản xuất",
+      "tagline": "Đọc tín hiệu trước khi phát sinh lỗi.",
+      "icon": {},
+      "problems": [
+        "Chỉ biết thiết bị bất thường sau khi đã dừng",
+        "Tiêu chuẩn kiểm tra khác nhau tùy người kiểm tra",
+        "Ngay cả sau đó cũng không xác định được nguyên nhân giảm tỷ lệ đạt"
+      ],
+      "capabilities": [
+        {
+          "title": "Dự báo bất thường thiết bị",
+          "desc": "Tìm các mẫu khác thường trong xu hướng cảm biến và cảnh báo trước khi dừng."
+        },
+        {
+          "title": "Kiểm tra ngoại quan",
+          "desc": "Phán định lỗi bằng hình ảnh và loại bỏ chênh lệch giữa người kiểm tra."
+        },
+        {
+          "title": "Truy vết nguyên nhân tỷ lệ đạt",
+          "desc": "Kết nối biến quy trình với tỷ lệ lỗi để chỉ ra điều kiện nào làm kết quả xấu đi."
+        },
+        {
+          "title": "Kiểm tra tiêu chuẩn thao tác",
+          "desc": "Ghi lại khác biệt giữa thao tác tiêu chuẩn và thao tác thực tế để để lại điểm cải thiện."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Dừng ngoài kế hoạch",
+          "value": "-40%"
+        },
+        {
+          "label": "Chênh lệch kiểm tra",
+          "value": "Được xử lý"
+        },
+        {
+          "label": "Xác định nguyên nhân",
+          "value": "Trong ngày"
+        }
+      ],
+      "steps": [
+        "Liên kết dữ liệu thiết bị",
+        "Học phạm vi bình thường",
+        "Kiểm chứng một dây chuyền",
+        "Mở rộng dây chuyền"
+      ],
+      "seo": {
+        "title": "AI quy trình sản xuất",
+        "description": "AI agent giảm tổn thất tại hiện trường sản xuất bằng dự báo bất thường thiết bị, kiểm tra ngoại quan qua hình ảnh và truy vết nguyên nhân tỷ lệ đạt."
+      }
+    },
+    {
+      "slug": "distribution",
+      "name": "AI quản lý phân phối",
+      "tagline": "Giảm tồn kho và ngăn thiếu hàng.",
+      "icon": {},
+      "problems": [
+        "Sản phẩm bán chạy hết trước",
+        "Tồn kho chậm bán chiếm chỗ trong kho",
+        "Phán đoán đặt hàng phụ thuộc vào kinh nghiệm của người phụ trách"
+      ],
+      "capabilities": [
+        {
+          "title": "Dự báo nhu cầu",
+          "desc": "Dự báo nhu cầu theo từng mặt hàng bằng cách phản ánh xu hướng bán hàng và tính mùa vụ."
+        },
+        {
+          "title": "Đề xuất đặt hàng",
+          "desc": "Tính lead time và tồn kho an toàn để đề xuất số lượng đặt hàng."
+        },
+        {
+          "title": "Kiểm tra sức khỏe tồn kho",
+          "desc": "Tìm tồn kho đã ngừng quay vòng và thông báo thời điểm xử lý."
+        },
+        {
+          "title": "Sắp xếp tuyến logistics",
+          "desc": "Tìm đoạn bị trễ trong lịch sử giao hàng và lập lại tuyến."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Tỷ lệ thiếu hàng",
+          "value": "-50%"
+        },
+        {
+          "label": "Số ngày giữ tồn kho",
+          "value": "-25%"
+        },
+        {
+          "label": "Phán đoán đặt hàng",
+          "value": "Dựa trên căn cứ"
+        }
+      ],
+      "steps": [
+        "Liên kết dữ liệu bán hàng",
+        "Kiểm chứng độ chính xác dự báo",
+        "Áp dụng một số mặt hàng",
+        "Toàn bộ mặt hàng"
+      ],
+      "seo": {
+        "title": "AI quản lý phân phối",
+        "description": "AI agent dành cho hiện trường phân phối, giảm đồng thời thiếu hàng và tồn kho dư thừa bằng dự báo nhu cầu và đề xuất đặt hàng."
+      }
+    },
+    {
+      "slug": "service",
+      "name": "AI dịch vụ nhân lực",
+      "tagline": "Việc phân bổ con người cũng cần căn cứ.",
+      "icon": {},
+      "problems": [
+        "Số nhân sự cần thiết theo từng hiện trường được quyết định bằng cảm tính",
+        "Kiểm tra chấm công và quyết toán mất vài ngày mỗi tháng",
+        "Sai sót phát sinh vì điều kiện hợp đồng khác nhau theo từng hiện trường"
+      ],
+      "capabilities": [
+        {
+          "title": "Đề xuất phân bổ nhân sự",
+          "desc": "Tính số nhân sự cần thiết dựa trên quy mô hiện trường và thời gian đã sử dụng trước đây."
+        },
+        {
+          "title": "Tự động tổng hợp chấm công",
+          "desc": "Tổng hợp ghi nhận vào ra theo điều kiện hợp đồng và chỉ để lại ngoại lệ cho con người."
+        },
+        {
+          "title": "Lập bảng quyết toán",
+          "desc": "Khớp đơn giá theo hiện trường với nội dung làm việc để tạo bản nháp bảng quyết toán."
+        },
+        {
+          "title": "Kiểm tra điều kiện hợp đồng",
+          "desc": "Tìm và thông báo chênh lệch giữa điều kiện theo hiện trường và vận hành thực tế."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Thời gian quyết toán",
+          "value": "-60%"
+        },
+        {
+          "label": "Căn cứ phân bổ",
+          "value": "Định lượng"
+        },
+        {
+          "label": "Vi phạm điều kiện",
+          "value": "Phát hiện trước"
+        }
+      ],
+      "steps": [
+        "Sắp xếp điều kiện hợp đồng",
+        "Liên kết hệ thống chấm công",
+        "Thử tại một hiện trường",
+        "Toàn bộ hiện trường"
+      ],
+      "seo": {
+        "title": "AI dịch vụ nhân lực",
+        "description": "AI agent giảm công việc lặp lại trong vận hành dịch vụ bằng tự động hóa tính toán phân bổ nhân sự, tổng hợp chấm công và lập bảng quyết toán."
+      }
+    },
+    {
+      "slug": "safety",
+      "name": "AI phòng ngừa tội phạm",
+      "tagline": "Nhìn tín hiệu trước khi thành sự việc.",
+      "icon": {},
+      "problems": [
+        "Nhân sự giám sát không thể xem mọi màn hình cùng lúc",
+        "Việc kiểm tra video sau sự việc mất nhiều thời gian",
+        "Tiêu chí phán đoán rủi ro khác nhau tùy người giám sát"
+      ],
+      "capabilities": [
+        {
+          "title": "Phát hiện hành vi bất thường",
+          "desc": "Tìm và thông báo theo thời gian thực các mẫu như đi quanh quẩn, xâm nhập và ngã."
+        },
+        {
+          "title": "Tìm kiếm đoạn video",
+          "desc": "Tìm ngay đoạn video theo điều kiện người, xe và thời gian."
+        },
+        {
+          "title": "Giám sát theo ưu tiên",
+          "desc": "Đưa màn hình có mức rủi ro cao lên trước người giám sát."
+        },
+        {
+          "title": "Sắp xếp biên bản sự việc",
+          "desc": "Tự động ghi lại diễn tiến từ phát hiện đến xử lý."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Tìm kiếm video",
+          "value": "Theo phút"
+        },
+        {
+          "label": "Bỏ sót phát hiện",
+          "value": "Giảm"
+        },
+        {
+          "label": "Tiêu chí phán đoán",
+          "value": "Thống nhất"
+        }
+      ],
+      "steps": [
+        "Liên kết camera",
+        "Điều chỉnh tiêu chí phát hiện",
+        "Vận hành thử ban đêm",
+        "Mở rộng toàn khu vực"
+      ],
+      "seo": {
+        "title": "AI phòng ngừa tội phạm",
+        "description": "AI agent phòng ngừa tội phạm hỗ trợ phán đoán của nhân sự giám sát bằng phát hiện hành vi bất thường và tìm kiếm video theo điều kiện."
+      }
+    }
+  ],
+  "services": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Dịch vụ phát triển",
+        "title": "Chúng tôi cung cấp cả việc cần làm và người làm ra sản phẩm",
+        "lead": "Bạn có thể giao toàn bộ dự án hoặc chỉ yêu cầu nhân sự cần thiết. Bên ký hợp đồng là pháp nhân, không phải cá nhân."
+      },
+      "cards": [
+        {
+          "title": "Phát triển phần mềm tổng hợp",
+          "desc": "Chúng tôi phụ trách từ sắp xếp yêu cầu đến triển khai và vận hành.",
+          "href": "/services/software",
+          "linkLabel": "Xem dịch vụ phát triển"
+        },
+        {
+          "title": "Cử nhân sự phát triển · Outsourcing",
+          "desc": "Chúng tôi bố trí lập trình viên tại chỗ, từ xa hoặc theo dự án.",
+          "href": "/services/staffing",
+          "linkLabel": "Xem cử nhân sự"
+        }
+      ],
+      "collaboration": {
+        "id": "collaboration",
+        "eyebrow": "Cách hợp tác",
+        "title": "Theo hướng giảm gánh nặng quản lý cho bên đặt hàng",
+        "items": [
+          {
+            "title": "Một đầu mối",
+            "desc": "Bạn không giao tiếp riêng với nhiều lập trình viên. Mọi việc được sắp xếp qua một đầu mối phụ trách."
+          },
+          {
+            "title": "Hợp đồng pháp nhân",
+            "desc": "Pháp nhân chịu trách nhiệm hợp đồng, hóa đơn thuế và bảo hành lỗi."
+          },
+          {
+            "title": "Tài liệu bàn giao",
+            "desc": "Khi kết thúc dự án, chúng tôi bàn giao cùng tài liệu cần thiết cho vận hành."
+          }
+        ]
+      },
+      "domains": {
+        "id": "domains",
+        "eyebrow": "Lĩnh vực công nghệ",
+        "title": "Phạm vi xử lý",
+        "items": [
+          "Dịch vụ web · hệ thống quản trị",
+          "Ứng dụng di động",
+          "AI agent · data pipeline",
+          "Liên kết hệ thống nội bộ · migration"
+        ]
+      },
+      "cta": {
+        "title": "Nếu bạn chưa biết hình thức nào phù hợp",
+        "desc": "Hãy cho chúng tôi biết tình hình. Trước tiên chúng tôi sẽ xác định nên giao trọn gói hay chỉ bổ sung nhân sự.",
+        "primary": {
+          "label": "Liên hệ",
+          "href": "/contact"
+        }
+      }
+    },
+    "software": {
+      "hero": {
+        "eyebrow": "Phát triển phần mềm tổng hợp",
+        "title": "Từ sắp xếp yêu cầu đến vận hành",
+        "lead": "Chúng tôi tham gia từ giai đoạn xác định cần xây dựng gì. Không chỉ làm xong rồi dừng lại, chúng tôi kết thúc ở trạng thái có thể bàn giao."
+      },
+      "areas": {
+        "id": "areas",
+        "eyebrow": "Lĩnh vực phát triển",
+        "title": "Bốn lĩnh vực",
+        "items": [
+          {
+            "title": "Dịch vụ web",
+            "desc": "Thiết kế cùng lúc dịch vụ cho khách hàng và hệ thống quản trị nội bộ."
+          },
+          {
+            "title": "Ứng dụng di động",
+            "desc": "Chọn native hoặc cross-platform theo phạm vi cần thiết."
+          },
+          {
+            "title": "AI · Dữ liệu",
+            "desc": "Gắn agent vào các điểm cần phán đoán và sắp xếp luồng dữ liệu."
+          },
+          {
+            "title": "Liên kết hệ thống",
+            "desc": "Kết nối liền mạch với các hệ thống đang sử dụng."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Quy trình thực hiện",
+        "title": "Năm bước",
+        "steps": [
+          "Sắp xếp yêu cầu",
+          "Xác định phạm vi · lịch trình",
+          "Thiết kế · phát triển",
+          "Nghiệm thu · triển khai",
+          "Bàn giao · vận hành"
+        ]
+      },
+      "quality": {
+        "id": "quality",
+        "eyebrow": "Sản phẩm bàn giao · tiêu chuẩn chất lượng",
+        "title": "Xác định trước bạn sẽ nhận được gì",
+        "items": [
+          "Source code và quyền truy cập repository",
+          "Tài liệu quy trình triển khai và script triển khai có thể chạy",
+          "Đặc tả API và tài liệu cấu trúc dữ liệu",
+          "Cuộc họp bàn giao và đào tạo người phụ trách vận hành"
+        ],
+        "note": "Tiêu chuẩn chất lượng được thống nhất bằng văn bản trước khi ký hợp đồng. Điều này nhằm ngăn việc mỗi bên đưa ra tiêu chuẩn khác nhau ở thời điểm nghiệm thu."
+      },
+      "cta": {
+        "title": "Chưa cần xác định rõ thứ sẽ xây dựng",
+        "desc": "Chỉ cần cho chúng tôi biết vấn đề muốn giải quyết. Chúng tôi sẽ cùng thu hẹp phạm vi trước.",
+        "primary": {
+          "label": "Liên hệ",
+          "href": "/contact"
+        }
+      }
+    },
+    "staffing": {
+      "hero": {
+        "eyebrow": "Cử nhân sự · Outsourcing",
+        "title": "Bố trí lập trình viên, nhưng pháp nhân quản lý",
+        "lead": "Chúng tôi bố trí nhân sự trong khoảng thời gian cần thiết. DevFirm xử lý hợp đồng và lao động."
+      },
+      "difference": {
+        "id": "difference",
+        "eyebrow": "Khác biệt",
+        "title": "Khác gì so với ký trực tiếp với freelancer",
+        "lead": "Pháp nhân hấp thụ các rủi ro phát sinh khi bên đặt hàng ký trực tiếp với cá nhân.",
+        "items": [
+          {
+            "title": "Chủ thể hợp đồng là pháp nhân",
+            "desc": "Khi có rút lui giữa chừng hoặc tranh chấp, pháp nhân chịu trách nhiệm và bố trí nhân sự thay thế."
+          },
+          {
+            "title": "Xử lý thuế · lao động",
+            "desc": "Bên đặt hàng không phải phán đoán về khấu trừ tại nguồn và bốn bảo hiểm chính."
+          },
+          {
+            "title": "Pool nhân sự đã kiểm chứng",
+            "desc": "Chúng tôi phân bổ từ những lập trình viên đã từng cùng thực hiện dự án."
+          },
+          {
+            "title": "Hỗ trợ back office",
+            "desc": "Bộ phận hỗ trợ quản trị của DevFirm quản lý quyết toán và chấm công của lập trình viên được bố trí."
+          }
+        ]
+      },
+      "formats": {
+        "id": "formats",
+        "eyebrow": "Hình thức bố trí",
+        "title": "Chọn một trong ba hình thức",
+        "items": [
+          {
+            "title": "Tại chỗ",
+            "desc": "Lập trình viên đến văn phòng bên đặt hàng và tham gia đội ngũ."
+          },
+          {
+            "title": "Từ xa",
+            "desc": "Làm việc tại văn phòng DevFirm hoặc văn phòng chia sẻ."
+          },
+          {
+            "title": "Theo dự án",
+            "desc": "Xác định thời hạn và sản phẩm bàn giao, rồi quyết toán theo kết quả."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Quy trình thực hiện",
+        "title": "Bốn bước",
+        "steps": [
+          "Sắp xếp năng lực cần thiết",
+          "Đề xuất ứng viên",
+          "Phỏng vấn · xác nhận",
+          "Bố trí · kiểm tra định kỳ"
+        ]
+      },
+      "cta": {
+        "title": "Hãy cho chúng tôi biết năng lực cần thiết",
+        "desc": "Chúng tôi sẽ sắp xếp ứng viên phù hợp với thời hạn và hình thức bố trí.",
+        "primary": {
+          "label": "Liên hệ",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "academy": {
+    "page": {
+      "hero": {
+        "eyebrow": "PBL Academy",
+        "title": "Học bằng cách làm",
+        "lead": "Đây không phải khóa đào tạo kết thúc sau khi nghe giảng. Chương trình NCS được triển khai thành dự án, và khi hoàn thành học viên rời đi với sản phẩm có thể đưa vào hồ sơ."
+      },
+      "pbl": {
+        "id": "pbl",
+        "eyebrow": "PBL là gì",
+        "title": "Dự án chính là chương trình học",
+        "lead": "Project Based Learning. Chúng tôi không liệt kê trước những điều cần học, mà xác định trước thứ cần tạo ra. Kiến thức cần thiết được bổ sung trong quá trình xây dựng.",
+        "items": [
+          {
+            "title": "Có sản phẩm đầu ra",
+            "desc": "Điều còn lại không phải chứng chỉ, mà là dự án hoạt động được."
+          },
+          {
+            "title": "Trải nghiệm hợp tác",
+            "desc": "Không phải bài tập làm một mình. Đội ngũ chia lịch trình và vai trò."
+          },
+          {
+            "title": "Đánh giá theo tiêu chuẩn thực tế",
+            "desc": "Lập trình viên làm dự án thực tế review code và kết quả."
+          }
+        ]
+      },
+      "schools": {
+        "id": "schools",
+        "eyebrow": "3 school",
+        "title": "Chọn theo thứ bạn muốn xây dựng"
+      },
+      "external": {
+        "id": "external",
+        "eyebrow": "Liên kết",
+        "title": "Khóa hậu kỳ",
+        "desc": "Khóa hậu kỳ video được vận hành liên kết với Seoul Film Academy.",
+        "href": "https://www.seoulfilmacademy.com",
+        "linkLabel": "Seoul Film Academy"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Quy trình đăng ký học",
+        "title": "Bốn bước",
+        "steps": [
+          "Chọn khóa · đăng ký",
+          "Tư vấn · phân bổ",
+          "Thực hiện dự án",
+          "Trình bày · hoàn thành"
+        ]
+      },
+      "cta": {
+        "title": "Nếu bạn chưa biết khóa nào phù hợp",
+        "desc": "Hãy cho chúng tôi biết hiện bạn làm được gì và muốn làm gì. Chúng tôi sẽ đề xuất khóa học.",
+        "primary": {
+          "label": "Đăng ký học",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Xem khóa học",
+          "href": "/academy/courses"
+        }
+      }
+    },
+    "schools": [
+      {
+        "key": "solution",
+        "name": "School phát triển giải pháp",
+        "desc": "Tạo một dịch vụ từ đầu đến cuối.",
+        "art": {
+          "src": "/images/cards/school-solution.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "office",
+        "name": "School nghiệp vụ văn phòng chung",
+        "desc": "Học cách tự động hóa công việc văn phòng bằng công cụ.",
+        "art": {
+          "src": "/images/cards/school-office.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "project",
+        "name": "School nghiệp vụ dự án",
+        "desc": "Học cách tiến hành dự án, bao gồm lập kế hoạch và quản lý lịch trình.",
+        "art": {
+          "src": "/images/cards/school-project.svg",
+          "width": 240,
+          "height": 180
+        }
+      }
+    ]
+  },
+  "courses": {
+    "list": [
+      {
+        "slug": "web-service-development",
+        "school": "solution",
+        "title": "Khóa phát triển dịch vụ web",
+        "summary": "Từ lập kế hoạch đến triển khai, hoàn tất một dịch vụ thực sự có thể truy cập.",
+        "duration": "16 tuần",
+        "capacity": "20 người",
+        "target": [
+          "Người biết cú pháp lập trình cơ bản",
+          "Người chuẩn bị đi làm cần portfolio",
+          "Nhân viên muốn tự tạo một dịch vụ"
+        ],
+        "prerequisites": [
+          "Kinh nghiệm lập trình ở mức cú pháp cơ bản",
+          "Nền tảng HTML·CSS"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Môi trường phát triển và công cụ hợp tác",
+            "detail": "Thiết lập Git flow, quản lý issue và quy tắc code review thành quy tắc đội."
+          },
+          {
+            "week": "3~6",
+            "topic": "Nền tảng frontend",
+            "detail": "Học cấu trúc component, quản lý state và layout responsive."
+          },
+          {
+            "week": "7~10",
+            "topic": "Backend và dữ liệu",
+            "detail": "Triển khai thiết kế API, mô hình hóa dữ liệu và xác thực."
+          },
+          {
+            "week": "11~14",
+            "topic": "Dự án đội",
+            "detail": "Xây dựng dịch vụ đã lập kế hoạch theo đội. Nhận review 1 lần mỗi tuần."
+          },
+          {
+            "week": "15~16",
+            "topic": "Triển khai và trình bày",
+            "detail": "Triển khai lên domain thực tế và trình bày kết quả."
+          }
+        ],
+        "outcomes": [
+          "1 dịch vụ web có thể truy cập",
+          "Repository và lịch sử commit",
+          "Tài liệu triển khai và README"
+        ],
+        "careers": [
+          "Lập trình viên web",
+          "Junior full-stack",
+          "Người phụ trách dịch vụ nội bộ"
+        ]
+      },
+      {
+        "slug": "ai-agent-basics",
+        "school": "solution",
+        "title": "Khóa thực hành AI agent",
+        "summary": "Trực tiếp tạo agent thay thế công việc. Đây là khóa học về cách dùng mô hình, không phải cách tạo mô hình.",
+        "duration": "12 tuần",
+        "capacity": "16 người",
+        "target": [
+          "Lập trình viên được giao tự động hóa công việc",
+          "Nhân sự thực tế đang xem xét triển khai AI",
+          "Người muốn hiểu cấu trúc agent"
+        ],
+        "prerequisites": [
+          "Kinh nghiệm dùng Python hoặc JavaScript",
+          "Kinh nghiệm gọi API"
+        ],
+        "curriculum": [
+          {
+            "week": "1~3",
+            "topic": "Cấu trúc agent",
+            "detail": "Xác lập khung cơ bản của gọi công cụ, bổ sung bằng tìm kiếm và xử lý lỗi."
+          },
+          {
+            "week": "4~7",
+            "topic": "Liên kết công việc",
+            "detail": "Triển khai liên kết đọc và viết tài liệu, email và sheet."
+          },
+          {
+            "week": "8~10",
+            "topic": "Đánh giá và cải thiện",
+            "detail": "Đo kết quả, lập tiêu chí và cải thiện lặp lại."
+          },
+          {
+            "week": "11~12",
+            "topic": "Dự án áp dụng thực tế",
+            "detail": "Mỗi người chọn một công việc trong công ty mình và chuyển thành agent."
+          }
+        ],
+        "outcomes": [
+          "1 agent tự động hóa công việc",
+          "Tài liệu tiêu chí đánh giá",
+          "Báo cáo áp dụng"
+        ],
+        "careers": [
+          "Người phụ trách thực hành AI",
+          "Kỹ sư tự động hóa",
+          "Lead triển khai AI nội bộ"
+        ]
+      },
+      {
+        "slug": "office-automation",
+        "school": "office",
+        "title": "Khóa tự động hóa văn phòng",
+        "summary": "Giảm các công việc tài liệu và bảng tính lặp lại hằng ngày bằng công cụ. Có thể bắt đầu dù không biết code.",
+        "duration": "8 tuần",
+        "capacity": "24 người",
+        "target": [
+          "Nhân viên có nhiều công việc văn phòng lặp lại",
+          "Người dành nhiều thời gian cho Excel",
+          "Quản lý muốn sắp xếp nghiệp vụ bộ phận"
+        ],
+        "prerequisites": ["Kinh nghiệm sử dụng Excel cơ bản"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Phân tách công việc",
+            "detail": "Chia việc đang làm thành từng bước và tìm điểm có thể tự động hóa."
+          },
+          {
+            "week": "3~5",
+            "topic": "Tự động hóa tài liệu · bảng tính",
+            "detail": "Tự động xử lý điền biểu mẫu, đối chiếu và tổng hợp."
+          },
+          {
+            "week": "6~7",
+            "topic": "Ứng dụng công cụ AI",
+            "detail": "Gắn đọc hiểu và tóm tắt tài liệu vào luồng công việc."
+          },
+          {
+            "week": "8",
+            "topic": "Áp dụng và chia sẻ",
+            "detail": "Sắp xếp những gì đã tạo để có thể bàn giao cho đội."
+          }
+        ],
+        "outcomes": [
+          "3 công việc đã tự động hóa",
+          "Tài liệu hướng dẫn sử dụng"
+        ],
+        "careers": [
+          "Người phụ trách tự động hóa văn phòng",
+          "Người phụ trách cải thiện nghiệp vụ bộ phận"
+        ]
+      },
+      {
+        "slug": "project-management",
+        "school": "project",
+        "title": "Khóa tiến hành dự án",
+        "summary": "Học cách hoàn tất dự án trong khi quản lý lịch trình và phạm vi qua các trường hợp thực tế.",
+        "duration": "10 tuần",
+        "capacity": "18 người",
+        "target": [
+          "Người lần đầu phụ trách dự án",
+          "Leader của đội có lịch trình thường bị trễ",
+          "Người phụ trách phải điều phối với bên đặt hàng"
+        ],
+        "prerequisites": ["Kinh nghiệm làm việc theo đội"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Xác định phạm vi",
+            "detail": "Bắt đầu bằng việc xác định điều sẽ không làm."
+          },
+          {
+            "week": "3~5",
+            "topic": "Lịch trình và rủi ro",
+            "detail": "Tạo ước tính, buffer và danh sách rủi ro."
+          },
+          {
+            "week": "6~8",
+            "topic": "Thực thi và điều phối",
+            "detail": "Xử lý yêu cầu thay đổi và giao tiếp với bên liên quan."
+          },
+          {
+            "week": "9~10",
+            "topic": "Kết thúc và hồi cứu",
+            "detail": "Kết thúc bằng bàn giao và hồi cứu."
+          }
+        ],
+        "outcomes": [
+          "1 kế hoạch dự án",
+          "Tài liệu quản lý rủi ro",
+          "Báo cáo hồi cứu"
+        ],
+        "careers": [
+          "Project manager",
+          "Team lead",
+          "Người lập kế hoạch dịch vụ"
+        ]
+      }
+    ],
+    "page": {
+      "hero": {
+        "eyebrow": "Thông tin khóa học",
+        "title": "Các khóa đang mở",
+        "lead": "Các khóa được chia theo school. Hãy kiểm tra thời lượng và đối tượng trước khi đăng ký."
+      },
+      "filterAll": "Tất cả",
+      "fields": {
+        "duration": "Thời lượng",
+        "capacity": "Số lượng",
+        "target": "Đối tượng",
+        "prerequisites": "Kiến thức tiên quyết",
+        "curriculum": "Chương trình học",
+        "outcomes": "Dự án đầu ra",
+        "careers": "Hướng đi sau hoàn thành",
+        "week": "Tuần",
+        "topic": "Chủ đề",
+        "detail": "Nội dung",
+        "apply": "Đăng ký học"
+      },
+      "cta": {
+        "title": "Bạn có thể hỏi trước khi đăng ký",
+        "desc": "Chúng tôi sẽ kiểm tra trước liệu bạn có thể theo học với trình độ hiện tại hay không.",
+        "primary": {
+          "label": "Đăng ký học",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Liên hệ",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "workspace": {
+    "hero": {
+      "eyebrow": "Văn phòng chia sẻ",
+      "title": "Không gian dành cho người tạo ra sản phẩm",
+      "lead": "Không gian làm việc nơi phát triển và sản xuất nội dung có thể hoàn tất trong cùng một tòa nhà."
+    },
+    "concept": {
+      "id": "concept",
+      "eyebrow": "Concept",
+      "title": "Không gian cho lập trình viên hỗ trợ cả hậu kỳ",
+      "lead": "Đây không chỉ là nơi viết code. Nó được tạo để bạn không phải ra ngoài khi phát sinh công việc cần thu âm hoặc dựng hình."
+    },
+    "facilities": {
+      "id": "facilities",
+      "eyebrow": "Cơ sở",
+      "title": "Có những gì",
+      "items": [
+        {
+          "title": "Phòng thu âm",
+          "desc": "Có booth cách âm để thu lời dẫn và phỏng vấn.",
+          "art": {
+            "src": "/images/workspace/workspace-studio.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Phòng thu âm có panel cách âm, micro và bàn mixing"
+          }
+        },
+        {
+          "title": "Hạ tầng sản xuất nội dung",
+          "desc": "Cung cấp thiết bị và không gian lưu trữ cho dựng video và render.",
+          "art": {
+            "src": "/images/workspace/workspace-infra.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Không gian hạ tầng sản xuất nội dung có workstation, storage và rack render node"
+          }
+        },
+        {
+          "title": "Không gian làm việc",
+          "desc": "Sử dụng chung chỗ cố định, chỗ tự do và phòng họp nhỏ.",
+          "art": {
+            "src": "/images/workspace/workspace-desk.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Không gian làm việc chia sẻ có chỗ cố định, chỗ tự do và phòng họp nhỏ"
+          }
+        }
+      ]
+    },
+    "tenants": {
+      "id": "tenants",
+      "eyebrow": "Đối tượng vào làm việc",
+      "title": "Những người như sau sử dụng",
+      "items": [
+        "Lập trình viên làm một mình hoặc quy mô nhỏ",
+        "Đội cần cả công việc video và audio",
+        "Đội vận hành hoạt động kinh doanh dưới dạng DevFirm CIC"
+      ]
+    },
+    "pricing": {
+      "id": "pricing",
+      "eyebrow": "Phí · liên hệ",
+      "title": "Điều kiện sử dụng",
+      "note": "Điều kiện khác nhau theo loại chỗ ngồi và thời gian sử dụng. Studio vận hành theo hình thức đặt trước. Hãy liên hệ để được hướng dẫn điều kiện chính xác."
+    },
+    "location": {
+      "id": "location",
+      "eyebrow": "Đường đến",
+      "title": "Seocho-gu, Seoul",
+      "address": "Tầng 2, Tòa nhà Hanyang, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+      "mapTitle": "Bản đồ vị trí DevFirm",
+      "mapLinkLabel": "Xem trên Kakao Map",
+      "mapHref": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C6%EA%B8%B8%2059-1%20%ED%95%9C%EC%96%91%EB%B9%8C%EB%94%A9%202%EC%B8%B5"
+    },
+    "cta": {
+      "title": "Bạn có thể đến xem rồi quyết định",
+      "desc": "Chúng tôi sẽ sắp xếp lịch thăm.",
+      "primary": {
+        "label": "Liên hệ",
+        "href": "/contact"
+      }
+    }
+  },
+  "forms": {
+    "contact": {
+      "hero": {
+        "eyebrow": "Liên hệ",
+        "title": "Chúng tôi có thể hỗ trợ gì",
+        "lead": "Chỉ cần viết ngắn gọn đó là việc gì. Người phụ trách sẽ kiểm tra và liên hệ lại."
+      },
+      "types": [
+        {
+          "value": "solution",
+          "label": "Triển khai giải pháp AI"
+        },
+        {
+          "value": "development",
+          "label": "Yêu cầu phát triển"
+        },
+        {
+          "value": "staffing",
+          "label": "Cử nhân sự"
+        },
+        {
+          "value": "academy",
+          "label": "Academy"
+        },
+        {
+          "value": "workspace",
+          "label": "Vào văn phòng chia sẻ"
+        },
+        {
+          "value": "etc",
+          "label": "Khác"
+        }
+      ],
+      "labels": {
+        "type": "Loại liên hệ",
+        "name": "Tên",
+        "company": "Công ty · đơn vị",
+        "email": "Email",
+        "phone": "Liên hệ",
+        "message": "Nội dung liên hệ",
+        "consent": "Tôi đồng ý với việc thu thập và sử dụng thông tin cá nhân",
+        "submit": "Gửi liên hệ",
+        "submitting": "Đang gửi"
+      },
+      "placeholders": {
+        "name": "Hong Gil-dong",
+        "company": "Tên công ty (tùy chọn)",
+        "email": "name@example.com",
+        "phone": "010-0000-0000 (tùy chọn)",
+        "message": "Hãy cho chúng tôi biết tình hình và điều bạn cần."
+      },
+      "consentNote": "Chúng tôi thu thập tên, số liên hệ, email và nội dung liên hệ để xử lý và trả lời liên hệ. Thông tin được lưu giữ 3 năm sau khi xử lý hoàn tất rồi hủy.",
+      "success": {
+        "title": "Đã nhận liên hệ",
+        "desc": "Chúng tôi sẽ liên hệ trong vòng 1~2 ngày làm việc."
+      },
+      "error": {
+        "title": "Không gửi được",
+        "desc": "Vui lòng thử lại sau ít phút. Nếu vẫn không được, hãy liên hệ qua điện thoại hoặc email bên dưới."
+      }
+    },
+    "apply": {
+      "hero": {
+        "eyebrow": "Đăng ký học",
+        "title": "Đơn đăng ký khóa Academy",
+        "lead": "Chúng tôi phân bổ sau khi cùng xác nhận khóa có phù hợp với trình độ hiện tại hay không."
+      },
+      "levels": [
+        {
+          "value": "none",
+          "label": "Tôi mới bắt đầu"
+        },
+        {
+          "value": "basic",
+          "label": "Tôi biết nền tảng"
+        },
+        {
+          "value": "practical",
+          "label": "Tôi có kinh nghiệm thực tế"
+        }
+      ],
+      "labels": {
+        "name": "Tên",
+        "email": "Email",
+        "phone": "Liên hệ",
+        "course": "Khóa mong muốn",
+        "level": "Mức kinh nghiệm",
+        "motivation": "Lý do đăng ký",
+        "consent": "Tôi đồng ý với việc thu thập và sử dụng thông tin cá nhân",
+        "submit": "Gửi đơn",
+        "submitting": "Đang gửi"
+      },
+      "placeholders": {
+        "name": "Hong Gil-dong",
+        "email": "name@example.com",
+        "phone": "010-0000-0000",
+        "motivation": "Hãy viết bạn muốn tạo gì và vì sao muốn học."
+      },
+      "consentNote": "Chúng tôi thu thập tên, số liên hệ, email và nội dung đăng ký để tư vấn khóa học và phân bổ. Thông tin được lưu giữ 1 năm sau khi tư vấn kết thúc rồi hủy.",
+      "success": {
+        "title": "Đã nhận đơn đăng ký",
+        "desc": "Người phụ trách sẽ kiểm tra và hướng dẫn lịch tư vấn."
+      },
+      "error": {
+        "title": "Không gửi được",
+        "desc": "Vui lòng thử lại sau ít phút."
+      }
+    },
+    "validation": {
+      "required": "Đây là thông tin bắt buộc",
+      "nameTooShort": "Vui lòng nhập tên",
+      "emailInvalid": "Định dạng email không hợp lệ",
+      "phoneInvalid": "Định dạng liên hệ không hợp lệ",
+      "messageTooShort": "Vui lòng nhập ít nhất 10 ký tự",
+      "consentRequired": "Bạn phải đồng ý mới có thể gửi",
+      "tooFast": "Vui lòng thử lại sau ít phút",
+      "expired": "Thời gian nhập đã hết hạn. Vui lòng tải lại và thử lại.",
+      "serverError": "Đã xảy ra sự cố trong quá trình xử lý"
+    }
+  },
+  "legal": {
+    "ui": {
+      "updatedAtLabel": "Ngày sửa đổi cuối cùng"
+    },
+    "privacy": {
+      "title": "Chính sách quyền riêng tư",
+      "intro": "Công ty Cổ phần CMNYX (sau đây gọi là \"Công ty\") coi trọng thông tin cá nhân của người dùng và tuân thủ pháp luật liên quan. Chính sách này áp dụng cho website do Công ty vận hành.",
+      "sections": [
+        {
+          "id": "items",
+          "title": "1. Các hạng mục thông tin cá nhân được thu thập",
+          "body": [
+            "Công ty chỉ thu thập thông tin cá nhân thông qua biểu mẫu liên hệ và đăng ký khóa học trên website.",
+            "Liên hệ: tên, email, số liên hệ (tùy chọn), công ty·đơn vị (tùy chọn), nội dung liên hệ",
+            "Đăng ký khóa học: tên, email, số liên hệ, khóa mong muốn, mức kinh nghiệm, lý do đăng ký",
+            "Công ty không sử dụng công cụ phân tích hoặc cookie quảng cáo theo dõi hành vi của khách truy cập. Do đó, chỉ sử dụng website thì thông tin cá nhân không được thu thập."
+          ]
+        },
+        {
+          "id": "purpose",
+          "title": "2. Mục đích thu thập và sử dụng",
+          "body": [
+            "Trả lời liên hệ và tiến hành tư vấn",
+            "Tiếp nhận đăng ký khóa học, phân bổ khóa và hướng dẫn"
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "3. Thời hạn lưu giữ và sử dụng",
+          "body": [
+            "Thông tin liên hệ: được lưu giữ 3 năm sau khi xử lý hoàn tất và hủy không chậm trễ.",
+            "Thông tin đăng ký khóa học: được lưu giữ 1 năm sau khi tư vấn kết thúc và hủy không chậm trễ.",
+            "Khi chủ thể thông tin yêu cầu hủy, thông tin sẽ được hủy ngay."
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "4. Cung cấp cho bên thứ ba và ủy thác xử lý",
+          "body": [
+            "Công ty không cung cấp thông tin cá nhân của người dùng cho bên thứ ba.",
+            "Tuy nhiên, để chuyển nội dung liên hệ đến người phụ trách, Công ty sử dụng dịch vụ gửi email, và trong quá trình này nội dung đã nhập sẽ được truyền đi."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "5. Quyền của chủ thể thông tin",
+          "body": [
+            "Người dùng có thể yêu cầu xem, chỉnh sửa, xóa hoặc dừng xử lý thông tin cá nhân của mình bất cứ lúc nào.",
+            "Yêu cầu có thể được gửi đến contact@devfirm.co hoặc 02-2058-0680, và Công ty sẽ thực hiện không chậm trễ."
+          ]
+        },
+        {
+          "id": "manager",
+          "title": "6. Người phụ trách bảo vệ thông tin cá nhân",
+          "body": [
+            "Bộ phận hỗ trợ quản trị Công ty Cổ phần CMNYX",
+            "Email: contact@devfirm.co",
+            "Điện thoại: 02-2058-0680"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "7. Thay đổi chính sách",
+          "body": [
+            "Nếu chính sách này thay đổi, Công ty sẽ thông báo các thay đổi và ngày có hiệu lực thông qua website."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Điều khoản sử dụng",
+      "intro": "Các điều khoản này quy định điều kiện sử dụng website do Công ty Cổ phần CMNYX (sau đây gọi là \"Công ty\") vận hành.",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "1. Mục đích",
+          "body": [
+            "Các điều khoản này quy định quyền, nghĩa vụ và trách nhiệm của Công ty và người dùng liên quan đến việc sử dụng dịch vụ website do Công ty cung cấp."
+          ]
+        },
+        {
+          "id": "service",
+          "title": "2. Nội dung dịch vụ",
+          "body": [
+            "Công ty cung cấp thông tin về công ty và dịch vụ thông qua website, đồng thời tiếp nhận liên hệ và đăng ký khóa học.",
+            "Không cần đăng ký thành viên riêng để sử dụng website."
+          ]
+        },
+        {
+          "id": "obligations",
+          "title": "3. Nghĩa vụ của người dùng",
+          "body": [
+            "Người dùng không được sử dụng trái phép thông tin của người khác hoặc nhập thông tin sai sự thật.",
+            "Người dùng không được sao chép, phân phối hoặc sử dụng thương mại nội dung của website nếu không có sự đồng ý trước của Công ty."
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "4. Bản quyền",
+          "body": [
+            "Bản quyền đối với văn bản, hình ảnh và tài liệu đăng trên website thuộc về Công ty."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "5. Giới hạn trách nhiệm",
+          "body": [
+            "Công ty không chịu trách nhiệm đối với việc gián đoạn dịch vụ do bất khả kháng như thiên tai, sự cố truyền thông.",
+            "Thông tin đăng trên website chỉ dùng để tham khảo, và điều kiện hợp đồng cụ thể tuân theo thỏa thuận riêng và hợp đồng."
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "title": "6. Thẩm quyền xét xử",
+          "body": [
+            "Tranh chấp liên quan đến các điều khoản này sẽ thuộc thẩm quyền của tòa án có thẩm quyền đối với địa điểm đặt trụ sở chính của Công ty."
+          ]
+        }
+      ]
+    },
+    "updatedAt": "2026-07-28"
+  },
+  "seo": {
+    "home": {
+      "description": "Physical AI cho hiện trường công nghiệp, Trưởng phòng Choi AI cho văn phòng. DevFirm, pháp nhân phát triển do các lập trình viên tập hợp, cung cấp giải pháp AI, phát triển phần mềm, cử nhân sự phát triển và PBL Academy."
+    },
+    "page": {
+      "about": {
+        "title": "Giới thiệu công ty",
+        "description": "Pháp nhân phát triển nơi lập trình viên tập hợp như luật sư tập hợp trong công ty luật. Giới thiệu cách DevFirm vận hành: bộ phận hỗ trợ quản trị phụ trách hợp đồng và quyết toán, lập trình viên tập trung vào việc tạo ra sản phẩm."
+      },
+      "cic": {
+        "title": "Công ty trong công ty (CIC)",
+        "description": "Chế độ công ty độc lập nội bộ để lập trình viên vận hành hoạt động kinh doanh của mình bên trong DevFirm. Hướng dẫn điều kiện tham gia, phạm vi hỗ trợ và lộ trình nâng cấp agent AI."
+      },
+      "careers": {
+        "title": "Tuyển dụng lập trình viên",
+        "description": "DevFirm tuyển lập trình viên làm việc cùng. Hãy kiểm tra công việc phụ trách, yêu cầu và điều kiện làm việc của các vị trí đang mở."
+      },
+      "solutions": {
+        "title": "Giải pháp AI",
+        "description": "Cung cấp Physical AI cho hiện trường công nghiệp, Trưởng phòng Choi AI cho văn phòng và AI agent cho sáu ngành: xây dựng, nội dung, sản xuất, phân phối, dịch vụ nhân lực và phòng ngừa tội phạm."
+      },
+      "officeAi": {
+        "title": "Trưởng phòng Choi AI — agent văn phòng",
+        "description": "AI agent thay thế công việc văn phòng lặp lại như đọc, sắp xếp tài liệu và viết báo cáo. Giới thiệu phương thức triển khai và trường hợp áp dụng."
+      },
+      "physicalAi": {
+        "title": "Physical AI — agent hiện trường công nghiệp",
+        "description": "AI cho hiện trường công nghiệp, chuyển những gì camera và cảm biến đọc được thành phán đoán con người có thể sử dụng. Giới thiệu năng lực công nghệ và ngành áp dụng."
+      },
+      "services": {
+        "title": "Dịch vụ phát triển",
+        "description": "Phát triển phần mềm tổng hợp và cử nhân sự phát triển. Dịch vụ phát triển của DevFirm cung cấp cả việc cần làm và người làm ra sản phẩm."
+      },
+      "software": {
+        "title": "Phát triển phần mềm tổng hợp",
+        "description": "Chúng tôi phụ trách xây dựng web, app, AI và hệ thống. Hãy kiểm tra trước quy trình thực hiện và tiêu chuẩn chất lượng sản phẩm bàn giao."
+      },
+      "staffing": {
+        "title": "Cử nhân sự phát triển · Outsourcing",
+        "description": "Bố trí nhân sự phát triển tại chỗ, từ xa hoặc theo dự án. Vì chủ thể hợp đồng là pháp nhân, gánh nặng quản lý của bên đặt hàng giảm đi."
+      },
+      "academy": {
+        "title": "PBL Academy",
+        "description": "Đào tạo thực tế triển khai chương trình NCS thành dự án. Vận hành School phát triển giải pháp, School nghiệp vụ văn phòng chung và School nghiệp vụ dự án."
+      },
+      "courses": {
+        "title": "Thông tin khóa học",
+        "description": "Danh sách toàn bộ khóa học của DevFirm PBL Academy. Có thể kiểm tra thời lượng, số lượng, đối tượng và chương trình học theo từng school."
+      },
+      "apply": {
+        "title": "Đăng ký học",
+        "description": "Tiếp nhận đơn đăng ký học PBL Academy. Hãy để lại khóa mong muốn và mức kinh nghiệm, người phụ trách sẽ liên hệ."
+      },
+      "workspace": {
+        "title": "Văn phòng chia sẻ cho lập trình viên",
+        "description": "Văn phòng chia sẻ cho lập trình viên chuyên về hậu kỳ, có phòng thu âm và hạ tầng sản xuất nội dung. Hướng dẫn cơ sở và điều kiện vào làm việc."
+      },
+      "contact": {
+        "title": "Liên hệ",
+        "description": "Tiếp nhận liên hệ về triển khai giải pháp, yêu cầu phát triển, cử nhân sự, Academy và vào văn phòng. Tầng 2, Tòa nhà Hanyang, Gangnam-daero 6-gil, Seocho-gu, Seoul."
+      },
+      "privacy": {
+        "title": "Chính sách quyền riêng tư",
+        "description": "Hướng dẫn các hạng mục thông tin cá nhân DevFirm thu thập, mục đích sử dụng, thời hạn lưu giữ và quyền của người dùng."
+      },
+      "terms": {
+        "title": "Điều khoản sử dụng",
+        "description": "Điều khoản về việc sử dụng website DevFirm."
+      }
+    },
+    "ogImageAlt": "DevFirm — pháp nhân phát triển do các lập trình viên tập hợp. Physical AI cho hiện trường công nghiệp, Trưởng phòng Choi AI cho văn phòng."
+  }
+}

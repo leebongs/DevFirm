@@ -14,6 +14,8 @@ export const ui = {
     home: "홈",
     skipToContent: "본문으로 건너뛰기",
     externalLink: "새 창에서 열림",
+    /** 언어 선택기의 스크린리더용 이름 */
+    language: "언어 선택",
   },
   toc: {
     title: "이 페이지의 내용",

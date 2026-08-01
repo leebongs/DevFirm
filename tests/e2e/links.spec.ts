@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { DEFAULT_LOCALE } from "../../content/locales";
 import { ROUTES } from "../routes";
 
 /**
@@ -70,7 +71,7 @@ test.describe("링크", () => {
   });
 
   test("모든 사이트맵 경로가 헤더·푸터에서 도달 가능하다", async ({ page }) => {
-    await page.goto("/");
+    await page.goto(`/${DEFAULT_LOCALE}`);
 
     // 푸터는 RSC 라 초기 HTML 에 전체 링크가 들어 있다(§6.4.1).
     // 메가메뉴는 ssr:false 이므로 여기서 세면 안 된다.
@@ -79,8 +80,11 @@ test.describe("링크", () => {
       .evaluateAll((nodes) => nodes.map((node) => node.getAttribute("href")));
 
     const reachable = new Set(footerHrefs.filter(Boolean) as string[]);
+    // 홈은 푸터가 아니라 헤더 로고로 간다. 언어 접두사가 붙으면서 홈 경로가
+    // "/" 가 아니라 "/ko" 가 됐으므로 예외 조건도 따라가야 한다.
+    const home = `/${DEFAULT_LOCALE}`;
     const missing = ROUTES.filter(
-      (route) => route !== "/" && !reachable.has(route),
+      (route) => route !== home && !reachable.has(route),
     );
 
     expect(missing, "푸터에서 도달할 수 없는 경로").toEqual([]);

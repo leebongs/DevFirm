@@ -1,0 +1,2297 @@
+{
+  "site": {
+    "nameKo": "DevFirm",
+    "legalName": "CMNYX Co., Ltd.",
+    "footerBrand": "DevFirm CIC",
+    "brand": "Computing Management",
+    "tagline": "DevFirm, société de développement réunissant des développeurs",
+    "addressFull": "2e étage, bâtiment Hanyang, 59-1 Gangnam-daero 6-gil, Seocho-gu, Séoul",
+    "addressLocality": "Seocho-gu",
+    "addressRegion": "Séoul"
+  },
+  "ui": {
+    "nav": {
+      "openMenu": "Ouvrir le menu",
+      "closeMenu": "Fermer le menu",
+      "mainNavLabel": "Menu principal",
+      "sectionNavLabel": "Menu de section",
+      "breadcrumbLabel": "Position actuelle",
+      "home": "Accueil",
+      "skipToContent": "Aller au contenu",
+      "externalLink": "S’ouvre dans une nouvelle fenêtre"
+    },
+    "toc": {
+      "title": "Contenu de cette page"
+    },
+    "error": {
+      "notFoundTitle": "Page introuvable",
+      "notFoundBody": "L’adresse a changé ou la page a été supprimée. Utilisez les liens ci-dessous pour continuer.",
+      "errorTitle": "Un problème est survenu",
+      "errorBody": "Veuillez réessayer dans un instant. Si le problème persiste, contactez-nous.",
+      "retry": "Réessayer",
+      "goHome": "Accueil"
+    },
+    "footer": {
+      "businessNumberLabel": "N° d’immatriculation",
+      "addressLabel": "Adresse",
+      "telLabel": "Téléphone"
+    }
+  },
+  "nav": {
+    "mainNav": [
+      {
+        "label": "Société",
+        "href": "/about",
+        "description": "La façon de travailler d’une société de développement réunissant des développeurs",
+        "children": [
+          {
+            "label": "DevFirm",
+            "href": "/about",
+            "description": "Un modèle de société de développement qui travaille comme un cabinet d’avocats"
+          },
+          {
+            "label": "Entreprise interne (CIC)",
+            "href": "/about/cic",
+            "description": "Une structure où les développeurs gèrent leur propre activité"
+          },
+          {
+            "label": "Recrutement",
+            "href": "/about/careers",
+            "description": "Postes actuellement ouverts"
+          }
+        ]
+      },
+      {
+        "label": "Solutions AI",
+        "href": "/solutions",
+        "description": "Physical AI pour les sites industriels, Manager Choi AI pour les bureaux",
+        "children": [
+          {
+            "label": "Manager Choi AI",
+            "href": "/solutions/office-ai",
+            "description": "Un agent qui prend en charge les tâches répétitives de bureau"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai",
+            "description": "Un agent qui observe et juge sur les sites industriels"
+          },
+          {
+            "label": "AI construction",
+            "href": "/solutions/agents/construction",
+            "description": "Automatisation de la gestion des avancements, de la sécurité et des matériaux"
+          },
+          {
+            "label": "AI contenu",
+            "href": "/solutions/agents/content",
+            "description": "Assistance à la planification, à la production et à la postproduction"
+          },
+          {
+            "label": "AI fabrication",
+            "href": "/solutions/agents/manufacturing",
+            "description": "Suivi des équipements, de la qualité et du rendement"
+          },
+          {
+            "label": "AI distribution",
+            "href": "/solutions/agents/distribution",
+            "description": "Stock, logistique et prévision de la demande"
+          },
+          {
+            "label": "AI services externalisés",
+            "href": "/solutions/agents/service",
+            "description": "Affectation du personnel, présence et règlement"
+          },
+          {
+            "label": "AI prévention",
+            "href": "/solutions/agents/safety",
+            "description": "Détection de signes anormaux par analyse vidéo"
+          }
+        ]
+      },
+      {
+        "label": "Services de développement",
+        "href": "/services",
+        "description": "Nous fournissons à la fois le développement et les personnes qui le réalisent",
+        "children": [
+          {
+            "label": "Développement logiciel global",
+            "href": "/services/software",
+            "description": "Web, apps, AI et systèmes"
+          },
+          {
+            "label": "Mise à disposition de développeurs",
+            "href": "/services/staffing",
+            "description": "Intervention sur site, à distance ou par projet"
+          }
+        ]
+      },
+      {
+        "label": "Académie",
+        "href": "/academy",
+        "description": "Apprentissage par projet (PBL) fondé sur le programme NCS",
+        "children": [
+          {
+            "label": "Cours",
+            "href": "/academy/courses",
+            "description": "Liste des cours des trois écoles"
+          },
+          {
+            "label": "Candidature",
+            "href": "/academy/apply",
+            "description": "Réception des candidatures aux cours"
+          }
+        ]
+      },
+      {
+        "label": "Bureau partagé",
+        "href": "/workspace",
+        "description": "Espace de travail pour développeurs spécialisé en postproduction"
+      }
+    ],
+    "footerNav": [
+      {
+        "label": "Société",
+        "href": "/about",
+        "children": [
+          {
+            "label": "DevFirm",
+            "href": "/about"
+          },
+          {
+            "label": "Entreprise interne (CIC)",
+            "href": "/about/cic"
+          },
+          {
+            "label": "Recrutement",
+            "href": "/about/careers"
+          }
+        ]
+      },
+      {
+        "label": "Solutions AI",
+        "href": "/solutions",
+        "children": [
+          {
+            "label": "Toutes les solutions AI",
+            "href": "/solutions"
+          },
+          {
+            "label": "Manager Choi AI",
+            "href": "/solutions/office-ai"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai"
+          },
+          {
+            "label": "AI construction",
+            "href": "/solutions/agents/construction"
+          },
+          {
+            "label": "AI contenu",
+            "href": "/solutions/agents/content"
+          },
+          {
+            "label": "AI fabrication",
+            "href": "/solutions/agents/manufacturing"
+          },
+          {
+            "label": "AI distribution",
+            "href": "/solutions/agents/distribution"
+          },
+          {
+            "label": "AI services externalisés",
+            "href": "/solutions/agents/service"
+          },
+          {
+            "label": "AI prévention",
+            "href": "/solutions/agents/safety"
+          }
+        ]
+      },
+      {
+        "label": "Services · Formation",
+        "href": "/services",
+        "children": [
+          {
+            "label": "Tous les services de développement",
+            "href": "/services"
+          },
+          {
+            "label": "Développement logiciel global",
+            "href": "/services/software"
+          },
+          {
+            "label": "Mise à disposition de développeurs",
+            "href": "/services/staffing"
+          },
+          {
+            "label": "Académie PBL",
+            "href": "/academy"
+          },
+          {
+            "label": "Cours",
+            "href": "/academy/courses"
+          },
+          {
+            "label": "Candidature",
+            "href": "/academy/apply"
+          },
+          {
+            "label": "Bureau partagé",
+            "href": "/workspace"
+          }
+        ]
+      },
+      {
+        "label": "Contact · Conditions",
+        "href": "/contact",
+        "children": [
+          {
+            "label": "Nous contacter",
+            "href": "/contact"
+          },
+          {
+            "label": "Politique de confidentialité",
+            "href": "/privacy"
+          },
+          {
+            "label": "Conditions d’utilisation",
+            "href": "/terms"
+          }
+        ]
+      }
+    ],
+    "sectionNav": {
+      "/about": [
+        {
+          "label": "DevFirm",
+          "href": "/about",
+          "description": "Un modèle de société de développement qui travaille comme un cabinet d’avocats"
+        },
+        {
+          "label": "Entreprise interne (CIC)",
+          "href": "/about/cic",
+          "description": "Une structure où les développeurs gèrent leur propre activité"
+        },
+        {
+          "label": "Recrutement",
+          "href": "/about/careers",
+          "description": "Postes actuellement ouverts"
+        }
+      ],
+      "/solutions": [
+        {
+          "label": "Manager Choi AI",
+          "href": "/solutions/office-ai",
+          "description": "Un agent qui prend en charge les tâches répétitives de bureau"
+        },
+        {
+          "label": "Physical AI",
+          "href": "/solutions/physical-ai",
+          "description": "Un agent qui observe et juge sur les sites industriels"
+        },
+        {
+          "label": "AI construction",
+          "href": "/solutions/agents/construction",
+          "description": "Automatisation de la gestion des avancements, de la sécurité et des matériaux"
+        },
+        {
+          "label": "AI contenu",
+          "href": "/solutions/agents/content",
+          "description": "Assistance à la planification, à la production et à la postproduction"
+        },
+        {
+          "label": "AI fabrication",
+          "href": "/solutions/agents/manufacturing",
+          "description": "Suivi des équipements, de la qualité et du rendement"
+        },
+        {
+          "label": "AI distribution",
+          "href": "/solutions/agents/distribution",
+          "description": "Stock, logistique et prévision de la demande"
+        },
+        {
+          "label": "AI services externalisés",
+          "href": "/solutions/agents/service",
+          "description": "Affectation du personnel, présence et règlement"
+        },
+        {
+          "label": "AI prévention",
+          "href": "/solutions/agents/safety",
+          "description": "Détection de signes anormaux par analyse vidéo"
+        }
+      ],
+      "/services": [
+        {
+          "label": "Développement logiciel global",
+          "href": "/services/software",
+          "description": "Web, apps, AI et systèmes"
+        },
+        {
+          "label": "Mise à disposition de développeurs",
+          "href": "/services/staffing",
+          "description": "Intervention sur site, à distance ou par projet"
+        }
+      ],
+      "/academy": [
+        {
+          "label": "Cours",
+          "href": "/academy/courses",
+          "description": "Liste des cours des trois écoles"
+        },
+        {
+          "label": "Candidature",
+          "href": "/academy/apply",
+          "description": "Réception des candidatures aux cours"
+        }
+      ]
+    },
+    "primaryCta": {
+      "label": "Nous contacter",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DevFirm",
+      "title": "DevFirm, société de développement réunissant des développeurs",
+      "lead": "Comme un cabinet d’avocats réunit des avocats pour prendre en charge des dossiers, DevFirm réunit des développeurs pour prendre en charge le développement. L’entreprise gère les contrats et les règlements, les développeurs se concentrent sur la réalisation.",
+      "primaryCta": {
+        "label": "Nous contacter",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "Voir les solutions AI",
+        "href": "/solutions"
+      }
+    },
+    "slogan": {
+      "title": "Quand le terrain change, l’AI nécessaire change aussi",
+      "left": {
+        "eyebrow": "Sites industriels",
+        "name": "Physical AI",
+        "desc": "Elle sert là où il faut observer et juger. Elle transforme ce que les caméras et les capteurs lisent en décisions utilisables par les personnes.",
+        "href": "/solutions/physical-ai"
+      },
+      "right": {
+        "eyebrow": "Bureaux",
+        "name": "Manager Choi AI",
+        "desc": "Elle prend en charge les tâches de bureau répétitives. Elle lit les documents, les organise et va jusqu’à préparer des rapports.",
+        "href": "/solutions/office-ai"
+      }
+    },
+    "audience": {
+      "eyebrow": "Quel est votre besoin",
+      "title": "Nous montrons d’abord ce que vous cherchez",
+      "cards": [
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-client.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Clients entreprises",
+          "desc": "Si vous devez adopter l’AI ou trouver des développeurs",
+          "href": "/solutions",
+          "linkLabel": "Voir les solutions AI"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-learner.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Personnes souhaitant apprendre",
+          "desc": "Si vous voulez acquérir une pratique réelle par projet",
+          "href": "/academy",
+          "linkLabel": "Voir l’académie"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-developer.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Développeurs pour travailler avec nous",
+          "desc": "Si vous voulez nous rejoindre ou gérer une entreprise interne",
+          "href": "/about/careers",
+          "linkLabel": "Voir les recrutements"
+        }
+      ]
+    },
+    "agentsSection": {
+      "eyebrow": "Agents AI par secteur",
+      "title": "Avec l’aide d’assistants AI par domaine, il ne reste qu’à décider",
+      "lead": "Les agents organisent d’abord les jugements répétitifs de six secteurs. Les personnes n’interviennent qu’aux points où un jugement est nécessaire."
+    },
+    "model": {
+      "eyebrow": "Modèle DevFirm",
+      "title": "Ce qu’un cabinet d’avocats fait pour les avocats, DevFirm le fait pour les développeurs",
+      "lead": "Les développeurs consacrent leur temps à créer plutôt qu’à la prospection, aux contrats, aux règlements et à la fiscalité. Les donneurs d’ordre contractent avec une société, non avec un particulier.",
+      "comparison": {
+        "leftLabel": "Cabinet d’avocats",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Avocat",
+            "right": "Développeur"
+          },
+          {
+            "left": "Prise en charge de dossiers",
+            "right": "Obtention de projets"
+          },
+          {
+            "left": "Le secrétariat gère l’administration",
+            "right": "Le support de gestion gère le back-office"
+          },
+          {
+            "left": "Avocat associé",
+            "right": "Responsable d’entreprise interne (CIC)"
+          },
+          {
+            "left": "Le client contracte avec la société",
+            "right": "Le donneur d’ordre contracte avec la société"
+          }
+        ]
+      },
+      "note": "Pour les donneurs d’ordre, les risques liés à un contrat avec un freelance individuel disparaissent. Pour les développeurs, les tâches difficiles à assumer seul disparaissent."
+    },
+    "bands": {
+      "academy": {
+        "eyebrow": "Académie PBL",
+        "title": "On apprend en créant",
+        "desc": "Le programme NCS est assimilé par projet. À la fin du cours, il reste un résultat à inscrire dans un CV.",
+        "href": "/academy",
+        "linkLabel": "Voir les cours"
+      },
+      "workspace": {
+        "eyebrow": "Bureau partagé",
+        "title": "Un espace de travail incluant la postproduction",
+        "desc": "Un bureau partagé pour développeurs, avec studio d’enregistrement et infrastructure de production de contenu.",
+        "href": "/workspace",
+        "linkLabel": "Voir l’espace"
+      }
+    },
+    "trust": {
+      "eyebrow": "Société",
+      "title": "Depuis 2007",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "Création"
+        },
+        {
+          "value": "CIC",
+          "label": "Exploitation d’entreprises internes"
+        },
+        {
+          "value": "Séoul Seocho",
+          "label": "Près de Gangnam-daero"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Vous n’avez pas encore arrêté ce qu’il faut créer",
+      "desc": "Expliquez-nous votre situation actuelle. Nous commencerons par définir ensemble où intervenir.",
+      "cta": {
+        "label": "Nous contacter",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Société",
+      "title": "Une société de développement réunissant des développeurs",
+      "lead": "DevFirm crée une structure qui permet aux développeurs de se concentrer uniquement sur le développement. Le reste est pris en charge par l’entreprise."
+    },
+    "metaphor": {
+      "id": "model",
+      "eyebrow": "Modèle DevFirm",
+      "title": "Nous avons transposé la structure du cabinet d’avocats au développement",
+      "lead": "Comme un avocat se concentre sur les dossiers avec le soutien d’un secrétariat, les développeurs de DevFirm se concentrent sur le développement avec le soutien du service de gestion.",
+      "comparison": {
+        "leftLabel": "Cabinet d’avocats",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "L’avocat prend en charge un dossier",
+            "right": "Le développeur prend en charge un projet"
+          },
+          {
+            "left": "Le secrétariat traite l’administration",
+            "right": "Le support de gestion traite le back-office"
+          },
+          {
+            "left": "Le client contracte avec la société",
+            "right": "Le donneur d’ordre contracte avec la société"
+          },
+          {
+            "left": "L’associé détient une participation",
+            "right": "Le responsable de CIC détient une activité"
+          }
+        ]
+      }
+    },
+    "backoffice": {
+      "id": "backoffice",
+      "eyebrow": "Service de gestion",
+      "title": "Ce que les développeurs n’ont pas à faire",
+      "lead": "Ce sont les postes qui prennent le plus de temps aux développeurs travaillant seuls. Chez DevFirm, ces tâches n’arrivent pas sur leur bureau.",
+      "items": [
+        {
+          "title": "Contrats et négociation",
+          "desc": "La société dispose de contrats types et de procédures de revue. Le développeur ne juge pas seul les clauses défavorables."
+        },
+        {
+          "title": "Fiscalité et règlements",
+          "desc": "L’entreprise traite l’émission des factures fiscales, les retenues à la source et les déclarations de TVA."
+        },
+        {
+          "title": "Recouvrement des paiements",
+          "desc": "La société gère les impayés et les relances. Le développeur n’a pas à se retrouver en conflit financier avec le donneur d’ordre."
+        },
+        {
+          "title": "Assurances sociales et droit du travail",
+          "desc": "L’entreprise effectue les déclarations et la gestion du travail adaptées au type d’emploi."
+        }
+      ]
+    },
+    "history": {
+      "id": "history",
+      "eyebrow": "Historique",
+      "title": "Depuis 2007",
+      "items": [
+        {
+          "year": "2007",
+          "title": "Création de la société",
+          "desc": "Nous avons commencé le développement logiciel et la construction de systèmes."
+        },
+        {
+          "year": "Années 2010",
+          "title": "Mise à disposition de développeurs · Outsourcing",
+          "desc": "Nous avons élargi nos services par des interventions sur site et par projet."
+        },
+        {
+          "year": "Années 2020",
+          "title": "Introduction des entreprises internes (CIC)",
+          "desc": "Nous avons créé une structure où les développeurs gèrent leur propre activité au sein de l’entreprise."
+        },
+        {
+          "year": "Aujourd’hui",
+          "title": "Activité d’agents AI",
+          "desc": "Nous avons réorganisé l’activité autour de Physical AI pour les sites industriels et de Manager Choi AI pour les bureaux."
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "eyebrow": "Présentation de la société",
+      "title": "Informations de base"
+    },
+    "cta": {
+      "title": "Il existe trois façons de travailler avec DevFirm",
+      "desc": "Comme donneur d’ordre, comme développeur qui nous rejoint, ou en commençant par l’académie.",
+      "primary": {
+        "label": "Nous contacter",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Voir les recrutements",
+        "href": "/about/careers"
+      }
+    }
+  },
+  "cic": {
+    "hero": {
+      "eyebrow": "Entreprise interne",
+      "title": "Gérer sa propre activité au sein de l’entreprise",
+      "lead": "Le CIC (Company In Company) est un dispositif qui permet à un développeur de placer et gérer sa propre unité d’activité au sein de DevFirm. Il utilise le crédit et le back-office de la société, tout en décidant lui-même de l’orientation de son activité."
+    },
+    "what": {
+      "id": "what",
+      "eyebrow": "Qu’est-ce qu’un CIC",
+      "title": "Réduire le risque de création d’entreprise, conserver l’autonomie",
+      "lead": "Créer seul une société impose de bâtir le crédit et l’administration dès le départ. Un CIC emprunte ces deux éléments à l’entreprise, tandis que le responsable conserve le pouvoir de décision sur l’activité.",
+      "items": [
+        {
+          "title": "Utiliser le crédit de la société",
+          "desc": "Le donneur d’ordre contracte avec une société créée en 2007, non avec une nouvelle entreprise individuelle."
+        },
+        {
+          "title": "Utiliser le back-office",
+          "desc": "Le service de gestion traite les contrats, la fiscalité, les règlements et les questions de travail."
+        },
+        {
+          "title": "L’activité est décidée par le responsable",
+          "desc": "Le responsable de CIC décide des travaux à prendre en charge et de l’équipe à constituer."
+        },
+        {
+          "title": "Les résultats sont réglés par unité d’activité",
+          "desc": "La répartition se fait sur les résultats de l’activité, non sous forme de salaire."
+        }
+      ]
+    },
+    "operation": {
+      "id": "operation",
+      "eyebrow": "Mode d’exploitation",
+      "title": "Voici comment DevFirm fonctionne",
+      "steps": [
+        "Discussion du plan d’activité",
+        "Création du CIC · accord sur les conditions",
+        "Obtention de projets · constitution de l’équipe",
+        "Règlement des résultats · réinvestissement"
+      ]
+    },
+    "roadmap": {
+      "id": "roadmap",
+      "eyebrow": "Feuille de route",
+      "title": "Amélioration des agents AI",
+      "lead": "Chaque CIC crée un agent pour son domaine, et l’entreprise construit la base commune qu’ils partagent. La connaissance du domaine s’accumule dans le CIC, les technologies communes dans l’entreprise.",
+      "items": [
+        {
+          "title": "Sécurisation des données de domaine",
+          "desc": "Le CIC collecte les données réelles et les critères de jugement sur le terrain dont il a la charge."
+        },
+        {
+          "title": "Construction d’une base commune",
+          "desc": "L’entreprise développe des fonctions communes comme la lecture, la recherche et le reporting, utilisées par tous les CIC."
+        },
+        {
+          "title": "Mise en produit des agents",
+          "desc": "Les jugements validés sont regroupés en produits d’agents par secteur."
+        }
+      ]
+    },
+    "conditions": {
+      "id": "conditions",
+      "eyebrow": "Conditions de participation",
+      "title": "Nous travaillons avec ce type de profil",
+      "items": [
+        "Expérience de création autonome de travail dans un domaine donné",
+        "Attitude responsable vis-à-vis des livrables",
+        "Volonté de constituer et gérer une équipe"
+      ],
+      "note": "Nous regardons moins le nombre d’années d’expérience que la capacité à créer une activité qui fonctionne d’elle-même. Il n’est pas nécessaire d’avoir déjà une équipe."
+    },
+    "cta": {
+      "title": "Si vous envisagez de commencer par un CIC",
+      "desc": "Indiquez l’activité que vous préparez. Les conditions sont définies selon la nature de l’activité.",
+      "primary": {
+        "label": "Nous contacter",
+        "href": "/contact"
+      }
+    }
+  },
+  "careers": {
+    "page": {
+      "hero": {
+        "eyebrow": "Recrutement",
+        "title": "Nous cherchons des développeurs pour créer avec nous",
+        "lead": "DevFirm crée une structure qui permet aux développeurs de se concentrer sur le développement. Nous cherchons des personnes qui utiliseront cette structure avec nous."
+      },
+      "emptyState": "Aucun poste n’est actuellement ouvert. Les candidatures spontanées sont reçues via le formulaire de contact.",
+      "statusLabel": {
+        "open": "Ouvert",
+        "closed": "Clôturé"
+      },
+      "fields": {
+        "responsibilities": "Missions",
+        "requirements": "Qualifications requises",
+        "preferred": "Atouts",
+        "conditions": "Conditions de travail",
+        "deadline": "Clôture",
+        "apply": "Postuler"
+      },
+      "cta": {
+        "title": "Même si aucun poste ne correspond",
+        "desc": "Dites-nous quel travail vous souhaitez faire. Nous chercherons une place avec vous. Il existe aussi une façon de commencer par un CIC.",
+        "primary": {
+          "label": "Nous contacter",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Découvrir le CIC",
+          "href": "/about/cic"
+        }
+      }
+    },
+    "jobs": [
+      {
+        "slug": "ai-engineer",
+        "title": "Ingénieur agents AI",
+        "team": "Solutions AI",
+        "employmentType": "CDI",
+        "status": "open",
+        "deadline": "Permanent",
+        "responsibilities": [
+          "Concevoir et mettre en œuvre les pipelines de lecture et de raisonnement des agents AI par secteur",
+          "Organiser les chemins de collecte des données terrain et vérifier leur qualité",
+          "Ajuster la précision et traiter les problèmes d’exploitation sur les sites d’adoption"
+        ],
+        "requirements": [
+          "Au moins 3 ans d’expérience pratique en pipelines de données et de modèles avec Python",
+          "Expérience d’exploitation d’un modèle dans un service réel",
+          "Expérience de définition de critères avec des responsables terrain"
+        ],
+        "preferred": [
+          "Expérience en reconnaissance vidéo ou détection d’anomalies de séries temporelles",
+          "Compréhension des domaines fabrication, construction ou logistique",
+          "Expérience de configuration d’agents LLM"
+        ],
+        "conditions": [
+          "Bureau à Seocho-gu, Séoul · discussion possible",
+          "5 jours par semaine, horaires flexibles",
+          "Équipement et frais d’apprentissage pris en charge"
+        ]
+      },
+      {
+        "slug": "fullstack-developer",
+        "title": "Développeur full-stack",
+        "team": "Services de développement",
+        "employmentType": "CDI",
+        "status": "open",
+        "deadline": "Permanent",
+        "responsibilities": [
+          "Conception jusqu’au déploiement de services web et applicatifs clients",
+          "Amélioration et migration de systèmes existants",
+          "Participation dès la phase de cadrage des exigences"
+        ],
+        "requirements": [
+          "Au moins 3 ans d’expérience en développement de services web",
+          "Maîtrise de TypeScript ou d’un langage à typage statique équivalent",
+          "Expérience de déploiement et d’exploitation directe"
+        ],
+        "preferred": [
+          "Expérience avec Next.js App Router",
+          "Expérience de configuration d’infrastructure cloud",
+          "Expérience de communication directe avec des donneurs d’ordre"
+        ],
+        "conditions": [
+          "Bureau à Seocho-gu, Séoul · présence sur site possible selon le projet",
+          "5 jours par semaine, horaires flexibles",
+          "Accès possible au bureau partagé"
+        ]
+      },
+      {
+        "slug": "cic-lead",
+        "title": "Responsable d’entreprise interne (CIC)",
+        "team": "CIC",
+        "employmentType": "Contrat",
+        "status": "open",
+        "deadline": "Permanent",
+        "responsibilities": [
+          "Planification commerciale et obtention de projets dans le domaine attribué",
+          "Constitution d’équipe et conduite de projets",
+          "Définition de l’orientation produit des agents de domaine"
+        ],
+        "requirements": [
+          "Expérience de création autonome de travail dans un domaine spécifique",
+          "Expérience de constitution d’une équipe et de finalisation d’un projet",
+          "Attitude responsable vis-à-vis des résultats commerciaux"
+        ],
+        "preferred": [
+          "Réseau client existant",
+          "Expérience de projets d’adoption AI",
+          "Expérience de création ou d’exploitation d’activité"
+        ],
+        "conditions": [
+          "Règlement fondé sur les résultats · conditions à discuter selon la nature de l’activité",
+          "Soutien complet du crédit de la société et du back-office",
+          "Forme de travail autonome"
+        ]
+      }
+    ]
+  },
+  "solutions": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Solutions AI",
+        "title": "Physical AI pour les sites industriels, Manager Choi AI pour les bureaux",
+        "lead": "Quand le terrain change, les jugements nécessaires changent aussi. DevFirm aborde le sujet selon deux axes."
+      },
+      "axes": [
+        {
+          "eyebrow": "Sites industriels",
+          "name": "Physical AI",
+          "desc": "Elle transforme ce que les caméras et les capteurs lisent sur le terrain en jugements utilisables par les personnes.",
+          "href": "/solutions/physical-ai",
+          "linkLabel": "Voir Physical AI"
+        },
+        {
+          "eyebrow": "Bureaux",
+          "name": "Manager Choi AI",
+          "desc": "Elle prend en charge les tâches répétitives consistant à lire, organiser et rédiger des rapports à partir de documents.",
+          "href": "/solutions/office-ai",
+          "linkLabel": "Voir Manager Choi AI"
+        }
+      ],
+      "agentsSection": {
+        "id": "agents",
+        "eyebrow": "Agents par secteur",
+        "title": "Six secteurs, six types de jugement",
+        "lead": "Nous avons ajouté des critères de jugement sectoriels sur une même base. L’agent parle la langue du terrain."
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Processus d’adoption",
+        "title": "Démarrer en quatre étapes",
+        "steps": [
+          "Diagnostic de l’existant · contrôle des données",
+          "Accord sur les critères de jugement",
+          "Application pilote pendant 4 à 8 semaines",
+          "Passage en exploitation · extension"
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "eyebrow": "Questions fréquentes",
+        "title": "Questions fréquentes avant l’adoption",
+        "items": [
+          {
+            "q": "Peut-on commencer si les données ne sont pas organisées ?",
+            "a": "C’est le cas dans la plupart des sites. C’est pourquoi la première étape est le contrôle des données. Nous vérifions d’abord ce qui est possible avec ce qui s’accumule déjà, puis nous créons les chemins de collecte pour les parties manquantes."
+          },
+          {
+            "q": "Quel est le niveau de précision ?",
+            "a": "Il dépend du terrain et des éléments de jugement. C’est pourquoi nous prévoyons une phase pilote avant le contrat et mesurons avec des données réelles. Les objectifs chiffrés sont définis ensemble à partir de ces résultats."
+          },
+          {
+            "q": "Faut-il changer le système existant ?",
+            "a": "Dans la plupart des cas, non. Nous nous connectons en lisant les données du système existant et en y renvoyant les résultats. Lorsqu’un remplacement est nécessaire, nous en expliquons d’abord la raison."
+          },
+          {
+            "q": "Qui assure l’exploitation après l’adoption ?",
+            "a": "Au début, DevFirm s’en charge. Lorsque les critères de jugement sont stabilisés, nous les transférons aux responsables. Il est aussi possible de continuer à déléguer l’exploitation."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Nous définissons d’abord avec vous quels jugements automatiser",
+        "desc": "Indiquez les jugements que des personnes répètent actuellement sur votre terrain.",
+        "primary": {
+          "label": "Nous contacter",
+          "href": "/contact"
+        }
+      }
+    },
+    "physicalAi": {
+      "hero": {
+        "eyebrow": "Physical AI",
+        "title": "Ajouter des yeux qui lisent le terrain",
+        "lead": "Elle observe ce qu’une personne ne peut pas surveiller en continu. Ce qu’elle voit reste non comme un simple enregistrement, mais comme un jugement."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Problème",
+        "title": "La plupart des informations du terrain passent",
+        "items": [
+          {
+            "title": "On ne peut pas tout voir",
+            "desc": "Les caméras sont nombreuses, les personnes qui regardent sont limitées."
+          },
+          {
+            "title": "Après coup, il est difficile de retrouver",
+            "desc": "Lorsqu’une vérification est nécessaire, remonter la vidéo prend du temps."
+          },
+          {
+            "title": "Les critères varient",
+            "desc": "Une même scène peut être jugée différemment selon le responsable."
+          }
+        ]
+      },
+      "stack": {
+        "id": "stack",
+        "eyebrow": "Compétences techniques",
+        "title": "Lire, juger, transmettre",
+        "items": [
+          {
+            "title": "Reconnaissance vidéo",
+            "desc": "Elle distingue les personnes, les équipements et les états, et détecte les schémas de risque."
+          },
+          {
+            "title": "Analyse de séries temporelles de capteurs",
+            "desc": "Elle repère les flux différents de l’ordinaire comme des signaux anormaux."
+          },
+          {
+            "title": "Traitement edge sur site",
+            "desc": "Même sur des sites où le réseau est instable, elle juge localement."
+          },
+          {
+            "title": "Intégration aux systèmes métier",
+            "desc": "Elle transmet les résultats de jugement aux flux d’approbation et de reporting."
+          }
+        ]
+      },
+      "industries": {
+        "id": "industries",
+        "eyebrow": "Secteurs d’application",
+        "title": "Présente sur six types de terrain"
+      },
+      "cta": {
+        "title": "Commencer par un terrain",
+        "desc": "Si des caméras et des capteurs existent déjà, nous commençons par les utiliser.",
+        "primary": {
+          "label": "Nous contacter",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Voir Manager Choi AI",
+          "href": "/solutions/office-ai"
+        }
+      }
+    },
+    "officeAi": {
+      "hero": {
+        "eyebrow": "Manager Choi AI",
+        "title": "Les répétitions du bureau ne sont pas un travail pour les personnes",
+        "lead": "Lire les documents reçus, les organiser, les reporter dans des formulaires et rédiger des rapports. Manager Choi AI s’en charge."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Problème",
+        "title": "Il ne reste pas de temps pour juger",
+        "items": [
+          {
+            "title": "Recopier",
+            "desc": "Les informations reçues par e-mail et en pièces jointes sont ressaisies dans les formulaires internes."
+          },
+          {
+            "title": "Rechercher",
+            "desc": "Du temps part dans la recherche de documents passés pour vérifier les fondements."
+          },
+          {
+            "title": "Comparer",
+            "desc": "Les documents sont rapprochés pour vérifier si les chiffres concordent."
+          },
+          {
+            "title": "Organiser et remonter",
+            "desc": "Le même contenu est réécrit selon le destinataire du rapport."
+          }
+        ]
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Ce qu’elle fait",
+        "title": "Du document au rapport",
+        "items": [
+          {
+            "title": "Lecture de documents",
+            "desc": "Elle extrait les éléments nécessaires des contrats, relevés de transaction et devis."
+          },
+          {
+            "title": "Rédaction de formulaires internes",
+            "desc": "Elle remplit les formulaires de l’entreprise avec les éléments extraits."
+          },
+          {
+            "title": "Recherche de fondements",
+            "desc": "Elle trouve les contenus liés dans les documents passés et les présente avec leurs sources."
+          },
+          {
+            "title": "Contrôle croisé",
+            "desc": "Elle signale les écarts de chiffres et de conditions entre documents."
+          },
+          {
+            "title": "Brouillon de rapport",
+            "desc": "Elle crée un résumé adapté au destinataire du rapport."
+          },
+          {
+            "title": "Alertes de suivi",
+            "desc": "Elle suit les dossiers proches de l’échéance et les éléments manquants."
+          }
+        ]
+      },
+      "physical": {
+        "id": "physical",
+        "eyebrow": "Lien avec Physical AI",
+        "title": "Sans rupture entre bureau et terrain",
+        "lead": "Ce que Physical AI lit sur le terrain se poursuit dans le rapport de Manager Choi AI. Le chemin qui mène d’une photo de terrain à un document d’approbation devient unique."
+      },
+      "cta": {
+        "title": "Définissons le premier document à confier",
+        "desc": "Il suffit d’indiquer un type de document que vous traitez le plus souvent.",
+        "primary": {
+          "label": "Nous contacter",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Voir les agents par secteur",
+          "href": "/solutions"
+        }
+      }
+    },
+    "agentPage": {
+      "problems": {
+        "id": "problems",
+        "eyebrow": "Problèmes du terrain",
+        "title": "Vous procédez probablement ainsi aujourd’hui"
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Ce que fait l’agent",
+        "title": "La partie prise en charge par l’agent"
+      },
+      "outcomes": {
+        "id": "outcomes",
+        "eyebrow": "Effets attendus",
+        "title": "Ce qui change",
+        "note": "Après mesure sur des données réelles pendant la phase pilote, les objectifs sont redéfinis."
+      },
+      "steps": {
+        "id": "steps",
+        "eyebrow": "Flux d’adoption",
+        "title": "Quatre étapes d’intégration"
+      },
+      "siblings": {
+        "id": "siblings",
+        "eyebrow": "Autres secteurs",
+        "title": "Voici comment d’autres terrains l’utilisent"
+      },
+      "cta": {
+        "title": "Vérifiez si cela peut fonctionner sur votre terrain",
+        "desc": "Nous examinons d’abord ce qui est possible avec les données déjà accumulées.",
+        "primary": {
+          "label": "Nous contacter",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Voir toutes les solutions AI",
+          "href": "/solutions"
+        }
+      }
+    }
+  },
+  "agents": [
+    {
+      "slug": "construction",
+      "name": "AI construction",
+      "tagline": "Réduire la distance entre les plans et le terrain.",
+      "icon": {},
+      "problems": [
+        "Le taux d’avancement est agrégé différemment selon les personnes",
+        "Les relevés de sécurité sont dispersés entre papier et messagerie",
+        "Les entrées de matériaux ne correspondent pas aux consommations réelles"
+      ],
+      "capabilities": [
+        {
+          "title": "Lecture de l’avancement",
+          "desc": "Elle compare les photos du site et les rapports de travail pour calculer chaque jour le taux d’avancement selon le même critère."
+        },
+        {
+          "title": "Détection des risques de sécurité",
+          "desc": "Elle détecte dans les vidéos CCTV l’absence d’équipement de protection et l’entrée en zone dangereuse, puis alerte immédiatement."
+        },
+        {
+          "title": "Organisation des entrées et sorties de matériaux",
+          "desc": "Elle rapproche les bons d’entrée et les quantités de construction, puis signale les surplus ou manques chaque semaine."
+        },
+        {
+          "title": "Rédaction du rapport quotidien",
+          "desc": "Elle rassemble les enregistrements dispersés et crée automatiquement un rapport conforme au format du donneur d’ordre."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Temps de rédaction du rapport quotidien",
+          "value": "-70%"
+        },
+        {
+          "label": "Contrôles de sécurité omis",
+          "value": "0 cas"
+        },
+        {
+          "label": "Identification des écarts de matériaux",
+          "value": "1 fois par semaine"
+        }
+      ],
+      "steps": [
+        "Contrôle des données du site",
+        "Accord sur les critères de lecture",
+        "Application pilote de 4 semaines",
+        "Extension à tous les sites"
+      ],
+      "seo": {
+        "title": "AI construction",
+        "description": "Un agent AI pour chantiers qui calcule chaque jour le taux d’avancement selon le même critère à partir des photos du site et des rapports de travail, et qui organise automatiquement les contrôles de sécurité et les entrées et sorties de matériaux."
+      }
+    },
+    {
+      "slug": "content",
+      "name": "AI contenu",
+      "tagline": "Utiliser le temps de production pour créer.",
+      "icon": {},
+      "problems": [
+        "Le temps passe à chercher les scènes utilisables dans les rushes",
+        "Les tâches répétitives comme les sous-titres et les miniatures repoussent le calendrier de production",
+        "La recréation aux formats de chaque canal ne se termine pas"
+      ],
+      "capabilities": [
+        {
+          "title": "Indexation des originaux",
+          "desc": "Elle indexe les rushes par personne, lieu et réplique pour retrouver immédiatement les scènes nécessaires."
+        },
+        {
+          "title": "Brouillons de sous-titres et traduction",
+          "desc": "Elle transcrit l’audio et crée des brouillons de sous-titres adaptés au ton du canal."
+        },
+        {
+          "title": "Recomposition par canal",
+          "desc": "Elle dérive d’un original unique des versions montées adaptées aux formats de chaque canal."
+        },
+        {
+          "title": "Organisation des métadonnées",
+          "desc": "Elle prépare le téléversement en organisant les titres, tags et descriptions pour la recherche."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Temps de recherche de scènes",
+          "value": "-80%"
+        },
+        {
+          "label": "Rédaction des brouillons de sous-titres",
+          "value": "Immédiat"
+        },
+        {
+          "label": "Versions dérivées par canal",
+          "value": "1→N"
+        }
+      ],
+      "steps": [
+        "Connexion des actifs originaux",
+        "Apprentissage des critères de ton",
+        "Production pilote",
+        "Intégration à la ligne de production"
+      ],
+      "seo": {
+        "title": "AI contenu",
+        "description": "Un agent AI qui réduit les tâches répétitives de production de contenu par l’indexation des rushes, les brouillons de sous-titres et la recomposition par canal."
+      }
+    },
+    {
+      "slug": "manufacturing",
+      "name": "AI fabrication",
+      "tagline": "Lire les signaux avant l’apparition des défauts.",
+      "icon": {},
+      "problems": [
+        "Les anomalies d’équipement ne sont connues qu’après l’arrêt",
+        "Les critères d’inspection varient selon les inspecteurs",
+        "La cause d’une baisse de rendement ne peut pas être identifiée même après coup"
+      ],
+      "capabilities": [
+        {
+          "title": "Prévision des anomalies d’équipement",
+          "desc": "Elle détecte dans les tendances de capteurs les schémas différents de l’ordinaire et alerte avant l’arrêt."
+        },
+        {
+          "title": "Inspection visuelle",
+          "desc": "Elle juge les défauts par vidéo et supprime les écarts entre inspecteurs."
+        },
+        {
+          "title": "Traçage des causes de rendement",
+          "desc": "Elle relie les variables de procédé et les taux de défaut pour indiquer dans quelles conditions la situation s’est dégradée."
+        },
+        {
+          "title": "Contrôle des standards de travail",
+          "desc": "Elle consigne les écarts entre le travail standard et le travail réel afin de conserver les points d’amélioration."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Arrêts non planifiés",
+          "value": "-40%"
+        },
+        {
+          "label": "Écarts d’inspection",
+          "value": "Résolus"
+        },
+        {
+          "label": "Identification de la cause",
+          "value": "Le jour même"
+        }
+      ],
+      "steps": [
+        "Connexion des données d’équipement",
+        "Apprentissage de la plage normale",
+        "Validation sur une ligne",
+        "Extension aux lignes"
+      ],
+      "seo": {
+        "title": "AI fabrication",
+        "description": "Un agent AI qui réduit les pertes sur les sites de fabrication par la prévision des anomalies d’équipement, l’inspection visuelle par vidéo et le traçage des causes de rendement."
+      }
+    },
+    {
+      "slug": "distribution",
+      "name": "AI distribution",
+      "tagline": "Réduire les stocks et éviter les ruptures.",
+      "icon": {},
+      "problems": [
+        "Les produits qui se vendent bien s’épuisent d’abord",
+        "Les stocks qui ne se vendent pas occupent l’entrepôt",
+        "Les décisions de commande dépendent de l’expérience du responsable"
+      ],
+      "capabilities": [
+        {
+          "title": "Prévision de la demande",
+          "desc": "Elle prévoit la demande par article en tenant compte des tendances de vente et de la saisonnalité."
+        },
+        {
+          "title": "Proposition de commande",
+          "desc": "Elle calcule le délai d’approvisionnement et le stock de sécurité pour proposer les quantités à commander."
+        },
+        {
+          "title": "Contrôle de la santé des stocks",
+          "desc": "Elle identifie les stocks dont la rotation s’est arrêtée et indique le moment de liquidation."
+        },
+        {
+          "title": "Organisation des routes logistiques",
+          "desc": "Elle trouve les segments de retard dans l’historique des livraisons et recompose les itinéraires."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Taux de rupture",
+          "value": "-50%"
+        },
+        {
+          "label": "Jours de stock",
+          "value": "-25%"
+        },
+        {
+          "label": "Décisions de commande",
+          "value": "Fondées sur des preuves"
+        }
+      ],
+      "steps": [
+        "Connexion des données de vente",
+        "Validation de la précision de prévision",
+        "Application à certains articles",
+        "Tous les articles"
+      ],
+      "seo": {
+        "title": "AI distribution",
+        "description": "Un agent AI pour la distribution qui réduit à la fois les ruptures et les surstocks grâce à la prévision de la demande et aux propositions de commande."
+      }
+    },
+    {
+      "slug": "service",
+      "name": "AI services externalisés",
+      "tagline": "Affecter les personnes exige aussi des fondements.",
+      "icon": {},
+      "problems": [
+        "Le personnel nécessaire par site est décidé à l’intuition",
+        "Le contrôle des présences et le règlement prennent plusieurs jours chaque mois",
+        "Les conditions contractuelles varient selon les sites et provoquent des erreurs"
+      ],
+      "capabilities": [
+        {
+          "title": "Proposition d’affectation du personnel",
+          "desc": "Elle calcule le personnel nécessaire à partir de la taille du site et du temps passé auparavant."
+        },
+        {
+          "title": "Agrégation automatique des présences",
+          "desc": "Elle agrège les entrées et sorties selon les conditions du contrat, et ne laisse aux personnes que les exceptions."
+        },
+        {
+          "title": "Rédaction des états de règlement",
+          "desc": "Elle prépare un brouillon d’état de règlement en rapprochant les tarifs par site et les relevés de travail."
+        },
+        {
+          "title": "Contrôle des conditions contractuelles",
+          "desc": "Elle identifie et signale les écarts entre les conditions de chaque site et l’exploitation réelle."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Temps de règlement",
+          "value": "-60%"
+        },
+        {
+          "label": "Fondement d’affectation",
+          "value": "Chiffré"
+        },
+        {
+          "label": "Violation des conditions",
+          "value": "Détection préalable"
+        }
+      ],
+      "steps": [
+        "Organisation des conditions contractuelles",
+        "Connexion du système de présence",
+        "Pilote sur un site",
+        "Tous les sites"
+      ],
+      "seo": {
+        "title": "AI services externalisés",
+        "description": "Un agent AI qui réduit les tâches répétitives d’exploitation de services externalisés en automatisant le calcul d’affectation du personnel, l’agrégation des présences et la rédaction des états de règlement."
+      }
+    },
+    {
+      "slug": "safety",
+      "name": "AI prévention",
+      "tagline": "Voir les signaux avant qu’ils ne deviennent des incidents.",
+      "icon": {},
+      "problems": [
+        "Le personnel de surveillance ne peut pas regarder tous les écrans en même temps",
+        "La vérification vidéo après coup prend longtemps",
+        "Les critères de jugement du risque varient selon les opérateurs"
+      ],
+      "capabilities": [
+        {
+          "title": "Détection des comportements anormaux",
+          "desc": "Elle trouve en temps réel des schémas comme l’errance, l’intrusion ou la chute, puis alerte."
+        },
+        {
+          "title": "Recherche de segments",
+          "desc": "Elle retrouve immédiatement des segments vidéo par conditions de personne, de véhicule et de temps."
+        },
+        {
+          "title": "Surveillance priorisée",
+          "desc": "Elle place les écrans à haut risque devant les opérateurs."
+        },
+        {
+          "title": "Organisation des dossiers d’incident",
+          "desc": "Elle consigne automatiquement tout le déroulé, de la détection à l’action."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Recherche vidéo",
+          "value": "À la minute"
+        },
+        {
+          "label": "Détections manquées",
+          "value": "Réduction"
+        },
+        {
+          "label": "Critères de jugement",
+          "value": "Unifiés"
+        }
+      ],
+      "steps": [
+        "Connexion des caméras",
+        "Ajustement des critères de détection",
+        "Exploitation pilote de nuit",
+        "Extension à toute la zone"
+      ],
+      "seo": {
+        "title": "AI prévention",
+        "description": "Un agent AI de prévention qui aide le personnel de surveillance à juger grâce à la détection des comportements anormaux et à la recherche vidéo par conditions."
+      }
+    }
+  ],
+  "services": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Services de développement",
+        "title": "Nous fournissons le travail de création et les personnes qui créent",
+        "lead": "Vous pouvez nous confier tout un projet ou seulement demander des ressources. Le cocontractant est une société, non une personne individuelle."
+      },
+      "cards": [
+        {
+          "title": "Développement logiciel global",
+          "desc": "Nous prenons en charge des exigences jusqu’au déploiement et à l’exploitation.",
+          "href": "/services/software",
+          "linkLabel": "Voir les services de développement"
+        },
+        {
+          "title": "Mise à disposition de développeurs · Outsourcing",
+          "desc": "Nous affectons des développeurs sur site, à distance ou par projet.",
+          "href": "/services/staffing",
+          "linkLabel": "Voir la mise à disposition"
+        }
+      ],
+      "collaboration": {
+        "id": "collaboration",
+        "eyebrow": "Mode de collaboration",
+        "title": "Réduire la charge de gestion du donneur d’ordre",
+        "items": [
+          {
+            "title": "Point de contact unique",
+            "desc": "Vous ne communiquez pas séparément avec plusieurs développeurs. Les échanges sont centralisés par un interlocuteur."
+          },
+          {
+            "title": "Contrat avec une société",
+            "desc": "La société porte la responsabilité des contrats, des factures fiscales et de la maintenance corrective."
+          },
+          {
+            "title": "Documentation de passation",
+            "desc": "À la fin du projet, nous remettons aussi les documents nécessaires à l’exploitation."
+          }
+        ]
+      },
+      "domains": {
+        "id": "domains",
+        "eyebrow": "Domaines techniques",
+        "title": "Périmètre traité",
+        "items": [
+          "Services web · systèmes d’administration",
+          "Applications mobiles",
+          "Agents AI · pipelines de données",
+          "Intégration de systèmes internes · migration"
+        ]
+      },
+      "cta": {
+        "title": "Si vous ne savez pas quelle forme convient",
+        "desc": "Décrivez votre situation. Nous commencerons par déterminer s’il vaut mieux confier l’ensemble ou ajouter seulement des ressources.",
+        "primary": {
+          "label": "Nous contacter",
+          "href": "/contact"
+        }
+      }
+    },
+    "software": {
+      "hero": {
+        "eyebrow": "Développement logiciel global",
+        "title": "Des exigences jusqu’à l’exploitation",
+        "lead": "Nous participons dès l’étape où l’on décide quoi créer. Le travail ne s’arrête pas à la réalisation ; il se termine dans un état transmissible."
+      },
+      "areas": {
+        "id": "areas",
+        "eyebrow": "Domaines de développement",
+        "title": "Quatre domaines",
+        "items": [
+          {
+            "title": "Services web",
+            "desc": "Nous concevons ensemble les services clients et les systèmes d’administration internes."
+          },
+          {
+            "title": "Applications mobiles",
+            "desc": "Nous choisissons le natif ou le multiplateforme selon le périmètre nécessaire."
+          },
+          {
+            "title": "AI · Données",
+            "desc": "Nous ajoutons des agents aux points où un jugement est nécessaire et organisons les flux de données."
+          },
+          {
+            "title": "Intégration système",
+            "desc": "Nous relions les systèmes déjà utilisés sans rupture."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Processus",
+        "title": "Cinq étapes",
+        "steps": [
+          "Cadrage des exigences",
+          "Confirmation du périmètre et du calendrier",
+          "Conception · développement",
+          "Recette · déploiement",
+          "Passation · exploitation"
+        ]
+      },
+      "quality": {
+        "id": "quality",
+        "eyebrow": "Livrables · critères de qualité",
+        "title": "Définir à l’avance ce que vous recevez",
+        "items": [
+          "Code source et accès au dépôt",
+          "Documentation de déploiement et scripts de déploiement exécutables",
+          "Spécifications API et documents de structure des données",
+          "Réunion de passation et formation des responsables d’exploitation"
+        ],
+        "note": "Les critères de qualité sont convenus par écrit avant le contrat. Cela évite que des critères différents apparaissent au moment de la recette."
+      },
+      "cta": {
+        "title": "Il n’est pas nécessaire que l’objet soit déjà défini",
+        "desc": "Indiquez seulement le problème à résoudre. Nous réduirons le périmètre avec vous.",
+        "primary": {
+          "label": "Nous contacter",
+          "href": "/contact"
+        }
+      }
+    },
+    "staffing": {
+      "hero": {
+        "eyebrow": "Mise à disposition · Outsourcing",
+        "title": "Ajouter des développeurs, avec une gestion portée par la société",
+        "lead": "Nous affectons des ressources pour la durée nécessaire. DevFirm traite les contrats et les questions de travail."
+      },
+      "difference": {
+        "id": "difference",
+        "eyebrow": "Différence",
+        "title": "Ce qui diffère d’un contrat direct avec un freelance",
+        "lead": "La société absorbe les risques qui apparaissent lorsque le donneur d’ordre contracte directement avec une personne.",
+        "items": [
+          {
+            "title": "Le cocontractant est une société",
+            "desc": "En cas de départ en cours de projet ou de litige, la société prend la responsabilité et affecte une ressource de remplacement."
+          },
+          {
+            "title": "Traitement fiscal et social",
+            "desc": "Le donneur d’ordre n’a pas à juger les retenues à la source ni les assurances sociales."
+          },
+          {
+            "title": "Viviers de ressources vérifiées",
+            "desc": "Nous affectons des développeurs avec lesquels nous avons déjà mené des projets."
+          },
+          {
+            "title": "Soutien back-office",
+            "desc": "Le service de gestion de DevFirm gère les règlements et les présences des développeurs affectés."
+          }
+        ]
+      },
+      "formats": {
+        "id": "formats",
+        "eyebrow": "Formes d’intervention",
+        "title": "Choisir parmi trois formes",
+        "items": [
+          {
+            "title": "Sur site",
+            "desc": "Le développeur se rend au bureau du donneur d’ordre et rejoint l’équipe."
+          },
+          {
+            "title": "À distance",
+            "desc": "Le travail est réalisé depuis le bureau de DevFirm ou le bureau partagé."
+          },
+          {
+            "title": "Par projet",
+            "desc": "La période et les livrables sont définis, puis le règlement se fait sur le résultat."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Procédure",
+        "title": "Quatre étapes",
+        "steps": [
+          "Cadrage des compétences nécessaires",
+          "Proposition de candidats",
+          "Entretien · confirmation",
+          "Intervention · contrôle régulier"
+        ]
+      },
+      "cta": {
+        "title": "Indiquez les compétences nécessaires",
+        "desc": "Nous préparerons des candidats adaptés à la durée et à la forme d’intervention.",
+        "primary": {
+          "label": "Nous contacter",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "academy": {
+    "page": {
+      "hero": {
+        "eyebrow": "Académie PBL",
+        "title": "On apprend en créant",
+        "lead": "Ce n’est pas une formation qui s’arrête après des cours. Le programme NCS est assimilé par projet et, à la fin, chaque participant repart avec un résultat à inscrire dans son CV."
+      },
+      "pbl": {
+        "id": "pbl",
+        "eyebrow": "Qu’est-ce que le PBL",
+        "title": "Le projet est le programme",
+        "lead": "Project Based Learning. On ne commence pas par lister ce qu’il faut apprendre, mais par définir ce qu’il faut créer. Les connaissances nécessaires sont acquises pendant la réalisation.",
+        "items": [
+          {
+            "title": "Il reste un résultat",
+            "desc": "Il reste un projet fonctionnel, pas seulement une attestation."
+          },
+          {
+            "title": "La collaboration est vécue",
+            "desc": "Ce n’est pas un devoir solitaire. Les échéances et les rôles sont partagés en équipe."
+          },
+          {
+            "title": "Évalué selon les critères du terrain",
+            "desc": "Des développeurs qui mènent de vrais projets relisent le code et les résultats."
+          }
+        ]
+      },
+      "schools": {
+        "id": "schools",
+        "eyebrow": "3 écoles",
+        "title": "Choisir selon ce que vous voulez créer"
+      },
+      "external": {
+        "id": "external",
+        "eyebrow": "Partenariat",
+        "title": "Cours de postproduction",
+        "desc": "Le cours de postproduction vidéo est exploité en partenariat avec la Seoul Film Academy.",
+        "href": "https://www.seoulfilmacademy.com",
+        "linkLabel": "Seoul Film Academy"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Procédure d’inscription",
+        "title": "Quatre étapes",
+        "steps": [
+          "Choix du cours · candidature",
+          "Conseil · affectation",
+          "Réalisation du projet",
+          "Présentation · fin de cours"
+        ]
+      },
+      "cta": {
+        "title": "Si vous ne savez pas quel cours convient",
+        "desc": "Indiquez ce que vous pouvez faire aujourd’hui et ce que vous voulez faire. Nous vous recommanderons un cours.",
+        "primary": {
+          "label": "Candidature",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Voir les cours",
+          "href": "/academy/courses"
+        }
+      }
+    },
+    "schools": [
+      {
+        "key": "solution",
+        "name": "École de développement de solutions",
+        "desc": "Créer un service du début à la fin.",
+        "art": {
+          "src": "/images/cards/school-solution.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "office",
+        "name": "École des tâches de bureau communes",
+        "desc": "Apprendre à automatiser les tâches de bureau avec des outils.",
+        "art": {
+          "src": "/images/cards/school-office.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "project",
+        "name": "École de travail projet",
+        "desc": "Apprendre la conduite de projet, y compris la planification et la gestion du calendrier.",
+        "art": {
+          "src": "/images/cards/school-project.svg",
+          "width": 240,
+          "height": 180
+        }
+      }
+    ]
+  },
+  "courses": {
+    "list": [
+      {
+        "slug": "web-service-development",
+        "school": "solution",
+        "title": "Cours de développement de services web",
+        "summary": "De la planification au déploiement, le cours se termine par la création d’un service réellement accessible.",
+        "duration": "16 semaines",
+        "capacity": "20 personnes",
+        "target": [
+          "Personnes connaissant la syntaxe de base de la programmation",
+          "Candidats à l’emploi ayant besoin d’un portfolio",
+          "Professionnels souhaitant créer directement un service"
+        ],
+        "prerequisites": [
+          "Expérience de programmation au niveau de la syntaxe de base",
+          "Bases HTML et CSS"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Environnement de développement et outils de collaboration",
+            "detail": "Le flux Git, la gestion des issues et les règles de revue de code sont définis comme règles d’équipe."
+          },
+          {
+            "week": "3~6",
+            "topic": "Bases front-end",
+            "detail": "Le cours traite la structure des composants, la gestion d’état et les mises en page responsives."
+          },
+          {
+            "week": "7~10",
+            "topic": "Back-end et données",
+            "detail": "Concevoir les API, modéliser les données et mettre en œuvre l’authentification."
+          },
+          {
+            "week": "11~14",
+            "topic": "Projet d’équipe",
+            "detail": "Le service planifié est créé en équipe. Une revue a lieu une fois par semaine."
+          },
+          {
+            "week": "15~16",
+            "topic": "Déploiement et présentation",
+            "detail": "Le service est déployé sur un domaine réel et les résultats sont présentés."
+          }
+        ],
+        "outcomes": [
+          "1 service web accessible",
+          "Dépôt et historique de commits",
+          "Documentation de déploiement et README"
+        ],
+        "careers": [
+          "Développeur web",
+          "Junior full-stack",
+          "Responsable de service interne"
+        ]
+      },
+      {
+        "slug": "ai-agent-basics",
+        "school": "solution",
+        "title": "Cours pratique sur les agents AI",
+        "summary": "Créer directement un agent qui prend en charge une tâche. Il ne s’agit pas de créer un modèle, mais de l’utiliser.",
+        "duration": "12 semaines",
+        "capacity": "16 personnes",
+        "target": [
+          "Développeurs chargés d’automatiser le travail",
+          "Praticiens qui évaluent l’adoption de l’AI",
+          "Personnes souhaitant comprendre la structure des agents"
+        ],
+        "prerequisites": [
+          "Expérience avec Python ou JavaScript",
+          "Expérience d’appels API"
+        ],
+        "curriculum": [
+          {
+            "week": "1~3",
+            "topic": "Structure des agents",
+            "detail": "Mettre en place les bases de l’appel d’outils, de l’enrichissement par recherche et du traitement des échecs."
+          },
+          {
+            "week": "4~7",
+            "topic": "Connexion au travail",
+            "detail": "Mettre en œuvre des intégrations qui lisent et écrivent documents, e-mails et feuilles."
+          },
+          {
+            "week": "8~10",
+            "topic": "Évaluation et amélioration",
+            "detail": "Mesurer les résultats, établir des critères et améliorer par itérations."
+          },
+          {
+            "week": "11~12",
+            "topic": "Projet d’application pratique",
+            "detail": "Chaque participant choisit une tâche de son entreprise et la transpose en agent."
+          }
+        ],
+        "outcomes": [
+          "1 agent d’automatisation du travail",
+          "Document de critères d’évaluation",
+          "Rapport d’application"
+        ],
+        "careers": [
+          "Responsable pratique AI",
+          "Ingénieur automatisation",
+          "Responsable de l’adoption AI interne"
+        ]
+      },
+      {
+        "slug": "office-automation",
+        "school": "office",
+        "title": "Cours d’automatisation de bureau",
+        "summary": "Réduire avec des outils les tâches répétitives quotidiennes de documents et tableaux. Il est possible de commencer sans connaître le code.",
+        "duration": "8 semaines",
+        "capacity": "24 personnes",
+        "target": [
+          "Professionnels ayant beaucoup de tâches de bureau répétitives",
+          "Personnes qui passent beaucoup de temps sur Excel",
+          "Managers souhaitant organiser les tâches de leur service"
+        ],
+        "prerequisites": ["Expérience de base avec Excel"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Décomposition du travail",
+            "detail": "Découper le travail actuel en étapes et trouver les points automatisables."
+          },
+          {
+            "week": "3~5",
+            "topic": "Automatisation des documents et tableaux",
+            "detail": "Traiter automatiquement le remplissage de formulaires, la comparaison et l’agrégation."
+          },
+          {
+            "week": "6~7",
+            "topic": "Utilisation d’outils AI",
+            "detail": "Ajouter la lecture et le résumé de documents au flux de travail."
+          },
+          {
+            "week": "8",
+            "topic": "Application et partage",
+            "detail": "Organiser ce qui a été créé pour pouvoir le transmettre à l’équipe."
+          }
+        ],
+        "outcomes": ["3 tâches automatisées", "Document d’utilisation"],
+        "careers": [
+          "Responsable automatisation de bureau",
+          "Responsable amélioration des tâches de service"
+        ]
+      },
+      {
+        "slug": "project-management",
+        "school": "project",
+        "title": "Cours de conduite de projet",
+        "summary": "Apprendre à terminer un projet en gérant le calendrier et le périmètre à partir de cas réels.",
+        "duration": "10 semaines",
+        "capacity": "18 personnes",
+        "target": [
+          "Personnes chargées d’un premier projet",
+          "Leaders d’équipes dont les calendriers dérivent souvent",
+          "Responsables devant coordonner avec des donneurs d’ordre"
+        ],
+        "prerequisites": ["Expérience de travail en équipe"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Définition du périmètre",
+            "detail": "Commencer par définir ce qui ne sera pas fait."
+          },
+          {
+            "week": "3~5",
+            "topic": "Calendrier et risques",
+            "detail": "Créer les estimations, les marges et la liste des risques."
+          },
+          {
+            "week": "6~8",
+            "topic": "Exécution et coordination",
+            "detail": "Traiter les demandes de changement et la communication avec les parties prenantes."
+          },
+          {
+            "week": "9~10",
+            "topic": "Clôture et rétrospective",
+            "detail": "Terminer par la passation et la rétrospective."
+          }
+        ],
+        "outcomes": [
+          "1 plan de projet",
+          "Document de gestion des risques",
+          "Rapport de rétrospective"
+        ],
+        "careers": ["Chef de projet", "Team lead", "Planificateur de service"]
+      }
+    ],
+    "page": {
+      "hero": {
+        "eyebrow": "Cours",
+        "title": "Cours actuellement ouverts",
+        "lead": "Ils sont répartis par école. Vérifiez la durée et le public visé avant de candidater."
+      },
+      "filterAll": "Tous",
+      "fields": {
+        "duration": "Durée",
+        "capacity": "Capacité",
+        "target": "Public",
+        "prerequisites": "Prérequis",
+        "curriculum": "Programme",
+        "outcomes": "Projet livré",
+        "careers": "Parcours après le cours",
+        "week": "Semaine",
+        "topic": "Sujet",
+        "detail": "Contenu",
+        "apply": "Candidature"
+      },
+      "cta": {
+        "title": "Vous pouvez poser des questions avant de candidater",
+        "desc": "Nous vérifions d’abord si vous pouvez suivre avec votre niveau actuel.",
+        "primary": {
+          "label": "Candidature",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Nous contacter",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "workspace": {
+    "hero": {
+      "eyebrow": "Bureau partagé",
+      "title": "Un espace pour les personnes qui créent",
+      "lead": "Un espace de travail où le développement et la production de contenu se terminent dans le même bâtiment."
+    },
+    "concept": {
+      "id": "concept",
+      "eyebrow": "Concept",
+      "title": "Un espace de développeurs incluant la postproduction",
+      "lead": "Ce n’est pas seulement un espace pour écrire du code. Il a été conçu pour éviter de sortir lorsqu’un travail d’enregistrement ou de montage devient nécessaire."
+    },
+    "facilities": {
+      "id": "facilities",
+      "eyebrow": "Équipements",
+      "title": "Ce qui est disponible",
+      "items": [
+        {
+          "title": "Studio d’enregistrement",
+          "desc": "Une cabine insonorisée permet l’enregistrement de narrations et d’entretiens.",
+          "art": {
+            "src": "/images/workspace/workspace-studio.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Studio d’enregistrement avec panneaux acoustiques, micro et console de mixage"
+          }
+        },
+        {
+          "title": "Infrastructure de production de contenu",
+          "desc": "Nous fournissons les équipements et l’espace de stockage pour le montage vidéo et le rendu.",
+          "art": {
+            "src": "/images/workspace/workspace-infra.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Espace d’infrastructure de production de contenu avec stations de travail, stockage et rack de nœuds de rendu"
+          }
+        },
+        {
+          "title": "Espace de travail",
+          "desc": "Postes fixes, places libres et petites salles de réunion sont utilisés ensemble.",
+          "art": {
+            "src": "/images/workspace/workspace-desk.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Espace de travail partagé avec postes fixes, places libres et petite salle de réunion"
+          }
+        }
+      ]
+    },
+    "tenants": {
+      "id": "tenants",
+      "eyebrow": "Occupants visés",
+      "title": "Les profils qui l’utilisent",
+      "items": [
+        "Développeurs travaillant seuls ou en petite équipe",
+        "Équipes ayant besoin de travaux vidéo et audio",
+        "Équipes qui gèrent une activité sous forme de CIC DevFirm"
+      ]
+    },
+    "pricing": {
+      "id": "pricing",
+      "eyebrow": "Tarifs · Contact",
+      "title": "Conditions d’utilisation",
+      "note": "Elles dépendent du type de siège et de la durée d’utilisation. Le studio fonctionne sur réservation. Pour des conditions précises, contactez-nous."
+    },
+    "location": {
+      "id": "location",
+      "eyebrow": "Accès",
+      "title": "Seocho-gu, Séoul",
+      "address": "2e étage, bâtiment Hanyang, 59-1 Gangnam-daero 6-gil, Seocho-gu, Séoul",
+      "mapTitle": "Carte de localisation de DevFirm",
+      "mapLinkLabel": "Voir sur Kakao Map",
+      "mapHref": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C6%EA%B8%B8%2059-1%20%ED%95%9C%EC%96%91%EB%B9%8C%EB%94%A9%202%EC%B8%B5"
+    },
+    "cta": {
+      "title": "Vous pouvez décider après une visite",
+      "desc": "Nous organiserons un rendez-vous de visite.",
+      "primary": {
+        "label": "Nous contacter",
+        "href": "/contact"
+      }
+    }
+  },
+  "forms": {
+    "contact": {
+      "hero": {
+        "eyebrow": "Contact",
+        "title": "Comment pouvons-nous vous aider",
+        "lead": "Une brève description suffit. Un responsable vérifiera puis vous contactera."
+      },
+      "types": [
+        {
+          "value": "solution",
+          "label": "Adoption d’une solution AI"
+        },
+        {
+          "value": "development",
+          "label": "Demande de développement"
+        },
+        {
+          "value": "staffing",
+          "label": "Mise à disposition"
+        },
+        {
+          "value": "academy",
+          "label": "Académie"
+        },
+        {
+          "value": "workspace",
+          "label": "Installation en bureau partagé"
+        },
+        {
+          "value": "etc",
+          "label": "Autre"
+        }
+      ],
+      "labels": {
+        "type": "Type de demande",
+        "name": "Nom",
+        "company": "Entreprise · organisation",
+        "email": "E-mail",
+        "phone": "Coordonnées",
+        "message": "Contenu de la demande",
+        "consent": "J’accepte la collecte et l’utilisation de mes données personnelles",
+        "submit": "Envoyer la demande",
+        "submitting": "Envoi en cours"
+      },
+      "placeholders": {
+        "name": "Jean Dupont",
+        "company": "Nom de l’entreprise (facultatif)",
+        "email": "name@example.com",
+        "phone": "010-0000-0000 (facultatif)",
+        "message": "Indiquez votre situation et ce dont vous avez besoin."
+      },
+      "consentNote": "Nous collectons le nom, les coordonnées, l’e-mail et le contenu de la demande afin de traiter et répondre aux demandes. Les informations sont conservées pendant 3 ans après la fin du traitement, puis détruites.",
+      "success": {
+        "title": "Demande reçue",
+        "desc": "Nous vous contacterons sous 1 à 2 jours ouvrés."
+      },
+      "error": {
+        "title": "L’envoi a échoué",
+        "desc": "Veuillez réessayer dans un instant. Si cela ne fonctionne toujours pas, contactez-nous par téléphone ou par e-mail ci-dessous."
+      }
+    },
+    "apply": {
+      "hero": {
+        "eyebrow": "Candidature",
+        "title": "Formulaire de candidature aux cours de l’académie",
+        "lead": "Nous vous affectons après avoir vérifié avec vous si le cours correspond à votre niveau actuel."
+      },
+      "levels": [
+        {
+          "value": "none",
+          "label": "Je débute"
+        },
+        {
+          "value": "basic",
+          "label": "Je connais les bases"
+        },
+        {
+          "value": "practical",
+          "label": "J’ai une expérience pratique"
+        }
+      ],
+      "labels": {
+        "name": "Nom",
+        "email": "E-mail",
+        "phone": "Coordonnées",
+        "course": "Cours souhaité",
+        "level": "Niveau d’expérience",
+        "motivation": "Motivation",
+        "consent": "J’accepte la collecte et l’utilisation de mes données personnelles",
+        "submit": "Envoyer la candidature",
+        "submitting": "Envoi en cours"
+      },
+      "placeholders": {
+        "name": "Jean Dupont",
+        "email": "name@example.com",
+        "phone": "010-0000-0000",
+        "motivation": "Indiquez ce que vous voulez créer et pourquoi vous voulez apprendre."
+      },
+      "consentNote": "Nous collectons le nom, les coordonnées, l’e-mail et le contenu de la candidature pour le conseil et l’affectation aux cours. Les informations sont conservées pendant 1 an après la fin du conseil, puis détruites.",
+      "success": {
+        "title": "Candidature reçue",
+        "desc": "Un responsable vérifiera puis vous indiquera le calendrier de conseil."
+      },
+      "error": {
+        "title": "L’envoi a échoué",
+        "desc": "Veuillez réessayer dans un instant."
+      }
+    },
+    "validation": {
+      "required": "Ce champ est obligatoire",
+      "nameTooShort": "Veuillez saisir votre nom",
+      "emailInvalid": "Le format de l’e-mail n’est pas valide",
+      "phoneInvalid": "Le format des coordonnées n’est pas valide",
+      "messageTooShort": "Veuillez saisir au moins 10 caractères",
+      "consentRequired": "Vous devez accepter pour envoyer",
+      "tooFast": "Veuillez réessayer dans un instant",
+      "expired": "Le délai de saisie a expiré. Actualisez la page puis réessayez",
+      "serverError": "Un problème est survenu pendant le traitement"
+    }
+  },
+  "legal": {
+    "ui": {
+      "updatedAtLabel": "Dernière révision"
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "intro": "CMNYX Co., Ltd. (ci-après la « Société ») traite les données personnelles des utilisateurs avec soin et respecte les lois et règlements applicables. La présente politique s’applique au site web exploité par la Société.",
+      "sections": [
+        {
+          "id": "items",
+          "title": "1. Données personnelles collectées",
+          "body": [
+            "La Société collecte des données personnelles uniquement via les formulaires de demande et de candidature aux cours du site web.",
+            "Nous contacter : nom, e-mail, coordonnées (facultatif), entreprise · organisation (facultatif), contenu de la demande",
+            "Candidature aux cours : nom, e-mail, coordonnées, cours souhaité, niveau d’expérience, motivation",
+            "La Société n’utilise pas d’outils d’analyse ni de cookies publicitaires qui suivent le comportement des visiteurs. Par conséquent, aucune donnée personnelle n’est collectée par la seule utilisation du site web."
+          ]
+        },
+        {
+          "id": "purpose",
+          "title": "2. Finalités de collecte et d’utilisation",
+          "body": [
+            "Réponse aux demandes et conduite des consultations",
+            "Réception des candidatures aux cours, affectation aux cours et information"
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "3. Durée de conservation et d’utilisation",
+          "body": [
+            "Informations de demande : conservées pendant 3 ans après la fin du traitement, puis détruites sans délai.",
+            "Informations de candidature aux cours : conservées pendant 1 an après la fin de la consultation, puis détruites sans délai.",
+            "Si la personne concernée demande la destruction, les informations sont détruites immédiatement."
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "4. Fourniture à des tiers et sous-traitance du traitement",
+          "body": [
+            "La Société ne fournit pas les données personnelles des utilisateurs à des tiers.",
+            "Toutefois, elle utilise un service d’envoi d’e-mails afin de transmettre le contenu des demandes aux responsables, et le contenu saisi est transmis dans ce processus."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "5. Droits des personnes concernées",
+          "body": [
+            "Les utilisateurs peuvent à tout moment demander l’accès à leurs données personnelles, leur rectification, leur suppression ou la suspension de leur traitement.",
+            "Les demandes peuvent être adressées à contact@devfirm.co ou au 02-2058-0680, et la Société prend les mesures nécessaires sans délai."
+          ]
+        },
+        {
+          "id": "manager",
+          "title": "6. Responsable de la protection des données personnelles",
+          "body": [
+            "Service de gestion de CMNYX Co., Ltd.",
+            "E-mail : contact@devfirm.co",
+            "Téléphone : 02-2058-0680"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "7. Modification de la politique",
+          "body": [
+            "En cas de modification de la présente politique, la Société annonce les modifications et leur date d’entrée en vigueur sur le site web."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Conditions d’utilisation",
+      "intro": "Les présentes conditions définissent les conditions d’utilisation du site web exploité par CMNYX Co., Ltd. (ci-après la « Société »).",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "1. Objet",
+          "body": [
+            "Les présentes conditions définissent les droits, obligations et responsabilités de la Société et des utilisateurs concernant l’utilisation du service de site web fourni par la Société."
+          ]
+        },
+        {
+          "id": "service",
+          "title": "2. Contenu du service",
+          "body": [
+            "La Société fournit sur le site web des informations sur la Société et ses services, et reçoit les demandes ainsi que les candidatures aux cours.",
+            "L’utilisation du site web ne nécessite aucune inscription séparée de membre."
+          ]
+        },
+        {
+          "id": "obligations",
+          "title": "3. Obligations des utilisateurs",
+          "body": [
+            "Les utilisateurs ne doivent pas utiliser les informations d’autrui ni saisir de fausses informations.",
+            "Les utilisateurs ne peuvent pas reproduire, distribuer ou utiliser commercialement le contenu du site web sans l’accord préalable de la Société."
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "4. Droits d’auteur",
+          "body": [
+            "Les droits d’auteur sur les textes, images et documents publiés sur le site web appartiennent à la Société."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "5. Limitation de responsabilité",
+          "body": [
+            "La Société n’est pas responsable de l’interruption du service due à un cas de force majeure, notamment catastrophe naturelle ou défaillance des communications.",
+            "Les informations publiées sur le site web sont fournies à titre de référence, et les conditions contractuelles précises relèvent de discussions et de contrats séparés."
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "title": "6. Juridiction",
+          "body": [
+            "Les litiges relatifs aux présentes conditions relèvent de la juridiction du tribunal compétent pour le lieu du siège social de la Société."
+          ]
+        }
+      ]
+    },
+    "updatedAt": "2026-07-28"
+  },
+  "seo": {
+    "home": {
+      "description": "Physical AI pour les sites industriels, Manager Choi AI pour les bureaux. DevFirm, société de développement réunissant des développeurs, fournit des solutions AI, du développement logiciel, de la mise à disposition de développeurs et une académie PBL."
+    },
+    "page": {
+      "about": {
+        "title": "Société",
+        "description": "Une société de développement réunissant des développeurs comme un cabinet d’avocats réunit des avocats. Présentation du fonctionnement de DevFirm, où le service de gestion prend en charge les contrats et les règlements afin que les développeurs se concentrent sur la création."
+      },
+      "cic": {
+        "title": "Entreprise interne (CIC)",
+        "description": "Le dispositif d’entreprise interne par lequel un développeur gère sa propre activité au sein de DevFirm. Présentation des conditions de participation, du périmètre de soutien et de la feuille de route d’amélioration des agents AI."
+      },
+      "careers": {
+        "title": "Recrutement de développeurs",
+        "description": "DevFirm recrute des développeurs pour travailler avec nous. Consultez les missions, qualifications et conditions de travail des postes actuellement ouverts."
+      },
+      "solutions": {
+        "title": "Solutions AI",
+        "description": "Nous fournissons Physical AI pour les sites industriels, Manager Choi AI pour les bureaux, ainsi que des agents AI pour six secteurs : construction, contenu, fabrication, distribution, services externalisés et prévention."
+      },
+      "officeAi": {
+        "title": "Manager Choi AI — agent de bureau",
+        "description": "Un agent AI qui prend en charge les tâches de bureau répétitives consistant à lire, organiser et rédiger des rapports à partir de documents. Présentation du mode d’adoption et des cas d’application."
+      },
+      "physicalAi": {
+        "title": "Physical AI — agent pour sites industriels",
+        "description": "Une AI pour sites industriels qui transforme ce que les caméras et les capteurs lisent sur le terrain en jugements utilisables par les personnes. Présentation des compétences techniques et des secteurs d’application."
+      },
+      "services": {
+        "title": "Services de développement",
+        "description": "Développement logiciel global et mise à disposition de développeurs. Les services de développement de DevFirm fournissent à la fois le travail de création et les personnes qui créent."
+      },
+      "software": {
+        "title": "Développement logiciel global",
+        "description": "Nous prenons en charge la construction de sites web, d’apps, d’AI et de systèmes. Consultez à l’avance le processus et les critères de qualité des livrables."
+      },
+      "staffing": {
+        "title": "Mise à disposition de développeurs · Outsourcing",
+        "description": "Nous affectons des développeurs sur site, à distance ou par projet. Le cocontractant étant une société, la charge de gestion du donneur d’ordre diminue."
+      },
+      "academy": {
+        "title": "Académie PBL",
+        "description": "Formation pratique qui assimile le programme NCS par projet. Nous exploitons une école de développement de solutions, une école des tâches de bureau communes et une école de travail projet."
+      },
+      "courses": {
+        "title": "Cours",
+        "description": "Liste complète des cours de l’académie PBL DevFirm. La durée, la capacité, le public visé et le programme peuvent être consultés par école."
+      },
+      "apply": {
+        "title": "Candidature",
+        "description": "Réception des candidatures aux cours de l’académie PBL. Laissez le cours souhaité et votre niveau d’expérience ; un responsable vous contactera."
+      },
+      "workspace": {
+        "title": "Bureau partagé pour développeurs",
+        "description": "Bureau partagé pour développeurs spécialisé en postproduction, avec studio d’enregistrement et infrastructure de production de contenu. Présentation des équipements et conditions d’installation."
+      },
+      "contact": {
+        "title": "Nous contacter",
+        "description": "Nous recevons les demandes d’adoption de solutions, de développement, de mise à disposition, d’académie et d’installation. 2e étage, bâtiment Hanyang, Gangnam-daero 6-gil, Seocho-gu, Séoul."
+      },
+      "privacy": {
+        "title": "Politique de confidentialité",
+        "description": "Présentation des données personnelles collectées par DevFirm, des finalités d’utilisation, de la durée de conservation et des droits des utilisateurs."
+      },
+      "terms": {
+        "title": "Conditions d’utilisation",
+        "description": "Conditions relatives à l’utilisation du site web DevFirm."
+      }
+    },
+    "ogImageAlt": "DevFirm — société de développement réunissant des développeurs. Physical AI pour les sites industriels, Manager Choi AI pour les bureaux."
+  }
+}

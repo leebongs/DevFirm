@@ -36,6 +36,8 @@ const CLIENT_WHITELIST = [
   "mega-menu",
   "mobile-nav-drawer",
   "header-nav-client",
+  // 언어 선택기. <select> 의 onChange 로 라우팅하므로 클라이언트여야 한다.
+  "locale-switcher",
   "hero-video",
   "section-nav",
   "on-this-page",

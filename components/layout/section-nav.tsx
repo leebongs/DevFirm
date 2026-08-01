@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { sectionNav } from "@/content/navigation";
-import { ui } from "@/content/ui";
 import { cn } from "@/lib/utils";
+import { localeFromPath, localeHref, stripLocale } from "@/lib/locale-href";
+import type { Dictionary } from "@/content/dictionary";
 
 /**
  * 섹션 로컬 내비(ADR-001).
@@ -17,8 +17,17 @@ import { cn } from "@/lib/utils";
  * 다만 **키보드 포커스가 들어오면 숨은 상태에서도 즉시 노출**된다 —
  * 보이지 않는 곳으로 포커스가 사라지면 WCAG 2.4.3/2.4.11 위반이다.
  */
-export function SectionNav() {
-  const pathname = usePathname();
+export function SectionNav({
+  sectionNav,
+  label,
+}: {
+  sectionNav: Dictionary["nav"]["sectionNav"];
+  label: string;
+}) {
+  const raw = usePathname();
+  // 내비 데이터의 키는 언어를 모르는 논리 경로다. 비교 전에 접두사를 뗀다.
+  const pathname = stripLocale(raw);
+  const lang = localeFromPath(raw);
   const [hidden, setHidden] = useState(false);
   const [focusWithin, setFocusWithin] = useState(false);
   const lastScrollY = useRef(0);
@@ -64,7 +73,7 @@ export function SectionNav() {
       }}
     >
       <nav
-        aria-label={ui.nav.sectionNavLabel}
+        aria-label={label}
         className="mx-auto w-full max-w-[1440px] px-5 md:px-8 xl:px-12"
       >
         {/* 항목이 많은 섹션(AI 솔루션 8개)은 좁은 화면에서 가로 스크롤된다 */}
@@ -76,7 +85,7 @@ export function SectionNav() {
             return (
               <li key={item.href} className="shrink-0">
                 <Link
-                  href={item.href}
+                  href={localeHref(lang, item.href)}
                   aria-current={active ? "page" : undefined}
                   className={cn(
                     "focus-visible:ring-ring flex h-11 items-center border-b-2 px-3 text-sm whitespace-nowrap focus-visible:ring-2 focus-visible:outline-none focus-visible:ring-inset lg:h-12",

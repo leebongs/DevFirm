@@ -1,0 +1,2297 @@
+{
+  "site": {
+    "nameKo": "DevFirm",
+    "legalName": "CMNYX Co., Ltd.",
+    "footerBrand": "DevFirm CIC",
+    "brand": "Computing Management",
+    "tagline": "Kehittäjien muodostama ohjelmistokehitysyhtiö, DevFirm",
+    "addressFull": "2. krs, Hanyang Building, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+    "addressLocality": "Seocho-gu",
+    "addressRegion": "Seoul"
+  },
+  "ui": {
+    "nav": {
+      "openMenu": "Avaa valikko",
+      "closeMenu": "Sulje valikko",
+      "mainNavLabel": "Päävalikko",
+      "sectionNavLabel": "Osion valikko",
+      "breadcrumbLabel": "Nykyinen sijainti",
+      "home": "Etusivu",
+      "skipToContent": "Siirry sisältöön",
+      "externalLink": "Avautuu uuteen ikkunaan"
+    },
+    "toc": {
+      "title": "Tämän sivun sisältö"
+    },
+    "error": {
+      "notFoundTitle": "Sivua ei löydy",
+      "notFoundBody": "Osoite on voinut muuttua tai sivu on poistettu. Siirry haluamaasi kohtaan alta.",
+      "errorTitle": "Tapahtui virhe",
+      "errorBody": "Yritä hetken kuluttua uudelleen. Jos ongelma jatkuu, ilmoita siitä yhteydenoton kautta.",
+      "retry": "Yritä uudelleen",
+      "goHome": "Etusivulle"
+    },
+    "footer": {
+      "businessNumberLabel": "Yritystunnus",
+      "addressLabel": "Osoite",
+      "telLabel": "Puhelin"
+    }
+  },
+  "nav": {
+    "mainNav": [
+      {
+        "label": "Yritys",
+        "href": "/about",
+        "description": "Miten kehittäjien muodostama kehitysyhtiö toimii",
+        "children": [
+          {
+            "label": "Mikä DevFirm on",
+            "href": "/about",
+            "description": "Asianajotoimiston tapaan toimiva kehitysyhtiömalli"
+          },
+          {
+            "label": "Sisäinen yritys (CIC)",
+            "href": "/about/cic",
+            "description": "Rakenne, jossa kehittäjä pyörittää omaa liiketoimintaa"
+          },
+          {
+            "label": "Kehittäjärekrytointi",
+            "href": "/about/careers",
+            "description": "Avoinna olevat tehtävät"
+          }
+        ]
+      },
+      {
+        "label": "AI-ratkaisut",
+        "href": "/solutions",
+        "description": "Teollisuuteen Physical AI, toimistoihin Päällikkö Choi AI",
+        "children": [
+          {
+            "label": "Päällikkö Choi AI",
+            "href": "/solutions/office-ai",
+            "description": "Agentti toimiston toistuviin töihin"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai",
+            "description": "Agentti, joka havainnoi ja tekee päätelmiä teollisuudessa"
+          },
+          {
+            "label": "Rakennustyömaan AI",
+            "href": "/solutions/agents/construction",
+            "description": "Aikataulun, turvallisuuden ja materiaalien hallinnan automaatio"
+          },
+          {
+            "label": "Sisällöntuotannon AI",
+            "href": "/solutions/agents/content",
+            "description": "Suunnittelun, tuotannon ja jälkituotannon tuki"
+          },
+          {
+            "label": "Valmistusprosessin AI",
+            "href": "/solutions/agents/manufacturing",
+            "description": "Laitteiden, laadun ja saannon seuranta"
+          },
+          {
+            "label": "Jakelunhallinnan AI",
+            "href": "/solutions/agents/distribution",
+            "description": "Varasto, logistiikka ja kysynnän ennustaminen"
+          },
+          {
+            "label": "Palvelutuotannon AI",
+            "href": "/solutions/agents/service",
+            "description": "Henkilöstön sijoittelu, työaika ja tilitys"
+          },
+          {
+            "label": "Rikosten ehkäisyn AI",
+            "href": "/solutions/agents/safety",
+            "description": "Videopohjainen poikkeamien tunnistus"
+          }
+        ]
+      },
+      {
+        "label": "Kehityspalvelut",
+        "href": "/services",
+        "description": "Tarjoamme sekä rakentamisen työn että tekijät",
+        "children": [
+          {
+            "label": "Ohjelmistokehitys",
+            "href": "/services/software",
+            "description": "Verkko-, sovellus-, AI- ja järjestelmätoteutukset"
+          },
+          {
+            "label": "Kehittäjäresursointi",
+            "href": "/services/staffing",
+            "description": "Paikan päällä, etänä ja projektikohtaisesti"
+          }
+        ]
+      },
+      {
+        "label": "Akatemia",
+        "href": "/academy",
+        "description": "NCS-opetussuunnitelmaan perustuva projektioppiminen (PBL)",
+        "children": [
+          {
+            "label": "Kurssit",
+            "href": "/academy/courses",
+            "description": "Kolmen koulun kurssiluettelo"
+          },
+          {
+            "label": "Hae kurssille",
+            "href": "/academy/apply",
+            "description": "Kurssihakemusten vastaanotto"
+          }
+        ]
+      },
+      {
+        "label": "Coworking-tila",
+        "href": "/workspace",
+        "description": "Jälkituotantoon erikoistunut työtila kehittäjille"
+      }
+    ],
+    "footerNav": [
+      {
+        "label": "Yritys",
+        "href": "/about",
+        "children": [
+          {
+            "label": "Mikä DevFirm on",
+            "href": "/about"
+          },
+          {
+            "label": "Sisäinen yritys (CIC)",
+            "href": "/about/cic"
+          },
+          {
+            "label": "Kehittäjärekrytointi",
+            "href": "/about/careers"
+          }
+        ]
+      },
+      {
+        "label": "AI-ratkaisut",
+        "href": "/solutions",
+        "children": [
+          {
+            "label": "Kaikki AI-ratkaisut",
+            "href": "/solutions"
+          },
+          {
+            "label": "Päällikkö Choi AI",
+            "href": "/solutions/office-ai"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai"
+          },
+          {
+            "label": "Rakennustyömaan AI",
+            "href": "/solutions/agents/construction"
+          },
+          {
+            "label": "Sisällöntuotannon AI",
+            "href": "/solutions/agents/content"
+          },
+          {
+            "label": "Valmistusprosessin AI",
+            "href": "/solutions/agents/manufacturing"
+          },
+          {
+            "label": "Jakelunhallinnan AI",
+            "href": "/solutions/agents/distribution"
+          },
+          {
+            "label": "Palvelutuotannon AI",
+            "href": "/solutions/agents/service"
+          },
+          {
+            "label": "Rikosten ehkäisyn AI",
+            "href": "/solutions/agents/safety"
+          }
+        ]
+      },
+      {
+        "label": "Palvelut ja koulutus",
+        "href": "/services",
+        "children": [
+          {
+            "label": "Kaikki kehityspalvelut",
+            "href": "/services"
+          },
+          {
+            "label": "Ohjelmistokehitys",
+            "href": "/services/software"
+          },
+          {
+            "label": "Kehittäjäresursointi",
+            "href": "/services/staffing"
+          },
+          {
+            "label": "PBL-akatemia",
+            "href": "/academy"
+          },
+          {
+            "label": "Kurssit",
+            "href": "/academy/courses"
+          },
+          {
+            "label": "Hae kurssille",
+            "href": "/academy/apply"
+          },
+          {
+            "label": "Coworking-tila",
+            "href": "/workspace"
+          }
+        ]
+      },
+      {
+        "label": "Yhteys ja ehdot",
+        "href": "/contact",
+        "children": [
+          {
+            "label": "Ota yhteyttä",
+            "href": "/contact"
+          },
+          {
+            "label": "Tietosuojakäytäntö",
+            "href": "/privacy"
+          },
+          {
+            "label": "Käyttöehdot",
+            "href": "/terms"
+          }
+        ]
+      }
+    ],
+    "sectionNav": {
+      "/about": [
+        {
+          "label": "Mikä DevFirm on",
+          "href": "/about",
+          "description": "Asianajotoimiston tapaan toimiva kehitysyhtiömalli"
+        },
+        {
+          "label": "Sisäinen yritys (CIC)",
+          "href": "/about/cic",
+          "description": "Rakenne, jossa kehittäjä pyörittää omaa liiketoimintaa"
+        },
+        {
+          "label": "Kehittäjärekrytointi",
+          "href": "/about/careers",
+          "description": "Avoinna olevat tehtävät"
+        }
+      ],
+      "/solutions": [
+        {
+          "label": "Päällikkö Choi AI",
+          "href": "/solutions/office-ai",
+          "description": "Agentti toimiston toistuviin töihin"
+        },
+        {
+          "label": "Physical AI",
+          "href": "/solutions/physical-ai",
+          "description": "Agentti, joka havainnoi ja tekee päätelmiä teollisuudessa"
+        },
+        {
+          "label": "Rakennustyömaan AI",
+          "href": "/solutions/agents/construction",
+          "description": "Aikataulun, turvallisuuden ja materiaalien hallinnan automaatio"
+        },
+        {
+          "label": "Sisällöntuotannon AI",
+          "href": "/solutions/agents/content",
+          "description": "Suunnittelun, tuotannon ja jälkituotannon tuki"
+        },
+        {
+          "label": "Valmistusprosessin AI",
+          "href": "/solutions/agents/manufacturing",
+          "description": "Laitteiden, laadun ja saannon seuranta"
+        },
+        {
+          "label": "Jakelunhallinnan AI",
+          "href": "/solutions/agents/distribution",
+          "description": "Varasto, logistiikka ja kysynnän ennustaminen"
+        },
+        {
+          "label": "Palvelutuotannon AI",
+          "href": "/solutions/agents/service",
+          "description": "Henkilöstön sijoittelu, työaika ja tilitys"
+        },
+        {
+          "label": "Rikosten ehkäisyn AI",
+          "href": "/solutions/agents/safety",
+          "description": "Videopohjainen poikkeamien tunnistus"
+        }
+      ],
+      "/services": [
+        {
+          "label": "Ohjelmistokehitys",
+          "href": "/services/software",
+          "description": "Verkko-, sovellus-, AI- ja järjestelmätoteutukset"
+        },
+        {
+          "label": "Kehittäjäresursointi",
+          "href": "/services/staffing",
+          "description": "Paikan päällä, etänä ja projektikohtaisesti"
+        }
+      ],
+      "/academy": [
+        {
+          "label": "Kurssit",
+          "href": "/academy/courses",
+          "description": "Kolmen koulun kurssiluettelo"
+        },
+        {
+          "label": "Hae kurssille",
+          "href": "/academy/apply",
+          "description": "Kurssihakemusten vastaanotto"
+        }
+      ]
+    },
+    "primaryCta": {
+      "label": "Ota yhteyttä",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DevFirm",
+      "title": "Kehittäjien muodostama ohjelmistokehitysyhtiö, DevFirm",
+      "lead": "Kuten asianajotoimistossa asianajajat hoitavat toimeksiantoja, DevFirmissä kehittäjät hoitavat kehitystä. Yhtiö vastaa sopimuksista ja tilityksistä, ja kehittäjät keskittyvät rakentamiseen.",
+      "primaryCta": {
+        "label": "Ota yhteyttä",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "Katso AI-ratkaisut",
+        "href": "/solutions"
+      }
+    },
+    "slogan": {
+      "title": "Eri ympäristöt tarvitsevat erilaista AI:tä",
+      "left": {
+        "eyebrow": "Teollisuusympäristö",
+        "name": "Physical AI",
+        "desc": "Sitä käytetään paikoissa, joissa pitää havainnoida ja päätellä. Se muuttaa kameroiden ja sensorien lukeman tiedon ihmiselle käyttökelpoisiksi päätelmiksi.",
+        "href": "/solutions/physical-ai"
+      },
+      "right": {
+        "eyebrow": "Toimistoympäristö",
+        "name": "Päällikkö Choi AI",
+        "desc": "Se hoitaa toistuvia toimistotöitä. Se lukee ja jäsentää asiakirjoja ja laatii raportteja.",
+        "href": "/solutions/office-ai"
+      }
+    },
+    "audience": {
+      "eyebrow": "Miten tulitte tänne",
+      "title": "Näytämme ensin sen, mitä etsitte",
+      "cards": [
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-client.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Yritysasiakas",
+          "desc": "Kun tarvitsette AI-käyttöönottoa tai kehitysresursseja",
+          "href": "/solutions",
+          "linkLabel": "Katso AI-ratkaisut"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-learner.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Oppimaan tuleva",
+          "desc": "Kun haluatte oppia käytännön työtä projekteissa",
+          "href": "/academy",
+          "linkLabel": "Katso akatemia"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-developer.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Mukana työskentelevä kehittäjä",
+          "desc": "Kun haluatte liittyä yhtiöön tai pyörittää CIC-yksikköä",
+          "href": "/about/careers",
+          "linkLabel": "Katso rekrytointi"
+        }
+      ]
+    },
+    "agentsSection": {
+      "eyebrow": "Toimialakohtaiset AI-agentit",
+      "title": "AI-avustajat valmistelevat, te päätätte",
+      "lead": "Agentit kokoavat ensin kuuden toimialan toistuvat päätelmät. Ihminen osallistuu vain kohtiin, joissa tarvitaan harkintaa."
+    },
+    "model": {
+      "eyebrow": "DevFirm-malli",
+      "title": "DevFirm tekee kehittäjille sen, mitä asianajotoimisto tekee asianajajille",
+      "lead": "Kehittäjä käyttää aikansa rakentamiseen, ei myyntiin, sopimuksiin, tilityksiin tai veroihin. Tilaaja tekee sopimuksen yhtiön, ei yksityishenkilön kanssa.",
+      "comparison": {
+        "leftLabel": "Asianajotoimisto",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Asianajaja",
+            "right": "Kehittäjä"
+          },
+          {
+            "left": "Toimeksiannon vastaanotto",
+            "right": "Projektin hankinta"
+          },
+          {
+            "left": "Toimisto hoitaa hallinnon",
+            "right": "Liiketoiminnan tuki hoitaa taustatyön"
+          },
+          {
+            "left": "Partneriasianajaja",
+            "right": "Sisäisen yrityksen (CIC) johtaja"
+          },
+          {
+            "left": "Asiakas sopii yhtiön kanssa",
+            "right": "Tilaaja sopii yhtiön kanssa"
+          }
+        ]
+      },
+      "note": "Tilaajalta poistuvat yksittäisen freelancerin kanssa sopimiseen liittyvät riskit, ja kehittäjältä poistuvat asiat, joita on vaikea hoitaa yksin."
+    },
+    "bands": {
+      "academy": {
+        "eyebrow": "PBL-akatemia",
+        "title": "Opimme tekemällä",
+        "desc": "NCS-opetussuunnitelma käydään läpi projektien avulla. Valmistuessa mukana on tuloksia, joita voi käyttää ansioluettelossa.",
+        "href": "/academy",
+        "linkLabel": "Katso kurssit"
+      },
+      "workspace": {
+        "eyebrow": "Coworking-tila",
+        "title": "Työtila myös jälkituotantoon",
+        "desc": "Kehittäjien coworking-tila, jossa on äänitysstudio ja sisällöntuotannon infrastruktuuri.",
+        "href": "/workspace",
+        "linkLabel": "Katso tila"
+      }
+    },
+    "trust": {
+      "eyebrow": "Yritys",
+      "title": "Vuodesta 2007",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "Perustettu"
+        },
+        {
+          "value": "CIC",
+          "label": "Sisäisiä yrityksiä käytössä"
+        },
+        {
+          "value": "Seoul Seocho",
+          "label": "Lähellä Gangnam-daeroa"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Ei haittaa, vaikka ette vielä tiedä mitä rakennetaan",
+      "desc": "Kun kerrotte nykytilanteen, jäsennämme yhdessä, mistä kannattaa aloittaa.",
+      "cta": {
+        "label": "Ota yhteyttä",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Yritysesittely",
+      "title": "Kehittäjien muodostama kehitysyhtiö",
+      "lead": "DevFirm rakentaa rakenteen, jossa kehittäjät voivat keskittyä vain kehitykseen. Yhtiö hoitaa loput."
+    },
+    "metaphor": {
+      "id": "model",
+      "eyebrow": "DevFirm-malli",
+      "title": "Toimme asianajotoimiston rakenteen kehitykseen",
+      "lead": "Kuten asianajaja keskittyy toimeksiantoihin toimiston tuella, DevFirmin kehittäjä keskittyy kehitykseen liiketoiminnan tuen avulla.",
+      "comparison": {
+        "leftLabel": "Asianajotoimisto",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Asianajaja hoitaa toimeksiannon",
+            "right": "Kehittäjä hoitaa projektin"
+          },
+          {
+            "left": "Toimisto hoitaa hallinnon",
+            "right": "Liiketoiminnan tuki hoitaa taustatyöt"
+          },
+          {
+            "left": "Asiakas sopii yhtiön kanssa",
+            "right": "Tilaaja sopii yhtiön kanssa"
+          },
+          {
+            "left": "Partneri saa omistusosuuden",
+            "right": "CIC-johtaja saa oman liiketoiminnan"
+          }
+        ]
+      }
+    },
+    "backoffice": {
+      "id": "backoffice",
+      "eyebrow": "Liiketoiminnan tuki",
+      "title": "Työt, joita kehittäjän ei tarvitse tehdä",
+      "lead": "Nämä vievät eniten aikaa yksin työskentelevältä kehittäjältä. DevFirmissä ne eivät päädy kehittäjän pöydälle.",
+      "items": [
+        {
+          "title": "Sopimukset ja neuvottelut",
+          "desc": "Yhtiöllä on vakiosopimukset ja tarkastusmenettely. Kehittäjä ei arvioi haitallisia ehtoja yksin."
+        },
+        {
+          "title": "Verotus ja tilitys",
+          "desc": "Yhtiö hoitaa verolaskujen lähetyksen, ennakonpidätyksen ja arvonlisäveroilmoitukset."
+        },
+        {
+          "title": "Maksujen perintä",
+          "desc": "Yhtiö vastaa saatavien hallinnasta ja muistutuksista. Kehittäjän ei tarvitse käydä rahakeskusteluja tilaajan kanssa."
+        },
+        {
+          "title": "Neljä lakisääteistä vakuutusta ja työasiat",
+          "desc": "Yhtiö hoitaa työmuotoon liittyvät ilmoitukset ja työoikeudellisen hallinnan."
+        }
+      ]
+    },
+    "history": {
+      "id": "history",
+      "eyebrow": "Historia",
+      "title": "Vuodesta 2007",
+      "items": [
+        {
+          "year": "2007",
+          "title": "Yhtiö perustettiin",
+          "desc": "Aloitimme ohjelmistokehityksen ja järjestelmien rakentamisen."
+        },
+        {
+          "year": "2010s",
+          "title": "Kehittäjäresursointi ja ulkoistus",
+          "desc": "Laajensimme palvelua paikan päällä tehtävään työhön ja projektikohtaisiin sijoituksiin."
+        },
+        {
+          "year": "2020s",
+          "title": "Sisäinen yritys (CIC) käyttöön",
+          "desc": "Loimme rakenteen, jossa kehittäjä voi pyörittää omaa liiketoimintaa yhtiön sisällä."
+        },
+        {
+          "year": "Nykyisin",
+          "title": "AI-agenttiliiketoiminta",
+          "desc": "Järjestimme liiketoiminnan uudelleen teollisuuden Physical AI -ratkaisun ja toimistojen Päällikkö Choi AI -ratkaisun ympärille."
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "eyebrow": "Yrityksen yleiskuva",
+      "title": "Perustiedot"
+    },
+    "cta": {
+      "title": "DevFirmin kanssa voi toimia kolmella tavalla",
+      "desc": "Tilaajana, kehittäjänä tai akatemian kautta aloittaen.",
+      "primary": {
+        "label": "Ota yhteyttä",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Katso rekrytointi",
+        "href": "/about/careers"
+      }
+    }
+  },
+  "cic": {
+    "hero": {
+      "eyebrow": "Sisäinen yritys",
+      "title": "Omaa liiketoimintaa yhtiön sisällä",
+      "lead": "CIC (Company In Company) on järjestelmä, jossa kehittäjä ylläpitää omaa liiketoimintayksikköä DevFirmin sisällä. Käytössä ovat yhtiön luottokelpoisuus ja taustahallinto, mutta liiketoiminnan suunta päätetään itse."
+    },
+    "what": {
+      "id": "what",
+      "eyebrow": "Mikä CIC on",
+      "title": "Vähemmän perustamisen riskiä, mutta yrittäjämäinen vapaus säilyy",
+      "lead": "Jos perustaa yhtiön yksin, luottamus ja hallinto on rakennettava alusta. CIC lainaa nämä kaksi yhtiöltä, ja liiketoimintapäätökset pysyvät johtajalla.",
+      "items": [
+        {
+          "title": "Käytätte yhtiön luottokelpoisuutta",
+          "desc": "Tilaaja sopii vuonna 2007 perustetun yhtiön, ei uuden yksityisen elinkeinonharjoittajan kanssa."
+        },
+        {
+          "title": "Käytätte taustahallintoa",
+          "desc": "Liiketoiminnan tuki hoitaa sopimukset, verot, tilitykset ja työasiat."
+        },
+        {
+          "title": "Johtaja päättää liiketoiminnasta",
+          "desc": "CIC-johtaja päättää, mitä työtä otetaan ja millainen tiimi kootaan."
+        },
+        {
+          "title": "Tulokset tilitetään liiketoimintayksiköittäin",
+          "desc": "Jako perustuu liiketoiminnan tulokseen, ei palkkaan."
+        }
+      ]
+    },
+    "operation": {
+      "id": "operation",
+      "eyebrow": "Toimintatapa",
+      "title": "DevFirm toimii näin",
+      "steps": [
+        "Liiketoimintasuunnitelman käsittely",
+        "CIC:n perustaminen ja ehtojen sopiminen",
+        "Myynti ja tiimin kokoaminen",
+        "Tuloksen tilitys ja uudelleensijoitus"
+      ]
+    },
+    "roadmap": {
+      "id": "roadmap",
+      "eyebrow": "Tiekartta",
+      "title": "Agentti-AI:n kehittäminen",
+      "lead": "Kukin CIC rakentaa oman toimialansa agentin, ja yhtiö rakentaa niiden yhteisen perustan. Toimialatieto kertyy CIC-yksiköihin, yhteinen teknologia yhtiöön.",
+      "items": [
+        {
+          "title": "Toimialadatan hankinta",
+          "desc": "CIC kerää vastuullaan olevista ympäristöistä todellista dataa ja päätöskriteerejä."
+        },
+        {
+          "title": "Yhteisen perustan rakentaminen",
+          "desc": "Yhtiö rakentaa yhteiset toiminnot, kuten tulkinnan, haun ja raportoinnin, kaikkien CIC-yksiköiden käyttöön."
+        },
+        {
+          "title": "Agenttien tuotteistaminen",
+          "desc": "Varmennetut päätelmät kootaan toimialakohtaisiksi agenttituotteiksi."
+        }
+      ]
+    },
+    "conditions": {
+      "id": "conditions",
+      "eyebrow": "Osallistumisehdot",
+      "title": "Teemme yhteistyötä tällaisten henkilöiden kanssa",
+      "items": [
+        "Kokemus työn luomisesta omalla toimialalla",
+        "Asenne, jossa kannetaan vastuu lopputuloksesta",
+        "Halu koota ja johtaa tiimiä"
+      ],
+      "note": "Katsomme uravuosia enemmän kykyä rakentaa liiketoiminta, joka toimii itsenäisesti. Ei haittaa, vaikka tiimiä ei vielä olisi."
+    },
+    "cta": {
+      "title": "Jos harkitsette aloittamista CIC-mallilla",
+      "desc": "Kertokaa, millaista liiketoimintaa suunnittelette. Ehdot sovitetaan liiketoiminnan luonteeseen.",
+      "primary": {
+        "label": "Ota yhteyttä",
+        "href": "/contact"
+      }
+    }
+  },
+  "careers": {
+    "page": {
+      "hero": {
+        "eyebrow": "Rekrytointi",
+        "title": "Etsimme kehittäjiä rakentamaan kanssamme",
+        "lead": "DevFirm rakentaa rakenteen, jossa kehittäjä voi keskittyä kehitykseen. Etsimme ihmisiä, jotka käyttävät tätä rakennetta kanssamme."
+      },
+      "emptyState": "Avoimia tehtäviä ei tällä hetkellä ole. Jatkuvia hakemuksia otetaan vastaan yhteydenoton kautta.",
+      "statusLabel": {
+        "open": "Avoinna",
+        "closed": "Suljettu"
+      },
+      "fields": {
+        "responsibilities": "Vastuut",
+        "requirements": "Vaatimukset",
+        "preferred": "Eduksi",
+        "conditions": "Työehdot",
+        "deadline": "Hakuaika",
+        "apply": "Hae"
+      },
+      "cta": {
+        "title": "Vaikka sopivaa ilmoitusta ei olisi",
+        "desc": "Kertokaa, millaista työtä haluatte tehdä, niin etsimme sopivaa paikkaa yhdessä. CIC voi olla myös tapa aloittaa.",
+        "primary": {
+          "label": "Ota yhteyttä",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Tutustu CIC-malliin",
+          "href": "/about/cic"
+        }
+      }
+    },
+    "jobs": [
+      {
+        "slug": "ai-engineer",
+        "title": "AI-agentti-insinööri",
+        "team": "AI-ratkaisut",
+        "employmentType": "Vakituinen",
+        "status": "open",
+        "deadline": "Jatkuva",
+        "responsibilities": [
+          "Toimialakohtaisten AI-agenttien tulkinta- ja päättelyputkien suunnittelu ja toteutus",
+          "Kenttädatan keruureittien jäsentäminen ja laadun varmistus",
+          "Tarkkuuden viritys käyttöönottoympäristöissä ja operatiivisiin ongelmiin vastaaminen"
+        ],
+        "requirements": [
+          "Vähintään 3 vuoden käytännön kokemus Python-pohjaisista data- ja malliputkista",
+          "Kokemus mallien viemisestä todelliseen palvelukäyttöön",
+          "Kokemus kriteerien sopimisesta kentän vastuuhenkilöiden kanssa"
+        ],
+        "preferred": [
+          "Kokemus konenäöstä tai aikasarjojen poikkeamien tunnistuksesta",
+          "Valmistuksen, rakentamisen tai logistiikan toimialaosaaminen",
+          "Kokemus LLM-agenttien koostamisesta"
+        ],
+        "conditions": [
+          "Toimisto Seocho-gussa, Seoulissa; sovittavissa",
+          "5 päivää viikossa, joustava työaika",
+          "Laitteisto- ja koulutustuki"
+        ]
+      },
+      {
+        "slug": "fullstack-developer",
+        "title": "Full stack -kehittäjä",
+        "team": "Kehityspalvelut",
+        "employmentType": "Vakituinen",
+        "status": "open",
+        "deadline": "Jatkuva",
+        "responsibilities": [
+          "Asiakkaiden verkko- ja sovelluspalvelujen suunnittelu julkaisuun asti",
+          "Nykyisten järjestelmien parantaminen ja migraatiot",
+          "Osallistuminen vaatimusten jäsentämisestä alkaen"
+        ],
+        "requirements": [
+          "Vähintään 3 vuoden kokemus verkkopalvelujen kehittämisestä",
+          "TypeScriptin tai vastaavan staattisesti tyypitetyn kielen hyvä hallinta",
+          "Kokemus omasta julkaisu- ja tuotantokäytöstä"
+        ],
+        "preferred": [
+          "Kokemus Next.js App Routerista",
+          "Kokemus pilvi-infrastruktuurin rakentamisesta",
+          "Kokemus suorasta yhteydenpidosta tilaajan kanssa"
+        ],
+        "conditions": [
+          "Toimisto Seocho-gussa, Seoulissa; projektista riippuen paikan päällä",
+          "5 päivää viikossa, joustava työaika",
+          "Coworking-tilan käyttömahdollisuus"
+        ]
+      },
+      {
+        "slug": "cic-lead",
+        "title": "Sisäisen yrityksen (CIC) johtaja",
+        "team": "CIC",
+        "employmentType": "Sopimussuhde",
+        "status": "open",
+        "deadline": "Jatkuva",
+        "responsibilities": [
+          "Vastuutoimialan liiketoimintasuunnittelu ja myynti",
+          "Tiimin kokoaminen ja projektien operointi",
+          "Toimiala-agentin tuotteistussuunnan määrittäminen"
+        ],
+        "requirements": [
+          "Kokemus työn luomisesta itsenäisesti tietyllä toimialalla",
+          "Kokemus tiimin kokoamisesta ja projektin viemisestä loppuun",
+          "Asenne, jossa kannetaan vastuu liiketoiminnan tuloksesta"
+        ],
+        "preferred": [
+          "Olemassa oleva asiakasverkosto",
+          "Kokemus AI-käyttöönottoprojekteista",
+          "Kokemus yrityksen perustamisesta tai liiketoiminnan johtamisesta"
+        ],
+        "conditions": [
+          "Tulospohjainen tilitys; ehdot sovitaan liiketoiminnan luonteen mukaan",
+          "Yhtiön luottokelpoisuus ja taustahallinto täysimääräisesti käyttöön",
+          "Vapaa työskentelymuoto"
+        ]
+      }
+    ]
+  },
+  "solutions": {
+    "hub": {
+      "hero": {
+        "eyebrow": "AI-ratkaisut",
+        "title": "Teollisuuteen Physical AI, toimistoihin Päällikkö Choi AI",
+        "lead": "Kun ympäristö muuttuu, myös tarvittava harkinta muuttuu. DevFirm lähestyy asiaa kahden akselin kautta."
+      },
+      "axes": [
+        {
+          "eyebrow": "Teollisuusympäristö",
+          "name": "Physical AI",
+          "desc": "Se muuttaa kameroiden ja sensorien lukeman ympäristön ihmiselle käyttökelpoisiksi päätelmiksi.",
+          "href": "/solutions/physical-ai",
+          "linkLabel": "Katso Physical AI"
+        },
+        {
+          "eyebrow": "Toimistoympäristö",
+          "name": "Päällikkö Choi AI",
+          "desc": "Se hoitaa toistuvia töitä, joissa luetaan ja jäsennetään asiakirjoja ja kirjoitetaan raportteja.",
+          "href": "/solutions/office-ai",
+          "linkLabel": "Katso Päällikkö Choi AI"
+        }
+      ],
+      "agentsSection": {
+        "id": "agents",
+        "eyebrow": "Toimialakohtaiset agentit",
+        "title": "Kuusi toimialaa, kuusi päätelmätyyppiä",
+        "lead": "Saman perustan päälle on lisätty toimialakohtaiset päätöskriteerit. Agentti puhuu ympäristön omalla kielellä."
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Käyttöönottoprosessi",
+        "title": "Aloitus neljässä vaiheessa",
+        "steps": [
+          "Nykytilan arviointi ja datan tarkistus",
+          "Päätöskriteerien sopiminen",
+          "Pilottikäyttö 4-8 viikkoa",
+          "Siirtyminen käyttöön ja laajennus"
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "eyebrow": "Usein kysyttyä",
+        "title": "Asiat, joita kysytään usein ennen käyttöönottoa",
+        "items": [
+          {
+            "q": "Voiko aloittaa, jos dataa ei ole jäsennetty?",
+            "a": "Useimmissa ympäristöissä tilanne on tämä. Siksi ensimmäinen vaihe on datan tarkistus. Katsomme ensin, mitä nykyisellä kertyvällä datalla voidaan tehdä, ja puutteisiin rakennetaan keruureitti."
+          },
+          {
+            "q": "Kuinka tarkka ratkaisu on?",
+            "a": "Se riippuu ympäristöstä ja pääteltävistä asioista. Siksi ennen sopimusta tehdään pilottijakso ja mitataan todellisella datalla. Tavoitetaso asetetaan yhdessä tulosten perusteella."
+          },
+          {
+            "q": "Pitääkö nykyinen järjestelmä vaihtaa?",
+            "a": "Useimmiten ei. Ratkaisu liitetään nykyiseen järjestelmään lukemaan dataa ja palauttamaan tuloksia. Jos vaihtoa tarvitaan, kerromme ensin syyn."
+          },
+          {
+            "q": "Kuka vastaa käytöstä käyttöönoton jälkeen?",
+            "a": "Alussa DevFirm vastaa käytöstä. Kun päätöskriteerit vakiintuvat, vastuu siirretään vastuuhenkilölle. Jatkuva käyttöpalvelu on myös mahdollinen."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Päätämme ensin yhdessä, mitä harkintaa automatisoidaan",
+        "desc": "Kertokaa, mitä päätelmiä ihmiset tekevät ympäristössänne toistuvasti.",
+        "primary": {
+          "label": "Ota yhteyttä",
+          "href": "/contact"
+        }
+      }
+    },
+    "physicalAi": {
+      "hero": {
+        "eyebrow": "Physical AI",
+        "title": "Lisäämme ympäristöön silmät, jotka lukevat sitä",
+        "lead": "Se katsoo puolestanne asioita, joita ihminen ei voi seurata jatkuvasti. Nähty asia jää talteen päätelmänä, ei vain tallenteena."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Ongelma",
+        "title": "Suurin osa ympäristön tiedosta menee ohi",
+        "items": [
+          {
+            "title": "Kaikkea ei voi nähdä",
+            "desc": "Kameroita on paljon, mutta katsojia rajallisesti."
+          },
+          {
+            "title": "Jälkikäteen löytäminen on vaikeaa",
+            "desc": "Kun tarkistus tarvitaan, videon kelaaminen vie aikaa."
+          },
+          {
+            "title": "Kriteerit vaihtelevat",
+            "desc": "Sama näkymä arvioidaan eri tavoin vastuuhenkilöstä riippuen."
+          }
+        ]
+      },
+      "stack": {
+        "id": "stack",
+        "eyebrow": "Tekninen osaaminen",
+        "title": "Lukee, päättelee ja välittää eteenpäin",
+        "items": [
+          {
+            "title": "Konenäkö",
+            "desc": "Erottelee ihmiset, laitteet ja tilat sekä etsii riskikuvioita."
+          },
+          {
+            "title": "Sensorien aikasarja-analyysi",
+            "desc": "Poikkeava kehitys tunnistetaan normaalista eroavaksi signaaliksi."
+          },
+          {
+            "title": "Paikallinen reunakäsittely",
+            "desc": "Päätelmiä tehdään paikallisesti myös ympäristöissä, joissa verkko on epävakaa."
+          },
+          {
+            "title": "Työjärjestelmäintegraatio",
+            "desc": "Päätelmät siirretään hyväksyntä- ja raportointivirtoihin."
+          }
+        ]
+      },
+      "industries": {
+        "id": "industries",
+        "eyebrow": "Sovellettavat toimialat",
+        "title": "Käytössä kuudessa ympäristössä"
+      },
+      "cta": {
+        "title": "Aloitamme yhdestä ympäristöstä",
+        "desc": "Jos kameroita ja sensoreita on jo, käytämme ensin niitä.",
+        "primary": {
+          "label": "Ota yhteyttä",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Katso Päällikkö Choi AI",
+          "href": "/solutions/office-ai"
+        }
+      }
+    },
+    "officeAi": {
+      "hero": {
+        "eyebrow": "Päällikkö Choi AI",
+        "title": "Toimiston toistot eivät kuulu ihmiselle",
+        "lead": "Vastaanotettujen asiakirjojen lukeminen, jäsentäminen, lomakkeisiin siirtäminen ja raporttien kirjoittaminen. Päällikkö Choi AI hoitaa sen."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Ongelma",
+        "title": "Aikaa varsinaiseen harkintaan ei jää",
+        "items": [
+          {
+            "title": "Uudelleenkirjoittaminen",
+            "desc": "Sähköpostin ja liitteiden sisältö syötetään uudelleen yrityksen lomakkeisiin."
+          },
+          {
+            "title": "Etsiminen",
+            "desc": "Aikaa kuluu aiempien asiakirjojen selaamiseen perusteiden varmistamiseksi."
+          },
+          {
+            "title": "Täsmäyttäminen",
+            "desc": "Numeroita verrataan asiakirjojen välillä."
+          },
+          {
+            "title": "Koostaminen ja raportointi",
+            "desc": "Sama sisältö kirjoitetaan uudelleen raportin vastaanottajan mukaan."
+          }
+        ]
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Tehtävät",
+        "title": "Asiakirjoista raportointiin",
+        "items": [
+          {
+            "title": "Asiakirjojen tulkinta",
+            "desc": "Poimii tarvittavat kohdat sopimuksista, toimituserittelyistä ja tarjouksista."
+          },
+          {
+            "title": "Yrityksen lomakkeiden täyttö",
+            "desc": "Täyttää poimitut kohdat yrityksen lomakemuotoon."
+          },
+          {
+            "title": "Perusteiden haku",
+            "desc": "Etsii aiemmista asiakirjoista liittyvän sisällön ja esittää sen lähteineen."
+          },
+          {
+            "title": "Ristiintarkistus",
+            "desc": "Tunnistaa kohdat, joissa asiakirjojen numerot tai ehdot eivät täsmää."
+          },
+          {
+            "title": "Raporttiluonnokset",
+            "desc": "Laatii yhteenvedon raportin vastaanottajan mukaan."
+          },
+          {
+            "title": "Jatkoilmoitukset",
+            "desc": "Seuraa lähestyviä määräaikoja ja puuttuvia asioita."
+          }
+        ]
+      },
+      "physical": {
+        "id": "physical",
+        "eyebrow": "Physical AI -liitäntä",
+        "title": "Toimisto ja kenttä pysyvät yhteydessä",
+        "lead": "Se, mitä Physical AI lukee kentällä, jatkuu Päällikkö Choi AI -raportiksi. Yksi kenttäkuva saa yhden reitin hyväksyntäasiakirjaan asti."
+      },
+      "cta": {
+        "title": "Päätetään, mistä asiakirjasta aloitetaan",
+        "desc": "Riittää, että kerrotte yhden asiakirjatyypin, jota käsittelette useimmin.",
+        "primary": {
+          "label": "Ota yhteyttä",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Katso toimialakohtaiset agentit",
+          "href": "/solutions"
+        }
+      }
+    },
+    "agentPage": {
+      "problems": {
+        "id": "problems",
+        "eyebrow": "Ympäristön ongelmat",
+        "title": "Todennäköisesti toimitte nyt näin"
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "Tehtävät",
+        "title": "Agentin vastuulle tuleva osa"
+      },
+      "outcomes": {
+        "id": "outcomes",
+        "eyebrow": "Odotetut vaikutukset",
+        "title": "Mikä muuttuu",
+        "note": "Pilottijaksolla mitataan todellisella datalla ja tavoitetaso asetetaan sen jälkeen uudelleen."
+      },
+      "steps": {
+        "id": "steps",
+        "eyebrow": "Käyttöönoton kulku",
+        "title": "Etenemme neljässä vaiheessa"
+      },
+      "siblings": {
+        "id": "siblings",
+        "eyebrow": "Muut toimialat",
+        "title": "Näin muut ympäristöt käyttävät sitä"
+      },
+      "cta": {
+        "title": "Tarkistakaa, soveltuuko tämä myös teidän ympäristöönne",
+        "desc": "Katsomme ensin, mihin nykyisellä kertyvällä datalla päästään.",
+        "primary": {
+          "label": "Ota yhteyttä",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Katso kaikki AI-ratkaisut",
+          "href": "/solutions"
+        }
+      }
+    }
+  },
+  "agents": [
+    {
+      "slug": "construction",
+      "name": "Rakennustyömaan AI",
+      "tagline": "Lyhennämme etäisyyttä piirustusten ja työmaan välillä.",
+      "icon": {},
+      "problems": [
+        "Edistymisraportit kootaan eri tavoin eri henkilöiden mukaan",
+        "Turvallisuustarkastusten merkinnät ovat paperilla ja viesteissä hajallaan",
+        "Materiaalien saapuminen ja todellinen käyttö eivät täsmää"
+      ],
+      "capabilities": [
+        {
+          "title": "Edistymisen tulkinta",
+          "desc": "Vertaa työmaakuvia ja työpäiväkirjoja ja laskee edistymisasteen päivittäin samoilla kriteereillä."
+        },
+        {
+          "title": "Turvallisuusriskien tunnistus",
+          "desc": "Havaitsee CCTV-videosta puuttuvat suojavarusteet ja vaaravyöhykkeille menon ja ilmoittaa niistä heti."
+        },
+        {
+          "title": "Materiaalivirran jäsentäminen",
+          "desc": "Täsmäyttää saapumistositteet ja toteutusmäärät ja raportoi yli- ja alijäämät viikoittain."
+        },
+        {
+          "title": "Päiväraportin laadinta",
+          "desc": "Kokoaa hajallaan olevat merkinnät ja tekee automaattisesti tilaajan lomakkeen mukaisen raportin."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Päiväraportin laadinta-aika",
+          "value": "-70%"
+        },
+        {
+          "label": "Puuttuvat turvallisuustarkastukset",
+          "value": "0 tapausta"
+        },
+        {
+          "label": "Materiaalipoikkeamien tunnistus",
+          "value": "1 kerta viikossa"
+        }
+      ],
+      "steps": [
+        "Työmaadatan tarkistus",
+        "Tulkintakriteerien sopiminen",
+        "Pilotti 4 viikkoa",
+        "Laajennus kaikkiin työmaihin"
+      ],
+      "seo": {
+        "title": "Rakennustyömaan AI",
+        "description": "Rakennustyömaan AI-agentti, joka laskee edistymisasteen päivittäin samoilla kriteereillä työmaakuvien ja työpäiväkirjojen avulla sekä jäsentää turvallisuustarkastukset ja materiaalivirrat automaattisesti."
+      }
+    },
+    {
+      "slug": "content",
+      "name": "Sisällöntuotannon AI",
+      "tagline": "Käytämme tekemisen ajan tekemiseen.",
+      "icon": {},
+      "problems": [
+        "Käyttökelpoisten kohtausten etsiminen raakakuvauksesta vie kaiken ajan",
+        "Toistuvat työt, kuten tekstitykset ja thumbnailit, työntävät tuotantoaikataulua",
+        "Kanavakohtaisiin muotoihin uudelleen tekeminen ei lopu"
+      ],
+      "capabilities": [
+        {
+          "title": "Raakamateriaalin indeksointi",
+          "desc": "Indeksoi kuvausmateriaalin henkilöiden, paikkojen ja repliikkien mukaan, jotta tarvittavat kohtaukset löytyvät heti."
+        },
+        {
+          "title": "Tekstitys- ja käännösluonnokset",
+          "desc": "Litteroi puheen ja laatii kanavan sävyyn sopivan tekstitysluonnoksen."
+        },
+        {
+          "title": "Kanavakohtainen uudelleenkoostaminen",
+          "desc": "Johdetaan yhdestä alkuperäisestä aineistosta kanavien vaatimusten mukaisia versioita."
+        },
+        {
+          "title": "Metadatan jäsentäminen",
+          "desc": "Järjestää otsikon, tagit ja kuvauksen hakua varten ja viimeistelee latausvalmistelut."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Kohtausten hakuaika",
+          "value": "-80%"
+        },
+        {
+          "label": "Tekstitysluonnos",
+          "value": "Heti"
+        },
+        {
+          "label": "Kanavaversiot",
+          "value": "1→N"
+        }
+      ],
+      "steps": [
+        "Raaka-aineiston liittäminen",
+        "Sävykriteerien oppiminen",
+        "Pilottituotanto",
+        "Liittäminen tuotantolinjaan"
+      ],
+      "seo": {
+        "title": "Sisällöntuotannon AI",
+        "description": "AI-agentti, joka vähentää sisällöntuotannon toistuvaa työtä raakakuvausten indeksoinnilla, tekstitysluonnoksilla ja kanavakohtaisella uudelleenkoostamisella."
+      }
+    },
+    {
+      "slug": "manufacturing",
+      "name": "Valmistusprosessin AI",
+      "tagline": "Luemme signaalit ennen virheitä.",
+      "icon": {},
+      "problems": [
+        "Laitevika huomataan vasta pysähdyksen jälkeen",
+        "Tarkastuskriteerit vaihtelevat tarkastajan mukaan",
+        "Saannon laskun syytä ei pystytä täsmentämään jälkikäteen"
+      ],
+      "capabilities": [
+        {
+          "title": "Laitepoikkeamien ennakointi",
+          "desc": "Etsii sensorien kehityksestä normaalista poikkeavia kuvioita ja ilmoittaa ennen pysähdystä."
+        },
+        {
+          "title": "Visuaalinen tarkastus",
+          "desc": "Arvioi viat videokuvasta ja poistaa tarkastajien väliset erot."
+        },
+        {
+          "title": "Saannon syiden jäljitys",
+          "desc": "Yhdistää prosessimuuttujat ja hylkäysasteen ja osoittaa, missä olosuhteissa tulos heikkeni."
+        },
+        {
+          "title": "Työstandardien tarkistus",
+          "desc": "Kirjaa standardityön ja todellisen työn erot ja jättää parannuskohdat talteen."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Suunnittelematon pysähdys",
+          "value": "-40%"
+        },
+        {
+          "label": "Tarkastuserot",
+          "value": "Poistettu"
+        },
+        {
+          "label": "Syyn täsmentäminen",
+          "value": "Samana päivänä"
+        }
+      ],
+      "steps": [
+        "Laitedatan liittäminen",
+        "Normaalialueen oppiminen",
+        "Yhden linjan varmennus",
+        "Laajennus linjoille"
+      ],
+      "seo": {
+        "title": "Valmistusprosessin AI",
+        "description": "AI-agentti, joka vähentää valmistusympäristön tappioita laitepoikkeamien ennakoinnilla, videopohjaisella visuaalisella tarkastuksella ja saannon syiden jäljityksellä."
+      }
+    },
+    {
+      "slug": "distribution",
+      "name": "Jakelunhallinnan AI",
+      "tagline": "Vähennämme varastoa ja estämme puutteet.",
+      "icon": {},
+      "problems": [
+        "Hyvin myyvät tuotteet loppuvat ensin",
+        "Hitaasti liikkuva varasto vie tilaa varastosta",
+        "Tilauspäätös riippuu vastuuhenkilön kokemuksesta"
+      ],
+      "capabilities": [
+        {
+          "title": "Kysynnän ennustaminen",
+          "desc": "Ennustaa tuotekohtaisen kysynnän myyntikehityksen ja kausivaihtelun perusteella."
+        },
+        {
+          "title": "Tilaussuositus",
+          "desc": "Laskee toimitusajan ja varmuusvaraston ja ehdottaa tilausmäärää."
+        },
+        {
+          "title": "Varaston terveyden tarkistus",
+          "desc": "Löytää pysähtyneen varaston ja ilmoittaa sopivan poistamisajankohdan."
+        },
+        {
+          "title": "Logistiikkareittien jäsentäminen",
+          "desc": "Etsii toimitushistoriasta viivästyvät osuudet ja suunnittelee reitin uudelleen."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Puutteiden määrä",
+          "value": "-50%"
+        },
+        {
+          "label": "Varastopäivät",
+          "value": "-25%"
+        },
+        {
+          "label": "Tilauspäätös",
+          "value": "Perustepohjainen"
+        }
+      ],
+      "steps": [
+        "Myyntidatan liittäminen",
+        "Ennustetarkkuuden varmennus",
+        "Sovellus osaan tuotteista",
+        "Kaikki tuotteet"
+      ],
+      "seo": {
+        "title": "Jakelunhallinnan AI",
+        "description": "Jakeluympäristön AI-agentti, joka vähentää sekä puutteita että ylivarastoa kysynnän ennustamisen ja tilaussuositusten avulla."
+      }
+    },
+    {
+      "slug": "service",
+      "name": "Palvelutuotannon AI",
+      "tagline": "Myös ihmisten sijoittelu tarvitsee perusteet.",
+      "icon": {},
+      "problems": [
+        "Tarvittava henkilöstömäärä päätetään ympäristöittäin tuntumalla",
+        "Työajan tarkistus ja tilitys vievät joka kuukausi useita päiviä",
+        "Sopimusehdot vaihtelevat ympäristöittäin ja aiheuttavat virheitä"
+      ],
+      "capabilities": [
+        {
+          "title": "Henkilöstösijoittelun ehdotus",
+          "desc": "Laskee tarvittavan henkilöstömäärän ympäristön koon ja aiempien työaikojen perusteella."
+        },
+        {
+          "title": "Työajan automaattinen koonti",
+          "desc": "Kokoaa saapumis- ja lähtömerkinnät sopimusehtojen mukaisesti ja jättää vain poikkeukset ihmiselle."
+        },
+        {
+          "title": "Tilityslaskelman laadinta",
+          "desc": "Täsmäyttää ympäristökohtaiset hinnat ja työmerkinnät ja laatii tilitysluonnoksen."
+        },
+        {
+          "title": "Sopimusehtojen tarkistus",
+          "desc": "Tunnistaa erot ympäristökohtaisten ehtojen ja todellisen toiminnan välillä ja ilmoittaa niistä."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Tilitykseen kuluva aika",
+          "value": "-60%"
+        },
+        {
+          "label": "Sijoittelun perusteet",
+          "value": "Numeroitu"
+        },
+        {
+          "label": "Ehtorikkomus",
+          "value": "Ennakkotunnistus"
+        }
+      ],
+      "steps": [
+        "Sopimusehtojen jäsentäminen",
+        "Työaikajärjestelmän liittäminen",
+        "Pilotti yhdessä ympäristössä",
+        "Kaikki ympäristöt"
+      ],
+      "seo": {
+        "title": "Palvelutuotannon AI",
+        "description": "AI-agentti, joka vähentää palvelutuotannon toistuvaa työtä automatisoimalla henkilöstösijoittelun laskennan, työajan koonnin ja tilityslaskelmien laadinnan."
+      }
+    },
+    {
+      "slug": "safety",
+      "name": "Rikosten ehkäisyn AI",
+      "tagline": "Näemme signaalit ennen tapahtumaa.",
+      "icon": {},
+      "problems": [
+        "Valvomohenkilöstö ei voi katsoa kaikkia näkymiä samanaikaisesti",
+        "Jälkikäteinen videotarkistus vie kauan",
+        "Riskin arviointikriteerit vaihtelevat valvojan mukaan"
+      ],
+      "capabilities": [
+        {
+          "title": "Poikkeavan käyttäytymisen tunnistus",
+          "desc": "Havaitsee reaaliajassa kuvioita, kuten oleskelua, tunkeutumista ja kaatumisia, ja ilmoittaa niistä."
+        },
+        {
+          "title": "Jaksohaku",
+          "desc": "Löytää videojakson heti henkilön, ajoneuvon ja ajan perusteella."
+        },
+        {
+          "title": "Priorisoitu valvonta",
+          "desc": "Nostaa korkean riskin näkymät valvojan eteen."
+        },
+        {
+          "title": "Tapahtumamerkintöjen jäsentäminen",
+          "desc": "Kirjaa automaattisesti tapahtumakulun havainnosta toimenpiteeseen."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Videohaku",
+          "value": "Minuuteissa"
+        },
+        {
+          "label": "Havaitsematta jääminen",
+          "value": "Vähenee"
+        },
+        {
+          "label": "Arviointikriteerit",
+          "value": "Yhtenäiset"
+        }
+      ],
+      "steps": [
+        "Kameroiden liittäminen",
+        "Tunnistuskriteerien säätö",
+        "Yöpilotti",
+        "Laajennus kaikille alueille"
+      ],
+      "seo": {
+        "title": "Rikosten ehkäisyn AI",
+        "description": "Rikosten ehkäisyn AI-agentti, joka tukee valvomohenkilöstön päätöksiä poikkeavan käyttäytymisen tunnistuksella ja ehtopohjaisella videohaulla."
+      }
+    }
+  ],
+  "services": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Kehityspalvelut",
+        "title": "Tarjoamme sekä rakentamisen työn että rakentajat",
+        "lead": "Voitte antaa koko projektin hoidettavaksi tai pyytää vain tarvittavat henkilöt. Sopimusosapuoli on yhtiö, ei yksityishenkilö."
+      },
+      "cards": [
+        {
+          "title": "Kokonaisvaltainen ohjelmistokehitys",
+          "desc": "Hoidamme vaatimusten jäsentämisestä julkaisuun ja ylläpitoon asti.",
+          "href": "/services/software",
+          "linkLabel": "Katso kehityspalvelu"
+        },
+        {
+          "title": "Kehittäjäresursointi ja ulkoistus",
+          "desc": "Sijoitamme kehittäjiä paikan päälle, etänä tai projektikohtaisesti.",
+          "href": "/services/staffing",
+          "linkLabel": "Katso resursointi"
+        }
+      ],
+      "collaboration": {
+        "id": "collaboration",
+        "eyebrow": "Yhteistyötapa",
+        "title": "Suunniteltu vähentämään tilaajan hallintakuormaa",
+        "items": [
+          {
+            "title": "Yksi yhteyspiste",
+            "desc": "Useiden kehittäjien kanssa ei viestitä erikseen. Yksi vastuukanava kokoaa asiat."
+          },
+          {
+            "title": "Yhtiösopimus",
+            "desc": "Yhtiö vastaa sopimuksista, verolaskuista ja virheiden korjauksesta."
+          },
+          {
+            "title": "Luovutusdokumentaatio",
+            "desc": "Projektin päättyessä luovutamme myös käytössä tarvittavat asiakirjat."
+          }
+        ]
+      },
+      "domains": {
+        "id": "domains",
+        "eyebrow": "Teknologia-alueet",
+        "title": "Käsiteltävä laajuus",
+        "items": [
+          "Verkkopalvelut ja hallintajärjestelmät",
+          "Mobiilisovellukset",
+          "AI-agentit ja dataputket",
+          "Sisäisten järjestelmien integraatiot ja migraatiot"
+        ]
+      },
+      "cta": {
+        "title": "Jos ette tiedä, mikä muoto sopii",
+        "desc": "Kun kerrotte tilanteen, jäsennämme ensin, kannattaako antaa kokonaisuus hoidettavaksi vai lisätä vain henkilöstöä.",
+        "primary": {
+          "label": "Ota yhteyttä",
+          "href": "/contact"
+        }
+      }
+    },
+    "software": {
+      "hero": {
+        "eyebrow": "Kokonaisvaltainen ohjelmistokehitys",
+        "title": "Vaatimuksista käyttöön asti",
+        "lead": "Osallistumme jo vaiheessa, jossa päätetään mitä rakennetaan. Työ ei pääty tekemiseen, vaan siihen että kokonaisuus voidaan luovuttaa."
+      },
+      "areas": {
+        "id": "areas",
+        "eyebrow": "Kehitysalueet",
+        "title": "Neljä aluetta",
+        "items": [
+          {
+            "title": "Verkkopalvelut",
+            "desc": "Suunnittelemme asiakaspalvelut ja sisäiset hallintajärjestelmät yhdessä."
+          },
+          {
+            "title": "Mobiilisovellukset",
+            "desc": "Valitsemme natiivin tai monialustaisen toteutuksen tarvittavan laajuuden mukaan."
+          },
+          {
+            "title": "AI ja data",
+            "desc": "Liitämme agentit harkintaa vaativiin kohtiin ja jäsennämme datavirrat."
+          },
+          {
+            "title": "Järjestelmäintegraatiot",
+            "desc": "Yhdistämme kokonaisuuden katkeamatta jo käytössä oleviin järjestelmiin."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Toteutusprosessi",
+        "title": "Viisi vaihetta",
+        "steps": [
+          "Vaatimusten jäsentäminen",
+          "Laajuuden ja aikataulun vahvistus",
+          "Suunnittelu ja kehitys",
+          "Hyväksyntätestaus ja julkaisu",
+          "Luovutus ja käyttö"
+        ]
+      },
+      "quality": {
+        "id": "quality",
+        "eyebrow": "Tuotokset ja laatukriteerit",
+        "title": "Sovimme etukäteen, mitä saatte",
+        "items": [
+          "Lähdekoodi ja pääsy repositorioon",
+          "Julkaisumenettelyn dokumentaatio ja ajettavat julkaisuskriptit",
+          "API-määritykset ja datarakenteiden dokumentaatio",
+          "Luovutuspalaveri ja käyttövastaavien koulutus"
+        ],
+        "note": "Laatukriteerit sovitaan kirjallisesti ennen sopimusta. Tämä estää sen, että hyväksyntävaiheessa käytetään eri kriteerejä."
+      },
+      "cta": {
+        "title": "Rakennettavan ei tarvitse olla vielä päätetty",
+        "desc": "Kertokaa vain ongelma, jonka haluatte ratkaista, niin rajaamme laajuuden yhdessä.",
+        "primary": {
+          "label": "Ota yhteyttä",
+          "href": "/contact"
+        }
+      }
+    },
+    "staffing": {
+      "hero": {
+        "eyebrow": "Resursointi ja ulkoistus",
+        "title": "Kehittäjät liitetään työhön, mutta yhtiö vastaa hallinnasta",
+        "lead": "Sijoitamme henkilöt tarvittavaksi ajaksi. DevFirm hoitaa sopimukset ja työasiat."
+      },
+      "difference": {
+        "id": "difference",
+        "eyebrow": "Ero",
+        "title": "Miten tämä eroaa suorasta freelancer-sopimuksesta",
+        "lead": "Yhtiö ottaa kantaakseen riskit, joita tilaajalle syntyy suorasta sopimisesta yksityishenkilön kanssa.",
+        "items": [
+          {
+            "title": "Sopimusosapuoli on yhtiö",
+            "desc": "Jos henkilö poistuu kesken tai syntyy riita, yhtiö vastaa tilanteesta ja sijoittaa korvaavan henkilön."
+          },
+          {
+            "title": "Vero- ja työasioiden käsittely",
+            "desc": "Tilaajan ei tarvitse arvioida ennakonpidätystä tai neljää lakisääteistä vakuutusta."
+          },
+          {
+            "title": "Varmennettu osaajapooli",
+            "desc": "Henkilöt valitaan kehittäjistä, joiden kanssa olemme tehneet projekteja."
+          },
+          {
+            "title": "Taustahallinnon tuki",
+            "desc": "DevFirmin liiketoiminnan tuki hallinnoi sijoitetun kehittäjän tilitykset ja työajat."
+          }
+        ]
+      },
+      "formats": {
+        "id": "formats",
+        "eyebrow": "Sijoitusmuodot",
+        "title": "Valitaan kolmesta vaihtoehdosta",
+        "items": [
+          {
+            "title": "Paikan päällä",
+            "desc": "Kehittäjä työskentelee tilaajan toimistossa ja liittyy tiimiin."
+          },
+          {
+            "title": "Etänä",
+            "desc": "Työ tehdään DevFirmin toimistosta tai coworking-tilasta."
+          },
+          {
+            "title": "Projektikohtaisesti",
+            "desc": "Aika ja tuotokset sovitaan, ja tilitys perustuu lopputulokseen."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Menettely",
+        "title": "Neljä vaihetta",
+        "steps": [
+          "Tarvittavan osaamisen jäsentäminen",
+          "Ehdokkaiden ehdottaminen",
+          "Haastattelu ja vahvistus",
+          "Sijoitus ja säännöllinen tarkistus"
+        ]
+      },
+      "cta": {
+        "title": "Kertokaa tarvittava osaaminen",
+        "desc": "Jäsennämme ehdokkaat ajan ja sijoitusmuodon mukaan.",
+        "primary": {
+          "label": "Ota yhteyttä",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "academy": {
+    "page": {
+      "hero": {
+        "eyebrow": "PBL-akatemia",
+        "title": "Opimme tekemällä",
+        "lead": "Koulutus ei pääty luentojen kuunteluun. NCS-opetussuunnitelma käydään läpi projekteissa, ja valmistuessa mukana on tulos, jota voi käyttää ansioluettelossa."
+      },
+      "pbl": {
+        "id": "pbl",
+        "eyebrow": "Mikä PBL on",
+        "title": "Projekti on opetussuunnitelma",
+        "lead": "Project Based Learning. Emme listaa ensin opittavia asioita, vaan päätämme ensin mitä pitää rakentaa. Tarvittava tieto täydennetään tekemisen aikana.",
+        "items": [
+          {
+            "title": "Tulokset jäävät käteen",
+            "desc": "Jäljelle jää toimiva projekti, ei vain todistus."
+          },
+          {
+            "title": "Koette yhteistyön",
+            "desc": "Tehtävä ei ole yksin tehtävä harjoitus, vaan tiiminä jaettu aikataulu ja roolit."
+          },
+          {
+            "title": "Arviointi tehdään työelämän kriteereillä",
+            "desc": "Todellisia projekteja tekevä kehittäjä arvioi koodin ja lopputuloksen."
+          }
+        ]
+      },
+      "schools": {
+        "id": "schools",
+        "eyebrow": "3 koulua",
+        "title": "Valitkaa sen mukaan, mitä haluatte rakentaa"
+      },
+      "external": {
+        "id": "external",
+        "eyebrow": "Yhteys",
+        "title": "Jälkituotannon kurssi",
+        "desc": "Videon jälkituotannon kurssi toteutetaan yhteistyössä Seoul Film Academyn kanssa.",
+        "href": "https://www.seoulfilmacademy.com",
+        "linkLabel": "Seoul Film Academy"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Opiskeluprosessi",
+        "title": "Neljä vaihetta",
+        "steps": [
+          "Kurssin valinta ja hakemus",
+          "Keskustelu ja sijoitus",
+          "Projektin toteutus",
+          "Esitys ja valmistuminen"
+        ]
+      },
+      "cta": {
+        "title": "Jos ette tiedä, mikä kurssi sopii",
+        "desc": "Kun kerrotte, mitä osaatte nyt ja mitä haluatte tehdä, suosittelemme sopivaa kurssia.",
+        "primary": {
+          "label": "Hae kurssille",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Katso kurssit",
+          "href": "/academy/courses"
+        }
+      }
+    },
+    "schools": [
+      {
+        "key": "solution",
+        "name": "Ratkaisukehityskoulu",
+        "desc": "Rakennatte palvelun alusta loppuun.",
+        "art": {
+          "src": "/images/cards/school-solution.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "office",
+        "name": "Yleisten toimistotöiden koulu",
+        "desc": "Opitte automatisoimaan toimistotyötä työkaluilla.",
+        "art": {
+          "src": "/images/cards/school-office.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "project",
+        "name": "Projektityökoulu",
+        "desc": "Opitte projektin etenemistä suunnittelusta aikataulunhallintaan.",
+        "art": {
+          "src": "/images/cards/school-project.svg",
+          "width": 240,
+          "height": 180
+        }
+      }
+    ]
+  },
+  "courses": {
+    "list": [
+      {
+        "slug": "web-service-development",
+        "school": "solution",
+        "title": "Verkkopalvelukehityksen kurssi",
+        "summary": "Suunnittelusta julkaisuun, rakennatte yhden palvelun, johon voi oikeasti kirjautua tai mennä verkossa.",
+        "duration": "16 viikkoa",
+        "capacity": "20 henkilöä",
+        "target": [
+          "Henkilöt, jotka tuntevat ohjelmoinnin perussyntaksin",
+          "Työnhakijat, jotka tarvitsevat portfolion",
+          "Työssä käyvät, jotka haluavat rakentaa oman palvelun"
+        ],
+        "prerequisites": [
+          "Ohjelmointikokemus perussyntaksin tasolla",
+          "HTML- ja CSS-perusteet"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Kehitysympäristö ja yhteistyötyökalut",
+            "detail": "Git-kulku, issue-hallinta ja koodikatselmoinnin säännöt sovitaan tiimin säännöiksi."
+          },
+          {
+            "week": "3~6",
+            "topic": "Frontend-perusteet",
+            "detail": "Käsittelemme komponenttirakennetta, tilanhallintaa ja responsiivisia asetteluja."
+          },
+          {
+            "week": "7~10",
+            "topic": "Backend ja data",
+            "detail": "Toteutamme API-suunnittelun, datamallinnuksen ja tunnistautumisen."
+          },
+          {
+            "week": "11~14",
+            "topic": "Tiimiprojekti",
+            "detail": "Tiimi rakentaa suunnittelemansa palvelun. Katselmointi pidetään kerran viikossa."
+          },
+          {
+            "week": "15~16",
+            "topic": "Julkaisu ja esitys",
+            "detail": "Palvelu julkaistaan oikeaan domainiin ja tulokset esitellään."
+          }
+        ],
+        "outcomes": [
+          "1 käytettävä verkkopalvelu",
+          "Repositorio ja commit-historia",
+          "Julkaisudokumentaatio ja README"
+        ],
+        "careers": [
+          "Verkkokehittäjä",
+          "Junior full stack -kehittäjä",
+          "Sisäisen palvelun vastuuhenkilö"
+        ]
+      },
+      {
+        "slug": "ai-agent-basics",
+        "school": "solution",
+        "title": "AI-agenttien käytännön kurssi",
+        "summary": "Rakennatte itse agentin, joka hoitaa työtä puolestanne. Kyse ei ole mallin rakentamisesta vaan sen käyttämisestä.",
+        "duration": "12 viikkoa",
+        "capacity": "16 henkilöä",
+        "target": [
+          "Kehittäjät, joiden vastuulle tulee työn automatisointi",
+          "Käytännön työn tekijät, jotka arvioivat AI:n käyttöönottoa",
+          "Henkilöt, jotka haluavat ymmärtää agenttirakennetta"
+        ],
+        "prerequisites": [
+          "Kokemus Pythonin tai JavaScriptin käytöstä",
+          "Kokemus API-kutsuista"
+        ],
+        "curriculum": [
+          {
+            "week": "1~3",
+            "topic": "Agenttirakenne",
+            "detail": "Määritämme perustan työkalukutsuille, hakutäydennykselle ja virheenkäsittelylle."
+          },
+          {
+            "week": "4~7",
+            "topic": "Työn kytkennät",
+            "detail": "Toteutamme integraatiot, joilla luetaan ja kirjoitetaan asiakirjoja, sähköposteja ja taulukoita."
+          },
+          {
+            "week": "8~10",
+            "topic": "Arviointi ja parantaminen",
+            "detail": "Mittaamme tuloksia, asetamme kriteerit ja parannamme iteratiivisesti."
+          },
+          {
+            "week": "11~12",
+            "topic": "Käytännön sovellusprojekti",
+            "detail": "Kukin valitsee yhden oman yrityksen työtehtävän ja siirtää sen agentille."
+          }
+        ],
+        "outcomes": [
+          "1 työn automaatioagentti",
+          "Arviointikriteerien dokumentti",
+          "Sovellusraportti"
+        ],
+        "careers": [
+          "AI-käytännön vastuuhenkilö",
+          "Automaatioinsinööri",
+          "Sisäisen AI-käyttöönoton vetäjä"
+        ]
+      },
+      {
+        "slug": "office-automation",
+        "school": "office",
+        "title": "Toimistoautomaation kurssi",
+        "summary": "Vähennätte päivittäin toistuvaa asiakirja- ja taulukkotyötä työkaluilla. Aloittaminen onnistuu ilman koodausta.",
+        "duration": "8 viikkoa",
+        "capacity": "24 henkilöä",
+        "target": [
+          "Työssä käyvät, joilla on paljon toistuvaa toimistotyötä",
+          "Henkilöt, jotka käyttävät paljon aikaa Excel-työhön",
+          "Esihenkilöt, jotka haluavat jäsentää osaston työtä"
+        ],
+        "prerequisites": ["Excelin peruskäyttökokemus"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Työn purkaminen osiin",
+            "detail": "Jaamme nykyisen työn vaiheisiin ja etsimme automatisoitavat kohdat."
+          },
+          {
+            "week": "3~5",
+            "topic": "Asiakirja- ja taulukkoautomaatio",
+            "detail": "Käsittelemme lomakkeiden täytön, vertailun ja koonnin automaattisesti."
+          },
+          {
+            "week": "6~7",
+            "topic": "AI-työkalujen käyttö",
+            "detail": "Liitämme asiakirjojen tulkinnan ja yhteenvedot työnkulkuun."
+          },
+          {
+            "week": "8",
+            "topic": "Soveltaminen ja jakaminen",
+            "detail": "Jäsennämme tehdyn työn niin, että se voidaan luovuttaa tiimille."
+          }
+        ],
+        "outcomes": ["3 automatisoitua työtehtävää", "Käyttöohje"],
+        "careers": [
+          "Toimistoautomaation vastuuhenkilö",
+          "Osaston työnkehityksen vastuuhenkilö"
+        ]
+      },
+      {
+        "slug": "project-management",
+        "school": "project",
+        "title": "Projektin etenemisen kurssi",
+        "summary": "Opitte todellisten tapausten avulla, miten projekti viedään loppuun aikataulua ja laajuutta halliten.",
+        "duration": "10 viikkoa",
+        "capacity": "18 henkilöä",
+        "target": [
+          "Henkilöt, jotka saavat ensimmäisen projektinsa vastuulleen",
+          "Tiiminvetäjät, joiden aikataulut venyvät jatkuvasti",
+          "Vastuuhenkilöt, joiden pitää koordinoida tilaajan kanssa"
+        ],
+        "prerequisites": ["Kokemus tiimityöstä"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Laajuuden määrittely",
+            "detail": "Päätämme ensin, mitä ei tehdä."
+          },
+          {
+            "week": "3~5",
+            "topic": "Aikataulu ja riskit",
+            "detail": "Laadimme arviot, puskurit ja riskiluettelon."
+          },
+          {
+            "week": "6~8",
+            "topic": "Toteutus ja koordinointi",
+            "detail": "Käsittelemme muutospyynnöt ja sidosryhmäviestinnän."
+          },
+          {
+            "week": "9~10",
+            "topic": "Päätös ja retrospektiivi",
+            "detail": "Päätämme projektin luovutukseen ja retrospektiiviin."
+          }
+        ],
+        "outcomes": [
+          "1 projektisuunnitelma",
+          "Riskienhallintadokumentti",
+          "Retrospektiiviraportti"
+        ],
+        "careers": ["Projektipäällikkö", "Tiiminvetäjä", "Palvelusuunnittelija"]
+      }
+    ],
+    "page": {
+      "hero": {
+        "eyebrow": "Kurssit",
+        "title": "Nyt avoinna olevat kurssit",
+        "lead": "Kurssit on jaettu kouluittain. Tarkistakaa kesto ja kohderyhmä ja hakekaa mukaan."
+      },
+      "filterAll": "Kaikki",
+      "fields": {
+        "duration": "Kesto",
+        "capacity": "Paikat",
+        "target": "Kohderyhmä",
+        "prerequisites": "Esitiedot",
+        "curriculum": "Opetussuunnitelma",
+        "outcomes": "Tuotosprojekti",
+        "careers": "Polku valmistumisen jälkeen",
+        "week": "Viikko",
+        "topic": "Aihe",
+        "detail": "Sisältö",
+        "apply": "Hae kurssille"
+      },
+      "cta": {
+        "title": "Voitte kysyä ennen hakemista",
+        "desc": "Tarkistamme ensin, voitteko seurata kurssia nykyisellä tasollanne.",
+        "primary": {
+          "label": "Hae kurssille",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Ota yhteyttä",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "workspace": {
+    "hero": {
+      "eyebrow": "Coworking-tila",
+      "title": "Tila tekijöille",
+      "lead": "Työtila, jossa kehitys ja sisällöntuotanto valmistuvat samassa rakennuksessa."
+    },
+    "concept": {
+      "id": "concept",
+      "eyebrow": "Konsepti",
+      "title": "Kehittäjätila myös jälkituotantoon",
+      "lead": "Tämä ei ole vain paikka koodin kirjoittamiseen. Se on rakennettu niin, ettei äänitystä tai editointia vaativa työ pakota lähtemään ulos."
+    },
+    "facilities": {
+      "id": "facilities",
+      "eyebrow": "Tilat",
+      "title": "Mitä tilasta löytyy",
+      "items": [
+        {
+          "title": "Äänitysstudio",
+          "desc": "Käytössä on äänieristetty koppi narratiivin ja haastattelujen tallentamiseen.",
+          "art": {
+            "src": "/images/workspace/workspace-studio.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Äänitysstudio, jossa on akustiikkapaneelit, mikrofoni ja miksauskonsoli"
+          }
+        },
+        {
+          "title": "Sisällöntuotannon infrastruktuuri",
+          "desc": "Tarjoamme laitteet ja tallennustilan videoeditointiin ja renderöintiin.",
+          "art": {
+            "src": "/images/workspace/workspace-infra.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Sisällöntuotannon tila, jossa on työasemia sekä tallennus- ja renderöintinoderäkki"
+          }
+        },
+        {
+          "title": "Työtila",
+          "desc": "Käytössä ovat kiinteät paikat, vapaapaikat ja pienet neuvotteluhuoneet.",
+          "art": {
+            "src": "/images/workspace/workspace-desk.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Jaettu työtila, jossa on kiinteitä paikkoja, vapaapaikkoja ja pieni neuvotteluhuone"
+          }
+        }
+      ]
+    },
+    "tenants": {
+      "id": "tenants",
+      "eyebrow": "Kenelle tila sopii",
+      "title": "Tällaiset tekijät käyttävät tilaa",
+      "items": [
+        "Yksin tai pienessä ryhmässä työskentelevät kehittäjät",
+        "Tiimit, jotka tarvitsevat myös video- tai audiotyötä",
+        "Tiimit, jotka pyörittävät liiketoimintaa DevFirm CIC -mallilla"
+      ]
+    },
+    "pricing": {
+      "id": "pricing",
+      "eyebrow": "Hinnat ja yhteydenotto",
+      "title": "Käyttöehdot",
+      "note": "Ehdot riippuvat paikkatyypistä ja käyttöjaksosta. Studio toimii varausperiaatteella. Tarkat ehdot kerrotaan yhteydenoton perusteella."
+    },
+    "location": {
+      "id": "location",
+      "eyebrow": "Saapuminen",
+      "title": "Seocho-gu, Seoul",
+      "address": "2. krs, Hanyang Building, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+      "mapTitle": "DevFirmin sijaintikartta",
+      "mapLinkLabel": "Näytä Kakao Mapissa",
+      "mapHref": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C6%EA%B8%B8%2059-1%20%ED%95%9C%EC%96%91%EB%B9%8C%EB%94%A9%202%EC%B8%B5"
+    },
+    "cta": {
+      "title": "Voitte päättää käynnin jälkeen",
+      "desc": "Sovimme vierailuajan.",
+      "primary": {
+        "label": "Ota yhteyttä",
+        "href": "/contact"
+      }
+    }
+  },
+  "forms": {
+    "contact": {
+      "hero": {
+        "eyebrow": "Yhteydenotto",
+        "title": "Miten voimme auttaa",
+        "lead": "Riittää, että kirjoitatte lyhyesti mistä on kyse. Vastuuhenkilö tarkistaa viestin ja ottaa yhteyttä."
+      },
+      "types": [
+        {
+          "value": "solution",
+          "label": "AI-ratkaisun käyttöönotto"
+        },
+        {
+          "value": "development",
+          "label": "Kehitystoimeksianto"
+        },
+        {
+          "value": "staffing",
+          "label": "Resursointi"
+        },
+        {
+          "value": "academy",
+          "label": "Akatemia"
+        },
+        {
+          "value": "workspace",
+          "label": "Coworking-tilaan liittyminen"
+        },
+        {
+          "value": "etc",
+          "label": "Muu"
+        }
+      ],
+      "labels": {
+        "type": "Yhteydenoton tyyppi",
+        "name": "Nimi",
+        "company": "Yritys tai organisaatio",
+        "email": "Sähköposti",
+        "phone": "Puhelin",
+        "message": "Viestin sisältö",
+        "consent": "Hyväksyn henkilötietojen keräämisen ja käytön",
+        "submit": "Lähetä viesti",
+        "submitting": "Lähetetään"
+      },
+      "placeholders": {
+        "name": "Hong Gildong",
+        "company": "Yrityksen nimi (valinnainen)",
+        "email": "name@example.com",
+        "phone": "010-0000-0000 (valinnainen)",
+        "message": "Kertokaa tilanteesta ja siitä, mitä tarvitsette."
+      },
+      "consentNote": "Keräämme nimen, yhteystiedot, sähköpostiosoitteen ja viestin sisällön yhteydenoton käsittelyä ja vastaamista varten. Tiedot säilytetään 3 vuotta käsittelyn päättymisen jälkeen ja hävitetään sen jälkeen.",
+      "success": {
+        "title": "Yhteydenotto on vastaanotettu",
+        "desc": "Otamme yhteyttä 1-2 arkipäivän kuluessa."
+      },
+      "error": {
+        "title": "Lähetys epäonnistui",
+        "desc": "Yritä hetken kuluttua uudelleen. Jos ongelma jatkuu, ota yhteyttä alla olevalla puhelinnumerolla tai sähköpostilla."
+      }
+    },
+    "apply": {
+      "hero": {
+        "eyebrow": "Kurssihakemus",
+        "title": "Akatemian kurssihakemus",
+        "lead": "Sijoitamme hakijan kurssille sen jälkeen, kun olemme yhdessä tarkistaneet, sopiiko se nykyiseen tasoon."
+      },
+      "levels": [
+        {
+          "value": "none",
+          "label": "Olen aloittamassa"
+        },
+        {
+          "value": "basic",
+          "label": "Tunnen perusteet"
+        },
+        {
+          "value": "practical",
+          "label": "Minulla on käytännön kokemusta"
+        }
+      ],
+      "labels": {
+        "name": "Nimi",
+        "email": "Sähköposti",
+        "phone": "Puhelin",
+        "course": "Toivottu kurssi",
+        "level": "Kokemustaso",
+        "motivation": "Hakemuksen peruste",
+        "consent": "Hyväksyn henkilötietojen keräämisen ja käytön",
+        "submit": "Lähetä hakemus",
+        "submitting": "Lähetetään"
+      },
+      "placeholders": {
+        "name": "Hong Gildong",
+        "email": "name@example.com",
+        "phone": "010-0000-0000",
+        "motivation": "Kirjoittakaa, mitä haluatte rakentaa ja miksi haluatte oppia."
+      },
+      "consentNote": "Keräämme nimen, yhteystiedot, sähköpostiosoitteen ja hakemuksen sisällön kurssineuvontaa ja sijoitusta varten. Tiedot säilytetään 1 vuoden ajan neuvonnan päättymisestä ja hävitetään sen jälkeen.",
+      "success": {
+        "title": "Hakemus on vastaanotettu",
+        "desc": "Vastuuhenkilö tarkistaa sen ja ilmoittaa neuvonta-ajan."
+      },
+      "error": {
+        "title": "Lähetys epäonnistui",
+        "desc": "Yritä hetken kuluttua uudelleen."
+      }
+    },
+    "validation": {
+      "required": "Pakollinen kenttä",
+      "nameTooShort": "Syötä nimi",
+      "emailInvalid": "Sähköpostin muoto ei ole oikea",
+      "phoneInvalid": "Puhelinnumeron muoto ei ole oikea",
+      "messageTooShort": "Syötä vähintään 10 merkkiä",
+      "consentRequired": "Suostumus vaaditaan lähettämiseen",
+      "tooFast": "Yritä hetken kuluttua uudelleen",
+      "expired": "Syöttöaika on vanhentunut. Päivitä sivu ja yritä uudelleen",
+      "serverError": "Käsittelyssä tapahtui virhe"
+    }
+  },
+  "legal": {
+    "ui": {
+      "updatedAtLabel": "Viimeisin tarkistus"
+    },
+    "privacy": {
+      "title": "Tietosuojakäytäntö",
+      "intro": "CMNYX Co., Ltd. (jäljempänä \"yhtiö\") käsittelee käyttäjien henkilötietoja huolellisesti ja noudattaa sovellettavaa lainsäädäntöä. Tätä käytäntöä sovelletaan yhtiön ylläpitämään verkkosivustoon.",
+      "sections": [
+        {
+          "id": "items",
+          "title": "1. Kerättävät henkilötiedot",
+          "body": [
+            "Yhtiö kerää henkilötietoja vain verkkosivuston yhteydenotto- ja kurssihakemuslomakkeiden kautta.",
+            "Yhteydenotto: nimi, sähköposti, yhteystiedot (valinnainen), yritys tai organisaatio (valinnainen), viestin sisältö",
+            "Kurssihakemus: nimi, sähköposti, yhteystiedot, toivottu kurssi, kokemustaso, hakemuksen peruste",
+            "Yhtiö ei käytä analytiikkatyökaluja tai mainosevästeitä, jotka seuraavat kävijöiden toimintaa. Siksi henkilötietoja ei kerätä pelkän verkkosivuston käytön perusteella."
+          ]
+        },
+        {
+          "id": "purpose",
+          "title": "2. Keräämisen ja käytön tarkoitus",
+          "body": [
+            "Yhteydenottoihin vastaaminen ja neuvonnan toteuttaminen",
+            "Kurssihakemusten vastaanotto, kurssille sijoittaminen ja tiedottaminen"
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "3. Säilytys- ja käyttöaika",
+          "body": [
+            "Yhteydenottotiedot: säilytetään 3 vuotta käsittelyn päättymisen jälkeen ja hävitetään viipymättä.",
+            "Kurssihakemustiedot: säilytetään 1 vuosi neuvonnan päättymisen jälkeen ja hävitetään viipymättä.",
+            "Jos rekisteröity pyytää hävittämistä, tiedot hävitetään välittömästi."
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "4. Luovutus kolmansille osapuolille ja käsittelyn ulkoistaminen",
+          "body": [
+            "Yhtiö ei luovuta käyttäjien henkilötietoja kolmansille osapuolille.",
+            "Yhtiö käyttää kuitenkin sähköpostipalvelua yhteydenoton sisällön välittämiseksi vastuuhenkilölle, ja tässä prosessissa syöttämänne sisältö lähetetään."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "5. Rekisteröidyn oikeudet",
+          "body": [
+            "Käyttäjä voi milloin tahansa pyytää omien henkilötietojensa tarkastamista, oikaisua, poistamista tai käsittelyn keskeyttämistä.",
+            "Pyynnöt voidaan toimittaa osoitteeseen contact@devfirm.co tai numeroon 02-2058-0680, ja yhtiö ryhtyy toimiin viipymättä."
+          ]
+        },
+        {
+          "id": "manager",
+          "title": "6. Henkilötietojen suojasta vastaava",
+          "body": [
+            "CMNYX Co., Ltd. liiketoiminnan tuki",
+            "Sähköposti: contact@devfirm.co",
+            "Puhelin: 02-2058-0680"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "7. Käytännön muutokset",
+          "body": [
+            "Jos tätä käytäntöä muutetaan, yhtiö ilmoittaa muutoksista ja voimaantulopäivästä verkkosivustolla."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Käyttöehdot",
+      "intro": "Nämä ehdot määrittävät CMNYX Co., Ltd.:n (jäljempänä \"yhtiö\") ylläpitämän verkkosivuston käyttöehdot.",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "1. Tarkoitus",
+          "body": [
+            "Nämä ehdot määrittävät yhtiön ja käyttäjän oikeudet, velvollisuudet ja vastuut yhtiön tarjoaman verkkosivustopalvelun käytössä."
+          ]
+        },
+        {
+          "id": "service",
+          "title": "2. Palvelun sisältö",
+          "body": [
+            "Yhtiö tarjoaa verkkosivuston kautta tietoa yhtiöstä ja palveluista sekä vastaanottaa yhteydenottoja ja kurssihakemuksia.",
+            "Verkkosivuston käyttö ei edellytä erillistä jäsenrekisteröitymistä."
+          ]
+        },
+        {
+          "id": "obligations",
+          "title": "3. Käyttäjän velvollisuudet",
+          "body": [
+            "Käyttäjä ei saa käyttää toisen henkilön tietoja luvatta tai syöttää vääriä tietoja.",
+            "Käyttäjä ei saa kopioida, levittää tai käyttää verkkosivuston sisältöä kaupallisesti ilman yhtiön etukäteistä suostumusta."
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "4. Tekijänoikeus",
+          "body": [
+            "Tekijänoikeus verkkosivustolla julkaistuihin teksteihin, kuviin ja aineistoihin kuuluu yhtiölle."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "5. Vastuun rajoitus",
+          "body": [
+            "Yhtiö ei vastaa palvelukatkoksista, jotka johtuvat ylivoimaisesta esteestä, kuten luonnonmullistuksesta tai viestintähäiriöstä.",
+            "Verkkosivustolla julkaistut tiedot ovat viitteellisiä, ja konkreettiset sopimusehdot määräytyvät erillisen neuvottelun ja sopimuksen mukaan."
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "title": "6. Toimivalta",
+          "body": [
+            "Näihin ehtoihin liittyvät riidat käsitellään tuomioistuimessa, jolla on toimivalta yhtiön päätoimipaikan sijaintipaikan perusteella."
+          ]
+        }
+      ]
+    },
+    "updatedAt": "2026-07-28"
+  },
+  "seo": {
+    "home": {
+      "description": "Teollisuuteen Physical AI, toimistoihin Päällikkö Choi AI. Kehittäjien muodostama ohjelmistokehitysyhtiö DevFirm tarjoaa AI-ratkaisuja, ohjelmistokehitystä, kehittäjäresursointia ja PBL-akatemian."
+    },
+    "page": {
+      "about": {
+        "title": "Yritysesittely",
+        "description": "Kehittäjien muodostama kehitysyhtiö, kuten asianajajat asianajotoimistossa. Esittelemme DevFirmin toimintamallin, jossa liiketoiminnan tuki hoitaa sopimukset ja tilitykset ja kehittäjät keskittyvät rakentamiseen."
+      },
+      "cic": {
+        "title": "Sisäinen yritys (CIC)",
+        "description": "Sisäisen yrityksen malli, jossa kehittäjä pyörittää omaa liiketoimintaa DevFirmin sisällä. Sivulla esitellään osallistumisehdot, tuen laajuus ja agentti-AI:n kehittämisen tiekartta."
+      },
+      "careers": {
+        "title": "Kehittäjärekrytointi",
+        "description": "DevFirm rekrytoi kehittäjiä työskentelemään kanssamme. Tarkistakaa avoinna olevien tehtävien vastuut, vaatimukset ja työehdot."
+      },
+      "solutions": {
+        "title": "AI-ratkaisut",
+        "description": "Tarjoamme teollisuuden Physical AI -ratkaisun, toimistojen Päällikkö Choi AI -ratkaisun sekä kuuden toimialan AI-agentit rakentamiseen, sisältöön, valmistukseen, jakeluun, palvelutuotantoon ja rikosten ehkäisyyn."
+      },
+      "officeAi": {
+        "title": "Päällikkö Choi AI - toimistoympäristön agentti",
+        "description": "AI-agentti, joka hoitaa toistuvia toimistotöitä, kuten asiakirjojen lukemista, jäsentämistä ja raporttien kirjoittamista. Esittelemme käyttöönoton ja sovelluskohteet."
+      },
+      "physicalAi": {
+        "title": "Physical AI - teollisuusympäristön agentti",
+        "description": "Teollisuusympäristöön tarkoitettu AI, joka muuttaa kameroiden ja sensorien lukeman tiedon ihmiselle käyttökelpoisiksi päätelmiksi. Esittelemme tekniset valmiudet ja sovellettavat toimialat."
+      },
+      "services": {
+        "title": "Kehityspalvelut",
+        "description": "Kokonaisvaltainen ohjelmistokehitys ja kehittäjäresursointi. DevFirmin kehityspalvelu tarjoaa sekä rakentamisen työn että rakentajat."
+      },
+      "software": {
+        "title": "Kokonaisvaltainen ohjelmistokehitys",
+        "description": "Toteutamme verkko-, sovellus-, AI- ja järjestelmärakennuksia. Tarkistakaa prosessi ja tuotosten laatukriteerit etukäteen."
+      },
+      "staffing": {
+        "title": "Kehittäjäresursointi ja ulkoistus",
+        "description": "Sijoitamme kehittäjiä paikan päälle, etänä ja projektikohtaisesti. Koska sopimusosapuoli on yhtiö, tilaajan hallintakuorma vähenee."
+      },
+      "academy": {
+        "title": "PBL-akatemia",
+        "description": "Käytännön koulutus, jossa NCS-opetussuunnitelma käydään läpi projekteissa. Toiminnassa ovat ratkaisukehityskoulu, yleisten toimistotöiden koulu ja projektityökoulu."
+      },
+      "courses": {
+        "title": "Kurssit",
+        "description": "DevFirm PBL -akatemian koko kurssiluettelo. Kesto, paikkamäärä, kohderyhmä ja opetussuunnitelma ovat tarkistettavissa kouluittain."
+      },
+      "apply": {
+        "title": "Kurssihakemus",
+        "description": "Vastaanotamme PBL-akatemian kurssihakemuksia. Kun jätätte toivotun kurssin ja kokemustason, vastuuhenkilö ottaa yhteyttä."
+      },
+      "workspace": {
+        "title": "Kehittäjien coworking-tila",
+        "description": "Jälkituotantoon erikoistunut kehittäjien coworking-tila, jossa on äänitysstudio ja sisällöntuotannon infrastruktuuri. Esittelemme tilat ja liittymisehdot."
+      },
+      "contact": {
+        "title": "Ota yhteyttä",
+        "description": "Otamme vastaan yhteydenottoja ratkaisujen käyttöönotosta, kehitystoimeksiannoista, resursoinnista, akatemiasta ja tiloihin liittymisestä. 2. krs, Hanyang Building, Gangnam-daero 6-gil, Seocho-gu, Seoul."
+      },
+      "privacy": {
+        "title": "Tietosuojakäytäntö",
+        "description": "Kuvaamme DevFirmin keräämät henkilötiedot, käyttötarkoitukset, säilytysajat ja käyttäjän oikeudet."
+      },
+      "terms": {
+        "title": "Käyttöehdot",
+        "description": "DevFirmin verkkosivuston käyttöehdot."
+      }
+    },
+    "ogImageAlt": "DevFirm - kehittäjien muodostama kehitysyhtiö. Teollisuuteen Physical AI, toimistoihin Päällikkö Choi AI."
+  }
+}

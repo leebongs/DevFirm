@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { Container } from "./container";
-import { footerNav } from "@/content/navigation";
-import { site } from "@/content/site";
-import { ui } from "@/content/ui";
+import { site as siteConst } from "@/content/site";
+import { localeHref } from "@/lib/locale-href";
+import type { Dictionary } from "@/content/dictionary";
+import type { Locale } from "@/content/locales";
 
 /**
  * 전역 푸터(§5.18).
@@ -11,7 +12,18 @@ import { ui } from "@/content/ui";
  * **사이트 전체 링크의 크롤 경로는 이 컴포넌트가 보증한다.** RSC 로 유지해야
  * 하는 이유가 그것이다.
  */
-export function SiteFooter() {
+export function SiteFooter({
+  lang,
+  nav: footerNav,
+  site,
+  ui,
+}: {
+  lang: Locale;
+  nav: Dictionary["nav"]["footerNav"];
+  /** 번역되는 회사 표기만. 번호·주소 원문은 siteConst 에서 온다. */
+  site: Dictionary["site"];
+  ui: Dictionary["ui"];
+}) {
   return (
     <footer className="bg-brand text-brand-foreground mt-auto">
       <Container className="py-14 lg:py-16">
@@ -28,7 +40,7 @@ export function SiteFooter() {
                 {group.children?.map((item) => (
                   <li key={item.href}>
                     <Link
-                      href={item.href}
+                      href={localeHref(lang, item.href)}
                       className="text-brand-foreground/85 hover:text-brand-foreground text-sm break-keep"
                       {...(item.external
                         ? { target: "_blank", rel: "noopener noreferrer" }
@@ -51,25 +63,28 @@ export function SiteFooter() {
               {/* 사업자등록번호와 그 번호를 가진 법인을 같은 항목으로 묶는다.
                   앞줄이 사업 단위명이라 실제 사업자를 여기서 밝혀야 한다. */}
               <dd>
-                {site.businessNumber}
-                <span className="mt-0.5 block">{site.businessEntity}</span>
+                {siteConst.businessNumber}
+                <span className="mt-0.5 block">{siteConst.businessEntity}</span>
               </dd>
             </div>
             <div className="flex flex-wrap gap-x-2">
               <dt>{ui.footer.addressLabel}</dt>
-              <dd>{site.address.full}</dd>
+              <dd>{site.addressFull}</dd>
             </div>
             <div className="flex flex-wrap gap-x-2">
               <dt>{ui.footer.telLabel}</dt>
               <dd>
-                <a href={site.telHref} className="hover:text-brand-foreground">
-                  {site.tel}
+                <a
+                  href={siteConst.telHref}
+                  className="hover:text-brand-foreground"
+                >
+                  {siteConst.tel}
                 </a>
               </dd>
             </div>
           </dl>
           <p className="text-brand-foreground/60 mt-5 text-xs">
-            © {site.founded} {site.legalNameEn}
+            © {siteConst.founded} {siteConst.legalNameEn}
           </p>
         </div>
       </Container>

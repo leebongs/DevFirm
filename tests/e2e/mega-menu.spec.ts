@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { DEFAULT_LOCALE } from "../../content/locales";
 import { mainNav } from "../../content/navigation";
 
 /**
@@ -24,7 +25,7 @@ test.describe("메가메뉴", () => {
 
   for (const label of TRIGGERS) {
     test(`드롭다운이 컨테이너를 넘지 않는다: ${label}`, async ({ page }) => {
-      await page.goto("/");
+      await page.goto(`/${DEFAULT_LOCALE}`);
 
       // ssr:false 로 로드되므로 하이드레이션을 기다린다
       const trigger = page

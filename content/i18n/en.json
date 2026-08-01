@@ -1,0 +1,2297 @@
+{
+  "site": {
+    "nameKo": "DevFirm",
+    "legalName": "CMNYX Co., Ltd.",
+    "footerBrand": "DevFirm CIC",
+    "brand": "Computing Management",
+    "tagline": "DevFirm, a developer-led development company",
+    "addressFull": "2F, Hanyang Building, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+    "addressLocality": "Seocho-gu",
+    "addressRegion": "Seoul"
+  },
+  "ui": {
+    "nav": {
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "mainNavLabel": "Main menu",
+      "sectionNavLabel": "Section menu",
+      "breadcrumbLabel": "Current location",
+      "home": "Home",
+      "skipToContent": "Skip to content",
+      "externalLink": "Opens in a new window"
+    },
+    "toc": {
+      "title": "Contents on this page"
+    },
+    "error": {
+      "notFoundTitle": "Page not found",
+      "notFoundBody": "The address may have changed or the page may have been removed. Use the links below to continue.",
+      "errorTitle": "A problem occurred",
+      "errorBody": "Please try again in a moment. If the problem continues, contact us.",
+      "retry": "Try again",
+      "goHome": "Go home"
+    },
+    "footer": {
+      "businessNumberLabel": "Business registration no.",
+      "addressLabel": "Address",
+      "telLabel": "Phone"
+    }
+  },
+  "nav": {
+    "mainNav": [
+      {
+        "label": "About Us",
+        "href": "/about",
+        "description": "How a developer-led development company works",
+        "children": [
+          {
+            "label": "What DevFirm Is",
+            "href": "/about",
+            "description": "A development company model that works like a law firm"
+          },
+          {
+            "label": "Company In Company (CIC)",
+            "href": "/about/cic",
+            "description": "A structure where developers run their own businesses"
+          },
+          {
+            "label": "Developer Careers",
+            "href": "/about/careers",
+            "description": "Open positions"
+          }
+        ]
+      },
+      {
+        "label": "AI Solutions",
+        "href": "/solutions",
+        "description": "Physical AI for industrial sites, Manager Choi AI for offices",
+        "children": [
+          {
+            "label": "Manager Choi AI",
+            "href": "/solutions/office-ai",
+            "description": "An agent for repetitive office work"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai",
+            "description": "An agent that observes and decides at industrial sites"
+          },
+          {
+            "label": "Construction AI",
+            "href": "/solutions/agents/construction",
+            "description": "Process, safety, and materials management automation"
+          },
+          {
+            "label": "Content AI",
+            "href": "/solutions/agents/content",
+            "description": "Planning, production, and post-production support"
+          },
+          {
+            "label": "Manufacturing Process AI",
+            "href": "/solutions/agents/manufacturing",
+            "description": "Equipment, quality, and yield monitoring"
+          },
+          {
+            "label": "Distribution Management AI",
+            "href": "/solutions/agents/distribution",
+            "description": "Inventory, logistics, and demand forecasting"
+          },
+          {
+            "label": "Service Operations AI",
+            "href": "/solutions/agents/service",
+            "description": "Staff allocation, attendance, and settlement"
+          },
+          {
+            "label": "Crime Prevention AI",
+            "href": "/solutions/agents/safety",
+            "description": "Video-analysis-based anomaly detection"
+          }
+        ]
+      },
+      {
+        "label": "Development Services",
+        "href": "/services",
+        "description": "Providing both the work and the people who build",
+        "children": [
+          {
+            "label": "Full-Service Software Development",
+            "href": "/services/software",
+            "description": "Web, app, AI, and system development"
+          },
+          {
+            "label": "Developer Staffing",
+            "href": "/services/staffing",
+            "description": "On-site, remote, and project-based deployment"
+          }
+        ]
+      },
+      {
+        "label": "Academy",
+        "href": "/academy",
+        "description": "Project-based learning (PBL) based on the NCS curriculum",
+        "children": [
+          {
+            "label": "Courses",
+            "href": "/academy/courses",
+            "description": "Course list for three schools"
+          },
+          {
+            "label": "Apply for Course",
+            "href": "/academy/apply",
+            "description": "Course application intake"
+          }
+        ]
+      },
+      {
+        "label": "Shared Office",
+        "href": "/workspace",
+        "description": "Developer workspace specialized for post-production"
+      }
+    ],
+    "footerNav": [
+      {
+        "label": "Company",
+        "href": "/about",
+        "children": [
+          {
+            "label": "What DevFirm Is",
+            "href": "/about"
+          },
+          {
+            "label": "Company In Company (CIC)",
+            "href": "/about/cic"
+          },
+          {
+            "label": "Developer Careers",
+            "href": "/about/careers"
+          }
+        ]
+      },
+      {
+        "label": "AI Solutions",
+        "href": "/solutions",
+        "children": [
+          {
+            "label": "All AI Solutions",
+            "href": "/solutions"
+          },
+          {
+            "label": "Manager Choi AI",
+            "href": "/solutions/office-ai"
+          },
+          {
+            "label": "Physical AI",
+            "href": "/solutions/physical-ai"
+          },
+          {
+            "label": "Construction AI",
+            "href": "/solutions/agents/construction"
+          },
+          {
+            "label": "Content AI",
+            "href": "/solutions/agents/content"
+          },
+          {
+            "label": "Manufacturing Process AI",
+            "href": "/solutions/agents/manufacturing"
+          },
+          {
+            "label": "Distribution Management AI",
+            "href": "/solutions/agents/distribution"
+          },
+          {
+            "label": "Service Operations AI",
+            "href": "/solutions/agents/service"
+          },
+          {
+            "label": "Crime Prevention AI",
+            "href": "/solutions/agents/safety"
+          }
+        ]
+      },
+      {
+        "label": "Services and Education",
+        "href": "/services",
+        "children": [
+          {
+            "label": "All Development Services",
+            "href": "/services"
+          },
+          {
+            "label": "Full-Service Software Development",
+            "href": "/services/software"
+          },
+          {
+            "label": "Developer Staffing",
+            "href": "/services/staffing"
+          },
+          {
+            "label": "PBL Academy",
+            "href": "/academy"
+          },
+          {
+            "label": "Courses",
+            "href": "/academy/courses"
+          },
+          {
+            "label": "Apply for Course",
+            "href": "/academy/apply"
+          },
+          {
+            "label": "Shared Office",
+            "href": "/workspace"
+          }
+        ]
+      },
+      {
+        "label": "Contact and Policies",
+        "href": "/contact",
+        "children": [
+          {
+            "label": "Contact Us",
+            "href": "/contact"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "/privacy"
+          },
+          {
+            "label": "Terms of Service",
+            "href": "/terms"
+          }
+        ]
+      }
+    ],
+    "sectionNav": {
+      "/about": [
+        {
+          "label": "What DevFirm Is",
+          "href": "/about",
+          "description": "A development company model that works like a law firm"
+        },
+        {
+          "label": "Company In Company (CIC)",
+          "href": "/about/cic",
+          "description": "A structure where developers run their own businesses"
+        },
+        {
+          "label": "Developer Careers",
+          "href": "/about/careers",
+          "description": "Open positions"
+        }
+      ],
+      "/solutions": [
+        {
+          "label": "Manager Choi AI",
+          "href": "/solutions/office-ai",
+          "description": "An agent for repetitive office work"
+        },
+        {
+          "label": "Physical AI",
+          "href": "/solutions/physical-ai",
+          "description": "An agent that observes and decides at industrial sites"
+        },
+        {
+          "label": "Construction AI",
+          "href": "/solutions/agents/construction",
+          "description": "Process, safety, and materials management automation"
+        },
+        {
+          "label": "Content AI",
+          "href": "/solutions/agents/content",
+          "description": "Planning, production, and post-production support"
+        },
+        {
+          "label": "Manufacturing Process AI",
+          "href": "/solutions/agents/manufacturing",
+          "description": "Equipment, quality, and yield monitoring"
+        },
+        {
+          "label": "Distribution Management AI",
+          "href": "/solutions/agents/distribution",
+          "description": "Inventory, logistics, and demand forecasting"
+        },
+        {
+          "label": "Service Operations AI",
+          "href": "/solutions/agents/service",
+          "description": "Staff allocation, attendance, and settlement"
+        },
+        {
+          "label": "Crime Prevention AI",
+          "href": "/solutions/agents/safety",
+          "description": "Video-analysis-based anomaly detection"
+        }
+      ],
+      "/services": [
+        {
+          "label": "Full-Service Software Development",
+          "href": "/services/software",
+          "description": "Web, app, AI, and system development"
+        },
+        {
+          "label": "Developer Staffing",
+          "href": "/services/staffing",
+          "description": "On-site, remote, and project-based deployment"
+        }
+      ],
+      "/academy": [
+        {
+          "label": "Courses",
+          "href": "/academy/courses",
+          "description": "Course list for three schools"
+        },
+        {
+          "label": "Apply for Course",
+          "href": "/academy/apply",
+          "description": "Course application intake"
+        }
+      ]
+    },
+    "primaryCta": {
+      "label": "Contact Us",
+      "href": "/contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "DevFirm",
+      "title": "DevFirm, a developer-led development company",
+      "lead": "As lawyers gather at a law firm to take cases, developers gather at DevFirm to take on development. The company handles contracts and settlement, and developers focus on building.",
+      "primaryCta": {
+        "label": "Contact Us",
+        "href": "/contact"
+      },
+      "secondaryCta": {
+        "label": "View AI Solutions",
+        "href": "/solutions"
+      }
+    },
+    "slogan": {
+      "title": "Different worksites need different AI",
+      "left": {
+        "eyebrow": "Industrial Sites",
+        "name": "Physical AI",
+        "desc": "It is used where observation and judgment are needed. It turns what cameras and sensors read into decisions people can use.",
+        "href": "/solutions/physical-ai"
+      },
+      "right": {
+        "eyebrow": "Office Worksites",
+        "name": "Manager Choi AI",
+        "desc": "It handles repetitive office work. It reads and organizes documents and prepares reports.",
+        "href": "/solutions/office-ai"
+      }
+    },
+    "audience": {
+      "eyebrow": "What brings you here",
+      "title": "Start with what you need",
+      "cards": [
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-client.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Corporate Clients",
+          "desc": "If you need AI adoption or development talent",
+          "href": "/solutions",
+          "linkLabel": "View AI Solutions"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-learner.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Learners",
+          "desc": "If you want to learn practical work through projects",
+          "href": "/academy",
+          "linkLabel": "View Academy"
+        },
+        {
+          "icon": {},
+          "art": {
+            "src": "/images/cards/audience-developer.svg",
+            "width": 240,
+            "height": 180
+          },
+          "title": "Developers to Work With Us",
+          "desc": "If you want to join us or run a CIC",
+          "href": "/about/careers",
+          "linkLabel": "View Careers"
+        }
+      ]
+    },
+    "agentsSection": {
+      "eyebrow": "Industry-Specific AI Agents",
+      "title": "Let industry AI assistants organize the work; you make the decisions",
+      "lead": "Agents organize repetitive judgments across six industries first. People step in only where judgment is needed."
+    },
+    "model": {
+      "eyebrow": "The DevFirm Model",
+      "title": "DevFirm does for developers what a law firm does for lawyers",
+      "lead": "Developers spend time building instead of handling sales, contracts, settlement, and tax. Clients contract with a corporation, not an individual.",
+      "comparison": {
+        "leftLabel": "Law Firm",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Lawyer",
+            "right": "Developer"
+          },
+          {
+            "left": "Case Intake",
+            "right": "Project Intake"
+          },
+          {
+            "left": "Administrative office handles administration",
+            "right": "Business support handles the back office"
+          },
+          {
+            "left": "Partner Lawyer",
+            "right": "CIC Lead"
+          },
+          {
+            "left": "Clients contract with the firm",
+            "right": "Clients contract with the corporation"
+          }
+        ]
+      },
+      "note": "For clients, the risks of contracting with an individual freelancer are removed. For developers, work that is difficult to handle alone is removed."
+    },
+    "bands": {
+      "academy": {
+        "eyebrow": "PBL Academy",
+        "title": "Learn by Building",
+        "desc": "The NCS curriculum is completed through projects. By completion, learners have outcomes they can put on a resume.",
+        "href": "/academy",
+        "linkLabel": "View Courses"
+      },
+      "workspace": {
+        "eyebrow": "Shared Office",
+        "title": "A workspace that supports post-production",
+        "desc": "A developer shared office with a recording studio and content production infrastructure.",
+        "href": "/workspace",
+        "linkLabel": "View Space"
+      }
+    },
+    "trust": {
+      "eyebrow": "Company",
+      "title": "Since 2007",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "Founded"
+        },
+        {
+          "value": "CIC",
+          "label": "CIC operations"
+        },
+        {
+          "value": "Seocho, Seoul",
+          "label": "Near Gangnam-daero"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "You do not need to know what to build yet",
+      "desc": "Tell us your current situation, and we will first organize where to start.",
+      "cta": {
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About Us",
+      "title": "A development company made up of developers",
+      "lead": "DevFirm builds a structure where developers can focus only on development. The company handles the rest."
+    },
+    "metaphor": {
+      "id": "model",
+      "eyebrow": "The DevFirm Model",
+      "title": "We applied the law firm structure to development",
+      "lead": "As lawyers focus only on cases with support from an administrative office, DevFirm developers focus only on development with support from business support.",
+      "comparison": {
+        "leftLabel": "Law Firm",
+        "rightLabel": "DevFirm",
+        "rows": [
+          {
+            "left": "Lawyers take cases",
+            "right": "Developers take projects"
+          },
+          {
+            "left": "The administrative office handles administration",
+            "right": "Business support handles the back office"
+          },
+          {
+            "left": "Clients contract with the firm",
+            "right": "Clients contract with the corporation"
+          },
+          {
+            "left": "Partners hold equity",
+            "right": "CIC leads own a business unit"
+          }
+        ]
+      }
+    },
+    "backoffice": {
+      "id": "backoffice",
+      "eyebrow": "Business Support",
+      "title": "Work developers do not have to do",
+      "lead": "These are the items that take the most time from developers who work alone. At DevFirm, this work does not land on the developer's desk.",
+      "items": [
+        {
+          "title": "Contracts and Negotiation",
+          "desc": "The corporation maintains standard contracts and review procedures. Developers do not judge toxic clauses alone."
+        },
+        {
+          "title": "Tax and Settlement",
+          "desc": "The company handles tax invoice issuance, withholding tax, and VAT filing."
+        },
+        {
+          "title": "Payment Collection",
+          "desc": "The corporation handles receivables management and follow-up. Developers do not have to argue with clients about money."
+        },
+        {
+          "title": "Four Major Insurances and Labor Affairs",
+          "desc": "The company handles filings and labor management according to the employment type."
+        }
+      ]
+    },
+    "history": {
+      "id": "history",
+      "eyebrow": "History",
+      "title": "Since 2007",
+      "items": [
+        {
+          "year": "2007",
+          "title": "Corporation Established",
+          "desc": "We began software development and system implementation."
+        },
+        {
+          "year": "2010s",
+          "title": "Developer Staffing and Outsourcing",
+          "desc": "We expanded services through on-site and project-based deployment."
+        },
+        {
+          "year": "2020s",
+          "title": "CIC Introduced",
+          "desc": "We built a structure where developers run their own businesses inside the company."
+        },
+        {
+          "year": "Present",
+          "title": "AI Agent Business",
+          "desc": "We reorganized the business around Physical AI for industrial sites and Manager Choi AI for offices."
+        }
+      ]
+    },
+    "profile": {
+      "id": "profile",
+      "eyebrow": "Company Overview",
+      "title": "Basic Information"
+    },
+    "cta": {
+      "title": "There are three ways to work with DevFirm",
+      "desc": "Meet us as a client, join as a developer, or start at the academy.",
+      "primary": {
+        "label": "Contact Us",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "View Careers",
+        "href": "/about/careers"
+      }
+    }
+  },
+  "cic": {
+    "hero": {
+      "eyebrow": "Company In Company",
+      "title": "Run your own business inside the company",
+      "lead": "CIC (Company In Company) is a system where developers operate their own business units inside DevFirm. They use the corporation's credit and back office while setting the direction of the business themselves."
+    },
+    "what": {
+      "id": "what",
+      "eyebrow": "What Is a CIC",
+      "title": "Reduce the risk of starting up, keep the autonomy",
+      "lead": "When you establish a corporation alone, you must build credit and administration from the beginning. A CIC uses both from the company, while the lead keeps decision rights over the business.",
+      "items": [
+        {
+          "title": "Use corporate credit",
+          "desc": "Clients contract with a corporation established in 2007, not a new sole proprietor."
+        },
+        {
+          "title": "Use the back office",
+          "desc": "Business support handles contracts, tax, settlement, and labor affairs."
+        },
+        {
+          "title": "The lead decides the business",
+          "desc": "The CIC lead decides what work to take and what team to build."
+        },
+        {
+          "title": "Results are settled by business unit",
+          "desc": "Distribution is based on business performance, not salary."
+        }
+      ]
+    },
+    "operation": {
+      "id": "operation",
+      "eyebrow": "Operating Method",
+      "title": "This is how DevFirm operates",
+      "steps": [
+        "Discuss business plan",
+        "Establish CIC and agree on terms",
+        "Win projects and build the team",
+        "Settle results and reinvest"
+      ]
+    },
+    "roadmap": {
+      "id": "roadmap",
+      "eyebrow": "Roadmap",
+      "title": "Agent AI Advancement",
+      "lead": "Each CIC builds an agent for its domain, and the company builds the shared foundation. Domain knowledge accumulates in the CIC, and common technology accumulates in the company.",
+      "items": [
+        {
+          "title": "Secure Domain Data",
+          "desc": "Each CIC collects real data and judgment criteria from the sites it handles."
+        },
+        {
+          "title": "Build a Common Foundation",
+          "desc": "The company builds common functions such as reading, search, and reporting for all CICs to use."
+        },
+        {
+          "title": "Productize Agents",
+          "desc": "Validated judgments are packaged into industry-specific agent products."
+        }
+      ]
+    },
+    "conditions": {
+      "id": "conditions",
+      "eyebrow": "Participation Conditions",
+      "title": "We work with people like this",
+      "items": [
+        "Experience creating work independently in your domain",
+        "A posture of responsibility for outcomes",
+        "Willingness to build and operate a team"
+      ],
+      "note": "We look less at years of experience and more at whether you can build a business that runs on its own. It is fine if you do not have a team yet."
+    },
+    "cta": {
+      "title": "If you are considering starting as a CIC",
+      "desc": "Tell us what business you are planning. Terms are set according to the nature of the business.",
+      "primary": {
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    }
+  },
+  "careers": {
+    "page": {
+      "hero": {
+        "eyebrow": "Careers",
+        "title": "We are looking for developers to build with us",
+        "lead": "DevFirm builds a structure where developers can focus on development. We are looking for people who will use that structure with us."
+      },
+      "emptyState": "There are no open postings at the moment. Rolling applications are accepted through Contact Us.",
+      "statusLabel": {
+        "open": "Open",
+        "closed": "Closed"
+      },
+      "fields": {
+        "responsibilities": "Responsibilities",
+        "requirements": "Requirements",
+        "preferred": "Preferred Qualifications",
+        "conditions": "Working Conditions",
+        "deadline": "Deadline",
+        "apply": "Apply"
+      },
+      "cta": {
+        "title": "Even if there is no matching posting",
+        "desc": "Tell us what work you want to do, and we will look for a place together. Starting as a CIC is also an option.",
+        "primary": {
+          "label": "Contact Us",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "Learn About CIC",
+          "href": "/about/cic"
+        }
+      }
+    },
+    "jobs": [
+      {
+        "slug": "ai-engineer",
+        "title": "AI Agent Engineer",
+        "team": "AI Solutions",
+        "employmentType": "Full-time",
+        "status": "open",
+        "deadline": "Rolling",
+        "responsibilities": [
+          "Design and implement reading and reasoning pipelines for industry-specific AI agents",
+          "Organize site data collection paths and validate quality",
+          "Tune accuracy and respond to operational issues at implementation sites"
+        ],
+        "requirements": [
+          "At least 3 years of practical experience with Python-based data and model pipelines",
+          "Experience deploying and operating models in real services",
+          "Experience agreeing on criteria with site personnel"
+        ],
+        "preferred": [
+          "Experience with video recognition or time-series anomaly detection",
+          "Understanding of manufacturing, construction, or logistics domains",
+          "Experience configuring LLM agents"
+        ],
+        "conditions": [
+          "Seocho-gu, Seoul office; negotiable",
+          "Five-day workweek, flexible commuting hours",
+          "Equipment and learning expense support"
+        ]
+      },
+      {
+        "slug": "fullstack-developer",
+        "title": "Full-Stack Developer",
+        "team": "Development Services",
+        "employmentType": "Full-time",
+        "status": "open",
+        "deadline": "Rolling",
+        "responsibilities": [
+          "Design through deployment of client web and app services",
+          "Improve and migrate existing systems",
+          "Participate from the requirements organization stage"
+        ],
+        "requirements": [
+          "At least 3 years of web service development experience",
+          "Proficiency in TypeScript or an equivalent statically typed language",
+          "Experience deploying and operating services directly"
+        ],
+        "preferred": [
+          "Experience with Next.js App Router",
+          "Experience configuring cloud infrastructure",
+          "Experience communicating directly with clients"
+        ],
+        "conditions": [
+          "Seocho-gu, Seoul office; on-site work possible depending on the project",
+          "Five-day workweek, flexible commuting hours",
+          "Shared office access available"
+        ]
+      },
+      {
+        "slug": "cic-lead",
+        "title": "CIC Lead",
+        "team": "CIC",
+        "employmentType": "Contract",
+        "status": "open",
+        "deadline": "Rolling",
+        "responsibilities": [
+          "Business planning and project acquisition for the assigned domain",
+          "Team building and project operation",
+          "Set the productization direction for domain agents"
+        ],
+        "requirements": [
+          "Experience independently creating work in a specific domain",
+          "Experience building a team and completing a project",
+          "A posture of responsibility for business results"
+        ],
+        "preferred": [
+          "Existing customer network",
+          "Experience with AI adoption projects",
+          "Startup or business operation experience"
+        ],
+        "conditions": [
+          "Performance-based settlement; terms are discussed according to the business",
+          "Full support with corporate credit and back office",
+          "Flexible work format"
+        ]
+      }
+    ]
+  },
+  "solutions": {
+    "hub": {
+      "hero": {
+        "eyebrow": "AI Solutions",
+        "title": "Physical AI for industrial sites, Manager Choi AI for offices",
+        "lead": "Different worksites require different judgments. DevFirm approaches them through two axes."
+      },
+      "axes": [
+        {
+          "eyebrow": "Industrial Sites",
+          "name": "Physical AI",
+          "desc": "It turns worksites read by cameras and sensors into judgments people can use.",
+          "href": "/solutions/physical-ai",
+          "linkLabel": "View Physical AI"
+        },
+        {
+          "eyebrow": "Office Worksites",
+          "name": "Manager Choi AI",
+          "desc": "It handles repetitive work such as reading documents, organizing them, and writing reports.",
+          "href": "/solutions/office-ai",
+          "linkLabel": "View Manager Choi AI"
+        }
+      ],
+      "agentsSection": {
+        "id": "agents",
+        "eyebrow": "Industry-Specific Agents",
+        "title": "Six industries, six kinds of judgment",
+        "lead": "Industry-specific judgment criteria are placed on the same foundation. The agent speaks in the language of the worksite."
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Adoption Process",
+        "title": "Start in four steps",
+        "steps": [
+          "Assess current state and check data",
+          "Agree on judgment criteria",
+          "Pilot for 4 to 8 weeks",
+          "Transition to operations and expand"
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "eyebrow": "Frequently Asked Questions",
+        "title": "Common questions before adoption",
+        "items": [
+          {
+            "q": "Can we start if our data is not organized?",
+            "a": "Most sites are like that. That is why the first step is a data check. We first confirm what is possible with what is already being accumulated, then create collection paths for what is missing."
+          },
+          {
+            "q": "How accurate is it?",
+            "a": "It depends on the site and the judgment items. For that reason, we set a pilot period before contracting and measure with real data. Target figures are set together after reviewing the results."
+          },
+          {
+            "q": "Do we need to change our existing system?",
+            "a": "In most cases, no. It connects by reading data from the existing system and returning results. If replacement is needed, we explain the reason first."
+          },
+          {
+            "q": "Who operates it after adoption?",
+            "a": "DevFirm handles the initial stage. Once the judgment criteria stabilize, we hand it over to the person in charge. Continued outsourced operation is also possible."
+          }
+        ]
+      },
+      "cta": {
+        "title": "We first decide what judgment to automate",
+        "desc": "Tell us what judgments people are repeating at your current site.",
+        "primary": {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      }
+    },
+    "physicalAi": {
+      "hero": {
+        "eyebrow": "Physical AI",
+        "title": "Add eyes that read the site",
+        "lead": "It watches what people cannot keep watching. What it sees is left as judgment, not just a record."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Problem",
+        "title": "Most site information passes by",
+        "items": [
+          {
+            "title": "You cannot watch everything",
+            "desc": "There are many cameras, but limited people watching them."
+          },
+          {
+            "title": "Once it passes, it is hard to find",
+            "desc": "When confirmation is needed, rewinding video takes time."
+          },
+          {
+            "title": "Standards differ",
+            "desc": "Different people judge the same scene differently."
+          }
+        ]
+      },
+      "stack": {
+        "id": "stack",
+        "eyebrow": "Technical Capabilities",
+        "title": "Read, judge, and hand off",
+        "items": [
+          {
+            "title": "Video Recognition",
+            "desc": "It distinguishes people, equipment, and states, and finds risk patterns."
+          },
+          {
+            "title": "Sensor Time-Series Analysis",
+            "desc": "It detects flows that differ from normal as anomaly signals."
+          },
+          {
+            "title": "On-Site Edge Processing",
+            "desc": "It makes local judgments even at sites with unstable networks."
+          },
+          {
+            "title": "Business System Integration",
+            "desc": "It passes judgment results into approval and reporting flows."
+          }
+        ]
+      },
+      "industries": {
+        "id": "industries",
+        "eyebrow": "Applicable Industries",
+        "title": "Used in six types of worksites"
+      },
+      "cta": {
+        "title": "Start with one site",
+        "desc": "If cameras and sensors are already present, we start with those.",
+        "primary": {
+          "label": "Contact Us",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "View Manager Choi AI",
+          "href": "/solutions/office-ai"
+        }
+      }
+    },
+    "officeAi": {
+      "hero": {
+        "eyebrow": "Manager Choi AI",
+        "title": "Office repetition is not work people should do",
+        "lead": "Reading received documents, organizing them, moving them into forms, and writing reports. Manager Choi AI handles it."
+      },
+      "problem": {
+        "id": "problem",
+        "eyebrow": "Problem",
+        "title": "There is no time left for judgment",
+        "items": [
+          {
+            "title": "Copying work",
+            "desc": "People re-enter content from emails and attachments into internal forms."
+          },
+          {
+            "title": "Looking things up",
+            "desc": "Time goes into searching past documents to confirm evidence."
+          },
+          {
+            "title": "Cross-checking",
+            "desc": "Documents are compared to check whether numbers match."
+          },
+          {
+            "title": "Preparing summaries",
+            "desc": "The same content is rewritten for each reporting audience."
+          }
+        ]
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "What It Does",
+        "title": "From documents to reporting",
+        "items": [
+          {
+            "title": "Document Reading",
+            "desc": "It extracts required items from contracts, transaction statements, and estimates."
+          },
+          {
+            "title": "Internal Form Filling",
+            "desc": "It fills extracted items into company forms."
+          },
+          {
+            "title": "Evidence Search",
+            "desc": "It finds related content in past documents and presents it with sources."
+          },
+          {
+            "title": "Cross-Check Review",
+            "desc": "It identifies where numbers and conditions differ across documents."
+          },
+          {
+            "title": "Report Drafts",
+            "desc": "It creates summaries tailored to the reporting audience."
+          },
+          {
+            "title": "Follow-Up Alerts",
+            "desc": "It tracks items with approaching deadlines and missing items."
+          }
+        ]
+      },
+      "physical": {
+        "id": "physical",
+        "eyebrow": "Physical AI Integration",
+        "title": "Keep office and site work connected",
+        "lead": "What Physical AI reads at the site flows into Manager Choi AI reports. It creates one path from a site photo to an approval document."
+      },
+      "cta": {
+        "title": "Decide which documents to assign first",
+        "desc": "Tell us just one type of document you process most often.",
+        "primary": {
+          "label": "Contact Us",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "View Industry Agents",
+          "href": "/solutions"
+        }
+      }
+    },
+    "agentPage": {
+      "problems": {
+        "id": "problems",
+        "eyebrow": "Site Problems",
+        "title": "You are likely doing this now"
+      },
+      "capabilities": {
+        "id": "capabilities",
+        "eyebrow": "What It Does",
+        "title": "What the agent handles"
+      },
+      "outcomes": {
+        "id": "outcomes",
+        "eyebrow": "Expected Effects",
+        "title": "What changes",
+        "note": "After measuring with real data during the pilot period, we reset the targets."
+      },
+      "steps": {
+        "id": "steps",
+        "eyebrow": "Adoption Flow",
+        "title": "Implemented in four steps"
+      },
+      "siblings": {
+        "id": "siblings",
+        "eyebrow": "Other Industries",
+        "title": "How other sites use it"
+      },
+      "cta": {
+        "title": "Check whether it works for your site",
+        "desc": "We first check what is possible with the data you are already accumulating.",
+        "primary": {
+          "label": "Contact Us",
+          "href": "/contact"
+        },
+        "secondary": {
+          "label": "View All AI Solutions",
+          "href": "/solutions"
+        }
+      }
+    }
+  },
+  "agents": [
+    {
+      "slug": "construction",
+      "name": "Construction AI",
+      "tagline": "Reduce the gap between drawings and the site.",
+      "icon": {},
+      "problems": [
+        "Progress reports are aggregated differently by each person",
+        "Safety inspection records are scattered across paper and messengers",
+        "Material intake does not match actual usage"
+      ],
+      "capabilities": [
+        {
+          "title": "Progress Reading",
+          "desc": "It compares site photos with daily work logs and calculates progress by the same standard every day."
+        },
+        {
+          "title": "Safety Risk Detection",
+          "desc": "It detects missing protective equipment and entry into hazardous zones in CCTV footage and alerts immediately."
+        },
+        {
+          "title": "Materials Intake and Issue Organization",
+          "desc": "It matches intake slips with construction quantities and reports shortages or excesses weekly."
+        },
+        {
+          "title": "Daily Report Writing",
+          "desc": "It gathers scattered records and automatically creates reports in the client's format."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Daily report writing time",
+          "value": "-70%"
+        },
+        {
+          "label": "Missed safety inspections",
+          "value": "0 cases"
+        },
+        {
+          "label": "Material variance review",
+          "value": "Once a week"
+        }
+      ],
+      "steps": [
+        "Check site data",
+        "Agree on reading criteria",
+        "Pilot for 4 weeks",
+        "Expand to all sites"
+      ],
+      "seo": {
+        "title": "Construction AI",
+        "description": "An AI agent for construction sites that calculates progress by the same standard every day using site photos and daily work logs, and automatically organizes safety inspections and materials intake and issue."
+      }
+    },
+    {
+      "slug": "content",
+      "name": "Content AI",
+      "tagline": "Use production time for making.",
+      "icon": {},
+      "problems": [
+        "Too much time goes into finding usable scenes in raw footage",
+        "Repetitive work such as subtitles and thumbnails pushes production schedules back",
+        "Reworking content for each channel format does not end"
+      ],
+      "capabilities": [
+        {
+          "title": "Raw Asset Indexing",
+          "desc": "It indexes raw footage by person, place, and dialogue so needed scenes can be found immediately."
+        },
+        {
+          "title": "Subtitle and Translation Drafts",
+          "desc": "It transcribes audio and creates subtitle drafts aligned with the channel tone."
+        },
+        {
+          "title": "Channel-Specific Repurposing",
+          "desc": "It derives edits for different channel formats from a single source."
+        },
+        {
+          "title": "Metadata Organization",
+          "desc": "It organizes titles, tags, and descriptions for search and completes upload preparation."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Scene search time",
+          "value": "-80%"
+        },
+        {
+          "label": "Subtitle draft creation",
+          "value": "Immediate"
+        },
+        {
+          "label": "Channel derivatives",
+          "value": "1 to N"
+        }
+      ],
+      "steps": [
+        "Connect source assets",
+        "Learn tone standards",
+        "Pilot production",
+        "Integrate into production line"
+      ],
+      "seo": {
+        "title": "Content AI",
+        "description": "An AI agent that reduces repetitive work in content production through raw footage indexing, subtitle drafts, and channel-specific repurposing."
+      }
+    },
+    {
+      "slug": "manufacturing",
+      "name": "Manufacturing Process AI",
+      "tagline": "Read signals before defects occur.",
+      "icon": {},
+      "problems": [
+        "Equipment anomalies are found only after stoppage",
+        "Inspection standards differ by inspector",
+        "The cause of reduced yield cannot be identified even afterward"
+      ],
+      "capabilities": [
+        {
+          "title": "Equipment Anomaly Prediction",
+          "desc": "It finds patterns in sensor trends that differ from normal and alerts before stoppage."
+        },
+        {
+          "title": "Visual Inspection",
+          "desc": "It judges defects from video and removes variation between inspectors."
+        },
+        {
+          "title": "Yield Cause Tracking",
+          "desc": "It connects process variables with defect rates and identifies the conditions under which performance worsened."
+        },
+        {
+          "title": "Work Standard Review",
+          "desc": "It records differences between standard work and actual work, leaving points for improvement."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Unplanned stoppage",
+          "value": "-40%"
+        },
+        {
+          "label": "Inspection variation",
+          "value": "Resolved"
+        },
+        {
+          "label": "Cause identification",
+          "value": "Same day"
+        }
+      ],
+      "steps": [
+        "Connect equipment data",
+        "Learn normal ranges",
+        "Verify one line",
+        "Expand lines"
+      ],
+      "seo": {
+        "title": "Manufacturing Process AI",
+        "description": "An AI agent that reduces manufacturing site losses through equipment anomaly prediction, video-based visual inspection, and yield cause tracking."
+      }
+    },
+    {
+      "slug": "distribution",
+      "name": "Distribution Management AI",
+      "tagline": "Reduce inventory and prevent stockouts.",
+      "icon": {},
+      "problems": [
+        "Fast-moving products run out first",
+        "Slow-moving inventory takes up warehouse space",
+        "Ordering decisions depend on the person's experience"
+      ],
+      "capabilities": [
+        {
+          "title": "Demand Forecasting",
+          "desc": "It forecasts item-level demand based on sales trends and seasonality."
+        },
+        {
+          "title": "Ordering Suggestions",
+          "desc": "It calculates lead time and safety stock to suggest order quantities."
+        },
+        {
+          "title": "Inventory Health Review",
+          "desc": "It finds inventory that has stopped turning and indicates when to dispose of it."
+        },
+        {
+          "title": "Logistics Route Organization",
+          "desc": "It finds delay sections in delivery history and reworks routes."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Stockout rate",
+          "value": "-50%"
+        },
+        {
+          "label": "Inventory holding days",
+          "value": "-25%"
+        },
+        {
+          "label": "Ordering decisions",
+          "value": "Evidence-based"
+        }
+      ],
+      "steps": [
+        "Connect sales data",
+        "Verify forecast accuracy",
+        "Apply to selected items",
+        "All items"
+      ],
+      "seo": {
+        "title": "Distribution Management AI",
+        "description": "An AI agent for distribution sites that reduces both stockouts and excess inventory through demand forecasting and ordering suggestions."
+      }
+    },
+    {
+      "slug": "service",
+      "name": "Service Operations AI",
+      "tagline": "Staffing decisions also need evidence.",
+      "icon": {},
+      "problems": [
+        "Required staff by site is decided by intuition",
+        "Attendance checks and settlement take several days every month",
+        "Mistakes occur because contract terms differ by site"
+      ],
+      "capabilities": [
+        {
+          "title": "Staff Allocation Suggestions",
+          "desc": "It calculates required staff based on site size and past time requirements."
+        },
+        {
+          "title": "Automatic Attendance Aggregation",
+          "desc": "It aggregates clock-in and clock-out records according to contract terms and leaves only exceptions to people."
+        },
+        {
+          "title": "Settlement Statement Drafting",
+          "desc": "It matches site-specific rates with work records and drafts settlement statements."
+        },
+        {
+          "title": "Contract Term Review",
+          "desc": "It finds and alerts on mismatches between site-specific conditions and actual operations."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Settlement time",
+          "value": "-60%"
+        },
+        {
+          "label": "Allocation basis",
+          "value": "Quantified"
+        },
+        {
+          "label": "Condition violations",
+          "value": "Detected in advance"
+        }
+      ],
+      "steps": [
+        "Organize contract terms",
+        "Connect attendance system",
+        "Pilot at one site",
+        "All sites"
+      ],
+      "seo": {
+        "title": "Service Operations AI",
+        "description": "An AI agent that reduces repetitive work in service operations by automating staff allocation calculation, attendance aggregation, and settlement statement drafting."
+      }
+    },
+    {
+      "slug": "safety",
+      "name": "Crime Prevention AI",
+      "tagline": "See signals before they become incidents.",
+      "icon": {},
+      "problems": [
+        "Control personnel cannot watch every screen at once",
+        "Post-event video review takes a long time",
+        "Risk judgment criteria differ by control operator"
+      ],
+      "capabilities": [
+        {
+          "title": "Abnormal Behavior Detection",
+          "desc": "It finds and alerts on patterns such as loitering, intrusion, and falls in real time."
+        },
+        {
+          "title": "Segment Search",
+          "desc": "It immediately finds video segments by person, vehicle, and time conditions."
+        },
+        {
+          "title": "Priority Monitoring",
+          "desc": "It brings high-risk screens to the control operator first."
+        },
+        {
+          "title": "Incident Record Organization",
+          "desc": "It automatically records the sequence from detection through action."
+        }
+      ],
+      "outcomes": [
+        {
+          "label": "Video search",
+          "value": "Minutes"
+        },
+        {
+          "label": "Missed detections",
+          "value": "Reduced"
+        },
+        {
+          "label": "Judgment criteria",
+          "value": "Unified"
+        }
+      ],
+      "steps": [
+        "Connect cameras",
+        "Adjust detection criteria",
+        "Nighttime pilot operation",
+        "Expand to all areas"
+      ],
+      "seo": {
+        "title": "Crime Prevention AI",
+        "description": "A crime prevention AI agent that supports control personnel's judgment through abnormal behavior detection and condition-based video search."
+      }
+    }
+  ],
+  "services": {
+    "hub": {
+      "hero": {
+        "eyebrow": "Development Services",
+        "title": "We provide both the work and the people who build",
+        "lead": "You can entrust an entire project or request only the personnel you need. Your contracting party is a corporation, not an individual."
+      },
+      "cards": [
+        {
+          "title": "Full-Service Software Development",
+          "desc": "We handle requirements organization through deployment and operation.",
+          "href": "/services/software",
+          "linkLabel": "View Development Services"
+        },
+        {
+          "title": "Developer Staffing and Outsourcing",
+          "desc": "We deploy developers on-site, remotely, or by project.",
+          "href": "/services/staffing",
+          "linkLabel": "View Staffing"
+        }
+      ],
+      "collaboration": {
+        "id": "collaboration",
+        "eyebrow": "Collaboration Method",
+        "title": "Toward reducing the client's management burden",
+        "items": [
+          {
+            "title": "Single Point of Contact",
+            "desc": "You do not communicate separately with multiple developers. Communication is organized through one point of contact."
+          },
+          {
+            "title": "Corporate Contract",
+            "desc": "The corporation is responsible for contracts, tax invoices, and defect repair."
+          },
+          {
+            "title": "Handover Documents",
+            "desc": "At project completion, we hand over documents needed for operation."
+          }
+        ]
+      },
+      "domains": {
+        "id": "domains",
+        "eyebrow": "Technical Areas",
+        "title": "Scope Covered",
+        "items": [
+          "Web services and admin systems",
+          "Mobile apps",
+          "AI agents and data pipelines",
+          "Internal system integration and migration"
+        ]
+      },
+      "cta": {
+        "title": "If you are not sure which format fits",
+        "desc": "Tell us your situation, and we will first determine whether a full project or staffing fits better.",
+        "primary": {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      }
+    },
+    "software": {
+      "hero": {
+        "eyebrow": "Full-Service Software Development",
+        "title": "From requirements organization to operation",
+        "lead": "We participate from the stage of deciding what to build. We do not stop at building; we finish with a state that can be handed over."
+      },
+      "areas": {
+        "id": "areas",
+        "eyebrow": "Development Areas",
+        "title": "Four areas",
+        "items": [
+          {
+            "title": "Web Services",
+            "desc": "We design customer-facing services and internal admin systems together."
+          },
+          {
+            "title": "Mobile apps",
+            "desc": "We choose native or cross-platform according to the needed scope."
+          },
+          {
+            "title": "AI and Data",
+            "desc": "We attach agents where judgment is needed and organize data flows."
+          },
+          {
+            "title": "System Integration",
+            "desc": "We connect with systems already in use without breaking the workflow."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Process",
+        "title": "Five steps",
+        "steps": [
+          "Organize requirements",
+          "Confirm scope and schedule",
+          "Design and development",
+          "Acceptance and deployment",
+          "Handover and operation"
+        ]
+      },
+      "quality": {
+        "id": "quality",
+        "eyebrow": "Deliverables and Quality Standards",
+        "title": "We define in advance what you will receive",
+        "items": [
+          "Source code and repository access",
+          "Deployment procedure documents and executable deployment scripts",
+          "API specifications and data structure documents",
+          "Handover meeting and training for operations personnel"
+        ],
+        "note": "Quality standards are agreed in writing before contract signing. This prevents different standards from appearing at acceptance."
+      },
+      "cta": {
+        "title": "You do not need to have the build defined",
+        "desc": "Tell us only the problem you want to solve, and we will narrow the scope together.",
+        "primary": {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      }
+    },
+    "staffing": {
+      "hero": {
+        "eyebrow": "Staffing and Outsourcing",
+        "title": "Deploy developers while the corporation manages them",
+        "lead": "We deploy personnel for the period they are needed. DevFirm handles contracts and labor affairs."
+      },
+      "difference": {
+        "id": "difference",
+        "eyebrow": "Difference",
+        "title": "How this differs from direct freelancer contracts",
+        "lead": "The corporation absorbs the risks that arise when a client contracts directly with an individual.",
+        "items": [
+          {
+            "title": "The contracting party is a corporation",
+            "desc": "If someone leaves mid-project or a dispute occurs, the corporation is responsible and deploys replacement personnel."
+          },
+          {
+            "title": "Tax and Labor Handling",
+            "desc": "The client does not handle withholding tax or four major insurance determinations."
+          },
+          {
+            "title": "Verified Talent Pool",
+            "desc": "We assign developers from those we have worked with on projects."
+          },
+          {
+            "title": "Back-Office Support",
+            "desc": "DevFirm business support manages settlement and attendance for deployed developers."
+          }
+        ]
+      },
+      "formats": {
+        "id": "formats",
+        "eyebrow": "Deployment Formats",
+        "title": "Choose from three formats",
+        "items": [
+          {
+            "title": "On-site",
+            "desc": "The developer works at the client's office and joins the team."
+          },
+          {
+            "title": "Remote",
+            "desc": "Work is performed at the DevFirm office or shared office."
+          },
+          {
+            "title": "Project-based",
+            "desc": "The period and deliverables are defined, and settlement is based on results."
+          }
+        ]
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Procedure",
+        "title": "Four steps",
+        "steps": [
+          "Organize required capabilities",
+          "Propose candidates",
+          "Interview and confirm",
+          "Deploy and review regularly"
+        ]
+      },
+      "cta": {
+        "title": "Tell us the capabilities you need",
+        "desc": "We will organize candidates according to the period and deployment format.",
+        "primary": {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "academy": {
+    "page": {
+      "hero": {
+        "eyebrow": "PBL Academy",
+        "title": "Learn by Building",
+        "lead": "This is not training that ends after lectures. The NCS curriculum is completed through projects, and learners leave with outcomes they can put on a resume."
+      },
+      "pbl": {
+        "id": "pbl",
+        "eyebrow": "What Is PBL",
+        "title": "The project is the curriculum",
+        "lead": "Project Based Learning. We do not list what to learn first. We first decide what must be built. The required knowledge is filled in during the building process.",
+        "items": [
+          {
+            "title": "Outcomes remain",
+            "desc": "What remains is not a certificate, but a working project."
+          },
+          {
+            "title": "Experience collaboration",
+            "desc": "It is not an individual assignment. Teams divide schedules and roles."
+          },
+          {
+            "title": "Reviewed by working standards",
+            "desc": "Developers who work on real projects review the code and results."
+          }
+        ]
+      },
+      "schools": {
+        "id": "schools",
+        "eyebrow": "Three Schools",
+        "title": "Choose based on what you want to build"
+      },
+      "external": {
+        "id": "external",
+        "eyebrow": "Connection",
+        "title": "Post-Production Course",
+        "desc": "The video post-production course is operated in connection with Seoul Film Academy.",
+        "href": "https://www.seoulfilmacademy.com",
+        "linkLabel": "Seoul Film Academy"
+      },
+      "process": {
+        "id": "process",
+        "eyebrow": "Enrollment Process",
+        "title": "Four steps",
+        "steps": [
+          "Choose course and apply",
+          "Consultation and placement",
+          "Carry out project",
+          "Present and complete"
+        ]
+      },
+      "cta": {
+        "title": "If you are not sure which course fits",
+        "desc": "Tell us what you can do now and what you want to do, and we will recommend a course.",
+        "primary": {
+          "label": "Apply for Course",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "View Courses",
+          "href": "/academy/courses"
+        }
+      }
+    },
+    "schools": [
+      {
+        "key": "solution",
+        "name": "Solution Development School",
+        "desc": "Build a service from beginning to end.",
+        "art": {
+          "src": "/images/cards/school-solution.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "office",
+        "name": "Common Office Work School",
+        "desc": "Learn how to automate office work with tools.",
+        "art": {
+          "src": "/images/cards/school-office.svg",
+          "width": 240,
+          "height": 180
+        }
+      },
+      {
+        "key": "project",
+        "name": "Project Work School",
+        "desc": "Learn project execution, including planning and schedule management.",
+        "art": {
+          "src": "/images/cards/school-project.svg",
+          "width": 240,
+          "height": 180
+        }
+      }
+    ]
+  },
+  "courses": {
+    "list": [
+      {
+        "slug": "web-service-development",
+        "school": "solution",
+        "title": "Web Service Development Course",
+        "summary": "From planning to deployment, complete one service that people can actually access.",
+        "duration": "16 weeks",
+        "capacity": "20 people",
+        "target": [
+          "People who know basic programming syntax",
+          "Job seekers who need a portfolio",
+          "Employees who want to build a service themselves"
+        ],
+        "prerequisites": [
+          "Programming experience at the basic syntax level",
+          "HTML and CSS basics"
+        ],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Development Environment and Collaboration Tools",
+            "detail": "Set Git flow, issue management, and code review rules as team rules."
+          },
+          {
+            "week": "3~6",
+            "topic": "Frontend Basics",
+            "detail": "Cover component structure, state management, and responsive layouts."
+          },
+          {
+            "week": "7~10",
+            "topic": "Backend and Data",
+            "detail": "Implement API design, data modeling, and authentication."
+          },
+          {
+            "week": "11~14",
+            "topic": "Team Project",
+            "detail": "Build the planned service as a team. Receive a review once a week."
+          },
+          {
+            "week": "15~16",
+            "topic": "Deployment and Presentation",
+            "detail": "Deploy to a real domain and present the result."
+          }
+        ],
+        "outcomes": [
+          "One accessible web service",
+          "Repository and commit history",
+          "Deployment document and README"
+        ],
+        "careers": [
+          "Web Developer",
+          "Junior Full-Stack Developer",
+          "Internal Service Owner"
+        ]
+      },
+      {
+        "slug": "ai-agent-basics",
+        "school": "solution",
+        "title": "Practical AI Agent Course",
+        "summary": "Build an agent that handles work directly. This course is about using models, not making them.",
+        "duration": "12 weeks",
+        "capacity": "16 people",
+        "target": [
+          "Developers assigned to work automation",
+          "Practitioners reviewing AI adoption",
+          "People who want to understand agent structure"
+        ],
+        "prerequisites": [
+          "Experience using Python or JavaScript",
+          "Experience calling APIs"
+        ],
+        "curriculum": [
+          {
+            "week": "1~3",
+            "topic": "Agent Structure",
+            "detail": "Set the basic structure for tool calls, retrieval augmentation, and failure handling."
+          },
+          {
+            "week": "4~7",
+            "topic": "Work Integration",
+            "detail": "Implement integrations that read and write documents, email, and sheets."
+          },
+          {
+            "week": "8~10",
+            "topic": "Evaluation and Improvement",
+            "detail": "Measure results, set criteria, and improve repeatedly."
+          },
+          {
+            "week": "11~12",
+            "topic": "Practical Application Project",
+            "detail": "Each person selects one company task and moves it to an agent."
+          }
+        ],
+        "outcomes": [
+          "One work automation agent",
+          "Evaluation criteria document",
+          "Application report"
+        ],
+        "careers": [
+          "AI Operations Owner",
+          "Automation Engineer",
+          "Internal AI Adoption Lead"
+        ]
+      },
+      {
+        "slug": "office-automation",
+        "school": "office",
+        "title": "Office Automation Course",
+        "summary": "Reduce repetitive daily document and spreadsheet work with tools. You can start without knowing code.",
+        "duration": "8 weeks",
+        "capacity": "24 people",
+        "target": [
+          "Employees with many repetitive office tasks",
+          "People who spend a lot of time on Excel work",
+          "Managers who want to organize department work"
+        ],
+        "prerequisites": ["Basic Excel usage experience"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Work Decomposition",
+            "detail": "Break current work into steps and find points that can be automated."
+          },
+          {
+            "week": "3~5",
+            "topic": "Document and Spreadsheet Automation",
+            "detail": "Automatically handle form filling, cross-checking, and aggregation."
+          },
+          {
+            "week": "6~7",
+            "topic": "Using AI Tools",
+            "detail": "Attach document reading and summarization to the work flow."
+          },
+          {
+            "week": "8",
+            "topic": "Application and Sharing",
+            "detail": "Organize what was built so it can be handed over to the team."
+          }
+        ],
+        "outcomes": ["Three automated tasks", "User guide document"],
+        "careers": [
+          "Office Automation Owner",
+          "Department Work Improvement Owner"
+        ]
+      },
+      {
+        "slug": "project-management",
+        "school": "project",
+        "title": "Project Execution Course",
+        "summary": "Learn how to finish projects while managing schedule and scope through real cases.",
+        "duration": "10 weeks",
+        "capacity": "18 people",
+        "target": [
+          "People taking on a project for the first time",
+          "Team leaders whose schedules keep slipping",
+          "People who must coordinate with clients"
+        ],
+        "prerequisites": ["Experience working as a team"],
+        "curriculum": [
+          {
+            "week": "1~2",
+            "topic": "Scope Definition",
+            "detail": "Start by deciding what not to do."
+          },
+          {
+            "week": "3~5",
+            "topic": "Schedule and Risk",
+            "detail": "Create estimates, buffers, and a risk list."
+          },
+          {
+            "week": "6~8",
+            "topic": "Execution and Coordination",
+            "detail": "Handle change requests and stakeholder communication."
+          },
+          {
+            "week": "9~10",
+            "topic": "Closure and Retrospective",
+            "detail": "Finish with handover and a retrospective."
+          }
+        ],
+        "outcomes": [
+          "One project plan",
+          "Risk management document",
+          "Retrospective report"
+        ],
+        "careers": ["Project Manager", "Team Lead", "Service Planner"]
+      }
+    ],
+    "page": {
+      "hero": {
+        "eyebrow": "Courses",
+        "title": "Courses Currently Open",
+        "lead": "Courses are organized by school. Check the duration and target audience before applying."
+      },
+      "filterAll": "All",
+      "fields": {
+        "duration": "Duration",
+        "capacity": "Capacity",
+        "target": "Target",
+        "prerequisites": "Prerequisites",
+        "curriculum": "Curriculum",
+        "outcomes": "Project Outcomes",
+        "careers": "Paths After Completion",
+        "week": "Week",
+        "topic": "Topic",
+        "detail": "Content",
+        "apply": "Apply for Course"
+      },
+      "cta": {
+        "title": "You may ask before applying",
+        "desc": "We first check whether you can follow the course at your current level.",
+        "primary": {
+          "label": "Apply for Course",
+          "href": "/academy/apply"
+        },
+        "secondary": {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
+      }
+    }
+  },
+  "workspace": {
+    "hero": {
+      "eyebrow": "Shared Office",
+      "title": "A space for people who build",
+      "lead": "A workspace where development and content production can be completed in one building."
+    },
+    "concept": {
+      "id": "concept",
+      "eyebrow": "Concept",
+      "title": "A developer space that supports post-production",
+      "lead": "This is not only a place to write code. It is built so you do not have to leave when recording or editing work is needed."
+    },
+    "facilities": {
+      "id": "facilities",
+      "eyebrow": "Facilities",
+      "title": "What is available",
+      "items": [
+        {
+          "title": "Recording Studio",
+          "desc": "It has a soundproof booth for narration and interview recording.",
+          "art": {
+            "src": "/images/workspace/workspace-studio.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Recording studio with soundproof panels, microphones, and a mixing console"
+          }
+        },
+        {
+          "title": "Content Production Infrastructure",
+          "desc": "It provides equipment and storage for video editing and rendering.",
+          "art": {
+            "src": "/images/workspace/workspace-infra.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Content production infrastructure space with workstations, storage, and render node racks"
+          }
+        },
+        {
+          "title": "Workspace",
+          "desc": "Fixed seats, open seats, and small meeting rooms are used together.",
+          "art": {
+            "src": "/images/workspace/workspace-desk.svg",
+            "width": 640,
+            "height": 420,
+            "alt": "Shared workspace with fixed seats, open seats, and small meeting rooms"
+          }
+        }
+      ]
+    },
+    "tenants": {
+      "id": "tenants",
+      "eyebrow": "Who Uses It",
+      "title": "Used by people like this",
+      "items": [
+        "Developers working alone or in small teams",
+        "Teams that also need video and audio work",
+        "Teams operating a business as a DevFirm CIC"
+      ]
+    },
+    "pricing": {
+      "id": "pricing",
+      "eyebrow": "Rates and Inquiry",
+      "title": "Usage Conditions",
+      "note": "Conditions vary by seat type and usage period. The studio operates by reservation. Contact us for exact terms."
+    },
+    "location": {
+      "id": "location",
+      "eyebrow": "Location",
+      "title": "Seocho-gu, Seoul",
+      "address": "2F, Hanyang Building, 59-1 Gangnam-daero 6-gil, Seocho-gu, Seoul",
+      "mapTitle": "DevFirm location map",
+      "mapLinkLabel": "View on Kakao Map",
+      "mapHref": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C6%EA%B8%B8%2059-1%20%ED%95%9C%EC%96%91%EB%B9%8C%EB%94%A9%202%EC%B8%B5"
+    },
+    "cta": {
+      "title": "You may decide after visiting",
+      "desc": "We will schedule a visit.",
+      "primary": {
+        "label": "Contact Us",
+        "href": "/contact"
+      }
+    }
+  },
+  "forms": {
+    "contact": {
+      "hero": {
+        "eyebrow": "Inquiry",
+        "title": "How can we help",
+        "lead": "A short description is enough. A person in charge will review it and contact you."
+      },
+      "types": [
+        {
+          "value": "solution",
+          "label": "AI Solution Adoption"
+        },
+        {
+          "value": "development",
+          "label": "Development Request"
+        },
+        {
+          "value": "staffing",
+          "label": "Staffing"
+        },
+        {
+          "value": "academy",
+          "label": "Academy"
+        },
+        {
+          "value": "workspace",
+          "label": "Shared Office Move-in"
+        },
+        {
+          "value": "etc",
+          "label": "Other"
+        }
+      ],
+      "labels": {
+        "type": "Inquiry Type",
+        "name": "Name",
+        "company": "Company or Affiliation",
+        "email": "Email",
+        "phone": "Contact Number",
+        "message": "Message",
+        "consent": "I agree to the collection and use of personal information",
+        "submit": "Send Inquiry",
+        "submitting": "Sending"
+      },
+      "placeholders": {
+        "name": "Hong Gil-dong",
+        "company": "Company name (optional)",
+        "email": "name@example.com",
+        "phone": "010-0000-0000 (optional)",
+        "message": "Tell us your situation and what you need."
+      },
+      "consentNote": "We collect your name, contact number, email, and inquiry content to process and respond to your inquiry. The information is retained for 3 years after processing is completed and then destroyed.",
+      "success": {
+        "title": "Inquiry received",
+        "desc": "We will contact you within 1 to 2 business days."
+      },
+      "error": {
+        "title": "Could not send",
+        "desc": "Please try again in a moment. If it still does not work, contact us by phone or email below."
+      }
+    },
+    "apply": {
+      "hero": {
+        "eyebrow": "Apply for Course",
+        "title": "Academy Course Application",
+        "lead": "We assign a course after confirming together whether it fits your current level."
+      },
+      "levels": [
+        {
+          "value": "none",
+          "label": "I am new to this"
+        },
+        {
+          "value": "basic",
+          "label": "I know the basics"
+        },
+        {
+          "value": "practical",
+          "label": "I have practical experience"
+        }
+      ],
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Contact Number",
+        "course": "Desired Course",
+        "level": "Experience Level",
+        "motivation": "Reason for Applying",
+        "consent": "I agree to the collection and use of personal information",
+        "submit": "Send Application",
+        "submitting": "Sending"
+      },
+      "placeholders": {
+        "name": "Hong Gil-dong",
+        "email": "name@example.com",
+        "phone": "010-0000-0000",
+        "motivation": "Write what you want to build and why you want to learn."
+      },
+      "consentNote": "We collect your name, contact number, email, and application content for course consultation and placement. The information is retained for 1 year after consultation ends and then destroyed.",
+      "success": {
+        "title": "Application received",
+        "desc": "A person in charge will review it and provide a consultation schedule."
+      },
+      "error": {
+        "title": "Could not send",
+        "desc": "Please try again in a moment."
+      }
+    },
+    "validation": {
+      "required": "This field is required",
+      "nameTooShort": "Please enter your name",
+      "emailInvalid": "The email format is invalid",
+      "phoneInvalid": "The contact number format is invalid",
+      "messageTooShort": "Please enter at least 10 characters",
+      "consentRequired": "You must agree before submitting",
+      "tooFast": "Please try again in a moment",
+      "expired": "The input time has expired. Refresh and try again.",
+      "serverError": "A problem occurred during processing"
+    }
+  },
+  "legal": {
+    "ui": {
+      "updatedAtLabel": "Last updated"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "CMNYX Co., Ltd. (hereinafter the \"Company\") values users' personal information and complies with relevant laws and regulations. This policy applies to the website operated by the Company.",
+      "sections": [
+        {
+          "id": "items",
+          "title": "1. Personal Information Items Collected",
+          "body": [
+            "The Company collects personal information only through the inquiry and course application forms on the website.",
+            "Contact Us: name, email, contact number (optional), company or affiliation (optional), inquiry content",
+            "Course application: name, email, contact number, desired course, experience level, reason for applying",
+            "The Company does not use analytics tools or advertising cookies that track visitor behavior. Therefore, personal information is not collected merely by using the website."
+          ]
+        },
+        {
+          "id": "purpose",
+          "title": "2. Purpose of Collection and Use",
+          "body": [
+            "Responding to inquiries and conducting consultations",
+            "Receiving course applications, assigning courses, and providing guidance"
+          ]
+        },
+        {
+          "id": "retention",
+          "title": "3. Retention and Use Period",
+          "body": [
+            "Inquiry information: retained for 3 years after processing is completed and destroyed without delay.",
+            "Course application information: retained for 1 year after consultation ends and destroyed without delay.",
+            "If the data subject requests destruction, the information is destroyed immediately."
+          ]
+        },
+        {
+          "id": "third-party",
+          "title": "4. Provision to Third Parties and Processing Entrustment",
+          "body": [
+            "The Company does not provide users' personal information to third parties.",
+            "However, the Company uses an email sending service to deliver inquiry content to the person in charge, and the content entered is transmitted in this process."
+          ]
+        },
+        {
+          "id": "rights",
+          "title": "5. Rights of Data Subjects",
+          "body": [
+            "Users may request access to, correction of, deletion of, or suspension of processing of their personal information at any time.",
+            "Requests may be submitted to contact@devfirm.co or 02-2058-0680, and the Company will take action without delay."
+          ]
+        },
+        {
+          "id": "manager",
+          "title": "6. Personal Information Protection Officer",
+          "body": [
+            "CMNYX Co., Ltd. Business Support Department",
+            "Email: contact@devfirm.co",
+            "Phone: 02-2058-0680"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "7. Changes to This Policy",
+          "body": [
+            "If this policy changes, the Company will announce the changes and effective date through the website."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "intro": "These Terms set forth the conditions for use of the website operated by CMNYX Co., Ltd. (hereinafter the \"Company\").",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "1. Purpose",
+          "body": [
+            "These Terms define the rights, obligations, and responsibilities of the Company and users regarding use of the website service provided by the Company."
+          ]
+        },
+        {
+          "id": "service",
+          "title": "2. Service Content",
+          "body": [
+            "The Company provides company and service information through the website and receives inquiries and course applications.",
+            "Separate membership registration is not required to use the website."
+          ]
+        },
+        {
+          "id": "obligations",
+          "title": "3. User Obligations",
+          "body": [
+            "Users must not misappropriate another person's information or enter false information.",
+            "Users may not reproduce, distribute, or commercially use website content without the Company's prior consent."
+          ]
+        },
+        {
+          "id": "ip",
+          "title": "4. Copyright",
+          "body": [
+            "Copyright in text, images, and materials posted on the website belongs to the Company."
+          ]
+        },
+        {
+          "id": "liability",
+          "title": "5. Limitation of Liability",
+          "body": [
+            "The Company is not liable for service interruption caused by force majeure, such as natural disasters or communication failures.",
+            "Information posted on the website is for reference, and specific contract terms are governed by separate consultation and contracts."
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "title": "6. Jurisdiction",
+          "body": [
+            "Disputes related to these Terms shall be subject to the jurisdiction of the court having jurisdiction over the location of the Company's head office."
+          ]
+        }
+      ]
+    },
+    "updatedAt": "2026-07-28"
+  },
+  "seo": {
+    "home": {
+      "description": "Physical AI for industrial sites, Manager Choi AI for offices. DevFirm, a developer-led development company, provides AI solutions, software development, developer staffing, and the PBL Academy."
+    },
+    "page": {
+      "about": {
+        "title": "About Us",
+        "description": "A development company where developers gather, as lawyers gather at a law firm. Learn how DevFirm operates: business support handles contracts and settlement, and developers focus on building."
+      },
+      "cic": {
+        "title": "Company In Company (CIC)",
+        "description": "The Company In Company system where developers run their own businesses inside DevFirm. See participation conditions, support scope, and the agent AI advancement roadmap."
+      },
+      "careers": {
+        "title": "Developer Careers",
+        "description": "DevFirm is hiring developers to work with us. Check the responsibilities, requirements, and working conditions for currently open positions."
+      },
+      "solutions": {
+        "title": "AI Solutions",
+        "description": "We provide Physical AI for industrial sites, Manager Choi AI for offices, and AI agents for six industries: construction, content, manufacturing, distribution, service operations, and crime prevention."
+      },
+      "officeAi": {
+        "title": "Manager Choi AI - Office Worksite Agent",
+        "description": "An AI agent that handles repetitive office work such as reading and organizing documents and writing reports. See the adoption method and use cases."
+      },
+      "physicalAi": {
+        "title": "Physical AI - Industrial Site Agent",
+        "description": "AI for industrial sites that turns what cameras and sensors read into judgments people can use. See technical capabilities and applicable industries."
+      },
+      "services": {
+        "title": "Development Services",
+        "description": "Full-service software development and developer staffing. DevFirm's development services provide both the work and the people who build."
+      },
+      "software": {
+        "title": "Full-Service Software Development",
+        "description": "We handle web, app, AI, and system development. Review the process and deliverable quality standards in advance."
+      },
+      "staffing": {
+        "title": "Developer Staffing and Outsourcing",
+        "description": "We deploy development personnel on-site, remotely, or by project. Because the contracting party is a corporation, the client's management burden is reduced."
+      },
+      "academy": {
+        "title": "PBL Academy",
+        "description": "Practical training that completes the NCS curriculum through projects. We operate the Solution Development School, Common Office Work School, and Project Work School."
+      },
+      "courses": {
+        "title": "Courses",
+        "description": "A full list of DevFirm PBL Academy courses. Check duration, capacity, target audience, and curriculum by school."
+      },
+      "apply": {
+        "title": "Apply for Course",
+        "description": "Submit a PBL Academy course application. Leave your desired course and experience level, and a person in charge will contact you."
+      },
+      "workspace": {
+        "title": "Developer Shared Office",
+        "description": "A developer shared office specialized for post-production, with a recording studio and content production infrastructure. See facilities and move-in conditions."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "We receive inquiries about solution adoption, development requests, staffing, academy programs, and move-in. 2F, Hanyang Building, Gangnam-daero 6-gil, Seocho-gu, Seoul."
+      },
+      "privacy": {
+        "title": "Privacy Policy",
+        "description": "Information on the personal information DevFirm collects, purposes of use, retention periods, and user rights."
+      },
+      "terms": {
+        "title": "Terms of Service",
+        "description": "Terms for use of the DevFirm website."
+      }
+    },
+    "ogImageAlt": "DevFirm - a developer-led development company. Physical AI for industrial sites, Manager Choi AI for offices."
+  }
+}

@@ -166,3 +166,29 @@ cp node_modules/pretendard/dist/web/variable/woff2-dynamic-subset/*.woff2 public
 sed 's#url(./woff2-dynamic-subset/#url(/fonts/pretendard/#g' \
   node_modules/pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css > app/fonts.css
 ```
+
+## 다국어 (17개 언어)
+
+URL 이 언어를 결정한다 — `/ko/about`, `/ja/about`. 접두사 없는 주소는
+`proxy.ts` 가 판정해 307 로 보낸다(쿠키 > `Accept-Language` > 기본 언어).
+
+```bash
+pnpm i18n:extract                  # content/dictionary.ts → content/i18n/_source.json
+pnpm i18n:translate en ja …        # 언어별 JSON 생성 (codex)
+pnpm check:i18n                    # 키·배열길이·URL 불변 대조 (verify 에 포함)
+```
+
+- **번역은 원문에 덮어씌우는 층이다.** 없는 키는 한국어로 폴백되고, 배열 길이는
+  원문이 정한다. 번역이 늦은 언어도 페이지가 깨지지 않고, 한국어에 문장을
+  추가할 때 16개 파일을 동시에 고칠 필요가 없다.
+- **`content/dictionary.ts` 가 스키마다.** 한국어 원문이 곧 타입이고, 번역본은
+  그 부분집합이다. 여기 없는 것(자산 경로·치수·사업자번호)은 번역 대상이 아니다.
+- 서버 컴포넌트는 `getDictionary(locale)` 로 받고, **클라이언트 컴포넌트는
+  프롭으로 받는다** — `lib/i18n.ts` 는 `server-only` 다.
+- 내비 데이터의 href 는 언어를 모르는 논리 경로다. 렌더할 때 `localeHref` 로
+  접두사를 붙이고, 활성 판정 전에 `stripLocale` 로 뗀다. **둘 중 하나를 빠뜨리면
+  섹션 탭이 통째로 사라진다** — 실제로 그렇게 깨졌었다.
+- **XML 주석에 CSS 토큰 이름을 적지 않듯, 콘텐츠에 함수를 넣지 않는다.**
+  `seoDescription` 같은 함수는 JSON 직렬화에서 사라져 조용히 한국어로 남는다
+  (현재 5개, `content/courses.ts`·`careers.ts`·`forms.ts`). 그중 셋은 회사로
+  가는 메일 제목이라 한국어가 맞고, `seoDescription` 둘은 알려진 미번역 항목이다.
