@@ -37,6 +37,7 @@ pnpm check:content  # A10 콘텐츠 분리 · A11 클라이언트 경계
 pnpm check:nav      # A14 최상위 ≤ 6 · depth ≤ 3
 pnpm check:contrast # A6 색 대비 (oklch → sRGB 계산)
 pnpm check:menu     # 메가메뉴가 컨테이너를 넘지 않는지 (서버가 떠 있어야 한다)
+pnpm check:svg      # SVG 자산이 XML 로 파싱되고 실제로 래스터되는지
 
 pnpm test:e2e       # Playwright 6뷰포트 + axe (빌드가 선행되어야 한다)
 pnpm test:lh        # Lighthouse CI (A7) — lhci 가 없으면 `pnpm dlx @lhci/cli autorun`
@@ -61,6 +62,7 @@ pnpm preview:art    # 일러스트 검수 시트를 .preview/ 에 렌더
 | A4      | 레거시 경로 308 단일 홉          | `tests/e2e/redirects.spec.ts`  |
 | A5      | axe critical/serious = 0         | `tests/a11y/axe.spec.ts`       |
 | A6      | 색 대비                          | `pnpm check:contrast`          |
+| —       | SVG 자산 유효성                  | `pnpm check:svg`               |
 | —       | 메가메뉴 오버플로                | `pnpm check:menu` · E2E        |
 | A7      | Lighthouse ≥ 95                  | `pnpm test:lh`                 |
 | A8      | 초기 JS ≤ 130KB                  | `tests/e2e/bundle.spec.ts`     |
@@ -138,6 +140,11 @@ pnpm gen:logo    # assets/logo/wordmark.svg · app/icon.svg · components/layout
 pnpm gen:icons   # 이어서 apple-icon.png · OG 카드
 ```
 
+- **XML 주석 안에 하이픈을 두 개 연달아 쓰지 않는다.** CSS 커스텀 프로퍼티 이름을
+  주석에 적다가 실제로 파비콘을 죽인 적이 있다 — 문서가 well-formed 를 잃으면
+  브라우저는 렌더를 거부하고 탭에 기본 지구본을 띄운다. 저장소에서도 배포에서도
+  멀쩡해 보이고, 검수 시트조차 SVG 를 HTML 에 인라인해 그리므로 통과한다.
+  XML 파서를 타는 것은 `<img src>` 와 파비콘 경로뿐이다. `pnpm check:svg` 가 잡는다.
 - `app/icon.svg` 와 `components/layout/brand-logo.tsx` 를 **직접 고치지 않는다.**
   고치면 다음 `gen:logo` 에서 덮어써지고, 그전까지는 워드마크와 어긋난 채로 남는다.
 - 글자를 폰트로 그리지 않는 이유: SVG 파비콘은 폰트를 로드하지 않고, 헤더 로고도

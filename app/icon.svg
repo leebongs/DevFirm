@@ -7,10 +7,15 @@
     다른 물건처럼 보인다. 애플 터치 아이콘(app/apple-icon.png)은 반대로
     타일 버전을 쓴다. iOS 가 투명 PNG 를 검정 위에 합성하기 때문이다.
 
-    색은 사이트 토큰과 같은 값(oklch → sRGB):
-      #0f1926 = --foreground (Ink)
-      #f6f9fc = --brand-foreground
-      #00bbcb = --highlight (Circuit Cyan)
+    색은 사이트 CSS 토큰과 같은 값(oklch → sRGB):
+      #0f1926 = foreground (Ink)
+      #f6f9fc = brand-foreground
+      #00bbcb = highlight (Circuit Cyan)
+
+    토큰 이름 앞의 이중 하이픈은 일부러 뺐다. XML 주석 안에는 하이픈 두 개를
+    연달아 쓸 수 없고, 그것 하나로 문서가 well-formed 를 잃는다. 그러면
+    브라우저가 파비콘 렌더를 통째로 거부하고 탭에 기본 지구본을 띄운다.
+    scripts/check-svg.mjs 가 이 부류를 잡는다.
   -->
   <style>
     /* 밝은 탭에서는 잉크색, 어두운 탭에서는 밝은색. 파비콘은 배경을 갖지
