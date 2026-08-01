@@ -9,20 +9,35 @@ import { StepFlow } from "@/components/content/step-flow";
 import { IndustryAgentCard } from "@/components/content/industry-agent-card";
 import { CTASection } from "@/components/content/cta-section";
 import { buildMetadata } from "@/lib/metadata";
+import {
+  DEFAULT_LOCALE,
+  isLocale,
+  localeCodes,
+  type Locale,
+} from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
+// 슬러그는 언어와 무관한 구조 데이터다. generateStaticParams 는
+// 동기라 사전을 await 할 수 없으므로 원문 배열로 열거한다.
 import { agents } from "@/content/agents";
 import { agentIllustrations } from "@/content/illustrations";
-import { agentPage } from "@/content/solutions";
-
-type Params = { industry: string };
+type Params = { lang: string; industry: string };
 
 /**
  * 산업별 AI 에이전트 상세 — **6개 경로를 이 파일 하나가 렌더한다**(§5.8).
  *
- * 산업이 늘어나면 content/agents.ts 에 한 건을 추가하면 되고 페이지 파일은
+ * 산업이 늘어나면 content/t.agents.ts 에 한 건을 추가하면 되고 페이지 파일은
  * 건드리지 않는다. 계획이 "중복 page.tsx 0" 을 DoD 로 못 박은 이유다.
  */
+/**
+ * 언어 × 슬러그. 언어를 곱하지 않으면 기본 언어판만 굳고
+ * 나머지는 dynamicParams=false 에 걸려 404 가 된다.
+ */
 export function generateStaticParams(): Params[] {
-  return agents.map((agent) => ({ industry: agent.slug }));
+  return localeCodes.flatMap((lang) =>
+    agents
+      .map((agent) => ({ industry: agent.slug }))
+      .map((p) => ({ lang, ...p })),
+  );
 }
 
 export async function generateMetadata({
@@ -30,8 +45,10 @@ export async function generateMetadata({
 }: {
   params: Promise<Params>;
 }): Promise<Metadata> {
-  const { industry } = await params;
-  const agent = agents.find((item) => item.slug === industry);
+  const { lang, industry } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  const agent = t.agents.find((item) => item.slug === industry);
   if (!agent) return {};
 
   return buildMetadata({
@@ -46,12 +63,14 @@ export default async function IndustryAgentPage({
 }: {
   params: Promise<Params>;
 }) {
-  const { industry } = await params;
-  const agent = agents.find((item) => item.slug === industry);
+  const { lang, industry } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  const agent = t.agents.find((item) => item.slug === industry);
   if (!agent) notFound();
 
   // 형제 산업은 자기 자신을 뺀 5개
-  const siblings = agents.filter((item) => item.slug !== agent.slug);
+  const siblings = t.agents.filter((item) => item.slug !== agent.slug);
 
   return (
     <>
@@ -65,9 +84,9 @@ export default async function IndustryAgentPage({
       <ArticleShell href={`/solutions/agents/${agent.slug}`}>
         <section>
           <SectionHeading
-            id={agentPage.problems.id}
-            eyebrow={agentPage.problems.eyebrow}
-            title={agentPage.problems.title}
+            id={t.solutions.agentPage.problems.id}
+            eyebrow={t.solutions.agentPage.problems.eyebrow}
+            title={t.solutions.agentPage.problems.title}
           />
           <ul className="border-border divide-border mt-8 divide-y rounded-lg border">
             {agent.problems.map((problem) => (
@@ -80,9 +99,9 @@ export default async function IndustryAgentPage({
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={agentPage.capabilities.id}
-            eyebrow={agentPage.capabilities.eyebrow}
-            title={agentPage.capabilities.title}
+            id={t.solutions.agentPage.capabilities.id}
+            eyebrow={t.solutions.agentPage.capabilities.eyebrow}
+            title={t.solutions.agentPage.capabilities.title}
           />
           <div className="mt-8 grid gap-5 sm:grid-cols-2">
             {agent.capabilities.map((capability) => (
@@ -97,9 +116,9 @@ export default async function IndustryAgentPage({
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={agentPage.outcomes.id}
-            eyebrow={agentPage.outcomes.eyebrow}
-            title={agentPage.outcomes.title}
+            id={t.solutions.agentPage.outcomes.id}
+            eyebrow={t.solutions.agentPage.outcomes.eyebrow}
+            title={t.solutions.agentPage.outcomes.title}
           />
           <dl className="mt-8 grid gap-6 sm:grid-cols-3">
             {agent.outcomes.map((outcome) => (
@@ -111,24 +130,24 @@ export default async function IndustryAgentPage({
             ))}
           </dl>
           <p className="text-muted-foreground mt-6 max-w-[68ch] text-sm leading-relaxed break-keep">
-            {agentPage.outcomes.note}
+            {t.solutions.agentPage.outcomes.note}
           </p>
         </section>
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={agentPage.steps.id}
-            eyebrow={agentPage.steps.eyebrow}
-            title={agentPage.steps.title}
+            id={t.solutions.agentPage.steps.id}
+            eyebrow={t.solutions.agentPage.steps.eyebrow}
+            title={t.solutions.agentPage.steps.title}
           />
           <StepFlow className="mt-8 lg:grid-cols-2" steps={agent.steps} />
         </section>
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={agentPage.siblings.id}
-            eyebrow={agentPage.siblings.eyebrow}
-            title={agentPage.siblings.title}
+            id={t.solutions.agentPage.siblings.id}
+            eyebrow={t.solutions.agentPage.siblings.eyebrow}
+            title={t.solutions.agentPage.siblings.title}
           />
           <ul className="mt-8 grid gap-5 sm:grid-cols-2">
             {siblings.map((sibling) => (
@@ -141,10 +160,10 @@ export default async function IndustryAgentPage({
       </ArticleShell>
 
       <CTASection
-        title={agentPage.cta.title}
-        desc={agentPage.cta.desc}
-        cta={agentPage.cta.primary}
-        secondary={agentPage.cta.secondary}
+        title={t.solutions.agentPage.cta.title}
+        desc={t.solutions.agentPage.cta.desc}
+        cta={t.solutions.agentPage.cta.primary}
+        secondary={t.solutions.agentPage.cta.secondary}
       />
     </>
   );

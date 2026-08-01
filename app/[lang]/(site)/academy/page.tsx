@@ -9,33 +9,49 @@ import { Photo } from "@/components/content/photo";
 import { StepFlow } from "@/components/content/step-flow";
 import { CTASection } from "@/components/content/cta-section";
 import { buildMetadata } from "@/lib/metadata";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
 import { illustrations } from "@/content/illustrations";
 import { photos } from "@/content/photos";
-import { academy, SCHOOLS } from "@/content/academy";
-import { pageSeo } from "@/content/seo";
-import { ui } from "@/content/ui";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.academy,
+    path: "/academy",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.academy,
-  path: "/academy",
-});
+export default async function AcademyPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function AcademyPage() {
   return (
     <>
       <PageHero
-        eyebrow={academy.hero.eyebrow}
-        title={academy.hero.title}
-        lead={academy.hero.lead}
+        eyebrow={t.academy.page.hero.eyebrow}
+        title={t.academy.page.hero.title}
+        lead={t.academy.page.hero.lead}
         art={illustrations.academy}
       />
 
       <Section>
         <SectionHeading
-          id={academy.pbl.id}
-          eyebrow={academy.pbl.eyebrow}
-          title={academy.pbl.title}
-          lead={academy.pbl.lead}
+          id={t.academy.page.pbl.id}
+          eyebrow={t.academy.page.pbl.eyebrow}
+          title={t.academy.page.pbl.title}
+          lead={t.academy.page.pbl.lead}
         />
         {/*
           이 섹션의 주장은 *역전*이다 — 지식을 쌓고 과제로 끝나는 순서를 뒤집어
@@ -50,7 +66,7 @@ export default function AcademyPage() {
           className="border-border bg-muted/40 mx-auto mt-10 max-w-[34rem] rounded-lg border p-5 lg:p-8"
         />
         <div className="mt-6 grid gap-5 sm:grid-cols-3">
-          {academy.pbl.items.map((item) => (
+          {t.academy.page.pbl.items.map((item) => (
             <FeatureCard key={item.title} title={item.title} desc={item.desc} />
           ))}
         </div>
@@ -68,19 +84,19 @@ export default function AcademyPage() {
 
       <Section variant="muted">
         <SectionHeading
-          id={academy.schools.id}
-          eyebrow={academy.schools.eyebrow}
-          title={academy.schools.title}
+          id={t.academy.page.schools.id}
+          eyebrow={t.academy.page.schools.eyebrow}
+          title={t.academy.page.schools.title}
         />
         <div className="mt-10 grid gap-5 sm:grid-cols-3">
-          {SCHOOLS.map((school) => (
+          {t.academy.schools.map((school) => (
             <FeatureCard
               key={school.key}
               art={school.art}
               title={school.name}
               desc={school.desc}
               href="/academy/courses"
-              linkLabel={academy.cta.secondary.label}
+              linkLabel={t.academy.page.cta.secondary.label}
             />
           ))}
         </div>
@@ -88,41 +104,41 @@ export default function AcademyPage() {
 
       <Section>
         <SectionHeading
-          id={academy.external.id}
-          eyebrow={academy.external.eyebrow}
-          title={academy.external.title}
+          id={t.academy.page.external.id}
+          eyebrow={t.academy.page.external.eyebrow}
+          title={t.academy.page.external.title}
         />
         <a
-          href={academy.external.href}
+          href={t.academy.page.external.href}
           target="_blank"
           rel="noopener noreferrer"
           className="border-border bg-card hover:border-primary/30 focus-visible:ring-ring mt-8 block max-w-[68ch] rounded-lg border p-5 transition-colors focus-visible:ring-2 focus-visible:outline-none"
         >
           <p className="text-muted-foreground text-sm break-keep">
-            {academy.external.desc}
+            {t.academy.page.external.desc}
           </p>
           <span className="text-primary mt-3 inline-flex items-center gap-1.5 text-sm font-medium">
-            {academy.external.linkLabel}
+            {t.academy.page.external.linkLabel}
             <ExternalLink className="size-3.5" aria-hidden />
-            <span className="sr-only">{ui.nav.externalLink}</span>
+            <span className="sr-only">{t.ui.nav.externalLink}</span>
           </span>
         </a>
       </Section>
 
       <Section variant="muted">
         <SectionHeading
-          id={academy.process.id}
-          eyebrow={academy.process.eyebrow}
-          title={academy.process.title}
+          id={t.academy.page.process.id}
+          eyebrow={t.academy.page.process.eyebrow}
+          title={t.academy.page.process.title}
         />
-        <StepFlow className="mt-10" steps={academy.process.steps} />
+        <StepFlow className="mt-10" steps={t.academy.page.process.steps} />
       </Section>
 
       <CTASection
-        title={academy.cta.title}
-        desc={academy.cta.desc}
-        cta={academy.cta.primary}
-        secondary={academy.cta.secondary}
+        title={t.academy.page.cta.title}
+        desc={t.academy.page.cta.desc}
+        cta={t.academy.page.cta.primary}
+        secondary={t.academy.page.cta.secondary}
       />
     </>
   );

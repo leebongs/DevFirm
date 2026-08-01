@@ -26,7 +26,9 @@ const DIR = join(ROOT, "content/i18n");
 const SOURCE = join(DIR, "_source.json");
 
 if (!existsSync(SOURCE)) {
-  console.error("✖ content/i18n/_source.json 이 없습니다. pnpm i18n:extract 먼저.");
+  console.error(
+    "✖ content/i18n/_source.json 이 없습니다. pnpm i18n:extract 먼저.",
+  );
   process.exit(1);
 }
 
@@ -60,7 +62,8 @@ function* leaves(node, path = "", key = "") {
     return;
   }
   if (typeof node === "object") {
-    for (const [k, v] of Object.entries(node)) yield* leaves(v, `${path}.${k}`, k);
+    for (const [k, v] of Object.entries(node))
+      yield* leaves(v, `${path}.${k}`, k);
     return;
   }
   yield { path, kind: "leaf", key, value: node };
@@ -113,10 +116,11 @@ for (const { code } of locales) {
     }
     if (typeof s.value !== "string") continue;
 
-    const mustMatch =
-      LITERAL_KEYS.has(s.key) || LITERAL_VALUE.test(s.value);
+    const mustMatch = LITERAL_KEYS.has(s.key) || LITERAL_VALUE.test(s.value);
     if (mustMatch && t.value !== s.value) {
-      literalChanged.push(`${path}\n      원본 ${s.value}\n      번역 ${t.value}`);
+      literalChanged.push(
+        `${path}\n      원본 ${s.value}\n      번역 ${t.value}`,
+      );
     } else if (!mustMatch && hangul.test(s.value) && t.value === s.value) {
       untranslated.push(path);
     }
@@ -124,7 +128,10 @@ for (const { code } of locales) {
 
   const extra = [...tgt.keys()].filter((p) => !src.has(p));
   const hard =
-    missing.length + extra.length + arrayMismatch.length + literalChanged.length;
+    missing.length +
+    extra.length +
+    arrayMismatch.length +
+    literalChanged.length;
   if (hard > 0) failed = true;
 
   rows.push({
@@ -144,7 +151,10 @@ for (const r of rows) {
     continue;
   }
   const hard =
-    r.missing.length + r.extra.length + r.arrayMismatch.length + r.literalChanged.length;
+    r.missing.length +
+    r.extra.length +
+    r.arrayMismatch.length +
+    r.literalChanged.length;
   const mark = hard === 0 ? "✔" : "✖";
   const warn = r.untranslated.length
     ? `  · 미번역 ${r.untranslated.length}`

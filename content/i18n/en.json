@@ -1791,9 +1791,7 @@
           "People who spend a lot of time on Excel work",
           "Managers who want to organize department work"
         ],
-        "prerequisites": [
-          "Basic Excel usage experience"
-        ],
+        "prerequisites": ["Basic Excel usage experience"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1816,10 +1814,7 @@
             "detail": "Organize what was built so it can be handed over to the team."
           }
         ],
-        "outcomes": [
-          "Three automated tasks",
-          "User guide document"
-        ],
+        "outcomes": ["Three automated tasks", "User guide document"],
         "careers": [
           "Office Automation Owner",
           "Department Work Improvement Owner"
@@ -1837,9 +1832,7 @@
           "Team leaders whose schedules keep slipping",
           "People who must coordinate with clients"
         ],
-        "prerequisites": [
-          "Experience working as a team"
-        ],
+        "prerequisites": ["Experience working as a team"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1867,11 +1860,7 @@
           "Risk management document",
           "Retrospective report"
         ],
-        "careers": [
-          "Project Manager",
-          "Team Lead",
-          "Service Planner"
-        ]
+        "careers": ["Project Manager", "Team Lead", "Service Planner"]
       }
     ],
     "page": {

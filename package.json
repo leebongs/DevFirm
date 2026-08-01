@@ -14,16 +14,19 @@
     "check:content": "node scripts/check-content-rules.mjs",
     "check:contrast": "node scripts/check-contrast.mjs",
     "check:svg": "node scripts/check-svg.mjs",
+    "check:i18n": "npx tsx scripts/check-i18n.mjs",
     "check:menu": "node scripts/check-menu-overflow.mjs",
     "check:nav": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-nav.mjs",
     "gen:logo": "node scripts/generate-logo.mjs",
+    "i18n:extract": "npx tsx scripts/i18n-extract.mjs",
+    "i18n:translate": "bash scripts/i18n-translate.sh",
     "gen:icons": "node scripts/generate-icons.mjs",
     "gen:png": "node scripts/generate-image-png.mjs",
     "gen:photo": "node scripts/optimize-photos.mjs",
     "preview:art": "node scripts/preview-illustrations.mjs",
     "test:e2e": "playwright test",
     "test:lh": "lhci autorun",
-    "verify": "pnpm lint && pnpm typecheck && pnpm format:check && pnpm check:content && pnpm check:nav && pnpm check:contrast && pnpm check:svg"
+    "verify": "pnpm lint && pnpm typecheck && pnpm format:check && pnpm check:content && pnpm check:nav && pnpm check:contrast && pnpm check:svg && pnpm check:i18n"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

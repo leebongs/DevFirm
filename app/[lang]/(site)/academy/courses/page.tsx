@@ -6,22 +6,39 @@ import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { CourseFilterTabs } from "@/components/content/course-filter-tabs";
 import { CTASection } from "@/components/content/cta-section";
 import { buildMetadata } from "@/lib/metadata";
-import { coursesPage } from "@/content/courses";
-import { pageSeo } from "@/content/seo";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.courses,
+    path: "/academy/courses",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.courses,
-  path: "/academy/courses",
-});
+export default async function CoursesPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function CoursesPage() {
   return (
     <>
       <PageHero
         photo={photos.academyHero}
-        eyebrow={coursesPage.hero.eyebrow}
-        title={coursesPage.hero.title}
-        lead={coursesPage.hero.lead}
+        eyebrow={t.courses.page.hero.eyebrow}
+        title={t.courses.page.hero.title}
+        lead={t.courses.page.hero.lead}
       />
 
       <Container className="py-12 lg:py-16">
@@ -32,10 +49,10 @@ export default function CoursesPage() {
       </Container>
 
       <CTASection
-        title={coursesPage.cta.title}
-        desc={coursesPage.cta.desc}
-        cta={coursesPage.cta.primary}
-        secondary={coursesPage.cta.secondary}
+        title={t.courses.page.cta.title}
+        desc={t.courses.page.cta.desc}
+        cta={t.courses.page.cta.primary}
+        secondary={t.courses.page.cta.secondary}
       />
     </>
   );

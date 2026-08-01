@@ -1791,9 +1791,7 @@
           "Orang yang menghabiskan banyak waktu pada kerja Excel",
           "Manajer yang ingin menyusun pekerjaan departemen"
         ],
-        "prerequisites": [
-          "Pengalaman penggunaan Excel dasar"
-        ],
+        "prerequisites": ["Pengalaman penggunaan Excel dasar"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1816,10 +1814,7 @@
             "detail": "Susun hal yang dibangun agar dapat diserahkan kepada tim."
           }
         ],
-        "outcomes": [
-          "Tiga tugas diotomatiskan",
-          "Dokumen panduan pengguna"
-        ],
+        "outcomes": ["Tiga tugas diotomatiskan", "Dokumen panduan pengguna"],
         "careers": [
           "Pemilik Otomatisasi Kantor",
           "Pemilik Peningkatan Kerja Departemen"
@@ -1837,9 +1832,7 @@
           "Ketua tim yang jadwalnya sering tertunda",
           "Orang yang harus berkoordinasi dengan klien"
         ],
-        "prerequisites": [
-          "Pengalaman bekerja sebagai tim"
-        ],
+        "prerequisites": ["Pengalaman bekerja sebagai tim"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1867,11 +1860,7 @@
           "Dokumen pengelolaan risiko",
           "Laporan retrospektif"
         ],
-        "careers": [
-          "Manajer Proyek",
-          "Ketua Tim",
-          "Perancang Layanan"
-        ]
+        "careers": ["Manajer Proyek", "Ketua Tim", "Perancang Layanan"]
       }
     ],
     "page": {

@@ -6,34 +6,51 @@ import { FeatureCard } from "@/components/content/feature-card";
 import { Illustration } from "@/components/content/illustration";
 import { CTASection } from "@/components/content/cta-section";
 import { buildMetadata } from "@/lib/metadata";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
 import { illustrations } from "@/content/illustrations";
-import { officeAi } from "@/content/solutions";
-import { pageSeo } from "@/content/seo";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.officeAi,
+    path: "/solutions/office-ai",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.officeAi,
-  path: "/solutions/office-ai",
-});
+export default async function OfficeAiPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function OfficeAiPage() {
   return (
     <>
       <PageHero
-        eyebrow={officeAi.hero.eyebrow}
-        title={officeAi.hero.title}
-        lead={officeAi.hero.lead}
+        eyebrow={t.solutions.officeAi.hero.eyebrow}
+        title={t.solutions.officeAi.hero.title}
+        lead={t.solutions.officeAi.hero.lead}
         art={illustrations.officeAi}
       />
 
       <ArticleShell href="/solutions/office-ai">
         <section>
           <SectionHeading
-            id={officeAi.problem.id}
-            eyebrow={officeAi.problem.eyebrow}
-            title={officeAi.problem.title}
+            id={t.solutions.officeAi.problem.id}
+            eyebrow={t.solutions.officeAi.problem.eyebrow}
+            title={t.solutions.officeAi.problem.title}
           />
           <div className="mt-8 grid gap-5 sm:grid-cols-2">
-            {officeAi.problem.items.map((item) => (
+            {t.solutions.officeAi.problem.items.map((item) => (
               <FeatureCard
                 key={item.title}
                 title={item.title}
@@ -45,12 +62,12 @@ export default function OfficeAiPage() {
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={officeAi.capabilities.id}
-            eyebrow={officeAi.capabilities.eyebrow}
-            title={officeAi.capabilities.title}
+            id={t.solutions.officeAi.capabilities.id}
+            eyebrow={t.solutions.officeAi.capabilities.eyebrow}
+            title={t.solutions.officeAi.capabilities.title}
           />
           <div className="mt-8 grid gap-5 sm:grid-cols-2">
-            {officeAi.capabilities.items.map((item) => (
+            {t.solutions.officeAi.capabilities.items.map((item) => (
               <FeatureCard
                 key={item.title}
                 title={item.title}
@@ -62,10 +79,10 @@ export default function OfficeAiPage() {
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={officeAi.physical.id}
-            eyebrow={officeAi.physical.eyebrow}
-            title={officeAi.physical.title}
-            lead={officeAi.physical.lead}
+            id={t.solutions.officeAi.physical.id}
+            eyebrow={t.solutions.officeAi.physical.eyebrow}
+            title={t.solutions.officeAi.physical.title}
+            lead={t.solutions.officeAi.physical.lead}
           />
           {/*
             이 섹션은 제목만 있고 본문이 비어 있었다. 문구가 주장하는 것
@@ -85,10 +102,10 @@ export default function OfficeAiPage() {
       </ArticleShell>
 
       <CTASection
-        title={officeAi.cta.title}
-        desc={officeAi.cta.desc}
-        cta={officeAi.cta.primary}
-        secondary={officeAi.cta.secondary}
+        title={t.solutions.officeAi.cta.title}
+        desc={t.solutions.officeAi.cta.desc}
+        cta={t.solutions.officeAi.cta.primary}
+        secondary={t.solutions.officeAi.cta.secondary}
       />
     </>
   );

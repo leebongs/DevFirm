@@ -1791,9 +1791,7 @@
           "Người dành nhiều thời gian cho Excel",
           "Quản lý muốn sắp xếp nghiệp vụ bộ phận"
         ],
-        "prerequisites": [
-          "Kinh nghiệm sử dụng Excel cơ bản"
-        ],
+        "prerequisites": ["Kinh nghiệm sử dụng Excel cơ bản"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1837,9 +1835,7 @@
           "Leader của đội có lịch trình thường bị trễ",
           "Người phụ trách phải điều phối với bên đặt hàng"
         ],
-        "prerequisites": [
-          "Kinh nghiệm làm việc theo đội"
-        ],
+        "prerequisites": ["Kinh nghiệm làm việc theo đội"],
         "curriculum": [
           {
             "week": "1~2",

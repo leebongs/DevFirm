@@ -52,7 +52,8 @@ export function LocaleSwitcher({
   const warm = useCallback(() => {
     const rest = segments.slice(2).join("/");
     for (const locale of locales) {
-      if (locale.code === current || prefetched.current.has(locale.code)) continue;
+      if (locale.code === current || prefetched.current.has(locale.code))
+        continue;
       prefetched.current.add(locale.code);
       router.prefetch(`/${locale.code}${rest ? `/${rest}` : ""}`);
     }

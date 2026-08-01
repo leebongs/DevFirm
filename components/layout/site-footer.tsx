@@ -74,7 +74,10 @@ export function SiteFooter({
             <div className="flex flex-wrap gap-x-2">
               <dt>{ui.footer.telLabel}</dt>
               <dd>
-                <a href={siteConst.telHref} className="hover:text-brand-foreground">
+                <a
+                  href={siteConst.telHref}
+                  className="hover:text-brand-foreground"
+                >
                   {siteConst.tel}
                 </a>
               </dd>

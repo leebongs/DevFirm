@@ -11,30 +11,46 @@ import { CTASection } from "@/components/content/cta-section";
 import { Illustration } from "@/components/content/illustration";
 import { Photo } from "@/components/content/photo";
 import { buildMetadata } from "@/lib/metadata";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
 import { illustrations } from "@/content/illustrations";
 import { photos } from "@/content/photos";
-import { solutions } from "@/content/solutions";
-import { agents } from "@/content/agents";
-import { pageSeo } from "@/content/seo";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.solutions,
+    path: "/solutions",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.solutions,
-  path: "/solutions",
-});
+export default async function SolutionsPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function SolutionsPage() {
   return (
     <>
       <PageHero
         photo={photos.solutionsHero}
-        eyebrow={solutions.hero.eyebrow}
-        title={solutions.hero.title}
-        lead={solutions.hero.lead}
+        eyebrow={t.solutions.hub.hero.eyebrow}
+        title={t.solutions.hub.hero.title}
+        lead={t.solutions.hub.hero.lead}
       />
 
       <Section>
         <div className="grid gap-5 lg:grid-cols-2 lg:gap-6">
-          {solutions.axes.map((axis, index) => (
+          {t.solutions.hub.axes.map((axis, index) => (
             <Link
               key={axis.href}
               href={axis.href}
@@ -100,13 +116,13 @@ export default function SolutionsPage() {
 
       <Section>
         <SectionHeading
-          id={solutions.agentsSection.id}
-          eyebrow={solutions.agentsSection.eyebrow}
-          title={solutions.agentsSection.title}
-          lead={solutions.agentsSection.lead}
+          id={t.solutions.hub.agentsSection.id}
+          eyebrow={t.solutions.hub.agentsSection.eyebrow}
+          title={t.solutions.hub.agentsSection.title}
+          lead={t.solutions.hub.agentsSection.lead}
         />
         <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-          {agents.map((agent) => (
+          {t.agents.map((agent) => (
             <li key={agent.slug}>
               <IndustryAgentCard agent={agent} />
             </li>
@@ -116,9 +132,9 @@ export default function SolutionsPage() {
 
       <Section>
         <SectionHeading
-          id={solutions.process.id}
-          eyebrow={solutions.process.eyebrow}
-          title={solutions.process.title}
+          id={t.solutions.hub.process.id}
+          eyebrow={t.solutions.hub.process.eyebrow}
+          title={t.solutions.hub.process.title}
         />
         <Illustration
           src={illustrations.agentPipeline.src}
@@ -134,24 +150,24 @@ export default function SolutionsPage() {
           alt={illustrations.adoption.alt}
           className="border-border bg-muted/50 mt-5 rounded-lg border p-6 lg:p-8"
         />
-        <StepFlow className="mt-6" steps={solutions.process.steps} />
+        <StepFlow className="mt-6" steps={t.solutions.hub.process.steps} />
       </Section>
 
       <Section variant="muted">
         <SectionHeading
-          id={solutions.faq.id}
-          eyebrow={solutions.faq.eyebrow}
-          title={solutions.faq.title}
+          id={t.solutions.hub.faq.id}
+          eyebrow={t.solutions.hub.faq.eyebrow}
+          title={t.solutions.hub.faq.title}
         />
         <div className="mt-8 max-w-[68ch]">
-          <FAQAccordion items={solutions.faq.items} />
+          <FAQAccordion items={t.solutions.hub.faq.items} />
         </div>
       </Section>
 
       <CTASection
-        title={solutions.cta.title}
-        desc={solutions.cta.desc}
-        cta={solutions.cta.primary}
+        title={t.solutions.hub.cta.title}
+        desc={t.solutions.hub.cta.desc}
+        cta={t.solutions.hub.cta.primary}
       />
     </>
   );

@@ -8,24 +8,41 @@ import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { CTASection } from "@/components/content/cta-section";
 import { Badge } from "@/components/ui/badge";
 import { buildMetadata } from "@/lib/metadata";
-import { careersPage, jobs } from "@/content/careers";
-import { pageSeo } from "@/content/seo";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.careers,
+    path: "/about/careers",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.careers,
-  path: "/about/careers",
-});
+export default async function CareersPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function CareersPage() {
-  const openJobs = jobs.filter((job) => job.status === "open");
+  const openJobs = t.careers.jobs.filter((job) => job.status === "open");
 
   return (
     <>
       <PageHero
         photo={photos.aboutHero}
-        eyebrow={careersPage.hero.eyebrow}
-        title={careersPage.hero.title}
-        lead={careersPage.hero.lead}
+        eyebrow={t.careers.page.hero.eyebrow}
+        title={t.careers.page.hero.title}
+        lead={t.careers.page.hero.lead}
       />
 
       <Container className="py-12 lg:py-16">
@@ -33,11 +50,11 @@ export default function CareersPage() {
 
         {openJobs.length === 0 ? (
           <p className="text-muted-foreground mt-8 break-keep">
-            {careersPage.emptyState}
+            {t.careers.page.emptyState}
           </p>
         ) : (
           <ul className="mt-8 grid gap-4 lg:grid-cols-2">
-            {jobs.map((job) => (
+            {t.careers.jobs.map((job) => (
               <li key={job.slug}>
                 <Link
                   href={`/about/careers/${job.slug}`}
@@ -47,7 +64,7 @@ export default function CareersPage() {
                     <Badge
                       variant={job.status === "open" ? "default" : "secondary"}
                     >
-                      {careersPage.statusLabel[job.status]}
+                      {t.careers.page.statusLabel[job.status]}
                     </Badge>
                     <span className="text-muted-foreground text-xs">
                       {job.team} · {job.employmentType}
@@ -60,7 +77,7 @@ export default function CareersPage() {
                     {job.responsibilities[0]}
                   </p>
                   <span className="text-muted-foreground mt-4 flex items-center gap-1 text-xs">
-                    {careersPage.fields.deadline} · {job.deadline}
+                    {t.careers.page.fields.deadline} · {job.deadline}
                     <ArrowRight
                       className="text-primary ml-auto size-4 transition-transform group-hover:translate-x-0.5 motion-reduce:transition-none"
                       aria-hidden
@@ -74,10 +91,10 @@ export default function CareersPage() {
       </Container>
 
       <CTASection
-        title={careersPage.cta.title}
-        desc={careersPage.cta.desc}
-        cta={careersPage.cta.primary}
-        secondary={careersPage.cta.secondary}
+        title={t.careers.page.cta.title}
+        desc={t.careers.page.cta.desc}
+        cta={t.careers.page.cta.primary}
+        secondary={t.careers.page.cta.secondary}
       />
     </>
   );

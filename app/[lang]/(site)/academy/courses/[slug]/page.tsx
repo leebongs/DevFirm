@@ -16,13 +16,28 @@ import {
 } from "@/components/ui/table";
 import { CourseJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
-import { courses, coursesPage } from "@/content/courses";
-import { SCHOOLS } from "@/content/academy";
+import {
+  DEFAULT_LOCALE,
+  isLocale,
+  localeCodes,
+  type Locale,
+} from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
+// 슬러그는 언어와 무관한 구조 데이터다. generateStaticParams 는
+// 동기라 사전을 await 할 수 없으므로 원문 배열로 열거한다.
+import { courses } from "@/content/courses";
+type Params = { lang: string; slug: string };
 
-type Params = { slug: string };
-
+/**
+ * 언어 × 슬러그. 언어를 곱하지 않으면 기본 언어판만 굳고
+ * 나머지는 dynamicParams=false 에 걸려 404 가 된다.
+ */
 export function generateStaticParams(): Params[] {
-  return courses.map((course) => ({ slug: course.slug }));
+  return localeCodes.flatMap((lang) =>
+    courses
+      .map((course) => ({ slug: course.slug }))
+      .map((p) => ({ lang, ...p })),
+  );
 }
 
 export async function generateMetadata({
@@ -30,13 +45,15 @@ export async function generateMetadata({
 }: {
   params: Promise<Params>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const course = courses.find((item) => item.slug === slug);
+  const { lang, slug } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  const course = t.courses.list.find((item) => item.slug === slug);
   if (!course) return {};
 
   return buildMetadata({
     title: course.title,
-    description: coursesPage.seoDescription(course),
+    description: t.courses.page.seoDescription(course),
     path: `/academy/courses/${course.slug}`,
   });
 }
@@ -53,11 +70,13 @@ export default async function CoursePage({
 }: {
   params: Promise<Params>;
 }) {
-  const { slug } = await params;
-  const course = courses.find((item) => item.slug === slug);
+  const { lang, slug } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  const course = t.courses.list.find((item) => item.slug === slug);
   if (!course) notFound();
 
-  const school = SCHOOLS.find((item) => item.key === course.school);
+  const school = t.academy.schools.find((item) => item.key === course.school);
 
   return (
     <>
@@ -77,13 +96,13 @@ export default async function CoursePage({
         <dl className="border-border divide-border grid divide-y rounded-lg border sm:grid-cols-2 sm:divide-x sm:divide-y-0">
           <div className="p-4">
             <dt className="text-muted-foreground text-xs">
-              {coursesPage.fields.duration}
+              {t.courses.page.fields.duration}
             </dt>
             <dd className="mt-1 font-semibold">{course.duration}</dd>
           </div>
           <div className="p-4">
             <dt className="text-muted-foreground text-xs">
-              {coursesPage.fields.capacity}
+              {t.courses.page.fields.capacity}
             </dt>
             <dd className="mt-1 font-semibold">{course.capacity}</dd>
           </div>
@@ -92,8 +111,8 @@ export default async function CoursePage({
         <section className="mt-16 lg:mt-20">
           <SectionHeading
             id="curriculum"
-            eyebrow={coursesPage.hero.eyebrow}
-            title={coursesPage.fields.curriculum}
+            eyebrow={t.courses.page.hero.eyebrow}
+            title={t.courses.page.fields.curriculum}
           />
           {/* 표는 좁은 화면에서 자기 영역 안에서만 가로 스크롤한다(A1) */}
           <div className="mt-8 overflow-x-auto">
@@ -101,12 +120,12 @@ export default async function CoursePage({
               <TableHeader>
                 <TableRow>
                   <TableHead className="w-20">
-                    {coursesPage.fields.week}
+                    {t.courses.page.fields.week}
                   </TableHead>
                   <TableHead className="w-40">
-                    {coursesPage.fields.topic}
+                    {t.courses.page.fields.topic}
                   </TableHead>
-                  <TableHead>{coursesPage.fields.detail}</TableHead>
+                  <TableHead>{t.courses.page.fields.detail}</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
@@ -130,7 +149,7 @@ export default async function CoursePage({
 
         {LIST_SECTIONS.map(([key]) => (
           <section key={key} className="mt-16 lg:mt-20">
-            <SectionHeading id={key} title={coursesPage.fields[key]} />
+            <SectionHeading id={key} title={t.courses.page.fields[key]} />
             <ul className="border-border divide-border mt-6 divide-y rounded-lg border">
               {course[key].map((item) => (
                 <li key={item} className="p-4 text-sm break-keep">
@@ -145,15 +164,15 @@ export default async function CoursePage({
           href={`/academy/apply?course=${course.slug}`}
           className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-ring mt-10 inline-flex min-h-11 items-center rounded-md px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
         >
-          {coursesPage.fields.apply}
+          {t.courses.page.fields.apply}
         </Link>
       </ArticleShell>
 
       <CTASection
-        title={coursesPage.cta.title}
-        desc={coursesPage.cta.desc}
-        cta={coursesPage.cta.primary}
-        secondary={coursesPage.cta.secondary}
+        title={t.courses.page.cta.title}
+        desc={t.courses.page.cta.desc}
+        cta={t.courses.page.cta.primary}
+        secondary={t.courses.page.cta.secondary}
       />
     </>
   );

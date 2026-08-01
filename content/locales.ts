@@ -19,7 +19,12 @@ export const locales = [
   { code: "ko", label: "한국어", english: "Korean", dir: "ltr" },
   { code: "en", label: "English", english: "English", dir: "ltr" },
   { code: "ja", label: "日本語", english: "Japanese", dir: "ltr" },
-  { code: "zh", label: "简体中文", english: "Chinese (Simplified)", dir: "ltr" },
+  {
+    code: "zh",
+    label: "简体中文",
+    english: "Chinese (Simplified)",
+    dir: "ltr",
+  },
   { code: "ms", label: "Bahasa Melayu", english: "Malay", dir: "ltr" },
   { code: "id", label: "Bahasa Indonesia", english: "Indonesian", dir: "ltr" },
   { code: "vi", label: "Tiếng Việt", english: "Vietnamese", dir: "ltr" },
@@ -32,7 +37,12 @@ export const locales = [
   { code: "sv", label: "Svenska", english: "Swedish", dir: "ltr" },
   { code: "it", label: "Italiano", english: "Italian", dir: "ltr" },
   { code: "ro", label: "Română", english: "Romanian", dir: "ltr" },
-  { code: "pt-BR", label: "Português (Brasil)", english: "Portuguese (Brazil)", dir: "ltr" },
+  {
+    code: "pt-BR",
+    label: "Português (Brasil)",
+    english: "Portuguese (Brazil)",
+    dir: "ltr",
+  },
 ] as const;
 
 /**

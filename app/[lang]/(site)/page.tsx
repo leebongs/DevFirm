@@ -12,20 +12,36 @@ import { Illustration } from "@/components/content/illustration";
 import { Photo } from "@/components/content/photo";
 import { HeroVideo } from "@/components/content/hero-video";
 import { buildMetadata } from "@/lib/metadata";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
 import { illustrations } from "@/content/illustrations";
 import { photos } from "@/content/photos";
-import { home } from "@/content/home";
-import { agents } from "@/content/agents";
 import { site } from "@/content/site";
-import { homeSeo } from "@/content/seo";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    title: `${site.nameKo} — ${site.tagline}`,
+    description: t.seo.home.description,
+    path: "/",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  title: `${site.nameKo} — ${site.tagline}`,
-  description: homeSeo.description,
-  path: "/",
-});
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function HomePage() {
   return (
     <>
       {/*
@@ -63,26 +79,26 @@ export default function HomePage() {
         <Container className="text-brand-foreground py-24 lg:grid lg:grid-cols-[minmax(0,34rem)_1fr] lg:gap-16 lg:py-32">
           <div className="min-w-0">
             <p className="text-highlight text-xs font-semibold tracking-[0.08em] uppercase">
-              {home.hero.eyebrow}
+              {t.home.hero.eyebrow}
             </p>
             <h1 className="mt-4 max-w-[18ch] text-[2.25rem] leading-[1.25] font-bold tracking-[-0.02em] break-keep lg:text-[3.75rem] lg:leading-[1.08]">
-              {home.hero.title}
+              {t.home.hero.title}
             </h1>
             <p className="text-brand-foreground/85 mt-6 max-w-[52ch] text-base leading-[1.75] break-keep lg:text-[1.0625rem] lg:leading-[1.8]">
-              {home.hero.lead}
+              {t.home.hero.lead}
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
-                href={home.hero.primaryCta.href}
+                href={t.home.hero.primaryCta.href}
                 className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-brand-foreground inline-flex min-h-11 items-center justify-center rounded-md px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
               >
-                {home.hero.primaryCta.label}
+                {t.home.hero.primaryCta.label}
               </Link>
               <Link
-                href={home.hero.secondaryCta.href}
+                href={t.home.hero.secondaryCta.href}
                 className="glass glass-sheen focus-visible:ring-brand-foreground inline-flex min-h-11 items-center justify-center rounded-md px-6 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
               >
-                {home.hero.secondaryCta.label}
+                {t.home.hero.secondaryCta.label}
               </Link>
             </div>
           </div>
@@ -90,7 +106,7 @@ export default function HomePage() {
           {/* 유리 패널에 신뢰 지표를 올린다. 사진 위 정보 레이어가 곧 유리다 */}
           <div className="mt-12 lg:mt-0 lg:self-end">
             <dl className="glass glass-sheen grid grid-cols-3 gap-4 rounded-xl p-5 lg:p-6">
-              {home.trust.stats.map((stat) => (
+              {t.home.trust.stats.map((stat) => (
                 <div key={stat.label} className="flex flex-col-reverse">
                   <dt className="text-brand-foreground/70 mt-1 text-xs break-keep">
                     {stat.label}
@@ -108,12 +124,12 @@ export default function HomePage() {
       {/* 2. Slogan Band — 피지컬AI ↔ 최과장AI 2분할 대비 */}
       <Section variant="brand">
         <h2 className="text-[1.375rem] leading-[1.35] font-semibold break-keep lg:text-[2rem] lg:leading-[1.25]">
-          {home.slogan.title}
+          {t.home.slogan.title}
         </h2>
         <div className="mt-10 grid gap-4 lg:grid-cols-2">
           {[
-            { ...home.slogan.left, art: illustrations.physicalAi },
-            { ...home.slogan.right, art: illustrations.officeAi },
+            { ...t.home.slogan.left, art: illustrations.physicalAi },
+            { ...t.home.slogan.right, art: illustrations.officeAi },
           ].map((side) => (
             <Link
               key={side.href}
@@ -153,11 +169,11 @@ export default function HomePage() {
       {/* 3. 고객 경로 분기 3카드 — 제공물 기준 IA(I-B)가 놓치는 부분을 흡수 */}
       <Section>
         <SectionHeading
-          eyebrow={home.audience.eyebrow}
-          title={home.audience.title}
+          eyebrow={t.home.audience.eyebrow}
+          title={t.home.audience.title}
         />
         <div className="mt-10 grid gap-5 md:grid-cols-3 lg:gap-6">
-          {home.audience.cards.map((card) => (
+          {t.home.audience.cards.map((card) => (
             <FeatureCard
               key={card.href}
               icon={card.icon}
@@ -174,12 +190,12 @@ export default function HomePage() {
       {/* 4. 산업별 AI 에이전트 6종 */}
       <Section variant="muted">
         <SectionHeading
-          eyebrow={home.agentsSection.eyebrow}
-          title={home.agentsSection.title}
-          lead={home.agentsSection.lead}
+          eyebrow={t.home.agentsSection.eyebrow}
+          title={t.home.agentsSection.title}
+          lead={t.home.agentsSection.lead}
         />
         <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-          {agents.map((agent) => (
+          {t.agents.map((agent) => (
             <li key={agent.slug}>
               <IndustryAgentCard agent={agent} />
             </li>
@@ -190,9 +206,9 @@ export default function HomePage() {
       {/* 5. 데브펌 모델 — 로펌 비유 */}
       <Section>
         <SectionHeading
-          eyebrow={home.model.eyebrow}
-          title={home.model.title}
-          lead={home.model.lead}
+          eyebrow={t.home.model.eyebrow}
+          title={t.home.model.title}
+          lead={t.home.model.lead}
         />
         {/* 계획 §5.1 이 "로펌 비유 다이어그램"을 명시했다. 표가 세부를 말하고
             다이어그램이 구조를 말한다 — 둘은 대체재가 아니다. */}
@@ -207,19 +223,19 @@ export default function HomePage() {
         </div>
         <ComparisonTable
           className="mt-6"
-          leftLabel={home.model.comparison.leftLabel}
-          rightLabel={home.model.comparison.rightLabel}
-          rows={home.model.comparison.rows}
+          leftLabel={t.home.model.comparison.leftLabel}
+          rightLabel={t.home.model.comparison.rightLabel}
+          rows={t.home.model.comparison.rows}
         />
         <p className="text-muted-foreground mt-6 max-w-[68ch] text-sm leading-relaxed break-keep">
-          {home.model.note}
+          {t.home.model.note}
         </p>
       </Section>
 
       {/* 6. 아카데미 / 공유오피스 2분할 */}
       <Section variant="muted">
         <div className="grid gap-5 lg:grid-cols-2 lg:gap-6">
-          {[home.bands.academy, home.bands.workspace].map((band) => (
+          {[t.home.bands.academy, t.home.bands.workspace].map((band) => (
             <Link
               key={band.href}
               href={band.href}
@@ -253,7 +269,10 @@ export default function HomePage() {
         주장을 뒷받침한다.
       */}
       <Section>
-        <SectionHeading eyebrow={home.trust.eyebrow} title={home.trust.title} />
+        <SectionHeading
+          eyebrow={t.home.trust.eyebrow}
+          title={t.home.trust.title}
+        />
         <div className="mt-10 grid gap-5 md:grid-cols-3 lg:gap-6">
           <Photo
             photo={photos.aboutTeam}
@@ -275,9 +294,9 @@ export default function HomePage() {
 
       {/* 8. 최종 CTA */}
       <CTASection
-        title={home.finalCta.title}
-        desc={home.finalCta.desc}
-        cta={home.finalCta.cta}
+        title={t.home.finalCta.title}
+        desc={t.home.finalCta.desc}
+        cta={t.home.finalCta.cta}
       />
     </>
   );

@@ -8,32 +8,49 @@ import { StepFlow } from "@/components/content/step-flow";
 import { CTASection } from "@/components/content/cta-section";
 import { Illustration } from "@/components/content/illustration";
 import { buildMetadata } from "@/lib/metadata";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
 import { illustrations } from "@/content/illustrations";
-import { cic } from "@/content/cic";
-import { pageSeo } from "@/content/seo";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.cic,
+    path: "/about/cic",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.cic,
-  path: "/about/cic",
-});
+export default async function CicPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function CicPage() {
   return (
     <>
       <PageHero
         photo={photos.aboutHero}
-        eyebrow={cic.hero.eyebrow}
-        title={cic.hero.title}
-        lead={cic.hero.lead}
+        eyebrow={t.cic.hero.eyebrow}
+        title={t.cic.hero.title}
+        lead={t.cic.hero.lead}
       />
 
       <ArticleShell href="/about/cic">
         <section>
           <SectionHeading
-            id={cic.what.id}
-            eyebrow={cic.what.eyebrow}
-            title={cic.what.title}
-            lead={cic.what.lead}
+            id={t.cic.what.id}
+            eyebrow={t.cic.what.eyebrow}
+            title={t.cic.what.title}
+            lead={t.cic.what.lead}
           />
           <Illustration
             src={illustrations.cic.src}
@@ -43,7 +60,7 @@ export default function CicPage() {
             className="border-border bg-muted/50 mt-8 rounded-lg border p-5 lg:p-8"
           />
           <div className="mt-6 grid gap-5 sm:grid-cols-2">
-            {cic.what.items.map((item) => (
+            {t.cic.what.items.map((item) => (
               <FeatureCard
                 key={item.title}
                 title={item.title}
@@ -55,22 +72,22 @@ export default function CicPage() {
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={cic.operation.id}
-            eyebrow={cic.operation.eyebrow}
-            title={cic.operation.title}
+            id={t.cic.operation.id}
+            eyebrow={t.cic.operation.eyebrow}
+            title={t.cic.operation.title}
           />
-          <StepFlow className="mt-8" steps={cic.operation.steps} />
+          <StepFlow className="mt-8" steps={t.cic.operation.steps} />
         </section>
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={cic.roadmap.id}
-            eyebrow={cic.roadmap.eyebrow}
-            title={cic.roadmap.title}
-            lead={cic.roadmap.lead}
+            id={t.cic.roadmap.id}
+            eyebrow={t.cic.roadmap.eyebrow}
+            title={t.cic.roadmap.title}
+            lead={t.cic.roadmap.lead}
           />
           <div className="mt-8 grid gap-5 sm:grid-cols-3">
-            {cic.roadmap.items.map((item) => (
+            {t.cic.roadmap.items.map((item) => (
               <FeatureCard
                 key={item.title}
                 title={item.title}
@@ -82,27 +99,27 @@ export default function CicPage() {
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={cic.conditions.id}
-            eyebrow={cic.conditions.eyebrow}
-            title={cic.conditions.title}
+            id={t.cic.conditions.id}
+            eyebrow={t.cic.conditions.eyebrow}
+            title={t.cic.conditions.title}
           />
           <ul className="border-border divide-border mt-8 divide-y rounded-lg border">
-            {cic.conditions.items.map((item) => (
+            {t.cic.conditions.items.map((item) => (
               <li key={item} className="p-4 text-sm break-keep">
                 {item}
               </li>
             ))}
           </ul>
           <p className="text-muted-foreground mt-4 max-w-[68ch] text-sm leading-relaxed break-keep">
-            {cic.conditions.note}
+            {t.cic.conditions.note}
           </p>
         </section>
       </ArticleShell>
 
       <CTASection
-        title={cic.cta.title}
-        desc={cic.cta.desc}
-        cta={cic.cta.primary}
+        title={t.cic.cta.title}
+        desc={t.cic.cta.desc}
+        cta={t.cic.cta.primary}
       />
     </>
   );

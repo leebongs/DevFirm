@@ -1791,9 +1791,7 @@
           "Persoane care petrec mult timp în Excel",
           "Manageri care doresc să organizeze munca departamentului"
         ],
-        "prerequisites": [
-          "Experiență de bază în folosirea Excel"
-        ],
+        "prerequisites": ["Experiență de bază în folosirea Excel"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1816,10 +1814,7 @@
             "detail": "Organizați ce a fost construit astfel încât să poată fi predat echipei."
           }
         ],
-        "outcomes": [
-          "Trei sarcini automatizate",
-          "Document ghid de utilizare"
-        ],
+        "outcomes": ["Trei sarcini automatizate", "Document ghid de utilizare"],
         "careers": [
           "Responsabil automatizare office",
           "Responsabil îmbunătățire muncă departamentală"
@@ -1837,9 +1832,7 @@
           "Lideri de echipă ale căror calendare continuă să alunece",
           "Persoane care trebuie să coordoneze cu clienții"
         ],
-        "prerequisites": [
-          "Experiență de lucru în echipă"
-        ],
+        "prerequisites": ["Experiență de lucru în echipă"],
         "curriculum": [
           {
             "week": "1~2",

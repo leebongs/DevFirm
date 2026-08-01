@@ -1791,9 +1791,7 @@
           "Henkilöt, jotka käyttävät paljon aikaa Excel-työhön",
           "Esihenkilöt, jotka haluavat jäsentää osaston työtä"
         ],
-        "prerequisites": [
-          "Excelin peruskäyttökokemus"
-        ],
+        "prerequisites": ["Excelin peruskäyttökokemus"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1816,10 +1814,7 @@
             "detail": "Jäsennämme tehdyn työn niin, että se voidaan luovuttaa tiimille."
           }
         ],
-        "outcomes": [
-          "3 automatisoitua työtehtävää",
-          "Käyttöohje"
-        ],
+        "outcomes": ["3 automatisoitua työtehtävää", "Käyttöohje"],
         "careers": [
           "Toimistoautomaation vastuuhenkilö",
           "Osaston työnkehityksen vastuuhenkilö"
@@ -1837,9 +1832,7 @@
           "Tiiminvetäjät, joiden aikataulut venyvät jatkuvasti",
           "Vastuuhenkilöt, joiden pitää koordinoida tilaajan kanssa"
         ],
-        "prerequisites": [
-          "Kokemus tiimityöstä"
-        ],
+        "prerequisites": ["Kokemus tiimityöstä"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1867,11 +1860,7 @@
           "Riskienhallintadokumentti",
           "Retrospektiiviraportti"
         ],
-        "careers": [
-          "Projektipäällikkö",
-          "Tiiminvetäjä",
-          "Palvelusuunnittelija"
-        ]
+        "careers": ["Projektipäällikkö", "Tiiminvetäjä", "Palvelusuunnittelija"]
       }
     ],
     "page": {

@@ -3,26 +3,43 @@ import { PageHero } from "@/components/typography/page-hero";
 import { ArticleShell } from "@/components/layout/article-shell";
 import { Prose } from "@/components/typography/prose";
 import { buildMetadata } from "@/lib/metadata";
-import { privacy, legalUpdatedAt, legalUi } from "@/content/legal";
-import { pageSeo } from "@/content/seo";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.privacy,
+    path: "/privacy",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.privacy,
-  path: "/privacy",
-});
+export default async function PrivacyPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function PrivacyPage() {
   return (
     <>
       <PageHero
-        title={privacy.title}
-        lead={`${legalUi.updatedAtLabel} ${legalUpdatedAt}`}
+        title={t.legal.privacy.title}
+        lead={`${t.legal.ui.updatedAtLabel} ${t.legal.updatedAt}`}
       />
 
       <ArticleShell href="/privacy">
         <Prose>
-          <p>{privacy.intro}</p>
-          {privacy.sections.map((section) => (
+          <p>{t.legal.privacy.intro}</p>
+          {t.legal.privacy.sections.map((section) => (
             <section key={section.id}>
               <h2 id={section.id}>{section.title}</h2>
               {section.body.map((paragraph) => (

@@ -6,25 +6,40 @@ import { Container } from "@/components/layout/container";
 import { ContactForm } from "@/components/forms/contact-form";
 import { MapEmbed } from "@/components/content/map-embed";
 import { buildMetadata } from "@/lib/metadata";
-import { forms } from "@/content/forms";
-import { workspace } from "@/content/workspace";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
 import { site } from "@/content/site";
-import { pageSeo } from "@/content/seo";
-import { ui } from "@/content/ui";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.contact,
+    path: "/contact",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.contact,
-  path: "/contact",
-});
+export default async function ContactPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function ContactPage() {
   return (
     <>
       <PageHero
         photo={photos.contactHero}
-        eyebrow={forms.contact.hero.eyebrow}
-        title={forms.contact.hero.title}
-        lead={forms.contact.hero.lead}
+        eyebrow={t.forms.contact.hero.eyebrow}
+        title={t.forms.contact.hero.title}
+        lead={t.forms.contact.hero.lead}
       />
 
       <Container className="py-12 lg:py-16">
@@ -40,13 +55,13 @@ export default function ContactPage() {
               <p className="font-semibold">{site.footerBrand}</p>
               <dl className="text-muted-foreground mt-4 space-y-3 text-sm">
                 <div>
-                  <dt className="text-xs">{ui.footer.addressLabel}</dt>
+                  <dt className="text-xs">{t.ui.footer.addressLabel}</dt>
                   <dd className="text-foreground mt-0.5 break-keep">
-                    {site.address.full}
+                    {t.site.addressFull}
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-xs">{ui.footer.telLabel}</dt>
+                  <dt className="text-xs">{t.ui.footer.telLabel}</dt>
                   <dd className="text-foreground mt-0.5">
                     <a href={site.telHref} className="hover:text-primary">
                       {site.tel}
@@ -54,7 +69,7 @@ export default function ContactPage() {
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-xs">{forms.contact.labels.email}</dt>
+                  <dt className="text-xs">{t.forms.contact.labels.email}</dt>
                   <dd className="text-foreground mt-0.5">
                     {/* 메일 발송이 설정되지 않았을 때의 폴백 경로이기도 하다(O-1) */}
                     <a
@@ -73,23 +88,23 @@ export default function ContactPage() {
               lazy 로딩 + 비율 고정을 맡으므로 A7·CLS 에 영향이 없다.
             */}
             <div className="border-border overflow-hidden rounded-lg border">
-              <MapEmbed title={workspace.location.mapTitle} />
+              <MapEmbed title={t.workspace.location.mapTitle} />
               <div className="border-border border-t p-5">
                 <p className="text-xs font-semibold tracking-[0.08em] uppercase">
-                  {workspace.location.eyebrow}
+                  {t.workspace.location.eyebrow}
                 </p>
                 <p className="mt-3 text-sm break-keep">
-                  {workspace.location.address}
+                  {t.workspace.location.address}
                 </p>
                 <a
-                  href={workspace.location.mapHref}
+                  href={t.workspace.location.mapHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary mt-4 inline-flex items-center gap-1.5 text-sm font-medium"
                 >
-                  {workspace.location.mapLinkLabel}
+                  {t.workspace.location.mapLinkLabel}
                   <ExternalLink className="size-3.5" aria-hidden />
-                  <span className="sr-only">{ui.nav.externalLink}</span>
+                  <span className="sr-only">{t.ui.nav.externalLink}</span>
                 </a>
               </div>
             </div>

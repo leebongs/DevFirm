@@ -28,8 +28,16 @@ export default async function SiteLayout({
 
   return (
     <>
-      <SiteHeader lang={locale} nav={t.nav} ui={t.ui} siteName={t.site.nameKo} />
-      <SectionNav sectionNav={t.nav.sectionNav} label={t.ui.nav.sectionNavLabel} />
+      <SiteHeader
+        lang={locale}
+        nav={t.nav}
+        ui={t.ui}
+        siteName={t.site.nameKo}
+      />
+      <SectionNav
+        sectionNav={t.nav.sectionNav}
+        label={t.ui.nav.sectionNavLabel}
+      />
       <main id="main" className="flex-1">
         {children}
       </main>

@@ -5,23 +5,39 @@ import { Container } from "@/components/layout/container";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { ApplyForm } from "@/components/forms/apply-form";
 import { buildMetadata } from "@/lib/metadata";
-import { forms } from "@/content/forms";
-import { academy } from "@/content/academy";
-import { pageSeo } from "@/content/seo";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.apply,
+    path: "/academy/apply",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.apply,
-  path: "/academy/apply",
-});
+export default async function ApplyPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function ApplyPage() {
   return (
     <>
       <PageHero
         photo={photos.academyHero}
-        eyebrow={forms.apply.hero.eyebrow}
-        title={forms.apply.hero.title}
-        lead={forms.apply.hero.lead}
+        eyebrow={t.forms.apply.hero.eyebrow}
+        title={t.forms.apply.hero.title}
+        lead={t.forms.apply.hero.lead}
       />
 
       <Container className="py-12 lg:py-16">
@@ -34,10 +50,10 @@ export default function ApplyPage() {
 
           <aside className="border-border h-fit rounded-lg border p-5">
             <p className="text-xs font-semibold tracking-[0.08em] uppercase">
-              {academy.process.eyebrow}
+              {t.academy.page.process.eyebrow}
             </p>
             <ol className="mt-4 space-y-3">
-              {academy.process.steps.map((step, index) => (
+              {t.academy.page.process.steps.map((step, index) => (
                 <li key={step} className="flex gap-3 text-sm break-keep">
                   <span className="bg-primary/10 text-primary inline-flex size-6 shrink-0 items-center justify-center rounded-full text-xs font-bold">
                     {index + 1}

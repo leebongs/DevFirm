@@ -1791,9 +1791,7 @@
           "Orang yang menghabiskan banyak masa pada kerja Excel",
           "Pengurus yang mahu menyusun kerja jabatan"
         ],
-        "prerequisites": [
-          "Pengalaman penggunaan Excel asas"
-        ],
+        "prerequisites": ["Pengalaman penggunaan Excel asas"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1816,10 +1814,7 @@
             "detail": "Susun perkara yang dibina supaya boleh diserahkan kepada pasukan."
           }
         ],
-        "outcomes": [
-          "Tiga tugas diautomasikan",
-          "Dokumen panduan pengguna"
-        ],
+        "outcomes": ["Tiga tugas diautomasikan", "Dokumen panduan pengguna"],
         "careers": [
           "Pemilik Automasi Pejabat",
           "Pemilik Penambahbaikan Kerja Jabatan"
@@ -1837,9 +1832,7 @@
           "Ketua pasukan yang jadualnya sering tertangguh",
           "Orang yang mesti menyelaras dengan pelanggan"
         ],
-        "prerequisites": [
-          "Pengalaman bekerja sebagai pasukan"
-        ],
+        "prerequisites": ["Pengalaman bekerja sebagai pasukan"],
         "curriculum": [
           {
             "week": "1~2",

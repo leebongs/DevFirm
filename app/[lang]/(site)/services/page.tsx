@@ -6,27 +6,44 @@ import { SectionHeading } from "@/components/typography/section-heading";
 import { FeatureCard } from "@/components/content/feature-card";
 import { CTASection } from "@/components/content/cta-section";
 import { buildMetadata } from "@/lib/metadata";
-import { services } from "@/content/services";
-import { pageSeo } from "@/content/seo";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.services,
+    path: "/services",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.services,
-  path: "/services",
-});
+export default async function ServicesPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function ServicesPage() {
   return (
     <>
       <PageHero
         photo={photos.servicesHero}
-        eyebrow={services.hero.eyebrow}
-        title={services.hero.title}
-        lead={services.hero.lead}
+        eyebrow={t.services.hub.hero.eyebrow}
+        title={t.services.hub.hero.title}
+        lead={t.services.hub.hero.lead}
       />
 
       <Section>
         <div className="grid gap-5 lg:grid-cols-2 lg:gap-6">
-          {services.cards.map((card) => (
+          {t.services.hub.cards.map((card) => (
             <FeatureCard
               key={card.href}
               title={card.title}
@@ -40,12 +57,12 @@ export default function ServicesPage() {
 
       <Section variant="muted">
         <SectionHeading
-          id={services.collaboration.id}
-          eyebrow={services.collaboration.eyebrow}
-          title={services.collaboration.title}
+          id={t.services.hub.collaboration.id}
+          eyebrow={t.services.hub.collaboration.eyebrow}
+          title={t.services.hub.collaboration.title}
         />
         <div className="mt-10 grid gap-5 sm:grid-cols-3">
-          {services.collaboration.items.map((item) => (
+          {t.services.hub.collaboration.items.map((item) => (
             <FeatureCard key={item.title} title={item.title} desc={item.desc} />
           ))}
         </div>
@@ -53,12 +70,12 @@ export default function ServicesPage() {
 
       <Section>
         <SectionHeading
-          id={services.domains.id}
-          eyebrow={services.domains.eyebrow}
-          title={services.domains.title}
+          id={t.services.hub.domains.id}
+          eyebrow={t.services.hub.domains.eyebrow}
+          title={t.services.hub.domains.title}
         />
         <ul className="border-border divide-border mt-8 max-w-[68ch] divide-y rounded-lg border">
-          {services.domains.items.map((item) => (
+          {t.services.hub.domains.items.map((item) => (
             <li key={item} className="p-4 text-sm break-keep">
               {item}
             </li>
@@ -67,9 +84,9 @@ export default function ServicesPage() {
       </Section>
 
       <CTASection
-        title={services.cta.title}
-        desc={services.cta.desc}
-        cta={services.cta.primary}
+        title={t.services.hub.cta.title}
+        desc={t.services.hub.cta.desc}
+        cta={t.services.hub.cta.primary}
       />
     </>
   );

@@ -1791,9 +1791,7 @@
           "Personas que dedican mucho tiempo a Excel",
           "Responsables que quieren ordenar el trabajo del departamento"
         ],
-        "prerequisites": [
-          "Experiencia básica usando Excel"
-        ],
+        "prerequisites": ["Experiencia básica usando Excel"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1816,10 +1814,7 @@
             "detail": "Se organiza lo construido para poder entregarlo al equipo."
           }
         ],
-        "outcomes": [
-          "Tres trabajos automatizados",
-          "Documento de guía de uso"
-        ],
+        "outcomes": ["Tres trabajos automatizados", "Documento de guía de uso"],
         "careers": [
           "Responsable de automatización de oficina",
           "Responsable de mejora de trabajo departamental"
@@ -1837,9 +1832,7 @@
           "Líderes de equipos cuyos calendarios se retrasan con frecuencia",
           "Responsables que deben coordinarse con clientes"
         ],
-        "prerequisites": [
-          "Experiencia trabajando en equipo"
-        ],
+        "prerequisites": ["Experiencia trabajando en equipo"],
         "curriculum": [
           {
             "week": "1~2",

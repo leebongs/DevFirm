@@ -17,25 +17,27 @@ import { DEFAULT_LOCALE, type Locale } from "@/content/locales";
  * 모든 페이지 번들에 17개 언어가 다 실린다 — 전면 SSG 라 빌드 시점에 해당
  * 언어 페이지에만 인라인되어야 한다.
  */
-const loaders: Record<Exclude<Locale, typeof DEFAULT_LOCALE>, () => Promise<{ default: unknown }>> =
-  {
-    en: () => import("@/content/i18n/en.json"),
-    ja: () => import("@/content/i18n/ja.json"),
-    zh: () => import("@/content/i18n/zh.json"),
-    ms: () => import("@/content/i18n/ms.json"),
-    id: () => import("@/content/i18n/id.json"),
-    vi: () => import("@/content/i18n/vi.json"),
-    th: () => import("@/content/i18n/th.json"),
-    ur: () => import("@/content/i18n/ur.json"),
-    hi: () => import("@/content/i18n/hi.json"),
-    es: () => import("@/content/i18n/es.json"),
-    fr: () => import("@/content/i18n/fr.json"),
-    fi: () => import("@/content/i18n/fi.json"),
-    sv: () => import("@/content/i18n/sv.json"),
-    it: () => import("@/content/i18n/it.json"),
-    ro: () => import("@/content/i18n/ro.json"),
-    "pt-BR": () => import("@/content/i18n/pt-BR.json"),
-  };
+const loaders: Record<
+  Exclude<Locale, typeof DEFAULT_LOCALE>,
+  () => Promise<{ default: unknown }>
+> = {
+  en: () => import("@/content/i18n/en.json"),
+  ja: () => import("@/content/i18n/ja.json"),
+  zh: () => import("@/content/i18n/zh.json"),
+  ms: () => import("@/content/i18n/ms.json"),
+  id: () => import("@/content/i18n/id.json"),
+  vi: () => import("@/content/i18n/vi.json"),
+  th: () => import("@/content/i18n/th.json"),
+  ur: () => import("@/content/i18n/ur.json"),
+  hi: () => import("@/content/i18n/hi.json"),
+  es: () => import("@/content/i18n/es.json"),
+  fr: () => import("@/content/i18n/fr.json"),
+  fi: () => import("@/content/i18n/fi.json"),
+  sv: () => import("@/content/i18n/sv.json"),
+  it: () => import("@/content/i18n/it.json"),
+  ro: () => import("@/content/i18n/ro.json"),
+  "pt-BR": () => import("@/content/i18n/pt-BR.json"),
+};
 
 /**
  * 번역층을 원문 위에 겹친다.
@@ -48,9 +50,9 @@ function overlay<T>(base: T, patch: unknown): T {
   if (patch === undefined || patch === null) return base;
 
   if (typeof base === "string") {
-    return (typeof patch === "string" && patch.trim() !== ""
-      ? patch
-      : base) as T;
+    return (
+      typeof patch === "string" && patch.trim() !== "" ? patch : base
+    ) as T;
   }
 
   if (Array.isArray(base)) {
@@ -59,7 +61,8 @@ function overlay<T>(base: T, patch: unknown): T {
   }
 
   if (base && typeof base === "object") {
-    if (!patch || typeof patch !== "object" || Array.isArray(patch)) return base;
+    if (!patch || typeof patch !== "object" || Array.isArray(patch))
+      return base;
     const out: Record<string, unknown> = {};
     for (const [key, value] of Object.entries(base)) {
       out[key] = overlay(value, (patch as Record<string, unknown>)[key]);

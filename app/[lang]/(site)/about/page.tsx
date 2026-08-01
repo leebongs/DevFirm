@@ -9,26 +9,42 @@ import { CTASection } from "@/components/content/cta-section";
 import { Illustration } from "@/components/content/illustration";
 import { Photo } from "@/components/content/photo";
 import { buildMetadata } from "@/lib/metadata";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
 import { illustrations } from "@/content/illustrations";
 import { photos } from "@/content/photos";
-import { about } from "@/content/about";
-import { pageSeo } from "@/content/seo";
 import { site } from "@/content/site";
-import { ui } from "@/content/ui";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.about,
+    path: "/about",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.about,
-  path: "/about",
-});
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function AboutPage() {
   return (
     <>
       <PageHero
         photo={photos.aboutHero}
-        eyebrow={about.hero.eyebrow}
-        title={about.hero.title}
-        lead={about.hero.lead}
+        eyebrow={t.about.hero.eyebrow}
+        title={t.about.hero.title}
+        lead={t.about.hero.lead}
       />
 
       <ArticleShell href="/about">
@@ -41,10 +57,10 @@ export default function AboutPage() {
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={about.metaphor.id}
-            eyebrow={about.metaphor.eyebrow}
-            title={about.metaphor.title}
-            lead={about.metaphor.lead}
+            id={t.about.metaphor.id}
+            eyebrow={t.about.metaphor.eyebrow}
+            title={t.about.metaphor.title}
+            lead={t.about.metaphor.lead}
           />
           <Illustration
             src={illustrations.lawfirmModel.src}
@@ -55,18 +71,18 @@ export default function AboutPage() {
           />
           <ComparisonTable
             className="mt-6"
-            leftLabel={about.metaphor.comparison.leftLabel}
-            rightLabel={about.metaphor.comparison.rightLabel}
-            rows={about.metaphor.comparison.rows}
+            leftLabel={t.about.metaphor.comparison.leftLabel}
+            rightLabel={t.about.metaphor.comparison.rightLabel}
+            rows={t.about.metaphor.comparison.rows}
           />
         </section>
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={about.backoffice.id}
-            eyebrow={about.backoffice.eyebrow}
-            title={about.backoffice.title}
-            lead={about.backoffice.lead}
+            id={t.about.backoffice.id}
+            eyebrow={t.about.backoffice.eyebrow}
+            title={t.about.backoffice.title}
+            lead={t.about.backoffice.lead}
           />
           <Illustration
             src={illustrations.backoffice.src}
@@ -89,7 +105,7 @@ export default function AboutPage() {
             className="mt-5 aspect-[16/9]"
           />
           <div className="mt-6 grid gap-5 sm:grid-cols-2">
-            {about.backoffice.items.map((item) => (
+            {t.about.backoffice.items.map((item) => (
               <FeatureCard
                 key={item.title}
                 title={item.title}
@@ -101,11 +117,11 @@ export default function AboutPage() {
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={about.history.id}
-            eyebrow={about.history.eyebrow}
-            title={about.history.title}
+            id={t.about.history.id}
+            eyebrow={t.about.history.eyebrow}
+            title={t.about.history.title}
           />
-          <TimelineList className="mt-8" items={about.history.items} />
+          <TimelineList className="mt-8" items={t.about.history.items} />
           {/* 개인이 회사 안에서 어떻게 커지는지 — 연혁과 짝이 되는 축 */}
           <Illustration
             src={illustrations.growth.src}
@@ -123,28 +139,28 @@ export default function AboutPage() {
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={about.profile.id}
-            eyebrow={about.profile.eyebrow}
-            title={about.profile.title}
+            id={t.about.profile.id}
+            eyebrow={t.about.profile.eyebrow}
+            title={t.about.profile.title}
           />
           <dl className="border-border divide-border mt-8 divide-y rounded-lg border">
             <div className="grid gap-1 p-4 sm:grid-cols-[10rem_1fr] sm:gap-4">
               <dt className="text-muted-foreground text-sm">
-                {ui.footer.businessNumberLabel}
+                {t.ui.footer.businessNumberLabel}
               </dt>
               <dd className="text-sm font-medium">{site.businessNumber}</dd>
             </div>
             <div className="grid gap-1 p-4 sm:grid-cols-[10rem_1fr] sm:gap-4">
               <dt className="text-muted-foreground text-sm">
-                {ui.footer.addressLabel}
+                {t.ui.footer.addressLabel}
               </dt>
               <dd className="text-sm font-medium break-keep">
-                {site.address.full}
+                {t.site.addressFull}
               </dd>
             </div>
             <div className="grid gap-1 p-4 sm:grid-cols-[10rem_1fr] sm:gap-4">
               <dt className="text-muted-foreground text-sm">
-                {ui.footer.telLabel}
+                {t.ui.footer.telLabel}
               </dt>
               <dd className="text-sm font-medium">
                 <a href={site.telHref} className="hover:text-primary">
@@ -157,10 +173,10 @@ export default function AboutPage() {
       </ArticleShell>
 
       <CTASection
-        title={about.cta.title}
-        desc={about.cta.desc}
-        cta={about.cta.primary}
-        secondary={about.cta.secondary}
+        title={t.about.cta.title}
+        desc={t.about.cta.desc}
+        cta={t.about.cta.primary}
+        secondary={t.about.cta.secondary}
       />
     </>
   );

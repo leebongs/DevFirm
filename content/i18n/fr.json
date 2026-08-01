@@ -1791,9 +1791,7 @@
           "Personnes qui passent beaucoup de temps sur Excel",
           "Managers souhaitant organiser les tâches de leur service"
         ],
-        "prerequisites": [
-          "Expérience de base avec Excel"
-        ],
+        "prerequisites": ["Expérience de base avec Excel"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1816,10 +1814,7 @@
             "detail": "Organiser ce qui a été créé pour pouvoir le transmettre à l’équipe."
           }
         ],
-        "outcomes": [
-          "3 tâches automatisées",
-          "Document d’utilisation"
-        ],
+        "outcomes": ["3 tâches automatisées", "Document d’utilisation"],
         "careers": [
           "Responsable automatisation de bureau",
           "Responsable amélioration des tâches de service"
@@ -1837,9 +1832,7 @@
           "Leaders d’équipes dont les calendriers dérivent souvent",
           "Responsables devant coordonner avec des donneurs d’ordre"
         ],
-        "prerequisites": [
-          "Expérience de travail en équipe"
-        ],
+        "prerequisites": ["Expérience de travail en équipe"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1867,11 +1860,7 @@
           "Document de gestion des risques",
           "Rapport de rétrospective"
         ],
-        "careers": [
-          "Chef de projet",
-          "Team lead",
-          "Planificateur de service"
-        ]
+        "careers": ["Chef de projet", "Team lead", "Planificateur de service"]
       }
     ],
     "page": {

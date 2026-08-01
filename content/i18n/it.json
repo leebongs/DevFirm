@@ -1791,9 +1791,7 @@
           "Persone che dedicano molto tempo al lavoro in Excel",
           "Manager che vogliono organizzare il lavoro del reparto"
         ],
-        "prerequisites": [
-          "Esperienza di base nell'uso di Excel"
-        ],
+        "prerequisites": ["Esperienza di base nell'uso di Excel"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1816,10 +1814,7 @@
             "detail": "Organizza ciò che è stato costruito in modo che possa essere consegnato al team."
           }
         ],
-        "outcomes": [
-          "Tre attività automatizzate",
-          "Documento guida utente"
-        ],
+        "outcomes": ["Tre attività automatizzate", "Documento guida utente"],
         "careers": [
           "Responsabile automazione d'ufficio",
           "Responsabile miglioramento lavoro di reparto"
@@ -1837,9 +1832,7 @@
           "Team leader i cui calendari continuano a slittare",
           "Persone che devono coordinarsi con i clienti"
         ],
-        "prerequisites": [
-          "Esperienza di lavoro in team"
-        ],
+        "prerequisites": ["Esperienza di lavoro in team"],
         "curriculum": [
           {
             "week": "1~2",
@@ -1867,11 +1860,7 @@
           "Documento di gestione rischi",
           "Report retrospettivo"
         ],
-        "careers": [
-          "Project manager",
-          "Team lead",
-          "Pianificatore di servizi"
-        ]
+        "careers": ["Project manager", "Team lead", "Pianificatore di servizi"]
       }
     ],
     "page": {

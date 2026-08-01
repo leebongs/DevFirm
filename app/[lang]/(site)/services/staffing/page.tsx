@@ -7,34 +7,51 @@ import { FeatureCard } from "@/components/content/feature-card";
 import { StepFlow } from "@/components/content/step-flow";
 import { CTASection } from "@/components/content/cta-section";
 import { buildMetadata } from "@/lib/metadata";
-import { staffing } from "@/content/services";
-import { pageSeo } from "@/content/seo";
+import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
+  return buildMetadata({
+    ...t.seo.page.staffing,
+    path: "/services/staffing",
+    lang: locale,
+  });
+}
 
-export const metadata: Metadata = buildMetadata({
-  ...pageSeo.staffing,
-  path: "/services/staffing",
-});
+export default async function StaffingPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
 
-export default function StaffingPage() {
   return (
     <>
       <PageHero
         photo={photos.servicesStaffingHero}
-        eyebrow={staffing.hero.eyebrow}
-        title={staffing.hero.title}
-        lead={staffing.hero.lead}
+        eyebrow={t.services.staffing.hero.eyebrow}
+        title={t.services.staffing.hero.title}
+        lead={t.services.staffing.hero.lead}
       />
 
       <ArticleShell href="/services/staffing">
         <section>
           <SectionHeading
-            id={staffing.difference.id}
-            eyebrow={staffing.difference.eyebrow}
-            title={staffing.difference.title}
-            lead={staffing.difference.lead}
+            id={t.services.staffing.difference.id}
+            eyebrow={t.services.staffing.difference.eyebrow}
+            title={t.services.staffing.difference.title}
+            lead={t.services.staffing.difference.lead}
           />
           <div className="mt-8 grid gap-5 sm:grid-cols-2">
-            {staffing.difference.items.map((item) => (
+            {t.services.staffing.difference.items.map((item) => (
               <FeatureCard
                 key={item.title}
                 title={item.title}
@@ -46,12 +63,12 @@ export default function StaffingPage() {
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={staffing.formats.id}
-            eyebrow={staffing.formats.eyebrow}
-            title={staffing.formats.title}
+            id={t.services.staffing.formats.id}
+            eyebrow={t.services.staffing.formats.eyebrow}
+            title={t.services.staffing.formats.title}
           />
           <div className="mt-8 grid gap-5 sm:grid-cols-3">
-            {staffing.formats.items.map((item) => (
+            {t.services.staffing.formats.items.map((item) => (
               <FeatureCard
                 key={item.title}
                 title={item.title}
@@ -63,18 +80,21 @@ export default function StaffingPage() {
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
-            id={staffing.process.id}
-            eyebrow={staffing.process.eyebrow}
-            title={staffing.process.title}
+            id={t.services.staffing.process.id}
+            eyebrow={t.services.staffing.process.eyebrow}
+            title={t.services.staffing.process.title}
           />
-          <StepFlow className="mt-8" steps={staffing.process.steps} />
+          <StepFlow
+            className="mt-8"
+            steps={t.services.staffing.process.steps}
+          />
         </section>
       </ArticleShell>
 
       <CTASection
-        title={staffing.cta.title}
-        desc={staffing.cta.desc}
-        cta={staffing.cta.primary}
+        title={t.services.staffing.cta.title}
+        desc={t.services.staffing.cta.desc}
+        cta={t.services.staffing.cta.primary}
       />
     </>
   );
