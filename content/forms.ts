@@ -53,7 +53,7 @@ export const forms = {
   apply: {
     hero: {
       eyebrow: "수강 신청",
-      title: "과정 신청서",
+      title: "아카데미 과정 신청서",
       lead: "지금 수준에 맞는 과정인지 함께 확인한 뒤 배정합니다.",
     },
     levels: [

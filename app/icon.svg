@@ -3,15 +3,24 @@
     scripts/generate-logo.mjs 가 생성합니다. 직접 고치지 마세요 —
     헤더 워드마크와 같은 레터폼을 공유해야 하므로 그리드 상수를 고쳐야 합니다.
 
+    브라우저 탭 파비콘. 타일 없이 레터폼만 쓴다 — 타일을 씌우면 헤더 로고와
+    다른 물건처럼 보인다. 애플 터치 아이콘(app/apple-icon.png)은 반대로
+    타일 버전을 쓴다. iOS 가 투명 PNG 를 검정 위에 합성하기 때문이다.
+
     색은 사이트 토큰과 같은 값(oklch → sRGB):
-      #162e50 = --brand (Firm Navy)
+      #0f1926 = --foreground (Ink)
       #f6f9fc = --brand-foreground
       #00bbcb = --highlight (Circuit Cyan)
   -->
-  <rect width="64" height="64" rx="14" fill="#162e50"/>
-  <g transform="translate(12 14) scale(0.4)" fill="#f6f9fc">
+  <style>
+    /* 밝은 탭에서는 잉크색, 어두운 탭에서는 밝은색. 파비콘은 배경을 갖지
+       않으므로 이 전환이 없으면 둘 중 한쪽에서 마크가 사라진다. */
+    .mark { fill: #0f1926 }
+    @media (prefers-color-scheme: dark) { .mark { fill: #f6f9fc } }
+  </style>
+  <g transform="translate(2 4.8) scale(0.6)" class="mark">
     <path d="M0,2 H17 A35,35 0 0 1 17,72 H0 Z M14,59.5 H17 A22.5,22.5 0 0 0 17,14.5 H14 Z"/>
     <path transform="translate(60 0)" d="M0,2 H40 V14.5 H14 V33 H34 V45.5 H14 V72 H0 Z"/>
   </g>
-  <rect x="12" y="47" width="40" height="3" rx="1.5" fill="#00bbcb"/>
+  <rect x="2" y="52" width="60" height="4" rx="2" fill="#00bbcb"/>
 </svg>

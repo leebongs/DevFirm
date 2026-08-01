@@ -88,6 +88,17 @@ export const photos = {
     height: 1018,
   },
 
+  /**
+   * 아카데미 학습 장면. 사이트에서 학습자가 찍힌 유일한 사진이다 —
+   * 나머지 13장은 전부 사무·산업·시설이라 개인 수강생이 자기를 대입할 그림이 없었다.
+   */
+  academyProject: {
+    base: "/images/photo/academy-project",
+    width: 1600,
+    height: 1073,
+    alt: "학습자들이 화면과 벽면 메모를 보며 프로젝트 역할을 나누는 스튜디오",
+  },
+
   solutionsIndustrial: {
     base: "/images/photo/solutions-industrial",
     width: 1600,

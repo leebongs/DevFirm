@@ -18,7 +18,7 @@ const OUT = join(ROOT, ".preview");
 const dirs = process.argv.slice(2);
 const targets = dirs.length
   ? dirs
-  : ["model", "workspace", "map", "agents", "hero", "cards"];
+  : ["model", "workspace", "map", "agents", "hero", "cards", "concept"];
 
 if (!existsSync(OUT)) mkdirSync(OUT, { recursive: true });
 

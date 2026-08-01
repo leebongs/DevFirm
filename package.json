@@ -18,6 +18,7 @@
     "gen:logo": "node scripts/generate-logo.mjs",
     "gen:icons": "node scripts/generate-icons.mjs",
     "gen:png": "node scripts/generate-image-png.mjs",
+    "gen:photo": "node scripts/optimize-photos.mjs",
     "preview:art": "node scripts/preview-illustrations.mjs",
     "test:e2e": "playwright test",
     "test:lh": "lhci autorun",

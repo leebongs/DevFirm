@@ -241,25 +241,55 @@ ${glyphGroups(false)}
 );
 
 /**
- * 엠블렘 — 워드마크의 D·F 를 그대로 축소해 네이비 타일에 앉힌다.
- * 하단 시안 바는 기존 파비콘에서 이어받은 브랜드 요소다.
+ * 마크 — 워드마크의 D·F 를 그대로 축소해 쓴다.
+ *
+ * 두 벌이 필요하다.
+ *
+ *  1. `plain` — 타일 없이 레터폼만. **브라우저 탭 파비콘용.**
+ *     타일을 씌우면 헤더 워드마크와 다른 물건처럼 보인다. 배경이 없으므로
+ *     어두운 탭에서 잉크색 글자가 묻히는데, SVG 파비콘은 자기 안에서
+ *     `prefers-color-scheme` 을 볼 수 있으므로 거기서 색을 뒤집는다.
+ *
+ *  2. `tile` — 네이비 라운드 사각형 위에. **애플 터치 아이콘·헤더 엠블렘용.**
+ *     iOS 는 투명 PNG 를 검정 위에 합성하므로 홈화면 아이콘은 반드시 불투명해야
+ *     한다. 타일을 벗기면 글자가 그대로 사라진다.
  */
 const D = glyphD();
 const F = glyphF();
 const DF_GAP = 8;
 const dfW = D.w + DF_GAP + F.w; // 100
 const TILE = 64;
-const MARK_W = 40;
-const scale = r2(MARK_W / dfW);
-const markX = (TILE - MARK_W) / 2;
-const markY = 14;
 
-const emblemBody = `  <rect width="${TILE}" height="${TILE}" rx="14" fill="#162e50"/>
-  <g transform="translate(${markX} ${markY}) scale(${scale})" fill="#f6f9fc">
+/** DF 글리프 두 개를 한 <g> 로 묶어 낸다 */
+const dfGroup = (x, y, scale, fill) =>
+  `  <g transform="translate(${x} ${y}) scale(${scale})" fill="${fill}">
     <path d="${D.d}"/>
     <path transform="translate(${D.w + DF_GAP} 0)" d="${F.d}"/>
-  </g>
-  <rect x="${markX}" y="47" width="${MARK_W}" height="3" rx="1.5" fill="#00bbcb"/>`;
+  </g>`;
+
+// ── 타일 버전 (애플 아이콘·헤더 엠블렘) ────────────────────────────────
+const TILE_MARK_W = 40;
+const tileScale = r2(TILE_MARK_W / dfW);
+const tileX = (TILE - TILE_MARK_W) / 2;
+const emblemTile = `  <rect width="${TILE}" height="${TILE}" rx="14" fill="#162e50"/>
+${dfGroup(tileX, 14, tileScale, "#f6f9fc")}
+  <rect x="${tileX}" y="47" width="${TILE_MARK_W}" height="3" rx="1.5" fill="#00bbcb"/>`;
+
+// ── 타일 없는 버전 (파비콘) ───────────────────────────────────────────
+// 배경이 없으므로 글자를 상자에 꽉 채운다. 타일 버전(40/64)보다 1.5배 크다.
+const PLAIN_MARK_W = 60;
+const plainScale = r2(PLAIN_MARK_W / dfW); // 0.6
+const plainX = (TILE - PLAIN_MARK_W) / 2; // 2
+// 글리프 캡 상단이 y=2 이므로, 화면상 y=6 에 오려면 translate y 는 6 - 2*scale
+const plainY = r2(6 - CAP * plainScale);
+const emblemPlain = `  <style>
+    /* 밝은 탭에서는 잉크색, 어두운 탭에서는 밝은색. 파비콘은 배경을 갖지
+       않으므로 이 전환이 없으면 둘 중 한쪽에서 마크가 사라진다. */
+    .mark { fill: #0f1926 }
+    @media (prefers-color-scheme: dark) { .mark { fill: #f6f9fc } }
+  </style>
+${dfGroup(plainX, plainY, plainScale, "currentColor").replace('fill="currentColor"', 'class="mark"')}
+  <rect x="${plainX}" y="52" width="${PLAIN_MARK_W}" height="4" rx="2" fill="#00bbcb"/>`;
 
 writeFileSync(
   join(ROOT, "app/icon.svg"),
@@ -268,12 +298,26 @@ writeFileSync(
     scripts/generate-logo.mjs 가 생성합니다. 직접 고치지 마세요 —
     헤더 워드마크와 같은 레터폼을 공유해야 하므로 그리드 상수를 고쳐야 합니다.
 
+    브라우저 탭 파비콘. 타일 없이 레터폼만 쓴다 — 타일을 씌우면 헤더 로고와
+    다른 물건처럼 보인다. 애플 터치 아이콘(app/apple-icon.png)은 반대로
+    타일 버전을 쓴다. iOS 가 투명 PNG 를 검정 위에 합성하기 때문이다.
+
     색은 사이트 토큰과 같은 값(oklch → sRGB):
-      #162e50 = --brand (Firm Navy)
+      #0f1926 = --foreground (Ink)
       #f6f9fc = --brand-foreground
       #00bbcb = --highlight (Circuit Cyan)
   -->
-${emblemBody}
+${emblemPlain}
+</svg>
+`,
+);
+
+/** 애플 터치 아이콘 원본 — generate-icons.mjs 가 이 파일을 PNG 로 굽는다 */
+writeFileSync(
+  join(ROOT, "assets/logo/emblem-tile.svg"),
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${TILE} ${TILE}" role="img" aria-label="DevFirm">
+  <!-- scripts/generate-logo.mjs 생성물. 애플 터치 아이콘 전용(불투명 필수). -->
+${emblemTile}
 </svg>
 `,
 );
@@ -299,7 +343,7 @@ export function BrandLogo({ className }: { className?: string }) {
     <span className={cn("inline-flex items-center gap-2.5", className)}>
       {/* 엠블렘 — app/icon.svg 와 같은 조형 */}
       <svg viewBox="0 0 ${TILE} ${TILE}" width="26" height="26" aria-hidden className="shrink-0">
-${emblemBody
+${emblemTile
   .split("\n")
   .map((l) => "  " + toJsx(l.trimEnd()))
   .join("\n")}

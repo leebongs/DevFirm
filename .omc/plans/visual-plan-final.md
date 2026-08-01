@@ -323,3 +323,50 @@ iframe 이 940px 뷰포트의 `top: 708px` 에 있어 `loading="lazy"` 가 **지
     문서 불일치(README 9 / image-plan 10 / 실제 11)
   - LH 측정 URL 확대 (Q-5) — 로컬 수집으로 ≥95 확인 후에만 커밋
   - `scripts/check-contrast.mjs` 가 컴포넌트를 보지 않는다는 사실을 README 에 명시
+
+---
+
+## 실행 기록 (2026-08-01)
+
+Q-3 폐기 승인 · Q-4 "실촬영 계획 없음" 답변으로 Phase 0~3 이 해제됐다.
+
+| 단계 | 결과 |
+|---|---|
+| **Phase 0** | `gen:photo` 추가(**인자 필터 포함**) · `preview:art` 에 `concept` 추가 · `illustrations.home` 과 `hero-home.svg` 삭제 |
+| **Phase 1** | `/solutions/office-ai` `physical` 에 `illustrations.twoAxes` 배치. 신규 바이트 0 |
+| **Phase 2** | `/academy` `photos.academyProject` 신규 1장 (AVIF 77KB) |
+| **Phase 3** | `public/images/concept/concept-pbl-inversion.svg` 생성 (1.7KB) · `illustrations.pblInversion` 등록 |
+| 추가 | `academy-hero` 재생성 (한국인 강사·수강생 / 스타트업 인테리어 강의실) |
+| 추가 | 파비콘을 **타일 없는 레터폼**으로 교체 (§파비콘) |
+| 보류 | A(`staffing.difference` 카피) · B(`/contact` 지도 라이선스) — 답 대기 중 |
+
+**인자 필터의 효과 확인**: `node scripts/optimize-photos.mjs about-team` 실행 후
+`git status -- public/images/photo` 가 비어 있었다. 현재 sharp 버전이 커밋 당시와
+같아 바이트가 동일했다는 뜻이다. 필터는 그대로 둔다 — 버전 드리프트는 미래 위험이다.
+
+**사진 반려 2회**: 1차는 얼굴이 식별되고 학습자가 아니라 임원 회의로 읽혔다.
+2차는 좌측에 검은 생성 아티팩트가 있었다. 3차 채택.
+프롬프트에 "every person has their back to the camera" 를 명시하고 방 묘사를
+구체적으로(오크 슬랫 월·유리 파티션·노출 콘크리트) 준 뒤에야 통과했다 —
+image-plan §5 의 "명사가 아니라 치수로" 원칙이 사진에도 같은 방식으로 적용된다.
+
+### 파비콘 — 타일 없는 레터폼으로 교체
+
+**문제**: 로고 작업에서 파비콘을 "새로 디자인했다"고 했으나, 기존 DF 모노그램 +
+시안 바 구성을 그대로 유지해 **눈으로는 전과 구별되지 않았다.**
+
+**변경**: `app/icon.svg` 를 네이비 타일 없이 잉크색 레터폼만으로 다시 짰다.
+글자가 상자를 꽉 채우므로(60/64, 종전 40/64) 16px 탭에서 가독성도 올라간다.
+
+**갈라 둔 두 가지**
+
+1. **애플 터치 아이콘은 타일을 유지한다.** iOS 는 투명 PNG 를 검정 위에 합성하므로
+   홈화면에서 잉크색 글자가 그대로 사라진다. `assets/logo/emblem-tile.svg` 를
+   따로 내고 `scripts/generate-icons.mjs` 가 그것을 굽는다.
+2. **다크 탭 대응을 SVG 안에 넣었다.** 배경이 없으므로 어두운 탭에서 잉크색이 묻힌다.
+   SVG 파비콘은 자기 문서 안에서 `prefers-color-scheme` 을 볼 수 있어
+   `<style>` 한 블록으로 색을 뒤집는다. (일러스트 자산의 `<style>` 금지 규칙은
+   여기 적용되지 않는다 — 그 규칙은 본문 삽화용이다.)
+
+헤더 `BrandLogo` 의 엠블렘은 타일 버전을 유지한다. 워드마크 옆에서 네이비 면이
+마크의 무게를 잡아 주고, 헤더는 배경색이 고정이라 다크 탭 문제가 없다.

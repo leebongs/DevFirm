@@ -91,9 +91,16 @@ async function renderOg(browser) {
 }
 
 const browser = await chromium.launch();
-const icon = read("app/icon.svg");
 
-// Apple 터치 아이콘은 SVG 를 받지 않는다. 180×180 PNG 가 필요하다.
+/*
+ * Apple 터치 아이콘은 SVG 를 받지 않는다. 180×180 PNG 가 필요하다.
+ *
+ * 원본은 app/icon.svg 가 아니라 **타일 버전**이다. 브라우저 탭 파비콘은 배경 없이
+ * 레터폼만 쓰는데, iOS 는 투명 PNG 를 검정 위에 합성하므로 홈화면에서 잉크색
+ * 글자가 그대로 사라진다. 불투명 타일이 필요한 쪽은 이쪽뿐이다.
+ */
+const icon = read("assets/logo/emblem-tile.svg");
+
 await renderSvg(browser, {
   svg: icon,
   width: 180,

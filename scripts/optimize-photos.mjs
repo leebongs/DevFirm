@@ -14,7 +14,7 @@
  */
 import sharp from "sharp";
 import { readdirSync, statSync, existsSync, mkdirSync, rmSync } from "node:fs";
-import { join, dirname, basename } from "node:path";
+import { join, dirname, basename, extname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -39,7 +39,26 @@ if (!existsSync(SRC)) {
 }
 if (!existsSync(OUT)) mkdirSync(OUT, { recursive: true });
 
-const files = readdirSync(SRC).filter((f) => /\.(png|jpe?g)$/i.test(f));
+/*
+ * 인자를 주면 그 이름들만 굽는다: `node scripts/optimize-photos.mjs academy-project`
+ *
+ * 인자가 없으면 전부 다시 굽는데, 그것이 위험한 이유는 삭제가 아니라 **재인코딩**이다.
+ * 원본은 gitignore 라 로컬에만 있고, sharp/libavif 버전이 커밋 당시와 다르면
+ * 손대지 않은 사진의 바이트가 달라져 PR 에 바이너리 diff 가 무더기로 붙는다.
+ * 산출 치수까지 달라지면 content/photos.ts 와 어긋나 **다른 페이지에서 CLS 가 난다.**
+ * 사진 한 장을 추가할 때는 그 한 장만 지목해야 한다.
+ */
+const only = new Set(process.argv.slice(2));
+const files = readdirSync(SRC)
+  .filter((f) => /\.(png|jpe?g)$/i.test(f))
+  .filter((f) => only.size === 0 || only.has(basename(f, extname(f))));
+
+if (only.size > 0 && files.length !== only.size) {
+  const found = new Set(files.map((f) => basename(f, extname(f))));
+  const missing = [...only].filter((n) => !found.has(n));
+  console.error(`원본을 찾지 못했습니다: ${missing.join(", ")}`);
+  process.exit(1);
+}
 if (files.length === 0) {
   console.error("원본 사진이 없습니다.");
   process.exit(1);
