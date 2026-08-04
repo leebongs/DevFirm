@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/table";
 import { CourseJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
+import { fillTemplate } from "@/lib/template";
 import {
   DEFAULT_LOCALE,
   isLocale,
@@ -53,7 +54,10 @@ export async function generateMetadata({
 
   return buildMetadata({
     title: course.title,
-    description: t.courses.page.seoDescription(course),
+    description: fillTemplate(t.courses.page.seoDescription, {
+      title: course.title,
+      summary: course.summary,
+    }),
     path: `/academy/courses/${course.slug}`,
   });
 }

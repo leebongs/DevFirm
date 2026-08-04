@@ -101,6 +101,7 @@ for (const { code } of locales) {
   const missing = [];
   const arrayMismatch = [];
   const literalChanged = [];
+  const placeholderLost = [];
   const untranslated = [];
 
   for (const [path, s] of src) {
@@ -124,6 +125,22 @@ for (const { code } of locales) {
     } else if (!mustMatch && hangul.test(s.value) && t.value === s.value) {
       untranslated.push(path);
     }
+
+    /*
+     * 자리표시자 보존.
+     *
+     * `{team}` 을 번역기가 `{팀}` 으로 바꾸면 치환이 조용히 실패해 문장에
+     * 중괄호가 그대로 노출된다. 화면에는 나오고 게이트도 통과하므로
+     * 여기서 이름 집합을 대조한다.
+     */
+    if (typeof t.value === "string") {
+      const names = (v) => (v.match(/\{\w+\}/g) ?? []).sort().join(",");
+      if (names(s.value) !== names(t.value)) {
+        placeholderLost.push(
+          `${path}\n      원본 ${names(s.value) || "(없음)"}\n      번역 ${names(t.value) || "(없음)"}`,
+        );
+      }
+    }
   }
 
   const extra = [...tgt.keys()].filter((p) => !src.has(p));
@@ -131,7 +148,8 @@ for (const { code } of locales) {
     missing.length +
     extra.length +
     arrayMismatch.length +
-    literalChanged.length;
+    literalChanged.length +
+    placeholderLost.length;
   if (hard > 0) failed = true;
 
   rows.push({
@@ -140,6 +158,7 @@ for (const { code } of locales) {
     extra,
     arrayMismatch,
     literalChanged,
+    placeholderLost,
     untranslated,
     total: src.size,
   });
@@ -154,7 +173,8 @@ for (const r of rows) {
     r.missing.length +
     r.extra.length +
     r.arrayMismatch.length +
-    r.literalChanged.length;
+    r.literalChanged.length +
+    r.placeholderLost.length;
   const mark = hard === 0 ? "✔" : "✖";
   const warn = r.untranslated.length
     ? `  · 미번역 ${r.untranslated.length}`
@@ -163,12 +183,15 @@ for (const r of rows) {
     `${mark} ${r.code.padEnd(6)} 누락 ${String(r.missing.length).padStart(4)}` +
       `  초과 ${String(r.extra.length).padStart(3)}` +
       `  배열 ${String(r.arrayMismatch.length).padStart(3)}` +
-      `  링크변경 ${String(r.literalChanged.length).padStart(3)}${warn}`,
+      `  링크변경 ${String(r.literalChanged.length).padStart(3)}` +
+      `  자리표시자 ${String(r.placeholderLost.length).padStart(2)}${warn}`,
   );
   for (const p of r.missing.slice(0, 4)) console.error(`    누락 ${p}`);
   for (const p of r.extra.slice(0, 4)) console.error(`    초과 ${p}`);
   for (const p of r.arrayMismatch.slice(0, 4)) console.error(`    배열 ${p}`);
   for (const p of r.literalChanged.slice(0, 3)) console.error(`    링크 ${p}`);
+  for (const p of r.placeholderLost.slice(0, 3))
+    console.error(`    자리표시자 ${p}`);
 }
 
 if (failed) {

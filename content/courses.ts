@@ -24,8 +24,13 @@ export const coursesPage = {
     detail: "내용",
     apply: "수강 신청",
   },
-  seoDescription: (course: Pick<Course, "title" | "summary">) =>
-    `${course.title} — ${course.summary}`,
+  /**
+   * 과정 상세의 SEO 설명문.
+   *
+   * 함수가 아니라 자리표시자를 가진 문자열이다 — 함수는 JSON 직렬화에서
+   * 사라져 번역 파이프라인을 타지 못한다(lib/template.ts 참고).
+   */
+  seoDescription: "{title} — {summary}",
   cta: {
     title: "신청 전에 물어보셔도 됩니다",
     desc: "지금 수준으로 따라갈 수 있을지 먼저 확인해 드립니다.",

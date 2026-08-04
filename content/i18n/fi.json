@@ -18,7 +18,8 @@
       "breadcrumbLabel": "Nykyinen sijainti",
       "home": "Etusivu",
       "skipToContent": "Siirry sisältöön",
-      "externalLink": "Avautuu uuteen ikkunaan"
+      "externalLink": "Avautuu uuteen ikkunaan",
+      "language": "Valitse kieli"
     },
     "toc": {
       "title": "Tämän sivun sisältö"
@@ -718,7 +719,8 @@
           "label": "Tutustu CIC-malliin",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "Haemme {title}-tehtävään tiimiin {team}. {responsibility}"
     },
     "jobs": [
       {
@@ -1894,7 +1896,8 @@
           "label": "Ota yhteyttä",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

@@ -18,7 +18,8 @@
       "breadcrumbLabel": "Lokasi semasa",
       "home": "Laman utama",
       "skipToContent": "Langkau ke kandungan",
-      "externalLink": "Dibuka dalam tetingkap baharu"
+      "externalLink": "Dibuka dalam tetingkap baharu",
+      "language": "Pilih bahasa"
     },
     "toc": {
       "title": "Kandungan halaman ini"
@@ -718,7 +719,8 @@
           "label": "Ketahui CIC",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "Kami sedang mencari {title} untuk pasukan {team}. {responsibility}"
     },
     "jobs": [
       {
@@ -1898,7 +1900,8 @@
           "label": "Hubungi Kami",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

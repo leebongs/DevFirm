@@ -18,7 +18,8 @@
       "breadcrumbLabel": "ตำแหน่งปัจจุบัน",
       "home": "หน้าแรก",
       "skipToContent": "ข้ามไปยังเนื้อหา",
-      "externalLink": "เปิดในหน้าต่างใหม่"
+      "externalLink": "เปิดในหน้าต่างใหม่",
+      "language": "เลือกภาษา"
     },
     "toc": {
       "title": "เนื้อหาในหน้านี้"
@@ -718,7 +719,8 @@
           "label": "ดูข้อมูล CIC",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "เรากำลังรับสมัครตำแหน่ง {title} ในทีม {team} {responsibility}"
     },
     "jobs": [
       {
@@ -1894,7 +1896,8 @@
           "label": "ติดต่อเรา",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

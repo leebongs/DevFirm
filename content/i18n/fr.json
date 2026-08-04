@@ -18,7 +18,8 @@
       "breadcrumbLabel": "Position actuelle",
       "home": "Accueil",
       "skipToContent": "Aller au contenu",
-      "externalLink": "S’ouvre dans une nouvelle fenêtre"
+      "externalLink": "S’ouvre dans une nouvelle fenêtre",
+      "language": "Choisir la langue"
     },
     "toc": {
       "title": "Contenu de cette page"
@@ -718,7 +719,8 @@
           "label": "Découvrir le CIC",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "Nous recrutons un {title} pour l'équipe {team}. {responsibility}"
     },
     "jobs": [
       {
@@ -1894,7 +1896,8 @@
           "label": "Nous contacter",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

@@ -18,7 +18,8 @@
       "breadcrumbLabel": "Lokasi saat ini",
       "home": "Beranda",
       "skipToContent": "Lewati ke konten",
-      "externalLink": "Dibuka dalam jendela baru"
+      "externalLink": "Dibuka dalam jendela baru",
+      "language": "Pilih bahasa"
     },
     "toc": {
       "title": "Konten halaman ini"
@@ -718,7 +719,8 @@
           "label": "Pelajari CIC",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "Kami membuka lowongan {title} untuk tim {team}. {responsibility}"
     },
     "jobs": [
       {
@@ -1894,7 +1896,8 @@
           "label": "Hubungi Kami",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

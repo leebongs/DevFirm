@@ -7,6 +7,7 @@ import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { CTASection } from "@/components/content/cta-section";
 import { Badge } from "@/components/ui/badge";
 import { buildMetadata } from "@/lib/metadata";
+import { fillTemplate } from "@/lib/template";
 import {
   DEFAULT_LOCALE,
   isLocale,
@@ -49,7 +50,11 @@ export async function generateMetadata({
 
   return buildMetadata({
     title: job.title,
-    description: t.careers.page.seoDescription(job),
+    description: fillTemplate(t.careers.page.seoDescription, {
+      team: job.team,
+      title: job.title,
+      responsibility: job.responsibilities[0] ?? "",
+    }),
     path: `/about/careers/${job.slug}`,
   });
 }

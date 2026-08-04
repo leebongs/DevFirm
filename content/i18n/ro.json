@@ -18,7 +18,8 @@
       "breadcrumbLabel": "Locația curentă",
       "home": "Acasă",
       "skipToContent": "Sari la conținut",
-      "externalLink": "Se deschide într-o fereastră nouă"
+      "externalLink": "Se deschide într-o fereastră nouă",
+      "language": "Selectează limba"
     },
     "toc": {
       "title": "Conținutul acestei pagini"
@@ -718,7 +719,8 @@
           "label": "Aflați despre CIC",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "Recrutăm pentru poziția {title} în echipa {team}. {responsibility}"
     },
     "jobs": [
       {
@@ -1898,7 +1900,8 @@
           "label": "Contact",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

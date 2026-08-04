@@ -18,7 +18,8 @@
       "breadcrumbLabel": "वर्तमान स्थान",
       "home": "होम",
       "skipToContent": "मुख्य सामग्री पर जाएं",
-      "externalLink": "नई विंडो में खुलता है"
+      "externalLink": "नई विंडो में खुलता है",
+      "language": "भाषा चुनें"
     },
     "toc": {
       "title": "इस पेज की सामग्री"
@@ -718,7 +719,8 @@
           "label": "CIC देखें",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "हम {team} टीम में {title} पद के लिए नियुक्ति कर रहे हैं। {responsibility}"
     },
     "jobs": [
       {
@@ -1884,7 +1886,8 @@
           "label": "पूछताछ करें",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

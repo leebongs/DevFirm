@@ -18,7 +18,8 @@
       "breadcrumbLabel": "Current location",
       "home": "Home",
       "skipToContent": "Skip to content",
-      "externalLink": "Opens in a new window"
+      "externalLink": "Opens in a new window",
+      "language": "Select language"
     },
     "toc": {
       "title": "Contents on this page"
@@ -718,7 +719,8 @@
           "label": "Learn About CIC",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "We are hiring for the {title} position on the {team} team. {responsibility}"
     },
     "jobs": [
       {
@@ -1894,7 +1896,8 @@
           "label": "Contact Us",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

@@ -18,7 +18,8 @@
       "breadcrumbLabel": "Nuvarande plats",
       "home": "Hem",
       "skipToContent": "Gå till innehåll",
-      "externalLink": "Öppnas i nytt fönster"
+      "externalLink": "Öppnas i nytt fönster",
+      "language": "Välj språk"
     },
     "toc": {
       "title": "Innehåll på sidan"
@@ -718,7 +719,8 @@
           "label": "Läs om CIC",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "Vi rekryterar till rollen {title} i teamet {team}. {responsibility}"
     },
     "jobs": [
       {
@@ -1894,7 +1896,8 @@
           "label": "Kontakta oss",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

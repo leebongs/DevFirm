@@ -18,7 +18,8 @@
       "breadcrumbLabel": "Vị trí hiện tại",
       "home": "Trang chủ",
       "skipToContent": "Chuyển đến nội dung",
-      "externalLink": "Mở trong cửa sổ mới"
+      "externalLink": "Mở trong cửa sổ mới",
+      "language": "Chọn ngôn ngữ"
     },
     "toc": {
       "title": "Nội dung trang này"
@@ -718,7 +719,8 @@
           "label": "Tìm hiểu CIC",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "Chúng tôi đang tuyển vị trí {title} cho nhóm {team}. {responsibility}"
     },
     "jobs": [
       {
@@ -1901,7 +1903,8 @@
           "label": "Liên hệ",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

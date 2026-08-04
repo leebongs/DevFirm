@@ -18,7 +18,8 @@
       "breadcrumbLabel": "現在位置",
       "home": "ホーム",
       "skipToContent": "本文へ移動",
-      "externalLink": "新しいウィンドウで開く"
+      "externalLink": "新しいウィンドウで開く",
+      "language": "言語を選択"
     },
     "toc": {
       "title": "このページの内容"
@@ -718,7 +719,8 @@
           "label": "CICについて知る",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "{team}チームの{title}ポジションを募集しています。{responsibility}"
     },
     "jobs": [
       {
@@ -1872,7 +1874,8 @@
           "label": "お問い合わせ",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {

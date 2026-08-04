@@ -23,9 +23,13 @@ export const careersPage = {
     deadline: "마감",
     apply: "지원하기",
   },
-  /** 공고 상세 페이지의 SEO 설명문(A9 고유 description) */
-  seoDescription: (job: Pick<JobPost, "team" | "title" | "responsibilities">) =>
-    `${job.team} 팀 ${job.title} 포지션을 모집합니다. ${job.responsibilities[0] ?? ""}`,
+  /**
+   * 공고 상세 페이지의 SEO 설명문(A9 고유 description).
+   *
+   * 함수가 아니라 자리표시자를 가진 문자열이다 — 함수는 JSON 직렬화에서
+   * 사라져 번역 파이프라인을 타지 못한다(lib/template.ts 참고).
+   */
+  seoDescription: "{team} 팀 {title} 포지션을 모집합니다. {responsibility}",
   /** 지원 메일 제목 */
   applySubject: (title: string) => `[지원] ${title}`,
   cta: {

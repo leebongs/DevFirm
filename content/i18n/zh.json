@@ -18,7 +18,8 @@
       "breadcrumbLabel": "当前位置",
       "home": "首页",
       "skipToContent": "跳到正文",
-      "externalLink": "在新窗口打开"
+      "externalLink": "在新窗口打开",
+      "language": "选择语言"
     },
     "toc": {
       "title": "本页内容"
@@ -718,7 +719,8 @@
           "label": "了解CIC",
           "href": "/about/cic"
         }
-      }
+      },
+      "seoDescription": "我们正在为{team}团队招聘{title}职位。{responsibility}"
     },
     "jobs": [
       {
@@ -1829,7 +1831,8 @@
           "label": "咨询",
           "href": "/contact"
         }
-      }
+      },
+      "seoDescription": "{title} — {summary}"
     }
   },
   "workspace": {
