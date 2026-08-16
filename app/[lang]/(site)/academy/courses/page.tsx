@@ -44,7 +44,11 @@ export default async function CoursesPage({
       <Container className="py-12 lg:py-16">
         <Breadcrumb href="/academy/courses" />
         <div className="mt-8">
-          <CourseFilterTabs />
+          <CourseFilterTabs
+            courses={t.courses.list}
+            coursesPage={t.courses.page}
+            SCHOOLS={t.academy.schools}
+          />
         </div>
       </Container>
 

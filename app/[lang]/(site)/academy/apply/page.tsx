@@ -45,7 +45,7 @@ export default async function ApplyPage({
 
         <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-16">
           <div className="max-w-[42rem] min-w-0">
-            <ApplyForm />
+            <ApplyForm t={t.forms.apply} courses={t.courses.list} />
           </div>
 
           <aside className="border-border h-fit rounded-lg border p-5">

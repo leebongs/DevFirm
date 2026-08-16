@@ -5,6 +5,8 @@ import { home } from "./home";
 import { about } from "./about";
 import { cic } from "./cic";
 import { careersPage, jobs } from "./careers";
+
+const { applySubject: _jobSubject, ...careersCopy } = careersPage;
 import { solutions, physicalAi, officeAi, agentPage } from "./solutions";
 import { agents } from "./agents";
 import { services, software, staffing } from "./services";
@@ -12,6 +14,10 @@ import { academy, SCHOOLS } from "./academy";
 import { courses, coursesPage } from "./courses";
 import { workspace } from "./workspace";
 import { forms } from "./forms";
+
+// 서버 액션 전용 함수를 떼어낸 폼 문구. 아래 dictionary 의 forms 주석 참고.
+const { mailSubject: _contactSubject, ...contactCopy } = forms.contact;
+const { mailSubject: _applySubject, ...applyCopy } = forms.apply;
 import { legalUi, privacy, terms, legalUpdatedAt } from "./legal";
 import { homeSeo, pageSeo, ogImageAlt } from "./seo";
 
@@ -48,14 +54,26 @@ export const dictionary = {
   home,
   about,
   cic,
-  careers: { page: careersPage, jobs },
+  // applySubject 도 함수라 같은 이유로 뺀다(mailto 제목, 페이지가 직접 쓴다)
+  careers: { page: careersCopy, jobs },
   solutions: { hub: solutions, physicalAi, officeAi, agentPage },
   agents,
   services: { hub: services, software, staffing },
   academy: { page: academy, schools: SCHOOLS },
   courses: { list: courses, page: coursesPage },
   workspace,
-  forms,
+  /**
+   * 폼 문구. **메일 제목 함수는 뺀다.**
+   *
+   * 두 가지 이유가 겹친다. 함수는 JSON 을 타지 못해 어차피 번역되지 않고
+   * (회사로 오는 메일이라 한국어가 맞다), 폼 문구는 클라이언트 컴포넌트로
+   * 넘어가는데 **함수는 서버→클라이언트 경계를 넘지 못해 빌드가 죽는다.**
+   * 서버 액션은 content/forms.ts 에서 직접 가져다 쓴다.
+   */
+  forms: {
+    contact: contactCopy,
+    apply: applyCopy,
+  },
   legal: { ui: legalUi, privacy, terms, updatedAt: legalUpdatedAt },
   seo: { home: homeSeo, page: pageSeo, ogImageAlt },
 } as const;

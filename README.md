@@ -185,6 +185,10 @@ pnpm check:i18n                    # 키·배열길이·URL 불변 대조 (verif
   그 부분집합이다. 여기 없는 것(자산 경로·치수·사업자번호)은 번역 대상이 아니다.
 - 서버 컴포넌트는 `getDictionary(locale)` 로 받고, **클라이언트 컴포넌트는
   프롭으로 받는다** — `lib/i18n.ts` 는 `server-only` 다.
+- **사전에 함수를 넣지 않는다.** 함수는 서버→클라이언트 경계를 넘지 못해
+  빌드가 죽는다(`Functions cannot be passed directly to Client Components`).
+  메일 제목 함수 셋은 `content/dictionary.ts` 에서 떼어내며, 서버 액션이
+  `content/forms.ts`·`careers.ts` 에서 직접 가져다 쓴다.
 - 내비 데이터의 href 는 언어를 모르는 논리 경로다. 렌더할 때 `localeHref` 로
   접두사를 붙이고, 활성 판정 전에 `stripLocale` 로 뗀다. **둘 중 하나를 빠뜨리면
   섹션 탭이 통째로 사라진다** — 실제로 그렇게 깨졌었다.

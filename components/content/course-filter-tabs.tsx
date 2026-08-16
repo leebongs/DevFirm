@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { courses, coursesPage } from "@/content/courses";
-import { SCHOOLS } from "@/content/academy";
+import { localeFromPath, localeHref } from "@/lib/locale-href";
+import type { Dictionary } from "@/content/dictionary";
 import { cn } from "@/lib/utils";
 
 /**
@@ -13,7 +14,17 @@ import { cn } from "@/lib/utils";
  * 서버 필터링을 하면 이 페이지가 동적 렌더링으로 바뀐다(P5 정적 우선).
  * 과정 수가 적어 전량을 내려도 부담이 없다.
  */
-export function CourseFilterTabs() {
+export function CourseFilterTabs({
+  courses,
+  coursesPage,
+  SCHOOLS,
+}: {
+  courses: Dictionary["courses"]["list"];
+  coursesPage: Dictionary["courses"]["page"];
+  SCHOOLS: Dictionary["academy"]["schools"];
+}) {
+  // 경로가 이미 언어를 담고 있으므로 프롭으로 더 받지 않는다
+  const lang = localeFromPath(usePathname());
   const [school, setSchool] = useState<string>("all");
   const visible =
     school === "all"
@@ -55,7 +66,7 @@ export function CourseFilterTabs() {
         {visible.map((course) => (
           <li key={course.slug}>
             <Link
-              href={`/academy/courses/${course.slug}`}
+              href={localeHref(lang, `/academy/courses/${course.slug}`)}
               className="border-border bg-card hover:border-primary/30 focus-visible:ring-ring flex h-full flex-col rounded-lg border p-5 transition-colors hover:shadow-sm focus-visible:ring-2 focus-visible:outline-none lg:p-6"
             >
               <p className="text-primary text-xs font-semibold">

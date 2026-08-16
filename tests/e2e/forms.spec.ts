@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { forms } from "../../content/forms";
+import { DEFAULT_LOCALE } from "../../content/locales";
 
 /**
  * A12 폼 — 정상 제출 / 검증 실패 / 서버 오류 3경로 모두 사용자에게 피드백.
@@ -12,7 +13,7 @@ test.describe("문의 폼", () => {
   );
 
   test("정상 제출 시 인라인 성공 상태로 바뀐다", async ({ page }) => {
-    await page.goto("/contact");
+    await page.goto(`/${DEFAULT_LOCALE}/contact`);
 
     await page.selectOption("#contact-type", "solution");
     await page.fill("#contact-name", "홍길동");
@@ -34,7 +35,7 @@ test.describe("문의 폼", () => {
   });
 
   test("동의 체크 없이는 제출되지 않는다", async ({ page }) => {
-    await page.goto("/contact");
+    await page.goto(`/${DEFAULT_LOCALE}/contact`);
 
     await page.selectOption("#contact-type", "etc");
     await page.fill("#contact-name", "홍길동");
@@ -52,7 +53,7 @@ test.describe("문의 폼", () => {
   });
 
   test("검증 실패 시 필드 에러가 스크린리더에 연결된다", async ({ page }) => {
-    await page.goto("/contact");
+    await page.goto(`/${DEFAULT_LOCALE}/contact`);
 
     await page.selectOption("#contact-type", "etc");
     await page.fill("#contact-name", "홍");
@@ -81,7 +82,7 @@ test.describe("문의 폼", () => {
   });
 
   test("3초 미만 제출은 거부된다", async ({ page }) => {
-    await page.goto("/contact");
+    await page.goto(`/${DEFAULT_LOCALE}/contact`);
 
     await page.selectOption("#contact-type", "etc");
     await page.fill("#contact-name", "홍길동");
@@ -105,12 +106,12 @@ test.describe("수강 신청 폼", () => {
   );
 
   test("과정 상세에서 넘어오면 해당 과정이 선택되어 있다", async ({ page }) => {
-    await page.goto("/academy/apply?course=ai-agent-basics");
+    await page.goto(`/${DEFAULT_LOCALE}/academy/apply?course=ai-agent-basics`);
     await expect(page.locator("#apply-course")).toHaveValue("ai-agent-basics");
   });
 
   test("정상 제출 시 인라인 성공 상태로 바뀐다", async ({ page }) => {
-    await page.goto("/academy/apply");
+    await page.goto(`/${DEFAULT_LOCALE}/academy/apply`);
 
     await page.selectOption("#apply-course", "web-service-development");
     await page.fill("#apply-name", "홍길동");

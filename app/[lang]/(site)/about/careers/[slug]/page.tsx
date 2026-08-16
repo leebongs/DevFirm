@@ -17,7 +17,7 @@ import {
 import { getDictionary } from "@/lib/i18n";
 // 슬러그는 언어와 무관한 구조 데이터다. generateStaticParams 는
 // 동기라 사전을 await 할 수 없으므로 원문 배열로 열거한다.
-import { jobs } from "@/content/careers";
+import { jobs, careersPage } from "@/content/careers";
 import { site } from "@/content/site";
 
 type Params = { lang: string; slug: string };
@@ -74,7 +74,7 @@ export default async function JobPage({ params }: { params: Promise<Params> }) {
   if (!job) notFound();
 
   const applyHref = `mailto:${site.email}?subject=${encodeURIComponent(
-    t.careers.page.applySubject(job.title),
+    careersPage.applySubject(job.title),
   )}`;
 
   return (

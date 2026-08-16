@@ -4,7 +4,7 @@ import { useActionState } from "react";
 import { submitContact } from "@/app/actions/submit-contact";
 import { Field, inputClass } from "./field";
 import { useFormToken } from "@/lib/use-form-token";
-import { forms } from "@/content/forms";
+import type { Dictionary } from "@/content/dictionary";
 import type { FormState } from "@/lib/validations/forms";
 
 const INITIAL: FormState = { status: "idle" };
@@ -19,10 +19,17 @@ const INITIAL: FormState = { status: "idle" };
  * 성공 시 별도 페이지로 보내지 않고 인라인 상태로 바꾼다. aria-live 로
  * 스크린리더에도 결과가 전달된다(Phase 4 DoD).
  */
-export function ContactForm() {
+export function ContactForm({
+  t,
+}: {
+  /**
+   * 이 폼의 문구 전체. 클라이언트 컴포넌트라 getDictionary(server-only)를
+   * 호출할 수 없으므로 페이지가 내려준다.
+   */
+  t: Dictionary["forms"]["contact"];
+}) {
   const [state, formAction, pending] = useActionState(submitContact, INITIAL);
   const token = useFormToken();
-  const t = forms.contact;
   const errors = state.status === "error" ? (state.fieldErrors ?? {}) : {};
 
   if (state.status === "success") {

@@ -4,20 +4,25 @@ import { useActionState, useState, useSyncExternalStore } from "react";
 import { submitApplication } from "@/app/actions/submit-application";
 import { Field, inputClass } from "./field";
 import { useFormToken } from "@/lib/use-form-token";
-import { forms } from "@/content/forms";
-import { courses } from "@/content/courses";
+import type { Dictionary } from "@/content/dictionary";
 import type { FormState } from "@/lib/validations/forms";
 
 const INITIAL: FormState = { status: "idle" };
 
 /** 수강 신청 폼(§5.14). 구조는 ContactForm 과 동일하다. */
-export function ApplyForm() {
+export function ApplyForm({
+  t,
+  courses,
+}: {
+  t: Dictionary["forms"]["apply"];
+  /** 과정 목록. 라벨이 번역되므로 사전에서 온 것을 쓴다. */
+  courses: Dictionary["courses"]["list"];
+}) {
   const [state, formAction, pending] = useActionState(
     submitApplication,
     INITIAL,
   );
   const token = useFormToken();
-  const t = forms.apply;
   const errors = state.status === "error" ? (state.fieldErrors ?? {}) : {};
 
   /*

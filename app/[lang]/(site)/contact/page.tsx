@@ -45,7 +45,7 @@ export default async function ContactPage({
       <Container className="py-12 lg:py-16">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-16">
           <div className="max-w-[42rem] min-w-0">
-            <ContactForm />
+            <ContactForm t={t.forms.contact} />
           </div>
 
           <aside className="space-y-6">
