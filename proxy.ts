@@ -77,6 +77,6 @@ export const config = {
    * 크롤러가 원래 자리에서 404 를 받는다.
    */
   matcher: [
-    "/((?!_next|api|images|fonts|video|favicon\\.ico|icon\\.svg|apple-icon\\.png|opengraph-image\\.png|twitter-image\\.png|robots\\.txt|sitemap\\.xml).*)",
+    "/((?!_next|api|catalogs|images|fonts|video|favicon\\.ico|icon\\.svg|apple-icon\\.png|opengraph-image\\.png|twitter-image\\.png|robots\\.txt|sitemap\\.xml).*)",
   ],
 };

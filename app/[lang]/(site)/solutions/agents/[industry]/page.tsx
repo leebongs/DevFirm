@@ -8,6 +8,7 @@ import { StatBlock } from "@/components/content/stat-block";
 import { StepFlow } from "@/components/content/step-flow";
 import { IndustryAgentCard } from "@/components/content/industry-agent-card";
 import { CTASection } from "@/components/content/cta-section";
+import { ConstructionAiCatalogSection } from "@/components/content/construction-ai-catalog";
 import { buildMetadata } from "@/lib/metadata";
 import {
   DEFAULT_LOCALE,
@@ -19,6 +20,7 @@ import { getDictionary } from "@/lib/i18n";
 // 슬러그는 언어와 무관한 구조 데이터다. generateStaticParams 는
 // 동기라 사전을 await 할 수 없으므로 원문 배열로 열거한다.
 import { agents } from "@/content/agents";
+import { constructionAiCatalog } from "@/content/construction-ai";
 import { agentIllustrations } from "@/content/illustrations";
 type Params = { lang: string; industry: string };
 
@@ -113,6 +115,10 @@ export default async function IndustryAgentPage({
             ))}
           </div>
         </section>
+
+        {agent.slug === "construction" && locale === DEFAULT_LOCALE ? (
+          <ConstructionAiCatalogSection catalog={constructionAiCatalog} />
+        ) : null}
 
         <section className="mt-16 lg:mt-20">
           <SectionHeading
