@@ -32,6 +32,28 @@ test.describe("DocASI 다운로드 섹션", () => {
     );
   });
 
+  test("다운로드 공유 주소가 페이지 앵커로 308 이동한다", async ({
+    request,
+    baseURL,
+  }) => {
+    // locale 접두 변형은 proxy 가 같은 locale 의 앵커로 보낸다.
+    const localized = await request.get(
+      `${baseURL}/ko/solutions/docasi/download`,
+      { maxRedirects: 0 },
+    );
+    expect(localized.status()).toBe(308);
+    const location = new URL(localized.headers()["location"] ?? "", "http://x");
+    expect(location.pathname).toBe("/ko/solutions/docasi");
+    expect(location.hash).toBe("#download");
+  });
+
+  test("앵커 대상인 download 제목이 존재한다", async ({ page }) => {
+    await page.goto("/ko/solutions/docasi");
+    await expect(page.locator("h2#download")).toHaveText(
+      "지금 앱을 다운로드, 무료 버전 맛보기 체험 해 보세요.",
+    );
+  });
+
   test("최소·권장 사양과 무료 버전 안내가 보인다", async ({ page }) => {
     await page.goto("/ko/solutions/docasi");
 

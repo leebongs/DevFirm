@@ -78,6 +78,20 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(url, 308);
   }
 
+  // 다운로드 섹션 공유 주소의 locale 접두 변형. bare 경로(/solutions/docasi/
+  // download)는 next.config 의 redirects 가 잡고, /ko/... 형은 여기서 같은
+  // locale 의 페이지 앵커로 보낸다.
+  const downloadShortcut = pathname.match(
+    /^\/([^/]+)\/solutions\/docasi\/download$/,
+  );
+  const downloadLang = downloadShortcut?.[1];
+  if (downloadLang && byLower.get(downloadLang.toLowerCase())) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${downloadLang}/solutions/docasi`;
+    url.hash = "#download";
+    return NextResponse.redirect(url, 308);
+  }
+
   const hasLocale = localeCodes.some(
     (code) => pathname === `/${code}` || pathname.startsWith(`/${code}/`),
   );

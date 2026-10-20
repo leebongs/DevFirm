@@ -24,4 +24,7 @@ export const legacyRedirects = [
   // DocASI 리브랜딩(2026-10): 구 DocAI 경로. 시작 안내 구 URL은 배포된 앱 초대 메일에도 박혀 있다.
   { from: "/solutions/docai", to: "/solutions/docasi" },
   { from: "/solutions/docai/start", to: "/solutions/docasi/start" },
+  // 다운로드 섹션 공유용 짧은 주소. 앵커(#download)는 locale 리다이렉트를
+  // 거쳐도 브라우저가 fragment 를 보존하므로 최종적으로 섹션에 안착한다.
+  { from: "/solutions/docasi/download", to: "/solutions/docasi#download" },
 ] as const;
