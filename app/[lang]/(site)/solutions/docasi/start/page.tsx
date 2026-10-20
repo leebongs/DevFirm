@@ -165,15 +165,40 @@ export default async function DocAiStartPage({
                 </span>
                 <h2 className="mt-5 text-2xl font-bold">{audience.title}</h2>
                 <ul className="mt-6 space-y-4">
-                  {audience.items.map((item) => (
-                    <li key={item} className="flex gap-3 text-sm leading-7">
-                      <CheckCircle2
-                        className="text-primary mt-1 size-4 shrink-0"
-                        aria-hidden
-                      />
-                      <span>{item}</span>
-                    </li>
-                  ))}
+                  {audience.items.map((item) =>
+                    typeof item === "string" ? (
+                      <li key={item} className="flex gap-3 text-sm leading-7">
+                        <CheckCircle2
+                          className="text-primary mt-1 size-4 shrink-0"
+                          aria-hidden
+                        />
+                        <span>{item}</span>
+                      </li>
+                    ) : (
+                      <li
+                        key={item.steps[0]}
+                        className="flex gap-3 text-sm leading-7"
+                      >
+                        <CheckCircle2
+                          className="text-primary mt-1 size-4 shrink-0"
+                          aria-hidden
+                        />
+                        <ol className="space-y-2">
+                          {item.steps.map((step, stepIndex) => (
+                            <li key={step} className="flex gap-2.5">
+                              <span
+                                className="border-primary/40 text-primary mt-1 flex size-5 shrink-0 items-center justify-center rounded-full border text-[11px] font-semibold"
+                                aria-hidden
+                              >
+                                {stepIndex + 1}
+                              </span>
+                              <span>{step}</span>
+                            </li>
+                          ))}
+                        </ol>
+                      </li>
+                    ),
+                  )}
                 </ul>
               </article>
             ),
