@@ -49,6 +49,34 @@ export default async function DocAiPage({
   const { lang } = await params;
   const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
   const t = await getDictionary(locale);
+  const existingMacGuidance =
+    locale === "ko"
+      ? {
+          title: "기존 DocAI Mac Hub를 사용 중인가요?",
+          items: [
+            "로그인 상태를 보존하려면 앱의 설정 › OTA 소프트웨어 업데이트에서 0.2.2 → 0.2.6 → 0.2.7 → 0.2.9 순서로 업데이트하는 방법을 권장합니다.",
+            "설치 파일을 직접 내려받아 수동으로 설치하면 다시 로그인해야 할 수 있지만, 기존 데이터는 유지됩니다.",
+            "DocASI에서 기존 데이터가 정상적으로 보이는지 확인한 뒤, 예전 DocAI 앱을 완전히 종료하고 응용 프로그램의 DocAI 앱 번들만 삭제하세요. Documents 폴더와 그 안의 데이터는 삭제하지 마세요.",
+          ],
+        }
+      : {
+          title: "Already using the DocAI Mac Hub?",
+          items: [
+            "To preserve your signed-in session, use Settings › OTA Software Update and update in order: 0.2.2 → 0.2.6 → 0.2.7 → 0.2.9.",
+            "A manual installation may ask you to sign in again, but your existing data is retained.",
+            "After confirming that your existing data appears in DocASI, fully quit the old DocAI app and remove only its app bundle from Applications. Never delete your Documents folder or its data.",
+          ],
+        };
+  const currentBuildSecurityNotice =
+    locale === "ko"
+      ? {
+          title: "현재 빌드의 운영체제 보안 경고",
+          body: "현재 다운로드 빌드는 Apple 공증과 Windows 게시자 코드 서명이 적용되지 않아 macOS 또는 Windows가 실행 전 경고를 표시하거나 실행을 차단할 수 있습니다. 업데이트 파일의 ECDSA 서명과 SHA-256 검증은 별도의 무결성 검사이며, Apple 공증이나 Windows 신뢰 게시자 서명을 대신하지 않습니다.",
+        }
+      : {
+          title: "Operating system security notice for this build",
+          body: "The current downloads are not Apple-notarized and do not have Windows publisher code signing, so macOS or Windows may warn you or block the app from launching. The updater's ECDSA signature and SHA-256 verification are separate integrity checks; they do not replace Apple notarization or a trusted Windows publisher signature.",
+        };
 
   return (
     <>
@@ -317,9 +345,37 @@ export default async function DocAiPage({
             />
           }
         />
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
+        <aside
+          id="download-build-security-notice"
+          role="note"
+          aria-labelledby="download-build-security-notice-title"
+          className="mt-8 rounded-2xl border border-amber-500/40 bg-amber-500/10 p-5 lg:p-6"
+        >
+          <div className="flex items-start gap-3">
+            <TriangleAlert
+              className="mt-0.5 size-5 shrink-0 text-amber-600 dark:text-amber-400"
+              aria-hidden
+            />
+            <div>
+              <h3
+                id="download-build-security-notice-title"
+                className="text-sm font-semibold"
+              >
+                {currentBuildSecurityNotice.title}
+              </h3>
+              <p className="text-muted-foreground mt-2 text-sm leading-relaxed break-keep">
+                {currentBuildSecurityNotice.body}
+              </p>
+            </div>
+          </div>
+        </aside>
+
+        <div className="mt-6 grid gap-5 lg:grid-cols-2">
           {t.docai.download.apps.map((app) => {
             const dl = docasiDownloads[app.key];
+            const appName = docasiDownloads.isCanonical
+              ? app.name
+              : app.name.replace(/^DocASI/, "DocAI (이전 버전)");
             return (
               <article
                 key={app.key}
@@ -339,7 +395,7 @@ export default async function DocAiPage({
                       {t.docai.download.freeLabel} · {app.platform}
                     </span>
                     <span className="mt-0.5 block text-[1.0625rem] leading-snug font-bold break-keep">
-                      {app.name}
+                      {appName}
                     </span>
                   </span>
                   <span className="shrink-0 text-right font-mono text-[0.6875rem] leading-relaxed opacity-80">
@@ -372,6 +428,27 @@ export default async function DocAiPage({
             );
           })}
         </div>
+
+        <aside className="border-primary/25 bg-primary/5 mt-6 rounded-2xl border p-5 lg:p-6">
+          <div className="flex items-start gap-3">
+            <ShieldCheck
+              className="text-primary mt-0.5 size-5 shrink-0"
+              aria-hidden
+            />
+            <div>
+              <h3 className="text-sm font-semibold">
+                {existingMacGuidance.title}
+              </h3>
+              <ol className="text-muted-foreground mt-3 space-y-2 pl-5 text-sm leading-relaxed break-keep">
+                {existingMacGuidance.items.map((item) => (
+                  <li key={item} className="list-decimal pl-1">
+                    {item}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </aside>
 
         <div className="mt-6 rounded-2xl border border-amber-500/35 bg-amber-500/10 p-5 lg:p-6">
           <div className="flex items-start gap-3">

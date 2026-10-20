@@ -63,3 +63,35 @@ test.describe("DocASI 카탈로그", () => {
     ).toBeVisible();
   });
 });
+
+test("영문 히어로의 제품 카피와 행동 카피 순서를 유지한다", async ({
+  page,
+}) => {
+  await page.goto("/en/solutions/docasi");
+
+  const eyebrow = page.getByText("Upload a document. Move work forward.", {
+    exact: true,
+  });
+  const headline = page.getByRole("heading", {
+    level: 1,
+    name: "Superintelligence for Document Compliance",
+  });
+
+  await expect(eyebrow).toBeVisible();
+  await expect(headline).toBeVisible();
+  await expect
+    .poll(async () =>
+      eyebrow.evaluate(
+        (element, target) =>
+          element.compareDocumentPosition(target) &
+          Node.DOCUMENT_POSITION_FOLLOWING,
+        await headline.elementHandle(),
+      ),
+    )
+    .toBeTruthy();
+  await expect
+    .poll(() =>
+      page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+    )
+    .toBe(true);
+});

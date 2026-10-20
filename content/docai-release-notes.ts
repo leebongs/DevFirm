@@ -1,6 +1,7 @@
-export const DOC_AI_RELEASE_NOTES_PATH = "/solution/DocAI/releasenote";
+export const DOC_AI_RELEASE_NOTES_PATH = "/solution/DocASI/releasenote";
+export const LEGACY_DOC_AI_RELEASE_NOTES_PATH = "/solution/DocAI/releasenote";
 export const DOC_AI_RELEASE_NOTES_URL =
-  "https://www.devfirm.co/solution/DocAI/releasenote";
+  "https://www.devfirm.co/solution/DocASI/releasenote";
 
 export type DocAiReleaseGroup = {
   heading: string;
@@ -17,6 +18,157 @@ export type DocAiRelease = {
 };
 
 export const docAiReleases = [
+  {
+    version: "0.2.9",
+    title: "기존 로그인 유지와 OTA 재시작 안정성 개선",
+    publishedAt: "2026-10-20T13:45:00Z",
+    displayDate: "2026. 10. 20.",
+    groups: [
+      {
+        heading: "Mac Hub 로그인 세션 유지",
+        subheading:
+          "일반 DocASI 업데이트에서도 검증된 로그인 상태를 그대로 이어서 사용합니다.",
+        entries: [
+          "기존 암호화 desktop-session을 복호화하고 팀 멤버 인증까지 검증한 뒤 같은 세션 데이터를 유지합니다.",
+          "브랜드 전환용 로그인 이전 정보가 없는 0.2.7 이후 DocASI 업데이트도 정상적으로 시작합니다.",
+          "복호화할 수 없는 구형 암호문은 기존 0.2.6 전환 브리지를 거쳐야 하며, 검증되지 않은 세션을 임의로 사용하지 않습니다.",
+        ],
+      },
+      {
+        heading: "OTA 재시작 실패 복구",
+        subheading:
+          "새 앱 시작에 실패해도 업데이트 절차가 멈추지 않고 기존 앱으로 안전하게 돌아갑니다.",
+        entries: [
+          "업데이트 뒤 시작 실패는 차단 대화상자로 프로세스를 붙잡지 않고 즉시 종료해 기존 앱 복구를 진행합니다.",
+          "업데이트 도우미가 시작한 하위 프로세스에는 먼저 종료를 요청하고, 응답하지 않으면 강제 종료한 뒤 완전히 끝났는지 확인합니다.",
+          "새 앱 프로세스가 종료된 사실을 확인한 뒤에만 앱 번들을 원래 버전으로 되돌립니다.",
+        ],
+      },
+      {
+        heading: "플랫폼 버전 동기화",
+        subheading:
+          "Mac Hub와 Windows 팀원 앱을 같은 0.2.9 버전으로 제공합니다.",
+        entries: [
+          "Mac은 DocASI Hub 표시와 DocASI 기본 워크스페이스 이전을 유지하며 팀·TLS·클라이언트 정보를 보존합니다.",
+          "Windows 연결 화면은 연결 방식 선택 상태와 초대 링크 입력 정보를 일관되게 반영하며, 기존 연결 설정과 계정 데이터를 유지합니다.",
+          "OTA 파일은 ECDSA 서명과 SHA-256으로 검증합니다. Apple 공증과 Windows 게시자 코드 서명은 아직 포함되지 않아 운영체제 경고가 나타날 수 있습니다.",
+        ],
+      },
+    ],
+  },
+  {
+    version: "0.2.8",
+    title: "Mac 워크스페이스 이전과 Hub 표시 개선",
+    publishedAt: "2026-10-20T13:20:00Z",
+    displayDate: "2026. 10. 20.",
+    groups: [
+      {
+        heading: "Mac 워크스페이스 ROOT 이전",
+        subheading:
+          "기존 DocAI 기본 워크스페이스를 DocASI 경로로 옮기고 앱 전체가 새 ROOT를 사용하도록 정리했습니다.",
+        entries: [
+          "기존 기본 폴더만 있으면 ~/Documents/DocAI 전체를 ~/Documents/DocASI로 옮기고 새 경로를 workspace-root.json에 기록합니다.",
+          "규정집·문서함·수정본, 규칙 캐시, 감사 기록, 팀 상태와 TLS 인증서 등 .docai 내부 데이터를 그대로 보존합니다.",
+          "저장된 폴더·문서·인증서 경로와 문서 스레드·알림 참조를 새 ROOT에 맞추며, 외부 사용자 지정 폴더는 변경하지 않습니다.",
+        ],
+      },
+      {
+        heading: "충돌 방지와 실패 원복",
+        subheading:
+          "데이터가 불완전하게 합쳐지거나 원본이 사라지지 않도록 이전 단계를 검증합니다.",
+        entries: [
+          "기존 DocAI와 DocASI 기본 폴더가 모두 있으면 자동 병합하지 않고 두 경로를 안내해 사용자가 확인하도록 합니다.",
+          "설정 교체나 폴더 이동이 실패하면 원본 파일과 권한을 복원하고, 원복까지 실패하면 복구 파일의 위치를 명확히 안내합니다.",
+          "이전이 끝난 뒤 watcher, Store, Pipeline과 Hub가 새 DocASI 경로를 사용해 예전 폴더를 다시 만들지 않도록 했습니다.",
+        ],
+      },
+      {
+        heading: "Mac Dock 표시 이름",
+        subheading:
+          "Hub 역할을 바로 구분할 수 있도록 macOS Dock 표시 이름을 정리했습니다.",
+        entries: [
+          "Mac Dock에 표시되는 이름은 DocASI Hub이며, 내부 앱 이름은 DocASI를 유지합니다.",
+          "제품 식별자 co.devfirm.docasi와 설치 파일 DocASI-0.2.8-universal.dmg는 정식 DocASI 계약을 유지합니다.",
+          "Windows 팀원 앱은 DocASI-forTeamMemebr-Setup-0.2.8-win-x64.exe 이름으로 함께 배포됩니다.",
+        ],
+      },
+    ],
+  },
+  {
+    version: "0.2.7",
+    title: "DocASI 리브랜딩과 안전한 데이터 이전",
+    publishedAt: "2026-10-20T12:21:00Z",
+    displayDate: "2026. 10. 20.",
+    groups: [
+      {
+        heading: "DocASI 정식 제품 전환",
+        subheading:
+          "설치 파일부터 실행 중인 앱까지 DocASI 명칭과 제품 식별자를 일관되게 사용합니다.",
+        entries: [
+          "Mac 설치 파일은 DocASI-0.2.7-universal.dmg, Windows 설치 파일은 DocASI-forTeamMemebr-Setup-0.2.7-win-x64.exe 이름을 사용합니다.",
+          "Mac 앱 번들, 실행 파일과 Windows 앱 표시 이름·실행 파일·설치 정보에 DocASI 브랜드를 적용했습니다.",
+          "업데이트 제품 ID는 co.devfirm.docasi, 공개 업데이트 주소는 /updates/docasi/stable.json으로 전환했습니다.",
+        ],
+      },
+      {
+        heading: "기존 데이터의 안전한 이전",
+        subheading:
+          "기존 DocAI 설치를 발견하면 사용자 설정과 연결 정보를 잃지 않도록 검증하며 옮깁니다.",
+        entries: [
+          "Mac Hub와 Windows 팀원 앱은 기존 저장 위치를 인식하고 정식 DocASI 저장 위치로 이전합니다.",
+          "이전 작업은 경로와 파일 유형을 확인한 뒤 진행하며, 실패하면 기존 앱과 데이터를 보존해 다시 실행할 수 있습니다.",
+          "기존 연결 토큰, 팀 설정과 사용자가 지정한 업무 폴더를 유지하도록 마이그레이션 회귀 검사를 추가했습니다.",
+        ],
+      },
+      {
+        heading: "기존 Mac Hub 업데이트 방법",
+        subheading:
+          "로그인 상태와 기존 데이터를 안전하게 이어 가려면 앱 안의 OTA 업데이트를 사용하세요.",
+        entries: [
+          "기존 DocAI 사용자는 설정의 OTA 소프트웨어 업데이트에서 0.2.2 → 0.2.6 → 0.2.7 순서로 업데이트하는 방법을 권장합니다. 이 경로는 로그인 상태 보존을 지원합니다.",
+          "설치 파일을 직접 내려받아 수동으로 설치하면 다시 로그인해야 할 수 있지만, 기존 데이터는 유지됩니다.",
+          "DocASI에서 기존 데이터가 정상적으로 보이는지 확인한 뒤 예전 DocAI 앱을 완전히 종료하고 응용 프로그램의 DocAI 앱 번들만 삭제하세요. Documents 폴더와 그 안의 데이터는 삭제하지 마세요.",
+        ],
+      },
+      {
+        heading: "다른 장치와 네트워크에서의 연결 안정성",
+        subheading:
+          "특정 Mac이나 Windows PC 이름에 의존하지 않고 새 장치에서도 연결 절차를 완료할 수 있게 했습니다.",
+        entries: [
+          "팀·기관 이름을 Hub에서 관리하고 Windows 팀원 앱의 연결 확인과 완료 안내에 표시합니다.",
+          "새 Windows PC에서 SSH 키를 안전하게 만들고, 공백이 있는 사용자 경로에서도 엄격한 호스트 키 검증을 유지합니다.",
+          "Mac 업데이트 통신은 운영체제의 프록시와 PAC 설정을 따르며 서명, 크기와 SHA-256 검증을 계속 적용합니다.",
+        ],
+      },
+    ],
+  },
+  {
+    version: "0.2.6",
+    title: "DocASI 전환 준비 및 연결 안정성 개선",
+    publishedAt: "2026-10-20T12:20:00Z",
+    displayDate: "2026. 10. 20.",
+    groups: [
+      {
+        heading: "기존 Mac Hub를 위한 전환 브리지",
+        subheading:
+          "설치된 DocAI Hub가 정식 DocASI 버전으로 안전하게 넘어가기 위한 한 번의 호환 업데이트입니다.",
+        entries: [
+          "0.2.6은 기존 앱이 검증할 수 있는 DocAI 제품 ID와 설치 파일명을 유지하는 마지막 브리지 버전입니다.",
+          "화면에는 DocASI 브랜드를 표시하지만 앱 번들과 데이터 위치는 이 단계에서 이동하지 않습니다.",
+          "브리지 설치 뒤 정식 DocASI 업데이트 주소에서 0.2.7을 확인하고, 다음 설치 단계에서 제품 식별자와 데이터를 이전합니다.",
+        ],
+      },
+      {
+        heading: "업데이트 계약 분리",
+        subheading:
+          "구버전 호환 파일과 정식 DocASI 파일이 한 릴리스에서 섞이지 않도록 발행 절차를 강화했습니다.",
+        entries: [
+          "0.2.6 브리지와 0.2.7 이후 정식 릴리스의 제품 ID, 파일명과 릴리스 노트 주소를 각각 엄격하게 검사합니다.",
+          "기존 업데이트 서명 키를 유지해 브리지와 정식 버전 모두 같은 신뢰 체인으로 검증합니다.",
+        ],
+      },
+    ],
+  },
   {
     version: "0.2.2",
     title: "Windows 업데이트 연결 호환성 개선",

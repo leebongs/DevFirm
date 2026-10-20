@@ -58,6 +58,7 @@ export function proxy(request: NextRequest) {
   const publicDocAiRoutes = new Map([
     ["/solutions/docasi/start", "/solutions/docasi/start"],
     ["/solutions/docai/start", "/solutions/docasi/start"],
+    ["/solution/DocASI/releasenote", "/solution/DocASI/releasenote"],
     ["/solution/DocAI/releasenote", "/solution/DocAI/releasenote"],
   ]);
   const publicDocAiRoute = publicDocAiRoutes.get(pathname);

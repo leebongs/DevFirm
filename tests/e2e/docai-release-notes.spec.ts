@@ -3,12 +3,13 @@ import AxeBuilder from "@axe-core/playwright";
 import {
   DOC_AI_RELEASE_NOTES_PATH,
   DOC_AI_RELEASE_NOTES_URL,
+  LEGACY_DOC_AI_RELEASE_NOTES_PATH,
   docAiReleases,
   latestDocAiRelease,
 } from "../../content/docai-release-notes";
 
 test.describe("DocASI 릴리스 노트", () => {
-  test("혼합 대소문자 공개 주소가 리다이렉트 없이 열리고 canonical을 유지한다", async ({
+  test("DocASI 공개 주소와 구 DocAI 호환 주소가 열리고 canonical은 DocASI를 유지한다", async ({
     page,
     request,
   }) => {
@@ -17,6 +18,11 @@ test.describe("DocASI 릴리스 노트", () => {
     });
 
     expect(directResponse.status()).toBe(200);
+
+    const legacyResponse = await request.get(LEGACY_DOC_AI_RELEASE_NOTES_PATH, {
+      maxRedirects: 0,
+    });
+    expect(legacyResponse.status()).toBe(200);
 
     const response = await page.goto(DOC_AI_RELEASE_NOTES_PATH);
     expect(response?.status()).toBe(200);
@@ -60,6 +66,101 @@ test.describe("DocASI 릴리스 노트", () => {
         release.publishedAt,
       );
     }
+
+    const otaRelease = page.locator("#release-0-2-9");
+    await expect(
+      otaRelease.getByRole("heading", { name: "Mac Hub 로그인 세션 유지" }),
+    ).toBeVisible();
+    await expect(
+      otaRelease.getByText(/암호화 desktop-session을 복호화/),
+    ).toBeVisible();
+    await expect(
+      otaRelease.getByText(/0\.2\.6 전환 브리지를 거쳐야/),
+    ).toBeVisible();
+    await expect(
+      otaRelease.getByRole("heading", { name: "OTA 재시작 실패 복구" }),
+    ).toBeVisible();
+    await expect(otaRelease.getByText(/완전히 끝났는지 확인/)).toBeVisible();
+    await expect(
+      otaRelease.getByText(/기존 연결 설정과 계정 데이터를 유지/),
+    ).toBeVisible();
+
+    const workspaceRelease = page.locator("#release-0-2-8");
+    await workspaceRelease.locator("summary").click();
+    await expect(
+      workspaceRelease.getByText("DocASI-0.2.8-universal.dmg", {
+        exact: false,
+      }),
+    ).toBeVisible();
+    await expect(
+      workspaceRelease.getByText(
+        "DocASI-forTeamMemebr-Setup-0.2.8-win-x64.exe",
+        { exact: false },
+      ),
+    ).toBeVisible();
+    await expect(
+      workspaceRelease.getByRole("heading", {
+        name: "Mac 워크스페이스 ROOT 이전",
+      }),
+    ).toBeVisible();
+    await expect(
+      workspaceRelease.getByText(
+        /~\/Documents\/DocAI 전체를 ~\/Documents\/DocASI/,
+      ),
+    ).toBeVisible();
+    await expect(
+      workspaceRelease.getByText(/\.docai 내부 데이터를 그대로 보존/),
+    ).toBeVisible();
+    await expect(
+      workspaceRelease.getByText(/자동 병합하지 않고 두 경로를 안내/),
+    ).toBeVisible();
+    await expect(
+      workspaceRelease.getByText(/Dock에 표시되는 이름은 DocASI Hub/),
+    ).toBeVisible();
+    await expect(
+      workspaceRelease.getByText(/내부 앱 이름은 DocASI를 유지/),
+    ).toBeVisible();
+
+    const canonicalRelease = page.locator("#release-0-2-7");
+    await canonicalRelease.locator("summary").click();
+    await expect(
+      canonicalRelease.getByText("DocASI-0.2.7-universal.dmg", {
+        exact: false,
+      }),
+    ).toBeVisible();
+    await expect(
+      canonicalRelease.getByText(
+        "DocASI-forTeamMemebr-Setup-0.2.7-win-x64.exe",
+        { exact: false },
+      ),
+    ).toBeVisible();
+    await expect(
+      canonicalRelease.getByRole("heading", {
+        name: "기존 Mac Hub 업데이트 방법",
+      }),
+    ).toBeVisible();
+    await expect(
+      canonicalRelease.getByText(/0\.2\.2 → 0\.2\.6 → 0\.2\.7/),
+    ).toBeVisible();
+    await expect(
+      canonicalRelease.getByText(
+        /수동으로 설치하면 다시 로그인해야 할 수 있지만/,
+      ),
+    ).toBeVisible();
+    await expect(
+      canonicalRelease.getByText(/Documents 폴더.*삭제하지 마세요/),
+    ).toBeVisible();
+
+    const bridgeRelease = page.locator("#release-0-2-6");
+    await bridgeRelease.locator("summary").click();
+    await expect(
+      bridgeRelease.getByRole("heading", {
+        name: "기존 Mac Hub를 위한 전환 브리지",
+      }),
+    ).toBeVisible();
+
+    const compatibilityRelease = page.locator("#release-0-2-2");
+    await compatibilityRelease.locator("summary").click();
 
     await expect(
       page.getByRole("heading", { name: "Windows 업데이트 연결", exact: true }),

@@ -1087,8 +1087,8 @@
       "description": "Browse DocASI document packs by task to read and structure contracts, tax invoices, meeting minutes, tender notices, and site reports."
     },
     "hero": {
-      "eyebrow": "Superintelligence for Document Compliance",
-      "title": "Upload a document. Move work forward.",
+      "eyebrow": "Upload a document. Move work forward.",
+      "title": "Superintelligence for Document Compliance",
       "lead": "We do more than read documents. We find the needed details, compare them, and pass them on in a form that can start the next task.",
       "primary": {
         "label": "Browse Document Packs",

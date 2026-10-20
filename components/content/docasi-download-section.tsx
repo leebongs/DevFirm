@@ -32,6 +32,11 @@ export function DocasiDownloadSection({
       <div className="mt-10 grid gap-5 lg:grid-cols-2">
         {download.apps.map((app) => {
           const dl = docasiDownloads[app.key];
+          // 피드가 아직 구 계약(docai)이면 설치 파일도 구 브랜드다 —
+          // 받을 파일의 이름과 버튼 표기가 어긋나지 않게 드러낸다.
+          const appName = docasiDownloads.isCanonical
+            ? app.name
+            : app.name.replace(/^DocASI/, "DocAI (이전 버전)");
           return (
             <article
               key={app.key}
@@ -51,7 +56,7 @@ export function DocasiDownloadSection({
                     {download.freeLabel} · {app.platform}
                   </span>
                   <span className="mt-0.5 block text-[1.0625rem] leading-snug font-bold break-keep">
-                    {app.name}
+                    {appName}
                   </span>
                 </span>
                 <span className="shrink-0 text-right font-mono text-[0.6875rem] leading-relaxed opacity-80">

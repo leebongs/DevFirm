@@ -4,11 +4,24 @@ import path from "node:path";
 import { expect, test } from "@playwright/test";
 import {
   DOC_AI_RELEASE_NOTES_URL,
+  LEGACY_DOC_AI_RELEASE_NOTES_PATH,
+  docAiReleases,
   latestDocAiRelease,
 } from "../../content/docai-release-notes";
 
-const FEED_PATH = "/updates/docai/stable.json";
-const feedFile = path.join(process.cwd(), "public/updates/docai/stable.json");
+const canonicalFeedFile = path.join(
+  process.cwd(),
+  "public/updates/docasi/stable.json",
+);
+const legacyFeedFile = path.join(
+  process.cwd(),
+  "public/updates/docai/stable.json",
+);
+const usesCanonicalFeed = existsSync(canonicalFeedFile);
+const FEED_PATH = usesCanonicalFeed
+  ? "/updates/docasi/stable.json"
+  : "/updates/docai/stable.json";
+const feedFile = usesCanonicalFeed ? canonicalFeedFile : legacyFeedFile;
 const requireStableFeed = process.env.DOCAI_REQUIRE_STABLE_FEED === "1";
 const RELEASE_PUBLIC_KEY = `-----BEGIN PUBLIC KEY-----
 MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEVFKuvqsaalvjvAkT35fOxUr4hCM1
@@ -43,10 +56,10 @@ type Envelope = {
   signature: string;
 };
 
-function expectAsset(asset: Asset, expectedFileName: string) {
+function expectAsset(asset: Asset, expectedFileName: string, version: string) {
   expect(asset.fileName).toBe(expectedFileName);
   expect(asset.url).toBe(
-    `https://github.com/leebongs/DocAI-releases/releases/download/v${latestDocAiRelease.version}/${expectedFileName}`,
+    `https://github.com/leebongs/DocAI-releases/releases/download/v${version}/${expectedFileName}`,
   );
   expect(Number.isSafeInteger(asset.size)).toBe(true);
   expect(asset.size).toBeGreaterThan(0);
@@ -54,7 +67,30 @@ function expectAsset(asset: Asset, expectedFileName: string) {
   expect(asset.sha256).toMatch(/^[a-f0-9]{64}$/);
 }
 
-test.describe("DocAI stable OTA feed", () => {
+function expectClosedReleaseContract(payload: Payload) {
+  const canonical = payload.productId === "co.devfirm.docasi";
+  expect(payload.productId).toBe(
+    canonical ? "co.devfirm.docasi" : "co.devfirm.docai",
+  );
+  expect(payload.releaseNotesUrl).toBe(
+    canonical
+      ? DOC_AI_RELEASE_NOTES_URL
+      : `https://www.devfirm.co${LEGACY_DOC_AI_RELEASE_NOTES_PATH}`,
+  );
+  const brand = canonical ? "DocASI" : "DocAI";
+  expectAsset(
+    payload.assets["macos-universal"],
+    `${brand}-${payload.version}-universal.dmg`,
+    payload.version,
+  );
+  expectAsset(
+    payload.assets["windows-x64"],
+    `${brand}-forTeamMemebr-Setup-${payload.version}-win-x64.exe`,
+    payload.version,
+  );
+}
+
+test.describe("DocASI stable OTA feed", () => {
   test.beforeAll(() => {
     if (requireStableFeed) {
       expect(
@@ -74,7 +110,7 @@ test.describe("DocAI stable OTA feed", () => {
 
     const response = await request.get(FEED_PATH, { maxRedirects: 0 });
     expect(response.status()).toBe(200);
-    expect(response.url()).toMatch(/\/updates\/docai\/stable\.json$/);
+    expect(new URL(response.url()).pathname).toBe(FEED_PATH);
     expect(response.headers()["content-type"]).toMatch(
       /^application\/json(?:;|$)/,
     );
@@ -108,21 +144,15 @@ test.describe("DocAI stable OTA feed", () => {
     ).toBe(true);
 
     const payload = JSON.parse(payloadBytes.toString("utf8")) as Payload;
-    expect(payload.productId).toBe("co.devfirm.docai");
     expect(payload.channel).toBe("stable");
     expect(payload.version).toMatch(/^\d+\.\d+\.\d+$/);
-    expect(payload.version).toBe(latestDocAiRelease.version);
-    expect(payload.title).toBe(latestDocAiRelease.title);
-    expect(payload.publishedAt).toBe(latestDocAiRelease.publishedAt);
-    expect(payload.releaseNotesUrl).toBe(DOC_AI_RELEASE_NOTES_URL);
-
-    expectAsset(
-      payload.assets["macos-universal"],
-      `DocAI-${latestDocAiRelease.version}-universal.dmg`,
-    );
-    expectAsset(
-      payload.assets["windows-x64"],
-      `DocAI-forTeamMemebr-Setup-${latestDocAiRelease.version}-win-x64.exe`,
-    );
+    const matchingRelease = usesCanonicalFeed
+      ? latestDocAiRelease
+      : docAiReleases.find((release) => release.version === payload.version);
+    expect(matchingRelease).toBeDefined();
+    expect(payload.version).toBe(matchingRelease?.version);
+    expect(payload.title).toBe(matchingRelease?.title);
+    expect(payload.publishedAt).toBe(matchingRelease?.publishedAt);
+    expectClosedReleaseContract(payload);
   });
 });

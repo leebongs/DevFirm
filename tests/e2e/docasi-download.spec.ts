@@ -6,6 +6,51 @@ import { expect, test } from "@playwright/test";
  * 저장소의 실제 자산 패턴을 가리키는지, 사양과 무료 버전 안내가 보이는지.
  */
 test.describe("DocASI 다운로드 섹션", () => {
+  test("현재 빌드의 OS 서명 상태를 다운로드 버튼보다 먼저 안내한다", async ({
+    page,
+  }) => {
+    await page.goto("/ko/solutions/docasi#download");
+
+    const notice = page.getByRole("note", {
+      name: "현재 빌드의 운영체제 보안 경고",
+    });
+    await expect(notice).toBeVisible();
+    await expect(notice).toContainText(
+      "Apple 공증과 Windows 게시자 코드 서명이 적용되지 않아",
+    );
+    await expect(notice).toContainText(
+      "ECDSA 서명과 SHA-256 검증은 별도의 무결성 검사",
+    );
+    await expect(notice).toContainText(
+      "Apple 공증이나 Windows 신뢰 게시자 서명을 대신하지 않습니다",
+    );
+    expect(
+      await notice.evaluate((node) => {
+        const download = document.querySelector(
+          'a[href$="/DocASI-0.2.9-universal.dmg"]',
+        );
+        return Boolean(
+          download &&
+          (node.compareDocumentPosition(download) &
+            Node.DOCUMENT_POSITION_FOLLOWING) !==
+            0,
+        );
+      }),
+    ).toBe(true);
+
+    await page.goto("/en/solutions/docasi#download");
+    const englishNotice = page.getByRole("note", {
+      name: "Operating system security notice for this build",
+    });
+    await expect(englishNotice).toBeVisible();
+    await expect(englishNotice).toContainText(
+      "not Apple-notarized and do not have Windows publisher code signing",
+    );
+    await expect(englishNotice).toContainText(
+      "do not replace Apple notarization or a trusted Windows publisher signature",
+    );
+  });
+
   test("무료 다운로드 버튼 두 개가 릴리스 자산을 가리킨다", async ({
     page,
   }) => {
@@ -21,15 +66,17 @@ test.describe("DocASI 다운로드 섹션", () => {
     await expect(mac).toBeVisible();
     await expect(mac).toHaveAttribute(
       "href",
-      /DocAI-releases\/releases\/download\/v[\d.]+\/DocASI-[\d.]+-universal\.dmg$/,
+      "https://github.com/leebongs/DocAI-releases/releases/download/v0.2.9/DocASI-0.2.9-universal.dmg",
     );
+    await expect(mac).toContainText("v0.2.9");
 
     const win = page.getByRole("link", { name: /DocASI for Team Member/ });
     await expect(win).toBeVisible();
     await expect(win).toHaveAttribute(
       "href",
-      /DocAI-releases\/releases\/download\/v[\d.]+\/DocASI-forTeamMemebr-Setup-[\d.]+-win-x64\.exe$/,
+      "https://github.com/leebongs/DocAI-releases/releases/download/v0.2.9/DocASI-forTeamMemebr-Setup-0.2.9-win-x64.exe",
     );
+    await expect(win).toContainText("v0.2.9");
   });
 
   test("다운로드 공유 주소가 페이지 앵커로 308 이동한다", async ({
@@ -86,6 +133,29 @@ test.describe("DocASI 다운로드 섹션", () => {
     ).toBeVisible();
     await expect(
       page.getByText("무료 사용량에 따라 일부 기능이 제한될 수 있습니다."),
+    ).toBeVisible();
+  });
+
+  test("기존 Mac Hub 사용자의 안전한 OTA 전환 순서를 안내한다", async ({
+    page,
+  }) => {
+    await page.goto("/ko/solutions/docasi#download");
+
+    const guidance = page.getByRole("complementary").filter({
+      has: page.getByRole("heading", {
+        name: "기존 DocAI Mac Hub를 사용 중인가요?",
+      }),
+    });
+    await expect(guidance).toBeVisible();
+    await expect(
+      guidance.getByText(/0\.2\.2 → 0\.2\.6 → 0\.2\.7 → 0\.2\.9/),
+    ).toBeVisible();
+    await expect(
+      guidance.getByText(/다시 로그인해야 할 수 있지만/),
+    ).toBeVisible();
+    await expect(guidance.getByText(/DocAI 앱 번들만 삭제/)).toBeVisible();
+    await expect(
+      guidance.getByText(/Documents 폴더.*삭제하지 마세요/),
     ).toBeVisible();
   });
 });
