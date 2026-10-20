@@ -136,7 +136,7 @@ export default async function DocAiStartPage({
       </section>
 
       <Section className="py-14 lg:py-16">
-        <DocasiDownloadSection download={t.docai.download} />
+        <DocasiDownloadSection download={t.docai.download} locale={locale} />
       </Section>
 
       <Section className="py-12 md:py-14 lg:py-16">

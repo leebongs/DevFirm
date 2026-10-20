@@ -1,7 +1,9 @@
 import { CheckCircle2, Download, TriangleAlert } from "lucide-react";
 import { CopyLinkButton } from "@/components/content/copy-link-button";
+import { DocasiReleaseNotesLink } from "@/components/content/docasi-release-notes-link";
 import { SectionHeading } from "@/components/typography/section-heading";
 import type { Dictionary } from "@/content/dictionary";
+import type { Locale } from "@/content/locales";
 import { docasiDownloads } from "@/lib/docasi-downloads";
 
 /**
@@ -11,8 +13,10 @@ import { docasiDownloads } from "@/lib/docasi-downloads";
  */
 export function DocasiDownloadSection({
   download,
+  locale,
 }: {
   download: Dictionary["docai"]["download"];
+  locale: Locale;
 }) {
   return (
     <>
@@ -65,6 +69,8 @@ export function DocasiDownloadSection({
                   {dl.size}
                 </span>
               </a>
+
+              <DocasiReleaseNotesLink locale={locale} />
 
               <div className="border-border mt-6 border-t pt-5">
                 <p className="text-sm font-semibold">{download.specsLabel}</p>
