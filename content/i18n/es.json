@@ -65,7 +65,7 @@
       {
         "label": "Soluciones AI",
         "href": "/solutions",
-        "description": "Physical AI para plantas industriales, Gerente Choi AI para oficinas",
+        "description": "Physical AI para entornos industriales, Gerente Choi AI para oficinas",
         "children": [
           {
             "label": "Gerente Choi AI",
@@ -75,7 +75,7 @@
           {
             "label": "Physical AI",
             "href": "/solutions/physical-ai",
-            "description": "Un agente que observa y decide en plantas industriales"
+            "description": "Un agente que observa y decide en entornos industriales"
           },
           {
             "label": "AI para construcción",
@@ -106,6 +106,11 @@
             "label": "AI para prevención del delito",
             "href": "/solutions/agents/safety",
             "description": "Detección de anomalías basada en análisis de video"
+          },
+          {
+            "label": "Catálogo DocASI",
+            "href": "/solutions/docasi",
+            "description": "Paquetes para leer, cotejar y estructurar documentos por tarea"
           }
         ]
       },
@@ -207,6 +212,10 @@
           {
             "label": "AI para prevención del delito",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "Catálogo DocASI",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -290,7 +299,7 @@
         {
           "label": "Physical AI",
           "href": "/solutions/physical-ai",
-          "description": "Un agente que observa y decide en plantas industriales"
+          "description": "Un agente que observa y decide en entornos industriales"
         },
         {
           "label": "AI para construcción",
@@ -321,6 +330,11 @@
           "label": "AI para prevención del delito",
           "href": "/solutions/agents/safety",
           "description": "Detección de anomalías basada en análisis de video"
+        },
+        {
+          "label": "Catálogo DocASI",
+          "href": "/solutions/docasi",
+          "description": "Paquetes para leer, cotejar y estructurar documentos por tarea"
         }
       ],
       "/services": [
@@ -370,7 +384,7 @@
     "slogan": {
       "title": "Cuando el entorno cambia, la AI necesaria también cambia",
       "left": {
-        "eyebrow": "Plantas industriales",
+        "eyebrow": "Entornos industriales",
         "name": "Physical AI",
         "desc": "Se usa donde hay que observar y juzgar. Convierte lo que leen cámaras y sensores en decisiones que las personas pueden usar.",
         "href": "/solutions/physical-ai"
@@ -557,7 +571,7 @@
           "desc": "La sociedad se encarga de gestionar y reclamar cuentas por cobrar. El desarrollador no tiene que discutir dinero con el cliente."
         },
         {
-          "title": "Seguros obligatorios y asuntos laborales",
+          "title": "Los 4 seguros sociales obligatorios de Corea del Sur y asuntos laborales",
           "desc": "La empresa realiza las declaraciones y la gestión laboral según la forma de empleo."
         }
       ]
@@ -585,7 +599,7 @@
         {
           "year": "Actualidad",
           "title": "Negocio de agentes AI",
-          "desc": "Reorganizamos el negocio alrededor de Physical AI para plantas industriales y Gerente Choi AI para oficinas."
+          "desc": "Reorganizamos el negocio alrededor de Physical AI para entornos industriales y Gerente Choi AI para oficinas."
         }
       ]
     },
@@ -651,7 +665,7 @@
     "roadmap": {
       "id": "roadmap",
       "eyebrow": "Hoja de ruta",
-      "title": "Avance de Agent AI",
+      "title": "Mejora de los agentes AI",
       "lead": "Cada CIC crea un agente para su dominio, y la empresa crea la base compartida. El conocimiento de dominio se acumula en la CIC, y la tecnología común en la empresa.",
       "items": [
         {
@@ -708,6 +722,7 @@
         "deadline": "Cierre",
         "apply": "Postular"
       },
+      "seoDescription": "Buscamos un {title} para el equipo de {team}. {responsibility}",
       "cta": {
         "title": "Aunque no haya una oferta adecuada",
         "desc": "Cuéntenos qué trabajo quiere hacer y buscaremos un lugar juntos. También existe la forma de empezar como CIC.",
@@ -719,8 +734,7 @@
           "label": "Conocer CIC",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "Buscamos un {title} para el equipo de {team}. {responsibility}"
+      }
     },
     "jobs": [
       {
@@ -736,7 +750,7 @@
           "Ajustar precisión y responder a incidencias operativas en sitios de adopción"
         ],
         "requirements": [
-          "Más de 3 años de experiencia práctica en pipelines de datos y modelos basados en Python",
+          "Al menos 3 años de experiencia práctica en pipelines de datos y modelos basados en Python",
           "Experiencia desplegando y operando modelos en servicios reales",
           "Experiencia acordando criterios con responsables de campo"
         ],
@@ -764,7 +778,7 @@
           "Participación desde la etapa de organización de requisitos"
         ],
         "requirements": [
-          "Más de 3 años de experiencia en desarrollo de servicios web",
+          "Al menos 3 años de experiencia en desarrollo de servicios web",
           "Dominio de TypeScript o de un lenguaje equivalente con tipado estático",
           "Experiencia desplegando y operando directamente"
         ],
@@ -813,12 +827,12 @@
     "hub": {
       "hero": {
         "eyebrow": "Soluciones AI",
-        "title": "Physical AI para plantas industriales, Gerente Choi AI para oficinas",
+        "title": "Physical AI para entornos industriales, Gerente Choi AI para oficinas",
         "lead": "Cuando el entorno cambia, el juicio necesario también cambia. DevFirm aborda el trabajo en dos ejes."
       },
       "axes": [
         {
-          "eyebrow": "Plantas industriales",
+          "eyebrow": "Entornos industriales",
           "name": "Physical AI",
           "desc": "Convierte lo que cámaras y sensores leen en el entorno en juicios que las personas pueden usar.",
           "href": "/solutions/physical-ai",
@@ -885,7 +899,7 @@
       "hero": {
         "eyebrow": "Physical AI",
         "title": "Añadimos ojos que leen el entorno",
-        "lead": "Observa aquello que una persona no puede vigilar continuamente. Lo que ve queda como juicio, no solo como registro."
+        "lead": "Observa aquello que una persona no puede vigilar continuamente. Lo que observa queda como una evaluación, no como un mero registro."
       },
       "problem": {
         "id": "problem",
@@ -1064,6 +1078,272 @@
           "label": "Ver todas las soluciones AI",
           "href": "/solutions"
         }
+      }
+    }
+  },
+  "docai": {
+    "seo": {
+      "title": "Catálogo de DocASI — Automatización documental por tarea",
+      "description": "Explore los paquetes documentales de DocASI por tarea para leer y estructurar contratos, facturas fiscales, actas de reuniones, convocatorias de licitación e informes de obra."
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "Suba un documento. El trabajo avanza.",
+      "lead": "No nos limitamos a leer documentos. Localizamos los datos necesarios, los contrastamos y los entregamos en un formato listo para iniciar la siguiente tarea.",
+      "primary": {
+        "label": "Buscar paquetes",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "Consultar mis documentos",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "Documento en proceso",
+        "fileName": "Contrato_de_suministro_final.pdf",
+        "status": "Listo para revisión",
+        "fields": [
+          {
+            "label": "Vigencia del contrato",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "Renovación automática",
+            "value": "Aviso con 30 días de antelación"
+          },
+          {
+            "label": "Condiciones de pago",
+            "value": "30 días tras la inspección"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "Paquetes documentales por tarea"
+        },
+        {
+          "value": "5",
+          "label": "Categorías de trabajo"
+        },
+        {
+          "value": "4",
+          "label": "Formatos de salida"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "CATÁLOGO DE PAQUETES",
+      "title": "Elija los documentos que ya procesa",
+      "lead": "Cada paquete documental reúne, como una unidad de trabajo, los formatos de entrada, los campos que se extraen y los resultados que pasarán al siguiente sistema.",
+      "searchLabel": "Buscar paquetes",
+      "searchPlaceholder": "Documento, tarea o campo",
+      "clearSearch": "Borrar búsqueda",
+      "filterLabel": "Filtrar por área de trabajo",
+      "resultSuffix": " paquetes documentales",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Todos"
+        },
+        {
+          "key": "legal",
+          "label": "Contratos y asuntos legales"
+        },
+        {
+          "key": "finance",
+          "label": "Finanzas y justificantes"
+        },
+        {
+          "key": "operations",
+          "label": "Operaciones y RR. HH."
+        },
+        {
+          "key": "public",
+          "label": "Sector público y licitaciones"
+        },
+        {
+          "key": "field",
+          "label": "Obra y calidad"
+        }
+      ],
+      "featuredLabel": "Recomendado",
+      "card": {
+        "fieldLabel": "Campos configurados",
+        "outputLabel": "Salida",
+        "action": "Consultar el alcance"
+      },
+      "empty": {
+        "title": "No hay paquetes documentales que coincidan",
+        "body": "Pruebe con una búsqueda más breve o seleccione otra área de trabajo.",
+        "reset": "Restablecer filtros"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "Revisión de cláusulas clave de contratos",
+        "summary": "Localiza la vigencia, el importe y las cláusulas de renovación, rescisión e indemnización, y los organiza en una lista de revisión.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28 campos",
+        "output": "Lista de revisión · Resumen de cláusulas",
+        "tags": [
+          "Términos de riesgo",
+          "Plazos de obligaciones",
+          "Comparación de cláusulas"
+        ],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "Conciliación de facturas y comprobantes de transacción",
+        "summary": "Lee la base imponible, los impuestos, los artículos y los proveedores, y marca las diferencias con las órdenes de compra y los registros de recepción.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24 campos",
+        "output": "Tabla comparativa · Lista de excepciones",
+        "tags": [
+          "Validación de importes",
+          "Proveedores",
+          "Detección de duplicados"
+        ],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "Organización de solicitudes de gastos y recibos",
+        "summary": "Agrupa cada recibo con su solicitud y normaliza la cuenta contable, el establecimiento, la fecha y el importe.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18 campos",
+        "output": "XLSX · Borrador de asiento contable",
+        "tags": [
+          "Documentación justificativa",
+          "Sugerencia de cuenta",
+          "Detección de faltantes"
+        ]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "Estructuración de currículums e historiales profesionales",
+        "summary": "Organiza la experiencia, las habilidades, los proyectos y la formación de distintos formatos de candidatura con los mismos criterios.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32 campos",
+        "output": "Ficha de candidato · CSV",
+        "tags": [
+          "Normalización de experiencia",
+          "Clasificación de habilidades",
+          "Datos personales"
+        ]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "Extracción de tareas de actas de reunión",
+        "summary": "Localiza decisiones, responsables, plazos y asuntos pendientes, y los convierte en una lista de seguimiento.",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16 campos",
+        "output": "Lista de tareas · JSON",
+        "tags": ["Decisiones", "Responsables", "Fechas límite"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "Análisis de convocatorias y solicitudes de propuestas",
+        "summary": "Localiza los requisitos de participación, los documentos exigidos, los criterios de evaluación y las fechas para crear una lista de preparación de propuestas.",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36 campos",
+        "output": "Cronograma · Lista de documentos requeridos",
+        "tags": [
+          "Requisitos de participación",
+          "Criterios de evaluación",
+          "Documentos requeridos"
+        ],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "Organización de informes diarios de obra",
+        "summary": "Lee los tipos de trabajo, el personal, los equipos, el avance y las incidencias, y los consolida en un estado diario por obra.",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30 campos",
+        "output": "Estado diario · Tabla acumulada",
+        "tags": ["Avance de obra", "Personal y equipos", "Incidencias"]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "Lectura de informes de ensayo y documentos de calidad",
+        "summary": "Estructura los elementos de ensayo, los valores de referencia, las mediciones y los resultados, y reúne los casos fuera de especificación.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34 campos",
+        "output": "Historial de calidad · Lista de excepciones",
+        "tags": [
+          "Valores de ensayo",
+          "Comparación con especificaciones",
+          "Trazabilidad de lotes"
+        ]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "DEL ARCHIVO AL FLUJO",
+      "title": "Los resultados alimentan la siguiente tarea",
+      "lead": "Primero definimos los criterios de lectura de cada documento y los puntos que requieren revisión humana. Después adaptamos el formato de salida a las herramientas de trabajo existentes.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Reunir documentos",
+          "desc": "Recibimos los originales y sus metadatos desde el correo, las carpetas y los sistemas de trabajo."
+        },
+        {
+          "step": "02",
+          "title": "Extraer campos",
+          "desc": "Localizamos los valores necesarios y su ubicación de origen según las definiciones de campos del paquete documental."
+        },
+        {
+          "step": "03",
+          "title": "Revisar y contrastar",
+          "desc": "Reunimos solo las excepciones y los elementos inciertos para su revisión por una persona."
+        },
+        {
+          "step": "04",
+          "title": "Conectar flujos de trabajo",
+          "desc": "Transferimos los resultados al siguiente sistema y a los responsables mediante XLSX, CSV, JSON o API."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "PRINCIPIOS OPERATIVOS",
+      "title": "Lo que priorizamos antes de automatizar",
+      "items": [
+        {
+          "title": "El original y la evidencia, siempre juntos",
+          "desc": "Vinculamos cada valor extraído con el documento y la ubicación exacta de donde procede."
+        },
+        {
+          "title": "Excepciones visibles",
+          "desc": "No validamos automáticamente decisiones ambiguas ni valores contradictorios; los enviamos a revisión."
+        },
+        {
+          "title": "Dentro del flujo actual",
+          "desc": "Nos adaptamos a los formularios y sistemas actuales para que nadie tenga que aprender una herramienta más."
+        }
+      ]
+    },
+    "cta": {
+      "title": "También creamos paquetes para documentos no listados",
+      "desc": "Envíenos de 3 a 5 documentos de muestra y los campos que transcribe actualmente. Primero definiremos el alcance de aplicación.",
+      "primary": {
+        "label": "Consultar sobre DocASI",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Ver Gerente Choi AI",
+        "href": "/solutions/office-ai"
       }
     }
   },
@@ -1527,7 +1807,7 @@
           },
           {
             "title": "Gestión fiscal y laboral",
-            "desc": "El cliente no determina retenciones ni seguros obligatorios."
+            "desc": "El cliente no tiene que determinar el tratamiento de las retenciones ni de los 4 seguros sociales obligatorios de Corea del Sur."
           },
           {
             "title": "Pool de talento validado",
@@ -1590,11 +1870,11 @@
         "id": "pbl",
         "eyebrow": "Qué es PBL",
         "title": "El proyecto es el currículo",
-        "lead": "Project Based Learning. No listamos primero lo que hay que aprender, sino que decidimos primero qué debe construirse. El conocimiento necesario se incorpora durante la construcción.",
+        "lead": "Aprendizaje basado en proyectos (PBL). No enumeramos primero lo que hay que aprender; decidimos qué hay que construir. Adquirimos los conocimientos necesarios durante el proceso.",
         "items": [
           {
             "title": "Quedan resultados",
-            "desc": "No queda solo un certificado, sino un proyecto en funcionamiento."
+            "desc": "Lo que queda no es un certificado, sino un proyecto en funcionamiento."
           },
           {
             "title": "Se vive la colaboración",
@@ -1863,7 +2143,7 @@
           "Informe de retrospectiva"
         ],
         "careers": [
-          "Project manager",
+          "Gestor de proyectos",
           "Líder de equipo",
           "Planificador de servicios"
         ]
@@ -1889,6 +2169,7 @@
         "detail": "Contenido",
         "apply": "Inscripción"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "Puede preguntar antes de inscribirse",
         "desc": "Primero revisamos si puede seguir el curso con su nivel actual.",
@@ -1900,8 +2181,7 @@
           "label": "Contacto",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {
@@ -2199,7 +2479,7 @@
           "id": "obligations",
           "title": "3. Obligaciones del usuario",
           "body": [
-            "El usuario no debe apropiarse de información de terceros ni introducir información falsa.",
+            "El usuario no debe usar indebidamente la información de terceros ni introducir información falsa.",
             "El usuario no puede reproducir, distribuir ni usar comercialmente el contenido del sitio web sin el consentimiento previo de la Empresa."
           ]
         },
@@ -2222,7 +2502,7 @@
           "id": "jurisdiction",
           "title": "6. Jurisdicción",
           "body": [
-            "Las controversias relacionadas con estos términos estarán sujetas al tribunal competente sobre la ubicación de la sede principal de la Empresa."
+            "Las controversias relacionadas con estos términos se someterán a la jurisdicción del tribunal competente del lugar donde se encuentre la sede principal de la Empresa."
           ]
         }
       ]
@@ -2231,7 +2511,7 @@
   },
   "seo": {
     "home": {
-      "description": "Physical AI para plantas industriales, Gerente Choi AI para oficinas. DevFirm, una empresa de desarrollo formada por desarrolladores, ofrece soluciones AI, desarrollo de software, asignación de desarrolladores y Academia PBL."
+      "description": "Physical AI para entornos industriales, Gerente Choi AI para oficinas. DevFirm, una empresa de desarrollo formada por desarrolladores, ofrece soluciones AI, desarrollo de software, asignación de desarrolladores y Academia PBL."
     },
     "page": {
       "about": {
@@ -2240,7 +2520,7 @@
       },
       "cic": {
         "title": "Empresa interna independiente (CIC)",
-        "description": "El sistema de empresa interna independiente donde los desarrolladores gestionan su propio negocio dentro de DevFirm. Presentamos condiciones de participación, alcance de apoyo y hoja de ruta para el avance de Agent AI."
+        "description": "El sistema de empresa interna independiente donde los desarrolladores gestionan su propio negocio dentro de DevFirm. Presentamos condiciones de participación, alcance de apoyo y hoja de ruta para mejorar los agentes AI."
       },
       "careers": {
         "title": "Empleo para desarrolladores",
@@ -2248,15 +2528,15 @@
       },
       "solutions": {
         "title": "Soluciones AI",
-        "description": "Ofrecemos Physical AI para plantas industriales, Gerente Choi AI para oficinas y agentes AI para seis industrias: construcción, contenidos, fabricación, distribución, servicios tercerizados y prevención del delito."
+        "description": "Ofrecemos Physical AI para entornos industriales, Gerente Choi AI para oficinas y agentes AI para seis industrias: construcción, contenidos, fabricación, distribución, servicios tercerizados y prevención del delito."
       },
       "officeAi": {
         "title": "Gerente Choi AI — agente para oficinas",
         "description": "Un agente AI que asume tareas repetitivas de oficina como leer y ordenar documentos y escribir informes. Presentamos el método de adopción y casos de aplicación."
       },
       "physicalAi": {
-        "title": "Physical AI — agente para plantas industriales",
-        "description": "AI para plantas industriales que convierte lo que leen cámaras y sensores en juicios que las personas pueden usar. Presentamos capacidades técnicas e industrias aplicables."
+        "title": "Physical AI — agente para entornos industriales",
+        "description": "AI para entornos industriales que convierte lo que leen cámaras y sensores en juicios que las personas pueden usar. Presentamos capacidades técnicas e industrias aplicables."
       },
       "services": {
         "title": "Servicios de desarrollo",
@@ -2299,6 +2579,6 @@
         "description": "Términos relativos al uso del sitio web de DevFirm."
       }
     },
-    "ogImageAlt": "DevFirm — una empresa de desarrollo formada por desarrolladores. Physical AI para plantas industriales, Gerente Choi AI para oficinas."
+    "ogImageAlt": "DevFirm — una empresa de desarrollo formada por desarrolladores. Physical AI para entornos industriales, Gerente Choi AI para oficinas."
   }
 }

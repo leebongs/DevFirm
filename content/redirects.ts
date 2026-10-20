@@ -21,4 +21,7 @@ export const legacyRedirects = [
   { from: "/solution-academy", to: "/academy/courses" },
   { from: "/academy-application", to: "/academy/apply" },
   { from: "/shared-office", to: "/workspace" },
+  // DocASI 리브랜딩(2026-10): 구 DocAI 경로. 시작 안내 구 URL은 배포된 앱 초대 메일에도 박혀 있다.
+  { from: "/solutions/docai", to: "/solutions/docasi" },
+  { from: "/solutions/docai/start", to: "/solutions/docasi/start" },
 ] as const;

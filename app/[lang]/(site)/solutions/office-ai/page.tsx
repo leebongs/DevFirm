@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/typography/page-hero";
 import { ArticleShell } from "@/components/layout/article-shell";
 import { SectionHeading } from "@/components/typography/section-heading";
@@ -9,6 +11,7 @@ import { buildMetadata } from "@/lib/metadata";
 import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
 import { getDictionary } from "@/lib/i18n";
 import { illustrations } from "@/content/illustrations";
+import { getDocAiEntry } from "@/content/docai-entry";
 export async function generateMetadata({
   params,
 }: {
@@ -32,6 +35,7 @@ export default async function OfficeAiPage({
   const { lang } = await params;
   const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
   const t = await getDictionary(locale);
+  const docAiEntry = getDocAiEntry(locale);
 
   return (
     <>
@@ -40,6 +44,15 @@ export default async function OfficeAiPage({
         title={t.solutions.officeAi.hero.title}
         lead={t.solutions.officeAi.hero.lead}
         art={illustrations.officeAi}
+        actions={
+          <Link
+            href={docAiEntry.href}
+            className="border-input hover:bg-accent focus-visible:ring-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-md border px-5 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
+          >
+            {docAiEntry.officeAiAction}
+            <ArrowRight className="size-4" aria-hidden />
+          </Link>
+        }
       />
 
       <ArticleShell href="/solutions/office-ai">

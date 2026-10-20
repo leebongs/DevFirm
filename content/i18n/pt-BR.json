@@ -106,6 +106,11 @@
             "label": "AI para Prevenção de Crimes",
             "href": "/solutions/agents/safety",
             "description": "Detecção de anomalias baseada em análise de vídeo"
+          },
+          {
+            "label": "Catálogo DocASI",
+            "href": "/solutions/docasi",
+            "description": "Pacotes para leitura, comparação e estruturação de documentos por tarefa"
           }
         ]
       },
@@ -207,6 +212,10 @@
           {
             "label": "AI para Prevenção de Crimes",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "Catálogo DocASI",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -321,6 +330,11 @@
           "label": "AI para Prevenção de Crimes",
           "href": "/solutions/agents/safety",
           "description": "Detecção de anomalias baseada em análise de vídeo"
+        },
+        {
+          "label": "Catálogo DocASI",
+          "href": "/solutions/docasi",
+          "description": "Pacotes para leitura, comparação e estruturação de documentos por tarefa"
         }
       ],
       "/services": [
@@ -557,7 +571,7 @@
           "desc": "A pessoa jurídica cuida de recebíveis em atraso e cobranças. O desenvolvedor não precisa discutir dinheiro diretamente com o contratante."
         },
         {
-          "title": "Seguros obrigatórios e relações trabalhistas",
+          "title": "Quatro seguros sociais e relações trabalhistas",
           "desc": "A empresa faz os registros e a gestão trabalhista conforme a forma de contratação."
         }
       ]
@@ -708,6 +722,7 @@
         "deadline": "Prazo",
         "apply": "Candidatar-se"
       },
+      "seoDescription": "Estamos contratando para a vaga de {title} na equipe {team}. {responsibility}",
       "cta": {
         "title": "Mesmo que não haja uma vaga adequada",
         "desc": "Conte-nos que tipo de trabalho você quer fazer e procuraremos um lugar juntos. Também há a forma de começar como CIC.",
@@ -719,8 +734,7 @@
           "label": "Conhecer o CIC",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "Estamos contratando para a vaga de {title} na equipe {team}. {responsibility}"
+      }
     },
     "jobs": [
       {
@@ -1064,6 +1078,272 @@
           "label": "Ver todas as soluções de AI",
           "href": "/solutions"
         }
+      }
+    }
+  },
+  "docai": {
+    "seo": {
+      "title": "Catálogo DocASI — automação de documentos por tarefa",
+      "description": "Encontre pacotes DocASI por tarefa para ler e estruturar contratos, notas fiscais, atas de reunião, editais de licitação e relatórios de campo."
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "Envie o documento. O trabalho avança.",
+      "lead": "Não paramos na leitura dos documentos. Identificamos os dados necessários, comparamos as informações e as entregamos em um formato que permite iniciar a próxima tarefa.",
+      "primary": {
+        "label": "Ver pacotes",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "Falar sobre seus documentos",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "Documento em processamento",
+        "fileName": "contrato_de_fornecimento_final.pdf",
+        "status": "Pronto para revisão",
+        "fields": [
+          {
+            "label": "Vigência do contrato",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "Renovação automática",
+            "value": "Aviso com 30 dias de antecedência"
+          },
+          {
+            "label": "Condições de pagamento",
+            "value": "30 dias após a aprovação"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "Pacotes por tarefa"
+        },
+        {
+          "value": "5",
+          "label": "Áreas de atuação"
+        },
+        {
+          "value": "4",
+          "label": "Formatos de saída"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "CATÁLOGO DE PACOTES",
+      "title": "Escolha o documento em uso",
+      "lead": "Cada pacote de documentos é uma unidade de trabalho que reúne formato de entrada, campos a extrair e a saída destinada ao próximo sistema.",
+      "searchLabel": "Buscar pacotes",
+      "searchPlaceholder": "Buscar por documento, tarefa ou campo",
+      "clearSearch": "Limpar busca",
+      "filterLabel": "Filtrar por área",
+      "resultSuffix": " pacotes",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Todos"
+        },
+        {
+          "key": "legal",
+          "label": "Contratos e jurídico"
+        },
+        {
+          "key": "finance",
+          "label": "Finanças e comprovantes"
+        },
+        {
+          "key": "operations",
+          "label": "Operações e RH"
+        },
+        {
+          "key": "public",
+          "label": "Setor público e licitações"
+        },
+        {
+          "key": "field",
+          "label": "Campo e qualidade"
+        }
+      ],
+      "featuredLabel": "Destaque",
+      "card": {
+        "fieldLabel": "Campos definidos",
+        "outputLabel": "Saída",
+        "action": "Ver escopo"
+      },
+      "empty": {
+        "title": "Nenhum pacote corresponde aos filtros",
+        "body": "Reduza os termos da busca ou selecione outra área.",
+        "reset": "Limpar filtros"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "Revisão de cláusulas contratuais",
+        "summary": "Identifica cláusulas de vigência, valores, renovação, rescisão e indenização e as organiza em uma lista de revisão.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28 campos",
+        "output": "Lista de revisão · resumo das cláusulas",
+        "tags": [
+          "Cláusulas de risco",
+          "Prazos de obrigações",
+          "Comparação de cláusulas"
+        ],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "Conferência de notas fiscais e detalhes da transação",
+        "summary": "Lê valor da operação, tributos, itens e fornecedores e aponta divergências em relação aos pedidos e registros de recebimento.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24 campos",
+        "output": "Tabela comparativa · lista de exceções",
+        "tags": [
+          "Validação de valores",
+          "Fornecedor",
+          "Detecção de duplicatas"
+        ],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "Organização de aprovações de despesas e recibos",
+        "summary": "Agrupa o recibo e a autorização de despesa em um único registro e padroniza conta, finalidade, data e valor.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18 campos",
+        "output": "XLSX · proposta de lançamento contábil",
+        "tags": [
+          "Comprovantes agrupados",
+          "Sugestão de conta",
+          "Verificação de ausências"
+        ]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "Estruturação de currículos e históricos profissionais",
+        "summary": "Organiza experiência, competências, projetos e formação de candidatos em formatos diferentes segundo os mesmos critérios.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32 campos",
+        "output": "Ficha do candidato · CSV",
+        "tags": [
+          "Padronização da experiência",
+          "Classificação de competências",
+          "Dados pessoais"
+        ]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "Extração de tarefas de atas de reunião",
+        "summary": "Identifica decisões, responsáveis, prazos e itens pendentes e os transforma em uma lista de tarefas de acompanhamento.",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16 campos",
+        "output": "Lista de tarefas · JSON",
+        "tags": ["Decisões", "Responsável", "Prazo final"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "Análise de editais e solicitações de propostas",
+        "summary": "Identifica requisitos de participação, documentos exigidos, critérios de avaliação e prazos para criar uma lista de preparação da proposta.",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36 campos",
+        "output": "Cronograma · lista de documentos exigidos",
+        "tags": [
+          "Requisitos de habilitação",
+          "Critérios de avaliação",
+          "Documentos exigidos"
+        ],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "Organização de relatórios diários de obra",
+        "summary": "Lê tipo de serviço, pessoal, equipamentos, avanço e ocorrências e consolida o status diário de cada obra.",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30 campos",
+        "output": "Status diário · tabela acumulada",
+        "tags": ["Etapas da obra", "Pessoal e equipamentos", "Ocorrências"]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "Leitura de laudos de inspeção e documentos de qualidade",
+        "summary": "Estrutura itens de teste, valores de referência, medições e resultados e reúne os casos fora da especificação.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34 campos",
+        "output": "Histórico de qualidade · lista de exceções",
+        "tags": [
+          "Resultados dos testes",
+          "Comparação com especificações",
+          "Rastreio de lotes"
+        ]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "DO ARQUIVO AO FLUXO",
+      "title": "Os dados extraídos passam à próxima tarefa",
+      "lead": "Primeiro definimos os critérios de leitura e os pontos que exigem revisão humana para cada documento. Depois ajustamos o formato de entrega às ferramentas de trabalho existentes.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Coleta de documentos",
+          "desc": "Recebemos os arquivos originais e seus metadados por e-mail, pastas ou sistemas de trabalho."
+        },
+        {
+          "step": "02",
+          "title": "Extração de campos",
+          "desc": "Identificamos os valores necessários e sua localização no documento conforme os campos definidos no pacote."
+        },
+        {
+          "step": "03",
+          "title": "Revisão e comparação",
+          "desc": "Reunimos somente exceções e itens incertos para revisão humana."
+        },
+        {
+          "step": "04",
+          "title": "Integração ao trabalho",
+          "desc": "Entregamos ao próximo sistema e ao responsável em XLSX, CSV, JSON ou por API."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "PRINCÍPIOS DE OPERAÇÃO",
+      "title": "O que priorizamos antes da automação",
+      "items": [
+        {
+          "title": "Original e origem dos dados",
+          "desc": "Mantemos cada valor extraído vinculado ao documento e ao local de onde veio."
+        },
+        {
+          "title": "Exceções ficam visíveis",
+          "desc": "Não confirmamos automaticamente dados ambíguos ou divergentes; eles seguem para a lista de revisão."
+        },
+        {
+          "title": "Dentro do fluxo atual",
+          "desc": "Adaptamos a saída aos formulários e sistemas atuais, sem exigir o aprendizado de outra ferramenta."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Documentos fora do catálogo também podem virar pacotes",
+      "desc": "Com 3 a 5 documentos de exemplo e os campos que sua equipe transcreve hoje, definimos primeiro o escopo de aplicação.",
+      "primary": {
+        "label": "Consultar sobre o DocASI",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Ver Gerente Choi AI",
+        "href": "/solutions/office-ai"
       }
     }
   },
@@ -1527,7 +1807,7 @@
           },
           {
             "title": "Tratamento fiscal e trabalhista",
-            "desc": "O contratante não cuida de retenção na fonte nem de decisões sobre seguros obrigatórios."
+            "desc": "O contratante não precisa decidir sobre retenção na fonte nem sobre os quatro seguros sociais obrigatórios."
           },
           {
             "title": "Banco de talentos verificado",
@@ -1892,6 +2172,7 @@
         "detail": "Conteúdo",
         "apply": "Inscrição"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "Você pode perguntar antes de se inscrever",
         "desc": "Verificamos primeiro se você consegue acompanhar com o nível atual.",
@@ -1903,8 +2184,7 @@
           "label": "Contato",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {

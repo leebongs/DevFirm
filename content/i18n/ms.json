@@ -106,6 +106,11 @@
             "label": "AI Pencegahan Jenayah",
             "href": "/solutions/agents/safety",
             "description": "Pengesanan tanda luar biasa berasaskan analisis video"
+          },
+          {
+            "label": "Katalog DocASI",
+            "href": "/solutions/docasi",
+            "description": "Pakej pembacaan, perbandingan dan penstrukturan dokumen mengikut tugas"
           }
         ]
       },
@@ -207,6 +212,10 @@
           {
             "label": "AI Pencegahan Jenayah",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "Katalog DocASI",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -321,6 +330,11 @@
           "label": "AI Pencegahan Jenayah",
           "href": "/solutions/agents/safety",
           "description": "Pengesanan tanda luar biasa berasaskan analisis video"
+        },
+        {
+          "label": "Katalog DocASI",
+          "href": "/solutions/docasi",
+          "description": "Pakej pembacaan, perbandingan dan penstrukturan dokumen mengikut tugas"
         }
       ],
       "/services": [
@@ -708,6 +722,7 @@
         "deadline": "Tarikh Akhir",
         "apply": "Mohon"
       },
+      "seoDescription": "Kami sedang mencari {title} untuk pasukan {team}. {responsibility}",
       "cta": {
         "title": "Walaupun tiada jawatan yang sepadan",
         "desc": "Beritahu kami kerja yang anda mahu lakukan, dan kami akan mencari tempat bersama. Bermula sebagai CIC juga satu pilihan.",
@@ -719,8 +734,7 @@
           "label": "Ketahui CIC",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "Kami sedang mencari {title} untuk pasukan {team}. {responsibility}"
+      }
     },
     "jobs": [
       {
@@ -1064,6 +1078,268 @@
           "label": "Lihat Semua Penyelesaian AI",
           "href": "/solutions"
         }
+      }
+    }
+  },
+  "docai": {
+    "seo": {
+      "title": "Katalog DocASI — Automasi Dokumen Mengikut Tugas",
+      "description": "Terokai pakej dokumen DocASI mengikut tugas untuk membaca dan menstrukturkan kontrak, invois cukai, minit mesyuarat, notis tender dan laporan tapak."
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "Muat naik dokumen, gerakkan kerja",
+      "lead": "Kami tidak sekadar membaca dokumen. Kami mencari maklumat yang diperlukan, membandingkannya dan menyerahkannya dalam bentuk yang membolehkan tugasan seterusnya dimulakan.",
+      "primary": {
+        "label": "Terokai Pakej Dokumen",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "Bincangkan Dokumen Anda",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "Dokumen Sedang Diproses",
+        "fileName": "kontrak_pembekalan_akhir.pdf",
+        "status": "Sedia untuk Semakan",
+        "fields": [
+          {
+            "label": "Tempoh Kontrak",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "Pembaharuan Automatik",
+            "value": "Notis 30 hari lebih awal"
+          },
+          {
+            "label": "Syarat Pembayaran",
+            "value": "30 hari selepas penerimaan"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "Pakej Dokumen Khusus Tugas"
+        },
+        {
+          "value": "5",
+          "label": "Kategori Kerja"
+        },
+        {
+          "value": "4",
+          "label": "Format Output"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "KATALOG PAKEJ DOKUMEN",
+      "title": "Pilih dokumen yang sedang anda kendalikan",
+      "lead": "Setiap pakej dokumen menghimpunkan format input, medan yang diekstrak dan output untuk sistem seterusnya sebagai satu unit kerja.",
+      "searchLabel": "Cari Pakej Dokumen",
+      "searchPlaceholder": "Cari nama dokumen, tugas atau medan",
+      "clearSearch": "Kosongkan carian",
+      "filterLabel": "Tapis mengikut bidang kerja",
+      "resultSuffix": " pakej dokumen",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Semua"
+        },
+        {
+          "key": "legal",
+          "label": "Kontrak & Perundangan"
+        },
+        {
+          "key": "finance",
+          "label": "Kewangan & Dokumen Sokongan"
+        },
+        {
+          "key": "operations",
+          "label": "Operasi & Sumber Manusia"
+        },
+        {
+          "key": "public",
+          "label": "Sektor Awam & Tender"
+        },
+        {
+          "key": "field",
+          "label": "Tapak & Kualiti"
+        }
+      ],
+      "featuredLabel": "Disyorkan",
+      "card": {
+        "fieldLabel": "Medan Ditetapkan",
+        "outputLabel": "Output",
+        "action": "Semak Skop"
+      },
+      "empty": {
+        "title": "Tiada pakej dokumen yang sepadan",
+        "body": "Cuba pendekkan kata carian atau pilih bidang kerja lain.",
+        "reset": "Tetapkan Semula Penapis"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "Semak Klausa Utama Kontrak",
+        "summary": "Cari klausa tempoh kontrak, amaun, pembaharuan, penamatan dan ganti rugi, kemudian susunkannya dalam senarai semak.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28 medan",
+        "output": "Senarai semak · Ringkasan klausa",
+        "tags": [
+          "Frasa berisiko",
+          "Tarikh akhir obligasi",
+          "Perbandingan klausa"
+        ],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "Padankan Invois Cukai & Penyata Transaksi",
+        "summary": "Baca nilai bekalan, cukai, item dan rakan niaga, kemudian tandai perbezaan daripada pesanan belian dan rekod penerimaan.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24 medan",
+        "output": "Jadual perbandingan · Senarai pengecualian",
+        "tags": ["Pengesahan amaun", "Rakan niaga", "Pengesanan pendua"],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "Susun Permohonan Perbelanjaan & Resit",
+        "summary": "Gabungkan setiap resit dengan permohonan perbelanjaannya dan seragamkan akaun, tempat perbelanjaan, tarikh serta amaun.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18 medan",
+        "output": "XLSX · Draf catatan perakaunan",
+        "tags": [
+          "Dokumen sokongan",
+          "Cadangan akaun",
+          "Semakan maklumat hilang"
+        ]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "Strukturkan Resume & Riwayat Kerjaya",
+        "summary": "Susun pengalaman, kemahiran, projek dan pendidikan daripada format berbeza bagi setiap pemohon mengikut kriteria yang sama.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32 medan",
+        "output": "Kad calon · CSV",
+        "tags": [
+          "Penyeragaman pengalaman",
+          "Pengelasan kemahiran",
+          "Maklumat peribadi"
+        ]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "Ekstrak Item Tindakan daripada Minit Mesyuarat",
+        "summary": "Cari keputusan, pegawai bertanggungjawab, tarikh akhir dan item tertangguh, kemudian tukarkannya kepada senarai tugas susulan.",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16 medan",
+        "output": "Senarai tugas · JSON",
+        "tags": ["Keputusan", "Pegawai bertanggungjawab", "Tarikh akhir"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "Analisis Notis Tender & RFP",
+        "summary": "Cari syarat kelayakan, dokumen yang diperlukan, kriteria penilaian dan jadual untuk menghasilkan senarai semak penyediaan cadangan.",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36 medan",
+        "output": "Jadual · Senarai semak penyerahan",
+        "tags": [
+          "Syarat kelayakan",
+          "Kriteria penilaian",
+          "Dokumen diperlukan"
+        ],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "Susun Laporan Kerja Harian Pembinaan",
+        "summary": "Baca jenis kerja, tenaga kerja, peralatan, kemajuan dan perkara penting, kemudian gabungkannya menjadi status harian bagi setiap tapak.",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30 medan",
+        "output": "Status harian · Jadual kumulatif",
+        "tags": [
+          "Kemajuan kerja",
+          "Tenaga kerja & peralatan",
+          "Perkara penting"
+        ]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "Baca Laporan Ujian & Dokumen Kualiti",
+        "summary": "Strukturkan item ujian, nilai piawai, nilai ukuran dan keputusan, kemudian kumpulkan kes yang berada di luar spesifikasi.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34 medan",
+        "output": "Sejarah kualiti · Senarai pengecualian",
+        "tags": ["Nilai ujian", "Perbandingan spesifikasi", "Penjejakan LOT"]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "DARIPADA FAIL KEPADA ALIRAN KERJA",
+      "title": "Hasil bacaan menggerakkan tugas seterusnya",
+      "lead": "Kami terlebih dahulu menetapkan kriteria bacaan bagi setiap dokumen dan perkara yang perlu disemak oleh manusia. Kemudian, kami menyesuaikan format output dengan alat kerja sedia ada.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Kumpulkan Dokumen",
+          "desc": "Terima dokumen asal dan metadata bersama-sama daripada e-mel, folder dan sistem kerja."
+        },
+        {
+          "step": "02",
+          "title": "Ekstrak Medan",
+          "desc": "Cari nilai yang diperlukan dan lokasi sumbernya berdasarkan takrif medan dalam pakej dokumen."
+        },
+        {
+          "step": "03",
+          "title": "Semak & Bandingkan",
+          "desc": "Kumpulkan hanya pengecualian dan item yang tidak pasti untuk disemak oleh manusia."
+        },
+        {
+          "step": "04",
+          "title": "Sambungkan Aliran Kerja",
+          "desc": "Serahkan hasil kepada sistem seterusnya dan pegawai bertanggungjawab melalui XLSX, CSV, JSON atau API."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "PRINSIP OPERASI",
+      "title": "Perkara yang didahulukan sebelum automasi",
+      "items": [
+        {
+          "title": "Kekalkan dokumen asal dan sumbernya",
+          "desc": "Kami memastikan setiap nilai yang diekstrak kekal dipautkan kepada dokumen dan lokasi asalnya."
+        },
+        {
+          "title": "Pastikan pengecualian dapat dilihat",
+          "desc": "Kami tidak memuktamadkan pertimbangan yang kabur atau nilai yang bercanggah secara automatik. Item tersebut dihantar untuk semakan."
+        },
+        {
+          "title": "Sesuaikan dengan aliran kerja sedia ada",
+          "desc": "Kami menyesuaikannya dengan borang dan sistem yang sedang digunakan supaya pengguna tidak perlu mempelajari alat baharu."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Dokumen yang tiada dalam katalog juga boleh dijadikan pakej dokumen",
+      "desc": "Kongsikan 3~5 dokumen contoh dan medan yang sedang anda salin secara manual. Kami akan menentukan skop penerapan terlebih dahulu.",
+      "primary": {
+        "label": "Tanya Tentang DocASI",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Lihat Pengurus Choi AI",
+        "href": "/solutions/office-ai"
       }
     }
   },
@@ -1889,6 +2165,7 @@
         "detail": "Kandungan",
         "apply": "Mohon Kursus"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "Anda boleh bertanya sebelum memohon",
         "desc": "Kami mula-mula menyemak sama ada anda boleh mengikuti kursus pada tahap semasa anda.",
@@ -1900,8 +2177,7 @@
           "label": "Hubungi Kami",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {

@@ -106,6 +106,11 @@
             "label": "Brottsförebyggande AI",
             "href": "/solutions/agents/safety",
             "description": "Avvikelsedetektering baserad på videoanalys"
+          },
+          {
+            "label": "DocASI-katalog",
+            "href": "/solutions/docasi",
+            "description": "Dokumentpaket för läsning, jämförelse och strukturering"
           }
         ]
       },
@@ -207,6 +212,10 @@
           {
             "label": "Brottsförebyggande AI",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "DocASI-katalog",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -321,6 +330,11 @@
           "label": "Brottsförebyggande AI",
           "href": "/solutions/agents/safety",
           "description": "Avvikelsedetektering baserad på videoanalys"
+        },
+        {
+          "label": "DocASI-katalog",
+          "href": "/solutions/docasi",
+          "description": "Dokumentpaket för läsning, jämförelse och strukturering"
         }
       ],
       "/services": [
@@ -708,6 +722,7 @@
         "deadline": "Sista dag",
         "apply": "Ansök"
       },
+      "seoDescription": "Vi rekryterar till rollen {title} i teamet {team}. {responsibility}",
       "cta": {
         "title": "Även om rätt annons saknas",
         "desc": "Berätta vilket arbete du vill göra, så letar vi efter en plats tillsammans. Det finns också en väg att börja som CIC.",
@@ -719,8 +734,7 @@
           "label": "Läs om CIC",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "Vi rekryterar till rollen {title} i teamet {team}. {responsibility}"
+      }
     },
     "jobs": [
       {
@@ -1064,6 +1078,264 @@
           "label": "Visa alla AI-lösningar",
           "href": "/solutions"
         }
+      }
+    }
+  },
+  "docai": {
+    "seo": {
+      "title": "DocASI-katalog – dokumentautomation för olika arbetsflöden",
+      "description": "Utforska DocASI-dokumentpaket för olika arbetsflöden. De läser och strukturerar avtal, fakturor, mötesprotokoll, upphandlingar och platsrapporter."
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "Ladda upp. Arbetet går vidare.",
+      "lead": "Vi stannar inte vid att läsa dokument. Vi hittar uppgifterna som behövs, jämför dem och lämnar över dem i ett format som nästa steg kan använda.",
+      "primary": {
+        "label": "Se dokumentpaketen",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "Prata om era dokument",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "Dokument under behandling",
+        "fileName": "Leveransavtal_slutlig.pdf",
+        "status": "Klar för granskning",
+        "fields": [
+          {
+            "label": "Avtalsperiod",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "Automatisk förlängning",
+            "value": "Meddela 30 dagar i förväg"
+          },
+          {
+            "label": "Betalningsvillkor",
+            "value": "30 dagar efter godkännande"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "Dokumentpaket för arbetsflöden"
+        },
+        {
+          "value": "5",
+          "label": "Arbetskategorier"
+        },
+        {
+          "value": "4",
+          "label": "Utdataformat"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "DOC PACK CATALOG",
+      "title": "Välj dokumentet du arbetar med",
+      "lead": "Ett dokumentpaket är en arbetsenhet som samlar indataformat, uppgifter som ska extraheras och utdata för nästa system.",
+      "searchLabel": "Sök dokumentpaket",
+      "searchPlaceholder": "Sök dokument, arbete eller fält",
+      "clearSearch": "Rensa sökning",
+      "filterLabel": "Filtrera arbetsområde",
+      "resultSuffix": " dokumentpaket",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Alla"
+        },
+        {
+          "key": "legal",
+          "label": "Avtal och juridik"
+        },
+        {
+          "key": "finance",
+          "label": "Ekonomi och underlag"
+        },
+        {
+          "key": "operations",
+          "label": "Drift och personal"
+        },
+        {
+          "key": "public",
+          "label": "Offentlig upphandling"
+        },
+        {
+          "key": "field",
+          "label": "Arbetsplats och kvalitet"
+        }
+      ],
+      "featuredLabel": "Utvalt",
+      "card": {
+        "fieldLabel": "Fält",
+        "outputLabel": "Utdata",
+        "action": "Se tillämpningsområde"
+      },
+      "empty": {
+        "title": "Inga dokumentpaket matchar",
+        "body": "Förkorta sökningen eller välj ett annat arbetsområde.",
+        "reset": "Återställ filter"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "Granska viktiga avtalsvillkor",
+        "summary": "Hittar villkor om avtalstid, belopp, förlängning, uppsägning och skadestånd och sammanställer dem i en granskningslista.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28",
+        "output": "Granskningslista · villkorsöversikt",
+        "tags": ["Riskformuleringar", "Tidsfrister", "Jämförelse av villkor"],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "Jämför fakturor och underlag",
+        "summary": "Läser belopp exklusive moms, momsbelopp, artiklar och motparter och markerar avvikelser mot beställnings- och leveransunderlag.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24",
+        "output": "Jämförelsetabell · avvikelselista",
+        "tags": ["Beloppskontroll", "Motpart", "Dubblettkontroll"],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "Utgiftsbeslut och kvitton",
+        "summary": "Kopplar kvitton till respektive utgiftsbeslut och standardiserar konto, inköpsställe, datum och belopp.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18",
+        "output": "XLSX · bokföringsunderlag",
+        "tags": [
+          "Samlat underlag",
+          "Kontoförslag",
+          "Kontroll av saknade uppgifter"
+        ]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "Strukturera CV och meriter",
+        "summary": "Sammanställer erfarenhet, kompetens, projekt och utbildning enligt samma kriterier, oavsett hur sökandenas dokument är utformade.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32",
+        "output": "Kandidatkort · CSV",
+        "tags": [
+          "Enhetlig erfarenhetsdata",
+          "Kompetensindelning",
+          "Personuppgifter"
+        ]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "Åtgärder ur mötesprotokoll",
+        "summary": "Hittar beslut, ansvariga, tidsfrister och uppskjutna punkter och gör dem till en lista över uppföljningsuppgifter.",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16",
+        "output": "Uppgiftslista · JSON",
+        "tags": ["Beslut", "Ansvarig", "Sista datum"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "Upphandling och förfrågningar",
+        "summary": "Hittar behörighetskrav, handlingar som ska lämnas in, utvärderingskriterier och datum och sammanställer en checklista för anbudet.",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36",
+        "output": "Tidplan · checklista för inlämning",
+        "tags": [
+          "Behörighetskrav",
+          "Utvärderingskriterier",
+          "Handlingar som ska lämnas in"
+        ],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "Dagliga byggplatsrapporter",
+        "summary": "Läser arbetsmoment, personal, utrustning, framdrift och avvikelser och sammanställer en daglig lägesbild per byggplats.",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30",
+        "output": "Daglig lägesbild · sammanställning över tid",
+        "tags": ["Arbetsmoment", "Personal och utrustning", "Avvikelser"]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "Provnings- och kvalitetsdokument",
+        "summary": "Strukturerar provningspunkter, gränsvärden, mätvärden och bedömningar och samlar resultat som ligger utanför specifikationen.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34",
+        "output": "Kvalitetshistorik · avvikelselista",
+        "tags": [
+          "Provningsvärden",
+          "Jämförelse mot specifikation",
+          "Spårning av partier"
+        ]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "FROM FILE TO FLOW",
+      "title": "Resultat för nästa arbetssteg",
+      "lead": "För varje dokument fastställer vi först vad som ska läsas och vad en person behöver granska. Sedan anpassar vi formatet till de arbetsverktyg som redan används.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Samla in dokument",
+          "desc": "Vi tar emot original och metadata från e-post, mappar och verksamhetssystem."
+        },
+        {
+          "step": "02",
+          "title": "Extrahera uppgifter",
+          "desc": "Vi hittar de värden som behövs och var de står enligt dokumentpaketets fältdefinitioner."
+        },
+        {
+          "step": "03",
+          "title": "Granska och jämför",
+          "desc": "Vi samlar avvikelser och osäkra uppgifter för manuell granskning."
+        },
+        {
+          "step": "04",
+          "title": "För vidare arbetet",
+          "desc": "Vi lämnar över till nästa system och ansvarig via XLSX, CSV, JSON eller API."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "OPERATION PRINCIPLES",
+      "title": "Det som går före automatisering",
+      "items": [
+        {
+          "title": "Original och källhänvisning",
+          "desc": "Vi kopplar varje extraherat värde till dokumentet och platsen där det hittades."
+        },
+        {
+          "title": "Visa avvikelser",
+          "desc": "Otydliga bedömningar och motstridiga värden fastställs inte automatiskt, utan skickas till en granskningslista."
+        },
+        {
+          "title": "Anpassa till befintliga flöden",
+          "desc": "Vi anpassar oss till de mallar och system som redan används."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Fler dokument kan bli dokumentpaket",
+      "desc": "Skicka 3–5 exempeldokument och ange vilka uppgifter ni för över manuellt i dag, så tar vi först fram ett förslag till tillämpningsområde.",
+      "primary": {
+        "label": "Fråga om DocASI",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Se Chef Choi AI",
+        "href": "/solutions/office-ai"
       }
     }
   },
@@ -1885,6 +2157,7 @@
         "detail": "Innehåll",
         "apply": "Kursansökan"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "Du kan fråga innan du ansöker",
         "desc": "Vi kontrollerar först om du kan följa kursen på din nuvarande nivå.",
@@ -1896,8 +2169,7 @@
           "label": "Kontakta oss",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {
@@ -2150,15 +2422,15 @@
           "id": "rights",
           "title": "5. Den registrerades rättigheter",
           "body": [
-            "Användare kan när som helst begära tillgång till, rättelse, radering av eller begränsning av behandling av sina personuppgifter.",
+            "Användare kan när som helst begära tillgång till, rättelse eller radering av sina personuppgifter eller att behandlingen stoppas.",
             "Begäran kan lämnas till contact@devfirm.co eller 02-2058-0680, och bolaget vidtar åtgärder utan dröjsmål."
           ]
         },
         {
           "id": "manager",
-          "title": "6. Personuppgiftsansvarig kontakt",
+          "title": "6. Ansvarig för skydd av personuppgifter",
           "body": [
-            "CMNYX Co., Ltd. affärsstöd",
+            "Avdelningen för ledningsstöd vid CMNYX Co., Ltd.",
             "E-post: contact@devfirm.co",
             "Telefon: 02-2058-0680"
           ]

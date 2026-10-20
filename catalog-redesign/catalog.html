@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DocASI 도큐준수 — 서비스 카탈로그</title>
+  <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true">
+    <symbol id="docai-mark" viewBox="0 0 1024 1024">
+      <defs>
+        <linearGradient id="docasi-blueprint" x1="160" y1="120" x2="870" y2="930" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#2B9FBF"/>
+          <stop offset=".36" stop-color="#0C486E"/>
+          <stop offset="1" stop-color="#04141F"/>
+        </linearGradient>
+      </defs>
+      <rect x="64" y="64" width="896" height="896" rx="204" fill="url(#docasi-blueprint)"/>
+      <path fill="#F9F7EF" fill-rule="evenodd" d="M287 246H478C658 246 777 356 777 512S658 778 478 778H287C260 778 239 757 239 730V294C239 267 260 246 287 246ZM362 368V656H475C580 656 651 601 651 512S580 368 475 368H362Z"/>
+      <path fill="#F5B451" d="M502 426Q520 494 588 512Q520 530 502 598Q484 530 416 512Q484 494 502 426Z"/>
+      <circle cx="589" cy="425" r="22" fill="#7FD8E8"/>
+    </symbol>
+  </svg>
+
+  <!-- 1. Cover -->
+  <section class="sheet cover">
+    <img class="cover-art" src="assets/cover-illustration.png" alt="현장 사무소에서 일지를 검토하는 담당자 일러스트">
+    <div class="cover-wash"></div>
+    <div class="cover-grid"></div>
+    <div class="page-inner cover-content">
+      <header class="brand dark">
+        <svg><use href="#docai-mark"/></svg>
+        <div><strong>DocASI</strong><span>도큐준수 · Superintelligence for Document Compliance</span></div>
+      </header>
+      <div class="cover-copy">
+        <span class="kicker-pill">건설 현장 문서 준수 점검</span>
+        <h1>현장의 하루가<br>끝나기 전에,<br><em>놓친 규정을 찾습니다.</em></h1>
+        <p>일지·보고서·허가서를 놓으면 법률과 회사 규정집에 대조해 위반 가능성과 오늘 할 일을 담당자에게 보냅니다.</p>
+        <div class="cover-facts">
+          <div><b>5분</b><span>첫 분석</span></div>
+          <div><b>1대</b><span>허브 Mac</span></div>
+          <div><b>0</b><span>씨엠닉스 운영 서버</span></div>
+        </div>
+      </div>
+      <div class="cover-note">macOS 설치형 · 같은 LAN 또는 VPN · HWP/HWPX/DOCX/PDF/MD/JPG/PNG</div>
+    </div>
+    <footer class="footer light"><span>DocASI 도큐준수</span><span>서비스 카탈로그 · 2026.08</span><b>01</b></footer>
+  </section>
+
+  <!-- 2. One document, six issues -->
+  <section class="sheet p2">
+    <div class="soft-orb orb-coral"></div><div class="soft-orb orb-sky"></div>
+    <div class="page-inner">
+      <header class="page-head"><div><span class="eyebrow">THE MOMENT</span><h1>평범한 일지 한 장이<br><em>감사 리스크가 되기 전.</em></h1></div><span class="section-no">01</span></header>
+      <div class="problem-grid">
+        <figure class="story-visual">
+          <img src="assets/document-issues.png" alt="한 장의 건설 문서에서 여러 점검 항목이 발견되는 일러스트">
+          <figcaption>실제 분석 예 · 2026-08-21 일일 업무일지.hwp</figcaption>
+        </figure>
+        <div class="issue-summary">
+          <div class="donut" aria-label="이슈 6건 중 고위험 2건, 중위험 2건, 정보 1건, 해결 1건"><div><strong>6</strong><span>발견 이슈</span></div></div>
+          <div class="metric-row"><b>2</b><span>고위험</span><i class="dot high"></i></div>
+          <div class="metric-row"><b>2</b><span>중위험</span><i class="dot mid"></i></div>
+          <div class="metric-row"><b>1</b><span>정보</span><i class="dot info"></i></div>
+          <div class="metric-row"><b>1</b><span>해결</span><i class="dot done"></i></div>
+          <p class="caption">법률 · 회사 규정집 · 작업허가 절차서 · 문서작성 표준을 한 번에 대조한 결과입니다.</p>
+        </div>
+      </div>
+      <div class="issue-cards">
+        <article class="issue-card high"><span>고위험</span><h3>안전관리 책임자 서명 누락</h3><p>산업안전보건법_2024_개정본.pdf · 제38조 제1항</p><b>김현수 · 감리사</b></article>
+        <article class="issue-card high"><span>고위험</span><h3>위험성 평가 항목 미기재</h3><p>건설현장_안전관리_규정집.pdf · 4.2</p><b>정민아 · 안전관리자</b></article>
+        <article class="issue-card mid"><span>중위험</span><h3>작업 허가서 번호 불일치</h3><p>WP-0821-03 ≠ 원본 WP-0821-07</p><b>이서준 · 현장 운영자</b></article>
+      </div>
+      <p class="micro-note">그 밖의 결과: 비상연락망 확인일 30일 초과 · 날짜 표기 형식 · 장비 점검표 첨부 확인(09:12 재분석)</p>
+    </div>
+    <footer class="footer"><span>일지 한 장에서 시작되는 변화</span><span>실제 분석 예</span><b>02</b></footer>
+  </section>
+
+  <!-- 3. Flow -->
+  <section class="sheet p3">
+    <div class="page-inner">
+      <header class="page-head"><div><span class="eyebrow">HOW IT WORKS</span><h1>문서는 놓는 순간,<br><em>담당자의 할 일로 바뀝니다.</em></h1></div><span class="section-no">02</span></header>
+      <div class="flowline">
+        <article><span class="step-badge coral">1</span><div class="flow-icon file-icon"></div><h3>드롭</h3><p>직원이 자기 PC의 드롭 폴더에 문서를 놓습니다.</p><b>즉시</b></article>
+        <i></i>
+        <article><span class="step-badge yellow">2</span><div class="flow-icon transfer-icon"></div><h3>전송</h3><p>같은 LAN 또는 VPN에서 허브의 직원별 폴더로 복사됩니다.</p><b>연결 시</b></article>
+        <i></i>
+        <article><span class="step-badge blue">3</span><div class="flow-icon compare-icon"></div><h3>대조</h3><p>법률·회사 규정·조직 및 개인 가이드라인과 대조합니다.</p><b>5분 이내</b></article>
+        <i></i>
+        <article><span class="step-badge mint">4</span><div class="flow-icon notify-icon"></div><h3>알림</h3><p>근거와 권장 수정이 CEO와 담당 직원 리포트로 정리됩니다.</p><b>5시간 주기 재검토</b></article>
+      </div>
+      <div class="hub-story">
+        <div class="people-stack">
+          <span>김현수 <small>감리사</small></span><span>이서준 <small>현장 운영자</small></span><span>정민아 <small>안전관리자</small></span>
+        </div>
+        <div class="route-arrow"><b>문서</b><i></i></div>
+        <div class="hub-card">
+          <span class="hub-glow"></span><b>HUB</b><h2>CEO Mac</h2><p>문서 · 가이드라인 · 계정<br>분석 · 알림 · 감사 기록</p><small>터미널 CLI · 고객 계정</small>
+        </div>
+        <div class="route-arrow return"><b>결과</b><i></i></div>
+        <div class="outputs"><span><b>CEO</b> 조직 전체 현황</span><span><b>담당자</b> 오늘 할 일</span><span><b>리포트</b> 근거 · 권장 수정</span></div>
+      </div>
+      <div class="trust-strip"><strong>원본은 직원 PC에 그대로 남습니다.</strong><span>허브가 꺼져 있으면 전송을 기다렸다가 다시 이어집니다.</span></div>
+    </div>
+    <footer class="footer"><span>드롭 → 전송 → 대조 → 알림</span><span>DocASI Workflow</span><b>03</b></footer>
+  </section>
+
+  <!-- 4. Product -->
+  <section class="sheet p4">
+    <div class="sky-band"></div>
+    <div class="page-inner">
+      <header class="page-head"><div><span class="eyebrow">PRODUCT EXPERIENCE</span><h1>담당자는 긴 보고서 대신<br><em>오늘 고칠 것만 봅니다.</em></h1></div><span class="section-no">03</span></header>
+      <div class="screen-stage">
+        <div class="browser-bar"><i></i><i></i><i></i><span>DocASI · 오늘의 문서</span></div>
+        <img src="assets/home-client.png" alt="DocASI 직원 홈 화면">
+        <span class="screen-pin p1">1</span><span class="screen-pin p2">2</span><span class="screen-pin p3">3</span>
+      </div>
+      <div class="feature-grid">
+        <article><span class="feature-no coral">1</span><h3>드롭 존</h3><p>파일을 놓는 즉시 허브로 복사됩니다.</p></article>
+        <article><span class="feature-no blue">2</span><h3>오늘의 파이프라인</h3><p>드롭 · 전송 · 분석 중 · 완료 상태를 봅니다.</p></article>
+        <article><span class="feature-no mint">3</span><h3>근거가 남는 결과</h3><p>파일명 · 조항 · 참조 문장으로 이유를 확인합니다.</p></article>
+      </div>
+      <div class="evidence-card"><div class="evidence-crop"><img src="assets/analysis.png" alt="DocASI 분석 결과 화면"></div><div><span>분석 결과</span><h3>색이 없어도 읽히는 위험도,<br>클릭하면 이어지는 원문 근거.</h3><p>고위험 · 중위험 · 해결 상태와 조직·허브·사용자·마지막 동기화·엔진 연결 상태를 한 화면에 표시합니다.</p></div></div>
+    </div>
+    <footer class="footer"><span>오늘의 우선순위와 근거</span><span>Product Experience</span><b>04</b></footer>
+  </section>
+
+  <!-- 5. Rules & permissions -->
+  <section class="sheet p5">
+    <div class="page-inner">
+      <header class="page-head"><div><span class="eyebrow">TRUSTED KNOWLEDGE</span><h1>모든 판단은<br><em>세 층의 기준에서 시작됩니다.</em></h1></div><span class="section-no">04</span></header>
+      <div class="knowledge-grid">
+        <div class="layer-stack">
+          <article class="layer law"><span>01</span><div><b>도메인 법안</b><h3>법률</h3><p>산업안전보건법 · 건설기술진흥법 · 건설기계관리법 · 소방시설법 개정본</p></div></article>
+          <article class="layer company"><span>02</span><div><b>사내 기준</b><h3>회사 규정집</h3><p>안전관리 규정집 · 작업허가 관리 절차서 · 안전교육 운영규정 · 문서작성 표준</p></div></article>
+          <article class="layer custom"><span>03</span><div><b>현장 맞춤</b><h3>커스텀 가이드라인</h3><p>조직 공용 기준과 직원별 감리 체크리스트 · 발주처 지침</p></div></article>
+        </div>
+        <div class="permission-card">
+          <span class="eyebrow mini">ACCESS</span><h2>권한은 단순하게,<br>경계는 분명하게.</h2>
+          <table>
+            <thead><tr><th>자산</th><th>관리 역할</th><th>직원</th></tr></thead>
+            <tbody>
+              <tr><td>법률·규정집<br>조직 커스텀</td><td>등록·수정·삭제</td><td>읽기 전용</td></tr>
+              <tr><td>개인 커스텀</td><td>전체 열람</td><td>본인 것만 관리</td></tr>
+              <tr><td>문서·리포트</td><td>조직 전체</td><td>본인 문서만</td></tr>
+              <tr><td>역할·감사 기록</td><td>관리·열람</td><td>—</td></tr>
+            </tbody>
+          </table>
+          <p>관리 역할: CEO · 이사 · 총괄관리자 · 개발자</p>
+        </div>
+      </div>
+      <div class="knowledge-life">
+        <article><span>1</span><div><b>등록</b><p>PDF · HWP · HWPX · DOCX · MD · 스캔 이미지</p></div></article><i></i>
+        <article><span>2</span><div><b>지식화</b><p>1시간 안에 조항 · 항 · 호 단위로 정리</p></div></article><i></i>
+        <article><span>3</span><div><b>대조</b><p>파일명 · 조항 · 참조 문장이 결과에 연결</p></div></article>
+      </div>
+      <p class="source-note">원본은 허브 Mac에만 보관되며 바뀌지 않습니다. 개정본을 올리면 다음 분석부터 새 기준이 적용됩니다.</p>
+    </div>
+    <footer class="footer"><span>법률 · 회사 · 현장</span><span>Knowledge & Access</span><b>05</b></footer>
+  </section>
+
+  <!-- 6. Security -->
+  <section class="sheet p6">
+    <div class="page-inner">
+      <header class="page-head"><div><span class="eyebrow">DATA BOUNDARY</span><h1>무엇이 남고,<br><em>무엇만 API로 가는지.</em></h1></div><span class="section-no">05</span></header>
+      <div class="boundary-diagram">
+        <div class="customer-zone">
+          <span class="zone-label">고객사 네트워크 · LAN / VPN</span>
+          <div class="device-row"><div class="device"><i></i><b>직원 PC</b><small>드롭 폴더 · 암호화 사본</small></div><div class="device"><i></i><b>직원 PC</b><small>드롭 폴더 · 암호화 사본</small></div></div>
+          <div class="tls-line"><span>TLS</span></div>
+          <div class="secure-hub"><span>HUB</span><h3>CEO Mac</h3><p>문서 원본 사본 · 가이드라인<br>계정 · 리포트 · 감사 기록</p><b>FileVault 디스크 암호화</b></div>
+        </div>
+        <div class="api-route"><i></i><b>HTTPS</b><span>고객 CLI 계정</span></div>
+        <div class="vendor-zone"><span>EXTERNAL</span><h3>LLM 벤더 API</h3><p>분석 프롬프트만 전송</p><ul><li>문서 본문</li><li>가이드라인 발췌</li></ul><b>JSON 결과 반환</b></div>
+      </div>
+      <div class="security-facts">
+        <article><span>01</span><h3>자체 서버 없음</h3><p>씨엠닉스가 운영하는 서버 없이 고객사가 지정한 Mac 한 대를 허브로 사용합니다.</p></article>
+        <article><span>02</span><h3>직원별 격리</h3><p>본인 문서 · 본인 커스텀 · 본인 리포트만 보고, 개인 기준은 다른 직원 분석에 쓰이지 않습니다.</p></article>
+        <article><span>03</span><h3>감사 기록</h3><p>문서·가이드라인·권한의 변경과 모든 CLI 분석 호출에 수행자와 시각이 남습니다.</p></article>
+      </div>
+      <div class="legal-notice"><b>중요 고지</b><p>분석 시 문서 본문과 가이드라인 발췌가 LLM 벤더 API로 전송되며 벤더의 API 데이터 정책이 적용됩니다. 분석 결과는 검토 지원 정보이며 법적 확정 판단이 아닙니다. 최종 판단은 담당자가 합니다.</p></div>
+    </div>
+    <footer class="footer"><span>고객사 내부 보관 · 필요한 분석 호출만 외부 전송</span><span>Security</span><b>06</b></footer>
+  </section>
+
+  <!-- 7. Onboarding -->
+  <section class="sheet p7">
+    <div class="page-inner">
+      <header class="page-head"><div><span class="eyebrow">ONBOARDING</span><h1>허브 Mac 한 대로,<br><em>당일 시작합니다.</em></h1></div><span class="section-no">06</span></header>
+      <div class="dayline">
+        <article><span class="time coral">반나절</span><div class="day-icon mac"></div><b>설치</b><p>허브 Mac에 DocASI를 설치하고 터미널 CLI에 로그인합니다. 직원 PC에는 클라이언트를 연결합니다.</p></article>
+        <i></i>
+        <article><span class="time yellow">1–2시간</span><div class="day-icon books"></div><b>등록</b><p>법률·회사 규정집·조직 가이드라인을 넣고 역할과 직원별 폴더를 지정합니다.</p></article>
+        <i></i>
+        <article><span class="time mint">당일</span><div class="day-icon report"></div><b>첫 운영</b><p>직원이 문서를 놓기 시작합니다. 첫 리포트는 5분 안에 도착합니다.</p></article>
+      </div>
+      <div class="ready-grid">
+        <div><span class="eyebrow mini">NEEDED</span><h2>필요한 환경</h2>
+          <ul class="checklist"><li><b>허브</b><span>macOS Mac 1대 · 상시 가동 권장</span></li><li><b>엔진</b><span>터미널 CLI 구독 계정</span></li><li><b>망</b><span>같은 LAN 또는 VPN</span></li><li><b>클라이언트</b><span>직원 macOS PC</span></li><li><b>기준</b><span>법령·규정집 원본 파일</span></li></ul>
+        </div>
+        <div class="prep-card"><span class="eyebrow mini">BEFORE START</span><h2>고객사가 정할 것</h2>
+          <ul class="prep-list"><li>허브 Mac과 관리자</li><li>분석 엔진용 CLI 계정</li><li>LAN/VPN 연결 방식</li><li>가이드라인 목록과 담당 부서</li><li>역할 배정표</li><li>직원 PC 목록</li></ul>
+        </div>
+      </div>
+      <div class="continuity"><b>허브가 꺼져도 데이터는 잃지 않습니다.</b><span>전송 · 분석 · 알림은 멈췄다가 허브가 켜지면 이어집니다.</span></div>
+    </div>
+    <footer class="footer"><span>설치 → 등록 → 첫 리포트</span><span>Onboarding</span><b>07</b></footer>
+  </section>
+
+  <!-- 8. CTA -->
+  <section class="sheet p8">
+    <div class="cta-bg"></div><div class="cta-grid-pattern"></div>
+    <img class="cta-art" src="assets/cover-illustration.png" alt="건설 현장 사무소와 DocASI 일러스트">
+    <div class="page-inner cta-content">
+      <header class="brand dark"><svg><use href="#docai-mark"/></svg><div><strong>DocASI</strong><span>도큐준수 · Superintelligence for Document Compliance</span></div></header>
+      <div class="cta-copy">
+        <span class="kicker-pill">START WITH ONE DOCUMENT</span>
+        <h1>우리 현장 일지<br><em>한 장으로 시작해 보세요.</em></h1>
+        <p class="cta-tagline">규제 리스크에서 탈피, 업무현장의 가치를 보존하세요</p>
+        <p>데모를 신청하시면 귀사의 실제 일지 한 부와 규정집으로 현장에서 첫 리포트를 시연합니다.</p>
+        <a href="https://devfirm.co" class="cta-button">devfirm.co <span>→</span></a>
+        <small>문의 페이지에 회사명 · 현장 · 문서 종류를 적어 주세요.</small>
+      </div>
+      <div class="contact-card"><div><span>회사</span><b>(주)씨엠닉스</b></div><div><span>주소</span><b>서울특별시 서초구 강남대로6길 59-1 한양빌딩 2층</b></div><div><span>웹</span><b>devfirm.co</b></div></div>
+    </div>
+    <footer class="footer light"><span>DocASI 도큐준수</span><span>문서가 행동으로 바뀌는 5분</span><b>08</b></footer>
+  </section>
+</body>
+</html>

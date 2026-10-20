@@ -23,12 +23,10 @@ export const site = {
   /**
    * 정규(canonical) 도메인 — O-6 결정에 따라 devfirm 신규 도메인이 최종 주소.
    *
-   * TLD가 아직 미확정이므로(§10.1 실무 확인 항목) 값을 이 상수 하나로 격리한다.
-   * Phase 5에서 도메인 확보 후 NEXT_PUBLIC_SITE_URL 을 설정하면 canonical·sitemap·
-   * OG·메일 발송 도메인이 한 번에 전환된다. 미설정 시에는 현재 운영 중인
-   * cmnyx.com 을 사용해 잘못된 절대 URL이 생성되지 않게 한다.
+   * canonical·sitemap·OG의 기본 주소는 확정된 DevFirm 공개 도메인이다.
+   * 별도 배포 환경에서는 NEXT_PUBLIC_SITE_URL로 재정의할 수 있다.
    */
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.cmnyx.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.devfirm.co",
 
   founded: 2007,
   businessNumber: "206-86-18591",

@@ -106,6 +106,11 @@
             "label": "犯罪予防AI",
             "href": "/solutions/agents/safety",
             "description": "映像分析に基づく異常兆候の検知"
+          },
+          {
+            "label": "DocASIカタログ",
+            "href": "/solutions/docasi",
+            "description": "業務別の文書読み取り・照合・構造化パック"
           }
         ]
       },
@@ -207,6 +212,10 @@
           {
             "label": "犯罪予防AI",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "DocASIカタログ",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -321,6 +330,11 @@
           "label": "犯罪予防AI",
           "href": "/solutions/agents/safety",
           "description": "映像分析に基づく異常兆候の検知"
+        },
+        {
+          "label": "DocASIカタログ",
+          "href": "/solutions/docasi",
+          "description": "業務別の文書読み取り・照合・構造化パック"
         }
       ],
       "/services": [
@@ -708,6 +722,7 @@
         "deadline": "締切",
         "apply": "応募する"
       },
+      "seoDescription": "{team}チームの{title}ポジションを募集しています。{responsibility}",
       "cta": {
         "title": "合う求人がなくても",
         "desc": "どのような仕事をしたいかお知らせいただければ、役割を一緒に探します。CICとして始める方法もあります。",
@@ -719,8 +734,7 @@
           "label": "CICについて知る",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "{team}チームの{title}ポジションを募集しています。{responsibility}"
+      }
     },
     "jobs": [
       {
@@ -1064,6 +1078,248 @@
           "label": "AIソリューション全体を見る",
           "href": "/solutions"
         }
+      }
+    }
+  },
+  "docai": {
+    "seo": {
+      "title": "DocASIカタログ — 業務別の文書自動化",
+      "description": "契約書、税金計算書、議事録、入札公告、現場報告書を読み取り、構造化するDocASI文書パックを業務別にご覧ください。"
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "文書をアップロードすると、業務が進みます",
+      "lead": "文書を読むだけで終わりません。必要な項目を抽出して照合し、次の業務に使える形で引き渡します。",
+      "primary": {
+        "label": "文書パックを見る",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "自社の文書で相談",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "処理中の文書",
+        "fileName": "供給契約書_最終.pdf",
+        "status": "確認準備完了",
+        "fields": [
+          {
+            "label": "契約期間",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "自動更新",
+            "value": "30日前に通知"
+          },
+          {
+            "label": "支払条件",
+            "value": "検収後30日"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "業務別の文書パック"
+        },
+        {
+          "value": "5",
+          "label": "業務カテゴリ"
+        },
+        {
+          "value": "4",
+          "label": "連携用の出力形式"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "DOC PACK CATALOG",
+      "title": "現在扱う文書から選択",
+      "lead": "文書パックは、入力形式、抽出項目、次のシステムへ渡す成果物を一つにまとめた業務単位です。",
+      "searchLabel": "文書パックを検索",
+      "searchPlaceholder": "文書名・業務・抽出項目で検索",
+      "clearSearch": "検索語を消去",
+      "filterLabel": "業務分野で絞り込み",
+      "resultSuffix": "件の文書パック",
+      "categories": [
+        {
+          "key": "all",
+          "label": "すべて"
+        },
+        {
+          "key": "legal",
+          "label": "契約・法務"
+        },
+        {
+          "key": "finance",
+          "label": "財務・証憑"
+        },
+        {
+          "key": "operations",
+          "label": "運営・人事"
+        },
+        {
+          "key": "public",
+          "label": "公共・入札"
+        },
+        {
+          "key": "field",
+          "label": "現場・品質"
+        }
+      ],
+      "featuredLabel": "おすすめ",
+      "card": {
+        "fieldLabel": "設定項目",
+        "outputLabel": "出力",
+        "action": "適用範囲を確認"
+      },
+      "empty": {
+        "title": "条件に合う文書パックがありません",
+        "body": "検索語を短くするか、別の業務分野を選択してください。",
+        "reset": "絞り込みを解除"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "契約書の主要条項を確認",
+        "summary": "契約期間、金額、更新、解除、損害賠償の条項を抽出し、確認表にまとめます。",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28項目",
+        "output": "確認表・条項の要約",
+        "tags": ["リスクのある文言", "義務の期限", "条項の照合"],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "税金計算書・取引明細の照合",
+        "summary": "供給価額、税額、品目、取引先を読み取り、発注・入庫資料との差異を示します。",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24項目",
+        "output": "照合表・例外一覧",
+        "tags": ["金額の検証", "取引先", "重複の検出"],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "支出決議書・領収書の整理",
+        "summary": "領収書と支出決議書を一件にまとめ、勘定科目、使途、日付、金額を標準形式にします。",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18項目",
+        "output": "XLSX・会計入力案",
+        "tags": ["証憑の一括管理", "勘定科目の提案", "漏れの確認"]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "履歴書・職務経歴書の構造化",
+        "summary": "応募者ごとに異なる書式から、職歴、スキル、プロジェクト、学歴を同じ基準で整理します。",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32項目",
+        "output": "候補者カード・CSV",
+        "tags": ["職歴の標準化", "スキルの分類", "個人情報"]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "議事録から対応事項を抽出",
+        "summary": "決定事項、担当者、期限、保留事項を抽出し、後続の業務一覧にします。",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16項目",
+        "output": "業務一覧・JSON",
+        "tags": ["決定事項", "担当者", "締切日"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "入札公告・提案依頼書の分析",
+        "summary": "参加資格、提出書類、評価基準、日程を抽出し、提案準備のチェックリストを作成します。",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36項目",
+        "output": "日程表・提出書類チェックリスト",
+        "tags": ["資格要件", "評価基準", "提出書類"],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "建設現場の日報を整理",
+        "summary": "工種、人数、機材、進捗、特記事項を読み取り、現場ごとの日次状況にまとめます。",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30項目",
+        "output": "日次状況・累計表",
+        "tags": ["工程", "人員・機材", "特記事項"]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "検査成績書・品質文書の読み取り",
+        "summary": "試験項目、基準値、測定値、判定を構造化し、規格から外れた項目をまとめます。",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34項目",
+        "output": "品質履歴・例外一覧",
+        "tags": ["試験値", "規格との照合", "LOT追跡"]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "FROM FILE TO FLOW",
+      "title": "読み取り結果を次の業務につなげます",
+      "lead": "文書ごとに読み取り基準と人が確認する箇所を先に決めます。その後、既存の業務ツールに渡す形式を整えます。",
+      "steps": [
+        {
+          "step": "01",
+          "title": "文書の収集",
+          "desc": "メール、フォルダ、業務システムから原本とメタデータを一緒に受け取ります。"
+        },
+        {
+          "step": "02",
+          "title": "項目の抽出",
+          "desc": "文書パックの項目定義に従い、必要な値とその根拠となる箇所を特定します。"
+        },
+        {
+          "step": "03",
+          "title": "確認・照合",
+          "desc": "例外や不確かな項目をまとめ、人が確認できるようにします。"
+        },
+        {
+          "step": "04",
+          "title": "業務への連携",
+          "desc": "XLSX、CSV、JSON、またはAPIを通じて次のシステムと担当者に引き渡します。"
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "OPERATION PRINCIPLES",
+      "title": "自動化の前に守ること",
+      "items": [
+        {
+          "title": "原本と根拠を一緒に",
+          "desc": "抽出した値だけでなく、どの文書のどの箇所から得たかを記録します。"
+        },
+        {
+          "title": "例外を見落とさない",
+          "desc": "判断が曖昧な値や食い違う値は自動で確定せず、確認一覧に送ります。"
+        },
+        {
+          "title": "既存の業務の流れに合わせる",
+          "desc": "新しいツールの習得を求めず、現在使用している書式とシステムに合わせます。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "一覧にない文書も文書パックにできます",
+      "desc": "サンプル文書3～5件と、現在転記している項目をお知らせいただければ、適用範囲を整理します。",
+      "primary": {
+        "label": "DocASI導入の相談",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "チェ課長AIを見る",
+        "href": "/solutions/office-ai"
       }
     }
   },
@@ -1863,6 +2119,7 @@
         "detail": "内容",
         "apply": "受講申請"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "申請前にご相談いただけます",
         "desc": "現在のレベルでついていけるかを先に確認します。",
@@ -1874,8 +2131,7 @@
           "label": "お問い合わせ",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {

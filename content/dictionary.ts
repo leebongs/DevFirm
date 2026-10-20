@@ -8,6 +8,7 @@ import { careersPage, jobs } from "./careers";
 
 const { applySubject: _jobSubject, ...careersCopy } = careersPage;
 import { solutions, physicalAi, officeAi, agentPage } from "./solutions";
+import { docAi } from "./docai";
 import { agents } from "./agents";
 import { services, software, staffing } from "./services";
 import { academy, SCHOOLS } from "./academy";
@@ -57,6 +58,9 @@ export const dictionary = {
   // applySubject 도 함수라 같은 이유로 뺀다(mailto 제목, 페이지가 직접 쓴다)
   careers: { page: careersCopy, jobs },
   solutions: { hub: solutions, physicalAi, officeAi, agentPage },
+  // 문서팩 id·category·categories[].key 는 기계 키 — 번역 프롬프트와 체커가
+  // 식별자 보존을 강제하고, 깨지면 해당 언어의 분야 필터가 빈 결과를 낸다.
+  docai: docAi,
   agents,
   services: { hub: services, software, staffing },
   academy: { page: academy, schools: SCHOOLS },
@@ -73,6 +77,10 @@ export const dictionary = {
   forms: {
     contact: contactCopy,
     apply: applyCopy,
+    // 검증 문구는 이미 16개 언어로 번역돼 있다. 액션이 아직 locale 을 받지
+    // 않아 소비처는 없지만, 사전에서 빼면 extract 가 번역본을 고아로 만들어
+    // check:i18n 이 초과 키로 실패한다.
+    validation: forms.validation,
   },
   legal: { ui: legalUi, privacy, terms, updatedAt: legalUpdatedAt },
   seo: { home: homeSeo, page: pageSeo, ogImageAlt },

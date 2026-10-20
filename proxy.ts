@@ -54,6 +54,19 @@ function fromAcceptLanguage(header: string | null): string | null {
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // 앱과 초대 메일이 참조하는 공개 주소는 언어 설정과 무관하게 그대로 유지한다.
+  const publicDocAiRoutes = new Map([
+    ["/solutions/docasi/start", "/solutions/docasi/start"],
+    ["/solutions/docai/start", "/solutions/docasi/start"],
+    ["/solution/DocAI/releasenote", "/solution/DocAI/releasenote"],
+  ]);
+  const publicDocAiRoute = publicDocAiRoutes.get(pathname);
+  if (publicDocAiRoute) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${DEFAULT_LOCALE}${publicDocAiRoute}`;
+    return NextResponse.rewrite(url);
+  }
+
   const hasLocale = localeCodes.some(
     (code) => pathname === `/${code}` || pathname.startsWith(`/${code}/`),
   );
@@ -77,6 +90,6 @@ export const config = {
    * 크롤러가 원래 자리에서 404 를 받는다.
    */
   matcher: [
-    "/((?!_next|api|catalogs|images|fonts|video|favicon\\.ico|icon\\.svg|apple-icon\\.png|opengraph-image\\.png|twitter-image\\.png|robots\\.txt|sitemap\\.xml).*)",
+    "/((?!_next|api|catalogs|updates|images|fonts|video|favicon\\.ico|icon\\.svg|apple-icon\\.png|opengraph-image\\.png|twitter-image\\.png|robots\\.txt|sitemap\\.xml).*)",
   ],
 };

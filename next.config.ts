@@ -28,6 +28,24 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
 
+  async headers() {
+    return [
+      {
+        source: "/updates/docai/stable.json",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=300, s-maxage=300, must-revalidate",
+          },
+          {
+            key: "Content-Type",
+            value: "application/json; charset=utf-8",
+          },
+        ],
+      },
+    ];
+  },
+
   async redirects() {
     const crossDomain = Boolean(legacyHost && siteUrl);
 

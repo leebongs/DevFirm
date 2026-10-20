@@ -106,6 +106,11 @@
             "label": "AI phòng ngừa tội phạm",
             "href": "/solutions/agents/safety",
             "description": "Phát hiện dấu hiệu bất thường dựa trên phân tích video"
+          },
+          {
+            "label": "Danh mục DocASI",
+            "href": "/solutions/docasi",
+            "description": "Gói đọc, đối chiếu và cấu trúc tài liệu theo nghiệp vụ"
           }
         ]
       },
@@ -134,7 +139,7 @@
           {
             "label": "Thông tin khóa học",
             "href": "/academy/courses",
-            "description": "Danh sách khóa học của ba school"
+            "description": "Danh sách khóa học của 3 trường"
           },
           {
             "label": "Đăng ký học",
@@ -207,6 +212,10 @@
           {
             "label": "AI phòng ngừa tội phạm",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "Danh mục DocASI",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -321,6 +330,11 @@
           "label": "AI phòng ngừa tội phạm",
           "href": "/solutions/agents/safety",
           "description": "Phát hiện dấu hiệu bất thường dựa trên phân tích video"
+        },
+        {
+          "label": "Danh mục DocASI",
+          "href": "/solutions/docasi",
+          "description": "Gói đọc, đối chiếu và cấu trúc tài liệu theo nghiệp vụ"
         }
       ],
       "/services": [
@@ -339,7 +353,7 @@
         {
           "label": "Thông tin khóa học",
           "href": "/academy/courses",
-          "description": "Danh sách khóa học của ba school"
+          "description": "Danh sách khóa học của 3 trường"
         },
         {
           "label": "Đăng ký học",
@@ -427,7 +441,7 @@
     "agentsSection": {
       "eyebrow": "AI agent theo ngành",
       "title": "Với hỗ trợ từ trợ lý AI theo lĩnh vực, bạn chỉ cần ra quyết định",
-      "lead": "Agent sắp xếp trước các phán đoán lặp lại của sáu ngành. Con người chỉ can thiệp ở những điểm cần phán đoán."
+      "lead": "Agent sắp xếp trước các phán đoán lặp lại của 6 ngành. Con người chỉ can thiệp ở những điểm cần phán đoán."
     },
     "model": {
       "eyebrow": "Mô hình DevFirm",
@@ -557,7 +571,7 @@
           "desc": "Pháp nhân phụ trách quản lý và nhắc nợ. Lập trình viên không phải căng thẳng với bên đặt hàng về chuyện tiền bạc."
         },
         {
-          "title": "Bốn bảo hiểm chính và lao động",
+          "title": "4 loại bảo hiểm chính và lao động",
           "desc": "Công ty thực hiện khai báo và quản lý lao động phù hợp với hình thức làm việc."
         }
       ]
@@ -708,6 +722,7 @@
         "deadline": "Hạn nộp",
         "apply": "Ứng tuyển"
       },
+      "seoDescription": "Chúng tôi đang tuyển vị trí {title} cho nhóm {team}. {responsibility}",
       "cta": {
         "title": "Ngay cả khi chưa có vị trí phù hợp",
         "desc": "Hãy cho chúng tôi biết bạn muốn làm việc gì. Chúng tôi sẽ cùng tìm vị trí. Cũng có cách bắt đầu bằng CIC.",
@@ -719,8 +734,7 @@
           "label": "Tìm hiểu CIC",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "Chúng tôi đang tuyển vị trí {title} cho nhóm {team}. {responsibility}"
+      }
     },
     "jobs": [
       {
@@ -1067,6 +1081,260 @@
       }
     }
   },
+  "docai": {
+    "seo": {
+      "title": "Danh mục DocASI — tự động hóa tài liệu theo nghiệp vụ",
+      "description": "Tìm gói tài liệu DocASI theo nghiệp vụ để đọc và cấu trúc hợp đồng, hóa đơn thuế, biên bản họp, thông báo mời thầu và báo cáo hiện trường."
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "Tải tài liệu lên, công việc tiếp diễn",
+      "lead": "Hệ thống không dừng ở việc đọc tài liệu. Hệ thống tìm các mục cần thiết, đối chiếu chúng và chuyển kết quả sang dạng có thể bắt đầu công việc tiếp theo.",
+      "primary": {
+        "label": "Xem gói tài liệu",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "Tư vấn tài liệu của bạn",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "Tài liệu đang xử lý",
+        "fileName": "Hợp_đồng_cung_ứng_bản_cuối.pdf",
+        "status": "Sẵn sàng kiểm tra",
+        "fields": [
+          {
+            "label": "Thời hạn hợp đồng",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "Tự động gia hạn",
+            "value": "Thông báo trước 30 ngày"
+          },
+          {
+            "label": "Điều kiện thanh toán",
+            "value": "30 ngày sau nghiệm thu"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "Gói tài liệu nghiệp vụ"
+        },
+        {
+          "value": "5",
+          "label": "Nhóm nghiệp vụ"
+        },
+        {
+          "value": "4",
+          "label": "Định dạng đầu ra"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "DANH MỤC GÓI TÀI LIỆU",
+      "title": "Chọn tài liệu đang xử lý",
+      "lead": "Mỗi gói tài liệu là một đơn vị nghiệp vụ gồm định dạng đầu vào, các mục cần trích xuất và đầu ra để chuyển sang hệ thống tiếp theo.",
+      "searchLabel": "Tìm gói tài liệu",
+      "searchPlaceholder": "Tìm tên tài liệu, nghiệp vụ, mục trích xuất",
+      "clearSearch": "Xóa từ khóa",
+      "filterLabel": "Lọc theo lĩnh vực nghiệp vụ",
+      "resultSuffix": " gói tài liệu",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Tất cả"
+        },
+        {
+          "key": "legal",
+          "label": "Hợp đồng · pháp lý"
+        },
+        {
+          "key": "finance",
+          "label": "Tài chính · chứng từ"
+        },
+        {
+          "key": "operations",
+          "label": "Vận hành · nhân sự"
+        },
+        {
+          "key": "public",
+          "label": "Khu vực công · đấu thầu"
+        },
+        {
+          "key": "field",
+          "label": "Hiện trường · chất lượng"
+        }
+      ],
+      "featuredLabel": "Đề xuất",
+      "card": {
+        "fieldLabel": "Trường dữ liệu",
+        "outputLabel": "Đầu ra",
+        "action": "Xem phạm vi áp dụng"
+      },
+      "empty": {
+        "title": "Không có gói tài liệu phù hợp",
+        "body": "Hãy rút ngắn từ khóa hoặc chọn lĩnh vực nghiệp vụ khác.",
+        "reset": "Đặt lại bộ lọc"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "Kiểm tra điều khoản chính của hợp đồng",
+        "summary": "Tìm thời hạn, số tiền, điều khoản gia hạn, chấm dứt và bồi thường trong hợp đồng rồi lập bảng kiểm tra.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28 trường",
+        "output": "Bảng kiểm tra · tóm tắt điều khoản",
+        "tags": [
+          "Cụm từ rủi ro",
+          "Thời hạn thực hiện nghĩa vụ",
+          "Đối chiếu điều khoản"
+        ],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "Đối chiếu hóa đơn thuế · bảng kê giao dịch",
+        "summary": "Đọc giá trị trước thuế, tiền thuế, mặt hàng và đối tác giao dịch; đánh dấu điểm khác với dữ liệu đặt hàng và nhập kho.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24 trường",
+        "output": "Bảng đối chiếu · danh sách ngoại lệ",
+        "tags": [
+          "Xác minh số tiền",
+          "Đối tác giao dịch",
+          "Phát hiện trùng lặp"
+        ],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "Sắp xếp đề nghị chi · biên lai",
+        "summary": "Ghép biên lai và phiếu đề nghị chi thành từng hồ sơ; chuẩn hóa tài khoản, nơi chi, ngày và số tiền.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18 trường",
+        "output": "XLSX · bản nhập liệu kế toán",
+        "tags": ["Bộ chứng từ", "Gợi ý tài khoản", "Kiểm tra thiếu sót"]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "Cấu trúc hóa CV · hồ sơ kinh nghiệm",
+        "summary": "Sắp xếp kinh nghiệm, kỹ năng, dự án và học vấn từ các mẫu hồ sơ khác nhau theo cùng một tiêu chí.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32 trường",
+        "output": "Thẻ ứng viên · CSV",
+        "tags": [
+          "Chuẩn hóa kinh nghiệm",
+          "Phân loại kỹ năng",
+          "Thông tin cá nhân"
+        ]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "Trích xuất việc cần làm từ biên bản họp",
+        "summary": "Tìm quyết định, người phụ trách, thời hạn và mục tạm hoãn rồi tạo danh sách công việc tiếp theo.",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16 trường",
+        "output": "Danh sách công việc · JSON",
+        "tags": ["Quyết định", "Người phụ trách", "Hạn chót"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "Phân tích tài liệu đấu thầu",
+        "summary": "Tìm điều kiện tham gia, hồ sơ cần nộp, tiêu chí đánh giá và lịch trình để lập danh sách kiểm tra cho việc chuẩn bị đề xuất.",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36 trường",
+        "output": "Lịch trình · danh sách kiểm tra hồ sơ",
+        "tags": ["Điều kiện tham gia", "Tiêu chí đánh giá", "Hồ sơ cần nộp"],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "Tổng hợp báo cáo ngày tại công trường",
+        "summary": "Đọc hạng mục thi công, nhân sự, thiết bị, tiến độ và điểm đáng chú ý; tổng hợp thành báo cáo hằng ngày theo công trường.",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30 trường",
+        "output": "Báo cáo ngày · bảng lũy kế",
+        "tags": ["Tiến độ thi công", "Nhân sự · thiết bị", "Điểm đáng chú ý"]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "Đọc phiếu kiểm tra · hồ sơ chất lượng",
+        "summary": "Cấu trúc hạng mục thử nghiệm, giá trị chuẩn, giá trị đo và kết luận; tập hợp các trường hợp không đạt quy cách.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34 trường",
+        "output": "Lịch sử chất lượng · danh sách ngoại lệ",
+        "tags": ["Giá trị thử nghiệm", "Đối chiếu quy cách", "Truy xuất lô LOT"]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "TỪ TỆP ĐẾN QUY TRÌNH",
+      "title": "Kết quả đọc dẫn tới bước tiếp theo",
+      "lead": "Trước tiên, chúng tôi xác định tiêu chí đọc và những điểm cần người kiểm tra cho từng tài liệu. Sau đó, chúng tôi định dạng đầu ra cho phù hợp với công cụ hiện có.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Thu thập tài liệu",
+          "desc": "Nhận bản gốc cùng siêu dữ liệu từ email, thư mục và hệ thống nghiệp vụ."
+        },
+        {
+          "step": "02",
+          "title": "Trích xuất thông tin",
+          "desc": "Tìm giá trị cần thiết và vị trí làm căn cứ theo định nghĩa trường dữ liệu của gói."
+        },
+        {
+          "step": "03",
+          "title": "Kiểm tra · đối chiếu",
+          "desc": "Tập hợp riêng các ngoại lệ và mục chưa chắc chắn để người phụ trách kiểm tra."
+        },
+        {
+          "step": "04",
+          "title": "Kết nối công việc",
+          "desc": "Chuyển sang hệ thống tiếp theo và người phụ trách qua XLSX, CSV, JSON hoặc API."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "NGUYÊN TẮC VẬN HÀNH",
+      "title": "Điều cần giữ trước tự động hóa",
+      "items": [
+        {
+          "title": "Giữ bản gốc và căn cứ",
+          "desc": "Không chỉ lưu giá trị đã trích xuất; chúng tôi liên kết giá trị với tài liệu và vị trí nguồn."
+        },
+        {
+          "title": "Hiển thị ngoại lệ",
+          "desc": "Các trường hợp khó xác định hoặc có giá trị mâu thuẫn không được tự động chốt mà chuyển sang danh sách kiểm tra."
+        },
+        {
+          "title": "Phù hợp quy trình hiện có",
+          "desc": "Chúng tôi điều chỉnh theo biểu mẫu và hệ thống đang dùng để không phải học thêm một công cụ mới."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Có thể tạo gói cho tài liệu chưa có trong danh mục",
+      "desc": "Hãy gửi 3~5 tài liệu mẫu và các mục bạn đang nhập thủ công. Chúng tôi sẽ xác định phạm vi áp dụng trước.",
+      "primary": {
+        "label": "Liên hệ về DocASI",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Xem Trưởng phòng Choi AI",
+        "href": "/solutions/office-ai"
+      }
+    }
+  },
   "agents": [
     {
       "slug": "construction",
@@ -1219,7 +1487,7 @@
       "steps": [
         "Liên kết dữ liệu thiết bị",
         "Học phạm vi bình thường",
-        "Kiểm chứng một dây chuyền",
+        "Kiểm chứng trên 1 dây chuyền",
         "Mở rộng dây chuyền"
       ],
       "seo": {
@@ -1325,7 +1593,7 @@
       "steps": [
         "Sắp xếp điều kiện hợp đồng",
         "Liên kết hệ thống chấm công",
-        "Thử tại một hiện trường",
+        "Thử nghiệm tại 1 hiện trường",
         "Toàn bộ hiện trường"
       ],
       "seo": {
@@ -1527,7 +1795,7 @@
           },
           {
             "title": "Xử lý thuế · lao động",
-            "desc": "Bên đặt hàng không phải phán đoán về khấu trừ tại nguồn và bốn bảo hiểm chính."
+            "desc": "Bên đặt hàng không phải tự xác định việc khấu trừ tại nguồn và 4 loại bảo hiểm chính."
           },
           {
             "title": "Pool nhân sự đã kiểm chứng",
@@ -1892,6 +2160,7 @@
         "detail": "Nội dung",
         "apply": "Đăng ký học"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "Bạn có thể hỏi trước khi đăng ký",
         "desc": "Chúng tôi sẽ kiểm tra trước liệu bạn có thể theo học với trình độ hiện tại hay không.",
@@ -1903,8 +2172,7 @@
           "label": "Liên hệ",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {
@@ -2251,7 +2519,7 @@
       },
       "solutions": {
         "title": "Giải pháp AI",
-        "description": "Cung cấp Physical AI cho hiện trường công nghiệp, Trưởng phòng Choi AI cho văn phòng và AI agent cho sáu ngành: xây dựng, nội dung, sản xuất, phân phối, dịch vụ nhân lực và phòng ngừa tội phạm."
+        "description": "Cung cấp Physical AI cho hiện trường công nghiệp, Trưởng phòng Choi AI cho văn phòng và agent AI cho 6 ngành: xây dựng, nội dung, sản xuất, phân phối, dịch vụ nhân lực và phòng ngừa tội phạm."
       },
       "officeAi": {
         "title": "Trưởng phòng Choi AI — agent văn phòng",

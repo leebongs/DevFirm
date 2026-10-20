@@ -46,6 +46,8 @@ const CLIENT_WHITELIST = [
   "apply-form",
   "gallery-lightbox",
   "course-filter-tabs",
+  // DocASI 정적 카드 목록에 검색·분야 필터 상태만 더하는 얇은 경계.
+  "docai-catalog",
 ];
 
 const allowlist = new Set(

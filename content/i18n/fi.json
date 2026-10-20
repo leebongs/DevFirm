@@ -106,6 +106,11 @@
             "label": "Rikosten ehkäisyn AI",
             "href": "/solutions/agents/safety",
             "description": "Videopohjainen poikkeamien tunnistus"
+          },
+          {
+            "label": "DocASI-luettelo",
+            "href": "/solutions/docasi",
+            "description": "Asiakirjojen lukeminen, vertailu ja jäsentely tehtävittäin"
           }
         ]
       },
@@ -207,6 +212,10 @@
           {
             "label": "Rikosten ehkäisyn AI",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "DocASI-luettelo",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -321,6 +330,11 @@
           "label": "Rikosten ehkäisyn AI",
           "href": "/solutions/agents/safety",
           "description": "Videopohjainen poikkeamien tunnistus"
+        },
+        {
+          "label": "DocASI-luettelo",
+          "href": "/solutions/docasi",
+          "description": "Asiakirjojen lukeminen, vertailu ja jäsentely tehtävittäin"
         }
       ],
       "/services": [
@@ -708,6 +722,7 @@
         "deadline": "Hakuaika",
         "apply": "Hae"
       },
+      "seoDescription": "Haemme {title}-tehtävään tiimiin {team}. {responsibility}",
       "cta": {
         "title": "Vaikka sopivaa ilmoitusta ei olisi",
         "desc": "Kertokaa, millaista työtä haluatte tehdä, niin etsimme sopivaa paikkaa yhdessä. CIC voi olla myös tapa aloittaa.",
@@ -719,8 +734,7 @@
           "label": "Tutustu CIC-malliin",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "Haemme {title}-tehtävään tiimiin {team}. {responsibility}"
+      }
     },
     "jobs": [
       {
@@ -1064,6 +1078,268 @@
           "label": "Katso kaikki AI-ratkaisut",
           "href": "/solutions"
         }
+      }
+    }
+  },
+  "docai": {
+    "seo": {
+      "title": "DocASI-luettelo — asiakirjatyön automaatio",
+      "description": "Tutustu tehtäväkohtaisiin DocASI-asiakirjapaketteihin, jotka lukevat ja jäsentävät sopimuksia, verolaskuja, kokousmuistioita, tarjousilmoituksia ja työmaaraportteja."
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "Lataa asiakirja, työ etenee",
+      "lead": "Emme vain lue asiakirjoja. Poimimme tarvittavat tiedot, vertaamme niitä ja siirrämme ne muotoon, josta seuraava työvaihe voi alkaa.",
+      "primary": {
+        "label": "Selaa paketteja",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "Kysy asiakirjoistasi",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "Käsiteltävä asiakirja",
+        "fileName": "Toimitussopimus_lopullinen.pdf",
+        "status": "Valmis tarkistettavaksi",
+        "fields": [
+          {
+            "label": "Sopimuskausi",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "Automaattinen uusinta",
+            "value": "Ilmoitus 30 päivää etukäteen"
+          },
+          {
+            "label": "Maksuehdot",
+            "value": "30 päivää hyväksynnästä"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "Asiakirjapakettia"
+        },
+        {
+          "value": "5",
+          "label": "Työkategoriaa"
+        },
+        {
+          "value": "4",
+          "label": "Tulostusmuotoa"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "ASIAKIRJAPAKETIT",
+      "title": "Valitse käsiteltävä asiakirja",
+      "lead": "Asiakirjapaketti kokoaa yhteen työtehtävän syöttömuodot, poimittavat tiedot ja seuraavaan järjestelmään siirrettävät tulokset.",
+      "searchLabel": "Hae asiakirjapaketteja",
+      "searchPlaceholder": "Hae asiakirjaa, tehtävää tai tietoa",
+      "clearSearch": "Tyhjennä haku",
+      "filterLabel": "Suodata työalueen mukaan",
+      "resultSuffix": " asiakirjapakettia",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Kaikki"
+        },
+        {
+          "key": "legal",
+          "label": "Sopimukset ja lakiasiat"
+        },
+        {
+          "key": "finance",
+          "label": "Talous ja tositteet"
+        },
+        {
+          "key": "operations",
+          "label": "Hallinto ja henkilöstö"
+        },
+        {
+          "key": "public",
+          "label": "Julkiset hankinnat"
+        },
+        {
+          "key": "field",
+          "label": "Työmaat ja laatu"
+        }
+      ],
+      "featuredLabel": "Suositeltu",
+      "card": {
+        "fieldLabel": "Määritetyt kentät",
+        "outputLabel": "Tuloste",
+        "action": "Tarkista soveltamisala"
+      },
+      "empty": {
+        "title": "Paketteja ei löytynyt",
+        "body": "Kokeile lyhyempää hakua tai valitse toinen työalue.",
+        "reset": "Tyhjennä suodattimet"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "Sopimuksen keskeisten ehtojen tarkistus",
+        "summary": "Poimii sopimuskauden, summan sekä uusimista, irtisanomista ja vahingonkorvausta koskevat ehdot tarkistuslistaan.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28 kenttää",
+        "output": "Tarkistuslista · ehtojen yhteenveto",
+        "tags": [
+          "Riskilausekkeet",
+          "Velvoitteiden määräajat",
+          "Ehtojen vertailu"
+        ],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "Verolaskujen ja tapahtumaerittelyjen vertailu",
+        "summary": "Lukee verottomat summat, verot, nimikkeet ja toimittajat sekä merkitsee erot tilaus- ja vastaanottotietoihin.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24 kenttää",
+        "output": "Vertailutaulukko · poikkeamaluettelo",
+        "tags": [
+          "Summien tarkistus",
+          "Sopimuskumppanit",
+          "Kaksoiskappaleiden tunnistus"
+        ],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "Kuluhakemusten ja kuittien koonti",
+        "summary": "Yhdistää kuitin ja kuluhakemuksen samaksi tapahtumaksi sekä vakioi tilin, käyttöpaikan, päivämäärän ja summan.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18 kenttää",
+        "output": "XLSX · kirjanpidon kirjausluonnos",
+        "tags": [
+          "Tositteiden yhdistäminen",
+          "Tiliehdotukset",
+          "Puuttuvien tietojen tarkistus"
+        ]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "Ansioluetteloiden ja työkokemuskuvausten jäsentely",
+        "summary": "Jäsentää hakijoiden erimuotoiset tiedot työkokemuksesta, taidoista, projekteista ja koulutuksesta samoilla perusteilla.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32 kenttää",
+        "output": "Hakijakortti · CSV",
+        "tags": [
+          "Työkokemuksen vakiointi",
+          "Taitojen luokittelu",
+          "Henkilötiedot"
+        ]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "Tehtävien poiminta kokousmuistioista",
+        "summary": "Poimii päätökset, vastuuhenkilöt, määräajat ja avoimet asiat jatkotehtävien luetteloksi.",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16 kenttää",
+        "output": "Tehtäväluettelo · JSON",
+        "tags": ["Päätökset", "Vastuuhenkilöt", "Määräajat"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "Tarjousilmoitusten ja tarjouspyyntöjen analyysi",
+        "summary": "Poimii kelpoisuusehdot, vaaditut asiakirjat, arviointiperusteet ja aikataulun tarjouksen valmistelun tarkistuslistaksi.",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36 kenttää",
+        "output": "Aikataulu · toimitettavien asiakirjojen lista",
+        "tags": [
+          "Kelpoisuusehdot",
+          "Arviointiperusteet",
+          "Toimitettavat asiakirjat"
+        ],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "Rakennustyömaan päiväraporttien koonti",
+        "summary": "Lukee työvaiheet, henkilöstön, kaluston, edistymisen ja poikkeavat tapahtumat työmaakohtaiseksi päivätilanteeksi.",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30 kenttää",
+        "output": "Päivätilanne · kertymätaulukko",
+        "tags": ["Työvaiheet", "Henkilöstö ja kalusto", "Poikkeavat tapahtumat"]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "Testiraporttien ja laatudokumenttien tulkinta",
+        "summary": "Jäsentää testikohteet, raja-arvot, mittaustulokset ja arvioinnit sekä kokoaa vaatimuksista poikkeavat tapaukset.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34 kenttää",
+        "output": "Laatuhistoria · poikkeamaluettelo",
+        "tags": ["Testitulokset", "Vaatimusten vertailu", "Eräseuranta"]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "TIEDOSTOSTA TYÖVIRTAAN",
+      "title": "Luetut tiedot siirtyvät seuraavaan työvaiheeseen",
+      "lead": "Määritämme ensin kunkin asiakirjan lukuperusteet ja ihmisen tarkistettavat kohdat. Sen jälkeen sovitamme tulosmuodon nykyisiin työkaluihin.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Asiakirjojen keruu",
+          "desc": "Vastaanotamme alkuperäiset asiakirjat ja metatiedot sähköpostista, kansioista ja työjärjestelmistä."
+        },
+        {
+          "step": "02",
+          "title": "Tietojen poiminta",
+          "desc": "Etsimme tarvittavat arvot ja niiden lähdekohdat asiakirjapaketin kenttämäärittelyjen mukaan."
+        },
+        {
+          "step": "03",
+          "title": "Tarkistus ja vertailu",
+          "desc": "Kokoamme vain poikkeamat ja epävarmat tiedot ihmisen tarkistettaviksi."
+        },
+        {
+          "step": "04",
+          "title": "Liittäminen työnkulkuun",
+          "desc": "Siirrämme tulokset seuraavaan järjestelmään ja vastuuhenkilölle XLSX-, CSV- tai JSON-muodossa tai API:n kautta."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "TOIMINTAPERIAATTEET",
+      "title": "Ennen automaatiota varmistamme nämä",
+      "items": [
+        {
+          "title": "Alkuperäinen asiakirja ja lähdekohta",
+          "desc": "Säilytämme poimitun arvon yhteyden asiakirjaan ja kohtaan, josta se on peräisin."
+        },
+        {
+          "title": "Poikkeamat näkyviin",
+          "desc": "Epäselviä tulkintoja tai ristiriitaisia arvoja ei vahvisteta automaattisesti, vaan ne siirretään tarkistuslistalle."
+        },
+        {
+          "title": "Osaksi nykyistä työnkulkua",
+          "desc": "Sovitamme ratkaisun nykyisiin lomakkeisiin ja järjestelmiin, jotta uutta työkalua ei tarvitse opetella."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Myös muut asiakirjat voidaan paketoida",
+      "desc": "Toimittakaa 3–5 malliasiakirjaa ja tiedot, jotka nyt siirrätte käsin. Määritämme ensin soveltamisalan.",
+      "primary": {
+        "label": "Kysy DocASI:n käyttöönotosta",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Katso Päällikkö Choi AI",
+        "href": "/solutions/office-ai"
       }
     }
   },
@@ -1885,6 +2161,7 @@
         "detail": "Sisältö",
         "apply": "Hae kurssille"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "Voitte kysyä ennen hakemista",
         "desc": "Tarkistamme ensin, voitteko seurata kurssia nykyisellä tasollanne.",
@@ -1896,8 +2173,7 @@
           "label": "Ota yhteyttä",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {

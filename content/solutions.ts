@@ -2,7 +2,7 @@
 export const solutions = {
   hero: {
     eyebrow: "AI 솔루션",
-    title: "산업현장엔 피지컬AI, 사무현장엔 최과장AI",
+    title: "산업현장엔 피지컬AI, 사무현장엔 최과장AI- DocASI",
     lead: "현장이 다르면 필요한 판단도 다릅니다. 데브펌은 두 축으로 나눠 접근합니다.",
   },
 

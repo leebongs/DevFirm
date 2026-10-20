@@ -4,4 +4,6 @@ pnpm-lock.yaml
 public/fonts
 app/fonts.css
 .omc
+.omx
 .claude
+catalog-redesign

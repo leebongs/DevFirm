@@ -79,6 +79,11 @@ export const mainNav = [
         href: "/solutions/agents/safety",
         description: "영상 분석 기반 이상징후 감지",
       },
+      {
+        label: "DocASI 카탈로그",
+        href: "/solutions/docasi",
+        description: "업무별 문서 판독·대조·구조화 팩",
+      },
     ],
   },
   {
@@ -159,6 +164,7 @@ export const footerNav: NavNode[] = [
       { label: "유통관리 AI", href: "/solutions/agents/distribution" },
       { label: "용역서비스 AI", href: "/solutions/agents/service" },
       { label: "범죄예방 AI", href: "/solutions/agents/safety" },
+      { label: "DocASI 카탈로그", href: "/solutions/docasi" },
     ],
   },
   {

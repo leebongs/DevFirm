@@ -106,6 +106,11 @@
             "label": "AI Pencegahan Kejahatan",
             "href": "/solutions/agents/safety",
             "description": "Deteksi tanda abnormal berbasis analisis video"
+          },
+          {
+            "label": "Katalog DocASI",
+            "href": "/solutions/docasi",
+            "description": "Paket pembacaan, perbandingan, dan penataan dokumen per tugas"
           }
         ]
       },
@@ -207,6 +212,10 @@
           {
             "label": "AI Pencegahan Kejahatan",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "Katalog DocASI",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -321,6 +330,11 @@
           "label": "AI Pencegahan Kejahatan",
           "href": "/solutions/agents/safety",
           "description": "Deteksi tanda abnormal berbasis analisis video"
+        },
+        {
+          "label": "Katalog DocASI",
+          "href": "/solutions/docasi",
+          "description": "Paket pembacaan, perbandingan, dan penataan dokumen per tugas"
         }
       ],
       "/services": [
@@ -708,6 +722,7 @@
         "deadline": "Batas Waktu",
         "apply": "Lamar"
       },
+      "seoDescription": "Tim {team} membuka lowongan {title}. {responsibility}",
       "cta": {
         "title": "Walaupun tidak ada posisi yang sesuai",
         "desc": "Beri tahu kami pekerjaan yang ingin Anda lakukan, dan kami akan mencari tempatnya bersama. Memulai sebagai CIC juga menjadi opsi.",
@@ -719,8 +734,7 @@
           "label": "Pelajari CIC",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "Kami membuka lowongan {title} untuk tim {team}. {responsibility}"
+      }
     },
     "jobs": [
       {
@@ -1064,6 +1078,264 @@
           "label": "Lihat Semua Solusi AI",
           "href": "/solutions"
         }
+      }
+    }
+  },
+  "docai": {
+    "seo": {
+      "title": "Katalog DocASI — Otomatisasi dokumen per tugas",
+      "description": "Temukan paket dokumen DocASI untuk membaca dan menata kontrak, faktur pajak, notula rapat, pengumuman tender, dan laporan lapangan."
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "Unggah dokumen, lanjutkan pekerjaan",
+      "lead": "Kami tidak berhenti pada pembacaan dokumen. Kami mencari data yang diperlukan, membandingkannya, lalu meneruskannya dalam format yang siap dipakai untuk tugas berikutnya.",
+      "primary": {
+        "label": "Cari paket dokumen",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "Konsultasi dokumen",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "Dokumen yang diproses",
+        "fileName": "Kontrak_Pasokan_Final.pdf",
+        "status": "Siap ditinjau",
+        "fields": [
+          {
+            "label": "Masa kontrak",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "Perpanjangan otomatis",
+            "value": "Pemberitahuan 30 hari sebelumnya"
+          },
+          {
+            "label": "Syarat pembayaran",
+            "value": "30 hari setelah pemeriksaan"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "Paket dokumen per tugas"
+        },
+        {
+          "value": "5",
+          "label": "Kategori pekerjaan"
+        },
+        {
+          "value": "4",
+          "label": "Format keluaran"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "KATALOG PAKET DOKUMEN",
+      "title": "Pilih dokumen yang Anda tangani",
+      "lead": "Paket dokumen dirancang sebagai satu unit kerja yang mencakup format masukan, data yang diekstrak, dan keluaran untuk sistem berikutnya.",
+      "searchLabel": "Cari paket dokumen",
+      "searchPlaceholder": "Cari dokumen, tugas, atau data",
+      "clearSearch": "Hapus pencarian",
+      "filterLabel": "Filter bidang pekerjaan",
+      "resultSuffix": " paket dokumen",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Semua"
+        },
+        {
+          "key": "legal",
+          "label": "Kontrak & Hukum"
+        },
+        {
+          "key": "finance",
+          "label": "Keuangan & Bukti"
+        },
+        {
+          "key": "operations",
+          "label": "Operasional & SDM"
+        },
+        {
+          "key": "public",
+          "label": "Publik & Tender"
+        },
+        {
+          "key": "field",
+          "label": "Lapangan & Mutu"
+        }
+      ],
+      "featuredLabel": "Pilihan",
+      "card": {
+        "fieldLabel": "Field terkonfigurasi",
+        "outputLabel": "Keluaran",
+        "action": "Periksa cakupan"
+      },
+      "empty": {
+        "title": "Tidak ada paket yang sesuai",
+        "body": "Perpendek kata kunci atau pilih bidang pekerjaan lain.",
+        "reset": "Atur ulang filter"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "Tinjau klausul utama kontrak",
+        "summary": "Temukan masa, nilai, perpanjangan, pengakhiran, dan klausul ganti rugi dalam kontrak, lalu susun daftar pemeriksaan.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28 field",
+        "output": "Daftar pemeriksaan · Ringkasan klausul",
+        "tags": [
+          "Klausul berisiko",
+          "Tenggat kewajiban",
+          "Perbandingan klausul"
+        ],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "Cocokkan faktur pajak dan rincian transaksi",
+        "summary": "Baca nilai penyerahan, pajak, barang, dan mitra transaksi, lalu tandai selisih terhadap data pesanan dan penerimaan.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24 field",
+        "output": "Tabel pencocokan · Daftar pengecualian",
+        "tags": ["Validasi nilai", "Mitra transaksi", "Deteksi duplikasi"],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "Susun pengajuan biaya dan kuitansi",
+        "summary": "Pasangkan kuitansi dengan pengajuan biaya, lalu samakan format akun, tempat transaksi, tanggal, dan nilainya.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18 field",
+        "output": "XLSX · Draf entri akuntansi",
+        "tags": ["Berkas pendukung", "Saran akun", "Pemeriksaan kelengkapan"]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "Tata data CV dan riwayat kerja",
+        "summary": "Susun pengalaman, keahlian, proyek, dan pendidikan dari beragam format pelamar dengan kriteria yang sama.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32 field",
+        "output": "Profil kandidat · CSV",
+        "tags": [
+          "Standardisasi pengalaman",
+          "Klasifikasi keahlian",
+          "Data pribadi"
+        ]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "Ekstrak tindak lanjut dari notula rapat",
+        "summary": "Temukan keputusan, penanggung jawab, tenggat, dan hal yang tertunda, lalu ubah menjadi daftar tugas lanjutan.",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16 field",
+        "output": "Daftar tugas · JSON",
+        "tags": ["Keputusan", "Penanggung jawab", "Tenggat"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "Analisis pengumuman tender dan permintaan proposal",
+        "summary": "Temukan persyaratan peserta, dokumen yang harus diserahkan, kriteria penilaian, dan jadwal untuk membuat daftar persiapan proposal.",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36 field",
+        "output": "Jadwal · Daftar periksa penyerahan",
+        "tags": [
+          "Persyaratan peserta",
+          "Kriteria penilaian",
+          "Dokumen penyerahan"
+        ],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "Susun laporan kerja harian konstruksi",
+        "summary": "Baca jenis pekerjaan, personel, peralatan, kemajuan, dan kejadian khusus, lalu gabungkan menjadi laporan harian tiap lokasi.",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30 field",
+        "output": "Laporan harian · Tabel kumulatif",
+        "tags": [
+          "Kemajuan pekerjaan",
+          "Personel dan peralatan",
+          "Kejadian khusus"
+        ]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "Baca laporan pengujian dan dokumen mutu",
+        "summary": "Tata data jenis pengujian, nilai standar, hasil pengukuran, dan putusan, lalu kumpulkan kasus yang tidak memenuhi spesifikasi.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34 field",
+        "output": "Riwayat mutu · Daftar pengecualian",
+        "tags": ["Hasil pengujian", "Perbandingan spesifikasi", "Pelacakan LOT"]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "DARI BERKAS KE ALUR KERJA",
+      "title": "Hasil pembacaan berlanjut ke tugas berikutnya",
+      "lead": "Kami lebih dulu menentukan kriteria pembacaan setiap dokumen dan bagian yang perlu diperiksa manusia. Lalu kami menyesuaikan format keluaran dengan alat kerja yang sudah digunakan.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Kumpulkan dokumen",
+          "desc": "Terima dokumen asli beserta metadata dari email, folder, dan sistem kerja."
+        },
+        {
+          "step": "02",
+          "title": "Ekstrak data",
+          "desc": "Temukan nilai yang diperlukan beserta lokasi sumbernya sesuai definisi field dalam paket dokumen."
+        },
+        {
+          "step": "03",
+          "title": "Periksa dan cocokkan",
+          "desc": "Kumpulkan hanya pengecualian dan data yang belum pasti untuk diperiksa manusia."
+        },
+        {
+          "step": "04",
+          "title": "Hubungkan alur kerja",
+          "desc": "Teruskan hasil ke sistem berikutnya dan penanggung jawab melalui XLSX, CSV, JSON, atau API."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "PRINSIP OPERASIONAL",
+      "title": "Yang dijaga sebelum otomatisasi",
+      "items": [
+        {
+          "title": "Sertakan dokumen asli dan sumbernya",
+          "desc": "Setiap nilai yang diekstrak tetap terhubung dengan dokumen dan lokasi asalnya."
+        },
+        {
+          "title": "Tampilkan pengecualian",
+          "desc": "Penilaian yang tidak pasti atau nilai yang bertentangan tidak ditetapkan otomatis, melainkan dimasukkan ke daftar pemeriksaan."
+        },
+        {
+          "title": "Ikuti alur kerja yang ada",
+          "desc": "Kami menyesuaikan dengan formulir dan sistem yang sudah dipakai agar pengguna tidak perlu mempelajari alat baru."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Dokumen di luar katalog juga dapat dibuatkan paket",
+      "desc": "Berikan 3–5 contoh dokumen dan data yang kini Anda salin secara manual. Kami akan menentukan cakupan penerapannya terlebih dahulu.",
+      "primary": {
+        "label": "Tanya tentang DocASI",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Lihat Manajer Choi AI",
+        "href": "/solutions/office-ai"
       }
     }
   },
@@ -1885,6 +2157,7 @@
         "detail": "Konten",
         "apply": "Daftar Kursus"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "Anda dapat bertanya sebelum mendaftar",
         "desc": "Kami lebih dulu memeriksa apakah Anda dapat mengikuti kursus pada level Anda saat ini.",
@@ -1896,8 +2169,7 @@
           "label": "Hubungi Kami",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {

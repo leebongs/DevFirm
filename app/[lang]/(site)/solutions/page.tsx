@@ -15,6 +15,7 @@ import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
 import { getDictionary } from "@/lib/i18n";
 import { illustrations } from "@/content/illustrations";
 import { photos } from "@/content/photos";
+import { getDocAiEntry } from "@/content/docai-entry";
 export async function generateMetadata({
   params,
 }: {
@@ -38,6 +39,7 @@ export default async function SolutionsPage({
   const { lang } = await params;
   const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
   const t = await getDictionary(locale);
+  const docAiEntry = getDocAiEntry(locale);
 
   return (
     <>
@@ -47,6 +49,78 @@ export default async function SolutionsPage({
         title={t.solutions.hub.hero.title}
         lead={t.solutions.hub.hero.lead}
       />
+
+      {/* DocASI 브랜드 스트립 — 허브에서 바로 보이는 온보딩 진입(사용자 지시 2026-10-20).
+          공식 카피는 로고 옆 이 한 곳에만 쓰고 본문은 근거 중심을 유지한다. */}
+      <Section>
+        <div className="bg-brand text-brand-foreground overflow-hidden rounded-lg border border-white/10 p-6 lg:p-8">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex items-start gap-4">
+              <svg
+                viewBox="0 0 1024 1024"
+                className="size-12 shrink-0 rounded-xl"
+                aria-hidden
+              >
+                <defs>
+                  <linearGradient
+                    id="docasi-strip-mark"
+                    x1="160"
+                    y1="120"
+                    x2="870"
+                    y2="930"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="#2B9FBF" />
+                    <stop offset=".36" stopColor="#0C486E" />
+                    <stop offset="1" stopColor="#04141F" />
+                  </linearGradient>
+                </defs>
+                <rect
+                  x="64"
+                  y="64"
+                  width="896"
+                  height="896"
+                  rx="204"
+                  fill="url(#docasi-strip-mark)"
+                />
+                <path
+                  fill="#F9F7EF"
+                  fillRule="evenodd"
+                  d="M287 246H478C658 246 777 356 777 512S658 778 478 778H287C260 778 239 757 239 730V294C239 267 260 246 287 246ZM362 368V656H475C580 656 651 601 651 512S580 368 475 368H362Z"
+                />
+                <path
+                  fill="#F5B451"
+                  d="M502 426Q520 494 588 512Q520 530 502 598Q484 530 416 512Q484 494 502 426Z"
+                />
+                <circle cx="589" cy="425" r="22" fill="#7FD8E8" />
+              </svg>
+              <div>
+                <p className="text-lg font-bold break-keep lg:text-xl">
+                  {docAiEntry.banner.title}
+                </p>
+                <p className="text-brand-foreground/75 mt-2 max-w-[60ch] text-sm leading-relaxed break-keep">
+                  {docAiEntry.banner.description}
+                </p>
+              </div>
+            </div>
+            <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
+              <Link
+                href={docAiEntry.href}
+                className="bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-brand-foreground inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-5 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
+              >
+                {docAiEntry.banner.startLabel}
+                <ArrowRight className="size-4" aria-hidden />
+              </Link>
+              <Link
+                href="/solutions/docasi"
+                className="border-brand-foreground/25 bg-brand-foreground/5 hover:bg-brand-foreground/10 focus-visible:ring-brand-foreground inline-flex min-h-11 items-center justify-center rounded-lg border px-5 text-sm font-semibold focus-visible:ring-2 focus-visible:outline-none"
+              >
+                {docAiEntry.banner.catalogLabel}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Section>
 
       <Section>
         <div className="grid gap-5 lg:grid-cols-2 lg:gap-6">
@@ -168,6 +242,10 @@ export default async function SolutionsPage({
         title={t.solutions.hub.cta.title}
         desc={t.solutions.hub.cta.desc}
         cta={t.solutions.hub.cta.primary}
+        secondary={{
+          label: docAiEntry.solutionsAction,
+          href: docAiEntry.href,
+        }}
       />
     </>
   );

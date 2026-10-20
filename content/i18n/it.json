@@ -65,10 +65,10 @@
       {
         "label": "Soluzioni AI",
         "href": "/solutions",
-        "description": "Physical AI per i siti industriali, Responsabile Choi AI per gli uffici",
+        "description": "Physical AI per i siti industriali, Manager Choi AI per gli uffici",
         "children": [
           {
-            "label": "Responsabile Choi AI",
+            "label": "Manager Choi AI",
             "href": "/solutions/office-ai",
             "description": "Un agente per il lavoro d'ufficio ripetitivo"
           },
@@ -106,6 +106,11 @@
             "label": "AI per prevenzione dei reati",
             "href": "/solutions/agents/safety",
             "description": "Rilevamento di anomalie basato su analisi video"
+          },
+          {
+            "label": "Catalogo DocASI",
+            "href": "/solutions/docasi",
+            "description": "Pacchetti per leggere, confrontare e strutturare documenti per attività"
           }
         ]
       },
@@ -177,7 +182,7 @@
             "href": "/solutions"
           },
           {
-            "label": "Responsabile Choi AI",
+            "label": "Manager Choi AI",
             "href": "/solutions/office-ai"
           },
           {
@@ -207,6 +212,10 @@
           {
             "label": "AI per prevenzione dei reati",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "Catalogo DocASI",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -283,7 +292,7 @@
       ],
       "/solutions": [
         {
-          "label": "Responsabile Choi AI",
+          "label": "Manager Choi AI",
           "href": "/solutions/office-ai",
           "description": "Un agente per il lavoro d'ufficio ripetitivo"
         },
@@ -321,6 +330,11 @@
           "label": "AI per prevenzione dei reati",
           "href": "/solutions/agents/safety",
           "description": "Rilevamento di anomalie basato su analisi video"
+        },
+        {
+          "label": "Catalogo DocASI",
+          "href": "/solutions/docasi",
+          "description": "Pacchetti per leggere, confrontare e strutturare documenti per attività"
         }
       ],
       "/services": [
@@ -377,7 +391,7 @@
       },
       "right": {
         "eyebrow": "Uffici",
-        "name": "Responsabile Choi AI",
+        "name": "Manager Choi AI",
         "desc": "Gestisce il lavoro d'ufficio ripetitivo. Legge e organizza documenti e prepara report.",
         "href": "/solutions/office-ai"
       }
@@ -585,7 +599,7 @@
         {
           "year": "Presente",
           "title": "Business degli agenti AI",
-          "desc": "Abbiamo riorganizzato il business intorno a Physical AI per i siti industriali e Responsabile Choi AI per gli uffici."
+          "desc": "Abbiamo riorganizzato il business intorno a Physical AI per i siti industriali e Manager Choi AI per gli uffici."
         }
       ]
     },
@@ -708,9 +722,10 @@
         "deadline": "Scadenza",
         "apply": "Candidati"
       },
+      "seoDescription": "Cerchiamo un {title} per il team {team}. {responsibility}",
       "cta": {
         "title": "Anche se non c'è una posizione adatta",
-        "desc": "Raccontaci quale lavoro vuoi fare e cercheremo insieme un posto. Anche partire come CIC e un'opzione.",
+        "desc": "Raccontaci quale lavoro vuoi fare e cercheremo insieme un posto. Anche partire come CIC è un'opzione.",
         "primary": {
           "label": "Contattaci",
           "href": "/contact"
@@ -719,8 +734,7 @@
           "label": "Scopri il CIC",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "Cerchiamo un {title} per il team {team}. {responsibility}"
+      }
     },
     "jobs": [
       {
@@ -813,7 +827,7 @@
     "hub": {
       "hero": {
         "eyebrow": "Soluzioni AI",
-        "title": "Physical AI per i siti industriali, Responsabile Choi AI per gli uffici",
+        "title": "Physical AI per i siti industriali, Manager Choi AI per gli uffici",
         "lead": "Siti di lavoro diversi richiedono giudizi diversi. DevFirm li affronta attraverso due assi."
       },
       "axes": [
@@ -826,10 +840,10 @@
         },
         {
           "eyebrow": "Uffici",
-          "name": "Responsabile Choi AI",
+          "name": "Manager Choi AI",
           "desc": "Gestisce lavori ripetitivi come leggere documenti, organizzarli e scrivere report.",
           "href": "/solutions/office-ai",
-          "linkLabel": "Vedi Responsabile Choi AI"
+          "linkLabel": "Vedi Manager Choi AI"
         }
       ],
       "agentsSection": {
@@ -942,16 +956,16 @@
           "href": "/contact"
         },
         "secondary": {
-          "label": "Vedi Responsabile Choi AI",
+          "label": "Vedi Manager Choi AI",
           "href": "/solutions/office-ai"
         }
       }
     },
     "officeAi": {
       "hero": {
-        "eyebrow": "Responsabile Choi AI",
+        "eyebrow": "Manager Choi AI",
         "title": "La ripetizione d'ufficio non è lavoro che le persone dovrebbero fare",
-        "lead": "Leggere documenti ricevuti, organizzarli, spostarli in moduli e scrivere report. Responsabile Choi AI se ne occupa."
+        "lead": "Leggere documenti ricevuti, organizzarli, spostarli in moduli e scrivere report. Manager Choi AI se ne occupa."
       },
       "problem": {
         "id": "problem",
@@ -1011,7 +1025,7 @@
         "id": "physical",
         "eyebrow": "Integrazione Physical AI",
         "title": "Mantieni collegati ufficio e sito",
-        "lead": "Ciò che Physical AI legge nel sito confluisce nei report di Responsabile Choi AI. Crea un unico percorso dalla foto del sito al documento di approvazione."
+        "lead": "Ciò che Physical AI legge nel sito confluisce nei report di Manager Choi AI. Crea un unico percorso dalla foto del sito al documento di approvazione."
       },
       "cta": {
         "title": "Decidi quali documenti assegnare per primi",
@@ -1064,6 +1078,268 @@
           "label": "Vedi tutte le soluzioni AI",
           "href": "/solutions"
         }
+      }
+    }
+  },
+  "docai": {
+    "seo": {
+      "title": "Catalogo DocASI — automazione documentale per attività",
+      "description": "Scopri i pacchetti DocASI per leggere e strutturare contratti, fatture, verbali di riunione, bandi di gara e rapporti di cantiere, organizzati per attività."
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "Carichi un documento, il lavoro procede",
+      "lead": "Non ci limitiamo a leggere i documenti. Troviamo i dati necessari, li confrontiamo e li trasferiamo in un formato che consente di avviare l'attività successiva.",
+      "primary": {
+        "label": "Esplora i pacchetti",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "Parlaci dei tuoi documenti",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "In lavorazione",
+        "fileName": "Contratto_di_fornitura_finale.pdf",
+        "status": "Pronto per la verifica",
+        "fields": [
+          {
+            "label": "Durata",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "Rinnovo automatico",
+            "value": "Avviso 30 giorni prima"
+          },
+          {
+            "label": "Pagamento",
+            "value": "30 giorni dopo la verifica"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "Pacchetti DocASI"
+        },
+        {
+          "value": "5",
+          "label": "Categorie operative"
+        },
+        {
+          "value": "4",
+          "label": "Formati di output"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "CATALOGO PACCHETTI DOCUMENTALI",
+      "title": "Scegli il documento su cui lavori",
+      "lead": "Ogni pacchetto documentale è un'unità operativa che riunisce formati di ingresso, dati da estrarre e risultati da trasferire al sistema successivo.",
+      "searchLabel": "Cerca pacchetti",
+      "searchPlaceholder": "Cerca per documento, attività o dato",
+      "clearSearch": "Cancella ricerca",
+      "filterLabel": "Filtra per attività",
+      "resultSuffix": " pacchetti documentali",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Tutti"
+        },
+        {
+          "key": "legal",
+          "label": "Contratti e legale"
+        },
+        {
+          "key": "finance",
+          "label": "Finanza e allegati"
+        },
+        {
+          "key": "operations",
+          "label": "Operazioni e HR"
+        },
+        {
+          "key": "public",
+          "label": "Pubblico e gare"
+        },
+        {
+          "key": "field",
+          "label": "Cantieri e qualità"
+        }
+      ],
+      "featuredLabel": "Suggerito",
+      "card": {
+        "fieldLabel": "Campi configurati",
+        "outputLabel": "Output",
+        "action": "Verifica l'ambito"
+      },
+      "empty": {
+        "title": "Nessun pacchetto corrisponde ai criteri",
+        "body": "Riduci i termini di ricerca o scegli un'altra attività.",
+        "reset": "Reimposta i filtri"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "Verifica clausole chiave",
+        "summary": "Individua durata, importo, rinnovo, recesso e risarcimento danni e li riporta in una scheda di verifica.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28 campi",
+        "output": "Scheda di verifica · Sintesi delle clausole",
+        "tags": [
+          "Clausole a rischio",
+          "Scadenze degli obblighi",
+          "Confronto delle clausole"
+        ],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "Confronto fatture e dettagli",
+        "summary": "Legge imponibile, imposta, voci e controparti e segnala le differenze rispetto a ordini e dati di ricezione.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24 campi",
+        "output": "Tabella di confronto · Elenco eccezioni",
+        "tags": ["Verifica importi", "Controparti", "Rilevamento duplicati"],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "Richieste di spesa e ricevute",
+        "summary": "Abbina ricevuta e autorizzazione in una pratica e normalizza conto, causale, data e importo.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18 campi",
+        "output": "XLSX · Proposta di registrazione contabile",
+        "tags": [
+          "Giustificativi collegati",
+          "Conto suggerito",
+          "Verifica dati mancanti"
+        ]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "CV e profili strutturati",
+        "summary": "Organizza esperienza, competenze, progetti e studi secondo gli stessi criteri, anche quando i candidati usano formati diversi.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32 campi",
+        "output": "Scheda candidato · CSV",
+        "tags": [
+          "Esperienza normalizzata",
+          "Classificazione competenze",
+          "Dati personali"
+        ]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "Estrazione azioni dai verbali",
+        "summary": "Individua decisioni, responsabili, scadenze e punti in sospeso e li trasforma in un elenco di attività successive.",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16 campi",
+        "output": "Elenco attività · JSON",
+        "tags": ["Decisioni", "Responsabili", "Scadenze"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "Bandi e richieste di proposta",
+        "summary": "Rileva requisiti di partecipazione, documenti da presentare, criteri di valutazione e date e prepara una lista di controllo per la proposta.",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36 campi",
+        "output": "Calendario · Lista dei documenti da presentare",
+        "tags": [
+          "Requisiti di ammissione",
+          "Criteri di valutazione",
+          "Documenti da presentare"
+        ],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "Report giornalieri di cantiere",
+        "summary": "Legge lavorazioni, personale, attrezzature, avanzamento e anomalie e li riunisce in un quadro giornaliero per cantiere.",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30 campi",
+        "output": "Quadro giornaliero · Tabella cumulativa",
+        "tags": ["Avanzamento lavori", "Personale e attrezzature", "Anomalie"]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "Report di prova e documenti qualità",
+        "summary": "Struttura prove, valori di riferimento, misure ed esiti e raccoglie i casi fuori specifica.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34 campi",
+        "output": "Storico qualità · Elenco eccezioni",
+        "tags": [
+          "Valori di prova",
+          "Confronto con le specifiche",
+          "Tracciamento LOT"
+        ]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "DAL FILE AL FLUSSO DI LAVORO",
+      "title": "I dati letti alimentano l'attività successiva",
+      "lead": "Definiamo prima i criteri di lettura di ogni documento e i punti da verificare manualmente. Poi adattiamo il formato di trasferimento agli strumenti di lavoro esistenti.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Raccolta documenti",
+          "desc": "Riceviamo originali e metadati insieme, da email, cartelle e sistemi di lavoro."
+        },
+        {
+          "step": "02",
+          "title": "Estrazione dati",
+          "desc": "Troviamo i valori necessari e i punti del documento che li giustificano secondo i campi definiti nel pacchetto."
+        },
+        {
+          "step": "03",
+          "title": "Verifica e confronto",
+          "desc": "Raccogliamo eccezioni e dati incerti perché una persona possa verificarli."
+        },
+        {
+          "step": "04",
+          "title": "Integrazione",
+          "desc": "Trasferiamo i risultati al sistema successivo e ai responsabili tramite XLSX, CSV, JSON o API."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "PRINCIPI OPERATIVI",
+      "title": "Le priorità prima dell'automazione",
+      "items": [
+        {
+          "title": "Originale e fonte del dato",
+          "desc": "Colleghiamo ogni valore estratto al documento di origine e alla posizione in cui compare."
+        },
+        {
+          "title": "Eccezioni visibili",
+          "desc": "Non confermiamo automaticamente i dati ambigui o discordanti: li inviamo alla verifica."
+        },
+        {
+          "title": "Nei flussi esistenti",
+          "desc": "Adattiamo i risultati ai moduli e ai sistemi già in uso, senza richiedere l'adozione di un altro strumento."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Anche i documenti fuori catalogo possono diventare pacchetti",
+      "desc": "Con 3–5 documenti di esempio e l'elenco dei dati che oggi trascrivete, definiamo prima l'ambito di applicazione.",
+      "primary": {
+        "label": "Contatta DocASI",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Vedi Manager Choi AI",
+        "href": "/solutions/office-ai"
       }
     }
   },
@@ -1885,6 +2161,7 @@
         "detail": "Contenuto",
         "apply": "Iscrizione al corso"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "Puoi chiedere prima di fare domanda",
         "desc": "Prima controlliamo se puoi seguire il corso al tuo livello attuale.",
@@ -1896,8 +2173,7 @@
           "label": "Contattaci",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {
@@ -2227,7 +2503,7 @@
   },
   "seo": {
     "home": {
-      "description": "Physical AI per i siti industriali, Responsabile Choi AI per gli uffici. DevFirm, una società di sviluppo guidata da sviluppatori, fornisce soluzioni AI, sviluppo software, staffing di sviluppatori e PBL Academy."
+      "description": "Physical AI per i siti industriali, Manager Choi AI per gli uffici. DevFirm, una società di sviluppo guidata da sviluppatori, fornisce soluzioni AI, sviluppo software, staffing di sviluppatori e PBL Academy."
     },
     "page": {
       "about": {
@@ -2244,10 +2520,10 @@
       },
       "solutions": {
         "title": "Soluzioni AI",
-        "description": "Forniamo Physical AI per i siti industriali, Responsabile Choi AI per gli uffici e agenti AI per sei settori: costruzioni, contenuti, manifattura, distribuzione, operazioni di servizio e prevenzione dei reati."
+        "description": "Forniamo Physical AI per i siti industriali, Manager Choi AI per gli uffici e agenti AI per sei settori: costruzioni, contenuti, manifattura, distribuzione, operazioni di servizio e prevenzione dei reati."
       },
       "officeAi": {
-        "title": "Responsabile Choi AI - agente per uffici",
+        "title": "Manager Choi AI - agente per uffici",
         "description": "Un agente AI che gestisce lavoro d'ufficio ripetitivo come lettura e organizzazione di documenti e scrittura di report. Consulta modalità di adozione e casi d'uso."
       },
       "physicalAi": {
@@ -2295,6 +2571,6 @@
         "description": "Termini per l'uso del sito web DevFirm."
       }
     },
-    "ogImageAlt": "DevFirm - una società di sviluppo guidata da sviluppatori. Physical AI per i siti industriali, Responsabile Choi AI per gli uffici."
+    "ogImageAlt": "DevFirm - una società di sviluppo guidata da sviluppatori. Physical AI per i siti industriali, Manager Choi AI per gli uffici."
   }
 }

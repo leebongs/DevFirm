@@ -106,6 +106,11 @@
             "label": "AI pentru prevenirea infracțiunilor",
             "href": "/solutions/agents/safety",
             "description": "Detectarea semnelor anormale pe baza analizei video"
+          },
+          {
+            "label": "Catalogul DocASI",
+            "href": "/solutions/docasi",
+            "description": "Pachete pentru citirea, compararea și structurarea documentelor, pe activități"
           }
         ]
       },
@@ -207,6 +212,10 @@
           {
             "label": "AI pentru prevenirea infracțiunilor",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "Catalogul DocASI",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -321,6 +330,11 @@
           "label": "AI pentru prevenirea infracțiunilor",
           "href": "/solutions/agents/safety",
           "description": "Detectarea semnelor anormale pe baza analizei video"
+        },
+        {
+          "label": "Catalogul DocASI",
+          "href": "/solutions/docasi",
+          "description": "Pachete pentru citirea, compararea și structurarea documentelor, pe activități"
         }
       ],
       "/services": [
@@ -708,6 +722,7 @@
         "deadline": "Termen limită",
         "apply": "Aplică"
       },
+      "seoDescription": "Recrutăm pentru poziția {title} în echipa {team}. {responsibility}",
       "cta": {
         "title": "Chiar dacă nu există un anunț potrivit",
         "desc": "Spuneți-ne ce muncă doriți să faceți, iar noi vom căuta împreună un loc. Începerea ca CIC este, de asemenea, o opțiune.",
@@ -719,8 +734,7 @@
           "label": "Aflați despre CIC",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "Recrutăm pentru poziția {title} în echipa {team}. {responsibility}"
+      }
     },
     "jobs": [
       {
@@ -1064,6 +1078,276 @@
           "label": "Vezi toate soluțiile AI",
           "href": "/solutions"
         }
+      }
+    }
+  },
+  "docai": {
+    "seo": {
+      "title": "Catalogul DocASI — automatizarea documentelor pe activități",
+      "description": "Explorați pachetele de documente DocASI, organizate pe activități, pentru citirea și structurarea contractelor, facturilor fiscale, proceselor-verbale, anunțurilor de licitație și rapoartelor de șantier."
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "Încărcați documentul. Activitatea continuă.",
+      "lead": "Nu ne oprim la citirea documentelor. Identificăm datele necesare, le comparăm și le transmitem într-un format din care poate începe următoarea activitate.",
+      "primary": {
+        "label": "Explorați pachetele",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "Discutați despre documentele dvs.",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "Document în curs de procesare",
+        "fileName": "Contract_furnizare_final.pdf",
+        "status": "Gata pentru verificare",
+        "fields": [
+          {
+            "label": "Durata contractului",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "Reînnoire automată",
+            "value": "Notificare cu 30 de zile înainte"
+          },
+          {
+            "label": "Condiții de plată",
+            "value": "30 de zile după recepție"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "Pachete pe activități"
+        },
+        {
+          "value": "5",
+          "label": "Categorii de activități"
+        },
+        {
+          "value": "4",
+          "label": "Formate de ieșire"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "CATALOGUL PACHETELOR DE DOCUMENTE",
+      "title": "Alegeți documentele cu care lucrați acum",
+      "lead": "Un pachet de documente reunește formatele de intrare, câmpurile extrase și rezultatele transmise sistemului următor într-o singură unitate de lucru.",
+      "searchLabel": "Căutați pachete",
+      "searchPlaceholder": "Căutați documente, activități sau câmpuri",
+      "clearSearch": "Ștergeți căutarea",
+      "filterLabel": "Filtrați după domeniu",
+      "resultSuffix": " pachete de documente",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Toate"
+        },
+        {
+          "key": "legal",
+          "label": "Contracte și juridic"
+        },
+        {
+          "key": "finance",
+          "label": "Finanțe și documente justificative"
+        },
+        {
+          "key": "operations",
+          "label": "Operațiuni și resurse umane"
+        },
+        {
+          "key": "public",
+          "label": "Sector public și licitații"
+        },
+        {
+          "key": "field",
+          "label": "Șantier și calitate"
+        }
+      ],
+      "featuredLabel": "Recomandat",
+      "card": {
+        "fieldLabel": "Câmpuri configurate",
+        "outputLabel": "Rezultat",
+        "action": "Verificați aplicabilitatea"
+      },
+      "empty": {
+        "title": "Niciun pachet nu corespunde",
+        "body": "Restrângeți căutarea sau alegeți alt domeniu de activitate.",
+        "reset": "Resetați filtrele"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "Verificarea clauzelor contractuale esențiale",
+        "summary": "Identifică durata, valoarea, reînnoirea, rezilierea și clauzele privind despăgubirile și le organizează într-o listă de verificare.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28 de câmpuri",
+        "output": "Listă de verificare · rezumatul clauzelor",
+        "tags": [
+          "Formulări cu risc",
+          "Termenele obligațiilor",
+          "Compararea clauzelor"
+        ],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "Compararea facturilor fiscale cu detaliile tranzacțiilor",
+        "summary": "Citește valoarea bunurilor, taxele, articolele și partenerii comerciali și marchează diferențele față de comenzile de achiziție și documentele de recepție.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24 de câmpuri",
+        "output": "Tabel comparativ · lista excepțiilor",
+        "tags": [
+          "Verificarea sumelor",
+          "Parteneri comerciali",
+          "Detectarea duplicatelor"
+        ],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "Organizarea cererilor de cheltuieli și a chitanțelor",
+        "summary": "Grupează fiecare chitanță cu cererea de cheltuieli aferentă și standardizează contul, destinatarul plății, data și suma.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18 câmpuri",
+        "output": "XLSX · propunere de înregistrare contabilă",
+        "tags": [
+          "Gruparea documentelor justificative",
+          "Sugestii de conturi",
+          "Verificarea lipsurilor"
+        ]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "Structurarea CV-urilor și a istoricului profesional",
+        "summary": "Organizează experiența, competențele, proiectele și studiile din formularele diferite ale candidaților după aceleași criterii.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32 de câmpuri",
+        "output": "Fișa candidatului · CSV",
+        "tags": [
+          "Standardizarea experienței",
+          "Clasificarea competențelor",
+          "Date personale"
+        ]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "Extragerea sarcinilor din procesele-verbale",
+        "summary": "Identifică deciziile, responsabilii, termenele și elementele amânate și le transformă într-o listă de sarcini ulterioare.",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16 câmpuri",
+        "output": "Listă de sarcini · JSON",
+        "tags": ["Decizii", "Responsabili", "Termene-limită"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "Analiza anunțurilor de licitație și a cererilor de ofertă",
+        "summary": "Identifică eligibilitatea, documentele necesare, criteriile de evaluare și termenele pentru a crea o listă de verificare a ofertei.",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36 de câmpuri",
+        "output": "Calendar · lista documentelor de depus",
+        "tags": [
+          "Cerințe de eligibilitate",
+          "Criterii de evaluare",
+          "Documente de depus"
+        ],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "Organizarea rapoartelor zilnice de șantier",
+        "summary": "Citește tipurile de lucrări, personalul, echipamentele, progresul și situațiile deosebite și le reunește într-un raport zilnic pentru fiecare șantier.",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30 de câmpuri",
+        "output": "Situație zilnică · tabel cumulativ",
+        "tags": [
+          "Progresul lucrărilor",
+          "Personal și echipamente",
+          "Situații deosebite"
+        ]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "Citirea buletinelor de încercare și a documentelor de calitate",
+        "summary": "Structurează elementele testate, valorile de referință, valorile măsurate și rezultatele și grupează cazurile care nu respectă specificațiile.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34 de câmpuri",
+        "output": "Istoricul calității · lista excepțiilor",
+        "tags": [
+          "Valori măsurate",
+          "Compararea cu specificațiile",
+          "Urmărirea loturilor"
+        ]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "DE LA FIȘIER LA FLUXUL DE LUCRU",
+      "title": "Rezultatele alimentează următoarea activitate",
+      "lead": "Stabilim mai întâi criteriile de citire pentru fiecare document și punctele care necesită verificare umană. Apoi adaptăm formatul de ieșire la instrumentele de lucru existente.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Colectarea documentelor",
+          "desc": "Preluăm documentele originale împreună cu metadatele din email, dosare și sistemele de lucru."
+        },
+        {
+          "step": "02",
+          "title": "Extragerea câmpurilor",
+          "desc": "Identificăm valorile necesare și locul din document care le susține, conform definițiilor câmpurilor din pachet."
+        },
+        {
+          "step": "03",
+          "title": "Verificare și comparare",
+          "desc": "Grupăm excepțiile și elementele incerte pentru verificare umană."
+        },
+        {
+          "step": "04",
+          "title": "Conectarea la fluxul de lucru",
+          "desc": "Transmitem rezultatele prin XLSX, CSV, JSON sau API către sistemul următor și persoanele responsabile."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "PRINCIPII DE OPERARE",
+      "title": "Principii înaintea automatizării",
+      "items": [
+        {
+          "title": "Originalul și sursa datelor",
+          "desc": "Păstrăm legătura dintre fiecare valoare extrasă și documentul și locul din care provine."
+        },
+        {
+          "title": "Excepțiile rămân vizibile",
+          "desc": "Nu confirmăm automat evaluările ambigue sau valorile care nu coincid. Le trimitem spre verificare."
+        },
+        {
+          "title": "În fluxurile existente",
+          "desc": "Adaptăm rezultatele la formularele și sistemele folosite deja, fără a impune învățarea unui nou instrument."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Și documentele care lipsesc din catalog pot deveni pachete",
+      "desc": "Trimiteți 3–5 documente exemplu și lista câmpurilor pe care le transcrieți acum. Vom stabili mai întâi unde se poate aplica soluția.",
+      "primary": {
+        "label": "Întrebați despre implementarea DocASI",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Vedeți Manager Choi AI",
+        "href": "/solutions/office-ai"
       }
     }
   },
@@ -1889,6 +2173,7 @@
         "detail": "Conținut",
         "apply": "Înscriere la curs"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "Puteți întreba înainte de înscriere",
         "desc": "Verificăm mai întâi dacă puteți urma cursul la nivelul dvs. actual.",
@@ -1900,8 +2185,7 @@
           "label": "Contact",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {
@@ -2137,8 +2421,8 @@
           "id": "retention",
           "title": "3. Perioada de păstrare și utilizare",
           "body": [
-            "Informații de solicitare: păstrate timp de 3 ani după finalizarea procesării și distruse fără întârziere.",
-            "Informații de înscriere la curs: păstrate timp de 1 an după încheierea consultării și distruse fără întârziere.",
+            "Informațiile din solicitări se păstrează timp de 3 ani de la soluționare, apoi se distrug fără întârziere.",
+            "Informațiile din cererile de înscriere se păstrează timp de 1 an de la încheierea consultării, apoi se distrug fără întârziere.",
             "Dacă persoana vizată solicită distrugerea, informațiile sunt distruse imediat."
           ]
         },

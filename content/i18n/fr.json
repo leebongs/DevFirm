@@ -106,6 +106,11 @@
             "label": "AI prévention",
             "href": "/solutions/agents/safety",
             "description": "Détection de signes anormaux par analyse vidéo"
+          },
+          {
+            "label": "Catalogue DocASI",
+            "href": "/solutions/docasi",
+            "description": "Packs de lecture, de comparaison et de structuration des documents par tâche"
           }
         ]
       },
@@ -207,6 +212,10 @@
           {
             "label": "AI prévention",
             "href": "/solutions/agents/safety"
+          },
+          {
+            "label": "Catalogue DocASI",
+            "href": "/solutions/docasi"
           }
         ]
       },
@@ -321,6 +330,11 @@
           "label": "AI prévention",
           "href": "/solutions/agents/safety",
           "description": "Détection de signes anormaux par analyse vidéo"
+        },
+        {
+          "label": "Catalogue DocASI",
+          "href": "/solutions/docasi",
+          "description": "Packs de lecture, de comparaison et de structuration des documents par tâche"
         }
       ],
       "/services": [
@@ -708,6 +722,7 @@
         "deadline": "Clôture",
         "apply": "Postuler"
       },
+      "seoDescription": "Nous recrutons un {title} pour l'équipe {team}. {responsibility}",
       "cta": {
         "title": "Même si aucun poste ne correspond",
         "desc": "Dites-nous quel travail vous souhaitez faire. Nous chercherons une place avec vous. Il existe aussi une façon de commencer par un CIC.",
@@ -719,8 +734,7 @@
           "label": "Découvrir le CIC",
           "href": "/about/cic"
         }
-      },
-      "seoDescription": "Nous recrutons un {title} pour l'équipe {team}. {responsibility}"
+      }
     },
     "jobs": [
       {
@@ -1064,6 +1078,276 @@
           "label": "Voir toutes les solutions AI",
           "href": "/solutions"
         }
+      }
+    }
+  },
+  "docai": {
+    "seo": {
+      "title": "Catalogue DocASI — automatisation documentaire par métier",
+      "description": "Découvrez les packs DocASI par métier pour lire et structurer contrats, factures fiscales, comptes rendus, appels d’offres et rapports de chantier."
+    },
+    "hero": {
+      "eyebrow": "Superintelligence for Document Compliance",
+      "title": "Déposez un document, le travail avance",
+      "lead": "La lecture des documents n’est que le début. Nous repérons les données utiles, les recoupons et les transmettons sous une forme exploitable pour l’étape suivante.",
+      "primary": {
+        "label": "Voir les packs",
+        "href": "#catalog"
+      },
+      "secondary": {
+        "label": "Parler de vos documents",
+        "href": "/contact"
+      },
+      "preview": {
+        "label": "Document en cours",
+        "fileName": "contrat_fourniture_final.pdf",
+        "status": "Prêt à être vérifié",
+        "fields": [
+          {
+            "label": "Durée du contrat",
+            "value": "2026.09 — 2027.08"
+          },
+          {
+            "label": "Renouvellement automatique",
+            "value": "Préavis de 30 jours"
+          },
+          {
+            "label": "Conditions de paiement",
+            "value": "30 jours après validation"
+          }
+        ]
+      },
+      "stats": [
+        {
+          "value": "8",
+          "label": "packs par métier"
+        },
+        {
+          "value": "5",
+          "label": "domaines d’activité"
+        },
+        {
+          "value": "4",
+          "label": "formats de sortie"
+        }
+      ]
+    },
+    "catalog": {
+      "id": "catalog",
+      "eyebrow": "CATALOGUE DES PACKS",
+      "title": "Choisissez le document à traiter",
+      "lead": "Chaque pack documentaire regroupe les formats d’entrée, les données à extraire et les livrables à transmettre au système suivant pour une tâche donnée.",
+      "searchLabel": "Rechercher un pack",
+      "searchPlaceholder": "Document, tâche, données à extraire",
+      "clearSearch": "Effacer la recherche",
+      "filterLabel": "Filtrer par domaine",
+      "resultSuffix": " packs documentaires",
+      "categories": [
+        {
+          "key": "all",
+          "label": "Tous"
+        },
+        {
+          "key": "legal",
+          "label": "Contrats et juridique"
+        },
+        {
+          "key": "finance",
+          "label": "Finance et justificatifs"
+        },
+        {
+          "key": "operations",
+          "label": "Opérations et RH"
+        },
+        {
+          "key": "public",
+          "label": "Secteur public et appels d’offres"
+        },
+        {
+          "key": "field",
+          "label": "Chantier et qualité"
+        }
+      ],
+      "featuredLabel": "Recommandé",
+      "card": {
+        "fieldLabel": "Champs configurés",
+        "outputLabel": "Livrable",
+        "action": "Voir le périmètre"
+      },
+      "empty": {
+        "title": "Aucun pack ne correspond",
+        "body": "Raccourcissez votre recherche ou choisissez un autre domaine.",
+        "reset": "Réinitialiser les filtres"
+      }
+    },
+    "packs": [
+      {
+        "id": "contract-review",
+        "category": "legal",
+        "title": "Revue des clauses contractuelles",
+        "summary": "Repère la durée, le montant, le renouvellement, la résiliation et les clauses de dommages-intérêts d’un contrat, puis les rassemble dans une grille de vérification.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "28 champs",
+        "output": "Grille de vérification · synthèse des clauses",
+        "tags": [
+          "Clauses à risque",
+          "Délais contractuels",
+          "Comparaison des clauses"
+        ],
+        "featured": true
+      },
+      {
+        "id": "invoice-match",
+        "category": "finance",
+        "title": "Rapprochement des factures fiscales et relevés de transaction",
+        "summary": "Lit les montants hors taxe, taxes, articles et partenaires commerciaux, puis signale les écarts avec les commandes et les réceptions.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "24 champs",
+        "output": "Tableau de rapprochement · liste des écarts",
+        "tags": [
+          "Vérification des montants",
+          "Partenaires commerciaux",
+          "Détection des doublons"
+        ],
+        "featured": true
+      },
+      {
+        "id": "expense-evidence",
+        "category": "finance",
+        "title": "Classement des demandes de dépense et reçus",
+        "summary": "Regroupe chaque reçu avec sa demande de dépense et normalise le compte, l’utilisation, la date et le montant.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "18 champs",
+        "output": "XLSX · proposition de saisie comptable",
+        "tags": [
+          "Regroupement des justificatifs",
+          "Suggestion de compte",
+          "Contrôle des pièces manquantes"
+        ]
+      },
+      {
+        "id": "resume-structure",
+        "category": "operations",
+        "title": "Structuration des CV et parcours professionnels",
+        "summary": "Organise selon les mêmes critères l’expérience, les compétences, les projets et les études de candidats aux formats de CV différents.",
+        "files": ["PDF", "DOCX", "HWP"],
+        "fields": "32 champs",
+        "output": "Fiche candidat · CSV",
+        "tags": [
+          "Normalisation des parcours",
+          "Classement des compétences",
+          "Données personnelles"
+        ]
+      },
+      {
+        "id": "meeting-actions",
+        "category": "operations",
+        "title": "Extraction des actions de réunion",
+        "summary": "Repère les décisions, responsables, échéances et points en suspens dans les comptes rendus, puis crée une liste de suivi.",
+        "files": ["DOCX", "HWP", "TXT"],
+        "fields": "16 champs",
+        "output": "Liste de tâches · JSON",
+        "tags": ["Décisions", "Responsables", "Échéances"]
+      },
+      {
+        "id": "public-tender",
+        "category": "public",
+        "title": "Analyse des appels d’offres et demandes de propositions",
+        "summary": "Repère les conditions de participation, pièces à fournir, critères d’évaluation et dates, puis prépare une liste de contrôle pour la proposition.",
+        "files": ["PDF", "HWP", "XLSX"],
+        "fields": "36 champs",
+        "output": "Calendrier · liste des pièces à fournir",
+        "tags": [
+          "Conditions d’éligibilité",
+          "Critères d’évaluation",
+          "Pièces à fournir"
+        ],
+        "featured": true
+      },
+      {
+        "id": "daily-site-report",
+        "category": "field",
+        "title": "Synthèse des rapports quotidiens de chantier",
+        "summary": "Lit les corps de métier, effectifs, équipements, avancement et événements particuliers, puis consolide la situation quotidienne par chantier.",
+        "files": ["PDF", "XLSX", "JPG"],
+        "fields": "30 champs",
+        "output": "Situation quotidienne · tableau cumulatif",
+        "tags": [
+          "Avancement",
+          "Effectifs et équipements",
+          "Événements particuliers"
+        ]
+      },
+      {
+        "id": "quality-certificate",
+        "category": "field",
+        "title": "Lecture des rapports d’essai et documents qualité",
+        "summary": "Structure les essais, seuils, mesures et résultats, puis regroupe les cas hors spécification.",
+        "files": ["PDF", "JPG", "PNG"],
+        "fields": "34 champs",
+        "output": "Historique qualité · liste des écarts",
+        "tags": [
+          "Résultats d’essai",
+          "Comparaison aux normes",
+          "Traçabilité des lots"
+        ]
+      }
+    ],
+    "workflow": {
+      "eyebrow": "DU DOCUMENT AU PROCESSUS",
+      "title": "Les résultats alimentent l’étape suivante",
+      "lead": "Nous définissons d’abord les règles de lecture de chaque document et les points à vérifier par une personne. Puis nous adaptons le format de sortie aux outils déjà utilisés.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Collecte des documents",
+          "desc": "Nous recevons les documents originaux et leurs métadonnées par e-mail, dossier ou système métier."
+        },
+        {
+          "step": "02",
+          "title": "Extraction des données",
+          "desc": "Selon les champs définis dans le pack, nous trouvons les valeurs utiles et leur emplacement dans le document."
+        },
+        {
+          "step": "03",
+          "title": "Vérification et rapprochement",
+          "desc": "Nous regroupons les exceptions et les données incertaines pour vérification humaine."
+        },
+        {
+          "step": "04",
+          "title": "Transmission",
+          "desc": "Nous transmettons les résultats au système suivant et à la personne responsable en XLSX, CSV, JSON ou par API."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "PRINCIPES DE FONCTIONNEMENT",
+      "title": "Nos règles avant l’automatisation",
+      "items": [
+        {
+          "title": "Conserver la source",
+          "desc": "Chaque valeur extraite reste liée au document et à l’emplacement dont elle provient."
+        },
+        {
+          "title": "Signaler les exceptions",
+          "desc": "Les valeurs ambiguës ou contradictoires ne sont pas validées automatiquement : elles sont soumises à vérification."
+        },
+        {
+          "title": "Suivre les processus existants",
+          "desc": "Nous adaptons le résultat aux formulaires et systèmes déjà utilisés, sans imposer l’apprentissage d’un outil supplémentaire."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Un document absent du catalogue peut aussi devenir un pack",
+      "desc": "Envoyez-nous 3 à 5 exemples de documents et la liste des données que vous ressaisissez aujourd’hui. Nous définirons d’abord le périmètre applicable.",
+      "primary": {
+        "label": "Parler de DocASI",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "Voir Manager Choi AI",
+        "href": "/solutions/office-ai"
       }
     }
   },
@@ -1885,6 +2169,7 @@
         "detail": "Contenu",
         "apply": "Candidature"
       },
+      "seoDescription": "{title} — {summary}",
       "cta": {
         "title": "Vous pouvez poser des questions avant de candidater",
         "desc": "Nous vérifions d’abord si vous pouvez suivre avec votre niveau actuel.",
@@ -1896,8 +2181,7 @@
           "label": "Nous contacter",
           "href": "/contact"
         }
-      },
-      "seoDescription": "{title} — {summary}"
+      }
     }
   },
   "workspace": {
