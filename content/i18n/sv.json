@@ -1326,6 +1326,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Ladda ner appen nu och prova gratisversionen.",
+      "lead": "Installera hubbappen för ledare och appen för teammedlemmar och kom igång direkt med gratisversionen.",
+      "freeLabel": "Gratis nedladdning",
+      "specsLabel": "Minimikrav och rekommenderade krav",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur eller senare (universell för Apple Silicon och Intel)",
+            "8GB minne eller mer (16GB rekommenderas)",
+            "2GB eller mer ledigt diskutrymme",
+            "Internetanslutning krävs"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "För Windows",
+          "specs": [
+            "Windows 10 64-bitars eller Windows 11 (x64)",
+            "4GB minne eller mer (8GB rekommenderas)",
+            "1GB eller mer ledigt diskutrymme",
+            "Internetanslutning krävs"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "Om gratisversionen och utvecklingsversionen",
+        "items": [
+          "Gratisversionen och utvecklingsversionen kan stängas och startas om utan förvarning när en uppdatering kommer.",
+          "Vissa funktioner kan begränsas beroende på den fria användningen."
+        ]
+      }
+    },
     "cta": {
       "title": "Fler dokument kan bli dokumentpaket",
       "desc": "Skicka 3–5 exempeldokument och ange vilka uppgifter ni för över manuellt i dag, så tar vi först fram ett förslag till tillämpningsområde.",

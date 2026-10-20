@@ -215,6 +215,45 @@ export const docAi = {
       },
     ],
   },
+  download: {
+    id: "download",
+    eyebrow: "FREE DOWNLOAD",
+    title: "지금 앱을 다운로드, 무료 버전 맛보기 체험 해 보세요.",
+    lead: "리더용 허브 앱과 팀 멤버용 앱을 설치하면 무료 버전으로 바로 시작할 수 있습니다.",
+    freeLabel: "무료 다운로드",
+    specsLabel: "최소·권장 사양",
+    apps: [
+      {
+        key: "mac",
+        name: "DocASI HUB APP for Leader",
+        platform: "macOS Universal",
+        specs: [
+          "macOS 11 Big Sur 이상 (Apple Silicon·Intel 공용)",
+          "메모리 8GB 이상 (16GB 권장)",
+          "디스크 여유 공간 2GB 이상",
+          "인터넷 연결 필수",
+        ],
+      },
+      {
+        key: "win",
+        name: "DocASI for Team Member",
+        platform: "윈도우용",
+        specs: [
+          "Windows 10 64비트 또는 Windows 11 (x64)",
+          "메모리 4GB 이상 (8GB 권장)",
+          "디스크 여유 공간 1GB 이상",
+          "인터넷 연결 필수",
+        ],
+      },
+    ],
+    notice: {
+      title: "무료 버전·개발 버전 안내",
+      items: [
+        "무료 버전과 개발 버전은 예고 없는 업데이트로 앱이 꺼졌다 켜질 수 있습니다.",
+        "무료 사용량에 따라 일부 기능이 제한될 수 있습니다.",
+      ],
+    },
+  },
   cta: {
     title: "목록에 없는 문서도 문서팩으로 만들 수 있습니다",
     desc: "샘플 문서 3~5건과 지금 옮겨 적는 항목을 알려주시면 적용 범위를 먼저 정리해 드립니다.",

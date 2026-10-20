@@ -1338,6 +1338,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Téléchargez l'application dès maintenant et essayez la version gratuite.",
+      "lead": "Installez l'application hub pour les responsables et l'application pour les membres de l'équipe, puis commencez aussitôt avec la version gratuite.",
+      "freeLabel": "Téléchargement gratuit",
+      "specsLabel": "Configuration minimale et recommandée",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur ou version ultérieure (universel Apple Silicon et Intel)",
+            "8 Go de mémoire ou plus (16 Go recommandés)",
+            "2 Go ou plus d'espace disque libre",
+            "Connexion Internet requise"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Pour Windows",
+          "specs": [
+            "Windows 10 64 bits ou Windows 11 (x64)",
+            "4 Go de mémoire ou plus (8 Go recommandés)",
+            "1 Go ou plus d'espace disque libre",
+            "Connexion Internet requise"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "À propos de la version gratuite et de la version de développement",
+        "items": [
+          "La version gratuite et la version de développement peuvent se fermer puis redémarrer sans préavis lors d'une mise à jour.",
+          "Certaines fonctions peuvent être limitées selon l'usage gratuit."
+        ]
+      }
+    },
     "cta": {
       "title": "Un document absent du catalogue peut aussi devenir un pack",
       "desc": "Envoyez-nous 3 à 5 exemples de documents et la liste des données que vous ressaisissez aujourd’hui. Nous définirons d’abord le périmètre applicable.",

@@ -1334,6 +1334,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Descarga la aplicación ahora y prueba la versión gratuita.",
+      "lead": "Instala la aplicación hub para líderes y la aplicación para miembros del equipo y empieza de inmediato con la versión gratuita.",
+      "freeLabel": "Descarga gratuita",
+      "specsLabel": "Requisitos mínimos y recomendados",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur o posterior (universal para Apple Silicon e Intel)",
+            "8GB de memoria o más (16GB recomendados)",
+            "2GB o más de espacio libre en disco",
+            "Conexión a internet obligatoria"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Para Windows",
+          "specs": [
+            "Windows 10 de 64 bits o Windows 11 (x64)",
+            "4GB de memoria o más (8GB recomendados)",
+            "1GB o más de espacio libre en disco",
+            "Conexión a internet obligatoria"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "Aviso sobre la versión gratuita y la versión de desarrollo",
+        "items": [
+          "La versión gratuita y la de desarrollo pueden cerrarse y reiniciarse sin previo aviso cuando llega una actualización.",
+          "Algunas funciones pueden limitarse según el uso gratuito."
+        ]
+      }
+    },
     "cta": {
       "title": "También creamos paquetes para documentos no listados",
       "desc": "Envíenos de 3 a 5 documentos de muestra y los campos que transcribe actualmente. Primero definiremos el alcance de aplicación.",

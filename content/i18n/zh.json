@@ -1310,6 +1310,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "立即下载应用,体验免费版。",
+      "lead": "安装负责人专用 Hub 应用和团队成员应用,即可立即开始使用免费版。",
+      "freeLabel": "免费下载",
+      "specsLabel": "最低·推荐配置",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur 或更高版本(Apple Silicon·Intel 通用)",
+            "内存 8GB 以上(建议 16GB)",
+            "磁盘可用空间 2GB 以上",
+            "需要互联网连接"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Windows 版",
+          "specs": [
+            "Windows 10 64 位或 Windows 11(x64)",
+            "内存 4GB 以上(建议 8GB)",
+            "磁盘可用空间 1GB 以上",
+            "需要互联网连接"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "免费版·开发版说明",
+        "items": [
+          "免费版和开发版可能因不另行通知的更新而自动关闭并重新启动。",
+          "部分功能可能根据免费用量受到限制。"
+        ]
+      }
+    },
     "cta": {
       "title": "未列出的文档也可制作为文档包",
       "desc": "请提供3至5份样本文档及当前人工转录的项目，我们会先确定适用范围。",

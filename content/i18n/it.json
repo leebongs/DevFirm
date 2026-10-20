@@ -1330,6 +1330,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Scarica subito l'app e prova la versione gratuita.",
+      "lead": "Installa l'app hub per i responsabili e l'app per i membri del team e inizia subito con la versione gratuita.",
+      "freeLabel": "Download gratuito",
+      "specsLabel": "Requisiti minimi e consigliati",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur o successivo (universale per Apple Silicon e Intel)",
+            "8GB di memoria o più (16GB consigliati)",
+            "2GB o più di spazio libero su disco",
+            "Connessione a internet obbligatoria"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Per Windows",
+          "specs": [
+            "Windows 10 a 64 bit o Windows 11 (x64)",
+            "4GB di memoria o più (8GB consigliati)",
+            "1GB o più di spazio libero su disco",
+            "Connessione a internet obbligatoria"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "Avviso sulla versione gratuita e di sviluppo",
+        "items": [
+          "La versione gratuita e quella di sviluppo possono chiudersi e riavviarsi senza preavviso all'arrivo di un aggiornamento.",
+          "Alcune funzioni possono essere limitate in base all'utilizzo gratuito."
+        ]
+      }
+    },
     "cta": {
       "title": "Anche i documenti fuori catalogo possono diventare pacchetti",
       "desc": "Con 3–5 documenti di esempio e l'elenco dei dati che oggi trascrivete, definiamo prima l'ambito di applicazione.",

@@ -4,10 +4,12 @@ import {
   ArrowDown,
   ArrowRight,
   CheckCircle2,
+  Download,
   FileScan,
   GitCompareArrows,
   ScanText,
   ShieldCheck,
+  TriangleAlert,
   Workflow,
 } from "lucide-react";
 import { Breadcrumb } from "@/components/layout/breadcrumb";
@@ -17,6 +19,7 @@ import { DocAiCatalog } from "@/components/content/docai-catalog";
 import { CTASection } from "@/components/content/cta-section";
 import { SectionHeading } from "@/components/typography/section-heading";
 import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { docasiDownloads } from "@/lib/docasi-downloads";
 import { getDictionary } from "@/lib/i18n";
 import { localeHref } from "@/lib/locale-href";
 import { buildMetadata } from "@/lib/metadata";
@@ -296,6 +299,92 @@ export default async function DocAiPage({
               </article>
             );
           })}
+        </div>
+      </Section>
+
+      <Section variant="muted">
+        <SectionHeading
+          id={t.docai.download.id}
+          eyebrow={t.docai.download.eyebrow}
+          title={t.docai.download.title}
+          lead={t.docai.download.lead}
+        />
+        <div className="mt-10 grid gap-5 lg:grid-cols-2">
+          {t.docai.download.apps.map((app) => {
+            const dl = docasiDownloads[app.key];
+            return (
+              <article
+                key={app.key}
+                className="border-border bg-card flex flex-col rounded-2xl border p-6 lg:p-7"
+              >
+                {/* 버튼이 곧 앱의 이름표다 — 카드 제목을 따로 두지 않고
+                    앱명·플랫폼·버전·용량을 전부 다운로드 링크 안에 싣는다. */}
+                <a
+                  href={dl.href}
+                  className="group bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-ring flex items-center gap-4 rounded-xl p-4 pr-5 focus-visible:ring-2 focus-visible:outline-none"
+                >
+                  <span className="bg-primary-foreground/12 flex size-11 shrink-0 items-center justify-center rounded-lg">
+                    <Download className="size-5" aria-hidden />
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-[0.6875rem] font-semibold tracking-wide opacity-85">
+                      {t.docai.download.freeLabel} · {app.platform}
+                    </span>
+                    <span className="mt-0.5 block text-[1.0625rem] leading-snug font-bold break-keep">
+                      {app.name}
+                    </span>
+                  </span>
+                  <span className="shrink-0 text-right font-mono text-[0.6875rem] leading-relaxed opacity-80">
+                    {docasiDownloads.version}
+                    <br />
+                    {dl.size}
+                  </span>
+                </a>
+
+                <div className="border-border mt-6 border-t pt-5">
+                  <p className="text-sm font-semibold">
+                    {t.docai.download.specsLabel}
+                  </p>
+                  <ul className="mt-3 space-y-2">
+                    {app.specs.map((spec) => (
+                      <li
+                        key={spec}
+                        className="text-muted-foreground flex items-start gap-2.5 text-sm leading-relaxed break-keep"
+                      >
+                        <CheckCircle2
+                          className="text-primary mt-0.5 size-4 shrink-0"
+                          aria-hidden
+                        />
+                        {spec}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+
+        <div className="mt-6 rounded-2xl border border-amber-500/35 bg-amber-500/10 p-5 lg:p-6">
+          <div className="flex items-start gap-3">
+            <TriangleAlert
+              className="mt-0.5 size-5 shrink-0 text-amber-600 dark:text-amber-400"
+              aria-hidden
+            />
+            <div>
+              <p className="text-sm font-semibold">
+                {t.docai.download.notice.title}
+              </p>
+              <ul className="text-muted-foreground mt-2 space-y-1.5 text-sm leading-relaxed break-keep">
+                {t.docai.download.notice.items.map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span aria-hidden>·</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </Section>
 

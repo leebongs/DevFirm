@@ -1326,6 +1326,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Unduh aplikasinya sekarang dan coba versi gratis.",
+      "lead": "Pasang aplikasi hub untuk pemimpin dan aplikasi anggota tim untuk langsung memulai dengan versi gratis.",
+      "freeLabel": "Unduh gratis",
+      "specsLabel": "Spesifikasi minimum & yang disarankan",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur atau lebih baru (universal Apple Silicon & Intel)",
+            "RAM 8GB atau lebih (disarankan 16GB)",
+            "Ruang disk kosong 2GB atau lebih",
+            "Memerlukan koneksi internet"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Untuk Windows",
+          "specs": [
+            "Windows 10 64-bit atau Windows 11 (x64)",
+            "RAM 4GB atau lebih (disarankan 8GB)",
+            "Ruang disk kosong 1GB atau lebih",
+            "Memerlukan koneksi internet"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "Pemberitahuan versi gratis & versi pengembangan",
+        "items": [
+          "Versi gratis dan versi pengembangan dapat tertutup lalu dimulai ulang tanpa pemberitahuan saat pembaruan tiba.",
+          "Beberapa fitur dapat dibatasi sesuai pemakaian gratis."
+        ]
+      }
+    },
     "cta": {
       "title": "Dokumen di luar katalog juga dapat dibuatkan paket",
       "desc": "Berikan 3–5 contoh dokumen dan data yang kini Anda salin secara manual. Kami akan menentukan cakupan penerapannya terlebih dahulu.",

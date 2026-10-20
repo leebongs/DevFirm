@@ -20,7 +20,11 @@ import {
 } from "lucide-react";
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
-import { docAiStart, type DocAiStartIcon } from "@/content/docai-start";
+import {
+  docAiStart,
+  docAiStartStepAudience,
+  type DocAiStartIcon,
+} from "@/content/docai-start";
 import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
 import { localeHref } from "@/lib/locale-href";
 
@@ -231,9 +235,9 @@ export default async function DocAiStartPage({
             const Icon = icons[step.icon];
             const isLast = index === docAiStart.setup.steps.length - 1;
             const nodeTone =
-              step.audience === "Hub 관리자"
+              step.audience === docAiStartStepAudience.admin
                 ? "border-primary bg-primary text-primary-foreground"
-                : step.audience === "관리자 확인"
+                : step.audience === docAiStartStepAudience.confirm
                   ? "border-primary/40 bg-primary/10 text-primary"
                   : "border-primary/50 bg-background text-primary";
             return (

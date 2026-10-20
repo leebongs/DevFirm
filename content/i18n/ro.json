@@ -1338,6 +1338,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Descarcă aplicația acum și încearcă versiunea gratuită.",
+      "lead": "Instalează aplicația hub pentru lideri și aplicația pentru membrii echipei și începe imediat cu versiunea gratuită.",
+      "freeLabel": "Descărcare gratuită",
+      "specsLabel": "Cerințe minime și recomandate",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur sau mai nou (universal pentru Apple Silicon și Intel)",
+            "Memorie de 8GB sau mai mult (16GB recomandat)",
+            "Spațiu liber pe disc de 2GB sau mai mult",
+            "Conexiune la internet obligatorie"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Pentru Windows",
+          "specs": [
+            "Windows 10 pe 64 de biți sau Windows 11 (x64)",
+            "Memorie de 4GB sau mai mult (8GB recomandat)",
+            "Spațiu liber pe disc de 1GB sau mai mult",
+            "Conexiune la internet obligatorie"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "Notă privind versiunea gratuită și versiunea de dezvoltare",
+        "items": [
+          "Versiunea gratuită și cea de dezvoltare se pot închide și reporni fără aviz prealabil la sosirea unei actualizări.",
+          "Unele funcții pot fi limitate în funcție de utilizarea gratuită."
+        ]
+      }
+    },
     "cta": {
       "title": "Și documentele care lipsesc din catalog pot deveni pachete",
       "desc": "Trimiteți 3–5 documente exemplu și lista câmpurilor pe care le transcrieți acum. Vom stabili mai întâi unde se poate aplica soluția.",

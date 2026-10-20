@@ -1330,6 +1330,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Lataa sovellus nyt ja kokeile ilmaisversiota.",
+      "lead": "Asenna vetäjän hub-sovellus ja tiimin jäsenen sovellus, niin pääset heti alkuun ilmaisversiolla.",
+      "freeLabel": "Ilmainen lataus",
+      "specsLabel": "Vähimmäis- ja suositusvaatimukset",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur tai uudempi (Apple Silicon ja Intel, universaali)",
+            "Muistia 8GB tai enemmän (suositus 16GB)",
+            "Vapaata levytilaa 2GB tai enemmän",
+            "Internet-yhteys vaaditaan"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Windowsille",
+          "specs": [
+            "64-bittinen Windows 10 tai Windows 11 (x64)",
+            "Muistia 4GB tai enemmän (suositus 8GB)",
+            "Vapaata levytilaa 1GB tai enemmän",
+            "Internet-yhteys vaaditaan"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "Tietoa ilmais- ja kehitysversiosta",
+        "items": [
+          "Ilmais- ja kehitysversio voivat sulkeutua ja käynnistyä uudelleen ilman ennakkoilmoitusta päivityksen yhteydessä.",
+          "Osa toiminnoista voi olla rajoitettuja ilmaiskäytön määrän mukaan."
+        ]
+      }
+    },
     "cta": {
       "title": "Myös muut asiakirjat voidaan paketoida",
       "desc": "Toimittakaa 3–5 malliasiakirjaa ja tiedot, jotka nyt siirrätte käsin. Määritämme ensin soveltamisalan.",

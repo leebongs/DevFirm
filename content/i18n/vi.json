@@ -1322,6 +1322,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Tải ứng dụng ngay và dùng thử phiên bản miễn phí.",
+      "lead": "Cài đặt ứng dụng hub cho trưởng nhóm và ứng dụng cho thành viên để bắt đầu ngay với phiên bản miễn phí.",
+      "freeLabel": "Tải miễn phí",
+      "specsLabel": "Cấu hình tối thiểu & khuyến nghị",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur trở lên (dùng chung Apple Silicon & Intel)",
+            "RAM 8GB trở lên (khuyến nghị 16GB)",
+            "Dung lượng đĩa trống 2GB trở lên",
+            "Bắt buộc có kết nối Internet"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Dành cho Windows",
+          "specs": [
+            "Windows 10 64-bit hoặc Windows 11 (x64)",
+            "RAM 4GB trở lên (khuyến nghị 8GB)",
+            "Dung lượng đĩa trống 1GB trở lên",
+            "Bắt buộc có kết nối Internet"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "Lưu ý về phiên bản miễn phí & phiên bản phát triển",
+        "items": [
+          "Phiên bản miễn phí và phiên bản phát triển có thể tự đóng rồi khởi động lại không báo trước khi có bản cập nhật.",
+          "Một số tính năng có thể bị giới hạn tùy theo mức sử dụng miễn phí."
+        ]
+      }
+    },
     "cta": {
       "title": "Có thể tạo gói cho tài liệu chưa có trong danh mục",
       "desc": "Hãy gửi 3~5 tài liệu mẫu và các mục bạn đang nhập thủ công. Chúng tôi sẽ xác định phạm vi áp dụng trước.",

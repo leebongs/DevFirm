@@ -16,6 +16,16 @@ export type DocAiStartIcon =
 
 const PUBLIC_URL = "https://www.devfirm.co/solutions/docasi/start";
 
+/**
+ * setup 타임라인의 노드 톤 분기가 참조하는 담당 구분.
+ * 표시 문구(steps[].audience)와 같은 파일에 둬 둘이 어긋나지 않게 한다 —
+ * 페이지 쪽에 한국어 리터럴을 두면 A10 콘텐츠 분리 게이트에 걸린다.
+ */
+export const docAiStartStepAudience = {
+  admin: "Hub 관리자",
+  confirm: "관리자 확인",
+} as const;
+
 export const docAiStart = {
   publicUrl: PUBLIC_URL,
   seo: {

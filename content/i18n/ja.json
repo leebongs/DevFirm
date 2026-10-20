@@ -1310,6 +1310,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "今すぐアプリをダウンロードして、無料版をお試しください。",
+      "lead": "リーダー用ハブアプリとチームメンバー用アプリをインストールすれば、無料版ですぐに始められます。",
+      "freeLabel": "無料ダウンロード",
+      "specsLabel": "最小・推奨環境",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur 以降(Apple Silicon・Intel 両対応)",
+            "メモリ8GB以上(16GB推奨)",
+            "ディスク空き容量2GB以上",
+            "インターネット接続必須"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Windows用",
+          "specs": [
+            "Windows 10 64ビット または Windows 11(x64)",
+            "メモリ4GB以上(8GB推奨)",
+            "ディスク空き容量1GB以上",
+            "インターネット接続必須"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "無料版・開発版についてのご案内",
+        "items": [
+          "無料版および開発版は、予告のないアップデートによりアプリが終了して再起動することがあります。",
+          "無料の利用量に応じて一部の機能が制限されることがあります。"
+        ]
+      }
+    },
     "cta": {
       "title": "一覧にない文書も文書パックにできます",
       "desc": "サンプル文書3～5件と、現在転記している項目をお知らせいただければ、適用範囲を整理します。",

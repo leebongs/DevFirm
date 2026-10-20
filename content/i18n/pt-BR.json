@@ -1334,6 +1334,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Baixe o aplicativo agora e experimente a versão gratuita.",
+      "lead": "Instale o aplicativo hub para líderes e o aplicativo para membros da equipe e comece imediatamente com a versão gratuita.",
+      "freeLabel": "Download gratuito",
+      "specsLabel": "Requisitos mínimos e recomendados",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur ou posterior (universal para Apple Silicon e Intel)",
+            "8GB de memória ou mais (16GB recomendados)",
+            "2GB ou mais de espaço livre em disco",
+            "Conexão com a internet obrigatória"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Para Windows",
+          "specs": [
+            "Windows 10 de 64 bits ou Windows 11 (x64)",
+            "4GB de memória ou mais (8GB recomendados)",
+            "1GB ou mais de espaço livre em disco",
+            "Conexão com a internet obrigatória"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "Aviso sobre a versão gratuita e a versão de desenvolvimento",
+        "items": [
+          "A versão gratuita e a de desenvolvimento podem fechar e reiniciar sem aviso quando chega uma atualização.",
+          "Alguns recursos podem ser limitados conforme o uso gratuito."
+        ]
+      }
+    },
     "cta": {
       "title": "Documentos fora do catálogo também podem virar pacotes",
       "desc": "Com 3 a 5 documentos de exemplo e os campos que sua equipe transcreve hoje, definimos primeiro o escopo de aplicação.",

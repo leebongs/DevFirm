@@ -1330,6 +1330,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Muat turun aplikasi sekarang dan cuba versi percuma.",
+      "lead": "Pasang aplikasi hab untuk ketua dan aplikasi ahli pasukan untuk terus bermula dengan versi percuma.",
+      "freeLabel": "Muat turun percuma",
+      "specsLabel": "Spesifikasi minimum & disyorkan",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur atau lebih baharu (universal Apple Silicon & Intel)",
+            "RAM 8GB atau lebih (16GB disyorkan)",
+            "Ruang cakera kosong 2GB atau lebih",
+            "Sambungan internet diperlukan"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "Untuk Windows",
+          "specs": [
+            "Windows 10 64-bit atau Windows 11 (x64)",
+            "RAM 4GB atau lebih (8GB disyorkan)",
+            "Ruang cakera kosong 1GB atau lebih",
+            "Sambungan internet diperlukan"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "Makluman versi percuma & versi pembangunan",
+        "items": [
+          "Versi percuma dan versi pembangunan mungkin tertutup dan dimulakan semula tanpa notis apabila kemas kini tiba.",
+          "Sesetengah ciri mungkin dihadkan mengikut penggunaan percuma."
+        ]
+      }
+    },
     "cta": {
       "title": "Dokumen yang tiada dalam katalog juga boleh dijadikan pakej dokumen",
       "desc": "Kongsikan 3~5 dokumen contoh dan medan yang sedang anda salin secara manual. Kami akan menentukan skop penerapan terlebih dahulu.",

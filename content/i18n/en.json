@@ -1318,6 +1318,45 @@
         }
       ]
     },
+    "download": {
+      "id": "download",
+      "eyebrow": "FREE DOWNLOAD",
+      "title": "Download the app now and try the free version.",
+      "lead": "Install the leader hub app and the team member app to start right away on the free version.",
+      "freeLabel": "Free download",
+      "specsLabel": "Minimum & recommended specs",
+      "apps": [
+        {
+          "key": "mac",
+          "name": "DocASI HUB APP for Leader",
+          "platform": "macOS Universal",
+          "specs": [
+            "macOS 11 Big Sur or later (Apple Silicon & Intel universal)",
+            "8GB RAM or more (16GB recommended)",
+            "2GB or more of free disk space",
+            "Internet connection required"
+          ]
+        },
+        {
+          "key": "win",
+          "name": "DocASI for Team Member",
+          "platform": "For Windows",
+          "specs": [
+            "Windows 10 64-bit or Windows 11 (x64)",
+            "4GB RAM or more (8GB recommended)",
+            "1GB or more of free disk space",
+            "Internet connection required"
+          ]
+        }
+      ],
+      "notice": {
+        "title": "About the free and development versions",
+        "items": [
+          "The free and development versions may close and restart without notice when an update arrives.",
+          "Some features may be limited depending on free usage."
+        ]
+      }
+    },
     "cta": {
       "title": "Documents outside the catalog can become document packs too",
       "desc": "Share three to five sample documents and the fields you currently transcribe. We will first define the scope of application.",
