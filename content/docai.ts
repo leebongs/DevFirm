@@ -21,7 +21,7 @@ export type DocAiPack = {
  */
 export const docAi = {
   seo: {
-    title: "DocASI 카탈로그 — 업무별 문서 자동화",
+    title: "DocASI(도카시) — 산업분야별 문서 규제준수 자동화 솔루션",
     description:
       "계약서, 세금계산서, 회의록, 입찰공고, 현장 보고서를 읽고 구조화하는 DocASI(도카시) 문서팩을 업무별로 찾아보세요.",
   },
