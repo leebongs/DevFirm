@@ -67,6 +67,17 @@ export function proxy(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
+  // DocASI 리브랜딩(2026-10): locale 접두가 붙은 구 docai 경로는 같은 locale 의
+  // docasi 로 영구 이동한다. next.config 의 redirects 는 bare 경로만 잡으므로
+  // (/solutions/docai), 외부에 공유된 /ko/... 형 구 링크는 여기서 구제한다.
+  const legacyDocAi = pathname.match(/^\/([^/]+)\/solutions\/docai(\/start)?$/);
+  const legacyLang = legacyDocAi?.[1];
+  if (legacyLang && byLower.get(legacyLang.toLowerCase())) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${legacyLang}/solutions/docasi${legacyDocAi?.[2] ?? ""}`;
+    return NextResponse.redirect(url, 308);
+  }
+
   const hasLocale = localeCodes.some(
     (code) => pathname === `/${code}` || pathname.startsWith(`/${code}/`),
   );

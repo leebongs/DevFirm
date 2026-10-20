@@ -6,6 +6,31 @@ test.describe("DocASI 카탈로그", () => {
     "상태 전환은 뷰포트 독립 — 1440 프로젝트에서 한 번만 검증",
   );
 
+  test("locale 접두가 붙은 구 docai 경로는 같은 locale 의 docasi 로 308 이동한다", async ({
+    page,
+    request,
+  }) => {
+    const redirect = await request.get("/ko/solutions/docai", {
+      maxRedirects: 0,
+    });
+    expect(redirect.status()).toBe(308);
+    expect(
+      new URL(redirect.headers()["location"] ?? "", "http://x").pathname,
+    ).toBe("/ko/solutions/docasi");
+
+    const startRedirect = await request.get("/en/solutions/docai/start", {
+      maxRedirects: 0,
+    });
+    expect(startRedirect.status()).toBe(308);
+    expect(
+      new URL(startRedirect.headers()["location"] ?? "", "http://x").pathname,
+    ).toBe("/en/solutions/docasi/start");
+
+    const landed = await page.goto("/ko/solutions/docai");
+    expect(landed?.status()).toBe(200);
+    expect(new URL(page.url()).pathname).toBe("/ko/solutions/docasi");
+  });
+
   test("업무 분야와 검색어로 문서팩을 좁히고 초기화한다", async ({ page }) => {
     await page.goto("/ko/solutions/docasi");
 
