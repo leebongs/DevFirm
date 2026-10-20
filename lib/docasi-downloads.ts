@@ -29,14 +29,26 @@ const payload: FeedPayload = JSON.parse(
 
 const toMB = (bytes: number) => `${Math.round(bytes / 1e6)}MB`;
 
+/**
+ * 웹 버튼은 구 브랜드 설치 파일 대신 같은 릴리스에 올린 DocASI 사본을
+ * 가리킨다. 피드 payload 자체는 설치된 구버전 앱들이 서명 검증하므로
+ * 구 파일명 그대로 두고, 여기서 마지막 경로 세그먼트의 파일명만 바꾼다
+ * (레포 이름 DocAI-releases 를 건드리지 않도록 끝 세그먼트에 한정).
+ * 사본은 원본과 바이트 동일 — sha256 대조 후 업로드했다.
+ */
+const toDocasiAsset = (url: string) =>
+  url.replace(/\/DocAI-([^/]+)$/, "/DocASI-$1");
+
 export const docasiDownloads = {
+  /** 섹션으로 바로 안착하는 공유 주소 — 리다이렉트가 방문자 locale 의 #download 로 보낸다 */
+  shareUrl: "https://www.devfirm.co/solutions/docasi/download",
   version: `v${payload.version}`,
   mac: {
-    href: payload.assets["macos-universal"].url,
+    href: toDocasiAsset(payload.assets["macos-universal"].url),
     size: toMB(payload.assets["macos-universal"].size),
   },
   win: {
-    href: payload.assets["windows-x64"].url,
+    href: toDocasiAsset(payload.assets["windows-x64"].url),
     size: toMB(payload.assets["windows-x64"].size),
   },
 } as const;

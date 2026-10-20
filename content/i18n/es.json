@@ -1340,6 +1340,8 @@
       "title": "Descarga la aplicación ahora y prueba la versión gratuita.",
       "lead": "Instala la aplicación hub para líderes y la aplicación para miembros del equipo y empieza de inmediato con la versión gratuita.",
       "freeLabel": "Descarga gratuita",
+      "copyLabel": "Copiar enlace de descarga",
+      "copiedLabel": "Enlace copiado",
       "specsLabel": "Requisitos mínimos y recomendados",
       "apps": [
         {

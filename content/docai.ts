@@ -221,6 +221,8 @@ export const docAi = {
     title: "지금 앱을 다운로드, 무료 버전 맛보기 체험 해 보세요.",
     lead: "리더용 허브 앱과 팀 멤버용 앱을 설치하면 무료 버전으로 바로 시작할 수 있습니다.",
     freeLabel: "무료 다운로드",
+    copyLabel: "다운로드 링크 복사",
+    copiedLabel: "링크가 복사되었습니다",
     specsLabel: "최소·권장 사양",
     apps: [
       {

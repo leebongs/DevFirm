@@ -1332,6 +1332,8 @@
       "title": "Unduh aplikasinya sekarang dan coba versi gratis.",
       "lead": "Pasang aplikasi hub untuk pemimpin dan aplikasi anggota tim untuk langsung memulai dengan versi gratis.",
       "freeLabel": "Unduh gratis",
+      "copyLabel": "Salin tautan unduhan",
+      "copiedLabel": "Tautan disalin",
       "specsLabel": "Spesifikasi minimum & yang disarankan",
       "apps": [
         {

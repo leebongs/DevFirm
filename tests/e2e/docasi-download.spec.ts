@@ -21,14 +21,14 @@ test.describe("DocASI 다운로드 섹션", () => {
     await expect(mac).toBeVisible();
     await expect(mac).toHaveAttribute(
       "href",
-      /DocAI-releases\/releases\/download\/v[\d.]+\/DocAI-[\d.]+-universal\.dmg$/,
+      /DocAI-releases\/releases\/download\/v[\d.]+\/DocASI-[\d.]+-universal\.dmg$/,
     );
 
     const win = page.getByRole("link", { name: /DocASI for Team Member/ });
     await expect(win).toBeVisible();
     await expect(win).toHaveAttribute(
       "href",
-      /DocAI-releases\/releases\/download\/v[\d.]+\/DocAI-forTeamMemebr-Setup-[\d.]+-win-x64\.exe$/,
+      /DocAI-releases\/releases\/download\/v[\d.]+\/DocASI-forTeamMemebr-Setup-[\d.]+-win-x64\.exe$/,
     );
   });
 
@@ -52,6 +52,22 @@ test.describe("DocASI 다운로드 섹션", () => {
     await expect(page.locator("h2#download")).toHaveText(
       "지금 앱을 다운로드, 무료 버전 맛보기 체험 해 보세요.",
     );
+  });
+
+  test("제목 옆 링크 버튼이 공유 주소를 클립보드에 복사한다", async ({
+    page,
+    context,
+  }) => {
+    await context.grantPermissions(["clipboard-read", "clipboard-write"]);
+    await page.goto("/ko/solutions/docasi");
+
+    const button = page.getByRole("button", { name: "다운로드 링크 복사" });
+    await button.scrollIntoViewIfNeeded();
+    await button.click();
+
+    await expect(page.getByText("링크가 복사되었습니다")).toBeVisible();
+    const copied = await page.evaluate(() => navigator.clipboard.readText());
+    expect(copied).toBe("https://www.devfirm.co/solutions/docasi/download");
   });
 
   test("최소·권장 사양과 무료 버전 안내가 보인다", async ({ page }) => {

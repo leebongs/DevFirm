@@ -1336,6 +1336,8 @@
       "title": "Lataa sovellus nyt ja kokeile ilmaisversiota.",
       "lead": "Asenna vetäjän hub-sovellus ja tiimin jäsenen sovellus, niin pääset heti alkuun ilmaisversiolla.",
       "freeLabel": "Ilmainen lataus",
+      "copyLabel": "Kopioi latauslinkki",
+      "copiedLabel": "Linkki kopioitu",
       "specsLabel": "Vähimmäis- ja suositusvaatimukset",
       "apps": [
         {

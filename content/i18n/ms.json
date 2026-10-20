@@ -1336,6 +1336,8 @@
       "title": "Muat turun aplikasi sekarang dan cuba versi percuma.",
       "lead": "Pasang aplikasi hab untuk ketua dan aplikasi ahli pasukan untuk terus bermula dengan versi percuma.",
       "freeLabel": "Muat turun percuma",
+      "copyLabel": "Salin pautan muat turun",
+      "copiedLabel": "Pautan disalin",
       "specsLabel": "Spesifikasi minimum & disyorkan",
       "apps": [
         {

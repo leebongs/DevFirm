@@ -1324,6 +1324,8 @@
       "title": "Download the app now and try the free version.",
       "lead": "Install the leader hub app and the team member app to start right away on the free version.",
       "freeLabel": "Free download",
+      "copyLabel": "Copy download link",
+      "copiedLabel": "Link copied",
       "specsLabel": "Minimum & recommended specs",
       "apps": [
         {

@@ -1344,6 +1344,8 @@
       "title": "Descarcă aplicația acum și încearcă versiunea gratuită.",
       "lead": "Instalează aplicația hub pentru lideri și aplicația pentru membrii echipei și începe imediat cu versiunea gratuită.",
       "freeLabel": "Descărcare gratuită",
+      "copyLabel": "Copiază linkul de descărcare",
+      "copiedLabel": "Link copiat",
       "specsLabel": "Cerințe minime și recomandate",
       "apps": [
         {

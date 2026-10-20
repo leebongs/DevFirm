@@ -1332,6 +1332,8 @@
       "title": "Ladda ner appen nu och prova gratisversionen.",
       "lead": "Installera hubbappen för ledare och appen för teammedlemmar och kom igång direkt med gratisversionen.",
       "freeLabel": "Gratis nedladdning",
+      "copyLabel": "Kopiera nedladdningslänk",
+      "copiedLabel": "Länken kopierad",
       "specsLabel": "Minimikrav och rekommenderade krav",
       "apps": [
         {

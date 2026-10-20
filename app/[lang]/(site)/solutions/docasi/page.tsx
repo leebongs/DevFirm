@@ -15,6 +15,7 @@ import {
 import { Breadcrumb } from "@/components/layout/breadcrumb";
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
+import { CopyLinkButton } from "@/components/content/copy-link-button";
 import { DocAiCatalog } from "@/components/content/docai-catalog";
 import { CTASection } from "@/components/content/cta-section";
 import { SectionHeading } from "@/components/typography/section-heading";
@@ -308,6 +309,13 @@ export default async function DocAiPage({
           eyebrow={t.docai.download.eyebrow}
           title={t.docai.download.title}
           lead={t.docai.download.lead}
+          action={
+            <CopyLinkButton
+              url={docasiDownloads.shareUrl}
+              label={t.docai.download.copyLabel}
+              copiedLabel={t.docai.download.copiedLabel}
+            />
+          }
         />
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
           {t.docai.download.apps.map((app) => {

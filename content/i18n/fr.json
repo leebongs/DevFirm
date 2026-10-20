@@ -1344,6 +1344,8 @@
       "title": "Téléchargez l'application dès maintenant et essayez la version gratuite.",
       "lead": "Installez l'application hub pour les responsables et l'application pour les membres de l'équipe, puis commencez aussitôt avec la version gratuite.",
       "freeLabel": "Téléchargement gratuit",
+      "copyLabel": "Copier le lien de téléchargement",
+      "copiedLabel": "Lien copié",
       "specsLabel": "Configuration minimale et recommandée",
       "apps": [
         {

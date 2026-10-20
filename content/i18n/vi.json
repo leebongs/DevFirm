@@ -1328,6 +1328,8 @@
       "title": "Tải ứng dụng ngay và dùng thử phiên bản miễn phí.",
       "lead": "Cài đặt ứng dụng hub cho trưởng nhóm và ứng dụng cho thành viên để bắt đầu ngay với phiên bản miễn phí.",
       "freeLabel": "Tải miễn phí",
+      "copyLabel": "Sao chép liên kết tải xuống",
+      "copiedLabel": "Đã sao chép liên kết",
       "specsLabel": "Cấu hình tối thiểu & khuyến nghị",
       "apps": [
         {

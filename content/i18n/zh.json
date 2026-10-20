@@ -1316,6 +1316,8 @@
       "title": "立即下载应用,体验免费版。",
       "lead": "安装负责人专用 Hub 应用和团队成员应用,即可立即开始使用免费版。",
       "freeLabel": "免费下载",
+      "copyLabel": "复制下载链接",
+      "copiedLabel": "链接已复制",
       "specsLabel": "最低·推荐配置",
       "apps": [
         {

@@ -48,6 +48,8 @@ const CLIENT_WHITELIST = [
   "course-filter-tabs",
   // DocASI 정적 카드 목록에 검색·분야 필터 상태만 더하는 얇은 경계.
   "docai-catalog",
+  // 섹션 공유 주소 복사 버튼. navigator.clipboard 는 클라이언트에서만 동작한다.
+  "copy-link-button",
 ];
 
 const allowlist = new Set(

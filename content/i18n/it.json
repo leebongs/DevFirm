@@ -1336,6 +1336,8 @@
       "title": "Scarica subito l'app e prova la versione gratuita.",
       "lead": "Installa l'app hub per i responsabili e l'app per i membri del team e inizia subito con la versione gratuita.",
       "freeLabel": "Download gratuito",
+      "copyLabel": "Copia il link di download",
+      "copiedLabel": "Link copiato",
       "specsLabel": "Requisiti minimi e consigliati",
       "apps": [
         {

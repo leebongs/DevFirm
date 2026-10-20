@@ -10,6 +10,7 @@ export function SectionHeading({
   align = "left",
   className,
   id,
+  action,
 }: {
   eyebrow?: string;
   title: string;
@@ -17,6 +18,8 @@ export function SectionHeading({
   align?: "left" | "center";
   className?: string;
   id?: string;
+  /** 제목 오른쪽에 붙는 보조 컨트롤(예: 섹션 링크 복사 버튼) */
+  action?: React.ReactNode;
 }) {
   return (
     <div
@@ -31,15 +34,21 @@ export function SectionHeading({
           {eyebrow}
         </p>
       ) : null}
-      <h2
-        id={id}
+      <div
         className={cn(
-          "text-[1.375rem] leading-[1.35] font-semibold lg:text-[2rem] lg:leading-[1.25]",
+          "flex flex-wrap items-center gap-x-4 gap-y-2",
           eyebrow && "mt-3",
+          align === "center" && "justify-center",
         )}
       >
-        {title}
-      </h2>
+        <h2
+          id={id}
+          className="text-[1.375rem] leading-[1.35] font-semibold lg:text-[2rem] lg:leading-[1.25]"
+        >
+          {title}
+        </h2>
+        {action}
+      </div>
       {lead ? (
         <p className="text-muted-foreground mt-4 text-base leading-[1.75] lg:text-[1.0625rem] lg:leading-[1.8]">
           {lead}
