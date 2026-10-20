@@ -18,6 +18,7 @@ import {
   ShieldCheck,
   UserCheck,
 } from "lucide-react";
+import { DocasiDownloadSection } from "@/components/content/docasi-download-section";
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import {
@@ -26,6 +27,7 @@ import {
   type DocAiStartIcon,
 } from "@/content/docai-start";
 import { DEFAULT_LOCALE, isLocale, type Locale } from "@/content/locales";
+import { getDictionary } from "@/lib/i18n";
 import { localeHref } from "@/lib/locale-href";
 
 const icons = {
@@ -73,6 +75,7 @@ export default async function DocAiStartPage({
 }) {
   const { lang } = await params;
   const locale: Locale = isLocale(lang) ? lang : DEFAULT_LOCALE;
+  const t = await getDictionary(locale);
   const solutionsHref = localeHref(locale, docAiStart.breadcrumb.parentHref);
   const contactHref = localeHref(locale, docAiStart.cta.href);
   const PrivacyIcon = icons[docAiStart.hero.privacy.icon];
@@ -131,6 +134,10 @@ export default async function DocAiStartPage({
           </aside>
         </Container>
       </section>
+
+      <Section className="py-14 lg:py-16">
+        <DocasiDownloadSection download={t.docai.download} />
+      </Section>
 
       <Section className="py-12 md:py-14 lg:py-16">
         <nav

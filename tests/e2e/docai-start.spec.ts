@@ -1,4 +1,20 @@
 import { expect, test } from "@playwright/test";
+
+test("시작 안내 히어로 다음에 앱 다운로드 섹션이 보인다", async ({ page }) => {
+  await page.goto("/ko/solutions/docasi/start");
+
+  await expect(
+    page.getByRole("heading", {
+      name: "지금 앱을 다운로드, 무료 버전 맛보기 체험 해 보세요.",
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: /HUB APP for Leader/ }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: /for Team Member/ }),
+  ).toBeVisible();
+});
 import AxeBuilder from "@axe-core/playwright";
 
 test.describe("DocASI 팀 시작 안내", () => {
