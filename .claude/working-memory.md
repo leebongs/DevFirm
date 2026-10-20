@@ -191,3 +191,7 @@ pnpm check:menu                # 메가메뉴 오버플로 (서버가 떠 있어
 - vitest 3건 간헐 실패(engine 이슈id/hub 422/regexSafety)는 전부 무변경 파일 — DevFirm 빌드 병행 부하 플레이크. 유휴 재실행으로 확인 예정.
 - DocAI 레포는 미커밋 유지(타 세션 OTA 작업과 혼재, 커밋 지시 없음).
 - 카탈로그 아티팩트는 docai-1b 가 재배포 완료(https://claude.ai/artifact/4KAsEf5vFjpnwmJ6n6yUE7 v2).
+- 2026-10-20 17:2x: DocAI 레포도 docai-1b 가 사용자 요청으로 커밋·푸시 완료 (cef0ffc, 258파일, build OK·vitest 248/248). locale 구경로 308 핫픽스는 DevFirm 2b9f6c9 로 배포·실측 완료. 양 레포 워킹트리 클린 — 리브랜딩 사이클 종료.
+- 2026-10-20 17:3x: GitHub 저장소 개명 leebongs/DocAI → leebongs/DocASI (gh repo rename). 로컬 origin 갱신·fetch 검증·구 URL 리다이렉트 확인 완료. DocAI-releases(OTA)는 보존. 로컬 폴더명 변경은 피어 세션·세션 상태 경로 때문에 보류(사용자 재요청 시 전 세션 정리 후 진행).
+- 2026-10-20 17:5x 진행중 체크포인트: start 안내 ① 문구 수정("장치 연결 코드 또는 페어링링크 URL로…", a86060e 배포·라이브 확인) ② 7-8 사이 새 단계 카드 "검사받을 문서를 폴더에 넣습니다"(file-clock, 팀 멤버, 스펙 9단계+단언 추가, 게이트 그린·미커밋) ③ setup 섹션을 세로 타임라인 스테퍼로 재설계(노드 톤 3단: 채움=Hub 관리자/외곽=팀 멤버/소프트=관리자 확인, ol>li 유지) — 빌드·스크린샷·e2e 백그라운드(bj0k4gjfx) 대기 중. 통과 시 ②③ 묶어 커밋·푸시·프로덕션 확인 예정.
+- 2026-10-20 18:0x: 스테퍼 게이트 그린(TSC/BUILD/e2e 8 passed). 스크린샷 셀렉터 보정 후 재촬영 중(bpovbbpjk) — 시각 검수 통과하면 카드 추가+스테퍼 묶어 커밋·배포.

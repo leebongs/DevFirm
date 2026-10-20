@@ -145,6 +145,13 @@ export const docAiStart = {
         audience: "팀 멤버",
       },
       {
+        icon: "file-clock" as const satisfies DocAiStartIcon,
+        title: "검사받을 문서를 폴더에 넣습니다",
+        description:
+          "지정한 문서 폴더에 리스크 검사 받고, 규정 검사 받고 싶은 문서를 넣습니다.",
+        audience: "팀 멤버",
+      },
+      {
         icon: "bell" as const satisfies DocAiStartIcon,
         title: "내 알림과 감사기록을 확인합니다",
         description:

@@ -56,7 +56,15 @@ test.describe("DocASI 팀 시작 안내", () => {
     ).toBeVisible();
 
     const steps = page.locator("ol > li");
-    await expect(steps).toHaveCount(8);
+    await expect(steps).toHaveCount(9);
+    await expect(
+      page.getByRole("heading", { name: "검사받을 문서를 폴더에 넣습니다" }),
+    ).toBeVisible();
+    await expect(
+      page.getByText(
+        "지정한 문서 폴더에 리스크 검사 받고, 규정 검사 받고 싶은 문서를 넣습니다.",
+      ),
+    ).toBeVisible();
     await expect(
       page.getByRole("heading", { name: "관리자 승인을 기다립니다" }),
     ).toBeVisible();

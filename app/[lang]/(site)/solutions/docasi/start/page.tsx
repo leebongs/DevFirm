@@ -219,29 +219,50 @@ export default async function DocAiStartPage({
           </p>
         </div>
 
-        <ol className="mt-12 grid gap-4 lg:grid-cols-2">
+        {/* 절차 타임라인 — 번호 노드가 진행 레일 위에 놓여 순서가 한눈에 읽힌다.
+            노드 톤 3단(채움=Hub 관리자, 외곽=팀 멤버, 소프트=관리자 확인)으로
+            "관리자와 팀 멤버가 번갈아 진행" 리듬을 시각화한다. */}
+        <ol className="relative mt-12 max-w-3xl">
+          <div
+            className="bg-border absolute top-5 bottom-5 left-[21px] w-px"
+            aria-hidden
+          />
           {docAiStart.setup.steps.map((step, index) => {
             const Icon = icons[step.icon];
+            const isLast = index === docAiStart.setup.steps.length - 1;
+            const nodeTone =
+              step.audience === "Hub 관리자"
+                ? "border-primary bg-primary text-primary-foreground"
+                : step.audience === "관리자 확인"
+                  ? "border-primary/40 bg-primary/10 text-primary"
+                  : "border-primary/50 bg-background text-primary";
             return (
               <li
                 key={step.title}
-                className="border-border bg-background relative rounded-2xl border p-6 lg:p-7"
+                className={`relative pl-16 ${isLast ? "" : "pb-6"}`}
               >
-                <div className="flex items-start justify-between gap-5">
-                  <div className="bg-primary/10 text-primary flex size-11 shrink-0 items-center justify-center rounded-xl">
-                    <Icon className="size-5" aria-hidden />
+                <span
+                  className={`absolute top-6 left-0 flex size-[42px] items-center justify-center rounded-full border font-mono text-xs font-bold ${nodeTone}`}
+                  aria-hidden
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div className="border-border bg-background rounded-2xl border p-6 lg:p-7">
+                  <div className="flex items-center gap-3">
+                    <div className="bg-primary/10 text-primary flex size-9 shrink-0 items-center justify-center rounded-lg">
+                      <Icon className="size-4" aria-hidden />
+                    </div>
+                    <p className="text-primary text-xs font-semibold">
+                      {step.audience}
+                    </p>
                   </div>
-                  <span className="text-muted-foreground font-mono text-xs font-semibold">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+                  <h3 className="mt-4 text-lg font-bold break-keep">
+                    {step.title}
+                  </h3>
+                  <p className="text-muted-foreground mt-3 text-sm leading-7 break-keep">
+                    {step.description}
+                  </p>
                 </div>
-                <p className="text-primary mt-6 text-xs font-semibold">
-                  {step.audience}
-                </p>
-                <h3 className="mt-2 text-lg font-bold">{step.title}</h3>
-                <p className="text-muted-foreground mt-3 text-sm leading-7 break-keep">
-                  {step.description}
-                </p>
               </li>
             );
           })}
